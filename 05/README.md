@@ -4,65 +4,54 @@
 
 &nbsp;
 
-Najwyższy czas zakodować stronę, która ma przygotowane 3 widoki dla różnych punktów granicznych (ang. breakpoints):
+Najwyższy czas zakodować układ strony, który będzie posiadał widok *mobilny* oraz *desktopowy*. 
+Oczywiście całość kodujemy z duchem *mobile first*, a punktem granicznym (ang. *breakpoint*) będzie 800px. 
 
-- mobile
-- tablet
-- desktop
+&nbsp;
 
-## Od czego zacząć?
-
-Przeczytaj dokładnie z treść, którą zamieszczam poniżej. Następnie zapoznaj się dokładnie z zrzutami ekranu, które znajdziesz w katalogu `./assets` prezentujące poszczególne widoki.
-
-Zaznacz sobie na każdym widoku, które elementy to oddzielne sekcje strony. Zwróć uwagę jak się one zmianiają podczas przechodzenia z jednego widoku do drugiego. To ułatwi Ci budowanie układu.
-
-Zacznij od widoku na talefon. Możesz użyć dodatku [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=pl) do przeglądarki Chrome, aby ułatwić sobie kodowanie. Pamiętaj, że nie warto odzwierciedlać widoku 1:1 co do piksela. Szkoda w tym momencie na to czasu. Masz zaznajomić się z technikami RWD i przy okazji utrwalić wiedzę z HTML-a i CSS-a.
-
-Jeśli będziesz korzystać z PerfectPixel-a pamiętaj również o ustawieniu odpowiedniej skali dla warstwy oraz ustawieniu odpowiedniej szerokości dla okna przeglądarki.
-
-Możesz również skorzystać z dodatku [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp), który pozwoli Ci pobierać kolor ze wskazanego miejsca. Wystarczy wyświetlić obraz w przeglądarce Chrome i użyć wspomnianego rozszerzenia. 
-
-Kiedy skończysz kodować widok dla telefonu, zajmij się widokiem tabletowym. Pamiętaj, aby sprawdzać czy zmiany wprowadzone do widoku tabletowego nie spowodowały zmian w widoku mobilnym.
-
-Po skończeniu kodowania widoku dla tabletu zajmij się desktopem. Ponownie pamięaj o częstym sprawdzaniu czy czegoś nie popsułeś w poprzednich wersjach. Im wcześniej zorientujesz się, że coś nie działa tym będzie Ci łatwiej to poprawić.
-
-## Zasoby
-
-### Fonty
-
-Fotn jaki jest wykorzystywany w projekcie to `Poppins`, który znajdziesz w [Google Font](https://fonts.google.com/specimen/Poppins).
-
-### Obrazy
-
-Wszystkie niezbędne obrazy, w tym kształty znajdziesz w katalogu `./images`. 
-
-### Ikony
-
-Ikony mediów społecznościowych znajdujące się w stopce umieść przy pomocy [Font Awesome](https://fontawesome.com/).
+![](./transform.png)
 
 
-## Widoki
+&nbsp;
 
-Nie podaję dokładnych punktów granicznych, abyś sam ocenił kiedy zrobić przejście.
+Podobnie jak w zadaniu z *HTML i CSS: Podstawy*, poszczególne elementy oznaczają:
 
-Poniżej zamieszczam tylko informacje dla jakich rozdzielczości był robiony przedstawiony zrzut ekranu.
+* **zielone krawędzie** to obszar dostępny dla przeglądarki, czyli element o 100% szerokości, która wyznacza nasze sekcje
+* **niebieskie krawędzie** to maksymalna szerokość naszej strony - powiedzmy, że wynosi 1000px
+* **pomarańczowe prostokąty** to dowolna zawartość
 
-### mobile => 600px
+Zwróć uwagę, że w przypadku widoku mobilnego, krawędzie niebieskie i zielone praktycznie nachodzą na siebie. Można by było je pominąć. Jednak mając na uwadze widok desktopowy możemy je od razu dodać do struktury HTML.
 
-![](./assets/mobile.png)
+## Mobile
 
-### tablet => 900px
+![](./mobile.png)
 
-![](./assets/tablet.png)
+### Sekcja nr 1
 
-### desktop => 1200px
+Posiada menu, które jest wyśrodkowane w poziomie. Z prawej strony jest tzw. hamburger - po jego kliknięciu powinna pojawić się zawartość dla menu. Całość możemy uznać za nagłówek.
 
-![](./assets/desktop.png)
+### Sekcja nr 2
 
-# Prawa autorskie
+Zawiera dwa elementy, wyświetlane jeden pod drugiem z niewielkim odstępem między nimi.
 
-Wszelkie prawa autorskie oraz pokrewne do szablonu i elementów wchodzacych w jego skład należą do [colorlib.com](https://colorlib.com).
-Szablon i jego elementy mogą być wykorzystywane na zasadach zgodnych z [licencją](https://colorlib.com/wp/licence/).
+### Sekcja nr 3
+
+Podobnie jak w sekcji poprzedniej tylko tym razem mamy trzy, a nie dwa elementy.
+
+### Sekcja nr 4
+
+Stopka naszej strony, która zwiera jedynie element wyśrodkowany w pionie i poziomie.
+
+## Desktop
+
+![](./desktop.png)
+
+Układ identyczny jak w przypadku [zadania 5 z *HTML i CSS: Podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Jednak wykonaj to zadania od początku mając na uwadze układ mobilny.
+
+# Zadanie dodatkowe
+
+Teraz możesz spróbować przebudować układ z [*HTML i CSS: podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Zrób to w taki sposób, aby dodać do wszcześniej utworzonego widoku, widok mobilny. Sam ocenisz, który sposób tj. *mobile first* czy *desktop first* jest wygodniejszy.
+
 
 
 &nbsp;
