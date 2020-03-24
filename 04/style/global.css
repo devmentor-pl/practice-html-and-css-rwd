@@ -1,0 +1,68 @@
+body
+{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    margin:0;
+    padding: 0;
+    word-wrap:break-word;
+}
+
+nav
+{
+    background: teal;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+nav a
+{
+    display: inline-block;
+    padding: 0 20px;
+    color: burlywood;
+    border-right: 1px solid burlywood;
+    border-left: 1px solid burlywood;
+    text-decoration: none;
+    width: 30vw;   
+}
+
+nav ul a:hover
+{
+    background: cadetblue;
+    color: whitesmoke;
+}
+
+nav ul .menu-oferta a
+{
+    background-color: cadetblue;
+    color: goldenrod;
+    border-bottom: 1px solid goldenrod;
+    border-left: 1px solid goldenrod;
+    border-right: 1px solid goldenrod;
+}
+
+nav ul .menu-oferta a:hover
+{
+    background-color: silver;
+    color: whitesmoke;
+}
+
+.arrow>a:hover:after
+{
+    content: '>';
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+
+nav::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul li:hover>ul
+{
+    display: list-item;
+}

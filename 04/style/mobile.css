@@ -1,0 +1,113 @@
+
+#main-toggle
+{
+    padding: 28px 20px;
+    padding-left: 4px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-icon
+{
+    background: burlywood;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.nav-icon::before, .nav-icon::after
+{
+    content: '';
+    background: burlywood;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.nav-icon::before
+{
+    top: 5px;
+}
+.nav-icon::after
+{
+    top: -5px;
+}
+
+ input
+{
+    display: none;
+}
+
+[id^=menu-btn]:checked + label + ul
+{
+    display:inline-block;
+}
+
+#menu-btn:checked + label .nav-icon
+{
+    background: transparent;
+}
+
+#menu-btn:checked + label .nav-icon::after {
+   transform: rotate(45deg) ;
+   top: 0;
+   transition: background .2s ease-out;
+}
+
+#menu-btn:checked + label .nav-icon::before
+{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: background .2s ease-out;
+}
+
+header nav
+{
+    height: 50px;
+    position: relative;
+}
+nav ul
+{
+    background: teal;
+    position: absolute;
+    display: none;
+    transition: background .2s ease-out; 
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+nav ul ul li
+{
+    float: none;
+    display: list-item;
+}
+
+nav ul ul
+{
+    float: none;
+    position: static;
+    display: none;
+}
+nav .menu a
+{
+    text-align: center;
+}
+nav a
+{
+    width: 85vw;   
+}
+
+nav ul a:hover
+{
+    background: cadetblue;
+    color: whitesmoke;
+}
+
