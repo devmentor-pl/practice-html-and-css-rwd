@@ -4,67 +4,39 @@
 
 &nbsp;
 
-Najwyższy czas zakodować stronę, która ma przygotowane 3 widoki dla różnych punktów granicznych (ang. breakpoints):
+Najwyższy czas zakodować prawdziwą stronę internetową! 
 
-- mobile
-- tablet
-- desktop
+Będziemy się wzorować na projekcie od chłopaków z [Webscope](https://webscopeapp.com/), który wygląda tak:
 
-## Od czego zacząć?
-
-Przeczytaj dokładnie z treść, którą zamieszczam poniżej. Następnie zapoznaj się dokładnie z zrzutami ekranu, które znajdziesz w katalogu `./assets` prezentujące poszczególne widoki.
-
-Zaznacz sobie na każdym widoku, które elementy to oddzielne sekcje strony. Zwróć uwagę jak się one zmianiają podczas przechodzenia z jednego widoku do drugiego. To ułatwi Ci budowanie układu.
-
-Zacznij od widoku na talefon. Możesz użyć dodatku [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=pl) do przeglądarki Chrome, aby ułatwić sobie kodowanie. Pamiętaj, że nie warto odzwierciedlać widoku 1:1 co do piksela. Szkoda w tym momencie na to czasu. Masz zaznajomić się z technikami RWD i przy okazji utrwalić wiedzę z HTML-a i CSS-a.
-
-Jeśli będziesz korzystać z PerfectPixel-a pamiętaj również o ustawieniu odpowiedniej skali dla warstwy oraz ustawieniu odpowiedniej szerokości dla okna przeglądarki.
-
-Możesz również skorzystać z dodatku [ColorZilla](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp), który pozwoli Ci pobierać kolor ze wskazanego miejsca. Wystarczy wyświetlić obraz w przeglądarce Chrome i użyć wspomnianego rozszerzenia. 
-
-Kiedy skończysz kodować widok dla telefonu, zajmij się widokiem tabletowym. Pamiętaj, aby sprawdzać czy zmiany wprowadzone do widoku tabletowego nie spowodowały zmian w widoku mobilnym.
-
-Po skończeniu kodowania widoku dla tabletu zajmij się desktopem. Ponownie pamięaj o częstym sprawdzaniu czy czegoś nie popsułeś w poprzednich wersjach. Im wcześniej zorientujesz się, że coś nie działa tym będzie Ci łatwiej to poprawić.
-
-## Zasoby
-
-### Fonty
-
-Fotn jaki jest wykorzystywany w projekcie to `Poppins`, który znajdziesz w [Google Font](https://fonts.google.com/specimen/Poppins).
-
-### Obrazy
-
-Wszystkie niezbędne obrazy, w tym kształty znajdziesz w katalogu `./images`. 
-
-### Ikony
-
-Ikony mediów społecznościowych znajdujące się w stopce umieść przy pomocy [Font Awesome](https://fontawesome.com/).
-
-
-## Widoki
-
-Nie podaję dokładnych punktów granicznych, abyś sam ocenił kiedy zrobić przejście.
-
-Poniżej zamieszczam tylko informacje dla jakich rozdzielczości był robiony przedstawiony zrzut ekranu.
-
-### mobile => 600px
-
-![](./assets/mobile.png)
-
-### tablet => 900px
-
-![](./assets/tablet.png)
-
-### desktop => 1200px
-
-![](./assets/desktop.png)
-
-# Prawa autorskie
-
-Wszelkie prawa autorskie oraz pokrewne do szablonu i elementów wchodzacych w jego skład należą do [colorlib.com](https://colorlib.com).
-Szablon i jego elementy mogą być wykorzystywane na zasadach zgodnych z [licencją](https://colorlib.com/wp/licence/).
-
+![](./assets/demo.png)
 
 &nbsp;
 
-> :warning: Jeśli nie posiadasz materiałów do tego zadania to znajdziesz je na stronie [devmentor.pl](https://devmentor.pl/p/html-and-css-rwd/)
+## Opis projektu
+
+Wszystkie niezbędne grafiki masz przygotowane w katalogu `images`. Znajdziesz tam m. in. [pliki SVG](https://pl.wikipedia.org/wiki/Scalable_Vector_Graphics). Ich podgląd w VS Code możesz wykonać dzięki rozszerzeniu [SVG Viewer](https://marketplace.visualstudio.com/items?itemName=cssho.vscode-svgviewer).
+
+Font, który jest używany w projekcie to [Montserrat](https://fonts.google.com/specimen/Montserrat).
+
+Tło które widać w górnej części strony to gradient: 
+`background: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));`
+
+Proponuję dla wygody użyć rozszerzenie do Chrome o nazwie [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi), który pozwoli Ci osadzić plik poglądowy, przedstawiony wyżej (lokalizacja: `./assets/demo.png`) jako tło dla renderowanej strony, co uławi Ci kodowanie.
+
+Projekt nie musi być wykonany zgodnie z pierowzrorem 1:1. Ważne, aby na pierwszy rzut oka było widać, że jest to dokładne odwzorowanie.
+
+## Propozycja podziału
+
+Poniżej zamieszczam propozycję podziału strony na poszczególne grupy, gdzie:
+
+- wiersz (`width: 100%`), kolor zielony
+- wyśrodkowanie (`max-width: 1050px`), kolor niebieski niebieski
+- komórka (wiele elementów w jednej linii), pomarańczowy
+
+Nie musisz się od nich stosować to jedynie moja koncepcja, która ma Ci pomóc utworzyć odpowiednią strukturę.
+
+![](./assets/demo-info.png)
+
+&nbsp;
+
+> :warning: Jeśli nie posiadasz materiałów do tego zadania to znajdziesz je na stronie [devmentor.pl](https://devmentor.pl/p/html-and-css-basics/)

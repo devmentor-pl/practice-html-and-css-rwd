@@ -1,0 +1,20 @@
+footer
+{
+    height: 10vh;
+    
+}
+
+footer .container
+{
+    height: 9vh;
+    margin: 2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .cell
+{
+    height: 5vh;
+    width: 30%;
+}

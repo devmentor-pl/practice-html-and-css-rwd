@@ -1,0 +1,37 @@
+.header__container
+{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 2px auto;  
+}
+
+.header__logo
+{
+    min-width: 20%;
+}
+
+.header__nav
+{
+    min-width: 40%;
+  
+}
+
+header
+{
+    height: 15%;
+}
+
+nav ul a:hover
+{
+    background-color: #6f56e5;
+    color: black;
+}
+
+header .cell
+{
+    margin: 2px;
+}
+
+
+

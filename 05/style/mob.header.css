@@ -1,0 +1,79 @@
+.header__container
+{
+    position: relative;
+    justify-content: center;
+}
+
+.header__nav {
+    position: absolute;
+    border: 3px solid red;
+    top: 10vh;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+#main-toggle
+{
+    padding: 28px 20px;
+    padding-left: 4px;
+    position: absolute;
+    margin-left: 25vw;
+    cursor: pointer;
+    user-select: none;
+}
+
+.nav-icon
+{
+    background: burlywood;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+.nav-icon::before, .nav-icon::after
+{
+    content: '';
+    background: burlywood;
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+}
+
+.nav-icon::before
+{
+    top: 5px;
+}
+.nav-icon::after
+{
+    top: -5px;
+}
+
+
+
+[id^=menu-btn]:checked + label + nav
+{
+    display:inline-block;
+}
+
+#menu-btn:checked + label .nav-icon
+{
+    background: transparent;
+}
+
+#menu-btn:checked + label .nav-icon::after {
+   transform: rotate(45deg) ;
+   top: 0;
+   transition: background .2s ease-out;
+}
+
+#menu-btn:checked + label .nav-icon::before
+{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: background .2s ease-out;
+}

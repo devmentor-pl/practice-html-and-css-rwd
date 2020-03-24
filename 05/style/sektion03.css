@@ -1,0 +1,23 @@
+.sektion03
+{
+    height:40vh;
+    
+}
+
+.sektion03__container
+{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    height: 39vh;
+    margin: 2px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sektion03 .cell
+{
+    margin: auto;
+    height: 98%;
+    width: 97%;
+}

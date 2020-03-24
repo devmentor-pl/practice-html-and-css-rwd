@@ -1,0 +1,29 @@
+
+    body
+{
+    box-sizing: border-box; 
+}
+
+.row
+{
+    border: 2px solid green;
+}
+
+.container 
+{
+    border: 2px solid blue;
+    max-width: 1000px;  
+}
+
+ .cell
+{
+    border: 1px solid orange;
+    background: orange;
+    min-height: 50px;
+   
+}
+
+input
+{
+    display: none;
+}

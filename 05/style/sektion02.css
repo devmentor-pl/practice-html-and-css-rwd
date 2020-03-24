@@ -1,0 +1,20 @@
+.sektion02
+{
+    height:40vh;
+}
+
+.sektion02__container
+{
+    height: 39vh;
+    
+    margin: 2px auto;  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sektion02 .cell
+{
+    margin: auto;
+    height: 98%;
+    width: 97%;
+}

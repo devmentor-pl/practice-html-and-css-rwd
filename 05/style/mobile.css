@@ -1,0 +1,19 @@
+
+.row
+{
+    border: 2px solid green;
+}
+
+.container 
+{
+    border: 2px solid blue;
+    margin: 0 auto;
+}
+
+.cell
+{
+    border: 1px solid orange;
+    background: orange;
+    min-height: 20px;
+   
+}
