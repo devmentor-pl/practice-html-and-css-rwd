@@ -1,0 +1,14 @@
+
+.container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+}
+.t
+{
+    grid-column: 2/3;
+    grid-row: 1/3;
+
+}
