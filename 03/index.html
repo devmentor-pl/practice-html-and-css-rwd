@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut alias sit odio dolore. Ad assumenda corporis fuga at ipsum provident dolor id laudantium eaque tempore unde dolorum, itaque quidem ut?</p>
+    </main>
+    <header class="p">
+        <picture>
+            <source media="(min-width: 600px)"
+                    srcset="assets/1200px.jpg">
+            <source media="(min-width: 1200px)"
+                    srcset="assets/hd.jpg">
+            <source srcset="assets/600px.jpg">
+                <img src="assets/hd.jpg">
+        </picture>
+    </header>
+    <side class="v"><iframe src="https://www.youtube.com/embed/U0mvopr-S8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></side>
 
 </body>
 </html>
