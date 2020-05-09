@@ -1,0 +1,150 @@
+:root {
+  --primary-color: rgba(13, 110, 139, 0.75);
+  --overlay-color: rgba(24, 39, 51, 0.85);
+  --submenu-color: red;
+  --menu-color: green;
+  --menu-speed: 0.75s;
+}
+
+
+/* Show menu */
+
+/* tutaj jakieś animacje związane z pojawianiem się i znikaniem menu */
+
+/* .menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: 0.4s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > nav {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+} */
+
+/* tutaj te animacje się kończą */
+
+/* .menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > nav {
+    text-align: center;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  .menu-wrap .menu > div > nav > ul > li {
+    width: 100vw;
+    list-style: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .menu-wrap .menu > div > nav > ul {
+    width: 100vw;
+  }
+  
+  .u {
+    display: none;
+  }
+  
+  .menu-wrap .menu > div > nav > ul > li:hover > ul > li {
+    background: red;
+  }
+  .menu-wrap .menu > div > nav > ul > li:hover > ul > li {
+    background: var(--submenu-color);
+    margin-left: 10vw;
+    list-style: none;
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: block;
+    background: yellow;
+  }
+  
+  .menu-wrap .menu > div > nav > ul > li:hover > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu-wrap .menu > div > nav > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+  } */
+
+  .menu-wrap .toggler{
+    display:none;
+}
+
+
+.menu-wrap .hamburger{
+    position: static;
+    /* dlaczego display: none; nie działa? */
+    display: none;
+    visibility: hidden;
+}
+
+.menu > div > nav > ul a{
+    text-decoration: none;
+    color: red;
+}
+.menu > div > nav > ul > li{
+    background: yellow;
+    display: inline-block;
+    min-width: 200px;
+    float: left;
+    text-align: center;
+}
+
+.menu > div > nav > ul > li:hover  > ul > li{
+    display: block;
+}
+
+.menu > div > nav > ul > li > ul > li{
+    display: none;
+    background: green;
+    margin: 0;   
+    padding: 0;
+    min-width: 170px;
+}
+
+
+/* .menu{
+    display: grid;
+    grid-template-areas: "start oferta kontakt"
+    ". oferta1 ."
+    ". oferta2 .";
+} */
+
+
+.menu > div > nav{
+    opacity: 1;
+  }
