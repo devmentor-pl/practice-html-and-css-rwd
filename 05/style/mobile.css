@@ -1,0 +1,27 @@
+header, .offers, .team, footer{
+    width: 100vw;
+    border: solid green 3px;
+    background: grey;
+  
+}
+
+.offers__item, .team__member, .logo, .header__logo{
+
+    width: 100%;
+    height: 200px;
+    background: yellow;
+    border: solid blue 2px;
+}
+
+.logo, .header__logo{
+    height: 50px;
+    width: 100px;
+    margin: auto;
+}
+
+
+header{
+    height: 50px;
+}
+
+
