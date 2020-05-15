@@ -19,5 +19,8 @@
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    margin-right: 62px;
+    shape-outside: polygon(0 0, 0% 100%, 85% 0);
+
 }
