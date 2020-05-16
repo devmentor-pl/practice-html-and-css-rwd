@@ -4,23 +4,85 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
+
+/*nie wiem czy dobrze zrozumiałam polecenia*/
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "T"
+        "P"
+        "V";
+}
+
+.p,
+.t,
+.v {
     border: 3px solid transparent;
     min-height: 50px;
-
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 
 .p {
-    border-color: #ffffba
+
+    border-color: #ffffba;
+    grid-area: P;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: T;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: V;
+}
+
+@media(max-width: 599px) {
+    .text {
+        max-width: 50vh;
+    }
+
+    .picture {
+        max-width: 50vh;
+    }
+
+    .video {
+        max-width: 50vh;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "P T"
+            "V T"
+    }
+
+    .picture {
+        max-width: 50vh;
+        min-width: 200px;
+    }
+
+    .video {
+        max-width: 50vh;
+        min-width: 200px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas:
+            "P V"
+            "T T"
+    }
 }
