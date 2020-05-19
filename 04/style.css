@@ -10,6 +10,7 @@ body {
     width: 100%;
 }
 
+
 nav {
     width: 100%;
 }
@@ -66,9 +67,7 @@ nav {
     transform: translateX(0);
 }
 
-.nav__item {
-    margin-bottom: 20px;
-}
+
 
 .nav__item a {
     text-decoration: none;
@@ -76,6 +75,11 @@ nav {
     font-size: 20px;
     text-transform: uppercase;
 }
+
+/* .subMenu,
+.subMenuTwo {
+    background-color: white;
+} */ /*nie wiem jak zrobić, żeby to był prostokąt,a nie jakieś dziwne coś */
 
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -115,6 +119,7 @@ nav {
         justify-content: space-around;
         align-items: center;
         height: 8vh;
+        line-height: 8vh;
     }
 
 
@@ -122,6 +127,8 @@ nav {
     .nav__item a {
         font-size: 20px;
         color: blue;
+
+
     }
 
     .subMenu {

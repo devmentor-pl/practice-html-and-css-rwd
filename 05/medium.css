@@ -16,7 +16,7 @@ header {
 
 .banner_img {
     position: relative;
-    background-image: url('/chrysanthemum-1140504_1920.jpg');
+    background-image: url('../05/chrysanthemum-1140504_1920.jpg');
     min-height: 50vh;
     max-width: 100%;
     background-position: center;
@@ -121,7 +121,7 @@ header {
 
 .price__imgOne {
 
-    background-image: url('/farmers-market-1209712_1920\ \(1\).jpg');
+    background-image: url('../05/farmers-market-1209712_1920\ \(1\).jpg');
     min-height: 50vh;
     width: 100%;
     background-position: center;
@@ -129,7 +129,7 @@ header {
 }
 
 .price__imgTwo {
-    background-image: url('/flower-4956938_1920.jpg');
+    background-image: url('../05/flower-4956938_1920.jpg');
     min-height: 50vh;
     width: 100%;
     background-position: center;
@@ -137,7 +137,7 @@ header {
 }
 
 .price__imgThree {
-    background-image: url('/flowers-1245820_1920.jpg');
+    background-image: url('../05/flowers-1245820_1920.jpg');
     min-height: 50vh;
     width: 100%;
     background-position: center;
