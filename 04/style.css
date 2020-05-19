@@ -57,8 +57,9 @@ nav {
 .nav__list {
     margin-top: 50px;
     list-style: none;
-    transform: translateX(-300px);
+    transform: translateX(-500px);
     transition: transform .2s;
+    text-align: center;
 }
 
 .hamburger:focus~.nav__list {
@@ -104,6 +105,8 @@ nav {
         display: none;
     }
 
+
+
     .nav__list {
         margin-top: 7px;
         display: flex;
@@ -115,18 +118,34 @@ nav {
     }
 
 
+
     .nav__item a {
         font-size: 20px;
         color: blue;
-        justify-content: center;
+    }
+
+    .subMenu {
+        position: absolute;
+        top: 80px;
+        display: none;
+        list-style: none;
+    }
+
+    .subMenuTwo {
+
+        position: absolute;
+        top: 90px;
+        display: none;
+        list-style: none;
+        padding-top: 15px;
 
     }
 
-    .nav__listTwo .nav__item {
-        display: none
-    }
 
-    .hamburger:focus~.nav__list {
+
+    nav .nav__list .nav__item:hover .subMenu,
+    nav .nav__list .nav__item:hover .subMenuTwo {
         display: block;
+
     }
 }

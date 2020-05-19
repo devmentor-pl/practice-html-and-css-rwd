@@ -1,0 +1,242 @@
+/* lista nie zostaje, nav nie zostaje  jak jade dalej tzn. jest jest znika i znowu jest przu fioletowym zdjeciu */
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    max-width: 100%;
+}
+
+header {
+    max-width: 100%;
+}
+
+.banner_img {
+    position: relative;
+    background-image: url('/chrysanthemum-1140504_1920.jpg');
+    min-height: 50vh;
+    max-width: 100%;
+    background-position: center;
+}
+
+
+.banner__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.banner__logo {
+    display: none;
+    position: absolute;
+    color: white;
+    top: 12px;
+    left: 5px;
+    font-size: 30px;
+    line-height: 7vh;
+}
+
+.banner__menu__hamburger {
+    position: absolute;
+    color: black;
+    top: 5px;
+    left: 10px;
+    font-size: 30px;
+    line-height: 7vh;
+    background-color: transparent;
+    border: none;
+
+}
+
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    transform: translateY(-500px);
+    color: black;
+    list-style: none;
+    align-items: center;
+    margin-left: 60px;
+    margin-right: 10px;
+    transition: transform .3s;
+
+
+}
+
+.banner__menu__item {
+
+    align-items: center;
+    font-size: 18px;
+}
+
+.banner__menu__hamburger:focus~.menu__list {
+    transform: translateY(0);
+}
+
+
+.banner__menu__hamburger:hover {
+    color: violet;
+}
+
+.article__text {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 15px;
+}
+
+.article__textmain {
+    margin-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: lighter;
+    padding: 15px;
+}
+
+.article__aboutus__img {
+    position: relative;
+    margin-top: 15px;
+    background-image: url('https://cdn.pixabay.com/photo/2020/04/22/06/47/hydrangea-5076212_960_720.jpg');
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+}
+
+.price {
+    margin-top: 70px;
+}
+
+.price__item {
+    padding: 25px;
+}
+
+.price__imgOne {
+    margin-top: 20px;
+    background-image: url('/farmers-market-1209712_1920\ \(1\).jpg');
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.price__imgTwo {
+    background-image: url('/flower-4956938_1920.jpg');
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.price__imgThree {
+    background-image: url('/flowers-1245820_1920.jpg');
+    min-height: 50vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.price__name {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.price__amount {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
+
+
+.price__line {
+    height: 2px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: violet;
+    text-align: center;
+}
+
+
+
+.price__text {
+    padding: 15px;
+    text-align: justify;
+    font-size: 15px;
+}
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact__address {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    font-weight: lighter;
+
+}
+
+.contact__socialmedia,
+.contact__addressname {
+    margin-bottom: 20px;
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: lighter;
+}
+
+.contact__items i {
+    color: violet;
+    font-size: 30px;
+    padding-left: 6px;
+    margin-top: 10px;
+}
+
+.contact__addressname {
+    font-weight: lighter;
+}
+
+.contact__adressitem {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: lightcyan;
+}
+
+.footer__copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+}
