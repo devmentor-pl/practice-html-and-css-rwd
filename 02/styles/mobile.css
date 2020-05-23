@@ -1,0 +1,16 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "a-top"
+    "a-content"
+    "a-bottom"
+}
+header {
+  grid-area: a-top;
+}
+section {
+  grid-area: a-content;
+}
+main {
+  grid-area: a-botton;
+}

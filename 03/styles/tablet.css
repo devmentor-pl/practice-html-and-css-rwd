@@ -1,0 +1,11 @@
+/* tablet version */
+
+.container {
+  background-color: seagreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+      "a-picture a-text"
+      "a-video a-text";
+}

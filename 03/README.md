@@ -29,7 +29,7 @@ W tej wersji układ strony ma być zgodny z poniższą strukturą:
 - `P` `T`
 - `V` `T`
 
-Kolumna z zasobami tj. `P` oraz `V` nie powinna być mniejsza niż 200px oraz więskza niż 50% dostępnej przestrzeni.
+Kolumna z zasobami tj. `P` oraz `V` nie powinna być mniejsza niż 200px oraz większa niż 50% dostępnej przestrzeni.
 
 ## Desktop
 
@@ -38,7 +38,7 @@ W tej wersji układ strony ma być zgodny z poniższą strukturą:
 - `P` `V`
 - `T` `T`
 
-Zawartość strony powinna mieć maksymalną szerokość 1400px. Przekraczając ta wartość po bokach pownna pojawiać się wolna przestzeń.
+Zawartość strony powinna mieć maksymalną szerokość 1400px. Przekraczając ta wartość po bokach powinna pojawiać się wolna przestrzeń.
 
 
 # Zasoby

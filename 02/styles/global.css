@@ -7,20 +7,47 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
 }
 
 .a {
-    border-color: #ffffba
+    border-color: red;
+    grid-area: a-header;
+    /* section --> header */
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: a-section;
+    /* section --> main */
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-main;
+    /* section --> section */
+}
+
+/* media */
+
+body {
+    display: grid;
+    grid-template-areas:
+      "a-header"
+      "a-section"
+      "a-main";
+    grid-template-columns: 50% 50%;
+}
+@media (min-width: 601px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "a-header a-header"
+      "a-main a-section";
+    grid-template-columns: 50% 50%;
+    max-width: 1200px;
+  }
 }

@@ -1,0 +1,6 @@
+body {
+  display: grid;
+  grid-template-columns:
+  "a-top"
+  "a-content a-bottom"
+}
