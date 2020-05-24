@@ -3,6 +3,7 @@
 .header__container {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   height: 8vh;
 }
@@ -12,8 +13,28 @@
 .header__nav {
   position: absolute;
   right: 0;
+  background: none;
 }
 
+/* hamburger menu */
+.header__menu {
+  display: none;
+}
+.nav__hamburger {
+  height: 100%;
+  margin-right: 30px;
+}
+
+/* hide menu and input  */
+header input {
+  display: none;
+}
+header ul {
+  display: none;
+}
+header input:checked + ul {
+  display: block;
+}
 
 /***** MAIN SECTION *****/
 
@@ -39,20 +60,22 @@
   grid-template-rows: 1fr 1fr 1fr;
   grid-row-gap: 10px;
   padding: 0;
-  margin: auto 0;
 }
 .comments__article {
   margin: 0;
   height: auto;
-  /* height: 100px;
-} */
+}
 
 /***** FOOTER *****/
+
 .footer__container {
   height: 8vh;
+  display: flex;
+  align-items: center;
 }
+
 .footer__credits {
   width: 40%;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto
 }

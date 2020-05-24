@@ -1,3 +1,46 @@
-body {
+.header__container, .content__container, .comments__container, .footer__container {
+  box-sizing: border-box;
+}
+.header__container {
+  justify-content: space-between;
+}
+.header__logo {
+  max-width: 200px;
+}
+.header__nav {
+  width: 45vw;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* navbar as hamburger is off */
+header label {
   display: none;
+}
+
+/***** MAIN SECTION *****/
+
+/* content section */
+.content__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  padding: 10px 0;
+}
+
+/* comments section */
+.comments__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  padding: 10px;
 }

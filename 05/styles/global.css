@@ -1,8 +1,9 @@
 /* general settings for margins, borders */
 .row, .container, .cell {
+  font-family: Arial, Helvetica, serif;
   border: 5px solid;
   margin: 0;
-  padding: 5px;
+  padding: 0;
 }
 
 .row {
@@ -12,11 +13,11 @@
 .container {
   border-color: navy;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 
 .cell {
-  border-color: orange;
+  border: none;
   background-color: mistyrose;
   height: 40px;
 }
