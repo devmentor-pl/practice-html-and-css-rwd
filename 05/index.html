@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/mobile.css">
   <link rel="stylesheet" media="(min-width: 801px)" href="./styles/desktop.css">
-  <title>Cwiczenie 5 </title>
+  <title>Cwiczenie 5 i pol </title>
 </head>
 
 
@@ -20,7 +20,17 @@
   <header class="header row">
     <div class="header__container container">
       <h1 class="header__logo cell"></h1>
-      <nav class="header__nav cell"></nav>
+      <nav class="header__nav cell">
+
+        <!-- navbar links -->
+        <label for="menu-switcher"><img class="nav__hamburger" src="https://image.flaticon.com/icons/png/512/129/129255.png" alt="hamburger icon"></label>
+        <input id="menu-switcher" type="checkbox">
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -46,7 +56,6 @@
   <footer class="footer row">
     <div class="footer__container container">
       <section class="footer__credits cell">
-
       </section>
     </div>
   </footer>
