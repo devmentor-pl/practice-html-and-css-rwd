@@ -1,0 +1,58 @@
+/***** HEADER *****/
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 8vh;
+}
+.header__logo {
+  width: 40%;
+}
+.header__nav {
+  position: absolute;
+  right: 0;
+}
+
+
+/***** MAIN SECTION *****/
+
+/* content section */
+
+.content__container {
+  height: 42vh;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
+}
+.content__article {
+  margin: 0;
+  height: auto;
+}
+
+/* comments section */
+.comments__container {
+  height: 42vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 10px;
+  padding: 0;
+  margin: auto 0;
+}
+.comments__article {
+  margin: 0;
+  height: auto;
+  /* height: 100px;
+} */
+
+/***** FOOTER *****/
+.footer__container {
+  height: 8vh;
+}
+.footer__credits {
+  width: 40%;
+  justify-content: center;
+  margin: 0 auto;
+}

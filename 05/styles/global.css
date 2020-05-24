@@ -1,0 +1,22 @@
+/* general settings for margins, borders */
+.row, .container, .cell {
+  border: 5px solid;
+  margin: 0;
+  padding: 5px;
+}
+
+.row {
+  border-color: seagreen;
+}
+
+.container {
+  border-color: navy;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cell {
+  border-color: orange;
+  background-color: mistyrose;
+  height: 40px;
+}

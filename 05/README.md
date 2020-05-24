@@ -4,8 +4,8 @@
 
 &nbsp;
 
-Najwyższy czas zakodować układ strony, który będzie posiadał widok *mobilny* oraz *desktopowy*. 
-Oczywiście całość kodujemy z duchem *mobile first*, a punktem granicznym (ang. *breakpoint*) będzie 800px. 
+Najwyższy czas zakodować układ strony, który będzie posiadał widok *mobilny* oraz *desktopowy*.
+Oczywiście całość kodujemy z duchem *mobile first*, a punktem granicznym (ang. *breakpoint*) będzie 800px.
 
 &nbsp;
 
@@ -50,7 +50,7 @@ Układ identyczny jak w przypadku [zadania 5 z *HTML i CSS: Podstawy*](https://g
 
 # Zadanie dodatkowe
 
-Teraz możesz spróbować przebudować układ z [*HTML i CSS: podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Zrób to w taki sposób, aby dodać do wszcześniej utworzonego widoku, widok mobilny. Sam ocenisz, który sposób tj. *mobile first* czy *desktop first* jest wygodniejszy.
+Teraz możesz spróbować przebudować układ z [*HTML i CSS: podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Zrób to w taki sposób, aby dodać do wcześniej utworzonego widoku, widok mobilny. Sam ocenisz, który sposób tj. *mobile first* czy *desktop first* jest wygodniejszy.
 
 
 
