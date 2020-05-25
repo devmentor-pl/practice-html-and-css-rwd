@@ -1,0 +1,81 @@
+/* hamburger icon */
+.menu__icon {
+  width: 40px;
+  height: 35px;
+  border: none;
+  border-top: 5px solid salmon;
+  background: transparent;
+  position: relative;
+  transition: .2s transform linear;
+}
+.menu__icon::before, .menu__icon::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid salmon;
+  transform: translateY(10px);
+  position: absolute;
+}
+.menu__icon::after {
+  transform: translateY(25px);
+  transition: .2s transform linear;
+}
+.menu__icon:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+.menu__icon:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+/* jak odkomentuje te opcje zeby animowac HAMBURGERA to nie wyswietlaja mi sie podmenu, nie wiem jak to zrobic */
+/* nav ul {
+  display: none;
+} */
+
+button:focus + ul {
+   display: block;
+}
+/* hide checkbox */
+nav input {
+  display: none;
+}
+
+
+/* magic here */
+
+.nav__container ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* co lepsze? */ /* ??? nav ul li CZY .nav__container li  ??? */
+.nav__container ul li {
+  padding: 15px;
+  position: relative;
+  background-color: #a5f5d8;
+  width: 200px;
+  border-top: 2px solid rgb(196, 87, 201);
+}
+
+.nav__container ul ul {
+  transition: all 0.2s;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  /* jest jakis bardziej responsywny sposob na ustawienie tych sub-menu? */
+  left: 82%;
+  top: -4%;
+}
+.nav__container ul li:hover {
+  background-color: #a9e8c4;
+}
+.nav__container ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.nav__container a {
+  color: rgb(196, 87, 201);
+  text-decoration: none;
+}

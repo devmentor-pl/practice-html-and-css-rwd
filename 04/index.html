@@ -1,32 +1,63 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/mobile1.css">
+  <link rel="stylesheet" media="(min-width: 699px)" href="./styles/desktop.css">
+  <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+</head>
+
+<body>
+  <!-- block wrapper -->
+  <div class="nav__container">
+  <nav>
+    <button class="menu__icon" type="button" name="menu__icon"></button>
+    <ul class="main__menu">
+      <li><a href="#">start</a>
+      </li>
+      <li><a href="#">about us</a>
+      </li>
+      <li><a href="#">about someone else</a>
+      </li>
+
+      <!-- oferta -->
+
+      <li><a href="#">oferta</a>
+        <ul class="sub__menu">
+          <li><a href="">suboferta</a>
+            <ul class="subsub__menu">
+              <li><a href="#">subsub oferta 1</a></li>
+              <li><a href="#">subsub oferta 2</a></li>
+            </ul>
+          <li><a href="">suboferta</a>
+            <ul class="subsub__menu">
+              <li><a href="#">subsub oferta 1</a></li>
+              <li><a href="#">subsub oferta 2</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+
+      <!-- kontakt -->
+
+      <li><a href="#">kontakt</a>
+        <ul class="sub__menu">
+          <li><a href="">pozycjonowanie seo</a>
+            <ul class="subsub__menu">
+              <li><a href="#">strony www</a></li>
+              <li><a href="#">strony www</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+</div>
+    </ul>
+  </nav>
 </body>
+
 </html>

@@ -1,0 +1,39 @@
+/* hide the hamburger */
+.menu__icon {
+  display: none;
+}
+.nav__container {
+  max-width: 70%;
+}
+.main__menu {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav__container ul li {
+  border: none;
+}
+.nav__container a {
+  text-align: center;
+}
+.nav__container ul li {
+  padding: 10px;
+}
+.nav__container ul ul {
+  top: 100%;
+  left: -34%;
+}
+
+/* tutaj nie mogę wycyrklować właściwości żeby dzieci leżały równo z rodzicami.
+a i tak myślę nie tędy droga że ustawiając to procentowo.
+w związku z tym myślę o jakichś relatywnych jednostakch, ale nie mogę nic znaleść.
+spędziłem już nad tym prawie dobę więc chyba lepiej będzie jak zapytam ciebie żeby nie tracić więcej czasu  */
+.sub__menu li>.subsub__menu {
+  position: absolute;
+  top: 0;
+  left: 82%;
+
+}

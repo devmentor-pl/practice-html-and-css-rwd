@@ -1,0 +1,128 @@
+nav ul {
+  margin: 0;
+  padding: 0;
+  /* to prevent the text from wrapping */
+  white-space: nowrap;
+  /* list-style-type: none; */
+}
+nav a {
+  margin: 0;
+  padding: 5px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  /* border-radius: 10px; */
+}
+nav .main__menu>li {
+  /* margin: 10px; */
+  padding: 0;
+  background-color: pink;
+  width: 250px;
+}
+nav li:hover>a {
+  background-color: white;
+  color: violet;
+}
+
+/* submenu */
+nav .sub__menu {
+  /* display: block; */
+  position: relative;
+  left: 200px;
+  top: 0;
+  border: 2px solid seagreen;
+  p0+
+}
+nav .subsub__menu {
+  border: 2px solid orange;
+  position: relative;
+  left: 200px;
+}
+
+/* show the menu on hover */
+nav .main__menu>li:hover .sub__menu, nav .sub__menu>li:hover .subsub__menu {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.nav__container {
+  border: 2px solid lightsalmon;
+  padding: 10px;
+}
+
+/* hamburger icon */
+.menu__icon {
+  width: 40px;
+  height: 35px;
+  border: none;
+  border-top: 5px solid salmon;
+  background: transparent;
+  position: relative;
+  transition: .2s transform linear;
+}
+.menu__icon::before, .menu__icon::after {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid salmon;
+  transform: translateY(10px);
+  position: absolute;
+}
+.menu__icon::after {
+  transform: translateY(25px);
+  transition: .2s transform linear;
+}
+.menu__icon:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+.menu__icon:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+/* nav ul {
+  display: none;
+} */
+
+button:focus + ul {
+   display: block;
+}
+/* hide checkbox */
+nav input {
+  display: none;
+}
