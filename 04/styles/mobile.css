@@ -1,90 +1,3 @@
-nav ul {
-  margin: 0;
-  padding: 0;
-  /* to prevent the text from wrapping */
-  white-space: nowrap;
-  /* list-style-type: none; */
-}
-nav a {
-  margin: 0;
-  padding: 5px;
-  text-align: left;
-  text-decoration: none;
-  display: block;
-  position: relative;
-  /* border-radius: 10px; */
-}
-nav .main__menu>li {
-  /* margin: 10px; */
-  padding: 0;
-  background-color: pink;
-  width: 250px;
-}
-nav li:hover>a {
-  background-color: white;
-  color: violet;
-}
-
-/* submenu */
-nav .sub__menu {
-  /* display: block; */
-  position: relative;
-  left: 200px;
-  top: 0;
-  border: 2px solid seagreen;
-  p0+
-}
-nav .subsub__menu {
-  border: 2px solid orange;
-  position: relative;
-  left: 200px;
-}
-
-/* show the menu on hover */
-nav .main__menu>li:hover .sub__menu, nav .sub__menu>li:hover .subsub__menu {
-  display: block;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.nav__container {
-  border: 2px solid lightsalmon;
-  padding: 10px;
-}
-
 /* hamburger icon */
 .menu__icon {
   width: 40px;
@@ -115,14 +28,56 @@ nav .main__menu>li:hover .sub__menu, nav .sub__menu>li:hover .subsub__menu {
 .menu__icon:focus::after {
   transform: rotate(-90deg) translateX(-10px);
 }
-/* nav ul {
-  display: none;
-} */
-
-button:focus + ul {
-   display: block;
+.menu__icon {
+  display: block;
 }
-/* hide checkbox */
-nav input {
+#menu__switcher {
   display: none;
+}
+
+/* hide checkbox */
+nav input:checked + ul {
+  display: block;
+}
+
+
+/* magic here */
+
+.nav__container ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+nav > ul {
+  display: none
+}
+
+/* co lepsze? */ /* ??? nav ul li CZY .nav__container li  ??? */
+.nav__container ul li {
+  padding: 15px;
+  position: relative;
+  background-color: #a5f5d8;
+  width: 200px;
+  border-top: 2px solid rgb(196, 87, 201);
+}
+
+.nav__container ul ul {
+  transition: all 0.2s;
+  opacity: 0;
+  position: absolute;
+  visibility: hidden;
+  /* jest jakis bardziej responsywny sposob na ustawienie tych sub-menu? */
+  left: 100%;
+  top: 0;
+}
+.nav__container ul li:hover {
+  background-color: #a9e8c4;
+}
+.nav__container ul li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+}
+.nav__container a {
+  color: rgb(196, 87, 201);
+  text-decoration: none;
 }

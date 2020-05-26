@@ -3,6 +3,7 @@
   display: none;
 }
 .nav__container {
+  display: flex;
   max-width: 70%;
 }
 .main__menu {
@@ -19,12 +20,9 @@
 .nav__container a {
   text-align: center;
 }
-.nav__container ul li {
-  padding: 10px;
-}
 .nav__container ul ul {
   top: 100%;
-  left: -34%;
+  left: 0;
 }
 
 /* tutaj nie mogę wycyrklować właściwości żeby dzieci leżały równo z rodzicami.
@@ -34,6 +32,6 @@ spędziłem już nad tym prawie dobę więc chyba lepiej będzie jak zapytam cie
 .sub__menu li>.subsub__menu {
   position: absolute;
   top: 0;
-  left: 82%;
+  left: 100%;
 
 }
