@@ -12,7 +12,7 @@ Przeczytaj dokładnie treść, którą zamieszczam poniżej. Następnie zapoznaj
 
 Zaznacz sobie na każdym widoku, które elementy to oddzielne sekcje strony. Zwróć uwagę jak się one zmianiają podczas przechodzenia z jednego widoku do drugiego. To ułatwi Ci budowanie układu.
 
-Zacznij od widoku na talefon. Możesz użyć dodatku [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=pl) do przeglądarki Chrome, aby ułatwić sobie kodowanie. Pamiętaj, że nie warto odzwierciedlać widoku 1:1 co do piksela. Szkoda w tym momencie na to czasu. Masz zaznajomić się z technikami RWD i przy okazji utrwalić wiedzę z HTML-a i CSS-a.
+Zacznij od widoku na telefon. Możesz użyć dodatku [PerfectPixel](https://chrome.google.com/webstore/detail/perfectpixel-by-welldonec/dkaagdgjmgdmbnecmcefdhjekcoceebi?hl=pl) do przeglądarki Chrome, aby ułatwić sobie kodowanie. Pamiętaj, że nie warto odzwierciedlać widoku 1:1 co do piksela. Masz zaznajomić się z technikami RWD i przy okazji utrwalić wiedzę z HTML-a i CSS-a. Widok ma być zbliżony z zachowaniem koncepcji i estetyki z odpowiednim dopasowaniem do najważniejszych rozdzielczości. Nie ma być identyczny, a w zasadzie nie może być ponieważ na każdym urządzeniu z innym rozdzielczością będzie się prezetntował trochę inaczje. 
 
 Jeśli będziesz korzystać z PerfectPixel-a pamiętaj również o ustawieniu odpowiedniej skali dla warstwy oraz ustawieniu odpowiedniej szerokości dla okna przeglądarki.
 
