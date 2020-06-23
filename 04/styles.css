@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    margin: 20px;
+    background-color: white;
+}
+
+.menu label,
+.menu input {
+    display: none;
+}
+
+nav ul {
+    list-style: none;
+    white-space: nowrap;
+}
+
+nav .menu-list>li {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+nav a {
+    margin: 0;
+    text-align: left;
+    padding: 20px;
+    background: white;
+    color: #009AE1;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    border-top: 2px solid transparent;
+}
+
+nav li:hover>a {
+    border-top: 2px solid #009AE1;
+}
+
+nav .submenu-list,
+.super-submenu-list {
+    position: absolute;
+    display: none;
+}
+
+nav .menu-list>li:hover .submenu-list,
+.submenu-list>li:hover>.super-submenu-list {
+    display: block;
+}
+
+.submenu-list li {
+    position: relative;
+    width: 200px;
+    border-top: 1px solid #575f6a;
+    border-bottom: 1px solid #575f6a;
+}
+
+.submenu-list li>a {
+    background: #333333;
+    color: white;
+}
+
+.submenu-list li:hover>a {
+    border: none;
+}
+
+nav .super-submenu-list {
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+}
+
+.arrow-down {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #009AE1;
+    background-color: transparent;
+}
+
+.arrow-right {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid white;
+    background-color: transparent;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        background: transparent;
+    }
+    .menu label {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: block;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu input:checked+ul {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    nav .menu-list>li {
+        display: block;
+        margin: 5px;
+        padding: 5px 10px;
+        text-align: center;
+        border: 1px solid black;
+    }
+    nav a {
+        background: transparent;
+        text-align: center;
+    }
+    nav li:hover>a {
+        border: none;
+    }
+    nav .submenu-list {
+        z-index: 10;
+    }
+}
