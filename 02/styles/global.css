@@ -4,23 +4,46 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
+.a,
+.b,
+.c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
 
 .a {
+    grid-area: top;
     border-color: #ffffba
 }
 
 .b {
+    grid-area: middle;
     border-color: #ffdfba;
 }
 
 .c {
+    grid-area: bottom;
     border-color: #baffc9;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-areas: "top" "top" "middle" "bottom";
+        display: grid;
+    }
+    .a {
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .b,
+    .c {
+        grid-row: 2;
+    }
+    .c {
+        grid-column: 2
+    }
 }
