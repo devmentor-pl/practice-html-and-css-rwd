@@ -45,9 +45,9 @@ Zawartość strony powinna mieć maksymalną szerokość 1400px. Przekraczając 
 
 ## Obraz
 
-Obraz, który wybierzesz do umieszczenia na stronie powinien być umieszczony przy pomocy znacznika `<picture>`, aby móc serwować różne rozmiary (a nawet formaty) w celu lepszej optymalizacji szybkości wczytywania strony.
+Obraz, który wybierzesz do umieszczenia na stronie powinien być osadzony przy pomocy znacznika `<picture>`, aby móc serwować różne rozmiary (a nawet formaty) w celu lepszej optymalizacji szybkości wczytywania strony.
 
-Obraz możesz pobrać z ramowego serwisu [pixabay.com](https://pixabay.com/pl/), natomiast konwersji do odpowiednich rozdzielczości i formatów możesz użyć [iloveimg.com](https://www.iloveimg.com/).
+Obraz możesz pobrać z darmowego serwisu [pixabay.com](https://pixabay.com/pl/), natomiast konwersji do odpowiednich rozdzielczości i formatów możesz użyć [iloveimg.com](https://www.iloveimg.com/).
 
 ## Wideo
 

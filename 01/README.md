@@ -8,7 +8,7 @@ Obecnie tekst, który jest wprowadzony do pliku `index.html`, prezentuje się w 
 
 ![](assets/before.png)
 
-Nie wygląda to profesjonalnie. Przestrzeń miedzy "trójkątem", a tekstem należy wypełnić tekstem w taki sposób, aby przy zmianie rozmiaru okna przeglądarki tekst cały czas opływał "trójkąt".
+Nie wygląda to profesjonalnie. Przestrzeń miedzy "trójkątem", a tekstem należy wypełnić tekstem w taki sposób, aby przy zmianie rozmiaru okna przeglądarki, tekst cały czas opływał "trójkąt".
 
 ![](assets/after.png)
 

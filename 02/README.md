@@ -4,7 +4,7 @@
 
 &nbsp;
 
-Twoim zdaniem jest ułożenie elemnetów zgodnie z porządkiem:
+Twoim zdaniem jest ułożenie elementów zgodnie z porządkiem:
 - `A`
 - `B`
 - `C`
