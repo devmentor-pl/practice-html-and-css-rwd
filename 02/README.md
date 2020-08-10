@@ -4,7 +4,7 @@
 
 &nbsp;
 
-Twoim zadaniem jest ułożenie elementów zgodnie z porządkiem:
+Twoim zadaniem jest ułożenie elementów zgodnie z porządkiem, stosując się do zasady **mobile first**:
 - `A`
 - `B`
 - `C`
