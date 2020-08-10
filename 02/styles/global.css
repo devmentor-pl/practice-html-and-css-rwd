@@ -7,20 +7,27 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
+    height: 50vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* Zastanawiam się co lepsze:
+a) grid-area w tym pliku = mniej kodu, lecz brak nawiązania do media queries,
+b) grid-area w pliku media.css = więcej kodu (ponowne wywołanie po klasach), lecz większy porządek */
 .a {
-    border-color: #ffffba
+    border-color: rgb(241, 126, 222);
+    grid-area: a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c;
 }
