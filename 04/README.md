@@ -10,8 +10,8 @@ Będziemy mieli 2 wersje wyglądu menu:
 
 - **mobilne**: 
     - elementy jeden pod drugim na całą szerokość
-    - widoczne wszystkie dopiero po kliknięciu w ikonę "[hamburger-a](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScript-u)
-    - im bardziej zagnieżdżone elementy tym bardziej odsunięte od lewej krawędzi
+    - widoczne wszystkie dopiero po kliknięciu w ikonę "[hamburgera](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScriptu)
+    - im bardziej zagnieżdżone elementy, tym bardziej odsunięte od lewej krawędzi
 - **normalne**: 
     - elementy wyświetlane obok siebie w poziomie
     - tylko pierwszy poziom widoczny od razu
