@@ -5,18 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" media='(max-witdh: 599px)' href="./styles/mobile.css">
-    <link rel="stylesheet" media='(min-witdh: 600px)' href="./styles/tablet.css">
-    <link rel="stylesheet" media='(min-witdh: 1200px)' href="./styles/desktop.css">
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="styles/desktop.css">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
 
 <body>
 
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <header class="p">
+        <!-- Czytnik ekranu skorzysta z alt w img nawet przy załadowaniu z innego source, tak? -->
+        <!-- Ten fragment będzie wyglądał lepiej w przyszłości :) -->
+        <picture>
+            <source media="(max-width: 599px)" srcset="img/bird.webp" type="image/webp">
+            <source media="(min-width: 1200px)" srcset="img/bird_desk.jpg" type="image/webp">
+            <img src="img/bird.webp" alt="niebieski ptak na gałęzi">
+        </picture>
+    </header>
+    <main class="t">
+        <h1>A short article</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem quod, perspiciatis, a quaerat, nihil
+            nulla eos aut dolore repellendus adipisci veniam. Vel distinctio perspiciatis ut, atque, sed quos ea odit
+            deserunt iusto maxime ad similique nostrum? Quaerat ipsum amet explicabo et a facere molestias, minima
+            laborum? Necessitatibus tempore, quae odit sequi maiores consequatur voluptates pariatur sed veniam quasi
+            quidem eligendi magni accusamus possimus repellat beatae quas nihil a? Amet, provident dicta. Quam expedita
+            beatae alias consequuntur blanditiis consectetur natus excepturi praesentium delectus, vitae officia magni
+            dolores! Eveniet sequi corporis iusto libero quisquam quam eos! Eveniet voluptatum nostrum praesentium
+            magnam tenetur.</p>
+    </main>
+    <aside class="v"><iframe src="https://www.youtube.com/embed/aM-BSUIyFME" frameborder="0"
+            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
 
 </body>
 
