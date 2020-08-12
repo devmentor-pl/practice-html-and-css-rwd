@@ -1,0 +1,42 @@
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+nav > ul {
+    display: flex
+}
+
+nav > ul > li {
+    border: 1px solid black;
+    margin: auto 5px;
+}
+
+nav > label {
+    display: none;
+}
+
+header > .container > .item:first-child, main > .container > .item {
+    margin: 10px 0;
+}
+
+main > .container > .item:first-child {
+    margin-right: 5px;
+}
+
+main > .container, body > section > .container {
+    display: flex;
+}
+
+body > section > .container > .item {
+    margin: 10px;
+}
+
+body > section > .container > .item:nth-child(2) {
+    margin: 10px 5px;
+}
+
+footer > .container > .item {
+    margin: 10px auto;
+}

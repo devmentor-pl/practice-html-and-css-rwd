@@ -1,0 +1,56 @@
+input {
+    display: none;
+}
+
+nav {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+nav > ul {
+    position: absolute;
+    width: 100%;
+    margin-top: 50px;
+    display: none;
+}
+
+input:checked + ul {
+    display: block;
+}
+
+li {
+    border: 3px solid orange;
+    margin: 5px 0;
+}
+
+nav > ul > li:nth-child(2) > ul {
+    margin-left: 30px
+}
+
+nav > label {
+    height: 35px;
+    width: 40px;
+    border-top: 5px solid black;
+}
+
+nav > label::after, label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+nav > label::after {
+    transform: translateY(10px);
+}
+
+nav > label::before {
+    transform: translateY(25px);
+}

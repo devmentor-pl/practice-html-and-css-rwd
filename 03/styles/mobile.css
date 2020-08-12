@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "picture-item"
+        "text-item"
+        "video-item";
+}
+
+.p {
+    grid-area: picture-item;
+}
+
+.t {
+    grid-area: text-item;
+}
+
+.v {
+    grid-area: video-item;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%; 
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+iframe {
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

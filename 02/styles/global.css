@@ -14,13 +14,44 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-item;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b-item;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c-item;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "a-item"
+        "b-item"
+        "c-item";
+    grid-template-rows: 
+        50vh
+        50vh
+        50vh;
+}
+
+@media (min-width: 601px) {
+    body {
+        grid-template-areas: 
+            ". a-item a-item ."
+            ". c-item b-item .";
+        grid-template-rows: 
+            50vh
+            50vh;
+        grid-template-columns: 
+            auto    
+            minmax(auto, calc(1200px * 0.5)) 
+            minmax(auto, calc(1200px * 0.5))
+            auto;
+    }
 }

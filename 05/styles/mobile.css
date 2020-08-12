@@ -1,0 +1,67 @@
+nav > input {
+    display: none;
+}
+
+header > .container {
+    position: relative;
+}
+
+nav > label {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    height: 35px;
+    width: 40px;
+    border-top: 5px solid black;
+}
+
+nav > ul {
+    display: none;
+    text-align: center;
+}
+
+nav > input:checked + ul {
+    display: block;
+}
+
+main > .container > .item:first-child {
+    margin-bottom: 5px;
+}
+
+main > .container > .item {
+    width: 100%;
+    height: 40vh;
+}
+
+section > .container > .item:nth-child(2) {
+    margin: 5px auto;
+}
+
+section > .container > .item{
+    width: 100%;
+    height: 30vh;
+}
+
+header > .container > .item:first-child, footer > .container > .item {
+    width: 30%;
+    height: 5vh;
+    margin: auto;
+}
+
+nav > label::after, nav > label::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+nav > label::after {
+    transform: translateY(10px);
+}
+
+nav > label::before {
+    transform: translateY(25px);
+}
+

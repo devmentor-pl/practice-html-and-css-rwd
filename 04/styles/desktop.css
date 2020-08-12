@@ -1,0 +1,21 @@
+label, input {
+    display: none;
+}
+
+nav > ul  {
+    display: flex;
+    margin-top: 0;
+}
+
+nav > ul > li:nth-child(2) > ul {
+    margin-left: 0;
+    display: none;
+}
+
+li {
+    margin: 5px;
+}
+
+nav > ul > li:nth-child(2):hover > ul {
+    display: block;
+}
