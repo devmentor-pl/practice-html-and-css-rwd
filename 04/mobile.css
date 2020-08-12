@@ -1,0 +1,94 @@
+/* STYLE DLA TOP-BAR */
+.container {
+  padding: 40px 30px;
+}
+
+/* STYLE DLA HAMBURGERA */
+label {
+  background: #f4f4f4;
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  width: 30px;
+}
+label::before,
+label::after {
+  background: #f4f4f4;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  transition: all 300ms ease-in-out;
+  width: 20px;
+}
+label::before {
+  bottom: 10px;
+}
+label::after {
+  top: 11px;
+}
+
+/* STYLE OGÓLNE DLA MENU 1, 2 I 3 STOPNIA */
+li {
+  margin-bottom: 30px;
+}
+
+/* STYLE DLA MENU 1 STOPNIA */
+ul.menu {
+  background: rgb(114, 84, 105);
+  left: 0;
+  opacity: 0;
+  padding: 70px 50px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 0;
+  transition: opacity 200ms ease-in-out;
+  visibility: hidden;
+  width: 100%;
+}
+
+ul.menu > *:last-child {
+  margin-bottom: 0;
+}
+
+ul.menu > li {
+  font-size: 1.8rem;
+}
+
+/* STYLE DLA MENU 2 STOPNIA */
+ul.menu-second {
+  padding: 20px 0 0 20px;
+  text-transform: lowercase;
+}
+
+ul.menu-second > li {
+  border-left: 4px solid #f4f4f4;
+  font-size: 1.5rem;
+  padding-left: 10px;
+}
+
+/* STYLE DLA MENU 3 STOPNIA */
+.menu-third {
+  list-style: square;
+  margin: 20px 0 0 40px;
+}
+
+.menu-third li {
+  margin-bottom: 10px;
+}
+
+/* POJAWIENIE SIĘ MENU PO KLIKNIĘCIU NA HAMBURGERA */
+.input-first:checked ~ ul.menu {
+opacity: 1;
+visibility: visible;
+}
+
+/* ANIMACJA HAMBURGERA */
+.input-first:checked + label::before {
+  bottom: 5px;
+  transform: rotate(385deg);
+}
+.input-first:checked + label::after {
+  top: 5px;
+  transform: rotate(-385deg);
+}

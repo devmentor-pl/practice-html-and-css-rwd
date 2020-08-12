@@ -1,0 +1,70 @@
+/* STYLE DLA TOP-BAR */
+header {
+  padding: 0 8vw;
+}
+
+.container {
+  padding: 0;
+}
+
+label {
+  display: none;
+}
+
+/* STYL DLA MENU POZIOMEGO - MENU 1 STOPNIA*/
+ul.menu {
+  background: red;
+  visibility: visible;
+  background: transparent;
+  font-size: 1.8rem;
+  opacity: 1;
+  padding: 0;
+  position: initial;
+  text-transform: uppercase;
+}
+
+ul.menu > li {
+  display: inline-block;
+  font-size: 1.6rem;
+  margin: 0 0 0 5vw;
+  padding: 35px 0;
+}
+
+/* DROP-DOWN MENU - MENU 2 STOPNIA*/
+li.open-item {
+  position: relative;
+}
+
+.open-item .input-second {
+  /* -----------Dlaczego nie mogę tego pozycjonować? Checkbox jest krzywo :O */
+  cursor: pointer;
+  display: block;
+  left: 50;
+  opacity: 0;
+  position: absolute;
+  top: 100;
+  transform: scaleX(9) scaleY(5);
+}
+
+ul li.open-item > ul.menu-second {
+  background: rgb(114, 84, 105);
+  left: -50%;
+  opacity: 0;
+  padding: 20px 0 0 0;
+  position: absolute;
+  top: 100%;
+  transition: opacity 200ms ease-in-out;
+  visibility: hidden;
+}
+
+ul.menu-second > li {
+  /* -------Dlaczego <li> z menu-third również otrzymały margines, skoro użyłam selektora bezpośrednich dzieci? */
+  margin-left: 20px;
+  padding: 0 20px;
+}
+
+/* OTWARCIE MENU 2 STOPNIA */
+.input-second:checked ~ .menu-second {
+  opacity: 1;
+  visibility: visible;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./04/reset.css">
+    <link rel="stylesheet" href="./04/global.css">
+    <link rel="stylesheet" href="./04/mobile.css">
+    <link media="screen and (min-width: 720px)" rel="stylesheet" href="./04/tablet.css">
+    <link media="screen and (min-width: 1367px)" rel="stylesheet" href="./04/desktop.css">
+    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><a href="index.html">ResMenu</a></h1>
+            <nav>
+                <input id="input" class="input-first" type="checkbox">
+                <label for="input"></label>
+
+                <ul class="menu">
+                    <li>
+                        <a href="#">start</a>
+                    </li>
+                    <li class="open-item">
+                        <input class="input-second" type="checkbox">
+                        <a href="#">oferta</a>
+                        <!-- ----------- Z jakiego powodu mieliśmy tutaj 2x <ul>, mimo że mają po jednej li? ------------ -->
+                        <ul class="menu-second">
+                            <li><a href="">strony internetowe</a></li>
+
+                            <li class="open-item-second"><a href="">pozycjonowanie stron www</a>
+                                <ul class="menu-third">
+                                    <li><a href="#">copywriting</a></li>
+                                    <li><a href="#">SEO</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+</body>
+
+</html>
