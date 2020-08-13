@@ -13,14 +13,11 @@ label {
 
 /* STYL DLA MENU POZIOMEGO - MENU 1 STOPNIA*/
 ul.menu {
-  background: red;
   visibility: visible;
   background: transparent;
-  font-size: 1.8rem;
   opacity: 1;
   padding: 0;
   position: initial;
-  text-transform: uppercase;
 }
 
 ul.menu > li {
