@@ -15,13 +15,14 @@
 <body>
 
     <header class="p">
-        <!-- Czytnik ekranu skorzysta z alt w img nawet przy załadowaniu z innego source, tak? -->
-        <!-- Ten fragment będzie wyglądał lepiej w przyszłości :) -->
         <picture>
-            <source media="(max-width: 599px)" srcset="img/bird.webp" type="image/webp">
-            <source media="(min-width: 1200px)" srcset="img/bird_desk.jpg" type="image/webp">
-            <img src="img/bird.webp" alt="niebieski ptak na gałęzi">
-        </picture>
+            <source media="(max-width: 350px)" srcset="img/star-350w.jpg, img/star-350w@2x.jpg 2x" type="image/jpeg">
+            <!-- Testowe zdjęcie ptaka - niewymiarowe. Obrazu z <source> chyba nie da się oddzielnie ostylować póki nie zastosujemy media queries? -->
+            <source media="(max-width: 599px)" srcset="img/bird-600w.webp" type="image/webp">
+            <source media="(max-width: 599px)" srcset="img/star-600w.jpg, img/star-600w@2x.jpg 2x" type="image/jpeg">
+            <source media="(max-width: 1199px)" srcset="img/star-600w@2x.jpg" type="image/jpeg">
+            <source media="(min-width: 1200px)" srcset="img/star-2400w.jpg, img/star-2400w@2x.jpg 2x" type="image/jpeg">
+            <img src="img/star-600w.jpg" alt="zdjęcie nawiązujące do serii Star Trek"></picture>
     </header>
     <main class="t">
         <h1>A short article</h1>
