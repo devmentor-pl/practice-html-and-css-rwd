@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../04/reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" media="(min-width: 800px" href="M-L-screen.css">
+  <title>Responsive Website</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__logo">Logo</h1>
+    <nav class="menu__menu menu">
+      <input id="menu__checkbox" class="menu__checkbox" type="checkbox">
+      <label class="menu__hamburger" for="menu__checkbox"></label>
+      <ul class="menu__items">
+        <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+        <li class="menu__item"><a href="#about" class="menu__link">About Us</a></li>
+        <li class="menu__item"><a href="#offer" class="menu__link">Offer</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <section id="about" class="section about">
+      <img src="desktop.png" alt="ilustracja przedstawiająca widok mobilny żółtej strony internetowej"
+        class="about__img">
+      <article class="about__info">
+        <h2 class="about__headline">About Us</h2>
+        <p class="about__sub-headline">We are the best!</p>
+        <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, obcaecati perferendis
+          repellat reiciendis molestias repellendus minima! Iste ea optio facilis? Blanditiis vero ipsam quis autem
+          consequuntur quia pariatur expedita. Deserunt, ducimus. Molestias dolor eligendi amet iure enim! Maiores nobis
+          incidunt tempore tempora totam impedit, dolores necessitatibus facilis. Dolor temporibus omnis dicta alias
+          autem reiciendis consectetur possimus ipsum, quas facere soluta ducimus impedit necessitatibus! At, natus,
+          quis obcaecati tempora a deleniti id officia sint alias quasi ut magni excepturi. Voluptates incidunt atque
+          consequatur alias ipsa dignissimos sapiente impedit error doloremque accusantium quos voluptatem asperiores
+          quis ratione, temporibus facere unde iure expedita.</p>
+      </article>
+    </section>
+    <section id="offer" class="section offer">
+      <h2 class="offer__headline">Our Offer</h2>
+      <p class="offer__sub-headline">And feel free to contact us!</p>
+      <div class="offer__container">
+        <article class="offer__column column">
+          <h3 class="column__title">Copywriting</h3>
+          <p class="column__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magni, consectetur
+            quae sapiente sequi tenetur.</p>
+        </article>
+        <article class="offer__column column">
+          <h3 class="column__title">SEO</h3>
+          <p class="column__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magni, consectetur
+            quae sapiente sequi tenetur.</p>
+        </article>
+        <article class="offer__column column">
+          <h3 class="column__title">Editing</h3>
+          <p class="column__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque magni, consectetur
+            quae sapiente sequi tenetur.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__copy">Copywright 2020</p>
+    </div>
+  </footer>
+</body>
+
+</html>

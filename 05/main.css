@@ -1,0 +1,162 @@
+:root {
+  --max-width: 1000px;
+  --side-margin: 0 20px;
+}
+
+/* GENERAL STYLES */
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main {
+  margin: var(--side-margin);
+  max-width: var(--max-width);
+}
+
+.section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+h3 {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+a {
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  align-items: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto 30px auto;
+  max-width: var(--max-width);
+  padding: var(--side-margin);
+}
+
+/* LOGO */
+.header__logo {
+  font-size: 2rem;
+  grid-column: 2 / 3;
+  justify-self: center;
+}
+
+/* HAMBURGER MENU */
+.menu {
+  grid-column: 3 / 4;
+  justify-self: end;
+}
+
+.menu__checkbox {
+  display: none;
+}
+
+.menu__hamburger {
+  background: black;
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  width: 30px;}
+
+.menu__hamburger::before,
+.menu__hamburger::after {
+  background: inherit;
+  content: "";
+  height: 3px;
+  position: absolute;
+  right: 0;
+  width: inherit;
+}
+.menu__hamburger::before {
+  bottom: 10px;
+}
+.menu__hamburger::after {
+  top: 11px;
+}
+
+/* APPEARING MENU */
+.menu__items {
+  background: yellowgreen;
+  clip-path: polygon(44% 0, 100% 30%, 61% 80%, 0 100%, 0 0);
+  height: 100vh;
+  left: -100%;
+  opacity: 0.95;
+  padding: 30vh 0 0 40px;
+  position: absolute;
+  top: 0;
+  transition: all 300ms ease-in-out;
+  width: 250px;
+}
+
+.menu__item {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* OPENING MENU WITH HAMBURGER */
+.menu__checkbox:checked ~ .menu__items {
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+/* ABOUT US SECTION */
+.about {
+  display: grid;
+  gap: 20px;
+  text-align: center;
+}
+
+.about__sub-headline {
+  margin-bottom: 10px;
+}
+
+.about__img {
+  height: 100%;
+}
+
+.about__text {
+  text-align: left;
+}
+
+/* OFFER SECTION */
+.offer {
+  text-align: center;
+}
+
+.offer__sub-headline {
+  margin-bottom: 30px;
+}
+
+.column {
+  margin-bottom: 20px;
+}
+
+.column__title {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: rgb(255, 196, 35);
+  height: 70px;
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  margin: var(--side-margin);
+  max-width: var(--max-width);
+}
