@@ -1,6 +1,5 @@
-
 /* DROP-DOWN MENU - MENU 2 STOPNIA */
-input.input-second {
+.open-item .input-second {
   display: none;
 }
 
@@ -25,7 +24,8 @@ input.input-second {
 }
 
 .menu-third li {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
 /* OTWARCIE MENU 2 I 3 STOPNIA */

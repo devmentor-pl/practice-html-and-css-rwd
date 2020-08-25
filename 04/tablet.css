@@ -46,7 +46,7 @@ ul li.open-item > ul.menu-second {
   background: rgb(58, 58, 58);
   left: -50%;
   opacity: 0;
-  padding: 20px 0 0 0;
+  padding: 20px 0 0 20px;
   position: absolute;
   top: 100%;
   transition: opacity 200ms ease-in-out;
@@ -54,8 +54,6 @@ ul li.open-item > ul.menu-second {
 }
 
 ul.menu-second > li {
-  /* -------Dlaczego <li> z menu-third również otrzymały margines, skoro użyłam selektora bezpośrednich dzieci? */
-  margin-left: 20px;
   padding: 0 20px;
 }
 
