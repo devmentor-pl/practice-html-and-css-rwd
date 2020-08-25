@@ -33,13 +33,12 @@ li.open-item {
 }
 
 .open-item .input-second {
-  /* -----------Dlaczego nie mogę tego pozycjonować? Checkbox jest krzywo :O */
   cursor: pointer;
   display: block;
-  left: 50;
+  left: 40px;
   opacity: 0;
   position: absolute;
-  top: 100;
+  top: 45px;
   transform: scaleX(9) scaleY(5);
 }
 
