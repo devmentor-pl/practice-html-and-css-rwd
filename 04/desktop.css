@@ -1,3 +1,7 @@
+h2 {
+  font-size: 6rem
+}
+
 /* DROP-DOWN MENU - MENU 2 STOPNIA */
 .open-item .input-second {
   display: none;
