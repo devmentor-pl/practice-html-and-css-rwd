@@ -44,7 +44,7 @@ li.open-item {
 }
 
 ul li.open-item > ul.menu-second {
-  background: rgb(114, 84, 105);
+  background: rgb(58, 58, 58);
   left: -50%;
   opacity: 0;
   padding: 20px 0 0 0;

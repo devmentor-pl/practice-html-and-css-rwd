@@ -16,7 +16,7 @@ h1 {
 }
 
 header {
-  background: rgb(61, 61, 61);
+  background: rgb(39, 39, 39);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   position: relative;
   width: 100%;
@@ -42,5 +42,5 @@ input {
 
 section {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://source.unsplash.com/random) no-repeat center center/cover;
-  height: 100vh;
+  height: calc(100vh - 99.6px);
 }
