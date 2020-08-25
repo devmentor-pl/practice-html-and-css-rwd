@@ -1,8 +1,8 @@
 html {
-  background: rgb(230, 98, 98);
   color: #f4f4f4;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 a {
   color: #f4f4f4;
@@ -16,7 +16,9 @@ h1 {
 }
 
 header {
-  background: rgb(148, 92, 92);
+  background: rgb(61, 61, 61);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
   width: 100%;
 }
 
@@ -33,8 +35,12 @@ label {
   position: relative;
   z-index: 99;
 }
-  
+
 input {
- display: none; 
+  display: none; 
 }
 
+section {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://source.unsplash.com/random) no-repeat center center/cover;
+  height: 100vh;
+}
