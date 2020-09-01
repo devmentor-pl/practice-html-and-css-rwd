@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px black solid;
+    background: transparent;
+    position: relative;
+    outline: none;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.hamburger::after, .hamburger::before {
+    content: "";
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-top: 5px solid black;
+    transform: translateY(10px);
+}
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s;
+}
+.hamburger::before {
+}
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: 0;
+}
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+/*jak zaimplementowac bem zaczynajac od mobile */
+@media (max-width: 599px) {
+    .site-nav {
+        display: none;
+       
+    }
+    .site-nav__list {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .site-nav__item {
+        border: 1px blue solid;
+        line-height: 2rem;
+        text-transform: uppercase;
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        background-color: silver;
+        ;
+    
+    }
+    .site-nav__item--no-border {
+        border-top:0;
+
+    }
+   .site-nav-sublist {
+       display: none;
+   }
+   #toggle:checked + .site-nav {
+        display: block;
+   } 
+   .hamburger:focus + .site-nav {
+        display: block;
+}
+    #toggle {
+        display: none;
+        z-index: -1;
+    }
+    
+    .site-nav__link:focus + .site-nav-sublist  {
+        display: block;
+    }
+    #offer:checked + .site-nav-sublist {
+        display: block;
+    }
+    .site-nav__link {
+        padding-left: 5vw;
+    }
+    .site-nav-sublist__item {
+        padding-left: 10vw;
+        background-color:rgb(224, 224, 235);
+    }
+    .site-nav-sublist__item:hover {
+        background-color:rgb(239, 239, 245);
+    }
+    .site-nav-sublist__item--border-top {
+        border-top: 1px blue solid;
+    }
+}
