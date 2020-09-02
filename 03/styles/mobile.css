@@ -1,0 +1,7 @@
+body {
+  grid-template-areas:
+    "picture"
+    "text"
+    "video";
+  grid-template-columns: 1fr;
+}
