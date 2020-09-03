@@ -3,9 +3,11 @@
     margin: 0;
     padding: 0;
 }
+a, a:visited, a:focus, a:hover, a:active { text-decoration: none; color:#000; }
+    a:hover {color:black}
 body {
     display: grid;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
 .green-container {
     width: 100%;
@@ -84,5 +86,101 @@ body {
         background-color: orange;
         margin: 0 auto;
 
+    }
+}
+@media (min-width: 801px) {
+    .wrap {
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+    body {
+        grid-template-columns: auto 1000px auto;
+        font-size: 2vh;
+    }
+    .green-container__logo {
+        width: 20vh;
+        height: 7vh;
+        background-color: red;
+        text-align: center;
+    }
+    i.fas {
+        display: none;
+    }
+    .green-container__nav {
+        position: relative;
+    }
+    .green-container__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .green-container__article {
+        width: 49%;
+        height: calc(50% - 5vh);
+        background-color: orange;
+        margin-top: 1vh;
+    }
+    .green-container--height {
+        height: 80vh;
+    }
+    .green-container__list {
+        background-color: white;
+        
+        border-top: 0;
+        display: inline-block;
+        position: absolute;
+        top:0;
+        right: 0;
+    }
+    .green-container__item {
+        list-style: none;
+        height: 7vh;
+        float: left;
+        margin-right: 5vw;
+        border-top: 1px solid white;
+    }
+    .green-container--no-margin {
+        margin-right: 0;
+    }
+    a {
+        display: inline-block;
+        margin-top:calc(5vh - 1px);
+    }
+    .green-container__item:hover {
+        border-top: 1px solid black;
+    }
+    #hamburger:checked + .green-container__list {
+        display: block;
+    }
+    #hamburger {
+        display: none;
+    }
+    .green-article--height {
+        height: 100%;
+    }
+    .green-container__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 60vh;
+    }
+    .green-article--section {
+        width: 30%;
+    }
+    .green-container__footer {
+        display: block;
+        width: 100%;
+        height: 7vh;
+        margin-top: 2vh;
+    }
+    .green-container__footer-element {
+        width: 30vw;
+        height: 5vh;
+        background-color: orange;
+        margin: 0 auto;
+    }
+    .green-container--margin {
+        margin-top: -40vh;
+        z-index: 1;
     }
 }

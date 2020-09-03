@@ -34,8 +34,6 @@ a, a:visited, a:focus, a:hover, a:active { text-decoration: none; color:#000; }
     transform: translateY(25px);
     transition: 0.3s;
 }
-.hamburger::before {
-}
 .hamburger:focus {
     transform: rotate(45deg) translateY(5px);
     border: 0;

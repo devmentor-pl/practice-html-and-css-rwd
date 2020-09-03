@@ -7,7 +7,9 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://kit.fontawesome.com/828d4870dc.js" crossorigin="anonymous"></script>
 </head>
+<div class="wrap"> <!--zapytaj czemu wrap w dom jest w body-->
 <body>
+   
     <div class="green-container">
         <nav class="green-container__nav green-container--width">
             <div class="green-container__logo">logo</div>
@@ -19,10 +21,10 @@
             </label>
             <input type="checkbox" id="hamburger">          
             <ul class="green-container__list">
-                <li class="green-container__item green-container--no-border">Start</li>
-                <li class="green-container__item">Help</li>
-                <li class="green-container__item">Contact us</li>
-                <li class="green-container__item">Shop</li>
+                <li class="green-container__item green-container--no-border"><a href="#">Start</a></li>
+                <li class="green-container__item"><a href="#">Help</a></li> 
+                <li class="green-container__item"><a href="#">Contact us</a></li>
+                <li class="green-container__item green-container--no-margin"><a href="#">Shop</a></li>
             </ul>
         </nav>
     </div>
@@ -32,11 +34,11 @@
             <article class="green-container__article"></article>
         </main>
     </div>
-    <div class="green-container">
+    <div class="green-container green-container--margin">
         <section class="green-container__section green-container--width green-container--height">
-            <article class="green-container__article green-article--height"></article>
-            <article class="green-container__article green-article--height"></article>
-            <article class="green-container__article green-article--height"></article>
+            <article class="green-container__article green-article--height green-article--section"></article>
+            <article class="green-container__article green-article--height green-article--section"></article>
+            <article class="green-container__article green-article--height green-article--section"></article>
         </section>
     </div>
     <div class="green-container">
@@ -45,4 +47,5 @@
         </footer>
     </div>
 </body>
+</div>
 </html>
