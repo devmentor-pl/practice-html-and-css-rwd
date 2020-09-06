@@ -5,7 +5,7 @@
 
 .header__logo {
   margin: 0 auto;
-  max-width: 150px;
+  width: 150px;
 }
 
 .nav {
@@ -81,4 +81,24 @@
 
 .nav__link:hover {
   color: #2a2a2a;
+}
+
+@media (min-width: 800px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+
+  .header__logo {
+    margin: 0;
+  }
+
+  .nav__menu-button {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+  }
 }
