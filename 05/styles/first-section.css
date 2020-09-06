@@ -7,3 +7,16 @@
 .first-section__first-article {
   margin-bottom: 10px;
 }
+
+@media (min-width: 800px) {
+  .first-section {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .first-section__first-article,
+  .first-section__second-article {
+    margin: 0.5rem 0;
+  }
+}
