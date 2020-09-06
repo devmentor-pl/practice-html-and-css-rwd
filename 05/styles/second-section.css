@@ -9,3 +9,18 @@
 .second-section__second-article {
   margin-bottom: 10px;
 }
+
+@media (min-width: 800px) {
+  .second-section {
+    display: grid;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0.5rem;
+  }
+
+  .second-section__first-article,
+  .second-section__second-article,
+  .second-section__third-article {
+    margin: 0;
+  }
+}
