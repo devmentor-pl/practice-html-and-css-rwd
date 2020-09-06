@@ -1,0 +1,84 @@
+.header {
+  padding: 0.5rem;
+  position: relative;
+}
+
+.header__logo {
+  margin: 0 auto;
+  max-width: 150px;
+}
+
+.nav {
+  margin: 0;
+  min-height: 0;
+}
+
+.nav__list {
+  display: none;
+  text-align: center;
+}
+
+.nav__menu-button {
+  border: 0;
+  border-top: 3px solid #2d2d2d;
+  display: block;
+  height: 25px;
+  outline: none;
+  position: absolute;
+  right: 20px;
+  top: 22px;
+  transition: transform 0.3s linear;
+  width: 30px;
+}
+
+.nav__menu-button::before,
+.nav__menu-button::after {
+  border-top: 3px solid #2d2d2d;
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(6px);
+  width: 100%;
+}
+
+.nav__menu-button::after {
+  transform: translateY(15px);
+  transition: transform 0.3s linear;
+}
+
+.nav__menu-toggle {
+  display: none;
+}
+
+.nav__menu-toggle:checked ~ ul {
+  display: block;
+}
+
+.nav__menu-toggle:checked + .nav__menu-button {
+  border: none;
+  transform: rotate(45deg) translateY(5px);
+}
+
+.nav__menu-toggle:checked + .nav__menu-button::after {
+  transform: rotate(-90deg) translateX(-6px);
+}
+
+.nav__item:hover::before {
+  display: none;
+}
+
+.nav__link {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.4rem;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.nav__link:hover {
+  color: #2a2a2a;
+}
