@@ -1,0 +1,9 @@
+.footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__content {
+  min-width: 150px;
+}
