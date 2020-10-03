@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 720px)" href="./styles/tablet.css">
 </head>
+
 <body>
-    
+
     <nav>
+        <label for="menu-switch">
+            <div class="hamburger">Klik</div>
+        </label>
+        <input type="checkbox" id="menu-switch">
         <ul>
             <li>
                 <a href="#">start</a>
@@ -27,4 +36,5 @@
     </nav>
 
 </body>
+
 </html>

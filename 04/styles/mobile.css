@@ -1,0 +1,29 @@
+ul {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input:checked+ul {
+    display: block;
+}
+
+header {
+    position: relative;
+}
+
+label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+input {
+    display: none;
+}
+
+li {
+    text-align: center;
+}
