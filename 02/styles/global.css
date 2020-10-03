@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
+.a,
+.b,
+.c {
     border: 3px solid transparent;
     min-height: 50px;
 
@@ -14,13 +16,16 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c;
 }
