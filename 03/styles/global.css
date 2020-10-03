@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
+.p,
+.t,
+.v {
     border: 3px solid transparent;
     min-height: 50px;
 
@@ -14,13 +16,17 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: p;
 }
 
 .t {
     border-color: #ffdfba;
+    text-align: center;
+    grid-area: t;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: v;
 }

@@ -1,0 +1,7 @@
+body {
+    grid-template-areas:
+        'p v'
+        't t';
+    margin: 0 auto;
+    max-width: 1400px;
+}

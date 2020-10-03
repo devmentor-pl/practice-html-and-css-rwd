@@ -1,16 +1,41 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
+
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">Zdjęcie przedstawia omijanie komórki burzowej w samolocie DA40. Wykonane przeze mnie gdzieś
+        w rejonie Bydgoszczy. </br></br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, aliquam at
+        aspernatur nisi alias adipisci reprehenderit aliquid, sit temporibus sed facere aut expedita porro hic? Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Porro, laborum?</main>
+    <header class="p">
+        <picture>
+            <source media="(min-width: 600px)" srcset="./images/da40-medium.webp,
+                                                        ./images/da40-big.webp 2x">
+            <source media="(min-width: 1200px)" srcset="./images/da40-big.webp">
+            <source srcset="./images/da40-small.webp,
+                            ./images/da40-medium.webp 2x">
+            <img src="./images/da40-small.webp" alt="Diamond DA-40 cockpit">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qZxIZxw8Zns" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </side>
 
 </body>
+
 </html>

@@ -1,0 +1,6 @@
+body {
+    grid-template-areas:
+        'p t'
+        'v t';
+    grid-template-columns: repeat(2, minmax(200px, 50%));
+}
