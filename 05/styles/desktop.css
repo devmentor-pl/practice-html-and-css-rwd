@@ -1,0 +1,25 @@
+header {
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: block;
+}
+
+main {
+    grid-column-gap: 10px;
+    grid-template-areas:
+        "main__item main__item";
+}
+
+section {
+    grid-template-areas:
+        "section__article section__article section__article";
+
+}
+
+.section__article {
+    grid-area: "section__article";
+    margin: 10px;
+    width: 90%;
+}

@@ -1,0 +1,47 @@
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.header__menu {
+    display: none;
+}
+
+main {
+    align-content: center;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "main__item"
+        "main__item";
+    justify-items: center;
+    padding: 10px 0;
+}
+
+.main__item {
+    width: 100%;
+    grid-area: "main__item";
+}
+
+section {
+    align-content: center;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "section__article"
+        "section__article"
+        "section__article";
+    justify-items: center;
+}
+
+.section__article {
+    grid-area: "section__article";
+    width: 100%;
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

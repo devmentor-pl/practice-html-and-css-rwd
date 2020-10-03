@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid blue;
+    margin: 0 auto 20px;
+    max-width: 1000px;
+}
+
+footer.container {
+    margin: 0 auto;
+}
+
+ul {
+    list-style: none;
+}
+
+header,
+footer {
+    padding: 10px;
+}
+
+.header__hero {
+    background-color: yellow;
+    height: 5vh;
+    width: 30%;
+}
+
+.header__menu {
+    background-color: yellow;
+    height: 5vh;
+    width: 30%;
+}
+
+.main__item {
+    background-color: yellow;
+    height: 50vh;
+}
+
+.section__article {
+    background-color: yellow;
+    height: 35vh;
+}
+
+.footer__copyright {
+    background-color: yellow;
+    height: 5vh;
+    width: 25%;
+}
