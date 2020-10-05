@@ -1,26 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 body {
     font-family: 'Roboto Mono', monospace;
 }
 
-ul {
+.container {
+    height: 100vh;
+    width: 100%;
+}
+
+.list {
     list-style: none;
 }
 
-li {
-    border: 1px solid #333;
+.list__dropdown {
+    list-style: none;
 }
 
-a {
-    color: #333;
-    padding: 10px;
+.list__link {
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 0;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.list__link--dropdown {
+    font-size: 18px;
+}
+
+.nav__input {
+    display: none;
 }

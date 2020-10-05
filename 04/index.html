@@ -8,32 +8,58 @@
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/mobile.css">
-    <link rel="stylesheet" media="(min-width: 720px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./styles/tablet.css">
 </head>
 
 <body>
 
-    <nav>
-        <label for="menu-switch">
-            <div class="hamburger">Klik</div>
-        </label>
-        <input type="checkbox" id="menu-switch">
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <div class="container">
+        <nav class="nav">
+            <label class="nav__label" for="menu-switch">
+                <div class="nav__hamburger">
+                    <span class="hamburger__element"></span>
+                    <span class="hamburger__element"></span>
+                    <span class="hamburger__element"></span>
+                    <span class="hamburger__element"></span>
+                </div>
+            </label>
+
+            <input class="nav__input" type="checkbox" id="menu-switch">
+
+            <ul class="list">
+
+                <li class="list__item">
+                    <a class="list__link" href="#">start</a>
+                </li>
+
+                <li class="list__item list__item--dropdown">
+                    <a class="list__link" href="#">oferta</a>
+
+                    <ul class="list__dropdown">
+
+                        <li class="dropdown__item">
+                            <a class="list__link list__link--dropdown" href="#">strony
+                                internetowe</a>
+                        </li>
+
+                        <li class="dropdown__item">
+                            <a class="list__link list__link--dropdown" href="#">pozycjonowanie
+                                stron
+                                www</a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li class="list__item">
+                    <a class="list__link" href="#">kontakt</a>
+                </li>
+
+            </ul>
+
+        </nav>
+    </div>
 
 </body>
 

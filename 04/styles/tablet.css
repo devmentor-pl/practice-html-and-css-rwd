@@ -1,9 +1,52 @@
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.container {
+    background: url(../images/bg-big.svg) no-repeat;
+    /* nie rozumiem, czemu gdy ustawię background-size: cover TYLKO w global.css, to nie działa w tablet.css */
+    background-size: cover;
 }
 
-ul {
+.nav {
     display: flex;
+}
+
+.nav__label {
+    display: none;
+}
+
+.list {
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    transform: translateY(0%);
+    width: 300px;
+}
+
+.list__item--dropdown {
+    position: relative;
+}
+
+.list__dropdown {
+    background: linear-gradient(rgb(0, 0, 25) 80%, rgb(255, 255, 255));
+    display: none;
+    left: -50%;
+    position: absolute;
+    top: 125%;
+    text-align: center;
+    width: 200%;
+}
+
+.dropdown__item {
+    width: 100%;
+}
+
+.list__link--dropdown {
+    margin: 0;
+    padding: 0;
+}
+
+.list__item--dropdown:hover .list__dropdown {
+    display: block;
 }
