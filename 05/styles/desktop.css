@@ -6,6 +6,11 @@ header {
     display: block;
 }
 
+.hamburger,
+.hamburger__input {
+    display: none;
+}
+
 main {
     grid-column-gap: 10px;
     grid-template-areas:
@@ -16,6 +21,11 @@ section {
     grid-template-areas:
         "section__article section__article section__article";
 
+}
+
+.nav__label,
+.nav__input {
+    display: none;
 }
 
 .section__article {
