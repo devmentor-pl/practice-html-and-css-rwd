@@ -11,8 +11,11 @@ body {
 }
 
 .container {
-    height: 100vh;
+    height: 0;
+    padding-bottom: 50%;
     width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .list {

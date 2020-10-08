@@ -1,7 +1,5 @@
 .container {
-    background: url(../images/bg-big.svg) no-repeat;
-    /* nie rozumiem, czemu gdy ustawię background-size: cover TYLKO w global.css, to nie działa w tablet.css */
-    background-size: cover;
+    background-image: url(../images/bg-big.svg);
 }
 
 .nav {
@@ -21,7 +19,7 @@
     right: 20px;
     top: 0;
     transform: translateY(0%);
-    width: 300px;
+    width: 350px;
 }
 
 .list__item--dropdown {

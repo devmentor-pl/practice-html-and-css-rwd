@@ -1,6 +1,5 @@
 .container {
-    background: url(../images/bg.svg) no-repeat;
-    background-size: cover;
+    background-image: url(../images/bg.svg);
 }
 
 .nav {
@@ -34,13 +33,14 @@
 }
 
 /* BURGER MENU ICON */
-.nav__input:checked+.list {
+.nav__input:checked~.list {
     display: flex;
     transform: translateY(50%);
 }
 
 .nav__hamburger {
     height: 60px;
+    position: relative;
     width: 60px;
 }
 
@@ -67,22 +67,22 @@
     transition: .3s;
 }
 
-.nav__label:hover .hamburger__element:nth-child(1) {
+.nav__input:checked+.nav__label>.nav__hamburger .hamburger__element:nth-child(1) {
     transform: translate(-50%, -50%) translateY(-35px);
     opacity: 0;
 }
 
-.nav__label:hover .hamburger__element:nth-child(4) {
+.nav__input:checked+.nav__label>.nav__hamburger .hamburger__element:nth-child(4) {
     transform: translate(-50%, -50%) translateY(35px);
     opacity: 0;
 }
 
-.nav__label:hover .hamburger__element:nth-child(2) {
+.nav__input:checked+.nav__label>.nav__hamburger .hamburger__element:nth-child(2) {
     transform: translate(-50%, -50%) rotate(45deg);
     transition-delay: .2s;
 }
 
-.nav__label:hover .hamburger__element:nth-child(3) {
+.nav__input:checked+.nav__label>.nav__hamburger .hamburger__element:nth-child(3) {
     transform: translate(-50%, -50%) rotate(-45deg);
     transition-delay: .2s;
 }
