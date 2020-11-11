@@ -1,0 +1,9 @@
+/* ./styles/mobile.css */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "a-picture"
+        "a-text"
+        "a-video";
+}

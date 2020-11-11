@@ -1,3 +1,4 @@
+/* ./styles/global.css */
 * {
     margin: 0;
     padding: 0;
@@ -14,13 +15,39 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-picture;
+}
+
+.p > picture > img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: a-text;
+    font-size: 18px;
+}
+
+.t > p {
+    margin: 10px;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: a-video;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%; /* domyślnie */
+    display: grid;
+}
+
+.v > iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }

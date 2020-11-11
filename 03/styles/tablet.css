@@ -1,0 +1,12 @@
+/* ./styles/tablet.css */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "a-picture a-text"
+        "a-video a-text";
+
+    grid-template-columns: 
+        minmax(200px, 50%)
+        auto;
+}

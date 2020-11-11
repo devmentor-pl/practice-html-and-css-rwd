@@ -1,0 +1,58 @@
+/* ./styles/mobile.css */
+
+header {
+    position: relative;
+}
+
+input {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.nav {
+    display: none;
+}
+
+input:checked + .nav {
+    display: block;  
+}
+
+.menu {
+	color: var(--color-beta);
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.submenu {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 90px;
+}
+
+.nav__item {
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+input:checked + .dropdown {
+    display: block;
+}
+
+.dropdown {
+	display: none;
+	list-style-type: none;
+}
+
+.dropdown a {
+	text-align: left;
+    padding: 10px;
+    font-size: 20px;
+}

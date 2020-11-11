@@ -1,0 +1,73 @@
+/* ./styles/desktop.css */
+
+a {
+	text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-left: 20px;
+}
+
+.menu, .submenu {
+    display: none;
+}
+
+.nav {
+	height: 40px;
+	width: 400px;
+    line-height: 200%;
+    display: flex;
+}
+
+.nav__item {
+	width: 100px;
+    height: 40px;
+    border: 0px;
+	position: relative;
+}
+
+.nav__item:hover {
+    border-top: 1px solid var(--color-gamma);
+}
+
+.nav__item:hover > .nav__dropdown {
+	display: block;
+}
+
+.dropdown {
+	display: none;
+	list-style-type: none;
+	width: 200px;
+	height: 40px;
+	margin: 0;
+	position: absolute;
+}
+
+.dropdown a {
+	text-align: left;
+    padding-left: 10px;
+}
+
+.nav__dropdown {
+	padding: 0;
+}
+
+.dropdown__item > a {
+    color: var(--color-alfa);
+    font-size: 15px;
+}
+
+.dropdown__item {
+    position: relative;
+    background-color:var(--color-omega);
+}
+
+.dropdown__item:hover {
+	display: flex;
+}

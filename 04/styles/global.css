@@ -1,0 +1,67 @@
+/* ./styles/global.css */
+
+:root {
+    --color-alfa: rgba(255, 255, 255, 1);
+    --color-beta: rgba(0, 0, 0, 1);
+    --color-gamma: rgba(71, 175, 245, 1);
+    --color-omega: rgba(36, 41, 46, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+	padding: 0;
+	margin: 0;
+    list-style-type: none;
+	font-size: 24px;
+    background-color: var(--color-alfa);
+}
+
+a {
+    color: var(--color-gamma);
+	text-decoration: none;
+    display: block;
+}
+
+/* Hamburger */
+/* .hamburger {
+    margin-left: 30px;
+    margin-top: 30px;
+
+
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid var(--color-alfa);
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid var(--color-alfa);
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+} */
