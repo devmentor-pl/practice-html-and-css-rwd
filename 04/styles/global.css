@@ -5,6 +5,7 @@
     --color-beta: rgba(0, 0, 0, 1);
     --color-gamma: rgba(71, 175, 245, 1);
     --color-omega: rgba(36, 41, 46, 1);
+    --color-epsilon: rgba(71, 175, 245, 0);
 }
 
 * {
