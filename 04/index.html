@@ -4,27 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="./style/mobile.css">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
 <body>
     
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+    <nav class="nav">
+        <input type="checkbox" id="menu-switcher" class="hamburger--toggle">
+        <label tabindex="0" aria-label="Main Menu" role="button" class="hamburger" for="menu-switcher"></label>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link" href="#">start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="nav__item dropdown">
+                <a class="nav__link nav__link--sub" href="#">oferta</a>
+                <ul class="dropdown__nav">
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">strony internetowe</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="#" class="dropdown__link">pozycjonowanie stron www</a>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="nav__item">
+                <a class="nav__link" href="#">kontakt</a>
             </li>
         </ul>
     </nav>
+
+
 
 </body>
 </html>

@@ -1,0 +1,38 @@
+/* HEADER*/
+.header {
+    margin-bottom: 1rem;
+}
+
+.header__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__heading {
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav__list {
+    display: block;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+/* Main */
+.article__container-one  {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.article__container-two  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+}

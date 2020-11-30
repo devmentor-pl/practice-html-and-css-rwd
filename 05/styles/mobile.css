@@ -1,0 +1,118 @@
+/* HEADER*/
+.header {
+    margin-bottom: 1.5rem;
+}
+
+.header__container {
+    position: relative;
+    padding: 1rem;
+}
+
+.header__heading {
+    width: 15rem;
+    margin: 0 auto;
+}
+
+/* Navigation */
+.nav__list {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0;
+    display: none;
+}
+
+.nav__link {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000;
+    padding: 1rem 1rem;
+    background-color: orange;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* Hamburger */
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border-top: 5px solid #000;
+    display: block;
+    position: absolute;
+    right: .8rem;
+    background: transparent;
+    top: 0;
+    transform: translateY(50%);
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 5px solid #000;
+    background: transparent;
+    transform: translateY(10px);
+    transition: 0.2s transform linear;
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.2s transform linear;
+}
+
+/* Show only as block below 800px. */
+@media screen and (max-width: 800px) {
+    .hamburger--toggle:checked ~ .nav__list {
+        display: block;
+    }
+    
+    .hamburger--toggle:checked ~ .hamburger {
+        border: none;
+        transform: translateY(15px) rotate(45deg);
+        transform-origin: center center;
+    }
+    
+    .hamburger--toggle:checked ~ .hamburger::after {
+        transform: rotate(-90deg) translateX(-15px);
+    
+    }
+    
+    .hamburger--toggle:checked ~ .hamburger::before {
+        transform: translateY(15px)
+    }
+}
+
+/* Main */
+.article {
+    padding: 1rem .5rem
+}
+
+.article__container-one  {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.article__content {
+    height: 50vh;
+    background-color: orange;
+    margin: 15px 0;
+}
+
+/* Footer */
+.footer {
+    margin-top: 1rem;
+}
+
+.footer__container {
+    padding: .5rem;
+}
+
+.footer__copyright {
+    width: 30rem;
+    background-color: orange;
+    margin: 0 auto
+}

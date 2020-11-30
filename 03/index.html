@@ -4,13 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repellendus laudantium facilis, molestiae tempora aut. Fuga quod reprehenderit maxime perspiciatis quibusdam! Odio, ut ratione delectus explicabo accusamus quisquam dolorem, reprehenderit sequi quia fugit, asperiores inventore laborum facere similique aut temporibus itaque molestiae. Accusamus itaque deserunt dolor deleniti excepturi ea iste!</p>
+    </main>
+    <header class="p">
+        <picture>
+            <source media="(min-width: 1200px)"  srcset="./assets/img/dubai_full.jpg">
+            <source media="(min-width: 600px)" srcset="./assets/img/dubai_1200.jpg" >
+            <source srcset="./assets/img/dubai_600.jpg" >
+            <img src="./assets/img/dubai_600.jpg" alt="Dubai city">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/IdejM6wCkxA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

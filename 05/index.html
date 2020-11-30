@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./styles/desktop.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header row">
+        <div class="header__container container">
+            <h1 class="header__heading cell"></h1>
+            <nav class="nav">
+                <input type="checkbox" id="menu-switcher" class="hamburger--toggle">
+                <label tabindex="0" aria-label="Main Menu" role="button" class="hamburger" for="menu-switcher"></label>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">start</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">oferta</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <article class="article row">
+            <section class="article__container-one container">
+                <div class="article__content cell"></div>
+                <div class="article__content cell"></div>
+            </section>
+        </article>
+
+        <article class="article row">
+            <section class="article__container-two container">
+                <div class="article__content cell"></div>
+                <div class="article__content cell"></div>
+                <div class="article__content cell"></div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <p class="footer__copyright cell"></p>
+        </section>
+    </footer>
+</body>
+</html>

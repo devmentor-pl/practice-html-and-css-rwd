@@ -1,0 +1,7 @@
+body {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "t"
+        "p"
+        "v";
+}

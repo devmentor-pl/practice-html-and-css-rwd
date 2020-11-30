@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%; /* 1rem = 10px; 10px/16px = 62.5% */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: .5rem 1rem;
+}
+
+.row, .container, .cell {
+    outline: 5px solid;
+}
+
+.row {
+    outline-color: green;
+    padding: .5rem;
+}
+
+.container {
+    outline-color: lightskyblue;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.cell {
+    outline-color: orange;
+    min-height: 50px;
+}
+
+input {
+    display: none;
+}
