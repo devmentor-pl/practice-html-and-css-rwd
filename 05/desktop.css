@@ -1,0 +1,16 @@
+
+
+.main__contents, .list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    width: calc(50% - 5px);
+}
+
+.list__item {
+    width: 33%;
+    margin: 5px;
+}
+

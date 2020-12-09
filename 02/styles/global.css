@@ -7,20 +7,31 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
+body {
+    display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "section";
+}
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: header;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: main;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: section;
 }

@@ -1,0 +1,14 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    max-width: 1200px;
+    width: 100%;
+    grid-template-areas: 
+    "header header"
+    "section main"
+    ;
+}

@@ -1,0 +1,85 @@
+.row, .cell, .container {
+    
+    padding: 2px;
+    outline: 2px solid;
+}
+  
+.row {
+    outline-color: green;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100vw;
+    max-width: 1000px;
+    outline-color: blue;
+}
+
+.cell {
+    height: 150px;
+    margin: 5px 0;
+    outline-color: orange;
+    background-color: orange;
+}
+
+
+.menu {
+    width: 30%;
+    height: 50px;
+    margin: 5px 0;
+}
+
+.nav__menu {
+    width: 30%;
+    height: 50px;
+    margin: 5px 0 5px 25%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    margin-bottom: 10px;
+}
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    margin-top: 10px;
+    left: 8%;
+    border: 0;
+    border-top: 5px solid orange;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid orange;
+}
+
+.hamburger::before {
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
