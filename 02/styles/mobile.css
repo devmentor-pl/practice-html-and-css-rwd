@@ -1,0 +1,19 @@
+@media all and (max-width:600px){
+
+body {
+    grid-template-areas: 
+                         "header"
+                         "main"
+                         "footer";
+}
+
+.a {
+    grid-area: header;
+}
+.b {
+    grid-area: main;
+}
+.c {
+    grid-area: footer;
+}
+}

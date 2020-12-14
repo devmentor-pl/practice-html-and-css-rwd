@@ -4,6 +4,27 @@
     box-sizing: border-box;
 }
 
+/* Mam problem żeby to wycentrować
+jakoś klasa center mi nie działa
+
+jakby body zastąpić divem a do body przypisać 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+*/
+
+
+body {
+    display: grid;
+    max-width: 1200px;
+    grid-auto-rows: 
+                    minmax(50vh, auto);
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
