@@ -104,3 +104,7 @@ header input {
 .second__level {
     list-style: none;
 }
+
+.second__level li a {
+    font-size: 14px;
+}
