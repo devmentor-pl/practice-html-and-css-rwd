@@ -1,0 +1,6 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-picture a-video"
+    "a-text a-text";
+}

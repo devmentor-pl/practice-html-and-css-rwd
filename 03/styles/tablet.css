@@ -2,9 +2,10 @@ body {
     display: grid;
     grid-template-areas: 
     "a-picture a-text"
-    "a-video a-text";
-}
+    "a-video a-text"
+    "none a-text";
 
-.p, .v {
-    width: minmax(200px, 50%);
+    grid-template-columns:
+    minmax(200px, 50%) 1fr;
+    background: linear-gradient(90deg, rgba(161,161,161,1) 0%, rgba(255,255,255,1) 10%, rgba(255,255,255,1) 40%, rgba(161,161,161,1) 50%);
 }
