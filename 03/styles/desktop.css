@@ -1,0 +1,18 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+
+body {
+    grid-template-areas: 
+    "p v"
+    "t t";
+    max-width: 1400px;
+    width: 100%;
+}
+
+.v {
+    height: auto;
+    padding-bottom: auto;
+}

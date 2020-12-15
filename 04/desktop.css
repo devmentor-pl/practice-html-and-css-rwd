@@ -1,0 +1,63 @@
+html {
+    background-color: rgb(224, 223, 223);
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    display: none;
+}
+
+.logo__desktop {
+    display: block;
+    padding-top: 0;
+}
+
+nav {
+    padding-top: 5px;
+}
+
+h1 {
+    padding-top: 0;
+}
+
+header ul {
+    display: flex;
+    
+}
+
+header li {
+    border: none;
+    padding: 10px;
+}
+
+
+
+.second__level {
+    display: none;
+}
+
+
+li:hover > .second__level {
+    display: block;
+}
+
+.second__menu:focus + ul {
+    display: none;
+}
+
+.list li {
+    margin: 0 auto;
+    width: 25%;
+}
+
+.second__level li {
+    width: 100%;
+}
+
+.second__level li a {
+    font-size: 14px;
+}
+

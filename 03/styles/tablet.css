@@ -1,0 +1,15 @@
+
+body {
+    grid-template-areas: 
+    "p t"
+    "v t";
+}
+
+.p, .v{
+    min-width: 200px;
+    max-width: 50vw;
+}
+
+.t {
+    align-items: flex-start;
+}

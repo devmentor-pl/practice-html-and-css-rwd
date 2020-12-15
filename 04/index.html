@@ -4,30 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" media="(min-width: 800px" href="desktop.css">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
 <body>
-    <button class="hamburger"></button>
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+    <header>
+        <h1 class="logo">Logo</h1>
+        <nav>
+            <label for="menu__button"><p class="hamburger"></p></label>
+            <input type="checkbox" id="menu__button">
+                <ul class="list">
+                    <li class="logo__desktop">
+                        <h1>Logo</h1>
+                    </li>
+                    <li>
+                        <a href="#">start</a>
+                    </li>
+                    <li>
+                        <a href="#" class="second__menu">oferta</a>
+                        <ul class=" second__level">
+                            <li><a href="#">strony internetowe</a></li>
+                            <li><a href="#">pozycjonowanie stron www</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">kontakt</a>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-
+           
+        </nav>
+    </header>
 </body>
 </html>
