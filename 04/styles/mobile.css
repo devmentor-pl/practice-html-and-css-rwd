@@ -2,7 +2,7 @@
     display: none;
 }    
 
-#menu-switcher:checked + .menu__navigation {
+.menu > input:checked + .menu__navigation {
     display: grid;
     grid-template-areas:
     "a-start"
@@ -21,7 +21,6 @@
     display: none;
 } 
 .a-offer {
-    grid-area: a-offer;
     display: flex;
     justify-content: space-between;
     flex-flow: column nowrap;
@@ -71,19 +70,6 @@ a {
     padding-left: 20%;
 }
 
-.a-start {
-    grid-area: a-start;
-}
-
-.a-websites {
-    grid-area: a-websites;
-}
-
-.a-positioning {
-    grid-area: a-positioning;
-}
-
 .a-contact {
-    grid-area: a-contact;
     margin-top: 1px;
 }

@@ -20,3 +20,23 @@
 body {
     background-color: #F5F5F5;
 }
+
+.a-start {
+    grid-area: a-start;
+}
+
+.a-websites {
+    grid-area: a-websites;
+}
+
+.a-positioning {
+    grid-area: a-positioning;
+}
+
+.a-offer {
+    grid-area: a-offer;
+}
+
+.a-contact {
+    grid-area: a-contact
+}
