@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
-    border: 3px solid transparent;
-    min-height: 50px;
+body {
+    display: grid;
+}
 
+.a,
+.b,
+.c {
+    border: 3px solid transparent;
+    /*min-height: 50px;*/
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,8 +25,35 @@
 
 .b {
     border-color: #ffdfba;
+    grid-row-start: 2;
+    grid-row-end: 2;
 }
 
 .c {
     border-color: #baffc9;
+}
+
+@media (max-width: 600px) {
+    body {
+        grid-template-columns: repeat(2, [col] auto);
+        grid-template-rows: repeat(2, [row] auto);
+    }
+
+    .a {
+        grid-column: col / span 2;
+        width: 100%;
+    }
+
+    .b {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .c {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .a, .b, .c {
+        max-width: 1200px;
+    }
 }
