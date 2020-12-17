@@ -1,0 +1,60 @@
+.menu__navigation {
+    display: grid;
+    grid-template-areas:
+    "a-start"
+    "a-offer"
+    "a-contact";
+
+    grid-template-rows:
+    50px
+    150px
+    50px;
+
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.navigation__dropdown {
+    width: 100%;
+    align-self: end;
+    display: grid;
+    grid-template-areas:
+    "a-websites"
+    "a-positioning";
+
+    grid-template-rows:
+    50px
+    50px;
+
+    grid-template-columns: minmax(0, 1fr);
+}
+
+[class*="a-"] {
+    /* padding: 3%;
+    padding-left: 10%; */
+    border-top: 1px solid black;
+    /* outline: 1px solid black; */
+    /* width: 100%; */
+}
+
+.a-start {
+    grid-area: a-start;
+}
+
+.a-offer {
+    grid-area: a-offer;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+}
+
+.a-websites {
+    grid-area: a-websites;
+}
+
+.a-positioning {
+    grid-area: a-positioning;
+}
+
+.a-contact {
+    grid-area: a-contact;
+}

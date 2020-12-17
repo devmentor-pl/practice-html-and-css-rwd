@@ -1,0 +1,28 @@
+.hamburger {
+    margin: 1em;
+    width: 40px;
+}
+
+.hamburger:after, 
+.hamburger:before, 
+.hamburger div {
+  background-color:black;
+  border-radius: 3px;
+  content: '';
+  display: block;
+  height: 5px;
+  margin: 7px 0;
+  transition: all .2s ease-in-out;
+}
+
+.hamburger:hover:before, .hamburger:active::before {
+    transform: translateY(12px) rotate(135deg);
+}
+  
+.hamburger:hover:after, .hamburger:active::after {
+    transform: translateY(-12px) rotate(-135deg);
+}
+  
+.hamburger:hover div, .hamburger:active div {
+    transform: scale(0);
+}
