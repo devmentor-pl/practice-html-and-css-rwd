@@ -1,0 +1,89 @@
+.header {
+    height: 50px;
+}
+
+.header__navigation {
+    position: relative;
+    height: 100%;
+    padding: 0.5em;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    min-width: 33%;
+    line-height: 2em;
+}
+
+.menu-label {
+    position: absolute;
+    right: 10px;
+    top: 0px;
+}
+
+/* hamburger */
+.hamburger {
+    margin: 10px;
+    margin-right: 15px;
+    width: 35px;
+}
+
+.hamburger:after, 
+.hamburger:before, 
+.hamburger div {
+    background-color:black;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 5px;
+    margin: 7px 0;
+    /* transition: all .2s ease-in-out; */
+}
+
+/* .hamburger:hover:before,  */
+/* #menu-switcher:checked ~ .menu-label .hamburger::before {
+    transform: translateY(12px) rotate(135deg);
+} */
+
+/* .hamburger:hover:after,  */
+/* #menu-switcher:checked ~ .menu-label .hamburger::after {
+    transform: translateY(-12px) rotate(-135deg);
+} */
+
+/* .hamburger:hover div,  */
+/* #menu-switcher:checked ~ .menu-label .hamburger div {
+    transform: scale(0);
+}  */
+
+/* hamburger end */
+
+
+.header__menu {
+    display: none;
+}
+
+#menu-switcher:checked + .header__menu {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    width: 170px;
+    height: auto;
+}
+
+#menu-switcher {
+    display: none;
+}
+
+.menu__item {
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 0.5em;
+}
+
+.menu__item a {
+    font-size: 13px;
+}
+
+

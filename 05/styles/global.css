@@ -1,0 +1,28 @@
+.row, .container, .cell, .item {
+    outline: 2px solid black;
+}
+
+.row {
+    outline-color: green;
+    width: 100%;
+}
+
+.container {
+    outline-color: lightskyblue;
+}
+
+.cell {
+    outline-color: gold;
+    background-color: gold;
+}
+
+.item {
+    outline-color: purple;
+}
+
+a, p, h1 {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: fantasy;
+}

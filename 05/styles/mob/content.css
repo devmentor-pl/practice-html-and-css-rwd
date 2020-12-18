@@ -1,0 +1,24 @@
+.content1, .content2 {
+    height: 50vh;
+}
+
+.content1 .container {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    grid-template-columns: minmax(0, 100%);
+    height: 100%;
+}
+
+.content2 .container {
+    display: grid;
+    grid-template-rows: 25% 45% 30%;
+    grid-template-columns: minmax(0, 100%);
+    height: 100%;
+}
+
+.content1 .cell, .content2 .cell {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 7px;
+} 

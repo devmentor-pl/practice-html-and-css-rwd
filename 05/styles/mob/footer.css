@@ -1,0 +1,5 @@
+.footer__item {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}

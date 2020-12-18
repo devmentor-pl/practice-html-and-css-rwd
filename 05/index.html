@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" type="text/css" href="./styles/mob/global.css" media="(min-width: 1px)">
+    <link rel="stylesheet" type="text/css" href="./styles/mob/header.css" media="(min-width: 1px)">
+    <link rel="stylesheet" type="text/css" href="./styles/mob/content.css" media="(min-width: 1px)">
+    <link rel="stylesheet" type="text/css" href="./styles/mob/footer.css" media="(min-width: 1px)">
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/desk/desktop.css" media="(min-width: 800px)"> -->
+</head>
+<body>
+    <header class="header row">
+        <nav class="header__navigation container">
+            <h1 class="header__logo cell">lamegame.pl</h1>
+            <label class="menu-label" for="menu-switcher">
+                <div class="hamburger">
+                    <div></div>
+                </div>
+            </label>
+            <input type="checkbox" id="menu-switcher"></input>
+            <ul class="header__menu cell">
+                <li class="menu__item item">
+                    <a href="#">one-player</a>
+                </li>
+                <li class="menu__item item">
+                    <a href="#">two-player</a>
+                </li>
+                <li class="menu__item item">
+                    <a href="#">contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <article class="content1 row">
+        <section class="content__frame container">
+            <div class="content__item cell">item 1</div>
+            <div class="content__item cell">item 2</div>
+        </section>
+    </article>
+    <article class="content2 row">
+        <section class="content__frame container">
+            <div class="content__item cell">item 1</div>
+            <div class="content__item cell">item 2</div>
+            <div class="content__item cell">item 3</div>
+        </section>
+    </article>
+    <footer class="footer row">
+        <div class="footer__item container">
+            <p class="footer__logo cell">lamegame.pl</p>
+        </div>
+    </footer>
+</body>
+</html>
