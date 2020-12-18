@@ -14,7 +14,8 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-column: 0;
 }
 
 .t {
@@ -23,4 +24,16 @@
 
 .v {
     border-color: #baffc9;
+}
+
+@media screen (max-witdh: 599px) {
+    .body {
+        max-width: 1400px;
+        display: grid;
+    }
+    .p {
+        grid-row-start: 1; 
+        grid-column-start: 1;
+        
+    }
 }
