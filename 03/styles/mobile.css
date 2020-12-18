@@ -1,0 +1,22 @@
+.page {
+    display: grid;
+    grid-template-areas:
+        "a-top"
+        "a-midd"
+        "a-bottom";
+}
+.p {
+    grid-area: a-top;
+   
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+.t {
+    grid-area: a-midd;
+}
+.v {
+    grid-area: a-bottom;
+}

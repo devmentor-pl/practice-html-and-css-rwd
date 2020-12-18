@@ -5,12 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <!-- jeszcze trzeba reset.css dołożyć -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <!-- Chyba lepiej te zapytania tutaj zdefiniować, bo jak nie będzie potrzeby to się nie wczyta dobrze myśle? -->
+    <link rel="stylesheet"  href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px) and (max-width: 1200px)" href="./styles/tablet.css">   
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css"> 
 </head>
-<body>
+<body class="page">
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p class="t__par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, numquam sapiente! Natus perspiciatis excepturi quibusdam blanditiis minima reiciendis consequatur unde, sunt harum modi laboriosam eius, officia qui distinctio quod nihil dolores quas aliquam voluptatibus suscipit quisquam odit earum iste. Facere.</p>
+    </main>
+
+    <header class="p">
+        <picture class="p__pix">
+            <img src="./images/nutcracker-5767159_1280.jpg" alt="Zdjęcie dziadka do orzechów">
+        </picture>     
+    </header>
+
+    <!-- Co to wg za znacznik - poszukam sobie :) -->
+    <side class="v">
+        <iframe class="v__iframe"
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/wmzjxcw2EcA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+       
+<!--        
+        <iframe id="inlineFrameExample"
+    title="Inline Frame Example"
+    width="300"
+    height="200"
+    src="">
+</iframe> 
+-->
+
+    </side>
+
+
+            <!-- Jeszcze raz to muszę zrobić bo nie kumam czemu tu jest min a nie max  -->
+<!--          
+            <source media="(min-width:600px)" srcset="">
+            <source media="(min-width:1200px)" srcset="">
+            <source media="(min-width:1200px)" srcset="">     
+-->
+
 
 </body>
 </html>
+
+

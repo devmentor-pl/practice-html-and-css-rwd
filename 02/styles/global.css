@@ -1,47 +1,5 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Mam problem żeby to wycentrować
-jakoś klasa center mi nie działa
-
-jakby body zastąpić divem a do body przypisać 
-
-body{
+.header, .header__container,
+.main, .main__container,
+.footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh
-}
-*/
-
-
-body {
-    display: grid;
-    max-width: 1200px;
-    grid-auto-rows: 
-                    minmax(50vh, auto);
-}
-
-.a, .b, .c {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.a {
-    border-color: #ffffba
-}
-
-.b {
-    border-color: #ffdfba;
-}
-
-.c {
-    border-color: #baffc9;
 }

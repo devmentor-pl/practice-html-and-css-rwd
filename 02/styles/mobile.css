@@ -1,6 +1,6 @@
 @media all and (max-width:600px){
 
-body {
+div {
     grid-template-areas: 
                          "header"
                          "main"
