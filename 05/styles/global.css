@@ -9,6 +9,9 @@
 
 .container {
     outline-color: lightskyblue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .cell {

@@ -1,0 +1,37 @@
+.header {
+    height: 4em;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header__logo {
+    display: flex;
+    justify-content: center;
+    min-width: 33%;
+    line-height: 3em;
+}
+
+.menu-label {
+    display: none;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu__item {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em 2em 0.5em 2em;
+}
+
+.menu__item a {
+    font-size: 13px;
+}
+
+
