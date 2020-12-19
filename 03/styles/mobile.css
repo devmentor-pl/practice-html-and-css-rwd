@@ -1,22 +1,37 @@
-.page {
+.container__grid {
     display: grid;
     grid-template-areas:
-        "a-top"
-        "a-midd"
-        "a-bottom";
+        "pix"
+        "txt"
+        "video";
 }
 .p {
-    grid-area: a-top;
-   
+    grid-area: pix;
 }
-
-img {
+.p__img {
     max-width: 100%;
-    display: block;
+    display:block;
 }
 .t {
-    grid-area: a-midd;
+    grid-area: txt;
+    column-count: 1;
+    text-align: justify;
 }
+
+
 .v {
-    grid-area: a-bottom;
+    grid-area: video;
+    position: relative;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    overflow:hidden;
+}
+/* padding-bottom: 56,25%; - równoznaczne dla YT */
+
+.v__iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
 }

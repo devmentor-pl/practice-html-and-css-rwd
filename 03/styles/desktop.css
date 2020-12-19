@@ -1,0 +1,44 @@
+.container__grid {
+    display: grid;
+    grid-template-areas:
+        "pix av"
+        "txt txt";
+    grid-template-columns: minmax(1fr, 700px) minmax(1fr, 700px);;
+}
+
+.p {
+    grid-area: pix;
+    position: relative;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    overflow:hidden;
+}
+/* mógłbym też przyciąć obraz do tych proporcji  */
+.p__img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.t {
+    grid-area: txt;
+    text-align: justify;
+}
+
+.v {
+    grid-area: av;
+    position: relative;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    overflow:hidden;
+}
+/* padding-bottom: 56,25%; - równoznaczne dla YT */
+
+.v__iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
