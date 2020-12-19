@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.page__flexbox--center {
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-start; 
+    height: 100vh; 
+    margin: 0; 
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;

@@ -1,9 +1,12 @@
+
+
 .container__grid {
     display: grid;
     grid-template-areas:
-        "pix av"
+        "pix   video"
         "txt txt";
-    grid-template-columns: minmax(1fr, 700px) minmax(1fr, 700px);;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
 }
 
 .p {
@@ -21,13 +24,14 @@
     left: 0;
     top: 0;
 }
-.t {
+.t__par {
     grid-area: txt;
     text-align: justify;
+    column-count: 2;
 }
 
 .v {
-    grid-area: av;
+    grid-area: video;
     position: relative;
     height: 0;
     padding-bottom: calc(315 / 560 * 100%);
@@ -41,4 +45,4 @@
     position: absolute;
     left: 0;
     top: 0;
-}
+} 
