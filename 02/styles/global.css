@@ -6,6 +6,10 @@
 
 body {
     display: grid;
+    grid-template-areas:
+        "a-top"
+        "a-center"
+        "a-bottom";
 }
 
 .a,
@@ -20,21 +24,30 @@ body {
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-top;
 }
 
 .b {
     border-color: #ffdfba;
-    grid-row-start: 2;
-    grid-row-end: 2;
+    grid-area: a-center;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-bottom;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
+
     body {
+        grid-template-areas:
+        "a-top a-top"
+        "a-bottom a-center";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    /*body {
         grid-template-columns: repeat(2, [col] auto);
         grid-template-rows: repeat(2, [row] auto);
     }
@@ -52,8 +65,5 @@ body {
     .c {
         grid-column: 1;
         grid-row: 2;
-    }
-    .a, .b, .c {
-        max-width: 1200px;
-    }
+    }*/
 }
