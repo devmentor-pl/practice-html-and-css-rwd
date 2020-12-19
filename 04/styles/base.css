@@ -1,0 +1,231 @@
+/* Uwaga: kontur różni się od granic !
+ outline moze się nakładać i jest rysowany poza granicą  */
+
+ body {
+
+    background-color: #F6F6F6;
+     /* background-color: #F7F7F7; */
+ }
+/* 
+  .menu, .nav, .nav__item, .dropdown, .dualDropdown {
+    outline: 1px solid;
+    margin: 5px; padding: 5px;  
+ } 
+ */
+
+ 
+ 
+ /* Jak robie to z flexboxa to przynajmniej
+ odrazu dro że do <ul> muszę 
+ Ale zgodnie z BEM używać należy selektorów klas  */
+ 
+ .nav, .dropdown, .dualDropdown {
+     display: flex;
+    }
+
+
+    .dropdown, .dualDropdown {
+        flex-direction: column;
+    }
+    
+    
+    /*  Aby “wyciągnąć” .nav__dropdown z .nav__item
+    i przesunąć go w dowolne miejsce, skorzystamy
+    z position: absolute.
+    Ponieważ przesunięcie ma nastąpić względem
+    .nav__item, musimy przypisać mu wartość
+    relative dla position. */
+    
+    /* LISTA ROZWIJANA */
+.nav__item, .dropdown__item, .dualDropdown__item{
+        position: relative;
+        display: block;
+    }
+    
+.dropdown {
+    position: absolute;
+    width: 234px;
+    left: auto;
+    right: 0;
+    text-align: left;
+    margin: 14px 50px auto auto;
+    background-color: #333333;
+    border-left-style: solid;
+    border-width: 4px;
+    border-radius: 15px 0 30px 0;
+
+}
+.dropdown__item--web,
+.dropdown__item--2 {
+    border-bottom-color: #F6F6F6;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.dualDropdown {
+    position: absolute;
+    width: 120px;
+    left: auto;
+    right: 0;
+    text-align: left;
+    margin: -38px 230px auto auto;
+    background-color: #333333;
+    border-left-style: solid;
+    border-width: 4px;
+    border-radius: 15px 0 30px 20px;
+}
+
+.dropdown__link, .dualDropdown__link {
+    color: #B0B1B2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: capitalize;
+ 
+
+    /* Mam problem z wycentrowaiem tekstu w osi Y względem .dropdown__item / .dualDropdown__item 
+    Muszę to jeszcze raz ogarnąć - ustawienie zawartości tekstowej w płaszczyżnie pionowej dla inline */
+    
+}
+
+.dropdown__item, .dualDropdown__item {
+    height: 40px;
+    padding: 15px 0 15px 25px;
+    display: none;
+}
+
+
+
+
+/* Warstwa wizualna menu  */
+    
+.div--menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu {
+    margin-top: 15px;
+    padding-right: 25px;
+    background-color: #F6F6F6;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.menu__nav {
+    
+    display: flex;
+    
+    
+}
+.nav {
+    height: 65px;
+   
+
+}
+
+.nav__item {
+    background: #ffffff;
+    padding: 14px 20px;
+    margin-top: auto;
+    margin-bottom: 0px;
+    border-left-style: solid;
+    border-width: 4px;
+    border-radius: 15px 0 30px 20px;
+    border-color:#009AE1;
+}
+
+.nav__link {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #0F0F2E;
+    font-weight: bold;
+}
+
+.nav__link--start {
+    color: #0FA0E2;
+}
+
+/*
+
+Co tu jest nie tak? 
+.nav__item:first-child {
+    color: #0FA0E2;  
+}
+CZEMU KOLORUJE SIĘ NA NIEBIESKO BORDER a nie tekst? 
+
+*/
+/* Czmu mi to niedziała? Powinien się zmieniać kolor napisu 
+Jak zamiast color: ustawie sobie background-color
+to to działa - więc problem jest z tym zdefiniowaniem barwy 
+Czemu?  */
+.nav__item--start:hover>.nav__link--start {
+    color: #F4F4F4;
+}
+
+/* Hover - zmiana + rozwijanie   */
+
+.nav__dropdown--menu:hover .dropdown__item, .nav__dropdown {
+    display: block;
+}
+
+.dropdown__dualDropdown--menu:hover .dualDropdown__item {
+    display: block;
+}
+
+.nav__item:hover {
+    border-top: 3px solid #009AE1;
+}
+
+.dropdown__item:hover .dropdown__link, 
+.dualDropdown__item:hover .dualDropdown__link {
+    color: #F4F4F4;
+}
+
+.nav__item:hover .nav__link {
+    color:  #0FA0E2;
+}
+
+.dropdown__link--arrow {
+  margin-left: -20px;
+  margin-right: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.nav__link--arrow {
+    transform: rotate(90deg);
+    font-weight: bold;
+    display: inline-block;
+}
+
+.dropdown__item:hover .dropdown__link {
+    padding-left: 15px;
+}
+.dropdown__item:hover .dropdown__link--arrow {
+    padding-left: -15px;
+
+}
+
+.nav__item:hover .nav__link--arrow {
+    display: none;
+}
+
+.nav__item:hover .nav__link--menu {
+    padding-left: 15px;
+}
+
+.nav__dropdown--menu {
+    width: 120px;
+}
+
+.dualDropdown__item:hover .dualDropdown__link {
+    padding-left: 20px;
+}
+
+/* ______________________________START___________________ */
+
