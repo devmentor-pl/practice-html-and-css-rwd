@@ -234,7 +234,7 @@ Czemu?  */
     display: none;
 }
 
-.hamb__label, .hamb__input {
+.hamb__label, .hamb__input, .hamburger__txt {
     display: none;
 }
 
