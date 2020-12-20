@@ -53,8 +53,8 @@
     border-left-style: solid;
     border-width: 4px;
     border-radius: 15px 0 30px 0;
-
 }
+
 .dropdown__item--web,
 .dropdown__item--2 {
     border-bottom-color: #F6F6F6;
@@ -227,5 +227,16 @@ Czemu?  */
     padding-left: 20px;
 }
 
-/* ______________________________START___________________ */
+
+
+/* ______________________________HIDDEN___________________ */
+.dropdown__link--mobiarrow {
+    display: none;
+}
+
+.hamb__label, .hamb__input {
+    display: none;
+}
+
+
 
