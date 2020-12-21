@@ -1,0 +1,15 @@
+.page__container--center{
+    outline:5px solid #0ED145; 
+    margin: 5px;
+}
+
+header, main, section, footer {
+    border: 5px solid #00A8F3;
+    min-height: 50px;
+}
+
+h1, article, aside {
+    background-color: #FFCA18;
+    min-width: 200px;
+    padding: 10px;
+}

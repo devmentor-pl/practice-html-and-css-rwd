@@ -1,3 +1,22 @@
 .page__header {
     display:flex;
 }
+
+@media all and (min-width:600px){
+
+    body {
+        grid-template-areas: 
+                             "header header"
+                             "footer main";
+        }   
+
+    .a {
+        grid-area: header;
+    }
+    .b {
+        grid-area: main;
+    }
+    .c {
+        grid-area: footer;
+    }
+    }
