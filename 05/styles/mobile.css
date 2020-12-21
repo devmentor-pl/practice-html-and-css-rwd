@@ -8,7 +8,7 @@
     justify-content: space-between;
     justify-items: center;
 }
-.hamburger__label, 
+ 
 .hamburger__icon,
 .hamburger__txt {
     display: none;

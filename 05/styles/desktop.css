@@ -1,0 +1,95 @@
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page__container--center {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*start____________________HEADER____________________start*/
+
+.header__page {
+    display: flex;
+    max-width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.hamburger__txt,
+.hamburger__icon {
+    display: none;
+}
+
+.hamburger__label {
+    background-color: rgb(255, 202, 24);
+    width: 150px;
+    order: 1;
+}
+.hamburger__label,
+.logotype {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*____________________END____________________*/
+
+/*.info____________________SECTION____________________start*/
+
+.section__page {
+    display: flex;
+    max-width: 100%;
+    height: 40vh;
+    justify-content: space-between;
+    margin: 
+}
+.article--company {
+    flex: 3;
+    /* row-gap: 10px;  - sprawdz ale chyba tylko w grid  */
+    margin: 20px 5px 20px 0;
+}
+.article--history {
+    flex: 1;
+    margin: 20px 0 20px 5px;
+}
+/*____________________END____________________*/
+/*.offer____________________SECTION____________________start*/
+
+
+.offer--hurt {
+    flex 1.5;
+    order: 1;
+    margin: 20px 20px 20px 0;
+}
+.offer--detal {
+    flex: 1.5;
+    margin: 20px 0 20px 20px;
+}
+.offer--special {
+    flex: 1;
+    margin: 20px 20px 20px 20px;
+}
+/*____________________END____________________*/
+
+/*start____________________FOOTER____________________start*/
+.page__footer {
+
+}
+.page__footer {
+    display: flex;
+    max-width: 100%;
+    height: 8vh;
+    justify-content: center;
+    align-content: center;
+    
+}
+.nav__footer {
+    max-width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+/*____________________END____________________*/
