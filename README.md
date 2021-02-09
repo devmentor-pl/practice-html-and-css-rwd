@@ -30,7 +30,7 @@ Zanim przystąpisz do zadan powineneś przerobić:
 
 &nbsp;
 
-:arrow_left: [*poprzedni zestaw zadań (**HTML i CSS: Podstawy**)*](./../01)
+:arrow_left: [*poprzedni zestaw zadań (**HTML i CSS: Podstawy**)*](https://github.com/devmentor-pl/practice-html-and-css-basics)
 
 
 ## Jak prawidłowo wykonać zadania?
