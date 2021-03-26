@@ -1,30 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" media="(max-width: 760px)" href="css/mobile.css">
+    <link rel="stylesheet" media="(min-width:761px)" href="css/desktop.css">
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+    <input class="nav__hamburger--input" type="checkbox" id="menu-switcher">
+    <label class="nav__hamburger--toggle" role="button" for="menu-switcher"></label>
+    <nav class="nav">
+        <ul class="nav__list container">
+            <li class="nav__item">
+                <a class="nav__link" href="#">start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="nav__item">
+                <a class="nav__link" href="#">oferta</a>
+                <input class="nav__item--input" type="checkbox" id="dropmenu-switcher">
+                <label class="nav__item--toggle" role="button"
+                    for="dropmenu-switcher"><span class="nav__item--toggle-inner">></span> </label>
+                <ul class="nav__dropdown">
+                    <li class="dropdown__item">
+                        <a class="dropdown__link" href="">Strony internetowe</a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a class="dropdown__link" href="">Pozycjonowanie stron www</a>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="nav__item nav__item--nospace">
+                <a class="nav__link" href="#">kontakt</a>
             </li>
         </ul>
     </nav>
+    <header class="header">
+        <main class="main container">
+            <h1 class="main__heading">Menu design No.13</h1>
+            <p class="main__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro amet magnam commodi
+                vero ex aliquid
+                facilis, maiores veniam! Modi blanditiis, quidem expedita deserunt impedit et autem quibusdam est
+                sapiente sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia molestias quod, corporis
+                earum facilis dolorum reiciendis eaque corrupti possimus ea dolor. Sint ratione, velit repellat
+                perferendis ullam commodi accusantium possimus?</p>
+            <button class="main__button">
+                <a class="button__link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstleyVEVO">Check it out</a>
+            </button>
+        </main>
+    </header>
 
 </body>
+
 </html>
