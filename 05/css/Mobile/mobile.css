@@ -28,16 +28,14 @@
     grid-template-rows: repeat(2, 1fr);
 }
 
-.main__article--first {
+.article--first {
     grid-column: 2 / 12;
     grid-row: 1 / 2;
-    background-color: red;
 }
 
-.main__article--second {
-    grid-column: 2 / 12;
+.article--second {
+    grid-column: 2/ 12;
     grid-row: 2 / 3;
-    background-color: yellow;
 }
 
 .section {

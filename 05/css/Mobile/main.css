@@ -1,0 +1,25 @@
+.main {
+    background-color: var(--color-abc);
+}
+
+.article--first,
+.article--second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.article__heading {
+    padding: 0 5rem 1rem 5rem;
+    font-size: 1.8rem;
+
+}
+
+.article__text {
+    padding: 0 5rem;
+    font-size: 1.5rem;
+}
