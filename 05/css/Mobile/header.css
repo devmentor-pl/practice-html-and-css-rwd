@@ -1,14 +1,13 @@
 .header {
     position: relative;
     height: 0;
-    background-image: url(../../img/header_bgc.jpg);
+    background-image: url(../../img/header_bgc_mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: calc(426 / 640 * 50%);
 }
 
 
-/* HAMBURGER MENU START */
 
 .nav__hamburger {
     position: absolute;
@@ -16,9 +15,9 @@
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    width: 50px;
+    width: 5rem;
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 }
 
 .hamburger__top,
@@ -47,23 +46,18 @@
     display: none;
 }
 
-.hamburger__toggle:checked+.hamburger__top {
+.hamburger__toggle:checked+.nav__hamburger .hamburger__top {
     transform: translate(4px, 6px) rotate(45deg);
 }
 
-.hamburger__toggle:checked~.hamburger__middle {
+.hamburger__toggle:checked~.nav__hamburger .hamburger__middle {
     transform: rotate(-45deg);
 }
 
-.hamburger__toggle:checked~.hamburger__bottom {
+.hamburger__toggle:checked~.nav__hamburger .hamburger__bottom {
     transform: translate(12px, -10px) rotate(45deg);
 }
 
-
-
-/* HaAMBURGER KONIEC  */
-
-/* START LOGO  */
 
 
 .header__logo {
@@ -89,4 +83,53 @@
     width: 90%;
 }
 
-/* KONIEC LOGO */
+
+.header__nav {
+    position: absolute;
+    width: 100%;
+    visibility: hidden;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+    transform: scale(0);
+    transition: 0.3s ease-out;
+    border-radius: 25%;
+    background-color: var(--color-delta);
+    z-index: 2;
+}
+
+.nav__item {
+    margin: 2rem 0;
+}
+
+.nav__item:last-of-type {
+    margin-bottom: 0;
+}
+
+.nav__link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-beta);
+}
+
+.hamburger__toggle:checked~.header__nav {
+    visibility: visible;
+}
+
+.hamburger__toggle:checked~.header__nav .nav__list {
+    transform: scale(1);
+    border-radius: 0;
+}

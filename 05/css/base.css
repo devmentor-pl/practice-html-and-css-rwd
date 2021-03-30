@@ -12,27 +12,17 @@
     --color-beta: rgba(255, 255, 255, 1);
     --color-gamma: rgb(224, 254, 255);
     --color-delta: rgb(53, 198, 255);
-    --color-abc: rgb(245, 245, 245);
-
+    --color-epsilon: rgb(240, 240, 240);
 }
-
-
-.row {
-    margin: 5px;
-    outline: 3px solid;
-    outline-color: green;
-}
-
 
 .container {
     margin: 0 auto;
-    outline: 3px solid;
-    outline-color: blue;
 }
 
 
 .wrap {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr 2fr 2fr 1fr;
+    grid-template-rows: minmax(min-content, 25vh) repeat(3, minmax(min-content, max-content));
+    box-shadow: 1px 1px 5px 0 var(--color-alfa), -1px -1px 5px 0 var(--color-alfa);
 }

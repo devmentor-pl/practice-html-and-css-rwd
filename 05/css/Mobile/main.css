@@ -1,15 +1,16 @@
 .main {
-    background-color: var(--color-abc);
+    align-items: center;
+    padding-top: 2rem;
 }
 
-.article--first,
-.article--second {
+.main__article--first,
+.main__article--second {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    margin-bottom: 0;
     text-align: center;
+    padding: 10rem 0;
+    background-color: var(--color-beta);
 }
 
 
