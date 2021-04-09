@@ -1,0 +1,50 @@
+/* tablet */
+
+.header {
+    width: 90%;
+    height: 10vh;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: inherit;
+}
+
+.header-nav__menu {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    position: inherit;
+}
+
+.header-nav__menu-li {
+    margin: 0 2rem;
+    padding: 1.5rem;
+}
+
+.header-nav__menu-li:hover > .header-nav__menu-dropdown  {
+    display: block;
+}
+
+.header-nav__menu-dropdown {
+    display: none;
+    position: absolute;
+}
+
+.header-nav__menu-dropdown-li > a {
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+
+#menu-switcher {
+    display: none;
+}
+
+

@@ -1,0 +1,29 @@
+/* global */
+
+:root {
+    --color-alfa: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
+    --color-delta: rgb(97, 200, 136);
+    --color-gamma: rgb(255, 255, 255);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: var(--color-alfa);
+}
+
+ul {
+    list-style: none;
+    font-size: 3.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-gamma);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+label {
+    font-size: 4.0rem;
+}
