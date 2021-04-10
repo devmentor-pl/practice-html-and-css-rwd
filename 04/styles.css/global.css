@@ -8,7 +8,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 20px);
     background: var(--color-alfa);
 }
 
@@ -33,6 +33,12 @@ a:hover {
 
 label {
     font-size: 4.0rem;
+    position: relative;
+    top: 25%;
+    right: 10%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-gamma);
+    padding-left: 1rem;
 }
 
 h1 {
