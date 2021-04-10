@@ -31,24 +31,13 @@
     padding: 1rem 0 1rem 0;
 }
 
-
 .header-nav__menu-dropdown-li:nth-child(2) {
     padding-bottom: 0;
 }
 
-.header-nav__menu-dropdown-li > a {
+.header-nav__menu-dropdown-li > .header-nav__menu-dropdown-li-a {
     padding-left: 2rem;
     font-size: 1.5rem;
-}
-
-a {
-    padding: 1rem;
-}
-
-a:hover {
-    background: var(--color-delta);
-    border-radius: 10px 10px 10px 10px;
-    transition: all .4s ease-in;
 }
 
 .header-nav__menu {

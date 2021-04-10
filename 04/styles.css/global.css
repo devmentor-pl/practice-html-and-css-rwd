@@ -1,8 +1,8 @@
 /* global */
 
 :root {
-    --color-alfa: radial-gradient(rgb(194, 74, 126), rgb(105, 86, 235));
-    --color-delta: rgb(97, 200, 136);
+    --color-alfa: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+    --color-delta: rgb(59, 190, 109);
     --color-gamma: rgb(255, 255, 255);
 }
 
@@ -17,13 +17,29 @@ ul {
     font-size: 3.5rem;
 }
 
-nav a {
+a {
     text-decoration: none;
     color: var(--color-gamma);
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    padding: 1rem;
+}
+
+a:hover {
+    background: var(--color-delta);
+    border-radius: 10px 10px 10px 10px;
+    transition: all .4s ease-in;
 }
 
 label {
     font-size: 4.0rem;
+}
+
+h1 {
+    font-size: 3.0rem;
+    color: var(--color-gamma);
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5rem;
+    text-align: center;
+    padding: 0 1rem;
 }
