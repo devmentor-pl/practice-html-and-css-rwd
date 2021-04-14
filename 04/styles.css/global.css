@@ -2,7 +2,7 @@
 
 :root {
     --color-alfa: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
-    --color-delta: rgb(59, 190, 109);
+    --color-delta: rgba(151, 151, 151, 0.849);
     --color-gamma: rgb(255, 255, 255);
 }
 
@@ -23,6 +23,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 1rem;
+    border-radius: 10px 10px 10px 10px;
 }
 
 a:hover {

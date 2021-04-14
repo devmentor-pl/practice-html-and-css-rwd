@@ -44,42 +44,15 @@
     display: none;
 }
 
-#menu-switcher:focus + .header-nav__menu, .header-nav__menu-dropdown  {
+#menu-switcher:checked + .header-nav__menu, .header-nav__menu-dropdown  {
     display: block;
 }
 
 #menu-switcher {
-    width: 40px;
-    height: 35px;
-    border: 0;
-    border-top: 5px solid var(--color-gamma);
-    background: transparent;
-    position: relative;
-    transition: 0.3s transform linear;
-    right: 35%;
-}
-  
-#menu-switcher::before, #menu-switcher::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 5px solid var(--color-gamma);
-    transform: translateY(10px);
-}
-  
-#menu-switcher::after {
-    transform: translateY(25px);
-    transition: 0.3s transform linear;
-}
-  
-#menu-switcher:focus {
-    transform: rotate(45deg) translateY(5px);
-    border: none;
-}
-  
-#menu-switcher:focus::after {
-    transform: rotate(-90deg) translateX(-10px);
+    display: none;
 }
 
+.menu-label {
+    position: relative;
+    right: 40%;
+}
