@@ -1,0 +1,118 @@
+
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightgray;
+    list-style-type: none;
+}
+
+.menu {
+    display: flex;
+    margin: 20px;
+    background-color: white;
+}
+
+.menu label,
+.menu input {
+    display: none;
+}
+
+nav .menu-list>li {
+    display: inline-block;
+    margin-left: -5px;
+}
+
+nav a {
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    color: #169683;
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    border-top: 2px solid transparent;
+}
+
+nav li:hover>a {
+    border-top: 2px solid #D8B5FF;
+}
+
+nav .submenu-list,
+.submenu-list-item {
+    position: absolute;
+    display: none;
+}
+
+nav .menu-list>li:hover .submenu-list,
+.submenu-list>li:hover>.submenu-list-item {
+    display: block;
+}
+
+.submenu-list li {
+    position: relative;
+    width: 250px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+
+.submenu-list li>a {
+  background: rgb(216,181,255);
+background: linear-gradient(90deg, rgba(216,181,255,1) 0%, rgba(22,150,131,1) 100%);
+    color: white;
+}
+
+.submenu-list li:hover>a {
+    border: none;
+}
+
+nav .submenu-list-item{
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+}
+
+
+@media (max-width: 600px) {
+    .menu {
+        background: transparent;
+        margin-top: 30px;
+    }
+    .menu label {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        display: block;
+    }
+    .menu ul {
+        display: none;
+    }
+    .menu input:checked+ul {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    nav .menu-list>li {
+        display: block;
+        margin: 5px;
+        padding: 5px 10px;
+        text-align: center;
+        border: 3px solid #D8B5FF ;
+    }
+    nav a {
+        background: transparent;
+        text-align: center;
+    }
+    nav li:hover>a {
+        border: none;
+    }
+    nav .submenu-list {
+      z-index: 10;
+  }
+} 
+
+
