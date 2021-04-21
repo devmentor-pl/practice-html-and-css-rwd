@@ -3,24 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+body
+{
+    border: 3px solid tomato;
+}
 
 .p, .t, .v {
     border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
     justify-content: center;
     align-items: center;
 }
+.container
+{
+    border: 3px solid rgb(143, 142, 177);
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .p {
-    border-color: #ffffba
+    border-color: rgb(9, 255, 0);
 }
 
 .t {
-    border-color: #ffdfba;
+    border-color: rgb(255, 0, 21);
 }
 
 .v {
-    border-color: #baffc9;
+    border-color: rgb(79, 204, 142);
+    height: 0;
+    padding-bottom: calc(315 /560 * 100%);
+    position: relative;
+    width: 100%;
 }
+
+iframe
+{
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+}
+
