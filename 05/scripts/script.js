@@ -19,6 +19,7 @@ function reportWindowSize() {
 	} else {
 		document.getElementById('header__nav-menu').checked = false;
 		document.getElementById('header__nav-hamburger').style.display = 'block';
+		document.getElementById('header__nav-x').style.display = 'none';
 	}
 };
 
