@@ -6,38 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS BASICS - #01</title>
 
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" media="(min-width: 600px" href="./styles/desktop.css">
+    <link rel="stylesheet" media="(max-width: 599px" href="./styles/mobile.css">
 
 </head>
 <body>
 
     <header class="main-header__container">
         <div class="header__container">
-            <div id="header__content_1"></div>
-            <div id="header__content_2"></div>
+            <div id="header__content_1">header__content_1</div>
+            <label id="header__nav-hamburger" for="header__nav-menu">&#9776;</label>
+            <label id="header__nav-x" for="header__nav-menu">&#9747;</label>
+            <input type="checkbox" id="header__nav-menu">
+            <div id="header__content_2">header__content_2</div>
         </div>
     </header>
 
     <section class="main-section__container_1">
         <div class="content__container_1">
-            <div id="section__content_1"></div>
-            <div id="section__content_2"></div>
+            <div id="section__content_1">section__content_1</div>
+            <div id="section__content_2">section__content_2</div>
         </div>
     </section>
 
     <section class="main-section__container_2">
         <div class="content__container_2">
-            <div id="section__content_3"></div>
-            <div id="section__content_4"></div>
-            <div id="section__content_5"></div>
+            <div id="section__content_3">section__content_3</div>
+            <div id="section__content_4">section__content_4</div>
+            <div id="section__content_5">section__content_5</div>
         </div>
     </section>
 
     <footer class="main-footer__container">
         <div class="footer__container">
-            <div id="footer__content_1"></div>
+            <div id="footer__content_1">footer__content_1</div>
         </div>
     </footer>
+
+    <script src='scripts/script.js'></script>
 
 </body>
 </html>
