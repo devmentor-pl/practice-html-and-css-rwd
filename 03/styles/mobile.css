@@ -1,13 +1,17 @@
 body{
   display: grid;
-  grid-template-rows: 3;
+  grid-template-areas: 
+  "p-top"
+  "t-middle"
+  "v-bottom";
+  
 }
 .p {
-  grid-row: 1/2;
+  grid-area: p-top;
 }
 .t {
-  grid-row: 2/3;
+  grid-area: t-middle;
 }
 .v {
-  grid-row: 3/4;
+  grid-area: v-bottom;
 }
