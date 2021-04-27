@@ -1,4 +1,4 @@
-body {
+.container {
     display: grid;
     grid-template-areas: 
         "a-picture a-text"

@@ -1,79 +1,94 @@
-
-
 /*Header*/
+
 .header {
-   margin-bottom: 2rem;
-  }
-  
-  .header__nav {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-  .header__logo {
-    width: 15rem;
-    display: flex;
-    justify-content: space-between;
-  }
+  margin-bottom: 2rem;
+}
+
+.header__nav {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.header__logo {
+  width: 15rem;
+  text-align:start;
+}
 
 /*Navigation*/ 
 
-  .nav__list {
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-    margin-bottom: 0;
+.header__nav label,
+.header__nav input {
     display: none;
-  }
-  
-  .nav__item {
-    font-size: 1.8rem;
-    text-decoration: none;
-    color: rgb(199, 199, 199);
-    padding: 1rem;
-    display: block;
-    text-transform: uppercase;
+}
+.header__nav label {
+  display: block;
+  border-top:  3px solid #e9e4ee;
+  border-bottom: 3px solid #e9e4ee;
+  width: 40px;
+  height: 30px;
+  float: right;
+  margin-top: -45px;
 }
 
-/*Hamburger*/ 
-.hamburger {
-    width: 40px;
-    height: 35px;
-    border-top: 5px solid #000;
-    display: block;
-    position: absolute;
-    right: .8rem;
-    background: transparent;
-    top: 0;
-    transform: translateY(50%);
+.header__nav label::before {
+  content: '';
+  display: block;
+  border-top: 3px solid#e9e4ee;
+  margin-top: 10px;
+  width: 100%;
+  top: calc (50% - 1.5px);
 }
 
-.hamburger::before,
-.hamburger::after {
-    content: "";
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-top: 5px solid #000;
-    background: transparent;
-    transform: translateY(10px);
-    transition: 0.2s transform linear;
+.nav__list {
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 0;
+  display: none;
 }
 
-.hamburger::after {
-    transform: translateY(25px);
-    transition: 0.2s transform linear;
+.nav__item {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: rgb(199, 199, 199);
+  padding: 1rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.header__nav input:checked+ul {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+nav .nav-list>li {
+  display: block;
+  margin: 5px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 3px solid #e9e4ee;
+}
+nav a {
+  background: transparent;
+  text-align: center;
+}
+
+
+/*main*/
+.content__article {
+  padding: 20px;
+}
+.content__note {
+  padding: 20px;
 }
 /*footer*/
-  .footer content {
-    background-color: rosybrown;
-    height: 70px;
-  }
-  
-  .footer__container {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: center;
-  }
+.footer content {
+  background-color: rosybrown;
+  height: 70px;
+}
+
+.footer__container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+}
