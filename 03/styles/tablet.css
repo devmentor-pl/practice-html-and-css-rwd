@@ -1,13 +1,24 @@
-.container
-{
+body {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-auto-flow: column;
+    grid-template-areas: 
+        "a-picture a-text"
+        "a-video a-text";
+        grid-template-rows: repeat(2, auto);
 }
-.t
-{
-    grid-column: 2/3;
-    grid-row: 1/3;
 
+
+img {
+    max-width: 100%;
+}
+
+.p {
+    grid-area: a-picture;
+}
+
+.t {
+    grid-area: a-text;
+}
+
+.v {
+    grid-area: a-video;
 }

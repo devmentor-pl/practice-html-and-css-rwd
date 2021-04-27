@@ -1,11 +1,26 @@
 
-.container
-{
+body {
+    width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a-picture"
+        "a-text"
+        "a-video";
+    grid-template-rows: repeat(3, auto)
+}
+
+img {
+    max-width: 100%;
+}
+
+.p {
+    grid-area: a-picture;
 }
 
 .t {
-    grid-row: 2/3;
+    grid-area: a-text;
+}
+
+.v {
+    grid-area: a-video;
 }

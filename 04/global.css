@@ -41,11 +41,11 @@ nav a {
 nav li:hover>a {
     border-top: 2px solid #D8B5FF;
 }
-
-nav .submenu-list,
+ .submenu-list,
 .submenu-list-item {
     position: absolute;
     display: none;
+
 }
 
 nav .menu-list>li:hover .submenu-list,
@@ -55,7 +55,6 @@ nav .menu-list>li:hover .submenu-list,
 
 .submenu-list li {
     position: relative;
-    width: 250px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
 }
@@ -70,17 +69,12 @@ background: linear-gradient(90deg, rgba(216,181,255,1) 0%, rgba(22,150,131,1) 10
     border: none;
 }
 
-nav .submenu-list-item{
-    top: 0;
-    right: 0;
-    transform: translate(100%, 0);
-}
 
 
 @media (max-width: 600px) {
     .menu {
         background: transparent;
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .menu label {
         position: absolute;
@@ -94,7 +88,7 @@ nav .submenu-list-item{
     .menu input:checked+ul {
         display: block;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     nav .menu-list>li {
         display: block;
@@ -111,7 +105,7 @@ nav .submenu-list-item{
         border: none;
     }
     nav .submenu-list {
-      z-index: 10;
+      z-index: 20;
   }
 } 
 
