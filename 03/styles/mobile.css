@@ -1,4 +1,4 @@
-body{
+.l-container{
   display: grid;
   grid-template-areas: 
   "p-top"

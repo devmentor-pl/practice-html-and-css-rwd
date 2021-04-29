@@ -14,6 +14,9 @@
 
 .p {
     border-color: #ffffba;
+    height: 0;
+    padding-bottom: calc(178 / 299 * 100%);
+    position: relative;
     
 }
 
@@ -28,6 +31,13 @@
     position: relative;
 }
 .side__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.side__img{
     position: absolute;
     top: 0;
     left: 0;

@@ -1,15 +1,19 @@
-body{
+.l-container{
+  max-width: 1400px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: 
   "p-top-left v-top-right"
   "t-bottom t-bottom";
   grid-template-columns: 50% 50%;
+  grid-template-rows: minmax(200px, 50vh);
 }
 .p {
   grid-area: p-top-left;
 }
 .t {
   grid-area: t-bottom;
+  display: block;
 }
 .v{
   grid-area: v-top-right;
