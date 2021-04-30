@@ -1,7 +1,11 @@
-/* outlines */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+}
 
 body{ 
   outline: 1px solid #228B22;
+  font-family: "Open Sans", sans-serif;
 }
 
 .container{
