@@ -50,7 +50,7 @@
   background-color: var(--color-list-bgc);
   border: 1px solid #582450;
 }
-.menu__link{
+.menu__link, .menu__link--dropdown{
   color: white;
   display: block;
   margin: 0rem 1rem;
