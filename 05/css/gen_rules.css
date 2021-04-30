@@ -1,0 +1,11 @@
+/* outlines */
+
+body{ 
+  outline: 1px solid #228B22;
+}
+
+.container{
+  outline: 1px solid blue;
+  max-width: 1000px;
+}
+
