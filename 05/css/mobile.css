@@ -6,25 +6,31 @@
 }
 .header__nav{
   width: 40%;
-  height: 50%;
-  background: yellow;
   margin: 0 auto;
-  transform: translateY(50%);
+}
+.brand{
+  position: relative;
+  left: 50%;
+  width: 40%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: orange;
+  transform: translate(-50%, 70%);
 }
 .nav__icon{
   display: block;
-  /* text-align: center; */
   padding: 1.5rem;
   position: relative;
-  left: 50%;
-  top: -10%;
+  left: 120%;
+  width: 30%;
+  transform: translateY(-40%); 
 }
 .nav__icon::after{
   content:"";
   border-bottom: 4px solid black;
   border-top: 4px solid black;
   position: absolute;
-  left: 90%;
+  left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 40px;
@@ -38,7 +44,7 @@
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 90%;
+  left: 50%;
 }
 #menu--switch{
   display: none;
@@ -47,9 +53,11 @@
   display: block;
 }
 .nav__block{
+  position: relative;
   display: none;
   background-color: #000;
   list-style-type: none;
+  top: -90%;
 }
 .nav__link{
   padding: 1rem 0.5rem;

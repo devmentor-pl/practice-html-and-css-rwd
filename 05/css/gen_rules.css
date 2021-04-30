@@ -11,5 +11,6 @@ body{
 .container{
   outline: 1px solid blue;
   max-width: 1000px;
+  margin: 0 auto;
 }
 
