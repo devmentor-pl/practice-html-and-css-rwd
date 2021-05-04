@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "a-picture a-text"
+        "a-video a-text";
+        grid-template-rows: repeat(2, auto);
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.p {
+    grid-area: a-picture;
+}
+
+.t {
+    grid-area: a-text;
+}
+
+.v {
+    grid-area: a-video;
+}
