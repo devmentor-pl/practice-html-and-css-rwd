@@ -1,5 +1,5 @@
 /* Header */
-.header__nav{
+.nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -9,7 +9,7 @@
 .nav__icon{
     display: none;
 }
-.brand{
+.nav__brand{
     padding: 0;
     height: 100%;
     left: -20%;

@@ -4,11 +4,11 @@
   outline: 1px solid red;
   margin-bottom: 1rem;
 }
-.header__nav{
+.nav{
   width: 40%;
   margin: 0 auto;
 }
-.brand{
+.nav__brand{
   position: relative;
   left: 50%;
   width: 40%;
