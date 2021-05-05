@@ -10,6 +10,7 @@
   grid-area: p-top;
 }
 .t {
+  padding: 0 1rem;
   grid-area: t-middle;
 }
 .v {
