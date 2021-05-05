@@ -45,7 +45,7 @@
   margin: 0 0;
   text-align: left;
 }
-.menu__item, .menu__item--modifier{
+.menu__item, .menu__item--dropdown{
   background-color: var(--color-list-bgc);
   border: 1px solid #582450;
 }
@@ -56,11 +56,11 @@
   padding: 1rem 0;
   font-size: 1.2rem;
 }
-.secondary__item, .secondary__item--modifier{
+.secondary__item, .secondary__item--dropdown{
   background-color: #f1195f;
   border-top: 1px solid #582450;
 }
-.secondary__item--modifier{
+.secondary__item--dropdown{
   border-top: 2px solid #582450;
 }
 .secondary__link{

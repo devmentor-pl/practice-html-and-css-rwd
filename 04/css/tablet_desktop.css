@@ -12,7 +12,7 @@
   justify-content: flex-end;
   margin-right: 1rem;
 }
-.menu__item, .menu__item--modifier{
+.menu__item, .menu__item--dropdown{
   background-color: transparent;
   border: none;
   position: relative;
@@ -48,7 +48,7 @@
   padding: 0.5rem;
   font-weight: bold;
 }
-.secondary__item, .secondary__item--modifier{
+.secondary__item, .secondary__item--dropdown{
   border:none;
 }
 .menu__secondary:hover{
