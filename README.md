@@ -55,6 +55,30 @@ Poniżej zamieszczam tylko informacje dla jakich rozdzielczości był robiony pr
 
 ![](./assets/desktop.png)
 
+# Zadanie dodatkowe
+
+Po wykonaniu tego zadania najwyższy czas zaprezentować swoje umiejętności znajomym na FB! Być może w ten sposób zdobędziesz swoje pierwsze komercyjne zlecenie - poważnie! Każdy "guru" sprzedaży poleci ten sposób. Osoby, które Cię znają, są w stanie bardziej zaufać Tobie, niż komuś z "ulicy". Tym samym zostawią u Ciebie "parę" groszy, a Ty dodatkowo zdobędziesz doświadczenie.
+
+## GitHub Pages
+
+GitHub udostępnia funkcjonalność, która nazywa się [GitHub Pages](https://pages.github.com/). W ten sposób możemy "serwować" naszą stronę całkowicie za darmo (strony statyczne tj. HTML, CSS, JavaScript - więc również React) na podstawie zawartości naszego repozytorium.
+
+Wystarczy, że przejdziesz do [ustawień swojego repozytorium](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) i wybierzesz gałąź (branch), która zawiera odpowiednie pliki (pewnie będzie to `master` lub `main`). Po minucie czy dwóch strona powinna być już dostępna.
+
+## Własna domena
+
+Mile widziane (a już na pewno, gdy znajdziesz klienta) będzie posiadanie własnej domeny. Na częście GH Pages daje możliwość podpięcia właśnej.
+
+Koszt domeny to zaledwie kilkanaście złotych w pierwszym roku i przedłużenie na kolejny to zazwyczaj mniej niż 99zł (zależy od końcówki). Taką domenę możesz zakupić np. w [seohost.pl](https://seohost.pl/?ref=22965). 
+
+> **Uwaga!** Nieuczciwe firmy oferują domeny w bardzo atrakcyjnych cenach za pierwszy rok, ale nadrabiają to kosztem przedłużenia, które musisz wykonać jeśli chcesz zatrzymać domenę. Przeczytaj dokładnie regulamin zanim dokonasz zakupu.
+
+Domena to nazwa, która wskazuje na konkretny serwer, na którym znajdują się pliki naszej strony internetowej. Wspomniane wskazanie jest realizowane przez [DNS](https://pl.wikipedia.org/wiki/Domain_Name_System). 
+
+Jak możemy przeczytać w [dokumentacji GH Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain), aby "podpiąć" subodemnę (kupujesz devmentor.pl, subdomena dla niej to np. rwd.devmentor.pl) to musimy ustawić odpowiedni rekord CNAME. Sposób tego wykonania zależy od dostawcy domeny. W seohost możesz to zrobić [w taki sposób](https://seohost.pl/pomoc/konfiguracja-rekordow-dns-domeny). Jeśli sobie nie poradzisz to support (pomoc techniczna) na pewno Ci pomoże.
+
+> **Uwaga!** Dokonanie zmian w DNS (propagacja informacji) może trwać nawet 24h (często po paru godzinach "już działa") dlatego wygodnie jest to robić wieczorem, aby rano mieć już sprawę załatwioną.
+
 # Prawa autorskie
 
 Wszelkie prawa autorskie oraz pokrewne do szablonu i elementów wchodzacych w jego skład należą do [colorlib.com](https://colorlib.com).
