@@ -9,7 +9,7 @@
 
 .container {
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1000px;
     height: 100%;
     outline: 2px solid blue;
 }
