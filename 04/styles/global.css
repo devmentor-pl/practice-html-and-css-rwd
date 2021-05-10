@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(./../fonts/SourceSansPro-Regular.otf) format("opentype");
+    src: url(./../fonts/sourcesanspro-regular-webfont.woff) format("woff");
+    src: url(./../fonts/sourcesanspro-regular-webfont.woff2) format("woff2");
+}
+
+.page {
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+}
+
+.page__menu-icon {
+    font-size: 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.page__menu-checkbox {
+    display: none;
+}
+
+.menu__item {
+    border: 2px solid #ddd;
+    background-color: #444;
+    text-transform: uppercase;
+}
+
+.menu__link {
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}

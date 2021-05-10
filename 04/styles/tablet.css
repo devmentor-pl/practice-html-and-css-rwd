@@ -1,0 +1,35 @@
+.page__menu-icon {
+    display: none;
+}
+
+.menu {
+    display: flex;
+}
+
+.page__menu {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.menu__item--lvl1 {
+    width: calc(100% / 3);
+    position: relative;
+}
+
+.menu__lvl2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.menu__item:hover {
+    position: relative;
+    background-color: #222;
+}
+
+.menu__item:hover > .menu__lvl2 {
+    display: block;
+}
+
