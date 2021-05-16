@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+ul {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.hamburger {
+    position: relative;
+    background: black;
+    width: 60px;
+    height: 8px;
+    top: 10px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+    transition: width .3s;
+
+    &::before,
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        width: 60px;
+        height: 8px;
+        background: black;
+        transition: top .3s, transform .3s;
+    }
+
+    &::before {
+        top: -15px;
+    }
+
+    &::after {
+        top: 15px;
+    }
+
+    &:focus {
+        width: 0;
+
+        &+ul,
+        &+ul ul {
+            opacity: 1;
+        }
+    }
+
+    &:focus::after {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    &:focus::before {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}
+
+ul>li {
+    margin-top: 35px;
+    margin-left: 25px;
+    padding: 5px;
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        color: plum;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        box-shadow: 0 0 2px 5px royalblue;
+
+        & ul {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            align-items: flex-start;
+            opacity: 1;
+
+            &>li {
+                position: relative;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                transition: background .3s;
+
+                &:hover {
+                    background: grey;
+
+                    & ul {
+                        display: block;
+                    }
+                }
+            }
+
+            & li:nth-of-type(1) {
+                grid-column: 1/2;
+            }
+
+            & li:nth-of-type(2) {
+                grid-column: 2/3;
+            }
+
+            & li:nth-of-type(3) {
+                grid-column: 3/4;
+            }
+
+            & ul {
+                position: relative;
+                left: 0;
+                width: 100%;
+                border: none;
+                display: none;
+            }
+        }
+    }
+}
