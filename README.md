@@ -57,27 +57,29 @@ Poniżej zamieszczam tylko informacje dla jakich rozdzielczości był robiony pr
 
 # Zadanie dodatkowe
 
-Po wykonaniu tego zadania najwyższy czas zaprezentować swoje umiejętności znajomym na FB! Być może w ten sposób zdobędziesz swoje pierwsze komercyjne zlecenie - poważnie! Każdy "guru" sprzedaży poleci ten sposób. Osoby, które Cię znają, są w stanie bardziej zaufać Tobie, niż komuś z "ulicy". Tym samym zostawią u Ciebie "parę" groszy, a Ty dodatkowo zdobędziesz doświadczenie.
+Najwyższy czas zaprezentować swoje umiejętności znajomym na FB! Być może w ten sposób zdobędziesz swoje pierwsze zlecenie - poważnie! Osoby, które Cię znają, są w stanie bardziej zaufać Tobie niż komuś “z ulicy". Dzięki temu zdobędziesz, tak ważne przy rekrutacji, doświadczenie komercyjne.
 
 ## GitHub Pages
 
-GitHub udostępnia funkcjonalność, która nazywa się [GitHub Pages](https://pages.github.com/). W ten sposób możemy "serwować" naszą stronę całkowicie za darmo (strony statyczne tj. HTML, CSS, JavaScript - więc również React) na podstawie zawartości naszego repozytorium.
+GitHub udostępnia funkcjonalność, która nazywa się [GitHub Pages](https://pages.github.com/). W ten sposób możemy "serwować" naszą stronę całkowicie za darmo na podstawie zawartości naszego repozytorium. Możliwość ta dotyczy jedynie stron statycznych korzystających z HTML, CSS i JavaScript - więc również z Reacta. 
 
-Wystarczy, że przejdziesz do [ustawień swojego repozytorium](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) i wybierzesz gałąź (branch), która zawiera odpowiednie pliki (pewnie będzie to `master` lub `main`). Po minucie czy dwóch strona powinna być już dostępna.
+Wystarczy, że przejdziesz do [ustawień swojego repozytorium](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#choosing-a-publishing-source) i wybierzesz gałąź (branch), która zawiera pliki strony (pewnie będzie to `master` lub `main`). Po minucie czy dwóch strona powinna być już dostępna.
+
+> **Uwaga!** Czasami nawet GitHub ma problemy z własnymi serwerami/usługami i coś może nie działać jak należy. Wtedy wystarczy sprawdzić "status" na [odpowiedniej stronie](https://www.githubstatus.com/). Tego typu rozwiązanie jest dość powszechne.
 
 ## Własna domena
 
-Mile widziane (a już na pewno, gdy znajdziesz klienta) będzie posiadanie własnej domeny. Na częście GH Pages daje możliwość podpięcia właśnej.
+Mile widziane (a już na pewno, gdy znajdziesz klienta) będzie posiadanie własnej domeny. Na szczęście GH Pages daje możliwość jej podpięcia.
 
-Koszt domeny to zaledwie kilkanaście złotych w pierwszym roku i przedłużenie na kolejny to zazwyczaj mniej niż 99zł (zależy od końcówki). Taką domenę możesz zakupić np. w [seohost.pl](https://seohost.pl/?ref=22965). 
+Koszt domeny to zaledwie kilkanaście złotych w pierwszym roku, a jej przedłużenie na kolejny rok to zazwyczaj mniej niż 99zł (zależy od końcówki). Taką domenę możesz zakupić np. w [seohost.pl](https://seohost.pl/?ref=22965).
 
-> **Uwaga!** Nieuczciwe firmy oferują domeny w bardzo atrakcyjnych cenach za pierwszy rok, ale nadrabiają to kosztem przedłużenia, które musisz wykonać jeśli chcesz zatrzymać domenę. Przeczytaj dokładnie regulamin zanim dokonasz zakupu.
+> **Uwaga!** Nieuczciwe firmy oferują domeny w bardzo atrakcyjnych cenach za pierwszy rok, ale nadrabiają to kosztem przedłużenia, które musisz wykonać, jeśli chcesz zatrzymać domenę. Przeczytaj dokładnie regulamin, zanim dokonasz zakupu.
 
-Domena to nazwa, która wskazuje na konkretny serwer, na którym znajdują się pliki naszej strony internetowej. Wspomniane wskazanie jest realizowane przez [DNS](https://pl.wikipedia.org/wiki/Domain_Name_System). 
+Domena to nazwa, która wskazuje na konkretny serwer, na którym znajdują się pliki naszej strony internetowej. Wspomniane wskazanie jest realizowane przez [DNS](https://pl.wikipedia.org/wiki/Domain_Name_System).
 
-Jak możemy przeczytać w [dokumentacji GH Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain), aby "podpiąć" subodemnę (kupujesz devmentor.pl, subdomena dla niej to np. rwd.devmentor.pl) to musimy ustawić odpowiedni rekord CNAME. Sposób tego wykonania zależy od dostawcy domeny. W seohost możesz to zrobić [w taki sposób](https://seohost.pl/pomoc/konfiguracja-rekordow-dns-domeny). Jeśli sobie nie poradzisz to support (pomoc techniczna) na pewno Ci pomoże.
+Jak przeczytamy w [dokumentacji GH Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain), możemy użyć [domeny](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-an-apex-domain) lub [subdomeny](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site#configuring-a-subdomain) (jeśli kupimy np. domenę devmentor.pl, to jej subdomeną będzie np. rwd.devmentor.pl). Aby to zrobić, musimy dodać odpowiedni rekord w ustawieniach DNS. Sposób wykonania tego zadania zależy od dostawcy domeny i jego panelu administracyjnego. W seohost możesz to zrobić w [taki sposób](https://seohost.pl/pomoc/konfiguracja-rekordow-dns-domeny). Jeśli sobie nie poradzisz, to support (pomoc techniczna) na pewno Ci pomoże. Zawsze byli dla mnie pomocni.
 
-> **Uwaga!** Dokonanie zmian w DNS (propagacja informacji) może trwać nawet 24h (często po paru godzinach "już działa") dlatego wygodnie jest to robić wieczorem, aby rano mieć już sprawę załatwioną.
+> **Uwaga!** Dokonanie zmian w DNS (propagacja informacji) może trwać nawet 24h (często po paru godzinach "już działa"), dlatego wygodnie jest to robić wieczorem, aby rano mieć już sprawę załatwioną.
 
 # Prawa autorskie
 
