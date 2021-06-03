@@ -3,7 +3,15 @@
     padding: 0;
     box-sizing: border-box;  
 }
-
+header {
+    grid-area: a;
+}
+section {
+    grid-area: c;
+}
+main {
+    grid-area: b;
+}
 @media screen and (max-width: 600px) {
     body {
         display: grid;
@@ -33,7 +41,7 @@
     border-color: #baffc9;
 }
 }
-header {
+/* header {
     grid-area: a;
 }
 section {
@@ -41,7 +49,7 @@ section {
 }
 main {
     grid-area: b;
-}
+} */
 @media(min-width:601px) {
     body {
         max-width: 1200px;

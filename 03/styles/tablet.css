@@ -1,0 +1,14 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "p-picture t-text"
+    "v-video t-text";
+    grid-template-columns: minmax(200px, 50%);
+}
+.p {grid-area: p-picture;}
+.t {grid-area: t-text;}
+.v {grid-area: v-video;}
+
+.v {
+    min-height: 300px;
+}
