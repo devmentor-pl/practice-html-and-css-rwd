@@ -5,7 +5,9 @@
 body {
     background-color: var(--primary-color);
 }
-
+input {
+    display: none;
+}
 .navbar{
     background-color: var(--secondry-color);
     display: flex;
