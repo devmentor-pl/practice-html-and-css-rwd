@@ -24,7 +24,6 @@
  .menu {
      min-height: 8vh;
  }
- }
  .main-article {
      display: flex;
      flex-direction: column;
