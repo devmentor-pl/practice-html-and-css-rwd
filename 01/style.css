@@ -3,17 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-.content {
-    background-color: #fff;
-    min-height: 320px;
-    min-width: 320px;
-    max-width: 600px;
-    text-align: justify;
-    shape-outside: polygon(76% 0, 0 0, 0 59%);
-    
-}
-
 .content::before {
     float: left;
     display: block;
