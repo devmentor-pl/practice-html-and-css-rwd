@@ -1,0 +1,274 @@
+:root {
+  --color-background: #f6f6f6;
+  --color-dark: #333333;
+  --color-menu: orangered;
+  --color-grey-light: #bec7d3;
+  --color-overlay: rgba(0, 0, 0, 0.39);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+/* navigation website */
+
+nav {
+  margin: 1rem auto;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  color: var(--color-dark);
+  font-family: "Arial";
+}
+
+@media only screen and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu__item {
+  width: 105px;
+  text-transform: uppercase;
+  padding: 1rem;
+  border-top: 2px solid transparent;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--color-dark);
+}
+
+.menu__item::after {
+  content: url(./images/icon-arrow-down.svg);
+  margin-left: 0.8rem;
+}
+
+.menu__item:hover {
+  border-top: 2px solid var(--color-menu);
+  border-radius: 2px;
+  color: var(--color-menu);
+}
+
+.menu__item:hover .menu__dropdown {
+  display: inline-block;
+}
+
+.menu__dropdown {
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  top: 47px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  background-color: var(--color-dark);
+  display: none;
+}
+
+.dropdown__item {
+  color: var(--color-grey-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: relative;
+}
+
+.dropdown__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.dropdown__item:hover {
+  color: white;
+}
+
+.dropdown__item:hover .dropdown__arrow {
+  display: inline-block;
+}
+
+.dropdown__item:hover .dropdown__nested {
+  color: var(--color-grey-light);
+  display: inline-block;
+}
+
+.dropdown__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.dropdown__arrow {
+  width: 0.7rem;
+  height: 0.7rem;
+  transform: rotate(270deg);
+  display: none;
+}
+
+.dropdown__nested {
+  background-color: var(--color-dark);
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  position: absolute;
+  left: 208px;
+  top: -16px;
+  padding: 1rem 0.5rem 1rem 1rem;
+  display: none;
+}
+
+.dropdown__nested:hover .menu__dropdown {
+  display: inline-block;
+}
+
+.nested__item {
+  background-color: var(--color-dark);
+}
+
+.nested__item:hover {
+  color: white;
+}
+
+.nested__item:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+/* navigation mobile */
+
+/* ///// PROBLEMATIC PART /////// */
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-overlay);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3;
+}
+
+/* ///// PROBLEMATIC PART /////// */
+
+.overlay:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* kotwica o klasie .open-mobile-menu po kliknieciu powinna targetowac overlay i otwierac go, jednakze uzywajac pseudoklasy target caly overlay jest widoczny na ekranie, overlay ma id "overlay" dzieki czemu powinien byc targetowany przez kotwice z #overlay */
+
+.mobile {
+  background-color: white;
+  color: var(--color-dark);
+  font-family: "Arial";
+  margin: 3rem;
+  padding: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+}
+
+.mobile__menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu__item {
+  width: 80%;
+  padding: 1rem;
+  list-style: none;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-weight: 300;
+
+  position: relative;
+}
+
+/* hover effect for mobile menu l1 */
+
+.mobile-dropdown {
+  list-style: none;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  display: none;
+}
+
+.mobile__arrow {
+  margin-left: 1rem;
+}
+
+.mobile-dropdown__item {
+  padding: 0.5rem;
+}
+
+.mobile-dropdown__link {
+  text-decoration: none;
+  color: var(--color-dark);
+  margin-right: 0.5rem;
+}
+
+.mobile-menu__link:hover,
+.mobile-dropdown__link:hover {
+  text-decoration: underline;
+  color: var(--color-menu);
+}
+
+.mobile-menu__item:hover .mobile-dropdown {
+  display: block;
+}
+
+/* hover effect for mobile menu l2 */
+
+.mobile-dropdown-l2 {
+  list-style: none;
+  margin-left: 2rem;
+  padding: 0.5rem;
+  display: none;
+}
+
+.mobile-dropdown__item:hover .mobile-dropdown-l2 {
+  display: block;
+}
+
+.open-mobile-menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.open-mobile-menu__img {
+  filter: invert(100%) sepia(67%) saturate(339%) hue-rotate(214deg)
+    brightness(111%) contrast(121%);
+}
+
+@media only screen and (min-width: 600px) {
+  .open-mobile-menu {
+    display: none;
+  }
+}
