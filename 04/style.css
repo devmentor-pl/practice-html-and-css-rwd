@@ -152,7 +152,6 @@ nav {
 
 /* navigation mobile */
 
-/* ///// PROBLEMATIC PART /////// */
 .overlay {
   height: 100%;
   width: 100%;
@@ -166,14 +165,24 @@ nav {
   transition: all 0.3;
 }
 
-/* ///// PROBLEMATIC PART /////// */
-
 .overlay:target {
   opacity: 1;
   visibility: visible;
 }
 
-/* kotwica o klasie .open-mobile-menu po kliknieciu powinna targetowac overlay i otwierac go, jednakze uzywajac pseudoklasy target caly overlay jest widoczny na ekranie, overlay ma id "overlay" dzieki czemu powinien byc targetowany przez kotwice z #overlay */
+.overlay__close:link,
+.overlay__close:visited {
+  color: var(--color-dark);
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.overlay__close:hover {
+  color: var(--color-menu);
+}
 
 .mobile {
   background-color: white;
@@ -181,6 +190,9 @@ nav {
   font-family: "Arial";
   margin: 3rem;
   padding: 1.5rem;
+  border-radius: 5px;
+
+  position: relative;
 }
 
 @media only screen and (min-width: 600px) {
