@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <link rel="stylesheet" href="./style.css" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
+  </head>
+  <body>
+    <nav class="nav" id="menu">
+      <label for="tm" id="toggle-menu" class="nav__toggle-menu"
+        >Open Menu
+        <span class="nav__open-hamburger"
+          ><img
+            src="./images/icon-hamburger.svg"
+            alt="Icon hamburger menu"
+            class="nav__drop-icon--hamburger" /></span
+      ></label>
+      <input type="checkbox" id="tm" />
+      <ul class="nav__main-menu clearfix">
+        <li><a href="#" class="nav__main-link">Start</a></li>
+        <li>
+          <a href="#" class="nav__main-link"
+            >Offer
+            <span class="nav__drop-icon">&#9662;</span>
+            <label title="Toggle Drop-down" class="nav__drop-icon" for="sm1"
+              >&#9662;</label
+            >
+          </a>
+          <input type="checkbox" id="sm1" />
+          <ul class="nav__sub-menu">
+            <li>
+              <a href="#" class="nav__sub-link"
+                >Websites
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm3"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm3" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Websites 1.1</a></li>
+                <li><a href="#" class="nav__sub-link">Websites 2.1</a></li>
+              </ul>
+            </li>
 
-    <!-- navigation website -->
+            <li>
+              <a href="#" class="nav__sub-link"
+                >CMS
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm2"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm2" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">CMS 1.1</a></li>
+                <li><a href="#" class="nav__sub-link">CMS 2.1</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav__main-link">Contact
+        <!---->
+        <span class="nav__drop-icon">&#9662;</span>
+            <label title="Toggle Drop-down" class="nav__drop-icon" for="sm4"
+              >&#9662;</label
+            >
+          </a>
+          <input type="checkbox" id="sm4" />
+          <ul class="nav__sub-menu">
+            <li>
+              <a href="#" class="nav__sub-link"
+                >E-mail
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm5"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm5" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Send us an e-mail</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="nav__sub-link"
+                >Social Media
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm6"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm6" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Facebook</a></li>
+                <li><a href="#" class="nav__sub-link">Twitter</a></li>
+              </ul>
+          
+<!---->
+        </a></li>
+      </ul>
+    </nav>
+    <!-- /////////////////////////////////////////// navigation website 
 
     <nav class="nav">
         <ul class="menu">
@@ -75,7 +168,7 @@
         </ul>
       </nav>
 
-      <!-- navigation mobile -->
+       navigation mobile 
 
   <a href="#overlay" class="open-mobile-menu" id="close"><img src="./images/icon-hamburger.svg" alt="Open mobile menu - hamburger" class="open-mobile-menu__img"></a>
 
@@ -162,4 +255,8 @@
   </div>
 
 </body>
+</html>
+
+-->
+  </body>
 </html>

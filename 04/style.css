@@ -1,7 +1,8 @@
 :root {
   --color-background: #f6f6f6;
+  --color-white: #fff;
   --color-dark: #333333;
-  --color-menu: orangered;
+  --color-menu: #049ae1;
   --color-grey-light: #bec7d3;
   --color-overlay: rgba(0, 0, 0, 0.39);
 }
@@ -15,10 +16,112 @@
 }
 
 body {
-  background-color: var(--color-background);
+  background-color: grey;
 }
 
-/* navigation website */
+.nav .nav__main-menu {
+  display: none;
+}
+
+#tm:checked + .nav__main-menu {
+  display: block;
+}
+
+.nav input[type="checkbox"] {
+  display: none;
+}
+
+.nav li,
+.nav__toggle-menu,
+.nav__sub-menu {
+  border-style: solid;
+  border-color: var(--color-grey-light);
+}
+
+.nav li,
+.nav__toggle-menu {
+  border-width: 0 0 1px;
+}
+
+.nav__sub-menu {
+  border-width: 1px 1px 0;
+  margin: 0 1rem;
+}
+
+.nav__sub-menu li:last-child {
+  border-width: 0;
+}
+
+.nav li,
+.nav__toggle-menu,
+.nav__main-link,
+.nav__sub-link {
+  position: relative;
+  display: block;
+}
+
+.nav__main-link,
+.nav__sub-link {
+  color: var(--color-dark);
+}
+
+.nav,
+.nav__toggle-menu {
+  background-color: var(--color-white);
+}
+
+.nav__toggle-menu:hover {
+  color: var(--color-menu);
+  text-decoration: underline;
+}
+
+.nav__toggle-menu,
+.nav a {
+  padding: 1rem 1.5rem;
+}
+
+.nav a {
+  transition: all 0.125s ease-in-out;
+}
+
+.nav a:hover,
+.nav__sub-menu a:hover {
+  background-color: var(--color-grey-light);
+  color: var(--color-menu);
+}
+
+.nav__sub-menu {
+  display: none;
+}
+
+.nav input[type="checkbox"]:checked + .nav__sub-menu {
+  display: block;
+}
+
+.nav__drop-icon--hamburger {
+  filter: invert(100%) sepia(67%) saturate(339%) hue-rotate(214deg)
+    brightness(111%) contrast(121%);
+}
+
+.nav__drop-icon,
+.nav__drop-icon--hamburger {
+  position: absolute;
+  right: 1.5rem;
+  top: 1.25rem;
+}
+
+.nav__drop-icon {
+  border-radius: 50%;
+  width: 1.1rem;
+  height: 1.1rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.125);
+  text-shadow: 0 0 0 transparent;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/*
+/* navigation website 
 
 nav {
   margin: 1rem auto;
@@ -150,7 +253,7 @@ nav {
   margin-bottom: 0.7rem;
 }
 
-/* navigation mobile */
+/* navigation mobile 
 
 .overlay {
   height: 100%;
@@ -221,7 +324,7 @@ nav {
   position: relative;
 }
 
-/* hover effect for mobile menu l1 */
+/* hover effect for mobile menu l1 
 
 .mobile-dropdown {
   list-style: none;
@@ -254,7 +357,7 @@ nav {
   display: block;
 }
 
-/* hover effect for mobile menu l2 */
+/* hover effect for mobile menu l2 
 
 .mobile-dropdown-l2 {
   list-style: none;
@@ -284,3 +387,5 @@ nav {
     display: none;
   }
 }
+
+*/ ;
