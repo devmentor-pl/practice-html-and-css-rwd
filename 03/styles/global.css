@@ -3,7 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 3px solid rebeccapurple;
+}
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -23,4 +27,19 @@
 
 .v {
     border-color: #baffc9;
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+picture {
+    width: 100%;
+}
+
+.v iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
