@@ -13,7 +13,10 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    height: 0;
+    padding-bottom: calc(800 / 1200 * 100%);
+    position: relative;
 }
 
 .t {
@@ -22,4 +25,15 @@
 
 .v {
     border-color: #baffc9;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+}
+
+.v__video, .p__img {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
