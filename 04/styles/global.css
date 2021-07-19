@@ -1,0 +1,23 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.menu__item {
+    list-style: none;
+}
+
+.menu__link {
+    color: var(--color-gamma);
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__link--level2 {
+    text-transform: none;
+    letter-spacing: normal;
+}

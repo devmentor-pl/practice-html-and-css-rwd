@@ -1,0 +1,8 @@
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 5px;
+}
