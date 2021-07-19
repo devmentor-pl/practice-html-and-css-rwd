@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,16 +12,21 @@
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 800px)">
 </head>
+
 <body>
     <header class="header">
         <div class="header__container container">
-            <h1 class="header__logo"><a href="#" class="header__logo-link">Lorem, ipsum</a></h1>
-            <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__menu-link">Lorem</a></li>
+            <h1 class="header__logo"><a href="#" class="header__link">Lorem</a></h1>
+            <nav class="header__menu menu">
+                <input type="checkbox" class="menu__checkbox" name="menu-switcher" id="menu-switcher">
+                <label for="menu-switcher" class="menu__icon">
+                    <span class="menu__burger"></span>
+                </label>
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#" class="menu__link">Lorem</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Lorem</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Lorem</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Lorem</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +35,7 @@
         <section class="about container">
             <article class="about__article">
                 <h2 class="about__title">Lorem</h2>
-                <p class="abour__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, aperiam
+                <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, aperiam
                     recusandae temporibus commodi, numquam atque laborum porro magni repudiandae nihil placeat
                     reprehenderit amet dicta fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum
                     harum culpa accusamus praesentium rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -37,7 +43,7 @@
             </article>
             <article class="about__article">
                 <h2 class="about__title">Lorem</h2>
-                <p class="abour__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, aperiam
+                <p class="about__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, aperiam
                     recusandae temporibus commodi, numquam atque laborum porro magni repudiandae nihil placeat
                     reprehenderit amet dicta fugit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
                     minus. Quae maiores eveniet ex earum. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -84,4 +90,5 @@
         </div>
     </footer>
 </body>
+
 </html>

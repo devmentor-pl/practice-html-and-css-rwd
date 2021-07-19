@@ -6,6 +6,10 @@ html {
     box-sizing: inherit;
 }
 
+body {
+    padding: 5px;
+}
+
 li {
     list-style: none;
 }
@@ -24,4 +28,8 @@ a {
     margin: 0 auto;
     max-width: 1000px;
     width: 100%;
+}
+
+.menu__checkbox {
+    display: none;
 }
