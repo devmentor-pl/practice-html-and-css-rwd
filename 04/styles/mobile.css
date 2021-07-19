@@ -1,8 +1,80 @@
 .menu {
+    align-items: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
-li {
-    margin-bottom: 5px;
+.menu__burger {
+    background-color: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
 }
+
+.menu__burger::before,
+.menu__burger::after {
+    background-color: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: transform .2s ease-out;
+    width: 100%;
+}
+
+.menu__burger::before {
+    transform: translateY(-5px);
+}
+
+.menu__burger::after {
+    transform: translateY(5px);
+}
+
+.menu__checkbox {
+    display: none;
+}
+
+.menu__checkbox:checked ~ .menu__icon .menu__burger {
+    background-color: transparent;
+}
+
+.menu__checkbox:checked ~ .menu__icon .menu__burger::before {
+    transform: rotate(45deg);
+}
+
+.menu__checkbox:checked ~ .menu__icon .menu__burger::after {
+    transform: rotate(-45deg);
+}
+
+.menu__checkbox:checked + .menu__icon + .menu__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__icon {
+    cursor: pointer;
+    padding: 18px 10px;
+    position: absolute;
+    right: 0;
+}
+
+.menu__item {
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 3px 5px;
+    padding: 5px;
+}
+
+.menu__item--level2 {
+    box-shadow: none;
+    margin: 0;
+}
+
+.menu__list {
+    display: none;
+    margin-top: 38px;
+    width: 100%;
+}
+

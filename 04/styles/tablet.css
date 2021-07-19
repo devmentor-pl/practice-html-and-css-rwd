@@ -1,0 +1,77 @@
+.menu__icon {
+    display: none;
+}
+
+.menu__item {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.menu__item::before {
+    background: #009AE1;
+    content: '';
+    height: 3px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transition: width 0.5s ease, left 0.5s ease;
+    width: 0;
+}
+
+.menu__item:hover::before {
+    left: 0;
+    width: 100%;
+}
+
+.menu__item--level2 {
+    min-width: 300px;
+    padding: 5px 30px;
+}
+
+.menu__item--with-children {
+    position: relative;
+}
+
+.menu__item--with-children::after {
+    content: '>';
+    font-size: 10px;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.menu__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu__level2 {
+    padding-left: 0;
+}
+
+.menu__level2 {
+    background: #333;
+    display: none;
+    left: 0;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.menu__item:hover .menu__level2 {
+    display: block;
+}
+
+.menu__link--level2 {
+    color: #FFF;
+}
+
+/*dodane, zeby przy 'rozciaganiu' okna, gdy rozwiniete jest menu mobilne, przeszlo w uklad row bez odswiezania strony*/
+
+.menu__checkbox:checked + .menu__icon + .menu__list {
+    flex-direction: row;
+}

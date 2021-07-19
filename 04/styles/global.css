@@ -11,7 +11,7 @@ html {
 }
 
 .menu__link {
-    color: var(--color-gamma);
+    color: #333;
     letter-spacing: .1rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -19,5 +19,8 @@ html {
 
 .menu__link--level2 {
     text-transform: none;
-    letter-spacing: normal;
+}
+
+.menu__list {
+    padding: 0;
 }

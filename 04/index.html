@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,14 @@
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 761px)">
 </head>
+
 <body>
-    
+
     <nav class="menu">
+        <input type="checkbox" class="menu__checkbox" name="menu-switcher" id="menu-switcher">
+        <label for="menu-switcher" class="menu__icon">
+            <span class="menu__burger"></span>
+        </label>
         <ul class="menu__list">
             <li class="menu__item">
                 <a href="#" class="menu__link">start</a>
@@ -21,8 +27,12 @@
             <li class="menu__item menu__item--with-children">
                 <a href="#" class="menu__link">oferta</a>
                 <ul class="menu__level2">
-                    <li class="menu__item menu__item--level2"><a href="#" class="menu__link menu__link--level2">Strony internetowe</a></li>
-                    <li class="menu__item menu__item--level2"><a href="#" class="menu__link menu__link--level2">Pozycjonowanie stron www</a></li>
+                    <li class="menu__item menu__item--level2">
+                        <a href="#" class="menu__link menu__link--level2">Strony internetowe</a>
+                    </li>
+                    <li class="menu__item menu__item--level2">
+                        <a href="#" class="menu__link menu__link--level2">Pozycjonowanie stron www</a>
+                    </li>
                 </ul>
             </li>
             <li class="menu__item">
@@ -32,4 +42,5 @@
     </nav>
 
 </body>
+
 </html>
