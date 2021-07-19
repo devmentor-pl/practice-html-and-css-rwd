@@ -1,0 +1,8 @@
+body {
+    grid-template-columns: repeat(2, minmax(auto, 700px));
+    justify-content: center;
+}
+
+.t {
+    grid-area: 2/1/3/3;
+}
