@@ -9,15 +9,15 @@ Twoim zadaniem jest ułożenie elementów zgodnie z porządkiem:
 - `B`
 - `C`
 
-Czyli każdy z elementów jest wyświetlany jeden pod drugim w odpowiedniej kolejności. Każdy z nich powinien mieć wysokość równą 50% dostępnej przestrzeni dla viewportu.
+Każdy z elementów jest wyświetlany jeden pod drugim w odpowiedniej kolejności. Każdy z nich powinien mieć wysokość równą 50% dostępnej przestrzeni dla viewportu.
 
-Jeśli szerokość vieportu przekroczy 600px, układ strony powinien się zmienić na poniższy:
+Jeśli szerokość vieportu przekroczy 600px, układ strony powinien zmienić się na poniższy:
 - `A` `A`
 - `C` `B`
 
-Czyli element `A`jest w pierwszej linii, następnie `C` oraz `B` są w linii drugiej i zajmuja po 50% dostępnej przestrzeni. Każdy z wierszy nie powinien przekroczyć 1200px szerokości, a cała zawartość powinna być wyśrodkowana.
+Wówczas element `A` zajmuje cały pierwszy wiersz. W drugim wierszu mieszczą się elementy `C` i `B`, zajmując po 50% dostępnej przestrzeni. Żaden z wierszy nie przekracza 1200px szerokości, a cała zawartość jest wyśrodkowana.
 
-W zadaniu wykorzystaj `display: grid`, nie modyfikuj HTMLa!
+W zadaniu wykorzystaj `display: grid`. Nie modyfikuj HTML-a!
 
 
 &nbsp;
