@@ -5,7 +5,7 @@
 # `#05` HTML i CSS: Responsywność
 
 Najwyższy czas zakodować układ strony, który będzie posiadał widok *mobilny* oraz *desktopowy*. 
-Oczywiście całość kodujemy z duchem *mobile first*, a punktem granicznym (ang. *breakpoint*) będzie 800px. 
+Całość zakodujemy w duchu *mobile first*, a punktem granicznym (ang. *breakpoint*) będzie 800px. 
 
 &nbsp;
 
@@ -14,13 +14,13 @@ Oczywiście całość kodujemy z duchem *mobile first*, a punktem granicznym (an
 
 &nbsp;
 
-Podobnie jak w zadaniu z *HTML i CSS: Podstawy*, poszczególne elementy oznaczają:
+Podobnie jak w zadaniu z modułu *HTML i CSS: Podstawy*:
 
-* **zielone krawędzie** to obszar dostępny dla przeglądarki, czyli element o 100% szerokości, która wyznacza nasze sekcje
-* **niebieskie krawędzie** to maksymalna szerokość naszej strony - powiedzmy, że wynosi 1000px
-* **pomarańczowe prostokąty** to dowolna zawartość
+* **zielone krawędzie** to kontenery, które wypełniają całą szerokość okna przeglądarki (mają 100% szerokości),
+* **niebieskie krawędzie** to maksymalna szerokość zawartości naszej strony. Przyjmijmy, że wynosi 1000px,
+* **pomarańczowe prostokąty** to dowolna zawartość sekcji.
 
-Zwróć uwagę, że w przypadku widoku mobilnego, krawędzie niebieskie i zielone praktycznie nachodzą na siebie. Można by było je pominąć. Jednak mając na uwadze widok desktopowy możemy je od razu dodać do struktury HTML.
+Zwróć uwagę, że w przypadku widoku mobilnego, krawędzie niebieskie i zielone praktycznie na siebie nachodzą. Można by je pominąć, jednak mając na uwadze widok desktopowy, możemy od razu dodać je do struktury HTML.
 
 ## Mobile
 
@@ -28,29 +28,31 @@ Zwróć uwagę, że w przypadku widoku mobilnego, krawędzie niebieskie i zielon
 
 ### Sekcja nr 1
 
-Posiada menu, które jest wyśrodkowane w poziomie. Z prawej strony jest tzw. hamburger - po jego kliknięciu powinna pojawić się zawartość dla menu. Całość możemy uznać za nagłówek.
+Posiada menu, które jest wyśrodkowane w poziomie. Z prawej strony jest tzw. hamburger – po jego kliknięciu powinna pojawić się zawartość menu. Całość możemy uznać za nagłówek.
 
 ### Sekcja nr 2
 
-Zawiera dwa elementy, wyświetlane jeden pod drugiem z niewielkim odstępem między nimi.
+Zawiera dwa elementy wyświetlane jeden pod drugiem z niewielkim odstępem między nimi.
 
 ### Sekcja nr 3
 
-Podobnie jak w sekcji poprzedniej tylko tym razem mamy trzy, a nie dwa elementy.
+Podobnie jak w sekcji poprzedniej, tylko tym razem mamy trzy, a nie dwa elementy.
 
 ### Sekcja nr 4
 
-Stopka naszej strony, która zwiera jedynie element wyśrodkowany w pionie i poziomie.
+To stopka naszej strony, która zwiera jedynie element wyśrodkowany w pionie i poziomie.
+
+&nbsp;
 
 ## Desktop
 
 ![](./desktop.png)
 
-Układ identyczny jak w przypadku [zadania 5 z *HTML i CSS: Podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Jednak wykonaj to zadania od początku mając na uwadze układ mobilny.
+Na desktopie układ jest identyczny jak w [zadaniu 5 z *HTML i CSS: Podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Pomimo tego wykonaj aktualne zadanie od początku mając na uwadze układ mobilny.
 
 # Zadanie dodatkowe
 
-Teraz możesz spróbować przebudować układ z [*HTML i CSS: podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Zrób to w taki sposób, aby dodać do wszcześniej utworzonego widoku, widok mobilny. Sam ocenisz, który sposób tj. *mobile first* czy *desktop first* jest wygodniejszy.
+Teraz możesz spróbować przebudować układ z [zadania 5 z *HTML i CSS: Podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Zrób to w taki sposób, aby dodać do wcześniej utworzonego widoku desktopowego widok mobilny. Sam ocenisz, które podejście, tj. *mobile first* czy *desktop first*, jest wygodniejsze.
 
 
 &nbsp;
