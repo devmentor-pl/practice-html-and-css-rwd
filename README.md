@@ -4,19 +4,19 @@
 
 # HTML i CSS: Responsywność
 
-Ruch na stronach internetowych z urządzeń mobilnych to zdecydowana większość. Dla wybranych witryn wspomniana miara może sięgać nawet 90%.
+Ruch na stronach internetowych z urządzeń mobilnych to zdecydowana większość. Dla wybranych witryn może stanowić nawet 90% ruchu ze wszystkich urządzeń.
 
-Umiejętność tworzenie responsywnych stron internetowych tj. dostosowujących się do rozmiaru urządzenia jest niezbędna w orężu każdego frontend-owca.
+Umiejętność tworzenia responsywnych stron internetowych, czyli dostosowujących się do rozmiaru urządzenia, jest niezbędna u każdego frontendowca.
 
-Zanim przystąpisz do zadan powineneś przerobić:
+Zanim przystąpisz do zadań powinieneś przerobić:
 
-- Jednostki relatywne
-- Punkty graniczne (ang. breakpoints) w CSS 
-- Reponsywność:
-    - Tekstu
-    - Zasobów (grafik, filmów)
-    - Menu
-- Flex-a oraz Grid-a
+- jednostki relatywne,
+- punkty graniczne (ang. breakpoints) w CSS,
+- responsywność:
+    - tekstu,
+    - zasobów (grafik, filmów),
+    - menu,
+- flexa oraz grida.
 
 &nbsp;
 
