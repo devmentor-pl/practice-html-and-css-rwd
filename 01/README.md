@@ -4,11 +4,11 @@
 
 # `#01` HTML i CSS: Responsywność
 
-Obecnie tekst, który jest wprowadzony do pliku `index.html`, prezentuje się w taki sposób:
+Obecnie tekst, który jest wprowadzony w pliku `index.html`, prezentuje się w taki sposób:
 
 ![](assets/before.png)
 
-Nie wygląda to profesjonalnie. Przestrzeń miedzy "trójkątem", a tekstem należy wypełnić tekstem w taki sposób, aby przy zmianie rozmiaru okna przeglądarki, tekst cały czas opływał "trójkąt".
+Nie wygląda to profesjonalnie. Przestrzeń miedzy trójkątem a treścią należy wypełnić tekstem w taki sposób, aby przy zmianie rozmiaru okna przeglądarki, tekst cały czas opływał trójkąt.
 
 ![](assets/after.png)
 
