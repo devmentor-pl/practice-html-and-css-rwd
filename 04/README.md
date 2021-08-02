@@ -6,22 +6,22 @@
 
 Nadszedł czas na przygotowanie responsywnego menu. 
 
-Będziemy mieli 2 wersje wyglądu menu:
+Będziemy mieli 2 wersje jego wyglądu:
 
-- **mobilne**: 
-    - elementy jeden pod drugim na całą szerokość
-    - widoczne wszystkie dopiero po kliknięciu w ikonę "[hamburgera](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScriptu)
-    - im bardziej zagnieżdżone elementy tym bardziej odsunięte od lewej krawędzi
-- **normalne**: 
-    - elementy wyświetlane obok siebie w poziomie
-    - tylko pierwszy poziom widoczny od razu
-    - drugi poziom dostępny dopiero po najechaniu na rodzica
-        - elementy w nim występujące mają być wyświetlane jeden pod drugim
-        - całość ma się wyświetlać pod rodzicem
+- **mobilną**: 
+    - elementy menu są umieszczone jeden pod drugim i zajmują całą szerokość okna przeglądarki,
+    - są widoczne dopiero po kliknięciu w ikonę "[hamburgera](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScriptu),
+    - im bardziej zagnieżdżone elementy, tym bardziej odsunięte są od lewej krawędzi.
+- **normalną**: 
+    - elementy menu umieszczone są obok siebie w poziomie,
+    - tylko pierwszy poziom widoczny jest od razu,
+    - drugi poziom menu dostępny jest dopiero po najechaniu na rodzica:
+        - elementy występujące w rodzicu wyświetlane są jeden pod drugim,
+        - całość wyświetla się pod rodzicem.
 
 Sam dobierz wygląd oraz stosowny breakpoint. 
 
-Jak skończysz to opublikuj swoje rozwiązanie za pomocą [GitHub Pages](https://pages.github.com/) i sprawdź czy strona przechodzi [test na urządzenia mobilne](https://search.google.com/test/mobile-friendly).
+Jak skończysz, to opublikuj swoje rozwiązanie za pomocą [GitHub Pages](https://pages.github.com/) i sprawdź, czy strona przechodzi [test na urządzenia mobilne](https://search.google.com/test/mobile-friendly).
 
 
 &nbsp;
