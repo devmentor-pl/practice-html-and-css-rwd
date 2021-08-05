@@ -1,0 +1,55 @@
+.header__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    position: static;
+    transform: none;
+}
+
+.menu__icon {
+    display: none;
+}
+
+.menu__item {
+    margin-left: 1rem;
+    padding: 0;
+}
+
+.menu__item--no-margin {
+    margin-left: 0;
+}
+
+.menu__link:hover {
+    color: blue;
+}
+
+.menu__checkbox:checked + .menu__icon + .menu__list {
+    display: flex;
+}
+
+.about {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about__article {
+    width: 45%;
+}
+
+.content {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.content__article {
+    width: 30%;
+}
+
+.footer__container {
+    min-height: 100px;
+}
