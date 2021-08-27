@@ -14,13 +14,16 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    height: 50vh;
 }
 
 .b {
     border-color: #ffdfba;
+    height: 50vh;
 }
 
 .c {
     border-color: #baffc9;
+    height: 50vh;
 }
