@@ -1,0 +1,31 @@
+body {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.a, .b, .c {
+    border: 3px solid transparent;
+    min-height: 50px;
+}
+
+.a {
+    border-color: magenta;
+    height: 50vh;
+    width: 100vw;
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.b {
+    border-color: crimson;
+    height: 50vh;
+    width: 50vw;
+}
+
+.c {
+    border-color: lime;
+    height: 50vh;
+    width: 50vw;
+}
