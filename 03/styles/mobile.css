@@ -1,0 +1,20 @@
+.p, .t, .v {
+    border: 3px solid transparent;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p {
+    border-color: #ffffba
+}
+
+.t {
+    border-color: #ffdfba;
+}
+
+.v {
+    border-color: #baffc9;
+}
