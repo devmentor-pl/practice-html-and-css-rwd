@@ -12,14 +12,14 @@
 			media="(min-width: 600px)"
 			href="./styles/tablet.css"
 		/>
-		<link
+		<!-- <link
 			rel="stylesheet"
 			media="(min-width: 1200px)"
 			href="./styles/desktop.css"
-		/>
+		/> -->
 	</head>
 	<body>
-		<main class="t">
+		<header class="t">
 			<p>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim velit
 				recusandae harum ducimus aspernatur perferendis explicabo facilis
@@ -39,16 +39,16 @@
 				odit id, ea nostrum accusamus consequuntur a! Repellat odio atque magni
 				modi! Odit.
 			</p>
-		</main>
-		<header class="p">
+		</header>
+		<main class="p">
 			<picture>
-				<source srcset="./img/mountainsSM.jpg" media="(min-width: 300px)" />
+				<source srcset="./img/mountainsSM.jpg" media="(max-width: 300px)" />
 				<source srcset="./img/mountainsMD.jpg" media="(min-width: 600px)" />
 				<img src="./img/mountainsMD.jpg" alt="mountains view" />
 			</picture>
-		</header>
-		<section class="v">
-			<!-- Change it to be responsive -->
+		</main>
+
+		<footer class="v">
 			<iframe
 				src="https://www.youtube.com/embed/vPB3V1gcUXc"
 				title="YouTube video player"
@@ -56,6 +56,6 @@
 				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				allowfullscreen
 			></iframe>
-		</section>
+		</footer>
 	</body>
 </html>
