@@ -1,0 +1,14 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__menu {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-label {
+    display: none;
+}

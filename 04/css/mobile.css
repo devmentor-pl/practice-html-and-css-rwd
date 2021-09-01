@@ -1,0 +1,35 @@
+.nav__item {
+    border: 1px solid #bbb;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__menu {
+    margin-top: 80px;
+    display: none;
+}
+
+.nav-btn:checked + .nav__menu {
+    display: block;
+}
+
+.icon-burger {
+    font-size: 50px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-label {
+    position: absolute;
+    padding: 10px;
+    left: 15px;
+    top: 5px;
+}
