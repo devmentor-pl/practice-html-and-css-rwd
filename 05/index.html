@@ -4,17 +4,54 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>RWD</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap"
 			rel="stylesheet"
 		/>
+		<script
+			src="https://kit.fontawesome.com/0483d26784.js"
+			crossorigin="anonymous"
+		></script>
 		<link rel="stylesheet" href="./css/reset.css" />
 		<link rel="stylesheet" href="./css/global.css" />
 		<link rel="stylesheet" href="./css/mobile.css" />
 		<link rel="stylesheet" media="(min-width: 800px)" href="./css/tablet.css" />
 	</head>
-	<body></body>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<label for="menu-switcher" class="nav-label">
+                    <h1 class="header__logo">
+                        <img src="./img/1280px-Basic_logo.svg.png" alt="Website logo" />
+                    </h1>
+					<i class="fas fa-hamburger icon-burger"></i>
+				</label>
+				<input type="checkbox" id="menu-switcher" class="nav-btn" />
+				<ul class="nav__menu">
+					<li class="nav__item">
+						<a href="#" class="nav__link">start</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>oferta <i class="fas fa-sort-down"></i
+						></a>
+						<ul class="offer__list">
+							<li class="offer__item">
+								<a href="#" class="offer__link">strony internetowe</a>
+							</li>
+							<li class="offer__item">
+								<a href="#" class="offer__link">pozycjonowanie stron www</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
 </html>

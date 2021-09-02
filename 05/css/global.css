@@ -1,3 +1,31 @@
 body {
 	font-family: 'Roboto', sans-serif;
 }
+
+.row, .cell, .container {
+    margin: 5px;
+    padding: 5px;
+    outline: 3px solid;
+}
+
+.row {
+    outline-color: green;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    outline-color: blue;
+}
+
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+    background: orange;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
