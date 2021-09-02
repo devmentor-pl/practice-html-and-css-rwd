@@ -1,4 +1,3 @@
-
 .nav__item, .offer__item {
     background: #333;
     margin: 5px;
@@ -53,7 +52,6 @@
     top: 5px;
 }
 
-/* ADDED */
 .nav__item:hover > .offer__list {
 	display: flex;
     justify-content: center;
