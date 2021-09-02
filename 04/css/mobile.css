@@ -1,11 +1,10 @@
-.nav__item {
+.nav__item, .offer__item {
     border: 1px solid #bbb;
     margin: 5px;
     padding: 5px 10px;
-    text-align: center;
 }
 
-.nav__link {
+.nav__link, .offer__link {
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -13,9 +12,20 @@
 .nav__menu {
     margin-top: 80px;
     display: none;
+    text-align: center;
+}
+
+.offer__list {
+    display: none;
+    font-size: 12px;
+    text-align: right;
 }
 
 .nav-btn:checked + .nav__menu {
+    display: block;
+}
+
+.offer__list:hover {
     display: block;
 }
 
