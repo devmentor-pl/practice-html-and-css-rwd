@@ -25,6 +25,7 @@
 }
 
 .offer__list {
+    display: block;
     position: absolute;
     top: 140px;
     left: 50%;
@@ -34,6 +35,8 @@
 
 .offer__item {
     margin: 0;
+    width: 320px;
+    border-radius: 0;
 }
 
 a {
