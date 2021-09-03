@@ -70,13 +70,14 @@ a {
 
 
 /* CONTENT */
-.content__container {
+.container {
     display: flex;
     flex-direction: column;
 }
 
 .content__article--football {
     height: 200px;
+    margin-bottom: 15px;
 }
 
 .content__ads--rolex {
@@ -89,8 +90,19 @@ a {
 
 .content__article--baseball {
     height: 180px;
+    margin: 15px 0;
 }
 
 .content__ads--patek-philippe {
     height: 160px;
+}
+
+/* FOOTER */
+.footer__container {
+    align-items: center;
+}
+
+.footer__copyrights {
+    height: 5px;
+    width: 150px;
 }
