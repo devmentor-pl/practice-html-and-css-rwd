@@ -67,3 +67,30 @@
 a {
     color: #fff;
 }
+
+
+/* CONTENT */
+.content__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__article--football {
+    height: 200px;
+}
+
+.content__ads--rolex {
+    height: 300px;
+}
+
+.content__article--basketball {
+    height: 150px;
+}
+
+.content__article--baseball {
+    height: 180px;
+}
+
+.content__ads--patek-philippe {
+    height: 160px;
+}
