@@ -1,0 +1,77 @@
+.information_box, .features__container, .about{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    flex-basis: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center
+}
+.menu {
+    display: none;
+    
+}
+
+.hero__top{
+  background-color: black;
+}
+.phone{
+    width: 50%;
+    height: 50%;
+    align-items: center;
+}
+.text{
+    font-size: 20px;
+}
+.text2{
+    font-size: 10px;
+}
+.button2{
+    min-width: 100px;
+    color: white;
+    background-color: rgb(108, 243, 243);
+    border: none;
+    font-size: 15px;
+    padding: 0.8rem;
+    cursor:pointer;
+    transition: background-color 0,5s ease-in-out;
+    border-radius: 5px
+}
+
+.button1{
+    width: 20px;
+    height: 15px;
+    border: 0;
+    border-top: 5px solid white;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transfor, linear;
+}
+
+.button1::before, .button1::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid white;
+    transform: translateY(10px); 
+}
+
+.button1::after{
+    transform: translateY(25px);
+    transition: 0.3s transfor, linear;
+}
+
+.button1:focus {
+    transform: rotate(45deg) translateY(5px);
+    border:none;
+}
+.button1:focus::after{
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+.phone-image{
+    align-items: center;
+    justify-content: center
+}

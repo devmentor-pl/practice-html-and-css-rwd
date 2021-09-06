@@ -1,0 +1,58 @@
+.features{
+    width: 100%;
+    font-size: 150%;   
+}
+
+.features__textmain{
+    text-align: center;
+}
+
+.feature{
+    flex-basis: 33.33%;
+    padding: 2.5rem;
+    text-align: center; 
+}
+
+.feature__icon{
+  
+    width: 70px;
+    height: 70px;
+    padding: 1.0rem;
+}
+
+.tlo1{
+    display: inline-block;
+    background-color: rgb(30, 122, 207);
+    width: 70px;
+    height: 70px;
+    border-radius: 15px
+
+}
+.features__container{
+    padding-top: 3rem;
+    display: flex;
+}
+
+.features__text{
+    margin-top: 15rem;
+    font-size: 180%;
+}
+
+.feature__tekst{
+    padding: 0,5rem;
+    font-size: 120%;
+}
+.tlo2{
+    display: inline-block;
+    background-color: rgb(235, 162, 27);
+    width: 70px;
+    height: 70px;
+    border-radius: 15px
+}
+.tlo3{
+    display: inline-block;
+    background-color: rgb(11, 131, 7);
+    width: 70px;
+    height: 70px;
+    border-radius: 15px
+}

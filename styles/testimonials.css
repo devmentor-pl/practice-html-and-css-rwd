@@ -1,0 +1,35 @@
+.testimonials{
+    position:relative;
+    color:white;
+    background-color: rgb(0, 140, 255);
+    width: 100%;
+}
+.testimonials::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../images/banner/testmonial.png) ;
+    opacity: 0.25;
+    width: 100%;
+}
+.center__text{
+    text-align: center;
+    position: relative;
+}
+
+.text5{
+    font-size: 60px;
+    padding-bottom: 6rem;
+    padding-top: 10rem;
+}
+.text6{
+    font-size: 30px;
+    padding-bottom: 3rem;
+}
+.stars{
+    font-size: 20px;
+    padding-bottom: 10rem;
+}

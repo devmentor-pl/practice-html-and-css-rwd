@@ -1,0 +1,35 @@
+.about{
+        display: flex;
+        width: 100%;
+   
+}
+.about__text{
+    flex-basis: 60%;
+}
+.text3{
+    font-size: 50px;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.text4{
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+}
+.button3{
+    min-width: 200px;
+    margin-left: 150px;
+    color: white;
+    background-color: rgb(39, 113, 182);
+    border: none;
+    font-size: 25px;
+    padding: 0.8rem;
+    cursor:pointer;
+    transition: background-color 0,5s ease-in-out;
+    border-radius: 5px;
+    margin-bottom: 155px;
+}
+.button3:hover{
+    background-color: rgb(14, 80, 143);
+}

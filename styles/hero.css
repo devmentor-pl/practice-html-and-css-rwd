@@ -1,0 +1,90 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    color:#2c3e50;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    height: auto;
+    max-width: 1024px;
+}
+.hero{
+    background-image: url(../images/banner/banner.png);
+        
+   }
+.hero__top{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.phone{
+    align-items: center;
+}
+.menu{
+    display: flex;
+    align-items: center;      
+}
+.button{
+    display: flex;
+    align-items: center;
+}
+.menu_in{
+    color: white;
+    height: 50px;
+    min-width: 100px;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-content: center;
+}
+.information_box{
+    display: flex;
+    align-content: center;
+}
+.information{
+    
+    color: white;
+    margin: 0 auto;
+    flex-basis: 50%;
+    
+}
+.text{
+    font-size: 80px;
+    
+}
+.text2{
+    font-size: 20px;
+}
+
+.button2{
+    min-width: 200px;
+    color: white;
+    background-color: rgb(108, 243, 243);
+    border: none;
+    font-size: 25px;
+    padding: 0.8rem;
+    cursor:pointer;
+    transition: background-color 0,5s ease-in-out;
+    border-radius: 5px
+}
+.button2:hover{
+    background-color: rgb(39, 182, 182);
+}
+.button1{
+    color: white;
+    background-color: rgb(52, 149, 240);
+    border: none;
+    font-size: 15px;
+    padding: 0.8rem;
+    cursor:pointer;
+    transition: background-color 0,5s ease-in-out;
+    border-radius: 5px
+  
+}
+.button1:hover{
+    background-color: rgb(12, 59, 104);
+}

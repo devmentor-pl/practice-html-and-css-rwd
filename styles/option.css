@@ -1,0 +1,61 @@
+.option{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    display: flex;
+    width: 100%;
+}
+.insta{
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+}
+.face{
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+}
+.tweet{
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+}
+.servis{
+    display: flex; 
+}
+.tlo{
+    display: inline-block;
+    background-color: rgb(76, 78, 80);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.applab{
+    padding: 5rem;
+    flex-basis: 40%;
+}
+.applogo{
+    padding: 2rem;
+}
+.firm{
+    padding: 2rem;
+}
+.logos{
+    padding: 2rem;
+}
+.servise{
+    flex-basis: 33.33%;
+    padding: 2.5rem;
+    text-align:center;
+}
+.tittle{
+    font-size: 35px;
+    padding-top: 35px;
+    padding-bottom: 85px;
+}
+.servis{
+    flex-basis: 60%;
+}
+.infotext{
+    font-size: 15px;
+    padding-bottom: 35px;
+}
