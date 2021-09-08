@@ -12,7 +12,7 @@ body {
 .a {
     border-color: magenta;
     height: 50vh;
-    width: 100vw;
+    width: 100%;
 
     grid-column-start: 1;
     grid-column-end: 3;
