@@ -1,0 +1,102 @@
+/* HEADER */
+.header {
+    display: flex;
+}
+
+.nav__menu {
+    display: flex;
+}
+
+.nav-label {
+    display: none;
+}
+
+.nav__link, .nav__offer {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.nav__item, .offer__item {
+    background-color: #333; 
+    margin: 0;
+    border: none;
+}
+
+.offer__list {
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.offer__item {
+    margin: 0;
+    width: 320px;
+    border-radius: 0;
+}
+
+a {
+	display: block;
+	padding: 1.2em;
+	width: 320px;
+	text-decoration: none;
+	white-space: nowrap;
+	color: #fff;
+}
+
+.fas {
+	margin-left: 15px;
+}
+
+a:hover {
+	color: royalblue;
+}
+
+.nav__item:hover > .offer__list {
+	display: block;
+	position: absolute;
+}
+
+/* CONTENT */
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.content__article--football {
+    width: 55%;
+    height: 300px;
+    margin-right: 15px;
+}
+
+.content__ads--rolex {
+    width: 45%;
+    height: 300px;
+}
+
+.content__article--basketball {
+    width: 40%;
+    height: 300px;
+}
+
+.content__article--baseball {
+    width: 35%;
+    height: 300px;
+    margin: 10px 15px;
+}
+
+.content__ads--patek-philippe {
+    width: 30%;
+    height: 300px;
+}
+
+/* FOOTER */
+.footer__container {
+    justify-content: center;
+}
+
+.footer__copyrights {
+    height: 5px;
+    width: 150px;
+}
