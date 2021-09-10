@@ -1,0 +1,50 @@
+.header {
+    position: relative;
+    height: 0;
+    background-image: url(../../img/header_bgc_desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: calc(1281 / 1920 * 50%);
+}
+
+
+.nav__hamburger,
+.header__nav {
+    display: none;
+}
+
+
+.header__nav--desktop {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.nav__list--desktop {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__item--desktop {
+    margin-right: 5rem;
+}
+
+.nav__link--desktop {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    color: var(--color-delta);
+    letter-spacing: 1px;
+}
+
+.nav__link--desktop:hover {
+    color: var(--color-alfa);
+}
