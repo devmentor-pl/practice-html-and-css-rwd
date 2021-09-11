@@ -5,12 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" 
+        media="(min-width: 600px" 
+        href="./styles/tablet.css">
+    <link rel="stylesheet" 
+        media="(min-width: 1200px)" 
+        href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Cumque quam perspiciatis aperiam minima, deserunt velit voluptatum, praesentium quibusdam a illum officiis, 
+            suscipit odit accusamus expedita incidunt in nam tenetur. Officiis maiores, minima nesciunt sunt repudiandae in, ea quae, 
+            reiciendis accusantium blanditiis modi reprehenderit deleniti alias 
+            voluptas quo! Temporibus, vitae quibusdam? Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Provident, dicta! Lorem ipsum dolor sit amet.
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source 
+                media="(min-width: 1200px)"
+                srcset="./img/pexels-spacex-1000w.jpg">
+                
+            <source
+                media="(min-width: 600px)"
+                srcset="./img/pexels-spacex-800w.jpg">
+            
+            <source 
+                srcset="./img/pexels-spacex-600w.jpg">
+
+            <img src="./img/pexels-spacex-600w.jpg" alt="">
+        </picture>
+    </header>
+    <side class="v">V
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gA6ppby3JC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

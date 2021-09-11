@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "a-picture a-video"
+        "a-text a-text";
+    grid-template-columns: 
+        minmax(auto, 1400px) 
+        minmax(auto, 1400px);
+    grid-template-rows: auto calc(60vh - 3px);
+    
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.p {
+    grid-area: a-picture;
+}
+
+.t {
+    grid-area: a-text;
+}
+
+.v {
+    grid-area: a-video;
+}

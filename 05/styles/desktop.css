@@ -1,0 +1,82 @@
+/* desktop */
+
+/* header */
+
+.header__container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.header__logo {
+    width: 20%;
+    height: 100%;
+}
+
+.header__nav {
+    position: inherit;
+    display: block;
+    width: 40%;
+    height: 100%;
+}
+
+.header__nav-menu {
+    display: none;
+}
+
+.header__nav-menu-icon {
+    display: none;
+}
+
+#header__nav-menu {
+    display: none;
+}
+
+/* content */
+
+.content {
+    height: calc(50vh - 85px);
+}
+
+.content__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 5px;
+}
+
+/* box */
+
+.box {
+    height: calc(40vh - 10px);
+}
+
+.box__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    padding: 5px;
+}
+
+/* footer */
+
+.footer {
+    height: calc(10vh - + 10px);
+    
+}
+
+.footer__container {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 50%;
+}
