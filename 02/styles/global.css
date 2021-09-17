@@ -41,8 +41,8 @@ body {
 
 @media (min-width:600px) {
     body {
-        grid-template-columns: auto auto ;
-        grid-template-rows: minmax(auto, 1200px) minmax(auto, 1200px) ;
+        grid-template-columns: minmax(auto, 1200px) minmax(auto, 1200px);
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
         "A A"
         "C B";
