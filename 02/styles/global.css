@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 50%);
-    grid-template-areas: 
+    grid-template-areas:
     "A"
     "B"
     "C";
