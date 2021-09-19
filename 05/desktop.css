@@ -13,7 +13,7 @@ label, input {
     border: 1px solid blue;
     height: 100%;
     margin: 0 auto;
-    width: 80%;
+    max-width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,7 +40,7 @@ label, input {
 
 .section__row {
     margin: 0 auto;
-    width: 80%;
+    max-width: 1000px;
     border: 1px solid blue;
     height: 100%;
     display: flex;
