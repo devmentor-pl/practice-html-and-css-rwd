@@ -1,0 +1,10 @@
+body {
+    grid-template-areas: 
+    "P V"
+    "T T";
+    max-width: 1400px;
+}
+
+.t {
+    text-indent: 25px
+}
