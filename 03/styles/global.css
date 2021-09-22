@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/* body {
+body {
     width: calc(100% - 15px);
-} */
+}
 
 .p, .t, .v {
-    border: 3px solid transparent;
+    /* border: 3px solid transparent; */
     min-height: 50px;
     margin:5px;
 
