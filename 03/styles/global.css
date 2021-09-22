@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+/* body {
+    width: calc(100% - 15px);
+} */
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
+    margin:5px;
 
     display: flex;
     justify-content: center;
@@ -21,6 +26,7 @@
     border-color: #ffffba;
     position: relative;
     height: 0;
+    width:100%;
     padding-bottom: calc(3 / 4 * 100%);
     overflow: hidden;
 }
@@ -41,10 +47,11 @@ picture {
     border-color: #baffc9;
     position: relative;
     height: 0;
-    padding: calc(315 / 560 * 100%);
+    width: 100%;
+    padding: calc(90 / 560 * 100%);
 }
 
-.v iframe {
+iframe {
     position: absolute;
     top:0;
     left:0;
