@@ -22,6 +22,10 @@ body {
     border-color: #ffdfba;
 }
 
+div p{
+    padding:6px;
+}
+
 .p {
     border-color: #ffffba;
     position: relative;
