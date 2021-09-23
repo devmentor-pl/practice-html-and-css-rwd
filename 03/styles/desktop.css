@@ -1,10 +1,12 @@
 body {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto ;
     grid-template-areas: 
     "picture video"
     "text text";
+    max-width: 1400px;
+    margin: 0 auto;;
 }
 
 .t {
