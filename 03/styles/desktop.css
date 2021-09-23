@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
+    grid-template-areas: 
+    "picture video"
+    "text text";
+}
+
+.t {
+    grid-area: text;
+}
+
+.p {
+    grid-area: picture;
+}
+
+.v {
+    grid-area: video;
+    align-self: center;
+    justify-self: center;
+}
