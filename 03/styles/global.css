@@ -26,25 +26,21 @@ div p{
     padding:6px;
 }
 
-.p {
-    border-color: #ffffba;
+.p__wrapper {
     position: relative;
     height: 0;
     width:100%;
     padding-bottom: calc(3 / 4 * 100%);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-picture {
+.p__wrapper img {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .v {
@@ -52,7 +48,7 @@ picture {
     position: relative;
     height: 0;
     width: 100%;
-    padding: calc(90 / 560 * 100%);
+    padding: calc(90 / 500 * 100%);
 }
 
 iframe {

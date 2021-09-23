@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "picture"
+    "text"
+    "video";
+}
+
+.t {
+    grid-area: text;
+}
+
+.p {
+    grid-area: picture;
+}
+
+.v {
+    grid-area: video;
+}
