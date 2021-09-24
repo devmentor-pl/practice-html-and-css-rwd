@@ -1,25 +1,85 @@
 .nav {
-    min-height: 20vh;
+    min-height: 10vh;
     width: auto;
-    border: 1px solid greenyellow;
+    background-color: rgb(211, 183, 183);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    font: normal bold 18px 'Courier New', Courier;
+.nav__logo {
+    font: normal 700 18px 'Courier New', Courier, monospace;
     padding-left: 20px;
+    flex-basis: 35%;
+    cursor: pointer;
 
 }
-.menu {
+.nav__menu {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 30px;
+    flex-basis: 45%;
 }
 
-.menu__item {
-    padding:3px;
+.nav__item, .submenu__item {
     text-transform: uppercase;
-    font: normal bold 16px 'Courier New', Courier;
+    font: normal 500 16px 'Courier New', Courier, monospace ;
+    padding:12px;
+}
+
+.nav__link, .submenu__link {
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.nav__item {
+    position: relative;
+}
+
+.nav__item:hover {
+    border-top: 1px solid rgb(0, 0, 0);
+}
+
+.nav__arrow {
+    position: relative;
+}
+
+.nav__arrow::after {
+    content: "▼";
+    position: absolute;
+    top:0;
+    left:100%;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+}
+
+/* Submenu */
+
+.nav__submenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    left:0;
+    background-color: rgb(211, 183, 183);
+    padding-top:20px;
+    padding-bottom:10px;
+
+}
+
+.nav__item:hover .nav__submenu {
+    display: block;
+}
+
+.submenu__link {
+    white-space: nowrap;
+}
+
+.submenu__item {
+    padding-top:12px;
+    padding-bottom: 4px;
 }
