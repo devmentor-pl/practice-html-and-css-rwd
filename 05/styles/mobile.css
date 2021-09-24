@@ -1,0 +1,53 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.article1,
+.article2 {
+    flex-grow: 1;
+}
+
+.header__container {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__nav-icon {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    line-height: 40px;
+}
+
+.article1__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.article1__section {
+    flex-grow: 1;
+}
+
+.article2__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.article2__section {
+    flex-grow: 1;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo {
+    width: 200px;
+}
