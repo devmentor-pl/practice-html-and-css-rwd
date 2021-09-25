@@ -178,10 +178,10 @@ html{
   }
 
   @media (max-width:390px) {
-    .nav__submenu{
-        left:40%;
+    .hamburger:focus + .nav__menu {
+        text-align: left;
     }
-    .submenu__link{
-        font-size: 14px;
+    .nav__submenu{
+        left:0;
     }
   }
