@@ -1,0 +1,57 @@
+html{
+    --border-color:rgb(0,0,0);
+    --nav-bg:rgb(245, 212, 174);
+    }
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+/* Nav section */
+.nav {
+    min-height: 19vh;
+    max-width: 1000px;
+    background-color: var(--nav-bg);
+}
+/* About section */
+.about {
+    min-height:50vh;
+    max-width: 1000px;
+    background-color: rgb(160, 218, 127);
+}
+
+/* Hamburger menu */
+
+.nav__hamburger {
+    width:38px;
+    height:35px;
+    border:0px;
+    border-top: 3px solid var(--border-color);
+    background:transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    display: none;
+}
+
+.nav__hamburger::before, .nav__hamburger::after {
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    border-top: 3px solid var(--border-color);
+    transform: translateY(11px);
+}
+
+.nav__hamburger::after{
+    transform: translateY(24px);
+    transition: 0.3s transform linear;
+}
+
+.nav__hamburger:focus{
+      transform: rotate(45deg) translateY(5px);
+      border:none;
+}
+
+.nav__hamburger:focus::after{
+      transform: rotate(-90deg) translateX(-10px);
+}

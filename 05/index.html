@@ -7,26 +7,37 @@
     <meta name="description" content="05 cwiczenie podstawy HTML i CSS - podstawowa struktura strony internetowej">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/mobile.css" media="(max-width:800px)">
-    <link rel="stylesheet" href="./styles/desktop.css" media="(min-width:801px)">
+    <link rel="stylesheet" media="(max-width: 800px)" href="./styles/mobile.css" >
+    <link rel="stylesheet" media="(min-width: 801px)" href="./styles/desktop.css" >
     <title>devmentor.pl - HTML & CSS: RWD - #05</title>
 </head>
 <body>
     <header>
-       <nav class="nav"></nav>
+       <nav class="nav">
             <h1 class="nav__logo">Brand</h1>
-            <button class="hamburger"></button>
+            <button class="nav__hamburger"></button>
             <ul class="nav__menu">
-                <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
-            </ul>
+                    <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+                </ul>
+        </nav>
     </header>
     <main>
         <section class="about">
-            <div class="about__img"></div>
+            <div class="about__img">
+                <picture>
+                    <source
+                    media="(max-width:800px)"
+                    srcset="./images/cat-500.jpg">
+                    <source
+                    media="(min-width:801px)"
+                    srcset="./images/cat-1000.jpg">
+                    <img src="./images/cat-1000.jpg" alt="grey cat">
+                </picture>
+            </div>
             <div class="about__info">
                 <header>
                     <h2 class="about__head"></h2>
@@ -37,18 +48,20 @@
 
         <section class="services">
             <div class="services__item">
-                <p class="services__text"></p>
+                <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eos ad asperiores minus ipsum temporibus enim, suscipit vitae natus harum ipsam impedit modi accusamus sunt aspernatur alias earum recusandae dolor.</p>
             </div>
             <div class="services__item">
-                <p class="services__text"></p>
+                <p class="services__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde rem adipisci dolore, nesciunt quae modi, minus officiis asperiores non harum soluta porro illo, ipsam odit minima ipsum! Veritatis, amet voluptates!</p>
             </div>
             <div class="services__item">
-                <p class="services__text"></p>
+                <p class="services__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt hic aperiam officiis atque cumque aspernatur, nostrum sequi necessitatibus soluta, alias quia debitis enim ad nihil vel, ut eligendi! In, iure.</p>
             </div>
         </section>
     </main>
     <footer>
-        <div class="footer"></div>
+        <div class="footer">
+            <p class="footer__logo">Brand</p>
+        </div>
     </footer>
 </body>
 </html>
