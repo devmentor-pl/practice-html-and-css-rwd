@@ -1,37 +1,51 @@
-/* Nav section */
+html {
+    --bg-item:rgb(253, 240, 230); 
+}
 
+/* Nav section */
 .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    position: relative;
 }
-
-.nav__logo {
-    font-size: 1.6rem;
-    font-weight: 500;
-    margin: 0 auto;
-}
-
-.nav__hamburger {
-    display: block;
-    margin-right:20px;
+.nav__logo{
+    margin:1.6rem 0;
 }
 .nav__menu {
     display: none;
 }
 
-.nav__hamburger:focus + .nav__menu {
+.nav__hamburger {
     display: block;
+    position: absolute;
+    top:25px;
+    right:20px;
 }
 
-.nav__item {
-   margin:10px 0;
+.nav__hamburger:focus + .nav__menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10px;
+    margin-bottom: 25px;
 }
 
 .nav__link {
-    line-height: 50px;
+    line-height: 60px;
     font-size: 1.4rem;
     color:rgb(0, 0, 0);
+}
+
+.nav__item {
+    padding:0 1rem;
+}
+.nav__item:hover{
+    background-color:var(--bg-item);
+    border:1px var(--bg-item) transparent;
+    border-radius: 4px;
 }
 
 /* About section */
@@ -45,9 +59,13 @@
     "text" ;
 }
 
+.about__img {
+    
+}
+
 
 .about__head, .about__text{
-    padding:1.2rem;
+    padding:1.3rem;
 }
 
 /* Services section */
