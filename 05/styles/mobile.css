@@ -1,15 +1,17 @@
 html {
     --bg-item:rgb(253, 240, 230); 
+    --bg-info:thistle;
+    --bg-services:silver;
 }
 
 /* Nav section */
 .nav {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
 }
+/* Logo przeskakuje przy np 500x650 */
 .nav__logo{
     margin:1.6rem 0;
 }
@@ -29,7 +31,7 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top:10px;
+    margin-top:5px;
     margin-bottom: 25px;
 }
 
@@ -53,21 +55,36 @@ html {
 .about {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas:
     "img"
     "text" ;
+    row-gap: 5px;
 }
 
-.about__img {
-    
+.about__info{
+    background-color:var(--bg-info);
 }
-
-
 .about__head, .about__text{
     padding:1.3rem;
 }
 
 /* Services section */
 
+.services {
+    margin-top: 5px;
+    row-gap: 5px;
+}
+.services__item {
+    background-color:var(--bg-services) ;
+}
+
+.services__text {
+    padding:1.3rem;
+}
+
 /* Footer section */
+
+.footer__logo {
+    font-size: 1.3rem;
+}

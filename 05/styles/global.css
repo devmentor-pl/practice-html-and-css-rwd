@@ -8,35 +8,12 @@ body {
 }
 /* Nav section */
 .nav {
-    min-height: 19vh;
+    display: flex;
+    min-height: 15vh;
     max-width: 1000px;
     background-color: var(--nav-bg);
 }
-/* About section */
-.about {
-    min-height:50vh;
-    max-width: 1000px;
-    background-color: rgb(160, 218, 127);
-}
-.about__img {
-    grid-area: img;
-    position: relative;
-    height: 0;
-    width:100%;
-    padding-bottom: calc(3 / 4 * 100%);
-}
 
-.about__img img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.about__info {
-    grid-area: text;
-}
 /* Hamburger menu */
 
 .nav__hamburger {
@@ -73,3 +50,52 @@ body {
 .nav__hamburger:focus::after{
       transform: rotate(-90deg) translateX(-10px);
 }
+
+/* About section */
+.about {
+    min-height:50vh;
+    max-width: 1000px;
+    
+}
+.about__img {
+    grid-area: img;
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: calc(3 / 4 * 100%);
+}
+
+.about__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about__info {
+    grid-area: text;
+}
+
+/* Services section */
+
+.services {
+    min-height: 50vh;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* Footer section */
+.footer {
+    min-height: 12vh;
+    max-width: 1000px;
+    background-color: var(--nav-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
