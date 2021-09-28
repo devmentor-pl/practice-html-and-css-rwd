@@ -1,0 +1,41 @@
+/* Nav section */
+
+.nav {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.nav__menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav__logo {
+    margin-left:2rem;
+}
+
+.nav__item {
+    padding:0.6rem;
+    margin-right: 1.2rem;
+}
+
+
+.nav__link {
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+}
+
+/* About section */
+
+
+/* Services section */
+
+
+
+/* Footer section */
+
+.footer__logo {
+    font-size: 1.4rem;
+}
