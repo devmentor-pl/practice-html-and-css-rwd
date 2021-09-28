@@ -43,7 +43,6 @@
 /* About section */
 
 .about {
-    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
