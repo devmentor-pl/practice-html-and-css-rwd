@@ -1,17 +1,27 @@
 html{
     --border-color:rgb(0,0,0);
     --nav-bg:rgb(245, 212, 174);
+    --bg-item:rgb(253, 240, 230); 
+    --bg-info:thistle;
+    --bg-services:silver;
     }
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif
 }
+
 /* Nav section */
 .nav {
     display: flex;
     min-height: 15vh;
     max-width: 1000px;
     background-color: var(--nav-bg);
+}
+
+.nav__item:hover{
+    background-color:var(--bg-item);
+    border:1px var(--bg-item) transparent;
+    border-radius: 4px;
 }
 
 /* Hamburger menu */
@@ -52,6 +62,7 @@ body {
 }
 
 /* About section */
+
 .about {
     min-height:50vh;
     max-width: 1000px;
@@ -75,6 +86,7 @@ body {
 
 .about__info {
     grid-area: text;
+    background-color:var(--bg-info);
 }
 
 /* Services section */
@@ -86,10 +98,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
 
+.services__item {
+    background-color:var(--bg-services) ;
 }
 
 /* Footer section */
+
 .footer {
     min-height: 12vh;
     max-width: 1000px;

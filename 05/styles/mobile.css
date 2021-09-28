@@ -1,8 +1,3 @@
-html {
-    --bg-item:rgb(253, 240, 230); 
-    --bg-info:thistle;
-    --bg-services:silver;
-}
 
 /* Nav section */
 .nav {
@@ -44,11 +39,6 @@ html {
 .nav__item {
     padding:0 1rem;
 }
-.nav__item:hover{
-    background-color:var(--bg-item);
-    border:1px var(--bg-item) transparent;
-    border-radius: 4px;
-}
 
 /* About section */
 
@@ -62,9 +52,6 @@ html {
     row-gap: 5px;
 }
 
-.about__info{
-    background-color:var(--bg-info);
-}
 .about__head, .about__text{
     padding:1.3rem;
 }
@@ -74,9 +61,6 @@ html {
 .services {
     margin-top: 5px;
     row-gap: 5px;
-}
-.services__item {
-    background-color:var(--bg-services) ;
 }
 
 .services__text {
