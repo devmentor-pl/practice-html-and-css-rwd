@@ -6,9 +6,9 @@
     flex-direction: column;
     position: relative;
 }
-/* Logo przeskakuje przy np 500x650 */
+/* Logo przeskakuje nie wiem dlaczego */
 .nav__logo{
-    margin:1.6rem 0;
+    margin:1rem 0;
 }
 .nav__menu {
     display: none;
