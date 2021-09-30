@@ -60,6 +60,7 @@
 .services {
     margin-top: 5px;
     row-gap: 5px;
+    flex-direction: column;
 }
 
 .services__text {

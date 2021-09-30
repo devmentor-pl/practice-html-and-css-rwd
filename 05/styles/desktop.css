@@ -29,14 +29,32 @@
 
 /* About section */
 .about {
-    grid-template-columns: 50% 50% ;
+    grid-template-columns: 50% calc(50% - 7px);
     grid-template-rows: auto;
     grid-template-areas: "img text" ;
+    column-gap: 7px;
+}
+.about__img, .about__info{
+    margin:7px 0;
+}
+.about__head, .about__text {
+    padding:1.5rem;
 }
 
 /* Services section */
+.services {
+    flex-direction: row;
+    column-gap: 7px;
+    margin: 7px 0;
+}
 
+.services__item {
+    height: 250px;
+}
 
+.services__text {
+    padding:1.5rem;
+}
 
 /* Footer section */
 

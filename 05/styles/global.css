@@ -93,12 +93,10 @@ body {
 /* Services section */
 
 .services {
-    min-height: 50vh;
     max-width: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 .services__item {
