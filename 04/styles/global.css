@@ -116,14 +116,14 @@ html{
     transform: translateY(24px);
     transition: 0.3s transform linear;
 }
-  .hamburger:focus{
+.hamburger:focus{
       transform: rotate(45deg) translateY(5px);
       border:none;
-  }
+}
 
-  .hamburger:focus::after{
+.hamburger:focus::after{
       transform: rotate(-90deg) translateX(-10px);
-  }
+}
 
   /* Mobile version */
 
@@ -143,7 +143,7 @@ html{
 
     .hamburger {
         display: block;
-        margin-right: 50px;
+        margin:10px 30px;
     }
 
     .nav {
@@ -155,11 +155,11 @@ html{
         position: absolute;
         top:100%;
         left:0;
-        display: block;
         width:100vw;
-        height: 50vh;
+        height: 100vh;
         background-color: var(--bg-color);
-        text-align: center;
+        text-align: left;
+        padding-left: 15px;
     }
 
     .nav__link {
@@ -172,16 +172,7 @@ html{
     .nav__submenu {
         position: relative;
         top:0;
-        left:44%;
-        text-align:left;
-    }
-  }
-
-  @media (max-width:390px) {
-    .hamburger:focus + .nav__menu {
-        text-align: left;
-    }
-    .nav__submenu{
         left:0;
+        text-align: left;
     }
   }
