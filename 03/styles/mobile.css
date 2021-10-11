@@ -1,0 +1,18 @@
+.l-container{
+  display: grid;
+  grid-template-areas: 
+  "p-top"
+  "t-middle"
+  "v-bottom";
+  
+}
+.p {
+  grid-area: p-top;
+}
+.t {
+  padding: 0 1rem;
+  grid-area: t-middle;
+}
+.v {
+  grid-area: v-bottom;
+}

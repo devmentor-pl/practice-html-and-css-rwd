@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -14,7 +13,11 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    height: 0;
+    padding-bottom: calc(178 / 299 * 100%);
+    position: relative;
+    
 }
 
 .t {
@@ -23,4 +26,21 @@
 
 .v {
     border-color: #baffc9;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+}
+.side__video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
 }

@@ -1,0 +1,22 @@
+.l-container{
+  display: grid;
+  grid-template-areas: 
+  "p-top-left t-right"
+  "v-bottom-left t-right";
+  grid-template-columns: 
+  minmax(200px, 50%)
+  auto;
+  
+}
+.p {
+  grid-area: p-top-left;
+
+}
+.t {
+  grid-area: t-right;
+}
+.v{
+  grid-area: v-bottom-left;
+  
+}
+
