@@ -1,0 +1,157 @@
+/* header */
+.header {
+  border: 1px solid green;
+  padding: 1vw;
+  width: 100%;
+}
+.top {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-areas: ". logo nav";
+  grid-template-columns: 35% 35% 30%;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.top__logo {
+  align-self: center;
+  background-color: orange;
+  grid-area: logo;
+  height: 80%;
+}
+
+/* menu */
+
+.top-nav {
+  align-items: center;
+  display: flex;
+  grid-area: nav;
+  justify-content: flex-end;
+}
+
+#menu-switcher {
+  display: none;
+}
+
+span {
+  background-color: rgb(41, 41, 41);
+  height: 5px;
+  margin: 5px 0;
+  width: 50px;
+}
+
+.nav__menu {
+  display: none;
+  padding: 5px 0;
+}
+
+.nav__hamburger {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  width: 90px;
+}
+
+.nav__hamburger:hover {
+  cursor: pointer;
+}
+
+#menu-switcher:checked ~ .nav__menu {
+  align-items: center;
+  align-items: flex-end;
+  background-color: rgb(253, 235, 255);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  max-width: 200px;
+  padding-right: 20px;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 60px;
+  width: 110px;
+}
+
+.menu__item {
+  padding-top: 10px;
+}
+
+.menu__link {
+  color: blueviolet;
+  text-decoration: none;
+}
+
+#menu-switcher:checked + .nav__hamburger {
+  transform: scale(0.7) rotate(90deg) translate(-20%, -10%);
+}
+
+/* section 1 */
+
+.first-section {
+  border: 1px solid green;
+  padding: 1vw;
+}
+
+.first-section__content {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-rows: 25vh 25vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  max-width: 1000px;
+  row-gap: 10px;
+}
+
+.content__article {
+  background-color: orange;
+  height: 100%;
+}
+
+/* section 2 */
+
+.second-section {
+  border: 1px solid green;
+  padding: 1vw;
+}
+
+.second-section__content {
+  border: 1px solid blue;
+  display: grid;
+  grid-template-rows: 15vh 15vh 15vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  max-width: 1000px;
+  row-gap: 10px;
+}
+
+.content__article {
+  background-color: orange;
+  height: 100%;
+}
+
+/* footer */
+
+.footer {
+  border: 1px solid green;
+  padding: 1vw;
+}
+
+.footer-content {
+  align-items: center;
+  border: 1px solid blue;
+  display: flex;
+  height: 7vw;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.footer-content__item {
+  background-color: orange;
+  height: 80%;
+  width: 30%;
+}

@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/desktop.css"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <nav class="nav">
+        <input type="checkbox" id="menu-switcher" />
+        <label for="menu-switcher" class="hamburger-icon">+</label>
+        <ul class="nav__menu menu">
+          <li class="menu__item item">
+            <a href="#" class="item__link">start</a>
+          </li>
+          <li class="menu__item item">
+            <a href="#" class="item__link">oferta</a>
+            <ul class="lower-menu lower-menu">
+              <li class="lower-menu__item item">
+                <a href="#" class="item__link">strony internetowe</a>
+              </li>
+              <li class="lower-menu__item item">
+                <a href="#" class="item__link">pozycjonowanie stron www</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item item">
+            <a href="#" class="item__link">kontakt</a>
+          </li>
         </ul>
-    </nav>
-
-</body>
+      </nav>
+    </section>
+  </body>
 </html>

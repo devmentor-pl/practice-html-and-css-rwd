@@ -1,0 +1,20 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "picture-content"
+    "text-content"
+    "video-content";
+}
+
+.p {
+  grid-area: picture-content;
+}
+
+.t {
+  grid-area: text-content;
+  text-align: justify;
+}
+
+.v {
+  grid-area: video-content;
+}
