@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis vitae commodi sequi illo repudiandae
+        optio aperiam aut eveniet libero ratione reiciendis illum nostrum dolorem ut quisquam assumenda, voluptatem
+        voluptas eum!</main>
+    <header class="p">
+        <picture>
+            <source srcset="./img/puffin-1920.jpg" media="(min-width: 1200px)">
+
+            <source srcset="./img/puffin-820.jpg, ./img/puffin-1920.jpg 1.5x" media="(min-width: 600px)">
+
+            <source srcset="./img/puffin-820.jpg 1.35x" media="(min-width: 400px)">
+
+            <img src="./img/puffin-500.jpg" alt="">
+
+        </picture>
+    </header>
+    <aside class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2k9MpD1gM14" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </aside>
 
 </body>
+
 </html>
