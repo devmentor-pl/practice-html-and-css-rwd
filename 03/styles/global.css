@@ -4,23 +4,46 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
+.p,
+.t,
+.v {
     border: 3px solid transparent;
     min-height: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .p {
-    border-color: #ffffba
+    background-color: blue;
 }
 
 .t {
-    border-color: #ffdfba;
+    background-color: olive;
 }
 
 .v {
-    border-color: #baffc9;
+    background-color: pink;
+}
+
+
+@media (max-width: 599px) {
+    body {
+        display: grid;
+
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    body {
+        display: grid;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+
+    }
 }
