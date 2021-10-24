@@ -4,46 +4,34 @@
     box-sizing: border-box;
 }
 
-.p,
-.t,
-.v {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-
-}
 
 .p {
-    background-color: blue;
+    grid-area: a-picture;
 }
 
 .t {
-    background-color: olive;
+    background-color: #d9bded;
+    grid-area: a-text;
 }
 
 .v {
-    background-color: pink;
+    grid-area: a-video;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+}
+
+iframe {
+    border: 1px solid #d9bded;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 
-@media (max-width: 599px) {
-    body {
-        display: grid;
-
-    }
-}
-
-@media (min-width: 600px) and (max-width: 1199px) {
-
-    body {
-        display: grid;
-    }
-
-}
-
-@media (min-width: 1200px) {
-    body {
-        display: grid;
-
-    }
+img {
+    width: 100%;
+    height: auto;
 }
