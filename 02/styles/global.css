@@ -4,14 +4,17 @@
     box-sizing: border-box;
 }
 
-@media(max-width: 600px) body {
-    display: grid;
-    grid-auto-rows: 50vh;
-}
+@media(max-width: 600px) {
+    body {
+        display: grid;
+        grid-auto-rows: 50vh;
+    }
 
-.c {
-    border-color: #baffc9;
-    order: 1;
+    .c {
+        border-color: #baffc9;
+        order: 1;
+    }
+
 }
 
 @media (min-width: 601px) {
