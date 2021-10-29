@@ -1,0 +1,12 @@
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        max-width: 1400px;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+        grid-template-areas:
+            "a-picture a-video"
+            "a-text a-text"
+
+    }
+}

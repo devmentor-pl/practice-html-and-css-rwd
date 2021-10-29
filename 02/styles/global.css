@@ -4,23 +4,41 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
-    border: 3px solid transparent;
-    min-height: 50px;
+@media(max-width: 600px) {
+    body {
+        display: grid;
+        grid-auto-rows: 50vh;
+    }
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .c {
+        border-color: #baffc9;
+        order: 1;
+    }
+
 }
 
-.a {
-    border-color: #ffffba
-}
+@media (min-width: 601px) {
+    body {
+        display: grid;
+        max-width: 1200px;
+        text-align: center;
+        grid-template-areas:
+            "header header"
+            "section main"
+    }
 
-.b {
-    border-color: #ffdfba;
-}
+    .a {
+        grid-area: header;
+        background-color: red;
+    }
 
-.c {
-    border-color: #baffc9;
+    .b {
+        grid-area: main;
+        background-color: yellowgreen;
+    }
+
+    .c {
+        grid-area: section;
+        background-color: aqua;
+    }
 }

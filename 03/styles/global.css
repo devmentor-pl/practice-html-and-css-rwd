@@ -4,23 +4,34 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .p {
-    border-color: #ffffba
+    grid-area: a-picture;
 }
 
 .t {
-    border-color: #ffdfba;
+    background-color: #d9bded;
+    grid-area: a-text;
 }
 
 .v {
-    border-color: #baffc9;
+    grid-area: a-video;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+}
+
+iframe {
+    border: 1px solid #d9bded;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
 }
