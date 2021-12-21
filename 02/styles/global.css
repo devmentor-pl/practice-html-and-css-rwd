@@ -2,6 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+}
+body {
+    display: grid;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+    grid-template-rows:
+    50vh
+    50vh
+    50vh
 }
 
 .a, .b, .c {
@@ -14,13 +26,32 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c
+}
+
+@media (min-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+        "a a"
+        "c b";
+        grid-template-rows:
+        50vh
+        50vh;
+        margin: 0 auto;
+            max-width: 1200px;
+
+    }
 }
