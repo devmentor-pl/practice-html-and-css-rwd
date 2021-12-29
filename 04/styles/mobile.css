@@ -1,0 +1,72 @@
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+li {
+    outline: 1px solid black;
+    text-align: center;
+}
+
+.second-menu  {
+    display: block;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav input:checked + ul {
+    display: block;
+}
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid black;
+    background: silver;
+    position: relative;
+    background: transparent;
+    transition: 0.3s transform linear;
+    
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+    transform: translateY(10px)
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:focus + ul {
+    display: block;
+}
+
+.menu:hover + ul {
+    display: block;
+}
+
+.second-menu li {
+    text-align: right;
+}
