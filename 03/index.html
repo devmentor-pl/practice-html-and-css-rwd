@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
+
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t"><p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolor ut magni modi debitis nemo dolorem molestiae provident consequuntur deleniti nobis, dolores exercitationem nam blanditiis maiores sapiente quasi, ipsam placeat.</p></main>
+
+    <header class="p">
+        <picture>
+            <source srcset="./img/platform640.webp" media="(max-width: 600px)">
+            <source srcset="./img/platform1280.webp" media="(max-width: 1199px)">
+            <source srcset="./img/platform1920.webp" media="(min-width: 1200px)">
+            <img src="./img/oil-platform.jpg" alt="semi-submersible platform with standby boat">
+        </picture>
+    </header>
+
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cmrbbfdvnGU"></iframe>
+    </side>
 
 </body>
 </html>

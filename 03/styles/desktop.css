@@ -1,0 +1,22 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.p {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+
+.t {
+	grid-column: 1/3;
+	grid-row: 2/3;
+}
+
+.v {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
