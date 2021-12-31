@@ -5,7 +5,6 @@ input,
 }
 
 /* Section 1 */
-
 .header__container {
 	max-width: 1000px;
 	margin: 10px auto;
@@ -23,8 +22,7 @@ input,
 }
 /* End of Section 1 */
 
-/* section 2 */
-
+/* Section 2 */
 .main__container {
 	display: flex;
 	justify-content: center;
@@ -36,7 +34,7 @@ input,
 .main__text {
 	width: 50%;
 }
-/* End of section 2 */
+/* End of Section 2 */
 
 /* Section 3 */
 .section__container {
@@ -53,7 +51,6 @@ input,
 /* End of Section 3 */
 
 /* Section 4 */
-
 .footer__container {
     display: flex;
     justify-content: center;

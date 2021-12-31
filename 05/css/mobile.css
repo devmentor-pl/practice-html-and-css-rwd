@@ -32,12 +32,10 @@ input {
 input:checked + .nav {
 	display: block;
 }
-
 /* End of Section 1 */
 
 
 /* Section 2 */
-
 .main__text{
 	text-align: center;
 }
@@ -46,16 +44,13 @@ input:checked + .nav {
 	margin: 20px;
 	min-height: calc(50vh - 30px);
 }
-
 /* End of section 2 */
 
 /* Section 3 */
-
 .section__container > .section__column {
 	margin: 20px;
 	min-height: calc(33.333vh - 30px);
 }
-
 /* End of Section 3 */
 
 /* section 4 */
@@ -64,5 +59,4 @@ input:checked + .nav {
 	margin: 20px auto;
 	min-height: 20vh;
 }
-
 /* End of section 4 */
