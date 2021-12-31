@@ -10,9 +10,10 @@
 
 .nav__item {
 	border: 2px solid grey;
-	margin: 10px 0;
+	margin: 10px;
 	padding: 5px;
-	width: 100vw;
+	width: calc(100vw - 10px);
+	border-radius: 20px;
 }
 
 a {
