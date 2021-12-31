@@ -1,0 +1,19 @@
+.row,
+.container,
+.content {
+	outline: 5px solid;
+	margin: 15px;
+	padding: 5px;
+}
+.row {
+	outline-color: green;
+}
+.container {
+	outline-color: blue;
+}
+.content {
+	outline-color: orange;
+    background-color: orange;
+}
+
+
