@@ -8,9 +8,9 @@
     border: 3px solid transparent;
     min-height: 50px;
 
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .p {
@@ -51,18 +51,17 @@ body {
     grid-template-areas:
     "p"
     "t"
-    "v"
+    "v";
 }
 
 @media (min-width:600px) and (max-width:1199px) {
 
     body {
-        display: grid;
         grid-template-areas:
         "p v"
         "t t";
         grid-template-columns:
-        minmax(200px,50vw)
+        minmax(100px,50vw)
     }
 
 }
@@ -76,10 +75,10 @@ body {
         "t t";
         max-width: 1400px;
         margin: 0 auto;
+        grid-template-columns: 50% 50%
     }
 }
 
 img {
     max-width: 100%;
 }
-

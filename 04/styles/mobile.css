@@ -11,10 +11,16 @@ a {
 li {
     outline: 1px solid black;
     text-align: center;
+    margin: 5px auto;
 }
 
 .second-menu  {
     display: block;
+}
+
+.second-menu li {
+    width: 75%;
+    margin-left: 12.5%;
 }
 
 .menu {
@@ -65,8 +71,4 @@ nav input:checked + ul {
 
 .menu:hover + ul {
     display: block;
-}
-
-.second-menu li {
-    text-align: right;
 }
