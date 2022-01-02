@@ -1,0 +1,24 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.p {
+	grid-column: 1/2;
+	grid-row: 1/2;
+	height: 50vh;
+	min-width: 200px;
+}
+
+.t {
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+
+.v {
+	grid-column: 1/2;
+	grid-row: 2/3;
+	height: 50vh;
+	min-width: 200px;
+}
