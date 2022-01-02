@@ -15,7 +15,6 @@ input,
 .logo {
 	width: 20%;
 }
-
 .nav {
 	min-width: 40%;
 	min-height: 10vh;
@@ -30,7 +29,6 @@ input,
 	margin: 10px auto;
 	min-height: 50vh;
 }
-
 .main__text {
 	width: 50%;
 }
@@ -44,7 +42,6 @@ input,
 	max-width: 1000px;
     min-height: 40vh;
 }
-
 .section__column {
     width: 33.333%;
 }
@@ -58,7 +55,6 @@ input,
     max-width: 1000px;
     min-height: 10vh;
 }
-
 .footer__content{
     width: 20%;
 }

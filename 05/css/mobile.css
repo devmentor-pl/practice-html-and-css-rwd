@@ -7,18 +7,15 @@
 	margin-top: 5px;
 	min-height: 10vh;
 }
-
 .header__container {
 	position: relative;
 }
-
 .fa-bars {
 	position: absolute;
 	right: 10px;
 	top: 5px;
 	font-size: 30px;
 }
-
 .nav {
 	display: none;
 	margin-top: 5%;
@@ -28,7 +25,6 @@
 input {
 	display: none;
 }
-
 input:checked + .nav {
 	display: block;
 }
@@ -39,7 +35,6 @@ input:checked + .nav {
 .main__text{
 	text-align: center;
 }
-
 .main__container > .main__text {
 	margin: 20px;
 	min-height: calc(50vh - 30px);
