@@ -8,24 +8,30 @@ a {
 
 }
 
+ul {
+    outline: none;
+}
+
 li {
     outline: 1px solid black;
     text-align: center;
-    margin: 5px auto;
 }
 
+.second-child {
+    margin-top: 5px;
+}
 .second-menu  {
     display: block;
-}
-
-.second-menu li {
-    width: 75%;
-    margin-left: 12.5%;
+    margin-bottom: 5px;
 }
 
 .menu {
     display: flex;
     justify-content: right;
+}
+
+.second-menu a {
+    padding-left: 50%;
 }
 
 ul {

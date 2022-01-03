@@ -17,8 +17,13 @@ ul li {
     width: 100%;
 }
 
+.second-child a {
+    padding: 0;
+}
+
 .second-child {
     position: relative;
+    margin-top: 0;
 }
 
 .second-menu {
