@@ -1,0 +1,49 @@
+.row {
+    height: 10vh;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav.logo.cell {
+    background-color: orange;
+    width: 20%;
+    margin-left: 0;
+}
+
+.nav.icon.cell {
+    background-color: orange;
+    width: 40%;
+}
+
+.container.main {
+    display: flex;
+    flex-direction: row
+}
+
+.container.main > .article.main:first-child {
+    height: 100%;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.container.main > .article.main:nth-child(2) {
+    height: 100%;
+    margin: 0;
+}
+
+.second.container.main > .article.main:last-child {
+    height: 100%;
+    margin-top: 0;
+    margin-left: 5px;
+}

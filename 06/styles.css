@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    box-sizing: border-box;
+    height: calc(100vh - 20px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
+
+}
+
+.container {
+    outline: 4px solid blue;
+    margin-top: 15px;
+    height: 20%;
+    width: 30%;
+}
+
+.row {
+    outline: 2px solid green;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.row.header {
+    outline: 4px solid red;
+}
+
+.row.main {
+    outline: 4px solid black;
+}
+
+
+.row.footer {
+    outline: 4px solid yellow;
+}
