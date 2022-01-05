@@ -1,0 +1,132 @@
+input {
+    display: none;
+}
+
+/* hamburger start */
+.hamburger {
+    margin: 20px auto;
+    border: 0;
+    border-top: 5px solid black;
+    height: 35px;
+    position: relative;
+    transition: 0.3s transform linear;
+    width: 40px;
+}
+
+.hamburger::before, .hamburger::after {
+    border-top: 5px solid black;
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(10px);
+    width: 100%;
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+      
+#check:checked+label > .hamburger{
+    border: none;
+    transform: rotate(45deg) translateY(5px);
+}
+
+#check:checked+label > .hamburger::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+/* hamburger end*/
+
+
+.navigation {
+    display: none;
+}
+
+#check:checked ~ .navigation {
+    display: block;
+}    
+
+.navigation__item { 
+    background-color: black;
+}
+
+.navigation__link {
+    color: white; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-decoration: none;  
+}
+
+.item__list{
+    display: none;
+}
+
+.navigation__item--dropdown:focus > .item__list {
+    display: block;
+}
+
+.navigation__link:focus + .item__list {
+    display: block;
+}
+
+.navigation__item--sub {
+    margin-left: 10%;   
+}
+
+.navigation__link--sub {
+    font-size: 30px; 
+ }
+
+
+@media (min-width:600px) {
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        background-color: black;
+    }
+
+    .navigation__list {
+        display: flex;
+    }
+
+    .navigation__item {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+   
+    .navigation__item--dropdown{
+        position: relative;
+    }
+
+    .navigation__item--dropdown:hover > .item__list {
+        display: block;
+    }
+    
+    .navigation__link:hover + .item__list {
+        display: block;
+    }
+    
+
+    .item__list {
+        display: none;
+        position: absolute;
+        top: calc(100%);
+        left: -20px;
+        background-color: black;
+        white-space: nowrap;
+        width: max-content;
+        padding: 10px;
+    }
+    
+    .navigation__item {
+        margin-left: 20px;   
+    }
+
+    .navigation__item--dropdown:hover .item__list {
+        display: block;
+    }
+}
