@@ -1,0 +1,16 @@
+.grid-container {
+    border: 1px solid red;
+    display: grid;
+    grid-template-areas:
+    "picture video" 
+    "text text";
+    grid-template-columns: 50% auto;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
