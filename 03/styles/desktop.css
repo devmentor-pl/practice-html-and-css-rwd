@@ -1,12 +1,16 @@
 .grid-container {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     display: grid;
     grid-template-areas:
     "picture video" 
     "text text";
-    grid-template-columns: 50% auto;
-    width: 1400px;
-    margin: 0 auto;
+    grid-template-columns: 50% 50%;
+    max-width: 1400px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
 }
 
 img {
