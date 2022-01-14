@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Fira Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400&display=swap');
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #000;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    margin-bottom: 20px;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #000;
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translate(-10px);
+}
+
+nav .hamburger {
+    visibility: visible;
+}
+
+nav {
+    /* visibility: hidden; */
+
+    min-width: 270px;
+
+}
+
+.hamburger:focus+ul,
+.hamburger:active+ul {
+    visibility: visible;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    height: 35px;
+    width: 100%;
+}
+
+a#contact {
+    border: none;
+}
+
+nav>ul,
+nav>ul>li,
+nav>ul>li>ul>li {
+    padding-right: 20px;
+}
+
+nav ul,
+nav li {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: end;
+
+}
