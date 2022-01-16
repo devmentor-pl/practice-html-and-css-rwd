@@ -1,0 +1,18 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+
+}
+
+.a {
+    order: 0;
+}
+
+.B {
+    order: 1;
+}
+
+.c {
+    order: 2;
+}
