@@ -12,23 +12,32 @@
     href="./styles/desktop.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
+    <header class="row">
+        <nav class="menu__container container">
+            <ul class="menu cell">
                 <li><a href="#">Icelandic nature</a></li>
                 <li><a href="#">Icelandic animals</a></li>
                 <li><a href="#">Copyrights</a></li>
             </ul>
         </nav>
+        <div class="hamburger__container container"><input><label><div class="hamburger cell">ham</div></label></div>
     </header>
-    <section>
-        <article></article>
-        <article></article>
+    <section class="content-1 row">
+        <div class="content1__container container">
+        <article class="content1_article cell"></article>
+        <article class="content1_article cell"><div><!--<img src="images/waterfall.jpg">--></div></article>
+        </div>
     </section>
-    <section>
-        <article></article>
-        <article></article>
-        <article></article>
+    <section class="content-2 row">
+        <div class="content2__container container">
+        <article class="content2_article cell"></article>
+        <article class="content2_article cell"></article>
+        <article class="content2_article cell"></article>
+        </div>
     </section>
-    <footer>copyrights</footer>
+    <footer class="footer row">
+        <div class="footer container">
+        <section class="footer cell">copyrights</section>
+        </div>
+    </footer>
 </body>
