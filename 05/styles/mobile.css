@@ -6,6 +6,7 @@ input {
 .menu__container {
     display: flex;
     justify-content: flex-end;
+    background: rgb(175, 243, 231);
 }
 .hamburger {
     margin: 10px;
@@ -52,40 +53,37 @@ input:checked ~ .navigation {
     display: block;
 }
 
-/*.navigation {
+.menu__link {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__link:hover {
+    color: blue;
+}
+
+/*footer*/
+.footer__container {
+    min-height: 100px;
     display: flex;
+    align-items: center;
     justify-content: center;
-}*/
+    background: rgb(175, 243, 231);
 
-/*.nav__item {
-    margin: 1px 0;
-    padding: 10px;
+}
+.footer__copyrights {
+    margin: 0 auto;
+}
+
+.footer__copyrights .cell {
+    height: 40px;
+}
+
+img {
     max-width: 100%;
-    background: black;
-    font-size: 30px;
-}*/
-
-/*.nav__dropdown {
-    display: none;
+    height: auto;
 }
 
-.offer:focus > .nav__dropdown {
-    display: block;
-}
 
-.nav__link:focus + .nav__dropdown {
-    display: block;
-}
 
-.nav__item--dropdown {
-    margin-left: 40px;
-}
 
-.nav__link--dropdown {
-    font-size: 25px;
-}
-
-.nav__item {
-    position: relative;
-}
-*/

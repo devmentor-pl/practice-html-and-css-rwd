@@ -4,8 +4,8 @@
 
 .cell, .container {
     outline: 3px solid;
-    margin: 10px;
-    padding: 5px;
+    /*margin: 10px;*/
+    /*padding: 5px;*/
 }
 .row {
     outline-color: green;
@@ -21,5 +21,5 @@
 .cell {
     outline-color: orange;
     background-color: orange;
-    min-height: 50px;
+    /*min-height: 50px;*/
 }
