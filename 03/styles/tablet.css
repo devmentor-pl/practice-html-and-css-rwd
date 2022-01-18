@@ -1,0 +1,13 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    "picture text"
+    "video text";
+    grid-template-columns: 
+        minmax(200px, 50vw);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

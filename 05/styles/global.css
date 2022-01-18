@@ -1,0 +1,24 @@
+
+
+/*.row {
+   outline: 3px solid;
+}
+
+.cell, .container {
+    outline: 3px solid;
+}*/
+.row {
+    /*outline-color: green;*/
+    width: 100%;
+}
+
+.container {
+    /*outline-color: blue;*/
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+/*.cell {
+    outline-color: orange;
+    background-color: orange;
+}*/
