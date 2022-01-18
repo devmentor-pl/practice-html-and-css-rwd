@@ -1,3 +1,9 @@
+/*header*/
+
+.logo {
+    display: none;
+}
+
 input {
     display: none;
 }
@@ -5,9 +11,12 @@ input {
 /*hamburger button*/
 .menu__container {
     display: flex;
-    justify-content: flex-end;
-    background: rgb(175, 243, 231);
+    justify-content: right;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: rgb(51 153 255);
 }
+
 .hamburger {
     margin: 10px;
     width: 40px;
@@ -53,6 +62,10 @@ input:checked ~ .navigation {
     display: block;
 }
 
+.menu__item {
+    padding: 5px;
+}
+
 .menu__link {
     text-decoration: none;
     color: black;
@@ -62,27 +75,46 @@ input:checked ~ .navigation {
     color: blue;
 }
 
+/*section content-1*/
+
+.content1__container {
+    background: rgb(175, 243, 231);
+}
+
+.content1__article--text {
+    padding: 20px;
+    text-align: justify;
+}
+
+/*section content-2*/
+
+.content2__container {
+    background: rgb(175, 243, 231);
+}
+
+.content2__article--text {
+    padding: 20px;
+    text-align: justify;
+}
+
 /*footer*/
 .footer__container {
     min-height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(175, 243, 231);
+    background: rgb(51 153 255);
 
 }
 .footer__copyrights {
     margin: 0 auto;
+    font-weight: bold;
 }
 
 .footer__copyrights .cell {
     height: 40px;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 
 
