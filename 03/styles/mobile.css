@@ -1,0 +1,7 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "main"
+        "side";
+}

@@ -1,0 +1,10 @@
+
+body{
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.185185fr;
+    grid-template-areas: 
+        "header side"
+        "main   main";                
+}

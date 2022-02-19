@@ -1,0 +1,19 @@
+:root{
+    --nav-col: rgb(5,170,110);
+    --hamb-col: #000000;
+    --nav-item-col: rgb(51,51,51);
+    --nav-item-activ: rgb(221, 221, 221);
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    max-width: 1200px;
+    height: 40px;
+    margin: 0 auto;         
+    background-color: var(--nav-col);
+
+}
+.logo{
+    margin-right: 10px;
+}
