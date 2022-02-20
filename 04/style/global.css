@@ -5,14 +5,13 @@
     --nav-item-activ: rgb(221, 221, 221);
 }
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    max-width: 1200px;
-    height: 40px;
-    margin: 0 auto;         
+    align-items: center; 
     background-color: var(--nav-col);
-
+    display: flex;
+    height: 40px;
+    justify-content: space-between;     
+    max-width: 1200px;    
+    margin: 0 auto;             
 }
 .logo{
     margin-right: 10px;

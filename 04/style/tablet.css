@@ -3,8 +3,8 @@
   justify-content: space-between;
 }
 .nav__menu{
-    position: static;
     display: flex;
+    position: static;  
     width: 100%;
 }
 .nav__item{
@@ -17,17 +17,16 @@
     display: none;
     background-color: var(--nav-item-activ);
     position: absolute;
-    left:0;
+    left:10px;
     top:40px;
-    width: 250px;
     padding-left: 0;
 }
 
 .dropdown__item{
     padding-left: 30px;
-    width: 100%;   
+    width: 270px;
 }
-.nav__item:hover>.nav__dropdown{
+.nav__item:hover > .nav__dropdown{
     display: block;
 }
 
