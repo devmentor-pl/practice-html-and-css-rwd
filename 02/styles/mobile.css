@@ -1,0 +1,23 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "a-header"
+    "b-main"
+    "c-section";
+    grid-template-rows:
+    minmax(calc(100vh - 50%), auto)
+    minmax(calc(100vh - 50%), auto)
+    minmax(calc(100vh - 50%), auto)
+}
+
+header {
+    grid-area: a-header;
+}
+
+main {
+    grid-area: b-main;
+}
+
+section {
+    grid-area: c-section
+}
