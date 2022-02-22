@@ -5,9 +5,7 @@ body {
     "b-main"
     "c-section";
     grid-template-rows:
-    minmax(calc(100vh - 50%), auto)
-    minmax(calc(100vh - 50%), auto)
-    minmax(calc(100vh - 50%), auto)
+    repeat(3, 50vh)
 }
 
 header {

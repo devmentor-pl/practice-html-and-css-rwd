@@ -1,0 +1,8 @@
+body {
+    grid-template-areas:
+    "p-header t-main"
+    "v-side t-main";
+    grid-template-columns:
+    minmax(200px, 50%)
+    auto;
+}
