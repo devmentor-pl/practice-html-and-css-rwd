@@ -1,0 +1,32 @@
+.row, .cell, .container{
+    outline: 4px solid;   
+}
+.row{
+    outline-color: #0ED145; 
+    margin: 4px;
+    padding: 5px;    
+}
+.container{
+    margin: 0 auto;        
+    outline-color: #00A8F3;    
+    max-width: 1000px;
+}
+.cell{
+    background-color: #FFCA18;
+    color: transparent;
+}
+.header__logo{   
+   height: 40px;
+   margin: 0 auto;
+   width: 100px;
+}
+.nav__item {
+    background-color: #FFCA18;
+    height: 35px;
+    margin-top: 2px;   
+}
+.footer__content{
+    margin: 0px auto;
+    height: 40px;    
+    width: 200px;    
+}
