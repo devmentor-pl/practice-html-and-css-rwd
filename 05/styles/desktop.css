@@ -1,0 +1,43 @@
+header, .main, .side, footer {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    position: static;
+    justify-content: flex-end;
+    background: transparent;
+}
+
+.menu__link {
+    color: black;
+}
+
+.menu__item {
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+}
+
+.side {
+    display: flex;
+}
+
+header label {
+    display: none;
+}

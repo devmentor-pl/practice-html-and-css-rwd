@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-areas:
+    "p-header"
+    "t-main"
+    "v-side";
+}
+
+.p {
+    grid-area: p-header;
+}
+
+.t {
+    grid-area: t-main;
+}
+
+.v {
+    grid-area: v-side;
+}

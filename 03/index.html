@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis possimus necessitatibus laboriosam quos amet provident quis. Veritatis quisquam, placeat nihil sed saepe laborum? Tempore vel totam nulla ea eos sequi!
+        Error saepe fuga tempore nobis tempora itaque rerum quam, nihil, omnis ipsam repudiandae placeat odit autem porro ullam id cumque odio dignissimos reiciendis est aliquam sapiente hic. Perspiciatis, odio voluptates.
+        Ut dolores veritatis aut delectus consequuntur eos, hic at debitis velit voluptatibus ratione tenetur praesentium sit, ipsam odit ab fuga laborum repellendus in accusantium? Ut magni perspiciatis temporibus veritatis cumque!
+        At dolore harum autem mollitia corrupti repellat. Vero repudiandae quod officiis tempora in asperiores dicta, praesentium harum ipsa explicabo nobis obcaecati illum blanditiis porro, deleniti corporis id voluptas assumenda accusantium. Nulla atque expedita accusantium dignissimos numquam pariatur repudiandae quibusdam in quaerat doloremque exercitationem cumque officiis libero incidunt vero, fugit itaque inventore perspiciatis debitis esse, quas, tempore quod! Minima, est sint.
+        </p></main>
+    <header class="p">
+        <picture>
+            <source media="(min-width:1200px)" 
+                    srcset="./images/dog700.jpg">
+            <source media="(min-width:1100px)" 
+                    srcset="./images/dog550.jpg">
+            <source media="(min-width:950px)" 
+                    srcset="./images/dog475.jpg">
+            <source media="(min-width:800px)" 
+                    srcset="./images/dog400.jpg">
+            <source media="(min-width:600px)" 
+                    srcset="./images/dog300.jpg">
+            <source media="(min-width:550px)" 
+                    srcset="./images/dog550.jpg">
+            <source media="(min-width:475px)" 
+                    srcset="./images/dog475.jpg">
+            <source srcset="./images/dog400.jpg">
+            <img src="./images/dog400.jpg" alt="dog">
+          </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/d3sdpcaMbPk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>
