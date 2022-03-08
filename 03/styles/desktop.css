@@ -1,0 +1,9 @@
+/** @format */
+
+body {
+  grid-template-columns: repeat(2, minmax(200px, 50vw));
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    "p v"
+    "t t";
+}
