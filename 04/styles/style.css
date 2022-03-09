@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+ul,
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+#checkboxInput {
+    visibility: hidden;
+    position: absolute;
+}
+
+.menu-nav {
+    display: none;
+}
+.menuBar {
+    display: none;
+}
+
+.app-wrapper {
+    background-color: #f6f6f6;
+    padding-top: 16px;
+}
+
+.navigation {
+    display: flex;
+    max-height: fit-content;
+    margin: 0 10px;
+    background-color: #fff;
+}
+.navigation__list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.navigation__item {
+    padding: 15px 10px;
+    cursor: pointer;
+    border-top: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+.navigation__item:hover {
+    color: #009ae1;
+    border-top: 2px solid #009ae1;
+}
+
+.nest-list {
+    background-color: #333333;
+    color: gray;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: fit-content;
+    border-radius: 2px;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: all 0.5s 0.2s ease;
+    opacity: 0;
+    z-index: -9;
+}
+
+.nest-list li:not(:last-child) {
+    border-bottom: 1px solid white;
+}
+.nest-list li a {
+    white-space: nowrap;
+    color: whitesmoke;
+}
+
+.nest-list > li {
+    width: 100%;
+    padding: 10px;
+    transition: all 0.2s ease-in-out;
+}
+.nest-list > li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #eaf5fa;
+}
+
+.nested-item--content {
+    display: flex;
+    width: 100%;
+}
+.arrow {
+    display: block;
+}
+.arrow-down {
+    transform: rotate(90deg);
+    margin-left: 10px;
+}
+.nested-item--0 {
+    position: relative;
+}
+.nested-item--0:hover .nest-list {
+    opacity: 1;
+    z-index: 99999;
+}
+
+.nested-item--1:hover {
+    opacity: 1;
+    z-index: 9999;
+}
+.menu {
+    display: none;
+}
+@media (max-width: 768px) {
+    #checkboxInput:checked + .menuBar--active {
+        background-color: rgba(0, 0, 0, 0.2);
+        transform: translate(0);
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: end;
+        align-items: start;
+    }
+
+    .nav-menuBar {
+        max-width: 320px;
+        height: 100vh;
+        margin: 0;
+    }
+    .navigation__item {
+        border-top: 0px solid transparent;
+        border-bottom: 1px solid rgba(198, 198, 198, 0.645);
+    }
+    .navigation__item:hover {
+        border-top: 0px solid transparent;
+        color: rgb(94, 156, 177);
+    }
+    .navigation__item a {
+        transition: all 0.2s ease-in-out;
+    }
+    .navigation__item:hover > a,
+    .navigation__item:hover > .nested-item--content > a {
+        color: rgb(94, 156, 177);
+    }
+
+    .menuBar--nest-list li {
+        padding: 10px;
+    }
+    .menuBar--nest-list li a {
+        transition: all 0.2s ease-in-out;
+    }
+    .menuBar--nest-list li:hover a {
+        color: rgb(94, 156, 177);
+    }
+
+    .menu {
+        display: block;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: 5px 15px;
+        display: flex;
+        align-items: center;
+        font-size: 32px;
+        position: relative;
+        z-index: 9;
+
+        cursor: pointer;
+    }
+
+    .menuBar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+
+        transform: translate(101vw);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navigation__list {
+        display: block;
+    }
+
+    .nested-item--0 {
+        overflow: hidden;
+        padding-right: 0;
+    }
+
+    .menuBar--nest-list {
+        max-height: 0px;
+        padding: 0px 0px 0px 50px;
+        overflow: hidden;
+        transition: all 0.6s ease-in-out;
+    }
+    .nested-item--0:hover .menuBar--nest-list {
+        max-height: 120px;
+    }
+    .menuBar--nest-list li:first-child {
+        margin-top: 15px;
+    }
+
+    .nav--active {
+        display: none;
+    }
+    #checkboxInput:not(:checked) ~ .app-wrapper .fa-x {
+        display: none;
+    }
+    #checkboxInput:checked ~ .app-wrapper .fa-bars {
+        display: none;
+    }
+}
