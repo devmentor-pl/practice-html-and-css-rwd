@@ -15,9 +15,10 @@
 .content::before {
     float: left;
     display: block;
-    content: '';
+    content: "";
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    shape-outside: polygon(100% 0, 0 0, 0 100%);
 }
