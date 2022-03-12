@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-areas:
+        "a-first-row"
+        "a-second-row"
+        "a-third-row";
+    grid-template-rows:
+        50vh 50vh 50vh;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
-    min-height: 50px;
+    min-height: 50vh;
 
     display: flex;
     justify-content: center;
@@ -14,13 +24,16 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-first-row;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: a-second-row;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-third-row;
 }
