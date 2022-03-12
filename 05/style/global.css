@@ -1,0 +1,13 @@
+/** @format */
+
+.row {
+  border: 2px solid green;
+}
+.container {
+  border: 2px solid blue;
+  max-width: 1000px;
+}
+.cell {
+  border: 2px solid orange;
+  background-color: orange;
+}

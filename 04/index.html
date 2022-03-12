@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/mobile.css" media="(max-width: 699px)">
+    <link rel="stylesheet" href="./style/desktop.css" media="screen and (min-width: 700px)">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
+    <input class="navigation__input" type="checkbox" id="menu-btn">
+    <label class="navigation__label" for="menu-btn">Menu</label>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
                 <a href="#">start</a>
             </li>
-            <li>
+            <li class="navigation__item" tabindex="-1">
                 <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+                <ul class="navigation__list-two">
+                    <li class="navigation__item-two"><a href="">strony internetowe</a>
+                    </li>
+                    <li class="navigation__item-two"><a href="">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="navigation__item">
                 <a href="#">kontakt</a>
             </li>
         </ul>
     </nav>
 
 </body>
+
 </html>

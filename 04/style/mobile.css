@@ -1,0 +1,65 @@
+/** @format */
+body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: 1fr 10vh;
+  grid-template-areas:
+    "m-list"
+    "m-label";
+  height: 100vh;
+}
+.navigation__input {
+  display: none;
+}
+.navigation__label {
+  width: 20vw;
+  height: 5vh;
+  grid-area: m-label;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.navigation {
+  display: none;
+  align-self: end;
+}
+.navigation__list {
+  grid-area: m-list;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+#menu-btn:checked ~ .navigation {
+  display: block;
+}
+.navigation__item {
+  width: 100%;
+  height: 10vh;
+  padding-left: 2vh;
+}
+.navigation__item:nth-child(2) {
+  position: relative;
+}
+.navigation__item:nth-child(2):focus > .navigation__list-two {
+  display: block;
+  position: absolute;
+  top: 10vh;
+  left: 5vh;
+}
+.navigation__item:nth-child(2):focus {
+  height: 30vh;
+}
+.navigation__list-two {
+  display: none;
+  position: absolute;
+  top: 10vh;
+  left: 5vh;
+}
+.navigation__item-two {
+  height: 10vh;
+}
