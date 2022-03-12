@@ -7,16 +7,16 @@
 body {
     display: grid;
     grid-template-areas:
-        "a-first-row"
-        "a-second-row"
-        "a-third-row";
+        "a-first"
+        "a-second"
+        "a-third";
     grid-template-rows:
         50vh 50vh 50vh;
 }
 
 .a, .b, .c {
     border: 3px solid transparent;
-    min-height: 50vh;
+    min-height: 50px;
 
     display: flex;
     justify-content: center;
@@ -25,15 +25,43 @@ body {
 
 .a {
     border-color: #ffffba;
-    grid-area: a-first-row;
+    grid-area: a-first;
 }
 
 .b {
     border-color: #ffdfba;
-    grid-area: a-second-row;
+    grid-area: a-second;
 }
 
 .c {
     border-color: #baffc9;
-    grid-area: a-third-row;
+    grid-area: a-third;
+}
+
+
+@media screen and (min-width:600px) {
+
+    body {
+        grid-template-areas:
+            "a-first a-first"
+            "a-second a-third";
+        max-width: 1200px;
+        margin: 0 auto;
+
+        grid-template-rows:
+            50vh 50vh;
+    }
+
+    .a {
+        grid-area: a-first;
+    }
+
+    .b {
+        grid-area: a-third;
+    }
+
+    .c {
+        grid-area: a-second;
+    }
+
 }
