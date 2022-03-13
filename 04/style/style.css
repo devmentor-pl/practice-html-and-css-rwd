@@ -134,8 +134,10 @@ footer {
     }
 
     .nav__menu-item {
-        padding: 0 20px;
+        padding: 0 10px;
     }
+
+
 
     .nav__submenu {
         box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
