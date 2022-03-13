@@ -68,6 +68,7 @@ footer {
 .nav__submenu {
     padding-left: 10px;
     margin-left: 10px;
+    background-color: #fff;
 }
 
 .nav__menu-item,
@@ -148,10 +149,10 @@ footer {
         padding-left: 0;
         position: absolute;
         visibility: hidden;
+        margin-bottom: 20px;
     }
 
     .nav__submenu-item {
-        background-color: #fff;
         font-size: 16px;
         padding: 10px 20px 0 20px;
     }
