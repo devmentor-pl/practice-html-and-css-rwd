@@ -30,32 +30,29 @@
 
 <body>
 
-    <nav>
-        <div class="nav__menu-icon">
+    <nav class="nav__main">
 
-            <input
-                id="myInput"
-                type="checkbox"
-                name="myInput"
-            />
-            <label for="myInput"><i class="fa-solid fa-bars"></i></label>
-
-        </div>
+        <input
+            id="menu-icon"
+            type="checkbox"
+            name="menu-icon"
+        />
+        <label for="menu-icon"><i class="fa-solid fa-bars"></i></label>
 
         <div class="nav__menu">
 
-            <ul>
-                <li>
+            <ul class="nav__menu-items">
+                <li class="nav__menu-item">
                     <a href="#">start</a>
                 </li>
-                <li>
+                <li class="nav__menu-item">
                     <a href="#">oferta</a>
                     <ul>
-                        <li><a href="">strony internetowe</a></li>
-                        <li><a href="">pozycjonowanie stron www</a></li>
+                        <li class="nav__menu-item submenu"><a href="">strony internetowe</a></li>
+                        <li class="nav__menu-item submenu"><a href="">pozycjonowanie stron www</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="nav__menu-item">
                     <a href="#">kontakt</a>
                 </li>
             </ul>
