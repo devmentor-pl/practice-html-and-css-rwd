@@ -130,6 +130,7 @@ footer {
     .nav__menu-items {
         display: flex;
         justify-content: flex-start;
+        padding: 0;
     }
 
     .nav__menu-item {
