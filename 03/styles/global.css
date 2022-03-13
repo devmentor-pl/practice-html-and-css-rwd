@@ -15,18 +15,17 @@ body {
     grid-template-rows:
         auto auto auto;
     font-family: 'Source Code Pro', monospace;
-    font-weight: 200;
     font-size: 16px;
+    font-weight: 200;
     line-height: 1.25;
 }
 
 .p, .t, .v {
+    align-items: center;
     border: 3px solid transparent;
-    min-height: 50px;
-
     display: flex;
     justify-content: center;
-    align-items: center;
+    min-height: 50px;
 }
 
 .p {
@@ -45,25 +44,22 @@ body {
     grid-area: a-third;
     padding-top: 56.25%;
     position: relative;
+}
 
+.picture,
+.video,
+.picture__img {
+    width: 100%;
+    height: 100%;
 }
 
 .video {
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
 
-.picture {
-    width: 100%;
-    height: 100%;
-}
-
 .picture__img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -77,9 +73,7 @@ body {
             "a-third a-second";
         grid-template-rows:
             50vh 50vh;
-        background-color: rgb(189, 230, 247);
         line-height: 1.5;
-
     }
 
     .p,
@@ -110,16 +104,14 @@ body {
 @media screen and (min-width:1200px) {
     body {
         display: grid;
-        max-width: 1400px;
-        margin: 0 auto;
-
         grid-template-areas:
             "a-first a-second"
             "a-third a-third";
         grid-template-rows:
             50vh auto;
         font-size: 18px;
-
+        margin: 0 auto;
+        max-width: 1400px;
     }
 
     .p,
@@ -149,6 +141,4 @@ body {
     .video {
         max-height: 50vh;
     }
-
-
 }
