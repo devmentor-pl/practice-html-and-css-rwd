@@ -1,0 +1,48 @@
+.blue {    
+    display: flex;
+}
+
+.blue__header,
+.blue__main {
+    justify-content: space-between;
+}
+
+.blue__header {
+    padding: 5px 0;
+}
+
+.blue__section {
+    justify-content: space-evenly;
+}
+
+.blue__footer {
+    justify-content: center;
+    align-items: center;
+}
+
+.orange__logo {
+    margin: 0;
+}
+
+.orange__menu {
+    min-width: 350px;
+    display: block;
+    position: static;
+    background-color: var(--orange);
+}
+
+.orange__menu::after,
+.orange__menu::before {
+    display: none;
+}
+
+.orange__article,
+.orange__aside {
+    width: 49.5%;
+    margin: 8px 0;
+}
+
+.orange__comment {
+    width: 32%;
+    margin: 8px 0;
+}
