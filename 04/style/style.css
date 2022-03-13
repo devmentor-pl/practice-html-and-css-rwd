@@ -1,12 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .nav__main {
     font-family: 'Montserrat', sans-serif;
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     position: relative;
-    background-color: rgb(185, 173, 173);
+}
 
+.nav__submenu-item {
+    font-size: 14px;
+
+}
+
+.nav__submenu {
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .nav__main input[type="checkbox"] {
@@ -26,14 +40,16 @@
 }
 
 .nav__menu {
-    background-color: rgb(121, 117, 117);
+    background-color: rgb(255, 255, 255);
     width: 100vw;
     line-height: 2;
     text-transform: uppercase;
     position: absolute;
-    left: -100vw;
+    left: -150vw;
     transition: left 0.2s;
+    box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
 }
+
 
 
 #menu-icon:checked~.nav__menu {
@@ -42,9 +58,84 @@
 
 .nav__menu-item,
 .nav__menu-item a,
-.nav__menu-item a:visited {
+.nav__menu-item a:visited,
+.nav__submenu-item,
+.nav__submenu-item a {
     list-style: none;
     text-decoration: none;
     color: black;
+}
+
+@media screen and (min-width: 576px) {
+
+    .nav__main {
+        font-size: 20px;
+    }
+
+    .nav__submenu-item {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    .nav__menu {
+        left: 0;
+        top: 0;
+        /* background-color: rgb(226, 206, 138); */
+        width: 100%;
+        line-height: 2;
+        text-transform: uppercase;
+        box-shadow: none;
+    }
+
+    .nav__menu-items {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .nav__menu-item {
+        padding: 0 20px;
+    }
+
+    .nav__submenu {
+        position: absolute;
+        left: 0;
+        padding-left: 0;
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        visibility: hidden;
+
+    }
+
+    .nav__submenu-item {
+
+        background-color: #fff;
+        font-size: 16px;
+        padding-top: 10px;
+        padding-left: 20px;
+
+
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover .nav__submenu {
+        visibility: visible;
+    }
+
+    .nav__submenu {
+        position: absolute;
+    }
+
+    .nav__main label>i,
+    .nav__main label {
+        visibility: hidden;
+    }
 
 }
