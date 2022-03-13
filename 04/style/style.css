@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
 
-
 body {
     max-width: 1200px;
     margin: 0 auto;
@@ -17,7 +16,6 @@ h2, p {
     margin: 40px 60px;
     line-height: 1.5;
     font-weight: 100;
-
 }
 
 footer {
@@ -73,15 +71,18 @@ footer {
 }
 
 .nav__menu-item,
+.nav__submenu-item {
+    list-style: none;
+}
+
+.nav__menu-item,
 .nav__menu-item a,
 .nav__menu-item a:visited,
 .nav__submenu-item,
 .nav__submenu-item a,
 .nav__submenu-item a:visited {
-    list-style: none;
     text-decoration: none;
     color: black;
-    transition: text-decoration 0.2s;
 }
 
 .nav__main a:hover {
@@ -103,14 +104,14 @@ footer {
 @media screen and (min-width: 992px) {
 
     .nav__menu {
-        left: 0;
-        top: 0;
-        width: 100%;
-        line-height: 2;
-        text-transform: uppercase;
         box-shadow: none;
-        visibility: visible;
+        left: 0;
+        line-height: 2;
         padding-left: 0px;
+        text-transform: uppercase;
+        top: 0;
+        visibility: visible;
+        width: 100%;
     }
 
     .nav__menu-items {
@@ -123,23 +124,28 @@ footer {
     }
 
     .nav__submenu {
-        position: absolute;
-        left: 0;
-        padding-left: 0;
-        margin-left: 0;
+        box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
         display: flex;
         flex-direction: column;
-        width: 400px;
+        left: 0;
+        margin-left: 0;
+        padding-left: 0;
+        position: absolute;
         visibility: hidden;
-        box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
-
     }
 
     .nav__submenu-item {
         background-color: #fff;
         font-size: 16px;
-        padding-top: 10px;
-        padding-left: 20px;
+        padding: 10px 20px 0 20px;
+    }
+
+    .nav__submenu-item a {
+        white-space: nowrap;
+    }
+
+    .nav__submenu:last-child {
+        padding-bottom: 10px;
     }
 
     .dropdown {
