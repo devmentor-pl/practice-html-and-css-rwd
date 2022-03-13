@@ -4,23 +4,42 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.nav__main {
     font-family: 'Montserrat', sans-serif;
     color: black;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+h2, p {
+    margin: 40px 60px;
+    line-height: 1.5;
+    font-weight: 100;
+
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav__main {
     position: relative;
 }
 
-.nav__submenu-item {
-    font-size: 14px;
-
-}
-
-.nav__submenu {
-    padding-left: 10px;
-    margin-left: 10px;
+.nav__menu {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    line-height: 2;
+    text-transform: uppercase;
+    position: absolute;
+    transition: left 0.2s;
+    box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
+    visibility: hidden;
 }
 
 .nav__main input[type="checkbox"] {
@@ -39,31 +58,33 @@ body {
     transform: rotate(90deg);
 }
 
-.nav__menu {
-    background-color: rgb(255, 255, 255);
-    width: 100vw;
-    line-height: 2;
-    text-transform: uppercase;
-    position: absolute;
-    left: -150vw;
-    transition: left 0.2s;
-    box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
+#menu-icon:checked~.nav__menu {
+    visibility: visible;
 }
 
+.nav__submenu-item {
+    font-size: 14px;
+}
 
-
-#menu-icon:checked~.nav__menu {
-    left: 0;
+.nav__submenu {
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .nav__menu-item,
 .nav__menu-item a,
 .nav__menu-item a:visited,
 .nav__submenu-item,
-.nav__submenu-item a {
+.nav__submenu-item a,
+.nav__submenu-item a:visited {
     list-style: none;
     text-decoration: none;
     color: black;
+    transition: text-decoration 0.2s;
+}
+
+.nav__main a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (min-width: 576px) {
@@ -83,11 +104,11 @@ body {
     .nav__menu {
         left: 0;
         top: 0;
-        /* background-color: rgb(226, 206, 138); */
         width: 100%;
         line-height: 2;
         text-transform: uppercase;
         box-shadow: none;
+        visibility: visible;
     }
 
     .nav__menu-items {
@@ -108,17 +129,15 @@ body {
         flex-direction: column;
         width: 400px;
         visibility: hidden;
+        box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
 
     }
 
     .nav__submenu-item {
-
         background-color: #fff;
         font-size: 16px;
         padding-top: 10px;
         padding-left: 20px;
-
-
     }
 
     .dropdown {
