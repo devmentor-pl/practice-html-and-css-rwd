@@ -40,6 +40,7 @@ footer {
     transition: left 0.2s;
     box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
     visibility: hidden;
+    padding-left: 25px;
 }
 
 .nav__main input[type="checkbox"] {
@@ -51,7 +52,7 @@ footer {
     cursor: pointer;
     font-size: 30px;
     transition: transform 0.3s, 0.3s;
-    padding: 15px;
+    padding: 15px 60px;
 }
 
 .nav__main input:checked~label {
@@ -109,6 +110,7 @@ footer {
         text-transform: uppercase;
         box-shadow: none;
         visibility: visible;
+        padding-left: 0px;
     }
 
     .nav__menu-items {
