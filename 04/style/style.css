@@ -1,0 +1,33 @@
+nav {}
+
+
+.nav__menu-icon input[type="checkbox"] {
+    display: none;
+}
+
+.nav__menu-icon input+label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s;
+    padding: 15px;
+}
+
+.nav__menu-icon input:checked~label {
+    transform: rotate(90deg);
+
+
+    /* .checked input[type="checkbox"] {
+    display: none;
+}
+
+.checked input+label {
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+
+input:checked~label {
+    font-size: 30px;
+} */
