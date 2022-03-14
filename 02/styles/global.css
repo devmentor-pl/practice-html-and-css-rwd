@@ -7,10 +7,10 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
 
 .a {
@@ -23,4 +23,13 @@
 
 .c {
     border-color: #baffc9;
+    grid-area: c;
+}
+
+body{
+    display: grid;
+    grid-template-areas: 
+        "a"
+        "b"
+        "c";
 }
