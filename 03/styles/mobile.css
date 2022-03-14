@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+.p, .t, .v {
+    border: 3px solid transparent;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p {
+    /* border-color: #ffffba; */
+    grid-row-start: 1;
+}
+.p img {
+    max-width: 100%;
+}
+.t {
+    /* border-color: #ffdfba; */
+    flex-direction: column;
+}
+.t p {
+    color:#333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.2rem;
+    padding:1.5rem;
+    text-indent: 2rem;
+}
+.v {
+    /* border-color: #baffc9; */
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;
+}
+.v iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>
+            Tak jak na nadmorski kurort przystało Dębki mogą pochwalić się piękną piaszczystą plażą, której to białe pasmo wkomponowane w krajobraz zielonych okolicznych łąk nadaje temu miejscu niezapomniany urok...
+            Dębki to kilkanaście dogodnych wejść na plażę znajdujące się równolegle od głównego deptaka ul. Spacerowej.
+            Plaża w Dębkach rozciąga się na długości kilku kilometrów i graniczy od wschodu z plażą w Karwieńskich Błotach oraz od zachodu z Białogórą.
+            Jest to jedna z najszerszych plaż wybrzeża Bałtyckiego. Drobny, jasny, niemal biały piasek kontrastuje z ciemnogranatowym morzem i błękitem nieba. Krajobraz ten wzbogacony o zielone łąki rezerwatu oraz sosnowy las porastający wydmy sprawiają wrażenie bajecznie-sielskiej czy baśniowej krainy zauroczając każdego turystę.
+        </p>
+        <p>
+            Najopularniejszym odcinkiem plaży jest ujście rzeki Piaśnica - największej rzeki Kaszub. Czysta rzeka wpadała piaszczystym, płytkim ujściem do Bałtyku.
+        </p>
+        <p>
+            Gorące słońce letnią porą przyciąga tłumnie całe rodziny plażujące wśród kolorowych parawanów, parasoli i łodzi rybackich. W ciągu dnia popularnością cieszą się strzeżone kąpieliska morskie, przejażdżki skuterem wodnym, rozgrywki plażowej piłki siatkowej. Przekąskioraz zimne napoje serwują liczne bary plażowe.
+            Po zachodzie słońca atrakcję stanowią kluby i bary, zachodzące słońce i rozmarzeni spacerowicze.
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source srcset="./img/photo_600.png" media="(max-width: 599px)">
+            <source srcset="./img/photo_1200.png" media="(max-width: 1199px)">
+            <source srcset="./img/photo_1400.png" media="(min-width: 1200px)">
+            <img src="./img/photo_1400.png">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/rIcwpdfBLEE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>
