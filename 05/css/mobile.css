@@ -1,0 +1,119 @@
+body {
+    overflow: hidden;
+}
+.header, .main__top, .main__bottom, .footer {
+    border:3px solid #0ed145;
+    width:100%;
+}
+.header__container, .main__top__container, .main__bottom__container, .footer__container {
+    margin:0 auto;
+    border:3px solid #00a8f3;
+}
+.header__container {
+    display:grid;
+    grid-template-areas: 
+    "L H"
+    "N N";
+    grid-template-columns: 1fr 70px;
+    justify-items: center;
+    padding:0.5rem 0;
+}
+.header__logo
+{
+    display:block;
+    width:60%;
+    height:50px;
+    background-color: #ffca18;
+    grid-area: L;
+} 
+.header__nav {
+    display: block;
+}
+#menu-switcher {
+    display: none;
+}
+.hamburger {
+    grid-area: H;
+    display: block;
+    width: 40px;
+    height: 35px;
+    border-top:5px solid #333;
+    position: relative;
+    transition: 300ms;
+    z-index: 1;
+    margin:0.5rem 1rem;
+}
+.hamburger::after {
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    border-top:5px solid #333;
+    transform: translateY(25px);
+    transition: 300ms;
+}
+.hamburger::before {
+    content: ' ';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    border-top:5px solid #333;
+    transform: translateY(10px);
+    transition: 300ms;
+}
+input:checked ~ .hamburger
+    {
+       transform: translateX(-10px) translateY(10px) rotate(45deg);
+    }
+input:checked ~ .hamburger::before
+    {
+       opacity:0;
+    }    
+input:checked ~ .hamburger::after
+    {
+        transform:  translateY(-5px) rotate(-90deg);    }   
+.nav__list {
+    display:block;
+    grid-area: N;
+    width: 100%;
+    height:0;
+    background-color: #ffca18;
+    transition: 300ms;
+    margin-top:0.5rem;
+    opacity:0;
+    transform: translateX(100%);
+}
+input:checked ~ .nav__list {
+    height: 200px;
+    opacity:1;
+    transform: translateX(0%);
+}
+.top__one, .top__two {
+    width:100%;
+    height:calc(50vh - 110px);
+    background-color: #ffca18;
+}
+.top__one {
+    margin-bottom:0.5rem;
+}
+.bottom__one, .bottom__two, .bottom__three  {
+    width:100%;
+    height:calc(50vh - 110px);
+    background-color: #ffca18;
+}
+.bottom__one, .bottom__two {
+    margin-bottom:0.5rem;
+}
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.5rem 0;
+}
+.footer__content {
+    width:40%;
+    height:50px;
+    background-color: #ffca18;
+}
