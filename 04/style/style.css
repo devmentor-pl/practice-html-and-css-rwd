@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+body {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+h2, p {
+    margin: 40px 10px;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.nav__main {
+    position: relative;
+}
+
+.nav__menu {
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    line-height: 3.5;
+    text-transform: uppercase;
+    position: absolute;
+    transition: left 0.2s;
+    box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
+    visibility: hidden;
+    padding-left: 10px;
+}
+
+.nav__main input[type="checkbox"] {
+    display: none;
+}
+
+.nav__main input+label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 30px;
+    transition: transform 0.3s, 0.3s;
+    padding: 15px 10px;
+}
+
+.nav__main input:checked~label {
+    transform: rotate(90deg);
+}
+
+#menu-icon:checked~.nav__menu {
+    visibility: visible;
+}
+
+.nav__submenu-item {
+    font-size: 14px;
+}
+
+.nav__submenu {
+    padding-left: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.nav__menu-item,
+.nav__submenu-item {
+    list-style: none;
+}
+
+.nav__menu-item,
+.nav__menu-item a,
+.nav__menu-item a:visited,
+.nav__submenu-item,
+.nav__submenu-item a,
+.nav__submenu-item a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__main a:hover {
+    text-decoration: underline;
+}
+
+
+/* @media screen and (max-width:992px) and (orientation:landscape) {
+
+    .nav__menu {
+        line-height: 2;
+    }
+} */
+
+
+@media screen and (min-width: 576px) {
+
+    .nav__main {
+        font-size: 20px;
+    }
+
+    .nav__submenu-item {
+        font-size: 18px;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        max-width: 1200px;
+    }
+
+    .nav__menu {
+        box-shadow: none;
+        left: 0;
+        line-height: 2;
+        padding-left: 0px;
+        text-transform: uppercase;
+        top: 0;
+        visibility: visible;
+        width: 100%;
+    }
+
+    .nav__menu-items {
+        display: flex;
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    .nav__menu-item {
+        padding: 0 10px;
+    }
+
+
+
+    .nav__submenu {
+        box-shadow: 7px 6px 24px -10px rgb(121, 126, 165);
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        margin-left: 0;
+        padding-left: 0;
+        position: absolute;
+        visibility: hidden;
+        margin-bottom: 20px;
+    }
+
+    .nav__submenu-item {
+        font-size: 16px;
+        padding: 10px 20px 0 20px;
+    }
+
+    .nav__submenu-item a {
+        white-space: nowrap;
+    }
+
+    .nav__submenu:last-child {
+        padding-bottom: 10px;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown:hover .nav__submenu {
+        visibility: visible;
+    }
+
+    .nav__submenu {
+        position: absolute;
+    }
+
+    .nav__main label>i,
+    .nav__main label {
+        visibility: hidden;
+    }
+
+}

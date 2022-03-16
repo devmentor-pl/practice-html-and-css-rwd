@@ -9,7 +9,7 @@ Całość zakodujemy w duchu *mobile first*, a punktem granicznym (ang. *breakpo
 
 &nbsp;
 
-![](./transform.png)
+![](./assets/transform.png)
 
 
 &nbsp;
@@ -24,7 +24,7 @@ Zwróć uwagę, że w przypadku widoku mobilnego, krawędzie niebieskie i zielon
 
 ## Mobile
 
-![](./mobile.png)
+![](./assets/mobile.png)
 
 ### Sekcja nr 1
 
@@ -46,7 +46,7 @@ To stopka naszej strony, która zwiera jedynie element wyśrodkowany w pionie i 
 
 ## Desktop
 
-![](./desktop.png)
+![](./assets/desktop.png)
 
 Na desktopie układ jest identyczny jak w [zadaniu 5 z *HTML i CSS: Podstawy*](https://github.com/devmentor-pl/practice-html-and-css-basics/tree/master/05). Pomimo tego wykonaj aktualne zadanie od początku mając na uwadze układ mobilny.
 
