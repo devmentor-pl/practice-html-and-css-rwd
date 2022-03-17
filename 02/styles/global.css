@@ -35,3 +35,16 @@ body {
     border-color: #baffc9;
     grid-area: item-c;
 }
+
+
+@media screen and (min-width:601px) {
+
+    body {
+        margin: 0 auto;
+        max-width: 1200px;
+        grid-template-areas:
+            "item-a item-a"
+            "item-c item-b";
+    }
+
+}
