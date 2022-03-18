@@ -1,0 +1,159 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        "logo";
+    gap: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 70px;
+
+
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0 auto;
+    width: 200px;
+    background-color: orange;
+}
+
+.hamburger {
+    grid-area: hamburger;
+}
+
+.navigation {
+    display: none;
+
+}
+
+
+
+.main-content {
+    display: grid;
+    grid-template-areas:
+        "company-photo"
+        "company-description";
+    gap: 20px;
+    grid-template-rows: 30vh 30vh;
+
+}
+
+.company-photo {
+    grid-area: company-photo;
+    background-color: orange;
+
+}
+
+.company-description {
+    grid-area: company-description;
+    background-color: orange;
+
+}
+
+
+
+.about {
+    display: grid;
+    grid-template-areas:
+        "team-member-1"
+        "team-member-2"
+        "team-member-3";
+    gap: 20px;
+    grid-template-rows: 25vh 25vh 25vh;
+}
+
+.team-member-1 {
+    grid-area: team-member-1;
+    background-color: orange;
+
+}
+
+.team-member-2 {
+    grid-area: team-member-2;
+    background-color: orange;
+
+}
+
+.team-member-3 {
+    grid-area: team-member-3;
+    background-color: orange;
+
+}
+
+
+
+.copyright {
+
+    width: 200px;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+
+.hamburger {
+    top: 10px;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #000;
+    background: transparent;
+    position: absolute;
+    margin: 20px;
+    transition: 0.3s transform linear;
+    justify-self: end;
+}
+
+.hamburger::after, .hamburger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #000;
+}
+
+.hamburger::after {
+    transform: translateY(10px);
+
+}
+
+.hamburger::before {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+
+
+.hamburger:focus::before {
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+
+.hamburger:focus+.navigation {
+    display: block;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.item-link {
+    width: 100%;
+}
