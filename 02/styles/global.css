@@ -49,6 +49,7 @@ section {
 }
 
 @media (min-width: 600px) {
+
     body {
         grid-template-areas: 
         "a-top a-top"

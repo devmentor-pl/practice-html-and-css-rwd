@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "a-img"
+        "a-text"
+        "a-video";
+
+    margin: 0 auto;
+}
+header {
+    grid-area: a-img;
+}
+
+main {
+    grid-area: a-text;
+}
+side {
+    grid-area: a-video;
+}
+
+img {
+    max-width: 100%;
+}
+side {
+    height: 0;
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(315/560 *100%);
+}
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+@media (max-width: 599px) {
+    iframe {
+        height: 100%;
+        width: 100%;
+    }
+}
