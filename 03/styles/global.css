@@ -24,3 +24,14 @@
 .v {
     border-color: #baffc9;
 }
+
+header {
+    grid-area: a-img;
+}
+
+main {
+    grid-area: a-text;
+}
+side {
+    grid-area: a-video;
+}

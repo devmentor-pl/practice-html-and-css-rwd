@@ -7,16 +7,6 @@ body {
 
     margin: 0 auto;
 }
-header {
-    grid-area: a-img;
-}
-
-main {
-    grid-area: a-text;
-}
-side {
-    grid-area: a-video;
-}
 
 img {
     max-width: 100%;
