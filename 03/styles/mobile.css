@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "picture"
+        "text"
+        "video";
+}
+
+.t {
+    grid-area: text;
+}
+
+.p {
+    grid-area: picture;
+
+}
+
+.v {
+    grid-area: video;
+
+}
+
+
+.image-container {
+    width: 100%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.v {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    
+}
+
