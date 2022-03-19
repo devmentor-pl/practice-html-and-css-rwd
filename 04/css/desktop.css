@@ -3,13 +3,17 @@
     margin: 0;
 }
 
+.nav{
+    display: inline;
+}
+
 .nav li {
     display: inline-block;
     padding-top: 15px;
 
 }
 
-.menu-button_icon {
+.menu-button-label {
     display: none;
 }
 
