@@ -3,9 +3,10 @@ body {
         "picture text"
         "video text";
     grid-template-columns:
-        minmax(min-content, 200px);
+       minmax(50vw auto);
+        
 
         grid-template-rows: 
-        minmax(min-content, 50vh);
+        minmax(auto, auto);
         
 }

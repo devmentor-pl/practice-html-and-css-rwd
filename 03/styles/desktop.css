@@ -1,9 +1,15 @@
 body {
     max-width: 1400px;
- margin: 0 auto;
+    margin: 0 auto;
     grid-template-areas:
         "picture video"
         "text text"
     ;
+
+}
+
+.v {
+
+    height: auto;
 
 }
