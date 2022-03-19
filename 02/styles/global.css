@@ -6,10 +6,14 @@
 
 body {
     display: grid;
+    min-height: 50vh;
     grid-template-areas: 
         "a-top"
         "a-content"
         "a-bottom";
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header {
@@ -42,4 +46,12 @@ section {
 
 .c {
     border-color: #baffc9;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-areas: 
+        "a-top a-top"
+        "a-bottom a-content";
+    }
 }
