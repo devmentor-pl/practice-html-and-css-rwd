@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav li {
+    list-style: none;
+    padding: 2px;
+    display: grid;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid gray;
+}
+
+.menu-button:checked+.nav {
+    display: block;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button_icon {
+    font-size: 25px;
+    padding: 10px;
+}
+
+.nav {
+    margin: 0 auto;
+    padding-left: 10px;
+    display: none;
+}
+
+.nav-slider {
+    display: none;
+}
+
+.nav>li:hover>.nav-slider {
+    display: block;
+}

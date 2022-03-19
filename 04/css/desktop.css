@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding-top: 15px;
+
+}
+
+.menu-button_icon {
+    display: none;
+}
+
+.nav-slider {
+    position: absolute;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+
+.nav-slider li {
+    display: grid;
+    padding-top: 1px;
+}
+
+a {
+    padding: 10px;
+}
+
+a:hover {
+    background-color: antiquewhite;
+}
