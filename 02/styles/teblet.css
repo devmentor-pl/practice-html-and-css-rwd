@@ -1,0 +1,9 @@
+.container {
+    margin: auto;
+    width: ;
+    display: grid;
+    grid-template-areas:
+    "top top"
+    "middle bottom";
+    max-width: 1200px;
+}
