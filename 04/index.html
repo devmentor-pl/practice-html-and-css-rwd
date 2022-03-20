@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link
+        rel="stylesheet"
+        href="./styles/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 600px)"
+        href="./styles/tablet.css"
+    >
 </head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
+<body>
+    <header>
+        <h1>TITLE</h1>
+        <label for="menu-switcher">
+            <div class="hamburger">
+            </div>
+        </label>
+        <nav>
+            <input
+                type="checkbox"
+                id="menu-switcher"
+            >
+            <ul class="menu-list">
+                <a href="#">
+                    <li class="menu-item">
+                        start
+                    </li>
+                </a>
+                <a href="#">
+                    <label for="sub-menu-switcher">
+                        <li class="menu-item">
+                            oferta
+                        </li>
+                    </label>
+                    
+                </a>
+                <input
+                        type="checkbox"
+                        id="sub-menu-switcher"
+                    >
+                <ul class="dropdown-list">
+                    <a href="#">
+                        <li class="dropdown-item">strony internetowe</li>
+                    </a>
+                    <a href="#">
+                        <li class="dropdown-item">pozycjonowanie stron www</li>
+                    </a>
+                </ul>
+                </li>
+                <a href="#">
+                    <li class="menu-item">
+                        kontakt
+                    </li>
+                </a>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>

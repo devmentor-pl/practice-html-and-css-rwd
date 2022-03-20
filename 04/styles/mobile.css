@@ -1,0 +1,81 @@
+header h1 {
+    text-align: center;
+    font-size: 30px;
+}
+header li {
+    background-color: #444;
+    color: white;
+}
+
+.menu-item {
+    border: 1px solid #bbb;
+    margin: 5px;
+    margin-left: 25px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.dropdown-item {
+    text-align: left;
+    margin: 5px;
+    margin-left: 50px;
+    border: 1px solid #bbb;
+    padding: 5px 10px;
+}
+
+.dropdown-list {
+    display: none;
+}
+
+.menu-list {
+    display: none;
+}
+
+header input:checked+ul {
+    display: block;
+}
+header input:checked+ul {
+    display: block;
+}
+header {
+    position: relative;
+    margin-top: 10px;
+    min-height: 60px;
+}
+
+header>label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header input {
+    display: none;
+}
+
+.hamburger {
+    width: 60px;
+    height: 20px;
+    border: 0;
+    border-top: 3px solid black;
+    background: transparent;
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid black;
+    transform: translateY(8px);
+}
+
+.hamburger::after {
+    transform: translateY(20px);
+}
+
+nav {
+    padding-top: 10px;
+}
