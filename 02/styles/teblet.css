@@ -1,8 +1,10 @@
 .container {
     margin: auto;
+    width: 100%;
+    max-width: 1200px;
     display: grid;
     grid-template-areas:
     "top top"
     "middle bottom";
-    max-width: 1200px;
+   
 }
