@@ -1,30 +1,76 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link
+        rel="stylesheet"
+        href="./css/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./css/style.css"
+    >
+    <script
+        src="https://kit.fontawesome.com/b4e37da764.js"
+        crossorigin="anonymous"
+    ></script>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+
+    <nav class="nav">
+        <label
+            class="bar"
+            for="menu"
+        ><i class="fas fa-bars"></i>
+        </label>
+        <input
+            class="nav__bar"
+            type="checkbox"
+            id="menu"
+        />
+        <ul class="menu__list">
+            <li class="menu__link lvl-1">
+                <a
+                    class="link__item"
+                    href="#"
+                >start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="menu__link lvl-1 multi-lvl">
+                <a
+                    class="link__item"
+                    href="#"
+                >oferta</a>
+                <ul class="lvl-2">
+                    <li class="menu__link lvl-2-link"><a
+                            class="link__item lvl-2__item"
+                            href=""
+                        >strony internetowe</a></li>
+                    <li class="menu__link lvl-2-link"><a
+                            class="link__item lvl-2__item"
+                            href=""
+                        >pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="menu__link lvl-1">
+                <a
+                    class="link__item"
+                    href="#"
+                >kontakt</a>
             </li>
         </ul>
     </nav>
 
 </body>
+
 </html>
