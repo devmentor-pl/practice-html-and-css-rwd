@@ -1,3 +1,30 @@
 body {
     background-color: #efe;
 }
+.nav__hamburger {
+    display: none;
+}
+.nav__list {
+    display: block;
+    display: flex;
+}
+.nav__item--children {
+    position: relative;
+}
+.nav__link {
+    border: 1px solid gray;
+    padding: 5px 20px;
+}
+.nav__link--dropdown {
+    border: 0;
+}
+.nav__list--dropdown {
+    display: block;
+    position: absolute;
+    background-color: #ddd;
+    top: 100%;
+    left: -60px;right: -130px;
+}
+.nav__link--dropdown {
+    color:white;
+}

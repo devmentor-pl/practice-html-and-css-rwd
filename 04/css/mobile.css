@@ -29,13 +29,17 @@
 .nav__toggler {
     display: none;
 }
-.nav__list:not(.nav__list-dropdown) {
+.nav__list {
     display: none;
+}
+/* or */
+.nav__list--dropdown {
+    display: block;
 }
 .nav__toggler:checked + .nav__list {
     display: block;
 }
-.nav__list-dropdown {
+.nav__list--dropdown {
     padding-left: 1rem;
 }
 .nav__item {
