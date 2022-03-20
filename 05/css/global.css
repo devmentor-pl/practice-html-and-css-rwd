@@ -1,0 +1,17 @@
+:root {
+    --wrapper: green;
+    --container: blue;
+    --item: orange;
+}
+.green {
+    border: 4px solid var(--wrapper);
+    padding: 2px;
+}
+.blue {
+    border: 4px solid var(--container);
+}
+.orange {
+    min-height: 50px;
+    background-color: var(--item);
+    border: 1px dotted black;
+}
