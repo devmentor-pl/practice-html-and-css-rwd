@@ -48,8 +48,12 @@ a {
     padding-bottom: 0;
 }
 
-.lvl-2 {
+.lvl-2-link {
     padding-left: 30px;
+}
+
+.first {
+    padding-top: 40px;
 }
 
 .link__item:hover {
