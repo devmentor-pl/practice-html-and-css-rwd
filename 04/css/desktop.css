@@ -4,7 +4,7 @@ body {
 .nav__hamburger {
     display: none;
 }
-.nav__list {
+.nav .nav__list:not(.nav__list--dropdown) {
     display: block;
     display: flex;
 }
@@ -24,6 +24,10 @@ body {
     background-color: #ddd;
     top: 100%;
     left: -60px;right: -130px;
+    display: none;
+}
+.nav__item:hover > .nav__list--dropdown {
+    display: block;
 }
 .nav__link--dropdown {
     color:white;
