@@ -1,0 +1,13 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    max-width: 1200px;
+    grid-template-areas:
+        "pic vid"
+        "text text";
+    grid-template-columns: minmax(200px, 50%) auto;
+    align-items: center;
+}
