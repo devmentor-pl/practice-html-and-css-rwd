@@ -1,0 +1,12 @@
+body {
+    grid-template-areas:
+        "picture text"
+        "video text";
+    grid-template-columns:
+       minmax(50vw auto);
+        
+
+        grid-template-rows: 
+        minmax(auto, auto);
+        
+}

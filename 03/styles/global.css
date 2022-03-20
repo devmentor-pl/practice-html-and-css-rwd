@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
