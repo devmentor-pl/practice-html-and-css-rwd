@@ -1,0 +1,57 @@
+/* common */
+body {
+    background-color: #ffe;
+}
+.blue {
+    padding: 5px 0; 
+}
+
+/* header */
+.blue--header {
+    display: flex;
+    justify-content: space-between;
+}
+.orange--logo {
+    margin: initial;
+}
+.orange--menu::after {
+    display: none;
+}
+.orange--menu::before {
+    display: none;
+}
+.orange--menu {
+    position: static;
+    width: 400px;
+}
+
+/* main */
+
+.blue-main {
+    display: flex;
+}
+.orange--main {
+    /* width: 100%; */
+    width: 50%;
+}
+.orange--main + .orange--main {
+    margin-top: 0;
+    margin-left: 10px;
+}
+
+/* section */
+
+.blue-section {
+    display: flex;
+    justify-content: space-around;
+}
+.orange--section + .orange--section {
+    margin-top: 0;
+    /* margin-left: 10px; */
+}
+.orange--section {
+    /* width: 100%; */
+    width: calc(33.33% - 10px);
+}
+
+

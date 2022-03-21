@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "area-p area-t"
+    "area-v area-t";
+
+    grid-template-columns:
+    /* auto calc(100vw - 50%); */
+    minmax(200px, 50vw) auto;
+
+    grid-template-rows:
+    auto
+    auto
+}
+
+/* text RWD */
+.t p {
+    font-size: 2.2vw;
+}
