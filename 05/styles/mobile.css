@@ -1,0 +1,20 @@
+.blue--nav {
+    position: relative;
+}
+
+.nav__hamburger {
+    position: absolute;
+    left: 95%;
+    top: 0;
+}
+
+.yellow--logo,
+.yellow--footer {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.yellow--menu {
+    display: none;
+    background-color: transparent;
+}
