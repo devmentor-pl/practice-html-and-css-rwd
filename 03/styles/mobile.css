@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "area-p"
+    "area-t"
+    "area-v";
+}
+.p {
+    grid-area: area-p;
+    line-height: 0;
+}
+.t {
+    grid-area: area-t;
+}
+.v {
+    grid-area: area-v;
+}
