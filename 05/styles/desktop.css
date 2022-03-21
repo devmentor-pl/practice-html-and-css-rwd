@@ -1,0 +1,39 @@
+.blue--nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__hamburger {
+    display: none;
+}
+
+.yellow--menu {
+    display: block;
+    background-color: rgb(252, 255, 47);
+    height: 50px;
+    width: 30%;
+}
+
+.yellow--logo {
+    width: 20%;
+    margin: 0;
+}
+
+.blue-video {
+    display: flex;
+}
+
+.yellow--video {
+    height: 50px;
+    width: 50%;
+}
+
+.blue--article {
+    display: flex;
+
+}
+
+.yellow--article {
+    height: 50px;
+    width: 33.33%;
+}
