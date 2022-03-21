@@ -1,12 +1,14 @@
 body {
     display: grid;
+    
     grid-template-areas: 
     "area-p"
     "area-t"
     "area-v";
+
     grid-template-rows:
     auto
-    50vw
+    minmax(auto, 70vw)
     auto;
 }
 .p {
@@ -18,4 +20,17 @@ body {
 }
 .v {
     grid-area: area-v;
+}
+/* text RWD */
+.t {
+    position: relative;
+}
+.t p {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    padding: 10px;
+    font-size: 3.4vw;
+    display: flex;
+    align-items: flex-start;
 }
