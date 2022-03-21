@@ -4,6 +4,10 @@ body {
     "area-p"
     "area-t"
     "area-v";
+    grid-template-rows:
+    auto
+    50vw
+    auto;
 }
 .p {
     grid-area: area-p;
