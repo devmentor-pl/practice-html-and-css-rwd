@@ -1,0 +1,6 @@
+body {
+    grid-template-areas:
+        "pic text"
+        "vid text";
+    grid-template-columns: minmax(200px, 50%) auto;
+}

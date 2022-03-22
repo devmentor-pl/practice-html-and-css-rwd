@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "top"
+        "2nd-row"
+        "3rd-row"
+        "bottom";
+}
+
+.hamburger {
+    display: none;
+}
+
+.header-container {
+    display: grid;
+    grid-template-areas:
+        "h-title . h-ham";
+    grid-template-columns: 0.5fr 1fr 1fr;
+}
+main {
+    display: flex;
+}
+.main-container {
+    height: calc(100% - 20px);
+    width: 50%;
+}
+.nav-container {
+    background-color: yellow;
+}
+
+.second-section {
+    display: flex;;
+}
+
+.div-container {
+    width: calc(33% - 30px);
+    height: calc(100% - 20px);
+}
