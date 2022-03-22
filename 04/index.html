@@ -33,6 +33,101 @@
 
 <body>
     <header>
+        <div class="title-container">
+            <h1>TITLE</h1>
+        </div>
+        <nav>
+
+            <div class="hamburger-container">
+                <label for="menu-switcher">
+                    <div class="hamburger"></div>
+                </label>
+
+            </div>
+
+            <div class="menu-container">
+                <input
+                    class="hamburger-input"
+                    type="checkbox"
+                    id="menu-switcher"
+                >
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                start
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item__label">
+                        <a href="#">
+
+                            <label for="sub-menu-switcher">
+                                <div>
+                                    oferta
+                                </div>
+                            </label>
+
+                        </a>
+                        <input
+                            class="dropdown-input"
+                            type="checkbox"
+                            id="sub-menu-switcher"
+                        >
+                        <ul class="dropdown-menu-list">
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        tworzenie stron www
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        pozycjonowanie stron
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item__no-label">
+                        <a href="#">
+                            <div>
+                                oferta
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu-list">
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        tworzenie stron www
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        pozycjonowanie stron
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                kontakt
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <!-- <header>
         <h1>TITLE</h1>
         <label for="menu-switcher">
             <div class="hamburger">
@@ -44,31 +139,46 @@
                 id="menu-switcher"
             >
             <ul class="menu-list">
-                <a href="#">
-                    <li class="menu-item">
-                        start
-                    </li>
-                </a>
-                <a href="#">
+
+                <li class="menu-item">
+                    <a href="#">
+                        <div> start </div>
+                    </a>
+                </li>
+
+                <a
+                    href="#"
+                    class="menu-item__label"
+                >
                     <label for="sub-menu-switcher">
                         <li class="menu-item">
                             oferta
                         </li>
                     </label>
-                    
                 </a>
-                <input
-                        type="checkbox"
-                        id="sub-menu-switcher"
-                    >
-                <ul class="dropdown-list">
-                    <a href="#">
-                        <li class="dropdown-item">strony internetowe</li>
-                    </a>
-                    <a href="#">
-                        <li class="dropdown-item">pozycjonowanie stron www</li>
-                    </a>
-                </ul>
+                <a
+                    href="#"
+                    class="menu-item__no-label"
+                >
+                    <li class="menu-item">
+                        oferta
+
+                        <input
+                            type="checkbox"
+                            id="sub-menu-switcher"
+                        >
+                        <ul class="dropdown-list">
+                            <a href="#">
+                                <li class="dropdown-item">strony internetowe</li>
+                            </a>
+                            <a href="#">
+                                <li class="dropdown-item">pozycjonowanie stron www</li>
+                            </a>
+                        </ul>
+                    </li>
+
+                </a>
+
                 </li>
                 <a href="#">
                     <li class="menu-item">
@@ -77,7 +187,7 @@
                 </a>
             </ul>
         </nav>
-    </header>
+    </header> -->
 </body>
 
 </html>
