@@ -53,12 +53,23 @@ body {
 
 /* Tablet */
 @media (min-width: 600px) {
-
     body {
         display: grid;
         grid-template-areas:
             "p-first t-second"
             "v-third t-second";
         grid-template-columns: minmax(200px, 50vw)auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    body {
+        margin: 0 auto;
+        max-width: 1400px;
+        display: grid;
+        grid-template-areas:
+            "p-first v-third"
+            "t-second t-second";
     }
 }
