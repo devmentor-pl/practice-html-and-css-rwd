@@ -15,12 +15,11 @@ body {
         
 }
 
-.photo {
-    /* max-width: 100vw; */
 }
 
 .p {
     grid-area: picture;
+    align-self: center;
 }
 
 .t {
@@ -29,4 +28,5 @@ body {
 
 .v {
     grid-area: video;
+    align-self: center;
 }
