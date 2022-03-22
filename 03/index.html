@@ -35,16 +35,34 @@
     <header class="p">
 
         <picture>
-<source>
-            
-            <img
-                src="./images/rocket-ship-g8e7f05dc2_1920.jpg"
+            <source
+                srcset="images\rocket-ship-g8e7f05dc2_1920.jpg"
+                media="(min-width: 1200px)"
             >
+            <source
+                srcset="images\rocket-ship-ge562901f4_1280.jpg"
+                media="(min-width: 600px)"
+            >
+            <source
+                srcset="images\rocket-ship-g41d8ce3fd_640.jpg"
+                media="(max-width: 599px)"
+            >
+            <img src="./images/rocket-ship-g8e7f05dc2_1920.jpg">
         </picture>
 
     </header>
 
-    <side class="v">V</side>
+    <side class="v">
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/9ZfN87gSjvI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+    </side>
 
 </body>
 
