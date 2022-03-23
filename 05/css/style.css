@@ -8,9 +8,10 @@
 .section {
     max-width: 1000px;
     border: 5px solid #00A8F3;
+    margin: 2px;
 }
 
-.nav, .first__section__element, .SECOND__section__element, .footer {
+.nav, .first__section__element, .second__section__element, .footer {
     background-color: #FFCA18;
 }
 
@@ -54,3 +55,37 @@
 }
 
 /* END OF NAV */
+/* FIRST SECTION */
+
+.element-1 {
+    height: 35vh;
+    margin-bottom: 15px;
+}
+
+.element-2 {
+    height: 45vh;
+}
+
+/* END OF FIRST SECTION */
+/* SECOND SECTION */
+
+.top-element, .bottom-element {
+    height: 25vh;
+}
+
+.middle-element {
+    height: 35vh;
+    margin: 15px 0;
+}
+
+/* END OF SECOND SECTION */
+/* FOOTER */
+
+.footer {
+    height: 50px;
+    margin: 3px;
+    width: 200px;
+    margin-left: 50vw;
+}
+
+/* END OF FOOTER */
