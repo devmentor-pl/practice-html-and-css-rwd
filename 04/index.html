@@ -23,15 +23,27 @@
         rel="stylesheet"
         href="./styles/mobile.css"
     >
+    <link
+        rel="stylesheet"
+        href="./styles/desktop.css"
+    >
+
 
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
 
 <body>
 
-    <nav class="nav">
-        <label class="nav__menu" for="switch"></label>
-        <input class="nav__switch" type="checkbox" id="switch">
+    <nav class="nav clearfix">
+        <label
+            class="nav__menu"
+            for="switch"
+        ></label>
+        <input
+            class="nav__switch"
+            type="checkbox"
+            id="switch"
+        >
 
         <ul class="nav__elements">
             <li class="nav__object">
@@ -43,15 +55,15 @@
             <li class="nav__object">
                 <a
                     href="#"
-                    class="nav__link"
+                    class="nav__link nav__object--stage"
                 >oferta</a>
 
                 <ul class="nav__elements nav__elements--level">
-                    <li class="nav__object nav object--dropdown"><a
+                    <li class="nav__object nav__object--level"><a
                             href=""
                             class="nav__link nav__link--level"
                         >strony internetowe</a></li>
-                    <li class="nav__object nav object--dropdown"><a
+                    <li class="nav__object nav__object--level"><a
                             href=""
                             class="nav__link nav__link--level"
                         >pozycjonowanie stron www</a></li>
