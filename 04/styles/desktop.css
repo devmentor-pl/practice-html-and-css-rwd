@@ -7,15 +7,18 @@
       .nav__elements {
             display: block;
             display: flex;
+            
       }
 
       .nav__object--stage {
             position: relative;
+
       }
 
       .nav__link {
             border: 1px solid blue;
             display: inline-block;
+
       }
 
       .nav__link--level {
@@ -26,9 +29,16 @@
       .nav__elements--level {
             display: block;
             position: absolute;
-            min-width:25%;
-            background-color: aqua;
+            min-width: 32%;
+            background-color: lightgoldenrodyellow;
+            padding-bottom: 5px;
+            left: -6px;
+            display: none;
+            
       }
 
+      .nav__object:hover > .nav__elements--level {
 
+            display: block;
+      }
 }
