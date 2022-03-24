@@ -1,0 +1,26 @@
+nav{
+      background-color: lightsteelblue;
+}
+
+.nav__menu{
+      display:block;
+      width: 45px;
+      height: 45px;
+
+      border-top: 4px solid blue;
+      border-bottom: 4px solid blue;
+}
+
+.nav__menu::after{
+      display: block;
+      content: '';
+      height: 4px;
+      background-color: blue;
+      position: relative;
+      top: 16px;
+
+}
+
+.nav__switch{
+      display: none;
+}
