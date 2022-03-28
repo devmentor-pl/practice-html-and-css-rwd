@@ -1,0 +1,18 @@
+.footer__container {
+    display:grid;
+    justify-content: space-around;
+}
+.footer__logo {
+    width: 10%;
+    grid-area: a-boxF;
+}
+@media (max-width: 800px) {
+    .footer__container {
+        grid-template-areas: 
+        "a-boxF";
+        grid-template-columns: 100%;
+    } 
+    .footer__logo {
+        margin: 0 auto;
+    }
+}
