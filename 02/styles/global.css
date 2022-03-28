@@ -1,12 +1,21 @@
-* {
-    margin: 0;
+body {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+    "a-boxA"
+    "a-boxB"
+    "a-boxC";
+    grid-template-rows: 
+    auto
+    auto;
 }
 
 .a, .b, .c {
     border: 3px solid transparent;
-    min-height: 50px;
+    min-height: 50vw;
 
     display: flex;
     justify-content: center;
@@ -14,13 +23,24 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-boxA;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: a-boxB;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-boxC;
+}
+@media (min-width: 600px) {
+    body {
+        grid-template-areas: 
+        "a-boxA a-boxA"
+        "a-boxB a-boxC";
+        grid-template-columns: 50% 50%;
+    }
 }
