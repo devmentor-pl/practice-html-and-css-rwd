@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <script src="https://kit.fontawesome.com/c5b8f2f593.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../04/styles/styles.css">
 </head>
+
 <body>
-    
+
     <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+        <ul class="nav nav_links--active">
+            <li class="nav_item nav-manu">
+                <a class="nav-element" href="# "><i class="fa-solid fa-bars "></i></a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="nav_item">
+                <a class="nav-element" href="# ">start</a>
+            </li>
+            <li class="nav_item first_level">
+                <a class="nav-element first_level--link " href="# ">oferta</a>
+                <ul class="second-level">
+                    <li class="nav_item"><a class="nav-element" href=" ">strony internetowe</a></li>
+                    <li class="nav_item"><a class="nav-element" href=" ">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="nav_item">
+                <a class="nav-element" href="# ">kontakt</a>
             </li>
         </ul>
     </nav>
 
 </body>
+
 </html>
