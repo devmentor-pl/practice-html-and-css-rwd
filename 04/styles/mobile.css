@@ -1,0 +1,34 @@
+header {
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header li {
+    border: 2px solid greenyellow;
+    background-color: greenyellow;
+    text-align: center;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+header ul {
+    display: none;
+}
+
+header input:checked + ul {
+    display: block;
+}
+
+header label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header input {
+    display: none;
+}
