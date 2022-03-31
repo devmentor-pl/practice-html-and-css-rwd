@@ -32,3 +32,16 @@ header label {
 header input {
     display: none;
 }
+
+/* ... */
+
+.dropdown-second:hover > .dropdown-third {
+    display: block;
+}
+
+.dropdown-item{
+    border: 2px solid lime;
+    background-color: lime;
+    padding: 5px 10px;
+    margin: 5px;
+}
