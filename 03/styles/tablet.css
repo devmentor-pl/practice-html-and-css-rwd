@@ -1,13 +1,6 @@
-@media (min-width: 600px) {
-
-    body {
-        grid-template-areas: 
-        "a-img a-text"
-        "a-video a-text";
-    }
-}
-
-.p, .t {
-    max-height: 50vh;
-    width: 200px;
+body {
+    grid-template-areas: 
+        "area-p area-t"
+        "area-v area-t";
+    grid-template-columns: minmax(200px, 50vw) auto;
 }
