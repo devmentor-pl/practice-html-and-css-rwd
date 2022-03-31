@@ -1,0 +1,12 @@
+body {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: 
+        "a-picture"
+        "a-text"
+        "a-video";
+}
+
+.t {
+    column-count: 1;
+}
