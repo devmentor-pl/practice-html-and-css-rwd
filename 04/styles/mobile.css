@@ -1,0 +1,42 @@
+@media(max-width:600px) {
+
+    .menu {
+        padding: 0;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .menu__item.menu__bars {
+        display: flex;
+    }
+
+    .menu__bars:hover~.menu__item {
+        display: flex
+    }
+
+    .menu__item {
+        display: none;
+        height: 40px;
+        flex-basis: 100%;
+        max-width: 100%;
+        background-color: white;
+    }
+
+    .dropdown {
+        padding: 0;
+        min-width: 100%;
+    }
+
+    .dropdown__item {
+        height: 40px;
+        flex-basis: 100%;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+
+
+}
