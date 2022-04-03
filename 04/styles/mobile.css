@@ -1,0 +1,39 @@
+.nav{
+    background-color: var(--main);
+    padding: 40px 40px;
+}
+
+.fa-solid.fa-bars{
+    font-size: 3rem;
+    float: right;
+}
+
+.nav__toggler{
+    display: none;
+}
+
+.nav__list{
+    display: none;
+}
+
+.nav__toggler:checked + .nav__list{
+    display: block;
+}
+
+.nav__list--dropdown {
+    display: block;
+    padding-left: 3rem;
+}
+
+.nav__item{
+    padding: 5px 10px;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: #444;
+}
+
+.nav__link:hover{
+    text-decoration: underline;
+}

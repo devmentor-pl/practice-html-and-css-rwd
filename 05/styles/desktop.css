@@ -1,0 +1,42 @@
+.blue{
+    margin: 0 auto;
+}
+
+.header__nav{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
+.nav__menu{
+    width: 50%;
+    height: 100%;
+}
+
+.nav__menu .orange{
+    flex-basis: 33%;
+}
+
+.nav__icon{
+    display: none;
+}
+
+.nav__logo{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    height: 70%;
+}
+
+.nav__logo .orange{
+    width: 100%;
+    height: 100%;
+}
+
+.main__sections, .section__articles{
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.section__articles{
+    justify-content: space-evenly;
+}
