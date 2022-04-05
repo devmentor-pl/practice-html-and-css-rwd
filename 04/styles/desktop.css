@@ -1,0 +1,34 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    margin-left: 2vw;
+}
+
+header ul {
+    display: flex;
+}
+
+header label {
+    display: none;
+}
+
+.dropdown-second {
+    position: relative;
+}
+
+.dropdown-third {
+    position: absolute;
+    display: none;
+    left: -70%;
+    padding: 10%;
+}
+
+.dropdown-second:hover > .dropdown-third {
+    display: block;
+}
+
+

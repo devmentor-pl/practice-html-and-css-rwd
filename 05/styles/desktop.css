@@ -1,0 +1,51 @@
+.hamburger {
+    display: none;
+}
+
+.row {
+    margin-bottom: 1%;
+}
+
+.desktop {
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+
+.header--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header--nav {
+    display: flex;
+    height: 4vh;
+    width: 35vw;
+}
+.header--logo {
+    margin-left: 0;
+    height: 4vh;
+    min-width: 20%;
+
+}
+
+.section--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section--container__second {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.article {
+    min-width: 48%
+}
+
+.article--second {
+    min-width: 30%;
+}
