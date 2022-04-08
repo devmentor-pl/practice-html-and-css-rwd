@@ -1,0 +1,8 @@
+body {
+    grid-template-areas: 
+    "a a"
+    "c b";
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(50vh, 1200px);
+}
+
