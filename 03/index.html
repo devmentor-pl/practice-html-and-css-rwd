@@ -5,34 +5,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./styles/global.css">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <main class="t">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
-            voluptatibus possimus nisi beatae dolorum veniam ipsa quo, ea, amet
-            repellendus praesentium saepe ab illum quisquam quidem maiores,
-            provident optio repudiandae. Quis distinctio beatae maiores nihil amet
-            magnam nisi et ullam tempora obcaecati accusantium voluptatum quos
-            soluta, numquam unde placeat deserunt nemo aspernatur tenetur, esse
-            ipsum itaque deleniti commodi? Vitae, nostrum? Sapiente animi culpa
-            quisquam soluta, molestias temporibus iste nisi voluptatum omnis nostrum
-            architecto autem alias vel labore delectus accusantium doloribus, rem
-            error illo. Veritatis vel porro ipsum deserunt. Optio, fugiat.
-        </main>
-        <header class="p">
-            <picture>
-                <source srcset="./images/view-640.jpg" />
-                <source srcset="./images/view-1280.jpg" media="(min-width: 600px)" />
-                <source srcset="./images/view-1920.jpg" media="(min-width: 1200px)"/>
-            </picture>
-        </header>
-        <side class="v">V</side>
-    </div>
+
+    <main class="t">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+        voluptatibus possimus nisi beatae dolorum veniam ipsa quo, ea, amet
+        repellendus praesentium saepe ab illum quisquam quidem maiores,
+        provident optio repudiandae. Quis distinctio beatae maiores nihil amet
+        magnam nisi et ullam tempora obcaecati accusantium voluptatum quos
+        soluta, numquam unde placeat deserunt nemo aspernatur tenetur, esse
+        ipsum itaque deleniti commodi? Vitae, nostrum? Sapiente animi culpa
+        quisquam soluta, molestias temporibus iste nisi voluptatum omnis nostrum
+        architecto autem alias vel labore delectus accusantium doloribus, rem
+        error illo. Veritatis vel porro ipsum deserunt. Optio, fugiat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+        voluptatibus possimus nisi beatae dolorum veniam ipsa quo, ea, amet
+        repellendus praesentium saepe ab illum quisquam quidem maiores,
+        provident optio repudiandae. Quis distinctio beatae maiores nihil amet
+        magnam nisi et ullam tempora obcaecati accusantium voluptatum quos
+        soluta, numquam unde placeat deserunt nemo aspernatur tenetur, esse
+        ipsum itaque deleniti commodi? Vitae, nostrum? Sapiente animi culpa
+        quisquam soluta, molestias temporibus iste nisi voluptatum omnis nostrum
+        architecto autem alias vel labore delectus accusantium doloribus, rem
+        error illo. Veritatis vel porro ipsum deserunt. Optio, fugiat.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+        voluptatibus possimus nisi beatae dolorum veniam ipsa quo, ea, amet
+        repellendus praesentium saepe ab illum quisquam quidem maiores,
+        provident optio repudiandae. Quis distinctio beatae maiores nihil amet
+        magnam nisi et ullam tempora obcaecati accusantium voluptatum quos
+        soluta, numquam unde placeat deserunt nemo aspernatur tenetur, esse
+        ipsum itaque deleniti commodi? Vitae, nostrum? Sapiente animi culpa
+        quisquam soluta, molestias temporibus iste nisi voluptatum omnis nostrum
+        architecto autem alias vel labore delectus accusantium doloribus, rem
+        error illo. Veritatis vel porro ipsum deserunt. Optio, fugiat.
+    </main>
+    <header class="p">
+        <picture class="p__picture">
+            <source srcset="./images/view-640.jpg" />
+            <source srcset="./images/view-1280.jpg" media="(min-width: 600px)" />
+            <source srcset="./images/view-1920.jpg" media="(min-width: 1200px)" />
+            <img class="p__img" src="./images/view-640.jpg" alt="Sea view">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ZVj0HQE75vQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
+
 
 </body>
 
