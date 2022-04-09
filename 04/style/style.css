@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(240, 238, 238);
+}
+
 *,
 *::before,
 * ::after {
