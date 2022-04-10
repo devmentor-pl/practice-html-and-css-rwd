@@ -2,25 +2,40 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .p {
-    border-color: #ffffba
-}
+    border-color: #ffffba;
+    grid-area: kolumna-p;
 
+}
 .t {
     border-color: #ffdfba;
+    grid-area: kolumna-t;
 }
-
 .v {
     border-color: #baffc9;
+    grid-area: kolumna-v;
+    position: relative;
+    height: 0;
+    padding-bottom: calc(100% * 315 / 560);
+
+}
+
+.v iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }

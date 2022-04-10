@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
     >
     <meta
-        http-equiv="X-UA-Compatible"
-        content="ie=edge"
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
     >
     <link
         rel="stylesheet"
@@ -22,18 +22,21 @@
     <link
         rel="stylesheet"
         href="./style/mobile.css"
+        media="(max-width: 799px)"
     >
     <link
         rel="stylesheet"
         href="./style/desktop.css"
-        media="(min-width: 600px)"
+        media="(min-width: 800px)"
     >
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <title>Document</title>
 </head>
 
 <body>
-
-    <nav class="nav">
+    <!--nav-->
+    <nav class="container nav">
+        <h1 class="header"
+        >LOGO</h1>
         <label
             class="nav__hamburger"
             for="toggler"
@@ -55,16 +58,6 @@
                     class="nav__link"
                     href="#"
                 >oferta</a>
-                <ul class="nav__list nav__list--dropdown">
-                    <li><a
-                            class="nav__link nav__link--dropdown"
-                            href=""
-                        >strony internetowe</a></li>
-                    <li><a
-                            class="nav__link nav__link--dropdown"
-                            href=""
-                        >pozycjonowanie stron www</a></li>
-                </ul>
             </li>
             <li class="nav__item">
                 <a
@@ -74,7 +67,24 @@
             </li>
         </ul>
     </nav>
-
+    <!--main-->
+    <main>
+        <!--hero-->
+        <section class="container section__first">
+            <div class="section__first--item"></div>
+            <div class="section__first--item"></div>
+        </section>
+        <!--section-second-->
+        <section class="container section__second">
+            <div class="section__second--item"></div>
+            <div class="section__second--item"></div>
+            <div class="section__second--item"></div>
+        </section>
+    </main>
+    <!--footer-->
+    <footer class="container footer">
+        <div class="footer__item"></div>
+    </footer>
 </body>
 
 </html>

@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/tablet.css"
+        media="(min-width: 600px)"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/desktop.css"
+        media="(min-width: 1200px)"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+<body class="container">
+
+    <main class="t">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi libero doloribus explicabo eius,
+        maiores, eveniet voluptas mollitia nobis numquam ipsa pariatur, quasi illum praesentium beatae magni nesciunt!
+        Rerum, nemo alias!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repellat ipsam consequuntur corporis repudiandae
+        dolor nisi delectus, architecto vitae, quas odit hic optio fugit, quaerat aspernatur. Soluta libero repudiandae
+        eveniet!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia deleniti necessitatibus itaque molestiae,
+        officiis animi vel eos fugit possimus porro deserunt nostrum. Aspernatur officia neque natus repellat suscipit
+        aliquid nobis!
+    </main>
+    <header class="p">
+        <picture>
+            <source
+                media="(min-width:1200px)"
+                srcset="https://i.picsum.photos/id/656/1280/853.jpg?hmac=XzOr_fVFBvcLhCfdk__PUJ_mTdrlQ4soWXv_lIgLwtw"
+            >
+            <source
+                media="(min-width:600px)"
+                srcset="https://i.picsum.photos/id/922/640/427.jpg?hmac=5tgH5ZvG4SxVpN8rptvAy4WgamJBej-fieyzdwdamS8"
+            >
+            <source
+                media="(max-width:599px)"
+                srcset="https://i.picsum.photos/id/131/640/427.jpg?hmac=lU9-CT4kyBAv0qKjpQ4_bDAIxE936VcqR044Bya4FJY"
+            >
+            <img src="https://i.picsum.photos/id/467/1920/1280.jpg?hmac=QNyMBrn2aLtJeYZDpSkGiyE9m9FXJ_X98qYkSiouzIE">
+        </picture>
+    </header>
+    <side class="v"><iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/IGQBtbKSVhY"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe></side>
 
 </body>
+
 </html>
