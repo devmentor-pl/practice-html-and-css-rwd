@@ -1,30 +1,80 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <link
+        rel="stylesheet"
+        href="./style/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./style/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./style/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./style/desktop.css"
+        media="(min-width: 600px)"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+
+    <nav class="nav">
+        <label
+            class="nav__hamburger"
+            for="toggler"
+        ></label>
+        <input
+            class="nav__toggler"
+            type="checkbox"
+            id="toggler"
+        >
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a
+                    class="nav__link"
+                    href="#"
+                >start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="nav__item">
+                <a
+                    class="nav__link nav__link--children"
+                    href="#"
+                >oferta</a>
+                <ul class="nav__list nav__list--dropdown">
+                    <li><a
+                            class="nav__link nav__link--dropdown"
+                            href=""
+                        >strony internetowe</a></li>
+                    <li><a
+                            class="nav__link nav__link--dropdown"
+                            href=""
+                        >pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="nav__item">
+                <a
+                    class="nav__link"
+                    href="#"
+                >kontakt</a>
             </li>
         </ul>
     </nav>
 
 </body>
+
 </html>
