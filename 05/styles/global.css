@@ -1,0 +1,17 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0.5rem 1rem;
+}
+
