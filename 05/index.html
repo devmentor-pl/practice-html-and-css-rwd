@@ -16,9 +16,9 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
-            <section class="top">
-                <div class="top__logo"></div>
+        <header class="header row">
+            <div class="header__container container">
+                <div class="header__heading element"></div>
                 <nav class="nav">
                     <input type="checkbox" id="menu-switcher" class="hamburger--toggle">
                     <label tabindex="0" aria-label="Main Menu" role="button" class="hamburger"
@@ -35,21 +35,30 @@
                         </li>
                     </ul>
                 </nav>
-            </section>
+            </div>
         </header>
 
-        <section class="section-one">
-            <div class="section-one__element element"></div>
-            <div class="section-one__element element"></div>
-        </section>
-        <section class="section-two">
-            <div class="section-two__element element"></div>
-            <div class="section-two__element element"></div>
-            <div class="section-two__element element"></div>
-        </section>
+        <main class="main">
+            <article class="article row">
+                <section class="article__section-one container">
+                    <div class="article__content element"></div>
+                    <div class="article__content element"></div>
+                </section>
+            </article>
+            
+            <article class="article row">
+                <section class="article__section-two container">
+                    <div class="article__content element"></div>
+                    <div class="article__content element"></div>
+                    <div class="article__content element"></div>
+                </section>
+            </article>
+        </main>
 
-        <footer class="footer">
-            <section class="footer__content element"></section>
+        <footer class="footer row">
+            <section class="footer__content container">
+                <p class="footer__copyright element"></p>
+            </section>
         </footer>
     </div>
 </body>
