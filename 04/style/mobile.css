@@ -40,12 +40,12 @@
 }
 
 .hamburger {
+	display: block;
+	position: relative;
 	width: 40px;
 	height: 35px;
 	border: 0;
 	border-top: 5px solid #000;
-	display: block;
-	position: relative;
 	background: transparent;
 	transition: 0.3s transform linear;
 }
