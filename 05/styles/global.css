@@ -11,16 +11,32 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0.5rem 1rem;
+	margin: 0;
+	padding: 0.5rem 1rem;
 }
 
-.wrapper {
-	width: 1000px;
+.row,
+.container,
+.element {
+	outline: 5px solid;
+}
+
+.row {
+	padding: 0.5rem;
+	outline-color: green;
+}
+
+.container {
+	max-width: 100rem;
 	margin: 0 auto;
-	background-color: #fff;
+	outline-color: lightskyblue;
 }
 
+.element {
+	min-height: 50px;
+	outline-color: orange;
+}
 
-
-
+input {
+	display: none;
+}
