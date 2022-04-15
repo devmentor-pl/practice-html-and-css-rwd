@@ -1,0 +1,42 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0.5rem 1rem;
+}
+
+.row,
+.container,
+.element {
+	outline: 5px solid;
+}
+
+.row {
+	padding: 0.5rem;
+	outline-color: green;
+}
+
+.container {
+	max-width: 100rem;
+	margin: 0 auto;
+	outline-color: lightskyblue;
+}
+
+.element {
+	min-height: 50px;
+	outline-color: orange;
+}
+
+input {
+	display: none;
+}

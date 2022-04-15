@@ -1,0 +1,124 @@
+/* header */
+
+.header {
+	margin-bottom: 1.5rem;
+}
+
+.header__container {
+	position: relative;
+	padding: 1rem;
+}
+
+.header__heading {
+	width: 15rem;
+	margin: 0 auto;
+}
+
+/* navigation */
+
+.nav__list {
+	display: none;
+	padding: 0;
+	margin-bottom: 0;
+	text-align: center;
+	list-style-type: none;
+}
+
+.nav__link {
+	display: block;
+	padding: 1rem 1rem;
+	font-size: 1.8rem;
+	color: #000;
+	background-color: orange;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+/* hamburger */
+
+.hamburger {
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 35px;
+	top: 0;
+	right: 0.8rem;
+	border-top: 5px solid black;
+	background: transparent;
+	transform: translateY(50%);
+}
+
+.hamburger::before,
+.hamburger::after {
+	display: block;
+	position: absolute;
+	content: '';
+	width: 100%;
+	top: 0;
+	left: 0;
+    border-top: 5px solid black;
+    background: transparent;
+    transform: translateY(10px);
+    transition: 0.2s transform linear;
+}
+
+.hamburger::after {
+	transform: translateY(25px);
+	transition: 0.2s transform linear;
+}
+
+/* main */
+
+.article {
+    padding: 1rem 0.5rem;
+}
+
+.article__section-one {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.article__content {
+    height: 50vh;
+    margin: 15px 0;
+    background-color: orange;
+}
+
+/* footer */
+.footer {
+    margin-top: 1rem;
+}
+
+.footer__content {
+    padding: 0.5rem;
+}
+
+.footer__copyright {
+    margin: 0 auto;
+    width: 30rem;
+    background-color: orange;
+}
+
+
+/* widok tylko blokowy poniżej breakpoint 800px */
+
+
+@media screen and (max-width: 800px) {
+    .hamburger--toggle:checked ~ .nav__list {
+        display: block;
+    }
+
+    .hamburger--toggle:checked ~ .hamburger {
+        border:none;
+        transform: translateY(15px) rotate(45deg);
+        transform-origin: center center;
+    }
+
+    .hamburger--toggle:checked ~ .hamburger::after {
+		transform: rotate(-90deg) translateX(-15px);
+	}
+
+	.hamburger--toggle:checked ~ .hamburger::before {
+		transform: translateY(15px);
+	}
+}

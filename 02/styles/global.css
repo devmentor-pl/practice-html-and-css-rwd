@@ -14,13 +14,16 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c;
 }
