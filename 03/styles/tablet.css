@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "picture text"
+        "video text";
+    grid-template-rows: 
+        1fr
+        1fr;
+    grid-template-columns:
+        minmax(200px, 60vw) auto;
+        
+}
+
+.photo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.p {
+    grid-area: picture;
+    height: 0;
+    padding-bottom: calc(853 / 1280 * 100%);
+    position: relative;
+    width: 100%;
+   
+}
+
+.t {
+    grid-area: text;
+}
+
+.v {
+    grid-area: video;
+}

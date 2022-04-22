@@ -1,0 +1,38 @@
+.hamburger {
+    display: none;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.nav__list {
+    display: flex;
+    justify-content: left;
+    margin: 5px;
+    background-color: white;
+}
+.nav__item {
+    margin: 2px;
+    padding: 0 50px;
+    border-top: 5px solid transparent;
+    position: relative;
+}
+.nav__item:hover {
+    border-top-color: blue;
+}
+.dropdown__menu-list {
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.2);
+    left: 0;
+    min-width: 400px;
+}
+
+.dropdown__menu:hover > .dropdown__menu-list {
+    display: block;
+}
+.dropdown__item {
+    padding: 5px 10px;
+}
