@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="style.css" media="(min-width: 610px)">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+
+
+
+    <!-- <button class="hamburger"></button> -->
+
+    <nav class="nav">
+        <label for="checkbox" class="hamburger"></label>
+        <input type="checkbox" id="checkbox">
+        <ul class="list">
+            <li class="list__element">
+                <a class="list-link" href="#">start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="list__element list-first-hover">
+                <a class="list-link" href="#">oferta</a>
+                <ul class="list-first">
+                    <li class="list__element list__element--move"><a class="list-link " href="#">strony
+                            internetowe</a>
+                    </li>
+                    <li class="list__element list__element--move"><a class="list-link " href="#">pozycjonowanie
+                            stron
+                            www</a>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="list__element">
+                <a class="list-link" href="#">kontakt</a>
             </li>
         </ul>
     </nav>
 
+
 </body>
+
 </html>

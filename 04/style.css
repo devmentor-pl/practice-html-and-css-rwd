@@ -1,0 +1,25 @@
+:root {
+  --alfa-color: hsl(0, 17%, 72%);
+  --beta-color: hsl(21, 84%, 44%);
+  --list-color: hsl(0, 100%, 100%);
+  --element-move: hsl(120, 100%, 30%);
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.list {
+  display: flex;
+}
+.list-first-hover {
+  position: relative;
+}
+.list-first {
+  display: none;
+  position: absolute;
+  transform: translate(-30%, 3%);
+}
+
+.list-first-hover:hover > .list-first {
+  display: block;
+}
