@@ -5,11 +5,8 @@
 }
 
 body {
-    display: grid;
-    grid-template-areas: 
-    "header"
-    "section"
-    "main";
+    display: flex;
+    flex-direction: column;
 }
 
 .a, .b, .c {
@@ -44,7 +41,5 @@ body {
         grid-template-areas: 
         "header header"
         "main section";
-        max-width: 1200px;
-        margin: 0 auto;
     }
 }
