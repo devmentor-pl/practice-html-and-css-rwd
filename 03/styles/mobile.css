@@ -18,17 +18,17 @@ body {
     "t"
     "v";
 }
-/* section {
+.v {
   height: 0;
   padding-bottom: calc(315 / 560 * 100%);
   position: relative;
   width: 100%; /* domyślnie */
-/* } */
-/* iframe {
+}
+iframe {
   border: 1px solid red;
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-}  */
+}

@@ -17,6 +17,8 @@
 .list-first {
   display: none;
   position: absolute;
+  left: 0;
+  max-width: 16rem;
   transform: translate(-30%, 3%);
 }
 

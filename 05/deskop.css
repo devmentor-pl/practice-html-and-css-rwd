@@ -20,6 +20,8 @@ button {
 .top-bar__menu {
   background-color: var(--delta-color);
   width: 30rem;
+  height: 6rem;
+  display: inline-block;
 
   /* dlaczego nie widzi tego kodu i nie dodaje elementu do strony? nie mam pojecia co jest nie tak*/
 }

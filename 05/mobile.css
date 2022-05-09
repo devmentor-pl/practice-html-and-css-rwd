@@ -18,7 +18,7 @@ html {
   border: 0.5rem solid var(--alfa-color);
 }
 .top-bar__nav {
-  max-width: calc(100%-0.2rem);
+  max-width: calc(100% - 0.2rem);
   border: 0.5rem solid var(--beta-color);
   height: 10vh;
   display: flex;
@@ -31,10 +31,10 @@ html {
 button {
   padding: 1rem;
   margin-left: 27%;
+  display: inline-block;
 }
 .top-bar__menu {
-  background-color: var(--delta-color);
-  width: 30rem;
+  display: none;
 }
 .top-bar__content {
   width: 50rem;
@@ -44,7 +44,7 @@ button {
 }
 .content__one,
 .content__two {
-  max-width: calc(100%-0.2rem);
+  max-width: calc(100% - 0.2rem);
   border: 0.5rem solid var(--beta-color);
   display: flex;
   flex-direction: column;
@@ -68,15 +68,19 @@ button {
   border: 0.5rem solid var(--alfa-color);
 }
 .footer__one {
-  max-width: calc(100%-0.2rem);
+  max-width: calc(100% - 0.2rem);
   border: 0.5rem solid var(--beta-color);
   display: flex;
   justify-content: center;
 }
 
 .footer-yellow-box {
-  width: 30%;
-  height: 4rem;
+  width: 20%;
+  padding-bottom: 10%;
+  margin-right: 40%;
+  margin-left: 40%;
+  height: 0;
+  /* height: 4rem; */
   /* padding-bottom: 5%; */
   background-color: var(--delta-color);
 }

@@ -48,6 +48,7 @@ nav li {
   background: transparent;
   position: relative;
   transition: 0.3s transform linear;
+  display: inline-block;
 }
 
 .hamburger::before,
