@@ -1,0 +1,65 @@
+.row, .container, .cell {
+    margin: 5px;
+    padding: 5px;
+    outline: 3px solid;
+}
+
+.row {
+    outline-color: olivedrab;
+    max-width: 1000px;
+}
+
+.container {
+    margin: 0 auto;
+    outline-color: rebeccapurple;
+    max-width: 100%;
+}
+
+.cell {
+    outline-color: #C65D7B;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    width: 2em;
+    height: 1em;
+    border: 0;
+    border-top: 5px solid rgb(0, 0, 0);
+    background: transparent;
+    position: relative;
+    align-self: center;
+}
+
+.hamburger:before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid rgb(0, 0, 0);
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+}
+
+button:focus + .menu {
+    display: block;
+    margin-top: 20px;
+}
+
+.menu {
+    /*display: none;*/
+    position: absolute;
+    margin-top: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
