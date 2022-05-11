@@ -1,7 +1,7 @@
 @media (min-width: 600px) {
     body {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: minmax(200px 50%) 1fr;
     grid-template-areas: 
     "p t"
     "v t";
