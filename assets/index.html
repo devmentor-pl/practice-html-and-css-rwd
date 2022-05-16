@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    :root {
+      --alfa-color: orange;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .top-bar {
+      width: 100%;
+      border: 5px solid green;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-bar__content {
+      width: 1000px;
+      border: 5px solid blue;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .top-bar__item {
+      min-width: 200px;
+      min-height: 100px;
+      background-color: var(--alfa-color)
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <header class="top-bar">
+      <section class="top-bar__content">
+        <article class="top-bar__item"></article>
+        <nav class="-top-bar__nav"></nav>
+      </section>
+
+    </header>
+
+    <article></article>
+    <article></article>
+    <article></article>
+
+
+  </div>
+</body>
+
+</html>
