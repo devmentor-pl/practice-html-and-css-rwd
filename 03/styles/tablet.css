@@ -1,0 +1,9 @@
+body {
+    grid-template-areas:
+        "p t"
+        "v t";
+    grid-template-columns:
+        minmax(50vw auto);
+    grid-template-rows:
+        minmax(auto, auto);
+}
