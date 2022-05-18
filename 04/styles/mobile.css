@@ -1,0 +1,35 @@
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid rebeccapurple;
+    background: transparent;
+    position: relative;
+    margin: 0.5%;
+    transition: 0.2s transform linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid rebeccapurple;
+    transform: translateY(10px);
+    transition: 0.2s transform linear;
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateX(5px);
+    border-top: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}

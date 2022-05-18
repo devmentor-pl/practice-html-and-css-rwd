@@ -4,3 +4,13 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(164, 136, 175);
+}
