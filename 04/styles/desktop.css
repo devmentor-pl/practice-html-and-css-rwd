@@ -2,6 +2,10 @@
     display: none;
 }
 
+.nav__dropdown {
+    display: none;
+}
+
 nav {
     display: block;
     width: 100vw;
@@ -13,19 +17,49 @@ nav {
     margin: 10px;
     width: 100vw;
     height: 50px;
+    justify-content: flex-end;
+    margin-left: -50px;
 }
 
 .nav__item {
     margin: 0;
-    min-width: 160px;
+    min-width: 280px;
     position: relative;
     text-align: center;
 }
 
 .nav__item-link,
-.nav__dropdown-item-link {
+.nav__dropdown-item-link,
+.nav__second-dropdown-item-link {
     display: block;
     font-size: 1.1rem;
     min-height: 35px;
     padding: 10px;
+}
+
+.nav__item:hover .nav__item-link {
+    color: rebeccapurple;
+}
+
+.nav__item:hover>.nav__dropdown {
+    display: block;
+
+}
+
+.nav__second-dropdown {
+    display: none;
+    position: absolute;
+    left: 80%;
+}
+
+.nav__dropdown-item:hover .nav__dropdown-item-link {
+    color: rgb(122, 32, 211);
+}
+
+.nav__dropdown-item:hover .nav__second-dropdown {
+    display: block;
+}
+
+.nav__second-dropdown-item-link {
+    min-width: 100px;
 }
