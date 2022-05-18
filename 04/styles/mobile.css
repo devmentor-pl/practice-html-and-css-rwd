@@ -12,7 +12,8 @@
 }
 
 .nav__item-link,
-.nav__dropdown-item-link {
+.nav__dropdown-item-link,
+.nav__second-dropdown-item-link {
     display: block;
     font-size: 1.1rem;
     min-height: 30px;
