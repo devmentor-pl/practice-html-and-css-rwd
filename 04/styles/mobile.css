@@ -1,3 +1,8 @@
+.nav__items {
+    display: none;
+}
+
+/* hamburger button */
 .hamburger {
     width: 40px;
     height: 35px;
@@ -5,7 +10,7 @@
     border-top: 5px solid rebeccapurple;
     background: transparent;
     position: relative;
-    margin: 0.5%;
+    margin: 4%;
     transition: 0.2s transform linear;
 }
 
@@ -33,3 +38,9 @@
 .hamburger:focus::after {
     transform: rotate(-90deg) translateX(-10px);
 }
+
+.hamburger:focus~.nav__items {
+    display: block;
+}
+
+/* hamburger button*/
