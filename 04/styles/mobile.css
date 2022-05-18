@@ -1,8 +1,26 @@
 .nav__items {
     display: none;
+    margin: 2px 10px;
 }
 
-/* hamburger button */
+.nav__dropdown {
+    padding-left: 45px;
+}
+
+.nav__item,
+.nav__dropdown-item {
+    min-height: 30px;
+}
+
+.nav__item-link,
+.nav__dropdown-item-link {
+    display: block;
+    font-size: 1.1rem;
+    min-height: 30px;
+}
+
+
+/* hamburger button below */
 .hamburger {
     width: 40px;
     height: 35px;
@@ -43,4 +61,4 @@
     display: block;
 }
 
-/* hamburger button*/
+/* hamburger button above*/

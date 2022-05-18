@@ -12,5 +12,9 @@ li {
 nav a {
     color: white;
     text-decoration: none;
-    background-color: rgb(164, 136, 175);
+    background-color: rgb(165, 144, 173);
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }

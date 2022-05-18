@@ -1,3 +1,7 @@
 .hamburger {
     display: none;
 }
+
+.nav__items {
+    display: block;
+}
