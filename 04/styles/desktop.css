@@ -2,6 +2,30 @@
     display: none;
 }
 
-.nav__items {
+nav {
     display: block;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+.nav__items {
+    display: flex;
+    margin: 10px;
+    width: 100vw;
+    height: 50px;
+}
+
+.nav__item {
+    margin: 0;
+    min-width: 160px;
+    position: relative;
+    text-align: center;
+}
+
+.nav__item-link,
+.nav__dropdown-item-link {
+    display: block;
+    font-size: 1.1rem;
+    min-height: 35px;
+    padding: 10px;
 }
