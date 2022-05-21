@@ -1,0 +1,58 @@
+.blue--header {
+	padding: 5px;
+	position: relative;
+}
+
+.orange--logo {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.orange--menu {
+	position: absolute;
+	right: 15px;
+	top: 15px;
+	background-color: transparent;
+}
+
+.orange--menu::after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 25px;
+	border-top: 3px solid #000;
+	border-bottom: 3px solid #000;
+}
+
+.orange--menu::before {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 3px;
+	position: relative;
+	top: 15px;
+	background-color: #000;
+}
+
+.orange--article,
+.orange--aside {
+	min-height: 280px;
+}
+
+.orange--aside {
+	margin-top: 8px;
+}
+
+.orange--comment {
+	min-height: 200px;
+}
+
+.orange--comment ~ .orange--comment {
+	margin-top: 8px;
+}
+
+.orange--footer {
+	margin: 5px auto;
+	width: 120px;
+	max-width: 100%;
+}

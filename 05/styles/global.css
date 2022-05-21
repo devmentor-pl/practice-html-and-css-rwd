@@ -1,0 +1,17 @@
+.green {
+	margin: 10px;
+	padding: 5px 0;
+	border: 5px solid #0ed145;
+}
+
+.blue {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 5px 0;
+	border: 5px solid #00a8f3;
+}
+
+.orange {
+	min-height: 50px;
+	background-color: #ffca18;
+}
