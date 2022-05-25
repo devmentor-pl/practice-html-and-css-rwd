@@ -1,22 +1,13 @@
-.body {
-    display: grid;
-    grid-template-areas:
-        "container";
-    gap: 0;
-    grid-template-columns: 100%;
-}
-
 .container {
-    grid-area: container;
-    margin: 0 auto;
-    width: 100%;
+    margin: 5px auto;
+    width: 98%;
     outline: 4px solid rgb(31, 209, 31);
     padding: 3px 0;
 }
 
 .row {
     max-width: 1000px;
-    margin: 0 5px;
+    margin: 5px 5px;
     outline: 4px solid rgb(33, 124, 228);
     padding: 3px 0;
 }
