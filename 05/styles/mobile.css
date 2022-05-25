@@ -1,0 +1,145 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        "logo";
+    gap: 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px;
+}
+
+.logo {
+    grid-area: logo;
+    margin: 0 auto;
+    margin-bottom: 5px;
+    width: 180px;
+    background-color: orange;
+    padding: 7px 40px;
+}
+
+.hamburger {
+    grid-area: hamburger;
+}
+
+.navigation {
+    display: none;
+}
+
+/* hamburger below */
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid black;
+    background: transparent;
+    position: absolute;
+    margin: 3%;
+    transition: 0.2s transform linear;
+    justify-self: end;
+}
+
+.hamburger::after,
+.hamburger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+}
+
+.hamburger::after {
+    transform: translateY(10px);
+}
+
+.hamburger::before {
+    transform: translateY(25px);
+    transition: 0.2s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::before {
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+
+.hamburger:focus~.navigation {
+    display: block;
+}
+
+/* hamburger ends*/
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.item {
+    /* height: 30px; */
+    margin: 0 auto;
+    text-align: center;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}
+
+.item-link {
+    width: 100%;
+}
+
+.main__content-articles {
+    display: grid;
+    grid-template-areas:
+        "article-1"
+        "article-2";
+    gap: 10px;
+    grid-template-rows: 8vh 12vh;
+}
+
+.article-1 {
+    grid-area: article-1;
+    background-color: orange;
+}
+
+.article-2 {
+    grid-area: article-2;
+    background-color: orange;
+}
+
+.main__content-products {
+    display: grid;
+    grid-template-areas:
+        "product-1"
+        "product-2"
+        "product-3";
+    gap: 10px;
+    grid-template-rows: 6vh 10vh 7vh;
+}
+
+.product-1 {
+    grid-area: product-1;
+    background-color: orange;
+}
+
+.product-2 {
+    grid-area: product-2;
+    background-color: orange;
+}
+
+.product-3 {
+    grid-area: product-3;
+    background-color: orange;
+}
+
+.copyright__cell {
+    width: 180px;
+    margin: 0 auto;
+    background-color: orange;
+}

@@ -1,0 +1,26 @@
+.container {
+    /* margin: 0 auto; */
+    width: 100%;
+    outline: 4px solid rgb(31, 209, 31);
+    padding: 3px 0;
+}
+
+.row {
+    max-width: 1000px;
+    /* margin: 0 auto; */
+    margin: 0 5px;
+    outline: 4px solid rgb(33, 124, 228);
+    padding: 3px 0;
+}
+
+
+.cell {
+    min-height: 50px;
+    /* margin: 5px 5px; */
+    outline: 4px solid orange;
+    padding: 3px 0;
+}
+
+.item-link {
+    text-decoration: none;
+}
