@@ -2,6 +2,56 @@
     display: none;
 }
 
+.item-link {
+    display: none;
+}
+
 .navigation {
-    display: flex;
+    display: block;
+}
+
+.header {
+    display: grid;
+    grid-template-areas:
+        "logo navigation";
+    gap: 0;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 60px;
+}
+
+.logo {
+    margin-left: 0;
+}
+
+.item-list {
+    height: 50px;
+    background-color: orange;
+}
+
+.item {
+    height: 100%;
+}
+
+.main__content-articles {
+    display: grid;
+    grid-template-areas:
+        "article-1 article-2";
+    gap: 18px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 28vh;
+}
+
+.main__content-products {
+    display: grid;
+    grid-template-areas:
+        "product-1 product-2 product-3";
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 28vh;
+    padding: 15px 15px;
+}
+
+.main__content-articles,
+footer {
+    padding: 15px 0;
 }
