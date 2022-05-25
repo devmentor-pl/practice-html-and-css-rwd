@@ -1,0 +1,20 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(165, 144, 173);
+}
+
+* {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
