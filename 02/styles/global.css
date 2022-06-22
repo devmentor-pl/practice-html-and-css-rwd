@@ -17,25 +17,26 @@
 
 .a {
 	border-color: #ffffba;
+	grid-area: header;
 }
 
 .b {
 	border-color: #ffdfba;
+	grid-area: section;
 }
 
 .c {
 	border-color: #baffc9;
+	grid-area: main;
+}
+body {
+	display: grid;
+	grid-template-areas:
+		"header"
+		"section"
+		"main";
 }
 @media screen and (min-width: 600px) {
-	.a {
-		grid-area: header;
-	}
-	.b {
-		grid-area: section;
-	}
-	.c {
-		grid-area: main;
-	}
 	body {
 		display: grid;
 		grid-template-areas:
