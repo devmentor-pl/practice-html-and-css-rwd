@@ -1,0 +1,22 @@
+/* mobile.css */
+body {
+    display: grid;
+    grid-template-areas: 
+    "p-header"
+    "t-main"
+    "v-side";
+    grid-template-rows: 
+    auto
+    auto
+    auto;
+
+}
+.t {
+    grid-area: t-main;
+}
+.p {
+    grid-area: p-header;
+}
+.v {
+    grid-area: v-side;
+}

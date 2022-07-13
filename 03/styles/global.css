@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -12,15 +14,13 @@
     justify-content: center;
     align-items: center;
 }
-
-.p {
-    border-color: #ffffba
-}
-
 .t {
     border-color: #ffdfba;
+    margin: 20px;
 }
-
+.p {
+    border-color: #ffffba;
+}
 .v {
     border-color: #baffc9;
 }

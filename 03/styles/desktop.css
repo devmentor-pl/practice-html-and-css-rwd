@@ -1,0 +1,8 @@
+/* desktop.css */ 
+
+body {
+    grid-template-areas: 
+    "v-side"
+    "t-main"
+    "p-header";
+}

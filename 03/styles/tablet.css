@@ -1,0 +1,7 @@
+/* tablet.css */
+
+body {
+    grid-template-areas: 
+    "p-header t-main"
+    "v-side t-main";
+}
