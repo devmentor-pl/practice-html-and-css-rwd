@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cointainer {
+  border: 3px solid #556b2f;
+  width: 100%;
+}
+.row {
+  border: 3px solid #87cefa;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cell {
+  background-color: #ffdab9;
+}
