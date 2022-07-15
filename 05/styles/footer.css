@@ -1,0 +1,13 @@
+.footer {
+  min-width: 100px;
+}
+.footer__row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__cell {
+  width: 100px;
+  height: 50px;
+  margin: 10px 0px 10px 0px;
+}
