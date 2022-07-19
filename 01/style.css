@@ -5,19 +5,48 @@
 }
 
 .content {
+    
     background-color: #fff;
-    min-height: 320px;
-    min-width: 320px;
-    max-width: 600px;
     text-align: justify;
-}
-
-.content::before {
+    max-width: 600px;
     float: left;
+}
+	
+
+.content::before { 
+    float:left;
     display: block;
     content: '';
     height: 0;
-    border: 150px solid #dcdcdc;
+    border: 150px solid #c2b1b1;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent; 
+    shape-outside:  polygon( 0 0, 100% 0, 1.3% 99.1% );
+    
 }
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
