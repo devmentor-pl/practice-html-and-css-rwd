@@ -1,7 +1,24 @@
 /* tablet.css */
 
 body {
+    display: grid;
     grid-template-areas: 
     "p-header t-main"
     "v-side t-main";
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 300px 300px;
+}
+
+.t {
+    grid-area: t-main;
+}
+.p {
+    grid-area: p-header;
+}
+.v {
+    grid-area: v-side;
+}
+img {
+    max-width: 500px;
+    max-height: 300px;
 }

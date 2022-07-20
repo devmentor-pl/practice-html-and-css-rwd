@@ -1,18 +1,56 @@
+body {
+    
+}
+.header__nav {
+    background-color: bisque;
+    height: 60px;
+    top: 0;
+  
+}
+.nav {
+    position: absolute;
+    right: 0;
+    top: 9vh;
+    background-color: orange;
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.nav__item {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.nav__item:hover {
+    color: red;
+}
+
+.dropdown__item {
+    display: none;
+}
+
+
+
+
+/* hamburger*/
 
 .hamburger {
     width: 40px;
     height: 35px;
-    margin: 50px;
+    margin: 10px;
     border: 0;
+    right: 0;
     border-top: 5px solid red;
     background: transparent;
-    position: relative;
+    position: absolute;
     transition: 0.3s transform linear;
+    cursor: pointer;
 }
 .hamburger::before, .hamburger::after {
     content: '';
     position: absolute;
-
     top: 0;
     left: 0;
     width: 100%;
@@ -29,4 +67,11 @@
 }
 .hamburger:focus::after {
     transform: rotate(-90deg) translateX(-10px);
+}
+nav {
+    display: none
+}
+
+.hamburger:focus + nav {
+    display: block;
 }

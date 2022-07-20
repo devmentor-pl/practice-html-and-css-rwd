@@ -6,17 +6,26 @@ body {
     "t-main"
     "v-side";
     grid-template-rows: 
-    auto
-    auto
-    auto;
+   
 
 }
 .t {
     grid-area: t-main;
+    margin: 20px;
+    height: 200px;
 }
 .p {
     grid-area: p-header;
+    min-width: auto;
 }
 .v {
     grid-area: v-side;
+}
+.v > .video {
+    display: flex;
+    justify-content: center;
+}
+img {
+    max-width: 1fr;
+    max-height: 1fr;
 }

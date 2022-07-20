@@ -6,33 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" media="(min-width: 600px)" href="normal.css">
+    <link rel="stylesheet" media="(max-width: 600px)" href="mobile.css">
+    <link rel="stylesheet" media="(min-width: 601px)" href="normal.css">
 </head>
 <body>
-    <label for="menu-switcher">
-        <button class="hamburger"></button>
-    </label>
+    <label for="menu-switcher"></label>
    
-    
-
-    
+    <button id="menu-switcher" class="hamburger"></button>
     <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+      <div class="header__nav">
+        <ul class="nav">
+          <li class="nav__item">start</li>
+          <li class="nav__item">oferta
+            <ul class="nav__dropdown dropdown">
+              <li class="dropdown__item">strony internetowe</li>
+              <li class="dropdown__item">pozycjonowanie strony www</li>
+            </ul>
+          </li>
+          <li class="nav__item">kontakt</li>
         </ul>
+      </div>
+
     </nav>
 
+   
 </body>
 </html>
