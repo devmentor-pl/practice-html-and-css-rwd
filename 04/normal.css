@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(195, 206, 172);
+}
+.hamburger {
+    display: none;
+}
+.nav__dropdown {
+    list-style: none;
+    padding-left: 0;
+    background-color: green;
+    color: white;
+    position: absolute;
+    min-width: 200px;
+    margin-left: -20px;
+    margin-top: 20px;
+    display: none;
+}
+.nav__item:hover {
+    border-top: 3px solid red;
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.dropdown__item {
+    padding: 15px;
+    color: blue;
+}
+.dropdown__item:hover {
+    color: white;
+}
+.header__nav {
+    background-color: bisque;
+    height: 60px;
+}
+.nav__item {
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+}
+.nav__item:hover {
+    color: brown;
+}
+.dropdown__item > .nav__dropdown {
+    background-color: blueviolet;
+    margin-left: 180px;
+    margin-top: -30px;
+    display: none;
+}

@@ -5,12 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" media="(max-width: 599px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis aspernatur dolorem nisi distinctio tempora ut porro adipisci aliquam dignissimos laudantium, corporis debitis, saepe rerum provident! Esse dolorem consequatur reiciendis consectetur omnis ratione, saepe sapiente, impedit tempora nemo harum? Distinctio repellat earum consectetur amet eos qui cumque quo, quaerat veniam aliquid dolor. Ab accusamus ullam illo et voluptatibus obcaecati magni libero vel voluptas sapiente nulla sed officiis deserunt dolor, voluptatem similique animi esse saepe repudiandae! Magnam quod mollitia voluptatum, ea quibusdam tempora? A, consequatur quibusdam laborum deserunt nulla veritatis eaque veniam illum minus tempora, natus autem facere exercitationem, eligendi eum dolor.</p>
+    </main>
+    <header class="p">
+        <picture>
+            <source
+                size="(min-width: 100px) 80vw, 100vw"
+                srcset="
+                    https://devmentor.pl/img/dm-300w.png 300w,
+                    https://devmentor.pl/img/dm-600w.png 600w,
+                "
+        >
+            <img src="https://devmentor.pl/img/dm-logo.png">
+        </picture>
+    </header>
+    <side class="v">
+        <nav class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/IeYwvknzBF0"></iframe>
+        </nav>
+    </side>
 
 </body>
 </html>

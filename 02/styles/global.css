@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
 .a, .b, .c {
     border: 3px solid transparent;
@@ -14,7 +17,8 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    
 }
 
 .b {

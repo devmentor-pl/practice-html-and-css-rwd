@@ -1,0 +1,6 @@
+/* tablet */
+body {
+    grid-template-areas: 
+    "a-header a-header"
+    "c-section b-main";
+}

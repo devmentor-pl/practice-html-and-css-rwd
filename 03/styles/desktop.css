@@ -1,0 +1,33 @@
+/* desktop.css */ 
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "p-header v-side"
+    "t-main t-main";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+
+}
+.t {
+    grid-area: t-main;
+    max-height: 150px;
+    
+}
+.p {
+    grid-area: p-header;
+  
+    
+}
+.v {
+    grid-area: v-side;
+   
+    
+}
+iframe {
+    max-width: 400px;
+   
+}
+img {
+    
+}
