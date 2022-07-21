@@ -68,3 +68,9 @@
 .hamburger:focus + nav {
     display: block;
 }
+header nav {
+    display: none;
+}
+header input:checked + nav {
+    display: block;
+}

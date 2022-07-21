@@ -5,6 +5,7 @@ body {
     background-color: bisque;
     height: 60px;
     top: 0;
+    
   
 }
 .nav {
@@ -68,10 +69,20 @@ body {
 .hamburger:focus::after {
     transform: rotate(-90deg) translateX(-10px);
 }
-nav {
+/* nav {
     display: none
 }
 
 .hamburger:focus + nav {
     display: block;
+} */
+.hamburger:focus + nav {
+    display: block;
 }
+header nav {
+    display: none;
+}
+header input:checked + nav {
+    display: block;
+}
+
