@@ -19,6 +19,16 @@ body {
     grid-area: video-area;
 }
 
+@media (max-width:599px){
+    body {
+        grid-template-areas: 
+        "picture-area"
+        "text-area"
+        "video-area"
+        ;
+    }
+}
+
 
 
 
