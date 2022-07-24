@@ -17,3 +17,13 @@ body {
 .v {
     grid-area: video-area;
 }
+
+@media (max-width:1284px){
+    body {
+        grid-template-areas: 
+        "picture-area"
+        "text-area"
+        "video-area"
+        ;
+    }
+}
