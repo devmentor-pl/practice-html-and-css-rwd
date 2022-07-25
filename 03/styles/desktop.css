@@ -1,9 +1,12 @@
 body {
     display:grid;
     grid-template-areas: 
-    "picture-area video-area "
-    "text-area text-area"
+    "text-area"
+    "picture-area"
+    "video-area"
     ;
+    max-width: 1400px;
+    
 }
 
 .p {
@@ -12,13 +15,15 @@ body {
 
 .t {
     grid-area: text-area;
+    max-width: 75vw;
 }
 
 .v {
     grid-area: video-area;
+    
 }
 
-@media (max-width:1284px){
+@media (min-width:1280px){
     body {
         grid-template-areas: 
         "picture-area video-area"
@@ -26,3 +31,6 @@ body {
         ;
     }
 }
+
+
+

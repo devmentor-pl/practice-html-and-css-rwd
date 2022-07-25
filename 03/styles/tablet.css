@@ -1,8 +1,8 @@
 body {
     display:grid;
     grid-template-areas: 
-    "picture-area"
     "text-area"
+    "picture-area"
     "video-area"
      ;
     margin: 0 auto;
