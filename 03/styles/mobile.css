@@ -9,6 +9,7 @@ body {
 
 .p {
     grid-area: picture-area;
+    
 }
 
 .t {
@@ -19,7 +20,7 @@ body {
     grid-area: video-area;
 }
 
-@media (max-width:599px){
+@media (min-width:599px){
     body {
         grid-template-areas: 
         "picture-area"
@@ -36,7 +37,6 @@ section {
 }
 
 iframe {
-    border: 1px solid red;
     position: absolute;
     left: 0;
     top: 0;
