@@ -21,9 +21,8 @@ body {
 @media (max-width:1284px){
     body {
         grid-template-areas: 
-        "picture-area"
-        "text-area"
-        "video-area"
+        "picture-area video-area"
+        "text-area text-area"
         ;
     }
 }
