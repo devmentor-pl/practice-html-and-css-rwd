@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
     <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" media="(min-width: 599px) and (max-width:1299px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(max-width: 599px) and (max-width:1299px)" href="./styles/mobile.css">
 </head>
 <body>
     <main class="t">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque ea reiciendis omnis perferendis velit error, esse unde itaque sit repellendus. Qui neque quod fuga ducimus laudantium incidunt autem quibusdam fugit!
@@ -24,10 +24,15 @@
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex recusandae accusamus provident laboriosam error, odio cupiditate itaque ipsum voluptatem earum ratione corporis, est blanditiis beatae dolor aperiam deserunt iure voluptates!
     </main>
     <header class="p">
-        <img class="auto" src="tablet car.jpg" alt="resized car photo">
+        <picture>
+            <source>
+            <img src="desktop car.jpg"    alt="resized for desktop car photo">
+        </picture>  
     </header>
     <section>
-        <side class="v"><iframe width="560" height="315" src="https://www.youtube.com/embed/668nUCeBHyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></side>
+        <side class="v">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/668nUCeBHyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </side>
     </section>
 </body>
 </html>

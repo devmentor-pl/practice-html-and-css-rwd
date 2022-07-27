@@ -8,6 +8,7 @@
     border: 3px solid transparent;
     min-height: 50px;
 
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,13 +35,17 @@ body {
     "text-area"
     "video-area"
     ;
+    max-width: 1400px;
 }
 
 .p {
     grid-area: picture-area;
-  
-    
 }
+
+img {
+    max-width: 100%;
+}
+
 
 .t {
     grid-area: text-area;
@@ -49,33 +54,27 @@ body {
 
 .v {
     grid-area: video-area;
+    max-height: 100%;
     
 }
 
 
 
-@media (min-width:599px){
-    body {
-        grid-template-areas: 
-        "picture-area"
-        "text-area"
-        "video-area"
-        ;
-    }
-}
 
 
-@media (min-width:1199px){
+
+
+@media (min-width:600px) and (max-width:1199px) {
     body {
         grid-template-areas: 
         "picture-area text-area"
-        "video-area text-area"
-        ;
+        "video-area text-area";
+        
     }
 }
- 
 
-@media (min-width:1299px){
+
+@media (min-width:1200px){
     body {
         grid-template-areas: 
         "picture-area video-area"
@@ -86,10 +85,11 @@ body {
 
 
 
-section {
+.v {
     height: 0;
     padding-bottom: calc(315 / 560 * 100%);
     position: relative;
+    width: 100%;
 }
 
 iframe {
