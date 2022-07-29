@@ -6,23 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <link rel="stylesheet" href="mobile.css">
-    <!--<link rel="stylesheet" href="deafult.css">-->
+    <link rel="stylesheet" media="(min-width:800px)" href="desktop.css">
 </head>
 <body>
-    <button class="burger"></button>
     <nav>
-        <ul>
-            <li>
+        <button class="burger"></button>
+        <ul class="menu">
+            <li class="menu__item">
                 <a href="#">start</a>
             </li>
-            <li>
+            <li class="menu__item">
                 <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+                <ul class="submenu">
+                    <li class="submenu__item"><a href="">strony internetowe</a></li>
+                    <li class="submenu__item"><a href="">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menu__item">
                 <a href="#">kontakt</a>
             </li>
         </ul>

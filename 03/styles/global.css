@@ -36,6 +36,7 @@ body {
     "video-area"
     ;
     max-width: 1400px;
+    margin:0 auto;
 }
 
 .p {
@@ -49,12 +50,13 @@ img {
 
 .t {
     grid-area: text-area;
+   
     
 }
 
 .v {
     grid-area: video-area;
-    max-height: 100%;
+    
     
 }
 
