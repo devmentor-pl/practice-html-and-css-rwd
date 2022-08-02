@@ -6,9 +6,10 @@
 
 .content {
     background-color: #fff;
-    min-height: 320px;
-    min-width: 320px;
-    max-width: 600px;
+    min-height: 32vw; /* originally: min-height: 320px */
+    min-width: 32vw; /* originally: min-width: 320px */
+    max-width: 60vw; /* originally: max-width: 600px */
+    font-size: 1.8vw; /* originally: not exist */
     text-align: justify;
 }
 
@@ -17,7 +18,8 @@
     display: block;
     content: '';
     height: 0;
-    border: 150px solid #dcdcdc;
+    border: 15vw solid #dcdcdc;   /* originally: border: 150px solid #dcdcdc */
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    shape-outside: polygon(0 0, 100% 0, 0 100%); /* originally: not exist */
 }
