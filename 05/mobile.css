@@ -1,25 +1,67 @@
 .green {
     outline: 3px solid green;
     width: 100%;
-    height: 500px;
+    min-height: 500px;
 }
 
 .blue {
     outline: 2px solid #39A8F3;
     max-width: 1000px;
     margin: 10px auto;
-    height: 80px;
+    min-height: 80px;
     display: flex;
 }
 
 .yellow {
     outline: 2px solid orange;
-    width: 20%;
-    height: 20%;
     margin: auto;
     padding: 28px;
+    min-height: 100px;
+    width: 100px;
 }
 
+
+
+.section__content.features {
+    display:grid;
+    grid-template-areas: 
+    "feature1"
+    "feature2"
+    "feature3";
+}
+
+.section__content.feature1 {
+    grid-area: feature1;
+}
+
+.section__content.feature2 {
+    grid-area: feature2;
+}
+
+.section__content.feature3 {
+    grid-area: feature3;
+}
+
+.header__content {
+    display:grid;
+    grid-template-areas: 
+    "tex"
+    "image";
+}
+
+.header.content.text {
+    grid-area: tex;
+}
+
+.header.content.image {
+    grid-area: image;
+}
+
+.footer {
+    width:80px;
+    height:20px;
+    margin-top: 20px;
+}
 
 
 

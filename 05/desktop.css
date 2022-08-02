@@ -9,7 +9,7 @@
     outline: 2px solid #39A8F3;
     max-width: 1000px;
     margin: 10px auto;
-    height: 100px;
+    height: 200px;
     display: flex;
 }
 
@@ -17,7 +17,9 @@
     outline: 2px solid orange;
     width: 50%;
     margin: auto;
-    padding: 28px;
+    padding: 30px;
+  
+    
 }
 
 .header__logo {
@@ -51,6 +53,6 @@
 
 .footer {
     padding: 20px;
-    margin-top:30px;
+    margin-top:40px;
 }
 
