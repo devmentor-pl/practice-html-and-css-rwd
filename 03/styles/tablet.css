@@ -1,0 +1,17 @@
+@media (min-width: 600px) and (max-width: 1199px){
+    body{
+        grid-template-columns: minmax(200px, 50%) 1fr;
+        grid-template-areas: 
+        "photo text"
+        "video text";
+    }
+    .p{
+        grid-area: photo;
+    }
+    .t{
+        grid-area: text;
+    }
+    .v{
+        grid-area: video;
+    }
+}
