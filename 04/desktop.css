@@ -1,0 +1,36 @@
+body {
+    background-color:#834b4b;;
+}
+
+.burger {
+    display:none;
+}
+
+.menu {
+    display:flex;
+}
+
+.submenu {
+    display:none;
+}
+
+.menu__item:hover > .submenu {
+    display:block;
+}
+
+.menu__item {
+    position:relative;
+    margin: 0 auto;
+}
+
+.submenu {
+    position:absolute;
+    padding:0;
+}
+
+.submenu__item {
+    margin:0;
+    padding:0;
+    text-align: left;
+    min-width: 400px;
+}

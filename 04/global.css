@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header ,main,section,article,footer {
+    border: 5px solid #fff;
+    min-height: 50px;
+}
+
+header {border-color: #ffffba;}
+main    {border-color: #ffdfba;}
+section {border-color: #ffb3ffba;}
+article {border-color: #377945;}
+footer  {border-color: #bae1ff;}
