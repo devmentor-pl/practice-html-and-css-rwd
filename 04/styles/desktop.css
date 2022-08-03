@@ -1,0 +1,47 @@
+.hamburger{
+    display: none;
+}
+
+.nav{
+    display: block;
+    
+    
+}
+.nav__menu{
+    margin: 0;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "start offer contact";
+    
+}
+.menu__item{
+    /* text-align: center; */
+    padding-left: 30px;
+    position: relative;
+}
+
+.menu__dropdown{
+    display: none;
+    grid-template-areas: 
+    "webpages"
+    "positioning";
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    white-space: nowrap;
+    padding:0;
+    top: 50px;
+    background: rgba(184, 180, 180, 0.25);
+
+}
+
+.menu__item:focus .menu__dropdown{
+   display: grid;
+    /* display: block; */
+ 
+}
+.menu__dropdown .menu__item{
+    padding-right: 30px;
+}
