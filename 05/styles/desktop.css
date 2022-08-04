@@ -1,0 +1,28 @@
+
+.hamburger{
+    display: none;
+}
+.header__logo{
+    display: inline-block;
+    width: 10%;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__menu{
+    display: flex;
+}
+.menu__item{
+    padding:0 10px;
+}
+.content__container{
+    display: flex;
+}
+.a,
+.b,
+.c{ 
+       flex-grow: 1;
+    margin: 5px; 
+}
