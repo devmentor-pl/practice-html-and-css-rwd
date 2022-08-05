@@ -17,14 +17,22 @@
 .menu__item{
     padding:0 10px;
 }
-.content__container{
+.content__container-between,
+.content__container-around{
     display: flex;
     justify-content: space-between;
 }
+.content__container-around{
+    justify-content: space-around;
+}
 .a,
 .b,
-.c{ 
-    width:30%
-       /* flex-grow: 1;
-    margin: 5px;  */
+.c{
+    width: 49%;
+}
+.content__container-around .a,
+.content__container-around .b,
+.content__container-around .c{ 
+    width:32%
+
 }

@@ -46,13 +46,14 @@
     display: grid;
     grid-template-columns: 1fr;
 }
- .content__container{
+ .content__container-between,
+ .content__container-around{
     display: grid;
     grid-template-rows: 1fr 10px 1fr;
 
 }
 
-.main__section-two .content__container{
+.main__section-two .content__container-around{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8px 1fr 8px 1fr;
 }
