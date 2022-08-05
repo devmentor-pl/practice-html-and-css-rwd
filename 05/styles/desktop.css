@@ -19,10 +19,12 @@
 }
 .content__container{
     display: flex;
+    justify-content: space-between;
 }
 .a,
 .b,
 .c{ 
-       flex-grow: 1;
-    margin: 5px; 
+    width:30%
+       /* flex-grow: 1;
+    margin: 5px;  */
 }

@@ -7,7 +7,6 @@ body{
     "hamburger"
     "nav";
 }
-
 .hamburger{
     background-color: transparent;
     position: relative;
@@ -27,8 +26,7 @@ body{
     width: 100%;
     border-top: 1px solid black;
     transform: translateY(7px);
-    transition: 0.3s transform linear;
-    
+    transition: 0.3s transform linear; 
 }
 .hamburger:focus{
    border: none;
@@ -46,7 +44,6 @@ body{
 .menu__dropdown {
     display: none;
 }
-
 .nav{
     box-shadow: 0 1px 4px rgb(146 161 176 /20%);
     grid-area: nav;
@@ -77,8 +74,6 @@ body{
     "offer"
     "contact";
     list-style-type: none;
-    padding:0;
- 
 }
 .menu__item{
     padding: 5px;
@@ -93,7 +88,6 @@ body{
 .menu__item a:hover{
     font-weight: 600;
 }
-
 .menu__item:hover > .menu__dropdown {
     display: grid;
     grid-template-areas: 

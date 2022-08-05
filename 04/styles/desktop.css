@@ -1,27 +1,21 @@
 .hamburger{
     display: none;
 }
-
 .nav{
     display: block;
-    
-    
 }
 .nav__menu{
     margin: 0;
-    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    "start offer contact";
-    
+    "start offer contact";  
 }
 .menu__item{
-    /* text-align: center; */
-    padding-left: 30px;
+
+    padding: 10px;
     position: relative;
 }
-
 .menu__dropdown{
     display: none;
     grid-template-areas: 
@@ -32,15 +26,12 @@
     list-style-type: none;
     white-space: nowrap;
     padding:0;
-    top: 50px;
+    top: 20px;
     background: rgba(184, 180, 180, 0.25);
-
+    margin-top: 20px;
 }
-
 .menu__item:focus .menu__dropdown{
    display: grid;
-    /* display: block; */
- 
 }
 .menu__dropdown .menu__item{
     padding-right: 30px;
