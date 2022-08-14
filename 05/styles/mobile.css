@@ -2,20 +2,22 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
-    ". menu hamburger";
+    ". menu .";
 }
 .header__logo{
     display: none;
 }
 
+
 .hamburger{
-    grid-area: hamburger;
+    /* grid-area: hamburger; */
     justify-self: end;
     width: 25px;
     height: 25px;
     border: none;
     background-color: transparent;
-    position: relative;
+    position: absolute;
+    right: 15px;
 }
 .hamburger::before{
     content:'';
@@ -24,7 +26,7 @@
     left: 0;
     width: 100%;
     border-top: 5px dotted red;
-    transform: translateY(10px);
+    transform: translateY(10px) ;
 }
 
 .nav{
@@ -33,12 +35,15 @@
 .nav__menu{
     display: none;
 }
+.hamburger:focus{
+    transform: translateY(-10px);
+}
 .hamburger:focus:before {
     border-color: grey;
     transform: rotate(90deg) translateX(25px);
 }
 
-.hamburger:focus + .nav .nav__menu{
+.hamburger:focus + .nav__menu{
     display: flex;
     flex-direction: column;
 }
@@ -46,14 +51,14 @@
     display: grid;
     grid-template-columns: 1fr;
 }
- .content__container-between,
- .content__container-around{
+ .content__container--between,
+ .content__container--around{
     display: grid;
     grid-template-rows: 1fr 10px 1fr;
 
 }
 
-.main__section-two .content__container-around{
+.content--grid .content__container--around{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 8px 1fr 8px 1fr;
 }
