@@ -26,9 +26,9 @@
     list-style-type: none;
     white-space: nowrap;
     padding:0;
-    top: 20px;
+    top: 100%;
     background: rgba(184, 180, 180, 0.25);
-    margin-top: 20px;
+    margin-top: 0;
 }
 .menu__item:focus .menu__dropdown{
    display: grid;
