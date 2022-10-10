@@ -6,24 +6,24 @@
 
 * {
     box-sizing: border-box;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.4;
-    background-color: rgb(233, 207, 204, 0.75);;
-} 
+    background-color: rgb(233, 207, 204, 0.75);
+    ;
+}
 
-ul > li {
+.nav>.nav__item,
+.nav__dropdown>.dropdown__item {
     list-style: none;
 }
 
-.menu-wrap .menu > div > div > ul > li > a {
-    color: inherit;
+.menu-wrap .menu>div>div>.nav>.nav__item>a,
+.nav__dropdown>.dropdown__item>a {
+    color: #fff;
     text-decoration: none;
-}
-
-ul > li > ul > li {
-    list-style: none;
 }
