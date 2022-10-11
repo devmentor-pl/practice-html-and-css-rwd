@@ -126,8 +126,9 @@ section{
     font-size: .95rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     transition: .5s;
+    width: 100%;
 }
 
 .nav-link > a > i {
@@ -143,8 +144,13 @@ section{
     top: 100%;
     left: 0;
     width: 10rem;
+    transform: translateY(10px);
     opacity: 0;
     transition: .5s;
+}
+
+.dropdown ul {
+    position: relative;
 }
 
 .dropdown-link > a{
@@ -163,10 +169,6 @@ section{
     color: #fff;
 }
 
-.dropdown-link {
-    border-bottom: 1px solid #cea6bd;
-}
-
 .nav-link:hover > .dropdown,
 .dropdown-link:hover > .dropdown {
     transform: translate(0, 0);
@@ -175,7 +177,7 @@ section{
 
 .hamburger-menu-container {
     flex: 1;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: flex-end;
 }
@@ -263,13 +265,67 @@ transform: translateY(0) rotate(45deg);
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: .65s;
+    }
+
+    #check:checked ~ .nav-btn {
+        transform: translateX(0);
     }
 
     .nav-links {
         flex: 0 auto;
+        width: 100%;
+    }
+
+    .nav-links > ul {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        width: 100%;
+    }
+
+    .nav-link > a {
+        line-height: 1;
+        padding: 1.6rem 2rem;
+    }
+
+    .nav-link:hover > a {
+        transform: scale(1);
+        background-color: rgb(221, 132, 187);
+    }
+
+    .dropdown {
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        opacity: 1;
+        width: 100%;
+        padding: 0;
+        display: none;
+    }
+
+    .nav-link:hover > .dropdown,
+    .dropdown-link:hover > .dropdown {
+        display: block;
+    }
+
+    .dropdown-link > a {
+        background-color: transparent;
+        color: white;
+        padding-left: 15rem;
+        line-height: 1;
     }
 
     .log-sign {
         flex: 0 auto;
+        width: 100%;
+        padding: 1.5rem 1.9rem;
+        justify-content: flex-end;
+        transform: translateY(15px);
     }
 }
