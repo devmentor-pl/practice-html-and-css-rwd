@@ -9,7 +9,7 @@
     grid-template-areas:
         "photo video"
         "text text";
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     max-width: 1400px;
 }
 
@@ -25,8 +25,8 @@
     background-color: rgb(167, 97, 162);
 }
 
-.photo>.photo__item {
-    height: 100%;
+.photo img {
+    height: auto;
     width: 100%;
     object-fit: cover;
 }
@@ -34,13 +34,22 @@
 .video {
     grid-area: video;
     background-color: rgb(105, 30, 100);
+    position: relative;
+}
+
+.yt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1199px) {
     .grid-container {
         grid-template-areas:
-            ".photo .text"
-            ".video .text";
+            "photo text"
+            "video text";
         grid-template-columns: minmax(200px, 50vw) auto;
     }
 
