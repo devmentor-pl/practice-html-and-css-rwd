@@ -100,13 +100,14 @@ header, article, section, footer {
 }
 
 @media screen and (max-width: 800px) {
+
     .container {
         display: flex;
     }
-    
+
     /* HEADER */
 
-   .nav-container {
+    .nav-container {
         flex-direction: row;
         justify-content: space-between;
     }
@@ -161,6 +162,9 @@ header, article, section, footer {
 
     .article-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
 
     .article {
@@ -172,6 +176,9 @@ header, article, section, footer {
 
     .content-container {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
 
     .content {
@@ -191,5 +198,5 @@ header, article, section, footer {
         line-height: 3rem;
         position: relative;
     }
-    
+
 }
