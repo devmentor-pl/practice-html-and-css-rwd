@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+        "photo video"
+        "text text";
+    grid-template-columns: 1fr 1fr;
+    max-width: 1400px;
+}
+
+.text {
+    grid-area: text;
+    justify-self: center;
+    background-color: rgb(218, 168, 215);
+    padding: 20px;
+}
+
+.photo {
+    grid-area: photo;
+    background-color: rgb(167, 97, 162);
+}
+
+.photo img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video {
+    grid-area: video;
+    background-color: rgb(105, 30, 100);
+    position: relative;
+}
+
+.yt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+    .grid-container {
+        grid-template-areas:
+            "photo text"
+            "video text";
+        grid-template-columns: minmax(200px, 50vw) auto;
+    }
+
+    .video {
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+    .video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+}
+
+@media screen and (max-width: 599px) {
+    .grid-container {
+        grid-template-areas:
+            "photo"
+            "text"
+            "video";
+    }
+
+    .video {
+        height: 0;
+        position: relative;
+        padding-bottom: 56.25%;
+    }
+    
+    .video iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
