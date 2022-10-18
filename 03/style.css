@@ -5,6 +5,7 @@
 }
 
 .grid-container {
+    margin: 0 auto;
     display: grid;
     grid-template-areas:
         "photo video"
