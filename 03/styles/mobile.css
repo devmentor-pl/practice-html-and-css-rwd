@@ -1,0 +1,28 @@
+/*mobile 320px - 599px*/
+
+@media screen and (min-width: 320px) {
+  body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+      "a-picture"
+      "a-tekst"
+      "a-video";
+  }
+  h1 {
+    font-size: 1.7em;
+  }
+}
+
+header {
+  grid-area: a-picture;
+  height: 50vh;
+}
+main {
+  grid-area: a-tekst;
+  height: 50vh;
+}
+aside {
+  grid-area: a-video;
+  height: 50vh;
+}

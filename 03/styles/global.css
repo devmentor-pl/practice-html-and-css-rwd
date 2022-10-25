@@ -1,26 +1,51 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+html {
+  font-size: 1em;
+}
+h1 {
+  font-size: 2.2em;
+  padding: 1em;
+  text-transform: uppercase;
+  color: rgb(50, 49, 49);
+}
+.p,
+.t,
+.v {
+  border: 3px solid transparent;
+  min-width: 50vh;
 }
 
 .p {
-    border-color: #ffffba
+  border-color: #ffffba;
 }
 
 .t {
-    border-color: #ffdfba;
+  border-color: #ffdfba;
 }
 
 .v {
-    border-color: #baffc9;
+  border-color: #baffc9;
+}
+
+main {
+  font-size: 1em;
+  line-height: 1.2;
+  padding: 1.1em;
+}
+aside {
+  height: 100%;
+  padding-bottom: 2em;
+  position: relative;
+  width: 100%;
+}
+iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }

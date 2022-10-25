@@ -1,0 +1,15 @@
+/*desktop 1201px -1400px*/
+
+@media screen and (min-width: 1200px) {
+  body {
+    grid-template-columns: fit-content(600px) fit-content(600px);
+    grid-template-areas:
+      "a-picture a-video"
+      "a-tekst a-tekst";
+  }
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3em;
+  }
+}

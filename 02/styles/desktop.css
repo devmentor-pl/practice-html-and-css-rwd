@@ -1,0 +1,7 @@
+/*desktop*/
+@media screen and (min-width: 1200px) {
+  body {
+    align-items: center;
+    min-height: 100vh;
+  }
+}

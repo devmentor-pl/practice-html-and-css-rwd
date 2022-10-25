@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href=".styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/tablet.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+  </head>
 
-</body>
+  <body>
+    <main class="t">
+      <div class="container">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>
+          Voluptas atque laboriosam ipsum nam sit quis totam accusantium optio
+          nemo delectus consectetur perferendis voluptate eos, quasi itaque,
+          reprehenderit culpa animi rerum?
+          <br /><br />
+          Sunt quo animi, reiciendis eius dolorum perferendis magnam, tempora
+          soluta corporis aliquam totam debitis temporibus quos numquam
+          quibusdam provident officia fugit, aut sequi nostrum. Vel quas nobis
+          ducimus placeat impedit. Doloribus rerum dicta velit eaque iste eum
+          rem beatae, voluptate dolores, quidem sint accusantium dignissimos,
+          voluptas adipisci recusandae fugiat cupiditate nihil amet accusamus
+          laudantium earum. Id illo asperiores enim earum!
+          <br /><br />
+          Esse, nihil a magnam tempora odio delectus voluptas, animi excepturi
+          incidunt saepe, labore officia facere! Dolore totam odit tempore
+          perspiciatis, accusantium aperiam voluptatem quasi ad? Repellendus
+          ratione velit nobis inventore!
+        </p>
+      </div>
+    </main>
+
+    <header class="p">
+      <div class="container">
+        <picture>
+          <source
+            srcset="assets\dynafit-logo-163B716816-seeklogo.com.png"
+            media="(min-width: 600px)"
+          />
+          <img
+            src="assets\dynafit_logo_black_small.png"
+            media="(min-width=320px)"
+            alt="snow leopard dynafit logo"
+          />
+        </picture>
+      </div>
+    </header>
+
+    <aside class="v">
+      <div class="container">
+        <iframe
+          width="100%"
+          height="360"
+          src="https://www.youtube.com/embed/VcHOGc-MtKI"
+          title="How to Ski Tour | Long version | Tutorial | DYNAFIT"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write;
+            encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+    </aside>
+  </body>
 </html>

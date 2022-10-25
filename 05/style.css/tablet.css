@@ -1,0 +1,25 @@
+@media screen and (min-width: 800px) {
+  body {
+    flex-wrap: wrap;
+  }
+  header .main {
+    column-count: 2;
+  }
+  .section {
+    column-count: 3;
+  }
+  .menu {
+    display: flex;
+  }
+  .menu a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+  }
+  label,
+  #hamburger {
+    display: none;
+  }
+}
