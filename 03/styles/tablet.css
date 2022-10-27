@@ -1,0 +1,23 @@
+/*tablet 600px - 1200px*/
+
+@media screen and (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-areas:
+      "a-picture a-tekst"
+      "a-video a-tekst";
+    grid-template-columns: minmax(300px) minmax(300px);
+  }
+  header {
+    grid-area: a-picture;
+    height: auto;
+  }
+  main {
+    grid-area: a-tekst;
+    height: auto;
+  }
+  aside {
+    grid-area: a-video;
+    height: auto;
+  }
+}
