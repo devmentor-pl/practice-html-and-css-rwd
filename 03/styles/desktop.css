@@ -1,6 +1,6 @@
 /*desktop 1201px -1400px*/
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
   body {
     grid-template-columns: fit-content(600px) fit-content(600px);
     grid-template-areas:
@@ -11,5 +11,17 @@
     max-width: 1200px;
     margin: auto;
     padding: 0 3em;
+  }
+  header {
+    grid-area: a-picture;
+    height: auto;
+  }
+  main {
+    grid-area: a-tekst;
+    height: auto;
+  }
+  aside {
+    grid-area: a-video;
+    height: auto;
   }
 }

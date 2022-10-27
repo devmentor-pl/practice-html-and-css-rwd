@@ -1,0 +1,30 @@
+@media screen and (min-width: 320px) {
+  /*hamburger menu*/
+  header {
+    position: relative;
+  }
+  .menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  .hamburger {
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.7em;
+  }
+  .menu a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+  }
+  input {
+    display: none;
+  }
+  header .menu {
+    display: none;
+  }
+  header input:checked + ul {
+    display: block;
+  }
+}

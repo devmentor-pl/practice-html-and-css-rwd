@@ -8,4 +8,16 @@
       "a-video a-tekst";
     grid-template-columns: minmax(300px) minmax(300px);
   }
+  header {
+    grid-area: a-picture;
+    height: auto;
+  }
+  main {
+    grid-area: a-tekst;
+    height: auto;
+  }
+  aside {
+    grid-area: a-video;
+    height: auto;
+  }
 }
