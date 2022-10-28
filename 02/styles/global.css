@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    grid-template-rows:
+    50% 50% 50%;
+}
+
+header {
+    grid-area: a;
+}
+
+section {
+    grid-area: c;
+}
+
+main {
+    grid-area: b;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
