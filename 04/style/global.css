@@ -1,0 +1,12 @@
+ul {
+    list-style: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu__item {
+    background-color: black;
+}

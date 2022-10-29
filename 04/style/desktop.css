@@ -1,0 +1,25 @@
+body {
+    background-color: #f2f2f2;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header label {
+    display: none;
+}
+
+header input {
+    display: none;
+}
+
+.switch__item {
+    display: none;
+}
