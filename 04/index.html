@@ -14,6 +14,10 @@
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 
     <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
+        rel="stylesheet"
+    >
+    <link
         rel="stylesheet"
         href="./style/reset.css"
     />
@@ -38,7 +42,7 @@
 
 <body>
     <header>
-        <h1>Logo</h1>
+        <h1 class="logo">BIOLABS</h1>
         <nav>
             <label for="menu-switcher">menu</label>
             <input
@@ -62,6 +66,23 @@
             </ul>
         </nav>
     </header>
+    <picture>
+        <source
+            srcset="./assets/mobile.jpg"
+            media="(max-width: 600px)"
+            alt="cosmetics"
+        >
+        <source
+            srcset="./assets/desktop.webp"
+            media="(min-width: 601px)"
+            type="image/webp"
+            alt="cosmetics"
+        >
+        <img
+            src="./assets/desktop.webp"
+            alt="cosmetics"
+        >
+    </picture>
 </body>
 
 </html>

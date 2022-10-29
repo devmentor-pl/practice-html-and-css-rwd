@@ -1,3 +1,7 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
 ul {
     list-style: none;
 }
@@ -9,4 +13,10 @@ nav a {
 
 .menu__item {
     background-color: black;
+}
+
+.logo {
+    font-size: 1.75rem;
+    padding: 20px 10px 0 10px;
+    color: rgb(65, 65, 65);
 }

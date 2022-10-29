@@ -20,6 +20,7 @@ header input {
     display: none;
 }
 
-.switch__item {
-    display: none;
+picture {
+    height: 100%;
+    width: 100%;
 }
