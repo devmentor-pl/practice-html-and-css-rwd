@@ -1,29 +1,11 @@
 body {
-    background-color: aqua;
+    background-color: #da6600;
     display: grid;
     height: 100vh;
     grid-template-areas:
         "p"
-        "v"
-        "t";
+        "t"
+        "v";
     grid-template-rows:
-    50% 50% 50%;
-}
-
-main {
-    grid-area: p;
-}
-
-header {
-    grid-area: v;
-}
-
-aside {
-    grid-area: t;
-}
-
-picture {
-    width: 100%;
-    max-width: 600px;
-    margin: 10px auto;
+    minmax(min-content, max-content) auto auto;
 }

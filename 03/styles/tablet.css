@@ -1,7 +1,16 @@
 body {
-    background-color: green;
+    background-color: #171717;
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "p t"
+        "v t";
+    grid-template-rows:
+    minmax(min-content, max-content) minmax(min-content, max-content);
+    grid-template-columns: minmax(200px, 50vw) 50%;
 }
 
 picture {
     width: 100%;
 }
+
