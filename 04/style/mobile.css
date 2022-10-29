@@ -59,3 +59,9 @@ nav {
     min-width: 220px;
     display: none;
 }
+
+label::before {
+    font-family: "Font Awesome 5 Free"; 
+    content: "\f0c9";
+    font-weight: 600;
+}
