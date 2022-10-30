@@ -57,6 +57,7 @@ nav {
     right: calc(100% - 0);
     width: 100%;
     display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .dropdown__2 {
@@ -66,6 +67,8 @@ nav {
     right: calc(100% - 0);
     width: 100%;
     display: none;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
 }
 
 .dropdown__link_2:hover > .dropdown__2 {
@@ -91,4 +94,28 @@ label::before {
     font-family: "Font Awesome 5 Free"; 
     content: "\f0c9";
     font-weight: 600;
+}
+
+.menu__dropdown--arrow::after {
+    content: "\25B8";
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transform: rotate(90deg);
+}
+
+.menu__dropdown--arrow2::after {
+    content: "\25B8";
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    transform: rotate(90deg);
+}
+
+.img__container {
+    background-image: url("../assets/mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 98px);
 }

@@ -13,7 +13,10 @@
     >
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 
-    <script src="https://kit.fontawesome.com/e6dada8901.js" crossorigin="anonymous"></script>
+    <script
+        src="https://kit.fontawesome.com/e6dada8901.js"
+        crossorigin="anonymous"
+    ></script>
 
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap"
@@ -43,64 +46,69 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="logo">BIOLABS</h1>
-        <nav>
-            <label for="menu-switcher"></label>
-            <input
-                type="checkbox"
-                id="menu-switcher"
+    <div class="container">
+        <header>
+            <h1 class="logo">BIOLABS</h1>
+            <nav>
+                <label for="menu-switcher"></label>
+                <input
+                    type="checkbox"
+                    id="menu-switcher"
+                >
+                <ul>
+                    <li class="menu__item">
+                        <a href="#">start</a>
+                    </li>
+                    <li class="menu__item menu__dropdown menu__dropdown--arrow">
+                        <a href="#">oferta</a>
+                        <ul class="dropdown">
+                            <li class="dropdown__item"><a
+                                    href=""
+                                    class="dropdown__link"
+                                >strony internetowe</a></li>
+                            <li class="dropdown__item dropdown__link_2  menu__dropdown--arrow2"><a
+                                    href=""
+                                    class="dropdown__link menu__dropdown"
+                                >pozycjonowanie stron www</a>
+                                <ul class="dropdown__2">
+                                    <li class="dropdown__item"><a
+                                            href=""
+                                            class="dropdown__link"
+                                        >audyt Twojego serwisu</a></li>
+                                    <li class="dropdown__item"><a
+                                            href=""
+                                            class="dropdown__link"
+                                        >monitorowanie efektów</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#">kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main class="img__container">
+        <!-- <picture>
+            <source
+                srcset="./assets/mobile.jpg"
+                media="(max-width: 600px)"
+                alt="cosmetics"
             >
-            <ul>
-                <li class="menu__item">
-                    <a href="#">start</a>
-                </li>
-                <li class="menu__item menu__dropdown">
-                    <a href="#">oferta</a>
-                    <ul class="dropdown">
-                        <li class="dropdown__item"><a
-                                href=""
-                                class="dropdown__link"
-                            >strony internetowe</a></li>
-                        <li class="dropdown__item dropdown__link_2"><a
-                                href=""
-                                class="dropdown__link"
-                            >pozycjonowanie stron www</a>
-                            <ul class="dropdown__2">
-                                <li class="dropdown__item"><a
-                                        href=""
-                                        class="dropdown__link"
-                                    >audyt Twojego serwisu</a></li>
-                                <li class="dropdown__item"><a
-                                        href=""
-                                        class="dropdown__link"
-                                    >monitorowanie efektów</a></li>
-                            </ul></li>
-                    </ul>
-                </li>
-                <li class="menu__item">
-                    <a href="#">kontakt</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <picture>
-        <source
-            srcset="./assets/mobile.jpg"
-            media="(max-width: 600px)"
-            alt="cosmetics"
-        >
-        <source
-            srcset="./assets/desktop.webp"
-            media="(min-width: 601px)"
-            type="image/webp"
-            alt="cosmetics"
-        >
-        <img
-            src="./assets/desktop.webp"
-            alt="cosmetics"
-        >
-    </picture>
+            <source
+                srcset="./assets/desktop.webp"
+                media="(min-width: 601px)"
+                type="image/webp"
+                alt="cosmetics"
+            >
+            <img
+                src="./assets/desktop.webp"
+                alt="cosmetics"
+            >
+        </picture> -->
+    </main>
 </body>
 
 </html>

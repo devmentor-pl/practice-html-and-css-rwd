@@ -2,6 +2,11 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 ul {
     list-style: none;
 }
@@ -26,3 +31,9 @@ nav a {
     padding: 20px 10px 0 10px;
     color: rgb(65, 65, 65);
 }
+
+
+/* img {
+    max-width: 100%;
+    object-fit: fill;
+} */
