@@ -7,12 +7,18 @@ ul {
 }
 
 nav a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
 .menu__item {
-    background-color: black;
+    border-bottom: 1px solid transparent;
+}
+
+.menu__item:hover {
+    background-color: #dddfe3;
+    border-bottom: 1px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 .logo {
