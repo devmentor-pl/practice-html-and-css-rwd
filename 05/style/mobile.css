@@ -1,0 +1,41 @@
+.green {
+    width: 100%;
+    padding: 2px;
+}
+
+.green--header {
+    height: 100px;
+}
+
+header > .blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.orange {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.orange--logo.orange {
+    height: 50px;
+    width: 50%;
+    margin: 10px;
+}
+
+.orange--nav.orange {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+}
+
+section .orange:last-of-type {
+    margin: 0;
+}
+
+.orange--ads {
+    margin: 0;
+}

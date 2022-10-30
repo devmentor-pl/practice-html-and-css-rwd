@@ -1,0 +1,18 @@
+.green {
+    border: 3px solid green;
+}
+
+.blue {
+    border: 3px solid blue;
+    max-width: 1000px;
+}
+
+.orange {
+    background-color: orange;
+}
+
+footer .orange {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+}
