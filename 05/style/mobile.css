@@ -7,10 +7,11 @@
     height: 100px;
 }
 
-header > .blue {
+header>.blue {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    position: relative
 }
 
 
@@ -27,9 +28,12 @@ header > .blue {
 }
 
 .orange--nav.orange {
-    height: 50px;
-    width: 50px;
+    height: 30px;
+    width: 30px;
     margin: 10px;
+    position: absolute;
+    right: 0;
+    background-color: transparent;
 }
 
 section .orange:last-of-type {
@@ -38,4 +42,15 @@ section .orange:last-of-type {
 
 .orange--ads {
     margin: 0;
+}
+
+label::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c9";
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.blue input {
+    display: none;
 }
