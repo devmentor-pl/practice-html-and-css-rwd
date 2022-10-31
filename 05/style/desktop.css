@@ -23,7 +23,7 @@ footer .orange {
     margin: 10px auto;
 }
 
-header>.blue {
+header > .blue {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,13 +32,13 @@ header>.blue {
 .orange--logo.orange {
     height: 50px;
     width: 200px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .orange--nav.orange {
     height: 50px;
     width: 400px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 .blue input {
@@ -63,7 +63,7 @@ section > .blue {
     justify-content: space-around;
 }
 
-.blue > .orange {
+section > .blue > .orange {
     margin: 5px;
 }
 
