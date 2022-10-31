@@ -1,0 +1,73 @@
+.green {
+    border: 3px solid green;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.blue {
+    border: 3px solid blue;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.orange {
+    background-color: orange;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+footer .orange {
+    width: 200px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+header>.blue {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orange--logo.orange {
+    height: 50px;
+    width: 200px;
+    margin: 10px;
+}
+
+.orange--nav.orange {
+    height: 50px;
+    width: 400px;
+    margin: 10px;
+}
+
+.blue input {
+    display: none;
+}
+
+main > .blue {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orange--article {
+   margin: 10px 5px 10px 0px;
+}
+
+.orange--ads {
+    margin: 10px 0px 10px 5px;
+}
+
+section > .blue {
+    display: flex;
+    justify-content: space-around;
+}
+
+.blue > .orange {
+    margin: 5px;
+}
+
+footer > .blue {
+    display: flex;
+    justify-content: center;
+}
