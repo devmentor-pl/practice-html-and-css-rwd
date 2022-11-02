@@ -51,7 +51,7 @@ nav {
 }
 
 .dropdown {
-    position: static;
+    position: absolute;
     background-color: #f2f2f2;
     top: 102%;
     right: calc(100% - 0);
@@ -61,7 +61,7 @@ nav {
 }
 
 .dropdown__2 {
-    position: static;
+    position: absolute;
     background-color: #f2f2f2;
     top: 102%;
     right: calc(100% - 0);
