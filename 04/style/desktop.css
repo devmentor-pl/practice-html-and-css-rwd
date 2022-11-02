@@ -103,3 +103,9 @@ header input {
     background-position: center;
     height: calc(100vh - 98px);
 }
+
+.menu__item:hover {
+    background-color: #dddfe3;
+    border-bottom: 1px solid black;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
