@@ -19,7 +19,7 @@ header input:checked + ul {
     display: block;
 }
 
-header {
+header.green--header{
     position: relative;
 }
 
@@ -51,7 +51,7 @@ nav {
 }
 
 .dropdown {
-    position: absolute;
+    position: static;
     background-color: #f2f2f2;
     top: 102%;
     right: calc(100% - 0);
@@ -61,7 +61,7 @@ nav {
 }
 
 .dropdown__2 {
-    position: absolute;
+    position: static;
     background-color: #f2f2f2;
     top: 102%;
     right: calc(100% - 0);
@@ -116,6 +116,6 @@ label::before {
     background-image: url("../assets/mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     height: calc(100vh - 98px);
 }
