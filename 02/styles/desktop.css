@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    height: 100vh;
+    max-width: 1200px;
+    grid-template-areas:
+        "a a"
+        "c b";
+    grid-template-rows:
+    50% 50%;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+}
+
+header {
+    grid-area: a;
+}
+
+section {
+    grid-area: c;
+}
+
+main {
+    grid-area: b;
+}
