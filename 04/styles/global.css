@@ -24,3 +24,11 @@ ul {
 	text-decoration: none;
 	text-transform: uppercase;
 }
+
+.menu-list-item {
+	cursor: pointer;
+}
+
+.menu-list-item:hover > a {
+	font-weight: 700;
+}
