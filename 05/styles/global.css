@@ -1,0 +1,23 @@
+﻿* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+header,
+section,
+footer {
+	border: 3px solid green;
+}
+
+.section-item,
+.nav-list {
+	background-color: gold;
+}
+
+.wrapper {
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	border: 3px solid blue;
+}

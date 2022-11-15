@@ -1,0 +1,52 @@
+﻿.nav {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+.header-logo {
+	display: none;
+}
+
+.nav label {
+	position: absolute;
+	right: 0;
+}
+
+.nav input {
+	display: none;
+}
+
+.fas {
+	font-size: 36px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.nav input:checked ~ .nav-list {
+	display: block;
+}
+
+.nav-list {
+	display: none;
+	width: 50%;
+	height: 100%;
+}
+
+.section-content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.section-item {
+	height: 40vh;
+}
+
+.footer-text {
+	margin: 10px 0;
+	padding: 20px;
+	text-align: center;
+}
