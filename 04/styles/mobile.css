@@ -1,0 +1,21 @@
+﻿.menu-list-item {
+	margin: 20px 0;
+}
+
+.submenu-list {
+	margin-left: 20px;
+}
+
+.fas {
+	font-size: 36px;
+	cursor: pointer;
+}
+
+nav input {
+	display: none;
+}
+
+nav input:checked + .menu-list,
+nav input:checked + .menu-list .submenu-list {
+	display: block;
+}

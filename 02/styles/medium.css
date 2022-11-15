@@ -1,0 +1,15 @@
+﻿@media (min-width: 600px) {
+	body {
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+
+	.a {
+		grid-column: 1/3;
+	}
+
+	.c {
+		grid-row: 2/3;
+	}
+}

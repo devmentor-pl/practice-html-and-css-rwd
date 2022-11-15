@@ -1,0 +1,38 @@
+﻿nav {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+nav label {
+	display: none;
+}
+
+.menu-list {
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+	text-align: center;
+}
+
+.menu-list-item {
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	margin: 0;
+}
+
+.submenu-list {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: rgba(238, 238, 238, 0.9);
+	text-align: left;
+	margin-left: 0;
+}
+
+.menu-list-item:hover .submenu-list,
+.submenu-list:hover {
+	display: block;
+}
