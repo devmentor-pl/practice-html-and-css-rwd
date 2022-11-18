@@ -16,6 +16,9 @@ body {
 .main-header {
     position: relative;
 }
+.logo {
+    display: none;
+}
 .menu {
     background-color: yellow;
 }
@@ -27,7 +30,7 @@ body {
 }
 .menu__li {
     width: 100%;
-    margin-left: 100vw;
+    margin-left: 100%;
     overflow: hidden;
     transition: .5s;
     height: 100%;
