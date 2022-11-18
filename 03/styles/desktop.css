@@ -1,0 +1,9 @@
+@media(min-width: 1200px){
+    body {
+        grid-template-areas: 
+        "p v"
+        "t t";
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
