@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+}
+
+ul {
+    list-style: none;
+}
+
+#toggle-nav {
+    display: none;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__link, .dropdown__link {
+    text-transform: uppercase;
+    text-decoration: none;
+}

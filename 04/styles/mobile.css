@@ -1,0 +1,29 @@
+#toggle-nav:checked + .nav__list {
+    display: flex;
+}
+
+.nav__list {
+    flex-direction: column;
+}
+.nav__item {
+    width: 100%;
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, .05);
+}
+.nav__link, .dropdown__link {
+    display: inline-block;
+    width: 100%;
+}
+
+.nav__link {
+    padding: 1em 1em;
+}
+
+.dropdown__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown__link {
+    padding-left: 5em;
+    margin: .5em 0;
+}

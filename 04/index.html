@@ -7,23 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <!-- Styles -->
-    <link rel="stylesheet" href="mobile.css">
-    <link rel="stylesheet" media="(orientation: landscape) and (min-width: 600px)" href="desktop.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(orientation: landscape) and (min-width: 600px)" href="./styles/desktop.css">
 
 </head>
 
 <body>
 
     <nav class="nav">
+        <label for="toggle-nav">menu</label>
+        <input type="checkbox" id="toggle-nav">
         <ul class="nav__list">
             <li class="nav__item">
                 <a href="#" class="nav__link">start</a>
             </li>
             <li class="nav__item">
                 <a href="#" class="nav__link dropdown">oferta</a>
-                <ul class="dropdown">
-                    <li class="dropdown__item"><a href="" class="dropdown__link">strony internetowe</a></li>
-                    <li class="dropdown__item"><a href="" class="dropdown__link">pozycjonowanie stron www</a></li>
+                <ul class="dropdown__list">
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">strony internetowe</a></li>
+                    <li class="dropdown__item"><a href="#" class="dropdown__link">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
             <li class="nav__item">
