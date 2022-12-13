@@ -11,16 +11,6 @@
     --navbarHeight: 50px;
 }
 
-.clearfix {
-overflow: auto;
-}
-
-.clearfix::after {
-    content: '';
-    display: block;
-    clear: both;
-}
-
 ul {
     list-style-type: none;
 }
