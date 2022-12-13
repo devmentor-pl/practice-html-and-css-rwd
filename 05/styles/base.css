@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* colors */
+    --menuBtnColor: #555;
+    /* dimensions */
+    --navbarHeight: 50px;
+}
+
+.clearfix {
+overflow: auto;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.row, .container, .cell {
+    /* border: 5px solid; */
+}
+
+.row {
+    border-color: green;
+    margin-bottom: 1em;
+}
+
+.container {
+    border-color: blue;
+    max-width: 1000px;
+    margin: 1em auto;
+}
+
+.section {
+    margin: 3em 0;
+}
+
+.cell {
+    border-color: orange;
+    background-color: orange;
+    margin: 0;
+}
