@@ -1,0 +1,55 @@
+/* Desktop */
+
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.navbar__hamburger-lines {
+    display: none;
+}
+
+.navbar__list {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: space-around;
+}
+
+.navbar__item {
+    flex-basis: 30%;
+    box-shadow: none;
+    align-items: center;
+}
+
+.navbar__link {
+    display: inline;
+    flex: 1;
+    flex-basis: auto;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+/* Sections */
+.section__container {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.section__content {
+    flex-basis: 50%;
+}
+
+.section--small .section__content {
+    flex-basis: 30%;
+}
+
+/* Footer */
+.footer__container {
+    height: 70px;
+}
+
+.footer__content {
+    height: 30px;
+}

@@ -1,0 +1,19 @@
+.container {
+    grid-template-areas: 
+    "picture video"
+    "text text";
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.p {
+    grid-area: picture;
+}
+
+.t {
+    grid-area: text;
+}
+
+.v {
+    grid-area: video;
+}

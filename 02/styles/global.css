@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50vh;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
@@ -18,9 +24,26 @@
 }
 
 .b {
+    grid-row: 2/3;
     border-color: #ffdfba;
 }
 
 .c {
     border-color: #baffc9;
+}
+
+@media (min-width: 600px) {
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .a {
+        grid-column: 1/3;
+    }
+
+    .b {
+        grid-column: 2/3;
+    }
 }
