@@ -1,0 +1,25 @@
+body {
+	display: grid;
+	grid-template-areas:
+		"P"
+		"T"
+		"V";
+}
+
+.t {
+	grid-area: T;
+}
+
+.p {
+	grid-area: P;
+}
+
+.v {
+	grid-area: V;
+}
+
+.t,
+.p,
+.v {
+	height: 50vh;
+}
