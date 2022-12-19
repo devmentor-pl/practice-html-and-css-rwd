@@ -26,6 +26,27 @@
 	border-color: #baffc9;
 }
 
-.img {
-	max-width: 100%;
+body {
+	display: grid;
+}
+
+.p,
+.p img {
+	max-height: 100%;
+	width: auto;
+}
+
+.v {
+	height: 0;
+	padding-bottom: calc(315 / 560 * 100%);
+	position: relative;
+	width: 100%;
+}
+
+iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
 }

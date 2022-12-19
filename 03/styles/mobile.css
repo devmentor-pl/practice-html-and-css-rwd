@@ -1,8 +1,8 @@
 body {
 	display: grid;
 	grid-template-areas:
-		"P"
 		"T"
+		"P"
 		"V";
 }
 
@@ -16,10 +16,4 @@ body {
 
 .v {
 	grid-area: V;
-}
-
-.t,
-.p,
-.v {
-	height: 50vh;
 }
