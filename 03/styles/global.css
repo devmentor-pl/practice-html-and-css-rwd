@@ -37,7 +37,6 @@ body {
 }
 
 .v {
-	height: 0;
 	padding-bottom: calc(315 / 560 * 100%);
 	position: relative;
 	width: 100%;
