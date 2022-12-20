@@ -37,17 +37,13 @@
 	padding-top: 20px;
 }
 
-.hamburger:focus + .navbar__list {
-	display: block;
-}
-
 input {
 	width: 40px;
 	height: 35px;
 	position: absolute;
 	left: 20px;
 	transform: translateX(-50%);
-	visibility: hidden;
+
 	z-index: 1;
 }
 
@@ -55,10 +51,10 @@ input {
 	position: relative;
 }
 
-.nav__list {
-	display: none;
-}
-
 input:checked + .nav__list {
 	display: block;
+}
+
+.nav__list {
+	display: none;
 }

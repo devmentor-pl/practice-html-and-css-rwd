@@ -20,12 +20,11 @@ body {
 
 .nav__item {
 	padding-left: 10px;
+	padding-top: 10px;
 }
 
-.nav__list .nav__item,
 .dropdown .dropdown__item {
 	padding-top: 10px;
-	padding-bottom: 10px;
 }
 
 .dropdown {
