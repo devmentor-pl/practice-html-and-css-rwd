@@ -1,24 +1,9 @@
-body {
-	display: grid;
-	grid-template-areas:
-		"top"
-		"small"
-		"big"
-		"bottom";
+.content__container--small {
+	display: flex;
+	flex-direction: column;
+	column-gap: 5px;
 }
 
-.header {
-	grid-area: top;
-}
-
-.content--small {
-	grid-area: small;
-}
-
-.content--big {
-	grid-area: big;
-}
-
-.footer {
-	grid-area: bottom;
+.content__column--small.small {
+	margin-bottom: 10px;
 }
