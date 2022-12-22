@@ -1,0 +1,31 @@
+.nav__list {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.hamburger,
+input {
+	display: none;
+}
+
+.dropdown {
+	display: none;
+}
+
+.nav__item--drop:hover .dropdown {
+	display: block;
+}
+
+.nav__item--drop {
+	position: relative;
+	text-align: center;
+}
+
+.dropdown {
+	position: absolute;
+	transform: translateX(-50%);
+	left: 32px;
+}
