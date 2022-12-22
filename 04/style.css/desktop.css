@@ -15,11 +15,11 @@ input {
 	display: none;
 }
 
-.drop.nav__item:hover .dropdown {
+.nav__item--drop:hover .dropdown {
 	display: block;
 }
 
-.drop.nav__item {
+.nav__item--drop {
 	position: relative;
 	text-align: center;
 }

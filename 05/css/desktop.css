@@ -30,8 +30,8 @@ input,
 	height: 50vh;
 }
 
-.content__column--small.small,
-.content__column--small.bigger {
+.content__column--small,
+.content__column--bigger {
 	width: calc(50% - 5px);
 	height: calc(100% - 10px);
 }
@@ -43,13 +43,13 @@ input,
 	height: 50vh;
 }
 
-.content__column--big.narrow {
+.content__column--narrow {
 	width: calc(30% - 20px / 3);
 	height: calc(100% - 10px);
 	margin: 5px;
 }
 
-.content__column--big.wide {
+.content__column--wide {
 	margin: 5px;
 	width: calc(35% - 20px / 3);
 	height: calc(100% - 10px);

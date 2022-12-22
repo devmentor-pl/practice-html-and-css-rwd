@@ -1,21 +1,19 @@
 .content__container--small {
 	display: flex;
 	flex-direction: column;
+	height: calc(100vh - 70px);
 }
 
 .header__container {
 	height: 70px;
 }
 
-.content__container--small {
-	height: calc(100vh - 70px);
-}
-.content__column--small.small {
+.content__column--small {
 	margin-bottom: 10px;
 	height: 45%;
 }
 
-.content__column--small.bigger {
+.content__column--bigger {
 	height: 55%;
 }
 
@@ -112,7 +110,7 @@ input {
 	grid-area: text;
 }
 
-.content__column--big.big {
+.content__column--extended {
 	margin-bottom: 10px;
 }
 
