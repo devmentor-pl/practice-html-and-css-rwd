@@ -1,0 +1,7 @@
+body {
+	grid-template-areas:
+		'header header'
+		'section main';
+
+	grid-template-rows: repeat(2, 50vh);
+}

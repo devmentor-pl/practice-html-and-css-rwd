@@ -1,0 +1,21 @@
+body {
+	display: grid;
+	grid-template-areas:
+		'header'
+		'main'
+		'section';
+
+	grid-template-rows: repeat(3, 50vh);
+}
+
+.a {
+	grid-area: header;
+}
+
+.b {
+	grid-area: main;
+}
+
+.c {
+	grid-area: section;
+}
