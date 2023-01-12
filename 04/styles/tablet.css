@@ -1,0 +1,7 @@
+.burger {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+}
