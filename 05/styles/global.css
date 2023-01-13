@@ -1,0 +1,28 @@
+body {
+	background-color: rgb(241, 241, 241);
+}
+
+.row,
+.container,
+.cell {
+	margin: 5px;
+	padding: 5px;
+	outline: 1px solid transparent;
+}
+
+.row {
+	outline-color: green;
+	width: 100vw;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1000px;
+	outline-color: royalblue;
+}
+
+.cell {
+	outline-color: orange;
+	background-color: orange;
+	min-height: 50px;
+}
