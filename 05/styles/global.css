@@ -5,8 +5,6 @@ body {
 .row,
 .container,
 .cell {
-	margin: 5px;
-	padding: 5px;
 	outline: 1px solid transparent;
 }
 

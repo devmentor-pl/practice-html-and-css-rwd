@@ -1,0 +1,59 @@
+.row {
+	padding: 3px;
+	margin: 0;
+}
+
+.cell {
+	margin: 5px 1px;
+}
+
+.header__container {
+	position: relative;
+}
+
+.burger__input {
+	display: none;
+}
+
+.burger__ico {
+	position: absolute;
+	font-size: 50px;
+	right: 10px;
+	padding: 0 5px;
+}
+
+.header__nav {
+	max-width: 50%;
+	margin: 0 auto;
+	visibility: hidden;
+}
+
+.burger__input:checked + .header__nav {
+	visibility: visible;
+}
+
+.content__container,
+.comments__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 70vh;
+}
+
+.content__article {
+	height: 50%;
+}
+
+.comment {
+	height: calc(100% / 3);
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer__text {
+	min-width: 45%;
+}
