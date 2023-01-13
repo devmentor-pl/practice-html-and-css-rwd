@@ -3,20 +3,17 @@
 	position: relative;
 }
 
-.burger__ico {
-	font-size: 48px;
+.burger__btn {
 	margin: 15px;
 	padding: 15px;
+	width: 40px;
+	height: 35px;
+	border: 0;
+	border-top: 5px solid black;
 	position: absolute;
-	right: 0;
-}
-
-.burger__input:checked + .nav__list {
-	display: block;
-}
-
-.burger__input {
-	display: none;
+	right: 20px;
+	top: 20px;
+	transition: transform 0.3s;
 }
 
 .nav__list {
@@ -55,4 +52,35 @@
 
 .arrow {
 	display: none;
+}
+
+.burger__btn::before,
+.burger__btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid black;
+}
+
+.burger__btn::after {
+	transform: translateY(25px);
+	transition: transform 0.3s;
+}
+.burger__btn::before {
+	transform: translateY(10px);
+}
+
+.burger__btn:focus {
+	transform: rotate(45deg) translateY(5px);
+	border-top: none;
+}
+
+.burger__btn:focus ~ .nav__list {
+	display: block;
+}
+
+.burger__btn:focus::after {
+	transform: rotate(-90deg) translateX(-10px);
 }
