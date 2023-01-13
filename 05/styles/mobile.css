@@ -15,6 +15,10 @@
 	display: none;
 }
 
+.header__title {
+    display: none;
+}
+
 .burger__ico {
 	position: absolute;
 	font-size: 50px;
