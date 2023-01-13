@@ -23,23 +23,26 @@
 }
 
 .content__container {
-	height: 50vh;
-	display: flex;
-	flex-direction: row;
-}
-
-.content__article {
-	width: 49%;
-	height: 98%;
-}
-
-.comments__container {
 	height: 40vh;
 	display: flex;
 	flex-direction: row;
 }
 
+.content__article {
+	width: 50%;
+	height: calc(100% - 20px);
+	margin: 10px 5px;
+}
+
+.comments__container {
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
 .comment {
-	min-width: 33%;
-	height: 97%;
+	width: 33%;
+	height: calc(100% - 20px);
+	margin: 10px 10px;
 }
