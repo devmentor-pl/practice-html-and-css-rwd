@@ -16,6 +16,10 @@
 	transition: transform 0.3s;
 }
 
+.burger__input {
+	display: none;
+}
+
 .nav__list {
 	margin-left: 30px;
 	position: relative;
@@ -68,19 +72,20 @@
 	transform: translateY(25px);
 	transition: transform 0.3s;
 }
+
 .burger__btn::before {
 	transform: translateY(10px);
 }
 
-.burger__btn:focus {
+.burger__input:checked + .burger__btn {
 	transform: rotate(45deg) translateY(5px);
 	border-top: none;
 }
 
-.burger__btn:focus ~ .nav__list {
+.burger__input:checked ~ .nav__list {
 	display: block;
 }
 
-.burger__btn:focus::after {
+.burger__input:checked + .burger__btn::after {
 	transform: rotate(-90deg) translateX(-10px);
 }
