@@ -5,19 +5,10 @@
 
 .burger__ico {
 	font-size: 48px;
-	margin: 20px;
+	margin: 15px;
 	padding: 15px;
 	position: absolute;
 	right: 0;
-}
-
-.nav__list {
-	margin-left: 20px;
-	position: relative;
-	left: 5%;
-	top: 20%;
-
-	display: none;
 }
 
 .burger__input:checked + .nav__list {
@@ -28,10 +19,17 @@
 	display: none;
 }
 
+.nav__list {
+	margin-left: 30px;
+	position: relative;
+	top: 20%;
+	display: none;
+}
+
 .nav__item,
 .dropdown__item {
 	padding: 15px 0;
-	max-width: 80%;
+	max-width: 90%;
 }
 
 .nav__link {
@@ -43,10 +41,8 @@
 }
 
 .nav__dropdown {
-	max-width: 100vw;
-	position: relative;
-	left: 10%;
-	padding: 15px 15px;
+	margin-left: 5%;
+	padding: 15px 0 0 15px;
 }
 
 .dropdown__link {
