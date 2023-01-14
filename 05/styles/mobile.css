@@ -11,7 +11,7 @@
 	position: relative;
 }
 
-.burger__input {
+.header__burger-input {
 	display: none;
 }
 
@@ -19,7 +19,7 @@
     display: none;
 }
 
-.burger__ico {
+.header__burger-ico {
 	position: absolute;
 	font-size: 50px;
 	right: 10px;
@@ -32,7 +32,7 @@
 	visibility: hidden;
 }
 
-.burger__input:checked + .header__nav {
+.header__burger-input:checked + .header__nav {
 	visibility: visible;
 }
 
