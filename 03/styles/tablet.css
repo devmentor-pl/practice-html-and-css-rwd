@@ -1,0 +1,9 @@
+body {
+	grid-template-areas:
+		'header main'
+		'side main';
+
+	grid-template-columns:
+		minmax(200px, 50vw)
+		auto;
+}
