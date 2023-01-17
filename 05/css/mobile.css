@@ -1,0 +1,41 @@
+
+.nav__container{
+    justify-content: center;
+    position: relative; 
+}
+
+button.hamburger{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hamburger {
+  
+  background-color: white;
+  display: block;
+  margin: 1rem;
+  width: 35px;
+  height: 25px;
+  border: 0;
+  border-top: 5px solid orangered;
+  position: relative;
+  transition: 0.3s transform linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid orangered;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+ 
+}
+

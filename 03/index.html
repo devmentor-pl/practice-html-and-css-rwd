@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="styles/desktop.css"
+    />
+  </head>
+  <body>
+    <main class="t">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum
+        cursus egestas. Pellentesque cursus quam erat, a pulvinar orci rutrum
+        non. Fusce vulputate risus ac turpis volutpat vestibulum. Maecenas
+        elementum dolor libero. Ut cursus ipsum id imperdiet ultrices. Integer
+        ornare diam eu dui consequat elementum. Nullam convallis elit purus, id
+        maximus velit convallis a. Vestibulum lobortis maximus sapien, et
+        consequat orci laoreet vitae. Proin ex ante, porta a vestibulum id,
+        euismod eget purus. Fusce gravida ut lectus at interdum. In hac
+        habitasse platea dictumst. Duis at ipsum leo. Etiam vel nulla et sem
+        elementum placerat.
+      </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source srcset="/03/img/dm-300w.jpg" media="(min-width: 320px)">
+           
+            
+             <source srcset="/03/img/pets1200.jpg"
+            media="(min-width: 600px)">
 
-</body>
+            <img src="/03/img/pets1200.jpg" alt="">
+
+        </picture>
+    </header>
+    <side class="v">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/KPKez2Ean7o"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </side>
+  </body>
 </html>

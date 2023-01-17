@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header, .section__two, .section__three, .footer{
+    border: 2px solid green;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 5px auto;
+    border: 2px solid blue;
+}
+
+
+
+.nav__container{
+    display: flex;
+}
+
+.nav{
+   
+    background-color: orange;
+    flex-basis: 25%;
+    height: 50px;
+    margin: .5rem;
+}
+
+.article--one{
+    background-color: orange;
+    height: 200px;
+    margin: 10px;
+    
+}
+
+.article--two{
+    background-color: orange;
+    height: 300px;
+    margin: 10px;
+    
+}
+
+.comment{
+    background-color: orange;
+    height: 100px;
+    margin: 10px;
+    
+}
+
+.copywrite{
+
+    background-color: orange;
+    height: 50px;
+    width: 25%;
+    margin: 10px auto;
+
+
+}
+
+
+  
+
+
+
+

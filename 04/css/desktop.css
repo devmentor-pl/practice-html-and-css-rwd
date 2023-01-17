@@ -1,0 +1,42 @@
+.hamburger{
+    display: none;
+}
+
+.nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.nav__li--active{
+    position: relative;
+}
+
+.nav__li{
+    padding: 20px;
+}
+
+
+ul .nav__ul--secondary{
+    border-top: 1px solid orangered;
+    background-color: black;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 70%;
+}
+
+.nav__li--secondary{
+    padding: 1rem;
+}
+
+.nav input:checked + ul{
+    display: flex;
+}
+
+
+
+   
+
+

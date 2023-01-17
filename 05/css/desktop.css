@@ -1,0 +1,49 @@
+button.hamburger {
+  display: none;
+  width: 0;
+ 
+}
+
+.nav__container{
+    justify-content: space-between;
+}
+
+
+.nav__two{
+    flex-basis: 30%;
+    height: 50px;
+    background-color: orange;
+     margin: .5rem;
+}
+
+
+.articles__container{
+   
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.article--one, .article--two{
+
+    width: 49%;
+    height: 25vh;
+    margin: 0;
+}
+
+.comments{
+    display: flex;
+    
+    
+}
+
+.comment{
+    width: 33.33%;
+    height: 15vh;
+    
+
+
+}
+
+
+
