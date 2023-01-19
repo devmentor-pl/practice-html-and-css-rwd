@@ -1,7 +1,12 @@
-body {
-  background-color: #f6f9f9;
+:root {
+  --color-gray: #f6f9f9;
+  --color-white: #ffffff;
+  --color-black: #444444;
+  --color-blu: #034ae3;
 }
-nav a {
-  color: #000000;
-  text-decoration: none;
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 2rem;
 }

@@ -1,11 +1,31 @@
-nav ul {
-  display: flex;
-  align-items: center;
-}
-li {
-  display: flex;
-  align-items: center;
-}
-nav label {
+.nav__hamburger {
   display: none;
+}
+.nav__list {
+  display: block;
+  display: flex;
+}
+.nav__item--children {
+  position: relative;
+}
+.nav__list--dropdown {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: -60px;
+  right: -180px;
+  display: none;
+}
+.nav__item:hover > .nav__list--dropdown {
+  display: block;
+}
+.nav__link {
+  padding: 5px 20px;
+}
+.nav__link:hover {
+  color: var(--color-white);
+  background-color: var(--color-black);
+  text-decoration: none;
+}
+.nav__link--dropdown {
 }

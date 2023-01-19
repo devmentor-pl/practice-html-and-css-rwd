@@ -26,30 +26,58 @@
     <link
       rel="stylesheet"
       href="styles/tablet.css"
-      media="(min-width: 761px)"
+      media="(min-width: 600px)"
     />
   </head>
   <body>
-    <nav>
-      <label for="menu-switcher">menu</label>
+    <nav class="nav clearfix">
+      <label
+        class="nav__hamburger"
+        for="toggler"
+      ></label>
       <input
+        class="nav__toggler"
         type="checkbox"
-        id="menu-switcher"
+        id="toggler"
       />
 
-      <ul>
-        <li>
-          <a href="#">start</a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a
+            href="#"
+            class="nav__link"
+            >start</a
+          >
         </li>
-        <li class="dropdown">
-          <a href="#">oferta</a>
-          <ul class="dropdown-content">
-            <li><a href="">strony internetowe</a></li>
-            <li><a href="">pozycjonowanie stron www</a></li>
+        <li class="nav__item nav__item--children">
+          <a
+            href="#"
+            class="nav__link"
+            >oferta</a
+          >
+          <ul class="nav__list nav__list--dropdown">
+            <li class="nav__item nav__item--dropdown">
+              <a
+                href="#"
+                class="nav__link nav__link--dropdown"
+                >strony internetowe</a
+              >
+            </li>
+            <li class="nav__item nav__item--dropdown">
+              <a
+                href="#"
+                class="nav__link nav__link--dropdown"
+                >pozycjonowanie stron www</a
+              >
+            </li>
           </ul>
         </li>
-        <li>
-          <a href="#">kontakt</a>
+        <li class="nav__item">
+          <a
+            href="#"
+            class="nav__link"
+            >kontakt</a
+          >
         </li>
       </ul>
     </nav>

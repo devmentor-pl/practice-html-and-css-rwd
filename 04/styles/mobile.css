@@ -1,65 +1,58 @@
-nav {
-  background-color: white;
+.nav {
+  background-color: var(--color-white);
+  padding: 20px 40px;
 }
-nav > ul > li {
-  margin: 5px;
+body {
+  background-color: var(--color-gray);
+}
+.nav__hamburger {
+  display: block;
+  height: 2rem;
+  width: 3rem;
+
+  border-top: 3px solid var(--color-black);
+  border-bottom: 3px solid var(--color-black);
+
+  float: right;
+}
+.nav__hamburger::after {
+  display: block;
+  content: '';
+  height: 3px;
+  background-color: var(--color-black);
+  position: relative;
+  top: 6px;
+}
+.nav__toggler {
+  display: none;
+}
+/* .nav__list:not(.nav__list--dropdown) {
+  display: none;
+} */
+.nav__list {
+  display: none;
+}
+.nav__list--dropdown {
+  display: block;
+}
+.nav__toggler:checked + .nav__list {
+  display: block;
+}
+.nav__list--dropdown {
+  padding-left: 3rem;
+}
+.nav__item {
   padding: 5px 10px;
-  text-align: center;
-  border: 2px solid transparent;
 }
-nav > ul > li > a {
+.nav__link {
+  color: var(--color-black);
+  text-decoration: none;
   text-transform: uppercase;
 }
-nav input:checked + ul {
-  display: block;
+.nav__link:hover {
+  color: var(--color-blu);
+  text-decoration: underline;
 }
-nav {
-  position: relative;
-}
-nav label {
-  position: absolute;
-  right: 10px;
-  top: 10px;
-}
-nav input {
-  display: none;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #303030;
-  min-width: 230px;
-  z-index: 1;
-  text-align: left;
-  margin: 5px -10px;
-}
-.dropdown-content li {
-  padding: 0;
-  margin: 0;
-  text-align: left;
-}
-.dropdown-content a {
-  color: #ffffff;
-  width: 100%;
-  display: block;
-  padding: 15px 10px;
-}
-.dropdown-content a:hover {
-  background-color: #5c5c5c;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown:hover,
-nav > ul > li:hover {
-  border-top: 2px solid #034ae3;
-}
-nav > ul > li > a:hover {
-  color: #034ae3;
+.nav__link--dropdown {
+  text-transform: lowercase;
 }
