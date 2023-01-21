@@ -1,0 +1,23 @@
+:root {
+  --color-yellow: #e6b400;
+  --color-gray: #5c5e60;
+}
+.row,
+.cell,
+.container {
+  padding: 5px;
+  outline: 3px solid;
+}
+.row {
+  outline-color: green;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  outline-color: blue;
+}
+.cell {
+  background-color: var(--color-yellow);
+  min-height: 50px;
+  outline-color: var(--color-yellow);
+}
