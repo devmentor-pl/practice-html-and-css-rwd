@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
+    grid-template-rows: 50% 50% 50%;
+
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
@@ -11,16 +22,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a;
 }
 
 .b {
     border-color: #ffdfba;
+     grid-area: b;
 }
 
 .c {
     border-color: #baffc9;
+     grid-area: c;
+}
+
+@media(min-width: 601px) {
+
+    body{
+    max-width: 1200px;   
+    margin: 0 auto; 
+    grid-template-areas:
+    "a a"
+    "c b"
+    ;
+}
+
+
 }
