@@ -1,0 +1,12 @@
+:root {
+  --color-gray: #f6f9f9;
+  --color-white: #ffffff;
+  --color-black: #444444;
+  --color-blu: #034ae3;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-size: 2rem;
+}

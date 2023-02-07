@@ -1,0 +1,46 @@
+.nav__hamburger {
+  display: block;
+  height: 2rem;
+  width: 3rem;
+
+  border-top: 3px solid var(--color-gray);
+  border-bottom: 3px solid var(--color-gray);
+}
+.nav__hamburger::after {
+  display: block;
+  content: '';
+  height: 3px;
+  background-color: var(--color-gray);
+  position: relative;
+  top: 11px;
+}
+.nav__toggler {
+  display: none;
+}
+.header__nav-list {
+  display: none;
+}
+.nav__toggler:checked + .header__nav-list {
+  display: block;
+}
+.header__container {
+  display: flex;
+}
+.header__logo {
+  flex-basis: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header__nav {
+  flex-basis: 10%;
+}
+.section .cell {
+  min-height: 200px;
+}
+.article + .article {
+  margin-top: 10px;
+}
+.footer {
+  width: 30%;
+  margin: 0 auto;
+}

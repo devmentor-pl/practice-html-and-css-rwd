@@ -1,0 +1,30 @@
+section .container {
+  margin-block: 10px;
+  padding-block: 10px;
+}
+.row {
+  margin-bottom: 15px;
+}
+.nav__hamburger {
+  display: none;
+}
+.header__container {
+  justify-content: space-between;
+}
+.header__logo {
+  flex-basis: 20%;
+  margin: 0;
+}
+.header__nav {
+  flex-basis: 40%;
+}
+.section {
+  display: flex;
+  gap: 10px;
+}
+.article + .article {
+  margin-top: 0;
+}
+.section > * {
+  flex-basis: 100%;
+}
