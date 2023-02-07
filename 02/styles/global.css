@@ -14,13 +14,26 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: c;
+}
+
+@media (min-width:601px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "c b"
+        ;
+    }
 }
