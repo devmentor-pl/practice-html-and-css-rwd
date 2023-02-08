@@ -48,6 +48,8 @@ img{
 /* mobile */
 
 body{
+    max-width: 1400px;
+    margin: 0 auto;
     display: grid;
     grid-template-areas:
     "area-p"
@@ -74,15 +76,15 @@ body{
 }
 
 /*desktop*/
-@media screen and (min-width: 600px){
+@media screen and (min-width: 1200px){
 
     body{
         display: grid;
         grid-template-areas:
-        "area-p area-t"
-        "area-v area-t";
+        "area-p area-v"
+        "area-t area-t";
 
-        grid-template-columns: minmax(200px, 50vw) auto;
+
 
     }
 
