@@ -1,7 +1,14 @@
+html {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
 body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    max-width: 1400px;
 }
 
 .p {
