@@ -38,11 +38,31 @@
     </main>
     <header class="p">
         <picture>
-            <source srcset="pic.jpg">
+            <source
+                srcset="img/large.jpg"
+                media="(min-width: 1200px)"
+            />
+            <source
+                srcset="img/medium.jpg"
+                media="(min-width: 600px)"
+            />
+            <source
+                srcset="img/small.jpg"
+                media="(max-width: 599px)"
+            />
+            <img
+                class="image"
+                src="./img/large.jpg"
+            />
         </picture>
     </header>
     <side class="
-                v">V</side>
+                v">
+        <iframe
+            src=""
+            frameborder="0"
+        ></iframe>
+    </side>
 
 </body>
 
