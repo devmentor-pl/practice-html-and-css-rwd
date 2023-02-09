@@ -1,0 +1,68 @@
+.hamburger {
+    display: none;
+}
+
+.menu {
+    background-color: #ffffff;
+    display: flex;
+    margin: 20px;
+    height: 4rem;
+}
+
+.menu__item {
+    padding: 30px 40px;
+    border: none;
+    border-top: 5px solid transparent;
+    position: relative;
+}
+
+.menu__item:hover {
+    border-top: 5px solid #009AE1;
+    /*niebieski border i kolor najechania*/
+    color: #009AE1;
+    position: relative;
+    line-height: 25px;
+}
+
+.drp-menu {
+    background-color: #333333;
+    color: #ffffff;
+    display: none;
+    min-width: 170px;
+    padding: 10px;
+    position: relative;
+}
+
+.menu__item:hover>ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    line-height: 30px;
+}
+
+.drp-menu__item:hover>ul {
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 100%;
+    line-height: 30px;
+}
+
+.menu__item--active::after {
+    content: ">";
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 10%;
+}
+
+.drp-menu__item {
+    width: 13vw;
+    background-color: #333333;
+    border: none;
+}
+
+.drp-menu__item a {
+    width: 10vw;
+    background-color: #333333;
+    color: white;
+}
