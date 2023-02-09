@@ -1,6 +1,7 @@
+/* LINK */
 a {
     text-decoration: none;
-    color: #000;
+    color: white;
 }
 
 a:hover {
@@ -8,8 +9,11 @@ a:hover {
 }
 
 a:visited {
-    color: #000;
+    color: white;
 }
+
+/* END OF LINK */
+/* BUTTON */
 
 .hamburger {
     width: 10vw;
@@ -47,22 +51,44 @@ a:visited {
     transform: rotate(-90deg) translate(-7px);
 }
 
-.menu {
+.hamburger:focus+ul {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 3rem 3rem 3rem;
+
+}
+
+
+/* END OF BUTTON */
+/* MENU */
+
+.menu {
+    display: none;
 }
 
 .menu__item {
-    border: 1px solid red;
+    border: 1px solid white;
+    background-color: #333333;
     padding-left: 10px;
-}
-
-.drp-menu {
-    display: none;
+    min-height: 2rem;
     position: relative;
 }
 
-.drp-menu__item {
+.drp-menu {
+    display: block;
+    position: relative;
+    background-color: #333333;
+    color: white;
+}
+
+.drp-menu__item1,
+.drp-menu__item2 {
+    display: block;
     position: absolute;
+    top: 40%;
+    left: 30%;
+    line-height: 30px;
+    border: 1px solid white;
+}
+
+.menu__item--active {
+    min-height: 5rem;
 }
