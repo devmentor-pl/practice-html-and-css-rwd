@@ -23,24 +23,26 @@
     <link
         rel="stylesheet"
         href="./css/desktop.css"
+        media="(min-width: 601px)"
     >
 </head>
 
 <body>
 
     <nav>
-        <ul>
-            <li>
+        <button class="hamburger"></button>
+        <ul class="menu">
+            <li class="menu__item">
                 <a href="#">start</a>
             </li>
-            <li>
+            <li class="menu__item">
                 <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+                <ul class="drp-menu">
+                    <li class="drp-menu__item"><a href="">strony internetowe</a></li>
+                    <li class="drp-menu__item"><a href="">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menu__item">
                 <a href="#">kontakt</a>
             </li>
         </ul>
