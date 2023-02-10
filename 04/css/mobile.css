@@ -12,8 +12,8 @@ nav input {
 
 nav label {
     position: absolute;
-    left: 88%;
-    top: 10px;
+    left: 83%;
+    top: 15px;
 }
 
 .nav__hamburger {
@@ -41,26 +41,52 @@ nav label {
 }
 
 nav input:checked+.menu {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 70vw;
+    grid-template-rows: 3rem 3rem 3rem;
     position: absolute;
     top: 10vh;
+    left: 5vw;
 }
 
-.menu__item {
+.menu__items {
     border: 1px solid white;
 
     display: grid;
-    grid-template-columns: 100vw;
-    align-content: center;
-    min-height: 3rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    min-height: 4rem;
 }
 
 /* DRP-MENU */
 
 .drp-menu {
     display: none;
+}
 
+li input {
+    display: none;
+}
+
+
+li label {
+    position: absolute;
+    left: 20%;
+    top: 6.5vh;
+    transform: rotate(90deg);
+}
+
+.items__hamburger {
+    display: block;
+}
+
+li input:checked+.drp-menu {
+    display: grid;
+    grid-template-columns: 80vw;
+    grid-template-rows: 1rem 1rem;
+    position: absolute;
+    top: 7vh;
+    left: 30vw;
 }
 
 /* END OF DRP_MENU */
