@@ -1,13 +1,22 @@
 /* NAV */
 
-.nav {
+nav {
     position: relative;
     background-color: var(--main);
 }
 
-nav input {
+nav ul {
     display: none;
 }
+
+header input:checked+ul {
+    display: block;
+}
+
+header input {
+    display: none;
+}
+
 
 
 nav label {
@@ -32,35 +41,3 @@ nav label {
     position: relative;
     top: 8px;
 }
-
-/* END OF NAV */
-/* MENU */
-
-.menu {
-    display: none;
-}
-
-nav input:checked+.menu {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 10vh;
-}
-
-.menu__item {
-    border: 1px solid white;
-
-    display: grid;
-    grid-template-columns: 100vw;
-    align-content: center;
-    min-height: 3rem;
-}
-
-/* DRP-MENU */
-
-.drp-menu {
-    display: none;
-
-}
-
-/* END OF DRP_MENU */

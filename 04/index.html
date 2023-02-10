@@ -18,6 +18,10 @@
     >
     <link
         rel="stylesheet"
+        href="./css/global.css"
+    >
+    <link
+        rel="stylesheet"
         href="./css/mobile.css"
     >
     <link
@@ -28,26 +32,39 @@
 </head>
 
 <body>
-
-    <nav>
-
-        <button class="hamburger"></button>
+    <nav class="nav">
+        <label
+            class="nav__hamburger"
+            for="menu-switch"
+        ></label>
+        <input
+            type="checkbox"
+            id="menu-switch"
+        >
         <ul class="menu">
-            <li class="menu__item">
-                <a href="#">start</a>
-            </li>
-            <li class="menu__item menu__item--active">
+            <li>
                 <a
-                    class="drp-menu__item--active"
+                    class="menu__item item1"
+                    href="#"
+                >start</a>
+            </li>
+            <li>
+                <a
+                    class="menu__item item2"
                     href="#"
                 >oferta</a>
                 <ul class="drp-menu">
-                    <li class="drp-menu__item item1"><a href="">strony internetowe</a></li>
-                    <li class="drp-menu__item item2"><a href="">pozycjonowanie stron www</a></li>
+                    <li class="drp-menu__item"><a href="">strony internetowe</a></li>
+                    <li class="drp-menu__item">
+                        <a href="">pozycjonowanie stron www</a>
+                    </li>
                 </ul>
             </li>
-            <li class="menu__item">
-                <a href="#">kontakt</a>
+            <li>
+                <a
+                    class="menu__item item3"
+                    href="#"
+                >kontakt</a>
             </li>
         </ul>
     </nav>

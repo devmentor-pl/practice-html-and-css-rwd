@@ -1,0 +1,22 @@
+body {
+    background-color: #F5F5F5;
+}
+
+:root {
+    --main: #f4f4f4;
+}
+
+/* LINK */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8b8b8b;
+}
+
+a:visited {
+    color: black;
+}
+
+/* END OF LINK */
