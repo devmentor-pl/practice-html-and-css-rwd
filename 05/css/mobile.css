@@ -114,3 +114,22 @@ nav label {
 }
 
 /* END OF MAIN */
+
+/* ASIDE */
+
+.aside {
+    display: flex;
+    justify-content: stretch;
+}
+
+.aside__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.aside__item {
+    height: calc(30% - 5px);
+}
+
+/* END OF ASIDE */
