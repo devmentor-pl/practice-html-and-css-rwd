@@ -40,6 +40,7 @@ nav label {
     display: none;
 }
 
+
 nav input:checked+.menu {
     display: grid;
     grid-template-columns: 70vw;
@@ -50,7 +51,7 @@ nav input:checked+.menu {
 }
 
 .menu__items {
-    border: 1px solid white;
+    border: 1px solid #009AE1;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
