@@ -38,6 +38,7 @@ body {
 nav {
     position: relative;
     background-color: var(--main);
+    height: 100%;
 }
 
 nav ul {
@@ -133,3 +134,17 @@ nav label {
 }
 
 /* END OF ASIDE */
+
+/* FOOTER */
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer__content {
+    min-width: 100px;
+}
+
+/* END OF FOOTER */

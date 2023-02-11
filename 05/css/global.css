@@ -1,17 +1,17 @@
 .row {
     border: 1px solid green;
-    min-height: 50px;
+    min-height: 30px;
 }
 
 .container {
     border: 1px solid blue;
-    min-height: 50px;
+    min-height: 30px;
     width: 100%;
 }
 
 .cell {
     border: 1px solid orange;
-    min-height: 50px;
+    min-height: 30px;
     background-color: rgb(245, 179, 56);
 }
 
