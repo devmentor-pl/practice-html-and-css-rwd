@@ -1,12 +1,13 @@
 .row {
     border: 1px solid green;
     min-height: 30px;
+    width: 100%;
 }
 
 .container {
     border: 1px solid blue;
     min-height: 30px;
-    width: 100%;
+    margin: 0 auto;
 }
 
 .cell {

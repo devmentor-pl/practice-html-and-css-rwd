@@ -17,6 +17,8 @@ body {
         "footer";
 }
 
+
+
 .nav {
     grid-area: nav;
 }
@@ -31,6 +33,10 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+.container {
+    width: 100%;
 }
 
 /* NAV */
@@ -78,12 +84,18 @@ nav label {
     top: 8px;
 }
 
-/* END OF NAV */
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.logo {
+    display: none;
+}
+
+/* END OF NAV */
+
 
 /* MENU */
 .menu {
