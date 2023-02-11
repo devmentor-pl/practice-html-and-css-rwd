@@ -9,12 +9,12 @@ html {
 body {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50px minmax(calc(30vh - 50px), auto) minmax(calc(30vh - 50px), auto) 1fr;
+    grid-template-rows: 50px minmax(calc(50vh - 40px), auto) minmax(calc(50vh - 50px), auto) 1fr;
     grid-template-areas:
         "nav"
         "main"
         "aside"
-        "footer"
+        "footer";
 }
 
 .nav {
@@ -140,7 +140,7 @@ nav label {
 .footer__container {
     display: flex;
     justify-content: center;
-
+    height: 100%;
 }
 
 .footer__content {
