@@ -22,35 +22,34 @@
     >
     <link
         rel="stylesheet"
+        media="(max-width: 760px)"
         href="./css/mobile.css"
     >
     <link
         rel="stylesheet"
+        media="(min-width: 761px)"
         href="./css/desktop.css"
-        media="(min-width: 601px)"
     >
 </head>
 
 <body>
-    <nav class="nav">
+
+    <nav class="nav row">
         <label
             class="nav__hamburger"
-            for="menu-switch"
+            for="toggler"
         ></label>
         <input
             type="checkbox"
-            id="menu-switch"
+            id="toggler"
         >
-        <ul class="menu">
-            <li>
-                <a
-                    class="menu__item"
-                    href="#"
-                >start</a>
+        <ul class="menu container">
+            <li class="menu__item menu__1 cell">
+                <a href="#">start</a>
             </li>
-            <li>
+            <li class="menu__item menu__2 cell">
                 <a
-                    class="menu__item item2"
+                    class="menu__link"
                     href="#"
                 >oferta</a>
                 <label
@@ -61,18 +60,13 @@
                     type="checkbox"
                     id="items-switch"
                 >
-                <ul class="drp-menu">
-                    <li class="drp-menu__item"><a href="">strony internetowe</a></li>
-                    <li class="drp-menu__item">
-                        <a href="">pozycjonowanie stron www</a>
-                    </li>
+                <ul class="drp-menu container">
+                    <li class="drp-menu__item cell"><a href="">strony internetowe</a></li>
+                    <li class="drp-menu__item cell"><a href="">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a
-                    class="menu__item item3"
-                    href="#"
-                >kontakt</a>
+            <li class="menu__item menu__3 cell">
+                <a href="#">kontakt</a>
             </li>
         </ul>
     </nav>

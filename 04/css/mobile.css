@@ -1,93 +1,110 @@
-/* NAV */
+.menu {
+    display: grid;
+    grid-template-areas:
+        "."
+        "menu-1"
+        "menu-2"
+        "menu-3";
 
-.nav {
-    position: relative;
-    background-color: var(--main);
+    grid-template-rows: 10vh 10vh 10vh 10vh;
+    grid-template-columns: 1fr;
+    align-items: center;
 }
 
-nav input {
+nav>input {
     display: none;
+    position: relative;
+    left: 85%;
+    top: 2%;
 }
 
 
-nav label {
-    position: absolute;
-    left: 83%;
-    top: 15px;
+.menu__1 {
+    grid-area: menu-1;
 }
+
+.menu__2 {
+    grid-area: menu-2;
+}
+
+.menu__3 {
+    grid-area: menu-3;
+}
+
+.container {
+    height: 100%;
+}
+
+.menu__item {
+    background-color: white;
+    height: 3.5rem;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid rgba(187, 187, 187, 0.37);
+    box-shadow: 0px 0px 20px 2px lightblue;
+}
+
+/* HAMBURGER */
 
 .nav__hamburger {
+    grid-area: hamburger;
     display: block;
-    width: 30px;
     height: 25px;
-    border-top: 3px solid #000;
-    border-bottom: 3px solid #000;
+    width: 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: absolute;
+    left: 85%;
+    top: 2%;
 }
 
 .nav__hamburger::after {
-    display: block;
     content: '';
+    display: block;
     height: 3px;
-    background-color: #000;
+    background-color: black;
     position: relative;
     top: 8px;
 }
 
-/* END OF NAV */
-/* MENU */
-
-.menu {
+nav .menu {
     display: none;
 }
 
-
 nav input:checked+.menu {
     display: grid;
-    grid-template-columns: 70vw;
-    grid-template-rows: 3rem 3rem 3rem;
-    position: absolute;
-    top: 10vh;
-    left: 5vw;
 }
 
-.menu__items {
-    border: 1px solid #009AE1;
+/* END OF HAMBURGER */
 
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    min-height: 4rem;
-}
-
-/* DRP-MENU */
+/* DROP-DOWN MENU */
 
 .drp-menu {
     display: none;
 }
 
-li input {
+.items__hamburger {
+    display: inline-block;
+    position: relative;
+    left: 10%;
+    color: #009AE1;
+}
+
+li>input {
     display: none;
 }
 
-
-li label {
-    position: absolute;
-    left: 20%;
-    top: 6.5vh;
-    transform: rotate(90deg);
-}
-
-.items__hamburger {
+.menu__2 input:checked+.drp-menu {
     display: block;
-}
-
-li input:checked+.drp-menu {
-    display: grid;
-    grid-template-columns: 80vw;
-    grid-template-rows: 1rem 1rem;
     position: absolute;
-    top: 7vh;
-    left: 30vw;
+    left: 40%;
+    top: 22%;
 }
 
-/* END OF DRP_MENU */
+.drp-menu__item {
+    padding: 0.5rem;
+    height: 1.5rem;
+    min-height: auto;
+}
+
+/* END OF DROP-DOWN MENU */
