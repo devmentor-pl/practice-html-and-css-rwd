@@ -1,9 +1,11 @@
-body{
+body {
     background-color: #fcfcfc;
     box-sizing: border-box;
 }
 
-.full{
+
+
+.full {
     width: 100%;
     outline: 3px solid green;
     padding: 10px 0;
@@ -11,7 +13,7 @@ body{
 
 }
 
-.container{
+.container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px;
@@ -19,56 +21,121 @@ body{
 
 }
 
-.header__container{
+.header__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
-.header__img{
+.header__img {
     width: 50px;
     height: 50px;
     background-color: orange;
 
 }
-.nav{
+
+.nav {
     width: 500px;
     height: 50px;
     background-color: orange;
 
 }
-.article, .article-2 {
+
+.article,
+.article-2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
 }
 
-.article__content{
-   height: 250px;
-  flex-basis: 49%;
-   background-color: orange;
+.article__content {
+    height: 250px;
+    flex-basis: 49%;
+    background-color: orange;
 
 }
+
 .article-2 {
-   justify-content: space-evenly;
+    justify-content: space-evenly;
 }
 
-.article-2__content{
+.article-2__content {
     height: 160px;
     flex-basis: 30%;
     background-color: orange;
 
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
-   align-content: center;
+    align-content: center;
 }
 
-.footer-content{
-   min-height: 100px;
-   width: 30%;
-   background-color: orange;
+.footer-content {
+    min-height: 100px;
+    width: 30%;
+    background-color: orange;
+
+
+}
+
+@media screen and (max-width:800px) {
+
+
+    .full {
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .nav{
+        background-color: transparent;
+        position: absolute;
+        top: 0px;
+        right: 10px;
+    }
+
+    .nav::after{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 20px;
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+
+
+    }
+
+    .nav::before{
+        content: '';
+        display: block;
+        width: 30px;
+        height: 20px;
+        border-top: 3px solid #000;
+        position: absolute;
+        top: 27px;
+        right: 10px;
+
+    }
+
+    .header__container{
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .article__content,
+    .article-2__content {
+        flex-basis: 100%;
+        margin-bottom: 5px;
+    }
+
+
 
 
 }
