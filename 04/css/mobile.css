@@ -97,12 +97,16 @@ li>input {
 .menu__2 input:checked+.drp-menu {
     display: block;
     position: absolute;
-    left: 40%;
-    top: 22%;
+    left: 35%;
+    top: 20%;
+    background-color: rgba(220, 250, 255, 0.5);
+    height: auto;
+    border: 3px solid lightblue;
 }
 
 .drp-menu__item {
     padding: 0.5rem;
+    margin-bottom: 0.7rem;
     height: 1.5rem;
     min-height: auto;
 }
