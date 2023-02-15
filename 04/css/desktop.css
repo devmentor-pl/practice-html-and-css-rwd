@@ -1,0 +1,76 @@
+.nav__hamburger, .items__hamburger {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+.nav {
+    width: 100%;
+}
+
+/* MENU */
+
+.menu {
+    display: flex;
+    width: 40%;
+    margin: 20px;
+    background-color: white;
+    width: 100%;
+    height: 70px;
+}
+
+.menu__item {
+    margin-left: 50px;
+    padding: 20px 40px;
+    border-top: 5px solid transparent;
+    position: relative;
+}
+
+.menu__item:hover {
+    border-top: 5px solid #009AE1;
+    /*niebieski border i kolor najechania*/
+    color: #009AE1;
+}
+
+.menu__2:after {
+    content: ">";
+    position: absolute;
+    transform: rotate(90deg);
+    margin-left: 10px;
+}
+
+/* END OF MENU */
+
+/* DROP-DOWN MENU */
+
+.drp-menu {
+    display: none;
+}
+
+.menu__2:hover .drp-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 100px;
+}
+
+.drp-menu:hover {
+    display: block;
+    position: absolute;
+    top: 100%;
+}
+
+.drp-menu__item a {
+    color: white;
+}
+
+.drp-menu__item {
+    width: 14vw;
+    background-color: #333333;
+    color: white;
+    padding: 10px;
+}
+
+/* END OF DROP-DOWN MENU */

@@ -1,0 +1,129 @@
+html {
+    height: 100vh;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50px minmax(calc(50vh - 40px), auto) minmax(calc(50vh - 50px), auto) 1fr;
+    grid-template-areas:
+        "nav"
+        "main"
+        "aside"
+        "footer";
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.aside {
+    grid-area: aside;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* HAMBURGER */
+
+.nav__hamburger,
+#menu-switch {
+    display: none;
+}
+
+/* END OF HAMBURGER */
+
+.row {
+    padding: 10px;
+}
+
+.container {
+    max-width: 1000px;
+}
+
+/* NAV */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    height: 90%;
+}
+
+.logo {
+    min-width: 150px;
+    height: 100%;
+}
+
+/* END OF NAV */
+
+/* MAIN */
+
+.main__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item1, .item2 {
+    height: 100%;
+    width: calc(50% - 10px);
+}
+
+/* END OF MAIN */
+
+/* ASIDE */
+
+.aside__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__item {
+    height: calc(100% - 20px);
+    width: calc(33.3333% - 10px);
+}
+
+.aside__item1, .aside__item3 {
+    margin: 10px;
+}
+
+.aside__item2 {
+    margin: 10px 0;
+}
+
+/* END OF ASIDE */
+
+/* FOOTER */
+
+.footer {
+    padding: 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+}
+
+.footer__content {
+    min-width: 100px;
+}
+
+/* END OF FOOTER */
