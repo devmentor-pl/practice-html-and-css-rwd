@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.content {
+.content p {
     background-color: #fff;
     min-height: 320px;
     min-width: 320px;
@@ -19,5 +19,6 @@
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;   
+    shape-outside: polygon(0 0, 100% 0, 0 100%);
 }
