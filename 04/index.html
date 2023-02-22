@@ -5,24 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c09818cd34.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+
+    <nav class="nav">
+        <label class="nav__hamburger" for="toggler"></label>
+        <input class="nav__toggler" type="checkbox" id="toggler">
+        <ul class="nav__list menu">
+
+            <li class="menu__item"><a href="" class="menu__link">home</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+
+            <li class="menu__item menu__dropdown"><a href="" class="menu__link  ">oferta</a>
+
+                <ul class="dropdown">
+                    <li class="dropdown__item  dropdown__item--children "><a href="" class="dropdown__link">strony
+                            wwww</a>
+
+                        <ul class="dropdown-level">
+                            <li class="dropdown-level__item"><a href="" class="dropdown-level__link">Strona 1</a></li>
+                            <li class="dropdown-level__item"><a href="" class="dropdown-level__link">Strona 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown__item"><a href="" class="dropdown__link">sklepy wwww</a></li>
+
                 </ul>
+
+
             </li>
-            <li>
-                <a href="#">kontakt</a>
+
+            <li class="menu__item"><a href="" class="menu__link">kontakt</a>
             </li>
+
         </ul>
     </nav>
 
