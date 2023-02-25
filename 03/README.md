@@ -5,7 +5,7 @@
 
 # `#03` HTML i CSS: Responsywność
 
-Podobnie jak w poprzednim zadaniu ustwisz elementy w odpowiednim miejscu w zależności od zdefiniownaych punktów granicznych:
+Podobnie jak w poprzednim zadaniu ustawisz elementy w odpowiednim miejscu w zależności od zdefiniowanych punktów granicznych:
 - do 599px (mobile),
 - od 600px do 1199px (tablet),
 - nie mniej niż 1200px (desktop).
