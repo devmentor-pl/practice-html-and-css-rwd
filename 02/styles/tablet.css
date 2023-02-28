@@ -1,0 +1,5 @@
+body {
+  grid-template-areas: "header header" "section main";
+  grid-template-rows: 50vh 50vh;
+  grid-template-columns: 50% 50%;
+}

@@ -1,0 +1,5 @@
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "section";
+  grid-template-rows: 50vh 50vh 50vh;
+}
