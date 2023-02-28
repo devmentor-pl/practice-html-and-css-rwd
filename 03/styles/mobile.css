@@ -1,0 +1,47 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "P"
+        "T"
+        "V";
+}
+
+.p, .t, .v {
+    min-height: 50vh;
+}
+
+.p {
+    grid-area: P;
+    width: 100%;
+}
+
+.p-img {
+    width: 100%;
+    height: auto;
+}
+
+.t {
+    grid-area: T;
+    text-align: justify;
+    padding: 2%;
+}
+
+h1 {
+    padding: 1% 0;
+}
+
+.v {
+    grid-area: V;
+    height: 0;
+    padding-top: calc(315/560 * 50%);
+    position: relative;
+}
+
+.video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
