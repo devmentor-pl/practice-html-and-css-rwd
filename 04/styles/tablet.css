@@ -1,0 +1,24 @@
+.hamburger-position {
+  display: none;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.offer-item {
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  text-align: center;
+  position: absolute;
+  top: 30px;
+  left: -65px;
+}
+
+.offer-item:hover .dropdown {
+  display: block;
+}

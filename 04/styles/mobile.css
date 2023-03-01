@@ -1,0 +1,16 @@
+nav li {
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+/* .contact-item {
+  margin-top: -10px;
+} */
+
+nav .menu {
+  display: none;
+}
+
+.hamburger-position:hover + .menu {
+  display: block;
+}

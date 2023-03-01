@@ -1,0 +1,38 @@
+.header__container {
+  justify-content: space-between;
+}
+
+.hamburger-position {
+  display: none;
+}
+
+.header__logo {
+  display: block;
+}
+
+.section-first__container {
+  height: 35vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-first__item {
+  width: 49.5%;
+  height: auto;
+}
+
+.section-second__container {
+  height: 35vh;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section-second__item {
+  width: 32.5%;
+  height: auto;
+}
+
+.footer__copyright {
+  height: 5vh;
+  width: 15%;
+}
