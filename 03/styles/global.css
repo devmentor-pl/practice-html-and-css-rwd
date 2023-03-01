@@ -7,20 +7,79 @@
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-areas: 
+        "p"
+        "t"
+        "v";
+}
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: p;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: t;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: v;
+}
+
+
+@media(min-width: 600px) and (min-width: 1199px) {
+    body {
+        grid-template-columns: minmax(200px 50%) auto;
+        grid-template-areas: 
+        "p t"
+        "v t";
+    }
+}
+ 
+@media(min-width: 1200px) {
+    body {
+        grid-template-columns: repeat(2fr,1);
+        grid-template-areas: 
+        "p v"
+        "t t";
+    }
+}
+
+.p {
+   grid-area: p;
+   display: flex;
+   justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+}
+
+.v {
+    height: 0;
+    padding-bottom: calc(315/560 * 100%);
+    position: relative;
+    width: 100%;
+  
+}
+
+.iframe {
+    border: 1px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }

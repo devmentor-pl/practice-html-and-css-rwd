@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.row {
+margin: 5px;
+padding: 5px;
+outline: 3px solid;
+}
+.row {
+outline-color: rgb(9, 205, 9);
+}
+.container {
+margin: 0 auto;
+max-width: 1000px;
+outline: 3px solid;
+outline-color: rgb(43, 74, 247);
+}
+.cell {
+min-height: 50px;
+background-color: rgb(240, 182, 33);
+outline: none;
+}
