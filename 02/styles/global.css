@@ -7,20 +7,43 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+body {
+    display: grid;
+    max-width: 900px;
+    margin: 0 auto;
+    grid-template-areas:
+        'A'
+        'B'
+        'C';
+}
+
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: A;
+
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: B;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: C;
+}
+
+@media(min-width: 600px) {
+    body {
+        grid-template-areas: 
+        'A A'
+        'C B';
+    }
+
 }
