@@ -4,5 +4,5 @@ body {
         "V T";
     grid-template-columns:
         minmax(200px, 50%) 
-        minmax(auto, 50%);
+        auto;
 }

@@ -1,23 +1,20 @@
 body {
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-areas:
         "P"
         "T"
         "V";
 }
 
-.p, .t, .v {
-    min-height: 50vh;
-}
-
 .p {
     grid-area: P;
-    width: 100%;
 }
 
 .p-img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    width: auto;
 }
 
 .t {
@@ -33,7 +30,8 @@ h1 {
 .v {
     grid-area: V;
     height: 0;
-    padding-top: calc(315/560 * 50%);
+    padding-top: calc(315/560 * 100%);
+    width: 100%;
     position: relative;
 }
 
