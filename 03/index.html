@@ -1,16 +1,74 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/tablet.css"
+        media="(min-width: 600px)"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/desktop.css"
+        media="(min-width: 1200px)"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio enim expedita a adipisci
+        deleniti consequuntur minus. Neque odio sit est impedit maxime recusandae, non reiciendis dolorem quia rem
+        consequuntur asperiores?
+    </main>
+    <div class="container">
+        <header class="p">
+            <picture>
+                <source
+                    srcset="./img/tiger-desktop.jpg"
+                    media="(min-width: 1200px)"
+                >
+                <source
+                    srcset="./img/tiger-tablet.jpg"
+                    media="(min-width: 600px)"
+                >
+                <img
+                    src="./img/tiger-mobile.jpg"
+                    alt="tiger"
+                >
+            </picture>
+        </header>
+    </div>
+    <div class="container">
+        <side class="v">
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Ze_DtOWSmDI"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+        </side>
+    </div>
 
 </body>
+
 </html>
