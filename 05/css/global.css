@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    border: 3px solid green;
+    padding: 2px;
+}
+
+.container {
+    max-width: 1000px;
+    height: 100%;
+    border: 3px solid blue;
+    margin: 0 auto;
+}
+
+.cell {
+    border: 3px solid orange;
+    background-color: orange;
+}
+
+.cell--yellow {
+    border: 3px solid yellow;
+    background-color: yellow;
+}
+
