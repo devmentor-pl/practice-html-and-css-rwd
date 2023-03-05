@@ -1,0 +1,23 @@
+body {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+.p,
+.t,
+.p {
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+.t {
+	grid-row: 2/3;
+	grid-column: 1/-1;
+	width: 100%;
+	max-width: inherit;
+}
+.t p {
+	column-count: 1;
+}
+.v {
+	grid-row: 1/2;
+	grid-column: 2/3;
+}
