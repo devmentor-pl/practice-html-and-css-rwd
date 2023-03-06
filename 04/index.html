@@ -1,30 +1,110 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/8efc9fda83.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/tablet.css"
+      media="(min-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="(min-width: 1000px)"
+    />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+  </head>
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id="toggle-menu" />
+      <label class="menu-icon" for="toggle-menu">
+        <a id="menu-icon"><i class="fa fa-burger"></i>Menu</a></label
+      >
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="/"><i class="fa fa-house"></i>Start</a>
+        </li>
+        <li class="nav__item nav__item--dropdown">
+          <a class="nav__link nav__link--arrow" href="/"
+            ><i class="fa fa-keyboard"></i>Oferta<i class="fa fa-angle-down"></i
+          ></a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a class="submenu__link" href="/"
+                ><i class="fa fa-globe"></i>Strony internetowe</a
+              >
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
+            <li class="submenu__item">
+              <a class="submenu__link" href="/"
+                ><i class="fa fa-crosshairs"></i>Pozycjonowanie stron WWW</a
+              >
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="/"><i class="fa fa-phone"></i>Kontakt</a>
+        </li>
+      </ul>
+      <ul class="nav__list nav__list--social">
+        <li class="nav__item nav__item--social">
+          <a class="nav__link nav__link--social" href="http://twitter.com"
+            ><i class="fa fa-twitter"></i
+          ></a>
+        </li>
+        <li class="nav__item nav__item--social">
+          <a class="nav__link nav__link--social" href="http://facebook.com"
+            ><i class="fa fa-facebook"></i
+          ></a>
+        </li>
+        <li class="nav__item nav__item--social">
+          <a class="nav__link nav__link--social" href="http://github.com"
+            ><i class="fa fa-github"></i
+          ></a>
+        </li>
+        <li class="nav__item nav__item--social">
+          <a class="nav__link nav__link--social" href="http://instagram.com"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </li>
+      </ul>
     </nav>
 
-</body>
+    <main>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro
+          explicabo quidem adipisci, perferendis error tempore minus magnam
+          maxime, exercitationem dolores doloribus pariatur praesentium dolor
+          vel voluptatum in, unde mollitia!
+        </p>
+      </div>
+      <br />
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro
+          explicabo quidem adipisci, perferendis error tempore minus magnam
+          maxime, exercitationem dolores doloribus pariatur praesentium dolor
+          vel voluptatum in, unde mollitia!
+        </p>
+      </div>
+      <br />
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit porro
+          explicabo quidem adipisci, perferendis error tempore minus magnam
+          maxime, exercitationem dolores doloribus pariatur praesentium dolor
+          vel voluptatum in, unde mollitia!
+        </p>
+      </div>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,9 @@
+body {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+main {
+    margin: 20px;
+    padding: 20px;
+}
