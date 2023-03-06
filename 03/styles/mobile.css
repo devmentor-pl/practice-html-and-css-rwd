@@ -1,7 +1,7 @@
 body {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     grid-template-areas:
         "P"
         "T"
@@ -10,11 +10,11 @@ body {
 
 .p {
     grid-area: P;
+    line-height: 0;
 }
 
 .p-img {
     max-width: 100%;
-    width: auto;
 }
 
 .t {
@@ -31,7 +31,6 @@ h1 {
     grid-area: V;
     height: 0;
     padding-top: calc(315/560 * 100%);
-    width: 100%;
     position: relative;
 }
 
