@@ -1,0 +1,16 @@
+
+
+@media(max-width: 599px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+            "header-picture"
+            "main-text"
+            "side-video";
+        grid-template-columns: calc(100vw - 30px);
+    }
+
+    .t {
+        flex-direction: column;
+    }
+}
