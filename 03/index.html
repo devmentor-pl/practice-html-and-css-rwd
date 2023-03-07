@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #03</title>
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
+		<link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 600px)" />
+		<link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 1200px)" />
+	</head>
+	<body>
+		<main class="t">
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque cumque inventore mollitia accusamus, provident eligendi est sapiente ratione
+				assumenda iure, cum expedita iste unde nam molestiae impedit nesciunt natus, quisquam sequi voluptate minus sed quidem praesentium. Dolore, repellendus.
+				Qui?
+			</p>
+		</main>
+		<header class="p">
+			<picture>
+				<source
+					srcset="
+						https://pixabay.com/get/ge1c9a5f3d6a491b0a1fc0eacd9f26142322ffdedbc22bcda61b5173a0dd021f31edf4eeb94dabea9b4e3ce7139f05b399de51b9b829aad669b8c6b538f3ea4d08b4d3899e8a02f569ddcdc3727d3e69d_1920.jpg
+					"
+					media="(min-width: 1200px)" />
+				<source
+					srcset="
+						https://pixabay.com/get/g3b14b2d54e5658d0b60045383aa338e3bb730f30b077c4e3725f54c37afa99aa87f615f4a2c951c9186f073875c9f722c2d2eab8c68a9ef323638a1283bb0c30cf977b6f9341fbc3da839b8c2886954d_1280.jpg,
+						https://pixabay.com/get/ge1c9a5f3d6a491b0a1fc0eacd9f26142322ffdedbc22bcda61b5173a0dd021f31edf4eeb94dabea9b4e3ce7139f05b399de51b9b829aad669b8c6b538f3ea4d08b4d3899e8a02f569ddcdc3727d3e69d_1920.jpg 2x
+					"
+					media="(min-width: 600px)" />
+				<source
+					srcset="
+						https://pixabay.com/get/geb8e3c77e36c43d5e0e01f5d8f1fe11053b3832b0d0a7be12856f1059f724cfa85e780610dcfd22690af73929b3a992473390e9b09cd751e5b67879dae63e518158a7d7e2b536847430b0fbfdc06e404_640.jpg
+					" />
+				<img src="https://devmentor.pl/img/dm-logo.png" />
+			</picture>
+		</header>
+		<side class="v"
+			><iframe
+				src="https://www.youtube.com/embed/X-gqIU8hook"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				allowfullscreen></iframe
+		></side>
+	</body>
 </html>

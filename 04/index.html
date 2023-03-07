@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #04</title>
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
+		<link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 600px)" />
+	</head>
+	<body>
+		<nav class="nav">
+			<input class="nav__checkbox" type="checkbox" />
 
-</body>
+			<div class="hamburger-lines">
+				<span class="line line1"></span>
+				<span class="line line2"></span>
+				<span class="line line3"></span>
+			</div>
+			<ul class="nav-menu">
+				<li class="nav-menu__item"><a href="#">home</a></li>
+				<li class="nav-menu__item nav-menu__item--dropdown">
+					<a href="#">items</a>
+					<ul class="item__dropdown">
+						<li class="dropdown__item-drop menu-link">
+							<a href="#">strony internetowe</a>
+						</li>
+						<li class="dropdown__item-drop menu-link">
+							<a href="#">SEO</a>
+						</li>
+					</ul>
+				</li>
+				<li class="nav-menu__item"><a href="#">settings</a></li>
+				<li class="nav-menu__item"><a href="#">contact</a></li>
+			</ul>
+			<!-- <ul class="nav-menu">
+				<li class="nav-menu__item">
+					<a href="#">start</a>
+				</li>
+				<li class="nav-menu__item nav-menu__item--dropdown">
+					<a href="#">oferta</a>
+					<ul class="item__dropdown">
+						<li class="dropdown__item-drop"><a href="#">strony internetowe</a></li>
+						<li class="dropdown__item-drop"><a href="#">pozycjonowanie stron www</a></li>
+					</ul>
+				</li>
+				<li class="nav-menu__item">
+					<a class="item__link" href="#">kontakt</a>
+				</li>
+			</ul> -->
+		</nav>
+	</body>
 </html>
