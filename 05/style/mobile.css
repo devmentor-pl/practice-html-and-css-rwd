@@ -1,0 +1,126 @@
+.nav .nav__checkbox {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	height: 20px;
+	width: 40px;
+
+	z-index: 5;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.nav .hamburger-lines {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	height: 20px;
+	width: 40px;
+	z-index: 2;
+}
+
+.nav .hamburger-lines .line {
+	height: 4px;
+	width: 100%;
+
+	border-radius: 10px;
+	background: #0e2431;
+}
+
+.nav .hamburger-lines .line1 {
+	transition: transform 0.4s ease-in-out;
+}
+
+.nav .hamburger-lines .line2 {
+	transition: transform 0.2s ease-in-out;
+}
+
+.nav .hamburger-lines .line3 {
+	transition: transform 0.4s ease-in-out;
+}
+
+.nav input[type='checkbox']:checked ~ .hamburger-lines .line1 {
+	transform: rotate(45deg) translateY(10px);
+}
+
+.nav input[type='checkbox']:checked ~ .hamburger-lines .line2 {
+	/* zaanimowałbym tutaj jeszcze środkową linię żeby się kurczyła z prawej strony do lewej za pomocą keyframes */
+	opacity: 0;
+}
+
+.nav input[type='checkbox']:checked ~ .hamburger-lines .line3 {
+	transform: rotate(-45deg) translate(3px, -12px);
+}
+
+.nav .nav-menu {
+	position: fixed;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+
+	padding: 120px 0 0 50px;
+	height: 100vh;
+	width: 100%;
+
+	transition: transform 0.5s ease-in-out;
+	transform: translate(-150%);
+
+	background: #666;
+}
+
+input[type='checkbox']:checked ~ .nav-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	transform: translateX(0);
+	width: 100%;
+}
+.nav-menu__item--dropdown .item__dropdown {
+	margin-left: 30px;
+}
+
+/* nowy kod */
+.nav .wrapper {
+	display: flex;
+	justify-content: center;
+	align-content: space-between;
+}
+
+.nav__title {
+	display: block;
+	width: 40%;
+	height: 40px;
+	background: var(--rectangle-color);
+}
+
+header section {
+	width: 100%;
+	height: 400px;
+	background: var(--rectangle-color);
+}
+main article {
+	width: 100%;
+	height: 400px;
+	background: var(--rectangle-color);
+}
+footer .wrapper {
+	justify-content: center;
+	align-items: center;
+}
+footer p {
+	display: block;
+
+	margin: 20px 0;
+
+	width: 40%;
+	height: 60px;
+	background: var(--rectangle-color);
+}
