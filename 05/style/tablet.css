@@ -1,4 +1,4 @@
-a:root {
+:root {
 	--nav-item-color: #009ae1;
 	--dropbox-color: #333;
 	--background-color: #f6f6f6;
@@ -14,7 +14,7 @@ a:root {
 	position: initial;
 	top: initial;
 	background: var(--rectangle-color);
-	transform: translate(0px);
+	transform: translate(0);
 	height: 40px;
 	width: 40%;
 	padding: 20px;

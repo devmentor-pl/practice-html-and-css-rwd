@@ -45,7 +45,7 @@
 	display: none;
 	position: absolute;
 	text-transform: capitalize;
-	left: 0px;
+	transform: translate(-40px);
 	border: 1px solid black;
 }
 .nav-menu__item--dropdown:hover .item__dropdown {
