@@ -27,9 +27,9 @@
         border-top: 1px solid var(--borderLiColor);
     }
 
-    nav ul {
+    /* nav ul {
         display: none;
-    }
+    } */
 
     nav > ul ul {
         display: block;
@@ -100,7 +100,6 @@
 
     nav > ul > li:nth-child(2) > ul > li > a {
         color: var(--offerLettersColor);
-        margin-left: 85px;
 
     }
 
@@ -116,5 +115,55 @@
 @media(min-width: 360px) {
     body {
         font-size: 16px;
+    }
+
+    nav > ul > li:nth-child(2) > ul > li > a {
+        margin-left: 85px;
+
+    }
+
+}
+
+@media(min-width: 600px) and (orientation: landscape) {
+    nav > ul {
+        grid-template-areas: 
+            "start-c offer-c contact-c";
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 30% 70%;
+    }
+
+    nav > ul li:first-child {
+        grid-area: start-c;
+    }
+
+    nav > ul > li:nth-child(2) {
+        grid-area: offer-c;
+    }
+
+    nav > ul li:last-child {
+        grid-area: contact-c;
+    }
+
+    nav li {
+        border: 1px solid var(--borderLiColor);
+    }
+
+    nav ul {
+        min-height: 20vh;
+    }
+
+    nav > ul > li:nth-child(2) > ul > li > a {
+        margin-left: 0;
+    }
+
+    nav > ul > li:nth-child(2) {
+        padding: 0;
+        border-bottom: 1px solid var(--borderLiColor);
+    }
+
+    nav > ul > li:nth-child(2) > ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
