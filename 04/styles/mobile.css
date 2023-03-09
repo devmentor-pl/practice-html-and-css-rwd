@@ -1,4 +1,4 @@
-@media(min-width: 360px) {
+@media(min-width: 240px) {
     nav {
         /* min-height: 20vh; */
         padding: 15px 0;
@@ -6,20 +6,33 @@
         
     }
 
+    :root {
+        --borderLiColor: rgb(196, 211, 211);
+        --offerLettersColor: rgb(248, 241, 241);
+    }
+
+    body {
+        font-size: 14px;
+    }
+
     nav li {
         text-align: center;
         padding: 20px 0;
-        border-bottom: 2px solid blueviolet;
+        border-bottom: 1px solid var(--borderLiColor);
         background-color: bisque;
 
     }
 
     nav > ul li:first-child {
-        border-top: 2px solid blueviolet;
+        border-top: 1px solid var(--borderLiColor);
     }
 
     nav ul {
         display: none;
+    }
+
+    nav > ul ul {
+        display: block;
     }
 
     .hamburger {
@@ -70,4 +83,38 @@
         
     }
 
+    nav > ul > li:nth-child(2) > a {
+        display: inline-block;
+        padding: 20px 0;
+    }
+
+    nav > ul > li:nth-child(2) {
+        padding: 0;
+        border-bottom: 0;
+    }
+
+    nav > ul > li:nth-child(2) > ul > li {
+        padding: 10px 0;
+        background-color: cadetblue;
+    }
+
+    nav > ul > li:nth-child(2) > ul > li > a {
+        color: var(--offerLettersColor);
+        margin-left: 85px;
+
+    }
+
+    nav > ul > li:nth-child(2) > ul > li:nth-child(3) {
+        display: none;
+    }
+
+    
+
+
+}
+
+@media(min-width: 360px) {
+    body {
+        font-size: 16px;
+    }
 }
