@@ -45,6 +45,6 @@ body {
         "a a"
         "c b"
         ;
-        grid-template-columns: minmax(auto, 600px)
+        grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
     }
 }
