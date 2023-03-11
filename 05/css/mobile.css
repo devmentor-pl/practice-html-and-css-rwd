@@ -30,8 +30,9 @@
 
 .hamburger::after {
     display: block;
-    contain: '';
+    content: '';
     height: 3px;
+    width: 60px;
     background-color: black;
     position: absolute;
     top: calc(50% - 1.5px);
