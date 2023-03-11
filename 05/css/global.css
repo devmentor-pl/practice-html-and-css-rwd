@@ -1,0 +1,27 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row, .container {
+    outline: 3px solid;
+    margin: 3px;
+}
+
+.row {
+    min-height: 50px;
+    padding: 3px;
+    outline-color: green;
+}
+
+.container {
+    min-height: 45px;
+    max-width: 1000px;
+    margin: 0 auto;
+    outline-color: blue;
+}
+
+.contain {
+    background-color: orangered;
+}
