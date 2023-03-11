@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "P"
+        "T"
+        "V";
+    grid-template-columns: 1fr;
+}
+
+.t {
+    grid-area: T;
+}
+
+.p {
+    grid-area: P;
+}
+
+.v {
+    grid-area: V;
+}
