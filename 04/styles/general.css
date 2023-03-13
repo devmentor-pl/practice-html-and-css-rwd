@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.navigation__liContainer {
+.navigation__liContainer, .navigation__dropdownContainer {
     list-style: none;
 }
 
@@ -15,5 +15,5 @@
 }
 
 .navigation__dropdownContainer li:last-child, .navigation__liContainer> li:nth-child(2) {
-    display: none;
+    /* display: none; */
 }

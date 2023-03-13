@@ -26,7 +26,12 @@
 
     }
 
-    .navigation__liElement--distinction {
+    .navigation__dropdownContainer {
+        margin-top: 20px;
+    }
+
+
+    .navigation__dropdownElement {
         padding: 10px 0;
         opacity: 0.7;
         
@@ -95,40 +100,12 @@
         
     }
 
-    /* nav > ul > li:nth-child(2) > a {
-        display: inline-block;
-        padding: 20px 0;
-    }
-
-    nav > ul > li:nth-child(2) {
-        padding: 0;
-        border-bottom: 0;
-    }
-
-    nav > ul > li:nth-child(2) > ul > li {
-        padding: 10px 0;
-        background-color: cadetblue;
-    }
-
-    nav > ul > li:nth-child(2) > ul > li > a {
-        color: var(--offerLettersColor);
-
-    }
-
-    nav > ul > li:nth-child(2) > ul > li:nth-child(3) {
-        display: none;
-    }
-
-    nav > ul > li:nth-child(2) > ul {
-        display: block;
-    } */
-
-     
-
 }
 
 @media(min-width: 360px) {
-    
+    .navigation__linkElement--shifted {
+        margin-left: 30%;
+    }
 
 }
 
