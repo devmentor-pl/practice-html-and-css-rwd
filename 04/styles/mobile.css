@@ -1,81 +1,93 @@
 @media(min-width: 240px) {
-    nav {
+    .navigation {
         /* min-height: 20vh; */
         padding: 15px 0;
-        background-color: beige;
+        background-color: var(--navigationBackgroundColor);
         
     }
 
     :root {
         --borderLiColor: rgb(196, 211, 211);
-        --offerLettersColor: rgb(248, 241, 241);
+        --menuItemColor: rgb(56, 101, 170);
+        --hamburgerColor: rgb(81, 52, 189);
+        --navigationBackgroundColor: beige;
+        --borderLiOfferColor: blue;
     }
 
     body {
-        font-size: 14px;
+        font-size: 12px;
     }
 
-    nav li {
+    .navigation__liElement {
         text-align: center;
         padding: 20px 0;
-        border-bottom: 1px solid var(--borderLiColor);
+        border-bottom: 2px solid var(--borderLiColor);
         background-color: bisque;
 
     }
 
-    nav > ul li:first-child {
-        border-top: 1px solid var(--borderLiColor);
+    .navigation__liElement--distinction {
+        padding: 10px 0;
+        opacity: 0.7;
+        
     }
 
-    /* nav ul {
-        display: none;
-    } */
+    .navigation__linkElement {
+        color: var(--menuItemColor);
+        font-weight: bold;
+        letter-spacing: 2px;
 
-    nav > ul ul {
-        display: block;
     }
 
-    .hamburger {
+    .navigation > ul li:first-child {
+        border-top: 0;
+    }
+
+    .navigation__liContainer {
+        /* display: none; */
+    }
+
+    .navigation__hamburger {
         width: 40px;
         height: 35px;
         margin: 0 0 0 calc(90% - 40px);
         background-color: transparent;
         border: 0;
-        border-top: 5px solid black;
+        border-top: 5px solid var(--hamburgerColor);
         position: relative;
         transition: 0.3s transform linear;
     }
 
-    .hamburger::before, .hamburger::after {
+    .navigation__hamburger::before, .navigation__hamburger::after {
         content: '';
         top: 0;
         left: 0;
         width: 100%;
-        border-top: 5px solid black;
+        border-top: 5px solid var(--hamburgerColor);
         transform: translateY(10px);
         position: absolute;
     }
     
-    .hamburger::after {
+    .navigation__hamburger::after {
         transform: translateY(25px);
         transition: 0.3s transform linear;
     }
 
-    .hamburger::after {
+    .navigation__hamburger::after {
         transform: translateY(25px);
     }
 
-    .hamburger:focus {
+    .navigation__hamburger:focus {
         transform: rotate(45deg) translateY(5px);
         border: none;
         
     }
 
-    .hamburger:focus::after {
+    .navigation__hamburger:focus::after {
         transform: rotate(-90deg) translateX(-10px);
     }
 
-    .hamburger:focus + ul {
+    .navigation__hamburger:focus + .navigation__liContainer {
         margin: 10px 0 0 0;
         display: flex;
         flex-direction: column;
@@ -83,7 +95,7 @@
         
     }
 
-    nav > ul > li:nth-child(2) > a {
+    /* nav > ul > li:nth-child(2) > a {
         display: inline-block;
         padding: 20px 0;
     }
@@ -107,63 +119,22 @@
         display: none;
     }
 
-    
+    nav > ul > li:nth-child(2) > ul {
+        display: block;
+    } */
 
+     
 
 }
 
 @media(min-width: 360px) {
+    
+
+}
+
+@media(min-width: 600px) {
     body {
         font-size: 16px;
     }
-
-    nav > ul > li:nth-child(2) > ul > li > a {
-        margin-left: 85px;
-
-    }
-
 }
 
-@media(min-width: 600px) and (orientation: landscape) {
-    nav > ul {
-        grid-template-areas: 
-            "start-c offer-c contact-c";
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 30% 70%;
-    }
-
-    nav > ul li:first-child {
-        grid-area: start-c;
-    }
-
-    nav > ul > li:nth-child(2) {
-        grid-area: offer-c;
-    }
-
-    nav > ul li:last-child {
-        grid-area: contact-c;
-    }
-
-    nav li {
-        border: 1px solid var(--borderLiColor);
-    }
-
-    nav ul {
-        min-height: 20vh;
-    }
-
-    nav > ul > li:nth-child(2) > ul > li > a {
-        margin-left: 0;
-    }
-
-    nav > ul > li:nth-child(2) {
-        padding: 0;
-        border-bottom: 1px solid var(--borderLiColor);
-    }
-
-    nav > ul > li:nth-child(2) > ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-}

@@ -4,20 +4,16 @@
     box-sizing: border-box;
 }
 
-nav > ul {
-    display: grid;
-}
-
-nav ul {
+.navigation__liContainer {
     list-style: none;
 }
 
-nav a {
+.navigation__linkElement {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
 }
 
-nav > ul ul {
+.navigation__dropdownContainer li:last-child, .navigation__liContainer> li:nth-child(2) {
     display: none;
 }
