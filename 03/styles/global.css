@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
