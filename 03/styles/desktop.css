@@ -1,0 +1,21 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "p t"
+    "v t";
+  grid-template-columns: minmax(200px, 50%) 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.p {
+  grid-area: p;
+}
+
+.t {
+  grid-area: t;
+}
+
+.v {
+  grid-area: v;
+}
