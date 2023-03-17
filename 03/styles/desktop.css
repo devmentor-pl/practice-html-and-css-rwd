@@ -4,6 +4,7 @@ body {
     "p t"
     "v t";
   grid-template-columns: minmax(200px, 50%) 1fr;
+  grid-auto-rows: 1fr;
   max-width: 1400px;
   margin: 0 auto;
 }
