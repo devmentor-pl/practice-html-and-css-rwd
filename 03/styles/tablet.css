@@ -1,5 +1,4 @@
 body {
-  display: grid;
   grid-template-areas:
     "p t"
     "v t";
