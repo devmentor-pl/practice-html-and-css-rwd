@@ -16,3 +16,7 @@ a:hover {
   color: #336699;
   cursor: pointer;
 }
+
+#menu-switcher {
+  display: none;
+}

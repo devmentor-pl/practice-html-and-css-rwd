@@ -13,11 +13,35 @@
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <link
       rel="stylesheet"
-      href="./styles.css"
+      href="./styles/global.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(max-width: 599px)"
+      href="./styles/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="./styles/desktop.css"
     />
   </head>
   <body>
     <nav>
+      <label for="menu-switcher">
+        <img
+          width="20"
+          height="20"
+          src="./assets/hamburger-menu.svg"
+          alt="hamburger-menu"
+          class="nav__hamburger-menu"
+        />
+      </label>
+
+      <input
+        type="checkbox"
+        id="menu-switcher"
+      />
       <ul>
         <li>
           <a href="#">start</a>
