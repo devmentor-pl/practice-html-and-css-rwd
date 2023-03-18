@@ -1,0 +1,6 @@
+@media(min-width: 1440px) {
+    :root {
+        --maxContentWidth: 1300px;
+    }
+
+} 

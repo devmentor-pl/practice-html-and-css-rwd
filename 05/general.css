@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.primaryBox {
+    border: 2px solid green;
+}
+
+.secondaryBox {
+    border: 2px solid blue;
+    
+}
+
+.headSection__menuBox {
+    list-style: none;
+}

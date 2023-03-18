@@ -1,0 +1,104 @@
+@media(min-width: 800px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    .contentBox3__element3 {
+        height: 20vh;
+        background-color: darkgoldenrod;
+    }
+
+    .secondaryBox {
+        max-width: 90%;
+        margin: 5px auto 5px auto;
+    }
+
+    .moved {
+        margin-bottom: 10px;
+    }
+
+    .headSection__logoContainer {
+        display: none;
+    }
+
+    .headSection__hamburgerButton {
+        background-color: transparent;
+        width: 40px;
+        height: 40px;
+        border: 0;
+        border-top: 5px solid black;
+        position: relative;
+        margin-right: 5px;
+        transition: 0.3s transform linear;
+        order: 1;
+    }
+
+    .headSection__hamburgerButton::after, .headSection__hamburgerButton::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid black;
+
+    }
+    
+    .headSection__hamburgerButton::after {
+        transform: translateY(30px);
+        transition: 0.3s transform linear;
+    }
+
+    .headSection__hamburgerButton::before {
+        transform: translateY(12.5px);
+    }
+
+    .headSection__hamburgerButton:focus {
+        transform: rotate(45deg) translateY(5px);
+        border: 0;
+    }
+
+    .headSection__hamburgerButton:focus::after {
+        transform: rotate(-90deg) translateX(-12.5px);
+    }
+
+    .headSection__hamburgerButton:focus + .headSection__menuBox {
+        display: flex;
+        gap: 20px;
+    }
+
+
+    .headSection__navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10vw;
+        
+    }
+
+    .headSection__menuBox {
+        display: none;
+    }
+
+    .headSection__menuLink {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: royalblue;
+        font-weight: bold;
+    }
+
+    .contentBox2__text2 {
+        margin-bottom: 20px;
+    }
+
+    .siteFooter__footerElementsContainer {
+        padding: 5px 0;
+    }
+
+    .siteFooter__element {
+        height: 5vh;
+        background-color: darkgoldenrod;
+        width: 40%;
+        margin: 0 auto;
+    }
+}

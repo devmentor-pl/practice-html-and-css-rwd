@@ -1,0 +1,22 @@
+@media(min-width: 600px) and (max-width: 1199px) {
+
+    body {
+        display: grid;
+        grid-template-areas: 
+            "header-picture main-text"
+            "side-video main-text";
+        grid-template-columns: calc(70% - 30px) calc(30% - 30px);
+        grid-template-rows: repeat(2, minmax(200px, 50%));
+        gap: 20px;
+    }
+
+    .t {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .t p {
+        padding: 10px;
+    }
+}

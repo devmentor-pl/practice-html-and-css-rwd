@@ -1,0 +1,18 @@
+@media(min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+            "header-picture side-video"
+            "main-text main-text";
+        grid-template-columns: 65% 30%;
+        grid-template-rows: repeat(2, minmax(200px, 50%));
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .p picture {
+        width: 60%;
+        height: 100%;
+    }
+}
