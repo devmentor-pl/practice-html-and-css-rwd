@@ -12,3 +12,7 @@ section {
 input {
   display: none;
 }
+
+img {
+  display: block;
+}

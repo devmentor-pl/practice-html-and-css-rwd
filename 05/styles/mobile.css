@@ -2,6 +2,12 @@
   display: none;
 }
 
+.header,
+.section,
+figure:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .header__wrapper {
   display: flex;
   width: 100%;
@@ -9,9 +15,6 @@
   position: relative;
   height: 40px;
   align-items: center;
-}
-
-.nav {
 }
 
 input:checked + ul {
@@ -44,6 +47,10 @@ label {
   z-index: 10;
 }
 
+.article__content {
+  padding: 10px;
+}
+
 figure {
   position: relative;
 }
@@ -57,4 +64,12 @@ figcaption {
   justify-content: center;
   align-items: center;
   height: 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
 }
