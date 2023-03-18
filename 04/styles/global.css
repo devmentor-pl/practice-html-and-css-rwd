@@ -4,16 +4,27 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #dedede;
+}
+
 ul {
   list-style: none;
 }
+
+ul li a {
+  display: block;
+  padding: 10px;
+}
+
 nav a {
   color: black;
   text-decoration: none;
 }
 
 a:hover {
-  color: #336699;
+  background-color: #336699;
+  color: white;
   cursor: pointer;
 }
 

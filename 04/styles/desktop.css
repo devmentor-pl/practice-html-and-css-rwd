@@ -1,3 +1,21 @@
 .nav__hamburger-menu {
   display: none;
 }
+
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+  min-width: 200px;
+  text-align: center;
+}
+
+#sub ul {
+  display: none;
+}
+
+#sub:hover ul {
+  display: block;
+}
