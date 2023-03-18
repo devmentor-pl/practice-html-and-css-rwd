@@ -14,7 +14,7 @@
 
     <link
       rel="stylesheet"
-      href="./reset.css"
+      href="./styles/reset.css"
     />
     <link
       rel="stylesheet"
@@ -23,19 +23,33 @@
     <link
       rel="stylesheet"
       href="./styles/mobile.css"
-      media="max-width: 800px"
+      media="(max-width: 800px)"
     />
     <link
       rel="stylesheet"
       href="./styles/desktop.css"
-      media="min-width: 801px"
+      media="(min-width: 801px)"
     />
   </head>
   <body>
     <header class="header section">
-      <div class="wrapper">
-        <div class="logo">LOGO</div>
+      <div class="header__wrapper">
+        <div class="header__logo">LOGO</div>
         <nav class="nav">
+          <label for="menu-switcher">
+            <img
+              width="20"
+              height="20"
+              src="./images/hamburger-menu.svg"
+              alt="hamburger-menu"
+              class="nav__hamburger-menu"
+            />
+          </label>
+
+          <input
+            type="checkbox"
+            id="menu-switcher"
+          />
           <ul class="nav__list">
             <li class="nav__item">
               <a

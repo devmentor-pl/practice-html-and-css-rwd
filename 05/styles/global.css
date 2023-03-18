@@ -1,0 +1,14 @@
+header,
+section {
+  border: 1px solid green;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+input {
+  display: none;
+}

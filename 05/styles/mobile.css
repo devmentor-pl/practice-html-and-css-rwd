@@ -1,0 +1,60 @@
+.nav__list {
+  display: none;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  height: 40px;
+  align-items: center;
+}
+
+.nav {
+}
+
+input:checked + ul {
+  padding-top: 30px;
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #3d3d3d;
+  color: white;
+}
+ul li {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li:hover {
+  cursor: pointer;
+  color: aqua;
+  border: 1px solid white;
+}
+
+label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #3d3d3d9f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
