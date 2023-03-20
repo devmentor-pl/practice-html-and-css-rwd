@@ -35,8 +35,6 @@ ul li {
   justify-content: center;
 }
 ul li:hover {
-  cursor: pointer;
-  color: aqua;
   border: 1px solid white;
 }
 
@@ -49,27 +47,4 @@ label {
 
 .article__content {
   padding: 10px;
-}
-
-figure {
-  position: relative;
-}
-
-figcaption {
-  position: absolute;
-  bottom: 0;
-  background-color: #3d3d3d9f;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-}
-
-.footer__wrapper {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  min-height: 50px;
 }
