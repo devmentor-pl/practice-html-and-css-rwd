@@ -1,0 +1,57 @@
+.blue--header {
+   position: relative;
+   padding: 10px;
+}
+
+.orange--logo {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.orange--menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+}
+
+.orange--menu::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 20px;
+    border-top: 3px solid black ;
+    border-bottom: 3px solid black;
+}
+
+.orange--menu::before {
+    height: 3px;
+    background-color: black;
+    content: '';
+    display: block;
+    width: 30px;
+    position: relative;
+    top: 12px;
+}
+
+.orange--main {
+    min-height: 300px;
+}
+
+.orange--main + .orange--main {
+    margin-top: 10px;
+}
+
+.orange--section {
+    min-height: 300px;
+}
+
+.orange--section + .orange--section {
+    margin-top: 10px;
+}
+
+.orange--footer {
+    margin: 10px auto;
+    width: 200px;
+    max-width: 100%;
+}
