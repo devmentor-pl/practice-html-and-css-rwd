@@ -1,0 +1,100 @@
+
+.row {
+  outline: 3px solid green;
+  padding: 5px;
+}
+
+.container {
+  outline: 3px solid blue;
+  padding: 5px;
+}
+
+.cell {
+  background-color: orange;
+  min-height: 50px;
+}
+
+.header {
+  position: relative;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  margin: 5px auto;
+}
+
+.list {
+  background-color: transparent;
+  position: absolute;
+  right: 30px;
+  top: 0px;
+}
+
+.list::after {
+  content: "";
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  display: block;
+  width: 30px;
+  height: 20px;
+}
+
+.list::before {
+  content: "";
+  height: 2.5px;
+  background-color: #000;
+  position: relative;
+  display: block;
+  top: 14px;
+}
+
+.article {
+  min-height: 200px;
+}
+
+.article + .article {
+  margin-top: 10px;
+}
+
+.copyright {
+  margin: 5px auto;
+  max-width: 150px;
+}
+
+@media (min-width: 800px) {
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .list::after, .list::before  {
+    display: none;
+  }
+ 
+  .list {
+    background-color: orange;
+    min-width: 300px;
+    position: static;
+    margin: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.article {
+  width: 100%;
+}
+
+.article + .article {
+  margin-top: 0;
+}
+
+}
