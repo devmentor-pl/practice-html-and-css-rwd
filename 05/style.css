@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16px;
+}
+.cointeiner {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1000px;
+	border: 2px solid blue;
+}
+.nav {
+	display: flex;
+	justify-content: center;
+	border: 2px solid green;
+	width: 100%;
+	height: 10vh;
+	padding: 5px;
+}
+.nav__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0.5rem;
+	width: 15rem;
+	background-color: yellow;
+	height: 80%;
+}
+.nav__menu {
+	display: none;
+	width: 10rem;
+	background-color: red;
+}
+.nav__btn {
+	display: flex;
+	position: fixed;
+	top: 20px;
+	right: 30px;
+}
+.nav__btn:hover .nav__menu {
+	display: flex;
+}
+.header {
+	display: flex;
+	justify-content: center;
+	border: 2px solid green;
+	width: 100%;
+	height: 50vh;
+	padding: 5px;
+}
+.header__section {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.header__text {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	background-color: yellow;
+	margin-bottom: 10px;
+}
+.header__img {
+	display: flex;
+	height: 50%;
+	width: 100%;
+	background-color: yellow;
+}
+.main {
+	display: flex;
+	justify-content: center;
+	border: 2px solid green;
+	width: 100%;
+	height: 50vh;
+	padding: 5px;
+}
+.card {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+.card__space {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: yellow;
+	margin-bottom: 10px;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	border: 2px solid green;
+	width: 100%;
+	height: 10vh;
+	padding: 5px;
+}
+.footer__logo {
+	display: flex;
+	height: 80%;
+	width: 10rem;
+	background-color: yellow;
+	margin: 0.5rem;
+}
+@media (min-width: 800px) {
+	.nav {
+		display: flex;
+	}
+	.nav__item {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav__menu {
+		display: flex;
+		width: 30rem;
+		height: 80%;
+		margin: 0.5rem;
+		background-color: yellow;
+	}
+	.nav__btn {
+		display: none;
+	}
+	.header__section {
+		flex-direction: row;
+		padding: 1rem 0;
+	}
+	.header__text {
+		width: 100%;
+		height: 100%;
+		margin-right: 10px;
+	}
+	.header__img {
+		width: 100%;
+		height: 100%;
+	}
+	.main {
+		height: 40vh;
+	}
+	.card {
+		flex-direction: row;
+	}
+	.card__space {
+		width: 100%;
+		height: 95%;
+		margin: 1rem;
+	}
+}
