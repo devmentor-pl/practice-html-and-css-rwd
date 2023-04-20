@@ -14,7 +14,7 @@
 	border-radius: 10%;
 }
 .menu {
-	display: block;
+	display: none;
     position: absolute;
     top: 10vh;
 	width: 100%;
@@ -27,7 +27,7 @@
 	padding-left: 3rem;
 }
 #menu-btn:checked ~ .menu {
-	display: none;
+	display: block;
 }
 .menu__item {
 	display: block;

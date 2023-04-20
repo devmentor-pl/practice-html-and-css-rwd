@@ -35,6 +35,7 @@ html {
 	display: none;
 	width: 10rem;
 	background-color: red;
+	list-style: none;
 }
 .nav__btn {
 	display: flex;
