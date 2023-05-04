@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #04</title>
 
-</body>
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+
+		<link
+			rel="stylesheet"
+			media="(min-width: 601px)"
+			href="./css/desktop.css" />
+	</head>
+	<body>
+		<nav class="nav">
+
+            <label>
+                <button class="hamburger"></button>
+                <input type="checkbox" />
+            </label>
+            
+			<ul class="">
+				<li>
+					<a href="#">start</a>
+				</li>
+				<li>
+					<a href="#">oferta</a>
+					<ul>
+						<li><a href="">strony internetowe</a></li>
+						<li><a href="">pozycjonowanie stron www</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">kontakt</a>
+				</li>
+			</ul>
+		</nav>
+	</body>
 </html>

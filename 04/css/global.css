@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #4E517F;
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+} 
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav li {
+  border: 1px solid #fff;
+  margin: 5px;
+  padding: 5px 10px;
+  text-align: center;
+} 
+
