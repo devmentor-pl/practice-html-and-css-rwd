@@ -1,0 +1,17 @@
+body {
+	display: grid;
+
+	grid-template-areas:
+		"picture video"
+		"text text";
+
+	grid-template-columns: 1fr 1fr;
+
+	grid-template-rows:
+		50%
+		50%;
+
+	max-width: 1400px;
+}
+
+
