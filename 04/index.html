@@ -16,25 +16,28 @@
 	</head>
 	<body>
 		<nav class="nav">
+			<label class="nav__hamburger" for="switcher"></label>
+			<input class="nav__switcher" type="checkbox" id="switcher" />
 
-            <label>
-                <button class="hamburger"></button>
-                <input type="checkbox" />
-            </label>
-            
-			<ul class="">
-				<li>
-					<a href="#">start</a>
+    	<!-- <button class="hamburger"></button> -->
+           
+			<ul class="nav__list">
+				<li class="nav__item">
+					<a href="#" class="nav__link">start</a>
 				</li>
-				<li>
-					<a href="#">oferta</a>
-					<ul>
-						<li><a href="">strony internetowe</a></li>
-						<li><a href="">pozycjonowanie stron www</a></li>
+				<li class="nav__item nav__item--parent">
+					<a href="#" class="nav__link nav__link--parent ">oferta</a>
+					<ul class="nav__list nav__list--dropdown">
+						<li class="nav__item nav__item--dropdown">
+							<a href="" class="nav__link nav__link--dropdown">strony internetowe</a>
+						</li>
+						<li class="nav__item nav__item--dropdown">
+							<a href="" class="nav__link nav__link--dropdown">pozycjonowanie stron www</a>
+						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="#">kontakt</a>
+				<li class="nav__item">
+					<a href="#" class="nav__link">kontakt</a>
 				</li>
 			</ul>
 		</nav>
