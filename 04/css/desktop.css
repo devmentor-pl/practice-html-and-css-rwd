@@ -15,7 +15,6 @@
   border: 1px solid white;
   padding: 0.5rem 2rem;
   border-radius: 5px;
-  
 }
 
 .nav__link--dropdown {
@@ -31,7 +30,6 @@
   left: -20px;
   right: -180px;
   display: none;
-  
 }
 
 .nav__item:hover > .nav__list--dropdown {

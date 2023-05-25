@@ -32,7 +32,6 @@
   display: none;
 }
 
-
 .nav__switcher:checked + .nav__list, .nav__list--dropdown {
   display:block;
 }
