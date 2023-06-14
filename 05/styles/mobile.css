@@ -1,0 +1,58 @@
+.header__container {
+    padding: 10px;
+    position: relative;
+}
+
+.header__logo {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.header__nav {
+	background-color: transparent;
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.header__nav::after {
+    border-bottom: 3px solid #000;
+    border-top: 3px solid #000;
+    content: '';
+    display: block;
+    height: 20px;
+    width: 30px;
+}
+
+.header__nav::before {
+    background-color: #000;
+    content: '';
+    display: block;
+    height: 3px;
+    position: relative;
+    top: 12px;
+    width: 30px;
+}
+
+.main__article,.main__ads {
+    min-height: 300px;
+}
+
+.main__ads {
+    margin-top: 10px;
+}
+
+.section__container > article {
+    min-height: 200px;
+}
+
+.section__article--middle {
+    margin: 10px 0;
+}
+
+.footer__copyrights {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 200px;
+}
