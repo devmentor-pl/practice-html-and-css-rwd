@@ -1,0 +1,16 @@
+header,
+section,
+main,
+footer {
+  border: 2px solid green;
+  margin-bottom: 10px;
+  padding: 0 50px;
+}
+.container {
+  max-width: 1200px;
+  border: 2px solid blue;
+  margin: 10px auto;
+}
+.cell {
+  background-color: yellow;
+}
