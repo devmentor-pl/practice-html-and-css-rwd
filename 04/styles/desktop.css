@@ -4,6 +4,11 @@
   padding: 20px;
 }
 
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
 .nav__menu-switcher {
   display: none;
 }
@@ -11,6 +16,7 @@
 .nav__list {
   display: flex;
   gap: 20px;
+  margin-top: 0;
 }
 
 .nav__link {
@@ -26,8 +32,15 @@
   border: none;
 }
 
-.nav .nav__list-item:hover {
-  border-top: 3px solid var(--clr-primary-1);
+.nav .nav__list-item::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+
+.nav .nav__list-item:hover::before {
+  background-color: var(--clr-primary-1);
 }
 
 .nav__list-item:hover .nav__link::after {
