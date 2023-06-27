@@ -1,0 +1,14 @@
+.grid__container {
+    display: grid;
+    grid-template-areas:
+      "header aside"
+      "main main";
+      grid-template-columns: minmax(200px, 50%) auto;
+      max-width: 1400px;
+  }
+
+  @media (min-width: 1400px) {
+    .grid__container {
+        margin: 0 auto;
+    }
+  }
