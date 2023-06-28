@@ -20,3 +20,6 @@
 .header > input:checked + .header__nav {
     display: block;
 }
+input {
+    display: none;
+}
