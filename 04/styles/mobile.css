@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    background-color: aquamarine;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.header__nav {
+    position: absolute;
+    top: 50px;
+    width: 100vw;
+    background-color: whitesmoke;
+    display: none;
+}
+.dropdown > .list__item {
+    padding-left: 10px ;
+}
+.header > input:checked + .header__nav {
+    display: block;
+}
