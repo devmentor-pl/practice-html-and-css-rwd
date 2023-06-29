@@ -52,3 +52,10 @@
 #btn:checked + .header__nav {
    display: block;
 } 
+
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 49% 49%;
+    align-content: space-between;
+}
