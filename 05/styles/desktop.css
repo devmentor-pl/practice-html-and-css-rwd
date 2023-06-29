@@ -1,0 +1,15 @@
+.burger__btn {
+    display: none;
+}
+.header__container {
+    display: grid;
+    grid-template-columns: 30% 50%;
+    grid-template-rows: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+.header__nav {
+    display: grid;
+    position: static;
+}

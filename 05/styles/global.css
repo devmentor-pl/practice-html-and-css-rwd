@@ -1,0 +1,29 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+.row {
+    width: 100%;
+}
+.container {
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: solid blue 1px;
+}
+.header,
+.footer {
+    min-height: 100px;
+} 
+.section,
+.article {
+    min-height: 300px;
+}
+.cell {
+    background-color: orange;
+    height: 100%;
+}
+#btn {
+    display: none;
+}
