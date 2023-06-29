@@ -66,3 +66,11 @@
     grid-template-rows: 32% 32% 32%;
     align-content: space-between;
 }
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 50%;
+    align-content: center;
+    justify-content: center;
+}

@@ -32,3 +32,12 @@
 .article__content:nth-child(2) { 
     margin: 10px 0;
 }
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
