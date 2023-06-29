@@ -21,3 +21,14 @@
     justify-content: space-between;
     align-content: center;
 }
+.article__container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+}
+.article__content {
+    margin: 10px;
+}
+
+.article__content:nth-child(2) { 
+    margin: 10px 0;
+}

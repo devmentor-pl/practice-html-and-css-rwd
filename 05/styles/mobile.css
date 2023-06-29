@@ -59,3 +59,10 @@
     grid-template-rows: 49% 49%;
     align-content: space-between;
 }
+
+.article__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 32% 32% 32%;
+    align-content: space-between;
+}
