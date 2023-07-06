@@ -1,0 +1,90 @@
+/* ==========TABLET + DESKTOP========== */
+body {
+  background-color: rgb(227, 227, 227);
+  text-decoration: none;
+}
+
+header {
+  margin: 7px 10px 7px 0px;
+}
+
+.hamburger,
+#submenu-switcher {
+  display: none;
+}
+
+/* ========ROZWIJANE SUBMENU DLA OFERTA======== */
+.container__nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav {
+  height: 50px;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 25%;
+  font-size: 14px;
+  background-color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li.nav__item a[href] {
+  text-decoration: none;
+  color: #171a20;
+}
+
+li.nav__item:hover,
+li.nav__item a[href]:hover {
+  color: #009ae1;
+}
+
+li.nav__item:hover {
+  border-top: 2px solid #009ae1;
+}
+
+.nav__dropdown {
+  position: absolute;
+  padding-top: 0px;
+  left: 0px;
+  margin-top: 132px;
+  display: none;
+  width: 150px;
+}
+
+.nav__item:hover > .nav__dropdown {
+  display: block;
+}
+
+.dropdown__item-lvl1 {
+  background: #171a20;
+  padding: 11px 15px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dropdown__item-lvl1 a {
+  color: #ffffff !important;
+}
+
+.dropdown__item-lvl1 a:hover {
+  color: #009ae1 !important;
+}
+
+/* ===============PARAGRAPH=============== */
+
+p {
+  padding: 0px 2vw 0px 2vw;
+  text-align: justify;
+}

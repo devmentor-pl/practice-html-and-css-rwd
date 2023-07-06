@@ -1,0 +1,15 @@
+/* ==========GLOBAL========== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+}

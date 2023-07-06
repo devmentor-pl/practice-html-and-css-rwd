@@ -1,26 +1,138 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nyt-imperial", "georgia", "times new roman", "times", "serif";
 }
 
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.p {
-    border-color: #ffffba
+.p,
+.t,
+.v {
+  border: 3px solid transparent;
+  min-height: 50px;
 }
 
 .t {
-    border-color: #ffdfba;
+  margin: 0px 11px;
+  color: #363636;
+  font-size: 3.29vw;
+  line-height: 6vw;
 }
 
-.v {
-    border-color: #baffc9;
+/* ------------------------------------------------------ */
+/* OBRAZEK */
+.p {
+  height: 0;
+  padding-bottom: calc(169 / 300 * 100%);
+  position: relative;
 }
+
+.p > picture {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+picture > img {
+  width: 100%;
+}
+
+/* ------------------------------------------------------ */
+/* FILM */
+.v {
+  height: 0;
+  padding-bottom: calc(315 / 560 * 100%);
+  position: relative;
+}
+
+.v > iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* ===============mobile================== */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr max-content 1fr;
+  grid-gap: 4px;
+  max-height: 100vh;
+}
+
+/* ===============tablet================== */
+@media screen and (min-width: 600px) {
+  body {
+    grid-template-columns: minmax(200px, 50%) 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    max-height: 100vh;
+  }
+
+  .p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .t {
+     justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  blockquote {
+    font-size: 1.29vw;
+    text-align: justify;
+    line-height: 2vw;
+    /* margin: 7px 11px; */
+  }
+
+  .v {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+/* ===============desktop================== */
+@media screen and (min-width: 1200px) {
+  body {
+    margin: 5px auto 0 auto;
+    padding: 0;
+    max-width: 1400px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 10px;
+  }
+
+  .p {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .t {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .v {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  /* ------------------ */
+
+  blockquote {
+    margin: 10px 0;
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid rgb(57, 60, 65);
+    text-align: justify;
+  }
+}
+
+/* #################################################################################################### */
+/* rgb(57,60,65); */
+/* "Gotham SSm",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; */
