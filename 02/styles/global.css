@@ -6,9 +6,9 @@
 body {
   display: grid;
   grid-template-areas:
-    "header header"
-    "main main"
-    "section section";
+    "header"
+    "main"
+    "section";
     font-family: Arial, Helvetica, sans-serif;
     grid-template-rows: 50vh 50vh 50vh;
 }
