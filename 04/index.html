@@ -16,35 +16,42 @@
     <link
       rel="stylesheet"
       media="(min-width: 761px)"
-      href="./styles/tablet&desktop.css"
+      href="./styles/tablet-desktop.css"
     />
   </head>
-  <body>
-    <header>
-      <nav class="container__nav">
+
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
         <input type="checkbox" class="hamburger" />
 
-        <ul class="menu nav">
-          <li class="nav__item red-border">
-            <a href="index.html">START</a>
+        <ul class="menu nav-list dropdown">
+          <li class="nav-item red-border">
+            <a class="nav-item__link" href="index.html">START</a>
           </li>
 
-          <li class="nav__item">
-            <label for="submenu-switcher">OFERTA</label>
+          <li class="nav-item">
+            <label class="submenu-switcher" for="submenu-switcher"
+              >OFERTA</label
+            >
             <input type="checkbox" id="submenu-switcher" />
 
             <ul class="menu2 nav__dropdown nav__dropdown--lvl1">
               <li class="dropdown__item-lvl1 red-border">
-                <a href="#">STRONY INTERNETOWE</a>
+                <a class="nav-item__link nav-item__link--dropdown" href="#"
+                  >STRONY INTERNETOWE</a
+                >
               </li>
               <li class="dropdown__item-lvl1 red-border">
-                <a href="#">POZYCJONOWANIE STRON WWW</a>
+                <a class="nav-item__link nav-item__link--dropdown" href="#"
+                  >POZYCJONOWANIE STRON WWW</a
+                >
               </li>
             </ul>
           </li>
 
-          <li class="nav__item red-border">
-            <a href="#">KONTAKT</a>
+          <li class="nav-item red-border">
+            <a class="nav-item__link" href="#">KONTAKT</a>
           </li>
         </ul>
       </nav>
@@ -52,8 +59,8 @@
 
     <hr />
 
-    <p>
-      AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
       blanditiis rerum dolores suscipit placeat tenetur accusantium deleniti
       vero ut optio necessitatibus ea minus et libero, nihil id. Consectetur
       nobis facilis in amet corrupti quae voluptas libero ipsam autem excepturi!

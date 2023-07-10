@@ -1,10 +1,10 @@
 /* ==========TABLET + DESKTOP========== */
-body {
+.body {
   background-color: rgb(227, 227, 227);
   text-decoration: none;
 }
 
-header {
+.header {
   margin: 7px 10px 7px 0px;
 }
 
@@ -14,12 +14,12 @@ header {
 }
 
 /* ========ROZWIJANE SUBMENU DLA OFERTA======== */
-.container__nav {
+.nav {
   display: flex;
   justify-content: flex-end;
 }
 
-.nav {
+.nav-list {
   height: 50px;
   width: 40vw;
   display: flex;
@@ -27,7 +27,7 @@ header {
   align-items: center;
 }
 
-.nav__item {
+.nav-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,17 +40,17 @@ header {
   cursor: pointer;
 }
 
-li.nav__item a[href] {
+.nav-item__link {
   text-decoration: none;
   color: #171a20;
 }
 
-li.nav__item:hover,
-li.nav__item a[href]:hover {
+.nav-item:hover,
+.nav-item__link:hover {
   color: #009ae1;
 }
 
-li.nav__item:hover {
+.nav-item:hover {
   border-top: 2px solid #009ae1;
 }
 
@@ -63,7 +63,7 @@ li.nav__item:hover {
   width: 150px;
 }
 
-.nav__item:hover > .nav__dropdown {
+.nav-item:hover > .nav__dropdown {
   display: block;
 }
 
@@ -74,17 +74,17 @@ li.nav__item:hover {
   font-size: 12px;
 }
 
-.dropdown__item-lvl1 a {
+.nav-item__link--dropdown {
   color: #ffffff !important;
 }
 
-.dropdown__item-lvl1 a:hover {
+.nav-item__link--dropdown:hover {
   color: #009ae1 !important;
 }
 
 /* ===============PARAGRAPH=============== */
 
-p {
+.lorem {
   padding: 0px 2vw 0px 2vw;
   text-align: justify;
 }

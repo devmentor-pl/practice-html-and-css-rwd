@@ -5,11 +5,10 @@
   padding: 0;
 }
 
-ul {
+.nav-list {
   list-style: none;
 }
 
-nav a {
-  color: #333333;
+.nav-item__link {
   text-decoration: none;
 }

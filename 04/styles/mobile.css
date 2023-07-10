@@ -1,28 +1,29 @@
 /* ==========MOBILE========== */
-header {
+.header {
   position: sticky;
 }
 
-nav {
+.nav {
   padding: 0 0 43px 0;
 }
 
-nav a,
-label {
+.nav-item__link,
+.submenu-switcher {
   color: #ffffff;
   display: block;
 }
 
-header ul {
+.nav-list {
   display: none;
 }
 
-header input:checked + ul {
+.hamburger:checked + .nav-list {
   display: block;
   background-color: #171a20;
 }
 
-header li {
+.nav-item,
+.dropdown__item-lvl1 {
   border: 1px solid #bbb;
   margin: 5px;
   padding: 2vh 2vw;
@@ -88,13 +89,17 @@ header li {
   display: none;
 }
 
-#submenu-switcher:checked + ul {
+#submenu-switcher:not(:checked) + .menu2 {
+  display: none;
+}
+
+#submenu-switcher:checked + .menu2 {
   display: block;
 }
 
 /* =========LOREM IPSUM========= */
 
-p {
+.lorem {
   padding: 0px 5px 0px 5px;
   text-align: justify;
 }
