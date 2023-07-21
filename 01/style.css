@@ -10,7 +10,6 @@
 	min-width: 320px;
 	max-width: 600px;
 	text-align: justify;
-	position: relative;
 }
 
 .content::before {
