@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, reiciendis numquam sint ipsa quia eum odio
+            facere illo odit natus? Eius quas ut odio molestiae! Iure consequuntur repellendus aperiam, vel sunt dolore
+            voluptatum consequatur error quas dicta, mollitia eaque rerum nobis earum eveniet eligendi vitae ea nemo
+            asperiores molestiae numquam laborum. Officia ex incidunt rerum culpa ipsam recusandae dignissimos. Vero
+            dolor aut repudiandae perspiciatis possimus quidem fugit facilis deserunt, minima quaerat dolores?
+            Necessitatibus vero architecto tenetur. Inventore doloremque neque dignissimos?</p>
+    </main>
+    <header class="p">
+        <picture>
+
+            <!-- <source srcset="https://placehold.co/700x400/png" media="(min-width: 1200px)"> -->
+            <!-- czemu na tej wielkosci zepsuje mi siatke grida, a jak dam wieksza rozdzielczosc to siatka bedzie ok, ale za to zdjecie mi sie wycenrtuje i nie bedzie height 100% -->
+
+            
+            <source srcset="https://placehold.co/1440x400/png" media="(min-width: 1200px)">
+            <source srcset="https://placehold.co/1000x400/png" media="(min-width: 600px)">
+            <source srcset="https://placehold.co/600x200/png">
+
+            <img src="https://placehold.co/800x600/png" alt="alt describe">
+
+        </picture>
+    </header>
+    <side class=" v">
+        <iframe class="iframe" width="1860" height="804" src="https://www.youtube.com/embed/3zA2ESsC6yE"
+            title="Jak przyspieszyć naukę programowania?" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </side>
 
 </body>
+
 </html>
