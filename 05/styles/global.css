@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "teslaregular";
+  src: url("../fonts/tesla/tesla-webfont.woff2") format("woff2"),
+    url("../fonts/tesla/tesla-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "gotham_ssmbook";
+  src: url("../fonts/GothamSSm-Book/gothamssm-book-webfont.woff2")
+      format("woff2"),
+    url("../fonts/GothamSSm-Book/gothamssm-book-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* ------------------------------------------------------------- */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ul {
+  list-style: none;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+} */

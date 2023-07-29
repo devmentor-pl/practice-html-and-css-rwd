@@ -1,0 +1,118 @@
+/* ==========MOBILE========== */
+.header {
+  position: sticky;
+}
+
+.nav {
+  padding: 0 0 43px 0;
+}
+
+.nav-item__link,
+.submenu-switcher {
+  color: #ffffff;
+  display: block;
+}
+
+.nav-list {
+  display: none;
+}
+
+.hamburger:checked + .nav-list {
+  display: block;
+  background-color: #171a20;
+}
+
+.nav-item,
+.dropdown__item-lvl1 {
+  border: 1px solid #bbb;
+  margin: 5px;
+  padding: 2vh 2vw;
+  text-align: left;
+  font-size: 5vw;
+  border-radius: 5px;
+}
+
+/* -------HAMBURGER------ */
+
+.hamburger {
+  appearance: none;
+  float: right;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid #423e3f;
+  background-color: #ffffff;
+  position: relative;
+  transition: 0.3s transform linear;
+  margin: 10px 5px 0px 0px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #423e3f;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+/* ----HAMBURGER ANIMATION---- */
+
+.hamburger:checked {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+  background-color: #171a20;
+}
+
+.hamburger:checked::before {
+  border-top: 5px solid #ffffff;
+}
+
+.hamburger:checked::after {
+  transform: rotate(-90deg) translateX(-10px);
+  border-top: 5px solid #ffffff;
+}
+
+.menu {
+  padding: 56px 0 calc(100vh - 41px) 0;
+}
+
+/* ---------SUBMENU--------- */
+#submenu-switcher {
+  display: none;
+}
+
+#submenu-switcher:not(:checked) + .menu2 {
+  display: none;
+}
+
+#submenu-switcher:checked + .menu2 {
+  display: block;
+}
+
+/* =========LOREM IPSUM========= */
+
+.lorem {
+  padding: 0px 5px 0px 5px;
+  text-align: justify;
+}
+
+.red-border:active,
+.red-border:focus {
+  outline: none !important;
+  border-color: red;
+  text-decoration: none !important;
+  box-shadow: none !important;
+  -webkit-tap-highlight-color: transparent !important;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+  user-select: none;
+}

@@ -1,0 +1,237 @@
+body {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: 0.8fr 8fr 0.5fr;
+  width: 100vw;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5d2dd;
+}
+
+/* ==============HEADER============== */
+.header {
+  display: grid;
+  grid-template-columns: 8fr 1.5fr;
+  grid-template-rows: 1fr;
+}
+
+.header__container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 95%;
+}
+
+.header__logo {
+  color: #393c41;
+  font-family: "teslaregular", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.7em;
+  margin: 0 0 0 6%;
+}
+
+/* --------HAMBURGER-------- */
+.hamburger--open {
+  height: 30px;
+  width: 38px;
+  border: 0;
+  border-top: 5px solid #393c41;
+  background-color: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+  margin: 0 -10% 0 0;
+}
+
+.hamburger--open::before,
+.hamburger--open::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid #393c41;
+  transform: translateY(10px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger--open::after {
+  transform: translateY(25px);
+}
+
+.hamburger--open:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+.hamburger--open:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+.hamburger--open:focus + .nav {
+  opacity: 1;
+  width: 76vw;
+}
+
+/* --------MENU-------- */
+.nav {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  align-self: stretch;
+  padding: 18% 0 0 0;
+  background-color: #ffffff;
+  font-family: "gotham_ssmbook", "Fira Code", "SFMono-Regular", "Consolas";
+
+  /* nav startup animation */
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+  transition: opacity 2000ms;
+  z-index: 1;
+}
+
+.nav__menu {
+  height: 99%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  margin: 0 0 0 10%;
+}
+
+.nav__menu li {
+  font-weight: 600;
+  font-size: 1em;
+  line-height: 6vh;
+  color: #393c41;
+}
+
+.menu__links {
+  text-decoration: none;
+  color: #393c41;
+  pointer-events: auto !important;
+}
+
+/* ---------close menu--------- */
+.hamburger--close {
+  position: absolute;
+  right: 22px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  background-color: transparent;
+  border: none;
+}
+.hamburger--close:hover {
+  opacity: 1;
+}
+.hamburger--close:before,
+.hamburger--close:after {
+  position: absolute;
+  left: 14px;
+  bottom: 6px;
+  content: " ";
+  height: 18px;
+  width: 2px;
+  background-color: #333;
+}
+.hamburger--close:before {
+  transform: rotate(45deg);
+}
+.hamburger--close:after {
+  transform: rotate(-45deg);
+}
+
+/* --------Blur for the whole body except the nav class-------- */
+/* .enableBlur > * {
+  filter: blur(1.2px);
+}
+
+.disableBlur {
+  filter: blur(0);
+} */
+
+/* ==============MAIN============== */
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* ------------------------------------------- */
+.section1 {
+  /* background-color: green; */
+  width: 97%;
+  height: 48%;
+  /* border: 2px solid rgb(24, 101, 233); */
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section1__article1 {
+  background-color: khaki;
+  height: 48%;
+}
+
+.article1__image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.section1__article2 {
+  background-color: yellowgreen;
+  height: 48%;
+}
+
+/* ------------------------------------------- */
+.section2 {
+  width: 97%;
+  height: 48%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section2__article1 {
+  background-color: khaki;
+  height: 31%;
+}
+
+.section2__article2 {
+  background-color: rgb(208, 90, 153);
+  height: 31%;
+}
+
+.section2__article3 {
+  background-color: rgb(90, 208, 147);
+  height: 31%;
+}
+
+/* ==============FOOTER============== */
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 90%;
+  font-size: 0.9em;
+}
+
+/* ====================EOL==================== */
