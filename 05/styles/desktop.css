@@ -1,0 +1,43 @@
+.burger__btn {
+    display: none;
+}
+.header__container {
+    display: grid;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: 80px;
+    width: 100%;
+    justify-content: space-between;
+    align-content: center;
+}
+.header__nav {
+    display: grid;
+    position: static;
+}
+
+.section__container {
+    display: grid;
+    grid-template-columns: 49% 50%;
+    grid-template-rows: 90%;
+    justify-content: space-between;
+    align-content: center;
+}
+.article__container {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%; 
+}
+.article__content {
+    margin: 10px;
+}
+
+.article__content:nth-child(2) { 
+    margin: 10px 0;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
