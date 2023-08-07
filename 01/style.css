@@ -10,6 +10,11 @@
     min-width: 320px;
     max-width: 600px;
     text-align: justify;
+    display: grid;
+    grid-template-areas:
+        "a-A"
+        "b-B"
+        "c-C";
 }
 
 .content::before {

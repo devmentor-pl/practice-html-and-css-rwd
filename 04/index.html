@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+        <link rel="stylesheet" href="./CSS/global.css" />
+        <link rel="stylesheet" href="./CSS/mobile.css" />
+        <link
+            rel="stylesheet"
+            media="(min-width: 761px)"
+            href="./css/tablet.css"
+        />
+    </head>
+    <body>
+        <nav class="nav">
+            <label for="menu-switcher"></label>
+            <input type="checkbox" id="menu-switcher" />
+            <ul class="nav__items">
+                <li class="nav__item">
+                    <a href="#">start</a>
+                </li>
+                <li>
+                    <div class="nav__item">
+                        <a href="#">oferta</a>
+                    </div>
+                    <ul>
+                        <li class="nav__item">
+                            <a class="nav__link">strony internetowe</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href=""
+                                >pozycjonowanie stron www</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#">kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </body>
 </html>

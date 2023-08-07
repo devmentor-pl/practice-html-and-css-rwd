@@ -1,0 +1,17 @@
+.nav__item {
+    border: 1px solid #bbb;
+    margin: 5px;
+    padding: 5px 10px;
+}
+.nav__items {
+    list-style: none;
+    display: none;
+}
+
+.nav input:checked + ul {
+    display: block;
+}
+
+.nav__link {
+    margin-left: 30px;
+}
