@@ -1,0 +1,10 @@
+@media (max-width: 599px) {
+    body {
+        display: grid;
+
+        grid-template-areas:
+            "p-area"
+            "t-area"
+            "v-area";
+    }
+}

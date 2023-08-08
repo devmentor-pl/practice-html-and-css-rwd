@@ -1,2 +1,9 @@
 @media (min-width: 600px) and (max-width: 1199px) {
+    body {
+        display: grid;
+
+        grid-template-areas:
+            "p-area t-area"
+            "v-area t-area";
+    }
 }
