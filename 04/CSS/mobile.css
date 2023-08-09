@@ -1,15 +1,11 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: rgb(224, 79, 22);
-    text-decoration: none;
-}
-
-body {
-    background-color: rgb(245, 245, 245);
-    font-size: 20px;
+@media (max-width: 600px) {
+    body {
+        background-color: rgb(33, 194, 28);
+    }
+    .nav__item {
+        border: 1px solid #bbb;
+        margin: 5px;
+        padding: 5px 10px;
+        text-align: center;
+    }
 }

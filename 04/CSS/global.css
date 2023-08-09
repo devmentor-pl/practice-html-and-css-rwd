@@ -1,17 +1,13 @@
-.nav__item {
-    border: 1px solid #bbb;
-    margin: 5px;
-    padding: 5px 10px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-.nav__items {
+
+ul {
     list-style: none;
-    display: none;
 }
-
-.nav input:checked + ul {
-    display: block;
-}
-
-.nav__link {
-    margin-left: 30px;
+.nav a {
+    color: #c71c1c;
+    text-decoration: none;
 }

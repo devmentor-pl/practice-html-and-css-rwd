@@ -1,0 +1,32 @@
+@media (min-width: 1200px) {
+    body {
+        background-color: blue;
+    }
+    .nav__items {
+        background-color: white;
+        padding: 20px 40px;
+        border-top: 5px solid transparent;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav__item {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 200px;
+    }
+}
+.menu__dropdown {
+    position: relative;
+    left: 0;
+}
+
+.menu__dropdown:hover > .menu__dropdown-item {
+    display: block;
+}
+
+.menu__dropdown-item {
+    position: absolute;
+    background-color: white;
+    display: none;
+}
