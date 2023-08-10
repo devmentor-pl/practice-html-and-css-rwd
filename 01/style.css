@@ -10,14 +10,22 @@
     min-width: 320px;
     max-width: 600px;
     text-align: justify;
+    display: grid;
+    grid-template-areas:
+        "a-A"
+        "b-B"
+        "c-C";
 }
 
 .content::before {
     float: left;
     display: block;
-    content: '';
+    content: "";
+
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    float: left;
+    shape-outside: polygon(0 0, 384% -331%, 53% 55%, 0 101%);
 }
