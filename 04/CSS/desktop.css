@@ -1,4 +1,4 @@
-@media (min-width: 1200px) {
+@media (min-width: 601px) and (max-width: 2000px) {
     body {
         background-color: blue;
     }
@@ -10,23 +10,30 @@
         justify-content: space-around;
     }
 
-    .nav__item {
+    .nav__item,
+    .menu__dropdown {
         margin-bottom: 20px;
         margin-top: 20px;
         width: 200px;
     }
-}
-.menu__dropdown {
-    position: relative;
-    left: 0;
-}
 
-.menu__dropdown:hover > .menu__dropdown-item {
-    display: block;
-}
+    .menu__dropdown {
+        display: flex;
+        justify-content: space-around;
+        display: block;
+    }
 
-.menu__dropdown-item {
-    position: absolute;
-    background-color: white;
-    display: none;
+    .menu__dropdown:hover > .menu__dropdown-item {
+        display: block;
+    }
+
+    .menu__dropdown-item {
+        position: absolute;
+        background-color: white;
+        display: none;
+    }
+    label,
+    input {
+        display: none;
+    }
 }

@@ -2,10 +2,19 @@
     body {
         background-color: rgb(33, 194, 28);
     }
-    .nav__item {
-        border: 1px solid #bbb;
+    .nav__item,
+    .nav__link-oferta {
+        border: 2px solid #070707;
         margin: 5px;
         padding: 5px 10px;
-        text-align: center;
+    }
+
+    .nav__items,
+    #menu-switcher {
+        display: none;
+    }
+
+    #menu-switcher:checked + .nav__items {
+        display: block;
     }
 }
