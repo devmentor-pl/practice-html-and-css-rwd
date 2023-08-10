@@ -55,3 +55,17 @@
 .footer__item {
     border: 5px solid orange;
 }
+.section__first-items,
+.testimonials-second,
+.section__second-items,
+.section__first-item,
+.section__first,
+.section__second,
+footer,
+.section__first-item,
+.section__second-item,
+.section__third-item,
+.section__first-item,
+.header {
+    margin: 5px;
+}
