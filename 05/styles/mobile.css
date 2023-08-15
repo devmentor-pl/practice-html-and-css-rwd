@@ -1,0 +1,94 @@
+
+/* Header + menu */
+
+header .container, .footer__container {
+    min-height: 50px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+nav input {
+    display: none;
+}
+
+#hamburger {
+    display: block;
+    width: 30px;
+    height: 25px;
+    border: 0;
+    border-top: 5px solid #494040;
+    position: relative;
+ 
+}
+
+#hamburger::after, #hamburger::before {
+    content:"";
+    width: 100%;
+    border-top: 5px solid #494040;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(5px);    
+}
+
+#hamburger::after {
+    transform: translateY(15px);
+}
+
+#menu-switcher:checked + .menu {
+    background-color: beige;
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+} 
+
+.menu {
+    display: none;  
+}
+
+.menu__item {
+    text-align: center;;
+}
+
+.menu__item a {
+    text-decoration: none;
+}
+
+
+
+/* MAIN, COMMENTS */
+
+.content__container, .comments__container {
+    height: calc(100vh - 75px);
+}
+
+.content__container article {
+    height: calc(50vh - 42.5px);
+}
+
+.comments__container article {
+    height: calc((100vh - 70px)*0.32);
+}
+
+
+
+
+
+/* FOOTER */
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
