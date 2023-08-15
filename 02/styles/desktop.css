@@ -1,0 +1,18 @@
+body {
+  margin: 0 auto;
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header header"
+    "section main";
+  grid-template-rows:
+    50%
+    50%;
+
+  max-width: 1200px;
+
+}
+
+
+
+  
