@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop.css"
+    />
+  </head>
+  <body class="container">
     <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+    <header class="p">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="https://picsum.photos/seed/picsum/1200"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="https://picsum.photos/seed/picsum/600"
+        />
+        <img src="https://picsum.photos/seed/picsum/300" alt="just-a-pic" />
+      </picture>
+    </header>
+    <side class="v"
+      ><iframe
+        src="https://www.youtube.com/embed/GJqkXmiDAvA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe
+    ></side>
+  </body>
 </html>

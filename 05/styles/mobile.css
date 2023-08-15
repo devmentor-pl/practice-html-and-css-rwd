@@ -1,0 +1,53 @@
+.header__container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.header__nav {
+  height: 5vh;
+  width: 40%;
+}
+
+.header__logo {
+  display: none;
+  height: 5vh;
+  width: 20%;
+}
+
+.section-first__container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-first__item {
+  height: 49%;
+}
+
+.section-second__container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-second__item {
+  height: 32%;
+}
+
+.footer__container {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__copyright {
+  height: 5vh;
+  width: 40%;
+}

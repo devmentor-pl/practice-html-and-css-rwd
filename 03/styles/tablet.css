@@ -1,0 +1,5 @@
+body {
+  grid-template-areas: "p t" "v t";
+  grid-template-columns: minmax(200px, 50%) 50%;
+  /* grid-template-rows: 50vh 50vh; */
+}

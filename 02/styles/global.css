@@ -1,26 +1,36 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.a, .b, .c {
-    border: 3px solid transparent;
-    min-height: 50px;
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+}
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.a,
+.b,
+.c {
+  border: 3px solid transparent;
+  min-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .a {
-    border-color: #ffffba
+  grid-area: header;
+  border-color: #ffffba;
 }
 
 .b {
-    border-color: #ffdfba;
+  grid-area: main;
+  border-color: #ffdfba;
 }
 
 .c {
-    border-color: #baffc9;
+  grid-area: section;
+  border-color: #baffc9;
 }

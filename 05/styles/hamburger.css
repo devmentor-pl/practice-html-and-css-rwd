@@ -1,0 +1,52 @@
+/*      
+        <div class="hamburger-position">
+          <button class="hamburger"></button>
+        </div> 
+*/
+
+.hamburger-position {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid gray;
+  background: transparent;
+  transition: 0.2s transform linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid gray;
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.5s transform linear;
+}
+
+.hamburger:focus {
+  transform: rotate(45deg);
+  border: none;
+}
+
+.hamburger:focus:after {
+  transform: rotate(-90deg) translateX(-10px);
+}
