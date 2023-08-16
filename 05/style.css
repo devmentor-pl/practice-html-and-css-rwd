@@ -3,16 +3,16 @@
 	margin: 0;
 	box-sizing: border-box;
 }
-body {
-	margin: 0 auto;
-}
+
 /* base style */
 .container {
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	max-width: 1000px;
 	width: 100%;
 	border: 1px solid green;
-	margin: 2px;
+	/* margin: 2px; */
+	margin: 0 auto!important
+
 }
 
 .item {
@@ -32,6 +32,8 @@ body {
 	justify-content: center;
 	grid-template-columns: 50%;
 	grid-template-rows: 50px;
+	width: 500px;
+	margin: 0 auto!important
 }
 
 .nav__btn {
@@ -57,7 +59,7 @@ body {
 .section-first {
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: repeat(2, calc(20vh - 50px));
+	grid-template-rows: repeat(2, calc(25vh - 50px));
 
 }
 

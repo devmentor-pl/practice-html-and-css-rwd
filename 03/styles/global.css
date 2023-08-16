@@ -4,12 +4,12 @@
 	box-sizing: border-box;
 }
 
+
 .p,
 .t,
 .v {
 	border: 3px solid transparent;
 	min-height: 50px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -44,7 +44,9 @@
 	height: 100%;
 	width: 100%;
 }
-
+img{
+	max-width: 100%;
+}
 body {
 	display: grid;
 	grid-template-areas:
@@ -71,6 +73,9 @@ body {
 			'text text';
 		max-width: 1400px;
 		margin: 0 auto;
-		
 	}
+	img{
+		 max-width: 100%;
+	}
+	
 }
