@@ -1,0 +1,23 @@
+@media(min-width: 601px){
+    body{
+        background-color: rgb(225, 226, 218);
+        display: grid;
+        grid-template-columns: 600px 300px;
+        grid-template-rows: auto;
+        justify-content: center;
+        align-items: center;
+        width: 1200px;
+      
+
+    }
+
+.c{   
+    width: 600px;
+
+}
+
+.b{
+    max-width: 600px;
+
+}
+}

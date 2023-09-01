@@ -2,25 +2,49 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
+
+body{
+    max-width: 1600px;
+    
+    justify-content: center;
+    display: grid;
+    
+    grid-template-areas: 
+    "header"
+    "section"
+    "main";
+}
+
 
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #e2beb9;
+    
 }
 
 .b {
     border-color: #ffdfba;
+    
 }
 
 .c {
     border-color: #baffc9;
+    
 }
+
+section{
+    grid-area: main;
+}
+
