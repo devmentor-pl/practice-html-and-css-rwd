@@ -1,0 +1,39 @@
+@import url('./colors.css');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+.nav {
+	position: relative;
+	height: 80px;
+}
+.nav-menu,
+.item__dropdown {
+	list-style: none;
+}
+.nav a {
+	/* nawigacja jest przeklejana z poprzedniego zadania */
+	text-decoration: none;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+	margin: 0 auto;
+
+	max-width: 1000px;
+	height: 100%;
+	border: 5px solid var(--max-width-color);
+}
+nav,
+header,
+main,
+footer {
+	padding: 5px;
+	border: 5px solid var(--full-width-color);
+}

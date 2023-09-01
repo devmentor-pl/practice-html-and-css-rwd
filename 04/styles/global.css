@@ -1,0 +1,20 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: sans-serif;
+}
+.nav {
+	position: relative;
+	width: 100%;
+}
+.nav-menu,
+.item__dropdown {
+	list-style: none;
+}
+.nav a {
+	/* na potrzeby tego tasku, nie styluje tagu a uzywajac BEM - lenistwo :P  */
+	text-decoration: none;
+}

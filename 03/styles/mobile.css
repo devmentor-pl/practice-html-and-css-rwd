@@ -1,0 +1,10 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+.t,
+.v,
+.t {
+	padding: 20px;
+}
+
