@@ -1,20 +1,23 @@
+@media(max-width: 500px){
+    body{
+        height: calc(50vh);   
+}
+
+}
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 body{
     max-width: 1600px;
-    
     justify-content: center;
     display: grid;
-    
     grid-template-areas: 
-    "header"
-    "section"
-    "main";
+    "top"
+    "middle"
+    "bottom";
 }
 
 
@@ -25,7 +28,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     
 }
 
@@ -41,10 +43,8 @@ body{
 
 .c {
     border-color: #baffc9;
-    
+    grid-area: bottom;
 }
 
-section{
-    grid-area: main;
-}
+
 

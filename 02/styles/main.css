@@ -2,22 +2,24 @@
     body{
         background-color: rgb(225, 226, 218);
         display: grid;
-        grid-template-columns: 600px 300px;
+        grid-template-columns: 600px 600px;
         grid-template-rows: auto;
         justify-content: center;
         align-items: center;
-        width: 1200px;
-      
-
+        max-width: 2200px;
+        grid-template-areas: 
+        "top top"
+        "middle bottom";
     }
 
 .c{   
     width: 600px;
-
+    grid-area: middle;
 }
 
 .b{
     max-width: 600px;
+    grid-area: bottom; 
+}
+}
 
-}
-}
