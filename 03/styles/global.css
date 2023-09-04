@@ -10,30 +10,23 @@
 
 .p {
   border-color: #ffffba;
+  grid-area: p;
 }
 
 .t {
   border-color: #ffdfba;
+  grid-area: t;
 }
 
 .v {
   border-color: #baffc9;
+  grid-area: v;
 }
 
 .container {
   display: grid;
   max-width: 1400px;
   margin: 0 auto;
-}
-
-.p {
-  grid-area: p;
-}
-.t {
-  grid-area: t;
-}
-.v {
-  grid-area: v;
 }
 
 .img {
