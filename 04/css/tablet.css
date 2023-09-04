@@ -1,0 +1,54 @@
+.hamburger {
+  display: none;
+}
+
+.nav-container {
+  padding-top: 0;
+  --bg-color-black: #444;
+}
+
+.nav__list-ele {
+  margin-right: 3rem;
+  border-top: 0.5rem solid transparent;
+}
+
+.nav__list-ele:hover {
+  border-top: 0.5rem solid var(--nav-btn-orange);
+}
+
+.nav__list-container li a {
+  border-bottom: none;
+  padding-right: 5rem;
+}
+
+.nav__list-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  position: relative;
+}
+
+/* Nav list hiding */
+.nav__lvl2-ele {
+  position: absolute;
+  width: 35rem;
+  height: 100%;
+  padding-left: 0;
+}
+.nav__lvl2-ele:first-child {
+  top: 100%;
+}
+.nav__lvl2-ele:last-child {
+  top: 200%;
+}
+
+.nav__lvl2-ele {
+  border-top: 0.5rem solid transparent;
+}
+
+.nav__lvl2-ele:hover {
+  border-top: 0.5rem solid var(--nav-btn-orange);
+}
