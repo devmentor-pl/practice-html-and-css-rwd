@@ -1,0 +1,37 @@
+@media (max-width: 599px){
+    body{
+    max-width: 599px;
+    
+    background-color: rgb(217, 153, 153);
+    display: grid;
+
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+   
+        grid-template-areas: 
+        "A"
+        "B"
+        "C";
+}
+}
+.p {
+    border-color: #d65418;
+    
+}
+
+.t {
+    border-color: #183ed6;
+    grid-area: B;
+}
+
+.v {
+    border-color: #11ae33;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;  
+}
+
+img{
+    width: auto;
+}
