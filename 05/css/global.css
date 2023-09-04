@@ -59,10 +59,10 @@ input {
 /* //////////////////////////////////////////// */
 /* Nav section */
 .nav__logo {
-  background-color: orange;
+  background-color: rebeccapurple;
   height: 5rem;
-  width: 15rem;
-  margin: 0.5rem auto;
+  width: 25rem;
+  margin: 0.5rem;
   grid-area: l;
 }
 
