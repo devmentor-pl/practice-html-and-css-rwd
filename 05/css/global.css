@@ -1,0 +1,130 @@
+/* Main global settings */
+.container {
+  width: 100%;
+  border: 0.2rem solid green;
+}
+
+.section__container {
+  max-width: 100rem;
+  margin: 0 auto;
+  border: 0.2rem solid blue;
+}
+
+.section__ele {
+  width: 10rem;
+  height: 10rem;
+  background-color: orange;
+}
+/* ////////////////////////////////// */
+
+.nav__hamburger {
+  width: 4rem;
+  height: 3.5rem;
+  border: 0;
+  border-top: 0.5rem solid #333;
+  background: transparent;
+  position: relative;
+}
+
+.nav__hamburger::before,
+.nav__hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 0.5rem solid #333;
+  transform: translateY(1rem);
+}
+
+.nav__hamburger::after {
+  transform: translateY(2.5rem);
+}
+.nav__list-container {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s linear;
+}
+
+#menu-switcher:checked + .nav__list-container {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+input {
+  display: none;
+  visibility: hidden;
+}
+/* //////////////////////////////////////////// */
+/* Nav section */
+.nav__logo {
+  background-color: orange;
+  height: 5rem;
+  width: 15rem;
+  margin: 0.5rem auto;
+  grid-area: l;
+}
+
+.nav__hamburger {
+  margin: 1rem;
+  grid-area: h;
+}
+.nav__list-container {
+  grid-area: m;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__section {
+  display: grid;
+  grid-template-areas: 'l l l l l h' 'm m m m m m' 'm m m m m m' 'm m m m m m';
+}
+
+ul .section__ele {
+  width: 25rem;
+  margin: 1rem;
+}
+/* //////////////////////////////////////////// */
+/* First section */
+.section__container-first {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50rem;
+}
+
+.section__ele-first {
+  background-color: orange;
+  height: 24rem;
+  width: 100%;
+}
+/* //////////////////////////////////////////// */
+/* Second section */
+.section__container-second {
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section__ele-second {
+  background-color: orange;
+  height: 19rem;
+  width: 100%;
+}
+/* //////////////////////////////////////////// */
+/* Footer section */
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer__ele {
+  background-color: orange;
+  margin: 0.5rem;
+  height: 2rem;
+  width: 15rem;
+}
