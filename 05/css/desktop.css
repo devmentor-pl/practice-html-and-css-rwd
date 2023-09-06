@@ -1,4 +1,4 @@
-.container {
+.nav {
   padding: 1rem;
 }
 
@@ -8,11 +8,12 @@
 
 .nav__section {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .nav__logo {
   margin: 0.5rem;
+  width: 25rem;
 }
 
 .nav__list-container {

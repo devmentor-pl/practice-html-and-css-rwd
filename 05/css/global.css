@@ -1,10 +1,10 @@
 /* Main global settings */
-.container {
+.nav {
   width: 100%;
   border: 0.2rem solid green;
 }
 
-.section__container {
+.section {
   max-width: 100rem;
   margin: 0 auto;
   border: 0.2rem solid blue;
@@ -59,7 +59,7 @@ input {
 /* //////////////////////////////////////////// */
 /* Nav section */
 .nav__logo {
-  background-color: rebeccapurple;
+  background-color: orange;
   height: 5rem;
   width: 25rem;
   margin: 0.5rem;
@@ -79,6 +79,7 @@ input {
 
 .nav__section {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
   grid-template-areas: 'l l l l l h' 'm m m m m m' 'm m m m m m' 'm m m m m m';
 }
 
