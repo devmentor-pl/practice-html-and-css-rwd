@@ -12,7 +12,7 @@
   transition: all 0.3s linear;
 }
 
-.nav-container {
+.nav {
   padding-top: 1rem;
   background-color: var(--bg-color-black);
 }
