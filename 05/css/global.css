@@ -89,7 +89,7 @@ ul .section__ele {
 }
 /* //////////////////////////////////////////// */
 /* First section */
-.section__container-first {
+.container__section-first {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -103,7 +103,7 @@ ul .section__ele {
 }
 /* //////////////////////////////////////////// */
 /* Second section */
-.section__container-second {
+.container__section-second {
   height: 60rem;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,7 @@ ul .section__ele {
 }
 /* //////////////////////////////////////////// */
 /* Footer section */
-.footer__container {
+.container__footer {
   display: flex;
   align-items: center;
   justify-content: center;
