@@ -1,12 +1,15 @@
-@media(min-width: 600px ){
+@media(min-width: 600px) and (max-width: 1199px){
     body{
-        min-width: 600px;;
-        max-width: 1199px;
+    min-width: 600px;
+    max-width: 1199px;
     background-color: rgb(214, 227, 164);
     display: grid;
 
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 50%;
+
+    grid-template-columns: minmax(200px, 50%) 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    
 
     grid-template-areas: 
     "A B"
@@ -34,3 +37,5 @@
     width: 100%;
     
 }
+
+/*ustawic maksymalną wysokość dla kolumny 50% i minimalną wielkość 200px;*/
