@@ -1,0 +1,177 @@
+@media (min-width: 100px) and (max-width: 600px){
+    body{
+        max-width: 600px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+   
+    .all{
+        max-width: 100vw;
+        max-height: 100vh;
+        
+    }
+    .header{
+        display: grid;
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(200px);
+        height: 99%;
+        width: 95vw;
+        border: solid;
+        border-color: green;
+        
+    }
+    
+    .header__row{
+        display:grid;  
+        border: solid;
+        border-color: rgb(31, 19, 207);
+        width: 94vw;
+        height: 7vh;
+        grid-template-columns: minmax(4, 150px 200px 200px 50px);
+        grid-template-rows: minmax(200px);
+        grid-template-areas: 
+        "A B C D";
+    }
+    .header__element{
+        display: grid;
+        grid-area: C;
+        place-self: center;
+        width: 180px;
+        height: 40px;
+        background-color: yellow;
+        }
+
+   
+
+    .hamburger{
+        display: grid;
+        grid-area: D;
+        place-self: center;
+        width: 50px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid grey;
+        border-bottom: 3px;
+        background-color: aqua;
+        position: relative;
+    }
+
+    .hamurger::before, .hamburger::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid grey;
+        transform: translateY(10px);
+    }
+    .hamburger::after{
+        transform: translateY(25px);
+    }
+        
+       
+    .section__first, .section__second{
+        display: grid;
+        height: 40vh;
+        border: solid;
+        border-color: green; 
+        
+    }
+    
+    
+    .section__first--row{
+        display: grid;
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(2, 200px);
+        border: solid;
+        border-color: rgb(31, 19, 207);
+        width: 95vw;
+        height: 99%;
+        
+    }
+    
+   
+    .cell__one, .cell__one--right{
+        display: grid;
+        background-color: rgb(236, 197, 69);
+        width: 95vw;
+        height: 98%;
+        
+    }
+    .cell__one--right{
+        align-self: end;
+    }
+
+    .section__second{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        border-color: green; 
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(3, 200px);
+        
+    }
+
+     .section__second--row{
+        display: grid;
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(3, 200px);
+        border: solid;
+        border-color: rgb(31, 19, 207);
+        height: 99%;
+        width: 95vw;
+    }
+    
+     .cell__two--first,  .cell__two--third{
+        display: grid;
+        width: 95vw;
+        height: 110px;
+        background-color: rgb(236, 197, 69); 
+        
+    }
+    .cell__two--first{
+        align-self: start;
+    }
+    .cell__two--third{
+        align-self: end;
+    }
+    .cell__two{
+        height: 110px;
+        align-self: center;
+        width: 95vw;
+        background-color: rgb(236, 197, 69); 
+}
+
+
+    .footer__row{
+        display: grid;  
+        
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(200px);
+        border: solid;
+        border-color: rgb(0, 128, 0);
+        height: 10vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__container{
+        display: grid;
+        grid-template-columns: minmax(600px);
+        grid-template-rows: minmax(200px);
+        height: 99%;
+        width: 95vw;
+        border: 3px solid blue;
+        
+    }
+    
+    .footer__container--element{
+        display: grid;
+        place-self: center;
+        width: 160px;
+        height: 60%;
+        background-color: yellow;
+        top: 3px;
+        left: 35%;
+    }
+}
+

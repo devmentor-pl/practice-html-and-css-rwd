@@ -1,0 +1,167 @@
+@media (min-width: 600px) and (max-width: 2000px){
+body{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.all{
+    height: 1000px;
+}
+
+.section__first, .section__second{
+    width: 100vw;
+    height: 200px;
+    border: solid;
+    border-color: green;
+    text-align: center;
+    margin-top: 5px;
+    display: grid;
+    
+}
+.section__first{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.section__second{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.header{
+    display: grid;
+    height: 80px;
+    width: 100vw;
+    border: solid;
+    border-color: green;
+    
+    
+}
+
+.header__row{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    border: solid;
+    border-color: rgb(31, 19, 207);
+    width: 90vw;
+    height: 70px;
+    justify-self: center;
+}
+
+.header__element{
+    align-self: center;
+    background-color: rgb(236, 197, 69);
+    width: 200px;
+    height: 80%;
+    top: 3px;
+    
+}
+
+.hamburger{
+    
+    background-color: rgb(236, 197, 69);
+    width: 400px;
+    height: 80%;
+    justify-self: end;
+    align-self: center;
+}
+
+.section__first--row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    border: solid;
+    border-color: rgb(31, 19, 207);
+    width: 90vw;
+    height: 190px;
+
+    align-self: center;
+    justify-self: center;
+    
+    top: 3px;
+}
+
+.section__second--row{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border: solid;
+    border-color: rgb(31, 19, 207);
+    width: 90vw;
+    height: 190px;
+    align-self: center;
+    justify-self: center;
+}
+
+.cell__one{
+    
+    background-color: rgb(236, 197, 69);
+    width: 98%;
+    height: 95%;
+    position: relative;
+    top: 5px; 
+}
+.cell__one--right{
+    
+    background-color: rgb(236, 197, 69);
+    width: 98%;
+    height: 95%;
+    position: relative;
+    top: 5px; 
+    justify-self: end;
+}
+
+
+.cell__two{
+    display: grid; 
+    height: 160px;
+    background-color: rgb(236, 197, 69); 
+    justify-self: stretch;
+    margin: 10px;
+}
+
+.section__second{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__container{
+    display: flex;
+    width: 200px;
+    height: 30px;
+    background-color:rgb(236, 197, 69); 
+    justify-content: center;
+}
+.footer__row{
+    display: flex;  
+    border: solid;
+    border-color: rgb(0, 128, 0);
+    justify-content: space-between;
+}
+
+.footer__row{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+    margin-top: 5px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
