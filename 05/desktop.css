@@ -1,24 +1,27 @@
-@media (min-width: 600px) and (max-width: 2000px){
+@media (min-width: 800px) and (max-width: 2000px){
 body{
-    width: 100vw;
+    max-width: 2000px;
     height: 100vh;
-    
+    display: grid;
 }
 
 .all{
-    height: 1000px;
+    align-items: center;
+    height: 100vh;
+    margin-top: 20px;
 }
 
 .section__first, .section__second{
-    width: 100vw;
-    height: 200px;
+    display: grid;
+    width: 100%;
+    height: 30vh;
     border: solid;
     border-color: green;
     text-align: center;
     margin-top: 5px;
-    display: grid;
-    
+      
 }
+
 .section__first{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -31,12 +34,11 @@ body{
 
 .header{
     display: grid;
-    height: 80px;
-    width: 100vw;
+    height: 100px;
+    width: 100%;
     border: solid;
     border-color: green;
-    
-    
+     
 }
 
 .header__row{
@@ -47,6 +49,7 @@ body{
     width: 90vw;
     height: 70px;
     justify-self: center;
+    align-self: center;
 }
 
 .header__element{
@@ -57,29 +60,26 @@ body{
     top: 3px;
     
 }
-
-.hamburger{
-    
+ 
+label{
     background-color: rgb(236, 197, 69);
     width: 400px;
     height: 80%;
     justify-self: end;
     align-self: center;
+    border-color: transparent;
 }
 
 .section__first--row{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-
     border: solid;
     border-color: rgb(31, 19, 207);
     width: 90vw;
     height: 190px;
-
     align-self: center;
     justify-self: center;
-    
     top: 3px;
 }
 
@@ -104,7 +104,6 @@ body{
     top: 5px; 
 }
 .cell__one--right{
-    
     background-color: rgb(236, 197, 69);
     width: 98%;
     height: 95%;
@@ -114,7 +113,7 @@ body{
 }
 
 
-.cell__two{
+.cell__two--first, .cell__two, .cell__two--third{
     display: grid; 
     height: 160px;
     background-color: rgb(236, 197, 69); 
@@ -127,28 +126,24 @@ body{
     align-items: center;
     justify-content: center;
 }
+.footer__row{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    border: solid;
+    border-color: rgb(0, 128, 0);
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
 
 .footer__container{
     display: flex;
-    width: 200px;
+    width: 210px;
     height: 30px;
     background-color:rgb(236, 197, 69); 
     justify-content: center;
-}
-.footer__row{
-    display: flex;  
-    border: solid;
-    border-color: rgb(0, 128, 0);
-    justify-content: space-between;
-}
-
-.footer__row{
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 100px;
-    margin-top: 5px;
+    
 }
 }
 
