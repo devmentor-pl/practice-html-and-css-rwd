@@ -75,11 +75,13 @@ label::after{
 
 nav ul {
     display: none; /* Ukrywamy menu początkowo */
-    position: relative;  
+    position: absolute;
+    top: 100px;
+
 }
 
 nav ul li{
-     width: 100px;
+    width: 100px;
     height: 30px;
     background-color: brown;
 }
