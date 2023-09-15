@@ -1,0 +1,13 @@
+@media (min-width: 600px) {
+    .nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+   
+    
+}

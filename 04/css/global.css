@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav {
+    background-color: white;
+    display: flex;
+    
+    text-align: center;
+}
+.nav__item {
+    background-color: red;
+    padding: 10px;
+    border: 2px solid rgb(151, 148, 148);
+    width: 33%;
+
+ 
+}
