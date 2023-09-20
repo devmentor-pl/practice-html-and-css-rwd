@@ -1,0 +1,11 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 700px));
+	grid-template-rows: repeat(2, 1fr);
+	justify-content: center;
+}
+
+.t {
+	grid-column: 1 / 3;
+	grid-row: 2 / 3;
+}

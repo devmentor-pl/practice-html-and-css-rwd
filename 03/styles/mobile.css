@@ -1,0 +1,16 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.p {
+	order: 1;
+}
+
+.t {
+	order: 2;
+}
+
+.v {
+	order: 3;
+}
