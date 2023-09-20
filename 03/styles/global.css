@@ -36,3 +36,16 @@ body {
     border-color: #baffc9;
     grid-area: v;
 }
+/* tablet */
+@media (min-width: 600px) {
+    body {
+        grid-template-areas:
+            "p t"
+            "v t";
+        grid-template-columns: 1.1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .p, .v {
+        min-width: 200px;
+    }
+}
