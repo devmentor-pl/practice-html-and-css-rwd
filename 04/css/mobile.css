@@ -1,17 +1,23 @@
 @media (max-width:599px) {
-    nav ul {
+    .nav  {
         display: none;
     }
- 
+    input {
+        display: none;
+    }
     .hamburger {
         width: 40px;
         height: 35px;
         border: 0;
-        border-top: 5px solid #ffffff;
+        border-top: 5px solid grey;
         background: transparent;
         position: relative;
         transition: 0.3s transform linear;
+        display: block;
 
+    }
+    input:checked + .nav {
+        display: block;
     }
     .hamburger::before, .hamburger::after {
         content: '';
@@ -19,7 +25,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        border-top: 5px solid #ffffff;
+        border-top: 5px solid grey;
         transform: translateY(10px);
     }
     .hamburger::after {
@@ -35,4 +41,17 @@
      .hamburger:hover nav {
         display: block;
      }
+    .nav__item {
+        width: 100%;
+        text-align: left;
+        padding-left: 20px;
+        position: relative;
+    }
+    .dropdown {
+        list-style: none;
+        position: absolute;
+        right: 70px;
+        top: 4px;
+        font-size: 14px;
+    }
 }

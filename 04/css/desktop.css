@@ -4,8 +4,24 @@
         justify-content: space-around;
         align-items: center;
     }
-    .hamburger {
+    .hamburger, input {
         display: none;
+    }
+    .nav__item {
+        position: relative;
+    }
+    .dropdown{
+        position: absolute;
+        top : calc(100% + 2px);
+        left: 0;
+        list-style: none;
+        background-color:red;
+        width: 100%;
+        display: none;
+    }
+    .nav__item:hover .dropdown {
+        display: block;
+
     }
     
    
