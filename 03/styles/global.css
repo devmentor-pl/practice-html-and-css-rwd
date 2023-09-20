@@ -49,3 +49,17 @@ body {
         min-width: 200px;
     }
 }
+
+/* desktop */
+@media (min-width: 1000px) {
+    body {
+        grid-template-areas:
+            "p v"
+            "t t";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 1400px;
+        margin: 0 auto;
+        
+    }
+}
