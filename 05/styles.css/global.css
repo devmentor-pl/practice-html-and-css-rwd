@@ -1,0 +1,27 @@
+.row,
+.container,
+.cell {
+	border-style: solid;
+	border-width: 4px;
+}
+
+.row {
+	border-color: green;
+
+	@media (min-width: 800px) {
+		margin: 10px 3px;
+	}
+}
+
+.container {
+	border-color: royalblue;
+	/* 2px margin to better visibility */
+	margin: 2px;
+}
+
+.cell {
+	background-color: gold;
+	border-color: gold;
+	margin: 5px 0;
+	min-height: 75px;
+}

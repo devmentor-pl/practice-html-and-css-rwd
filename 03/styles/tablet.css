@@ -1,0 +1,10 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(200px, 1fr));
+	grid-template-rows: repeat(2, 1fr);
+}
+
+.t {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}

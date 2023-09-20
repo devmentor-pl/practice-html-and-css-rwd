@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="styles/desktop.css">
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus autem, dolore nulla ab vero
+            ratione laboriosam molestias quae explicabo cumque velit nam aperiam dolores quos officiis illo odio beatae.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam quidem itaque fuga? Corporis vero voluptas
+            quia ipsam non enim, provident minima recusandae eum explicabo ullam aperiam quasi natus distinctio. Hic.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ex amet consequatur perferendis iusto
+            inventore rerum ut ad architecto hic quasi optio, reiciendis quas, sequi atque voluptas libero. Iste, minus!
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source srcset="images/image_2400.jpg" media="(min-width: 1200px)">
+            <source srcset="images/image_1920.jpg" media="(min-width: 600px)">
+            <source srcset="images/image_640.jpg">
+            <img src="images/image_1920.jpg" alt="">
+        </picture>
+
+        <!-- <img sizes="10vw" srcset="
+        images/image_640.jpg 640w, 
+        images/image_1920.jpg 1920w, 
+        images/image_2400.jpg 2400w" alt="water"> -->
+    </header>
+    <side class="v"><iframe src="https://www.youtube.com/embed/uRYHX4EwYYA"
+            title="How to test a local website on your phone" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe></side>
 
 </body>
+
 </html>
