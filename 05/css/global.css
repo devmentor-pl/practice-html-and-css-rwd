@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+header, main, section, footer {
+    border: 3px solid green;
+    min-height: 50px;
+    margin: 3px
+}
+.container {
+    border: 3px solid blue;
+    margin: 0 auto;
+    min-height: 50px;
+    max-width: 1000px;
+}
+.cell{
+    background-color: orange;
+    min-height: 50px;
+    margin: 3px;
+}

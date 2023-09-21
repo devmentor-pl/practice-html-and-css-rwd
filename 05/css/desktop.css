@@ -1,0 +1,35 @@
+@media (min-width:801px)
+{
+    .hamburger__box {
+        display: none;
+    }
+    .center{
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 200px;
+    }
+    .nav {
+        width: 400px;
+    }
+    .main, .section {
+        display: flex;
+        justify-content: space-around;
+    }
+    .article1, .article2 {
+        width: 49%;
+        min-height: 200px;
+    }
+    .article3, .article4, .article5 {
+        width: 33%;
+        min-height: 300px;
+    }
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+    .copyrights {
+        width: 200px;
+    }
+}

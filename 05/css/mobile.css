@@ -1,0 +1,49 @@
+
+@media (max-width: 800px){
+    body{
+        height: 100vh;
+    }
+    .center{
+        display: flex;
+        justify-content: center;position: relative;
+    }
+   .nav {
+    display: none;
+   }
+   .logo {
+    min-width: 200px; 
+   }
+   .copyrights {
+    min-width: 100px; 
+    
+   }
+   .hamburger__box {
+    position: absolute;
+    right: 4%;
+    top: 16%;
+
+   }
+   .hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #5f5d5d;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+
+}
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #5f5d5d;
+    transform: translateY(10px);
+
+}
+.hamburger::after {
+    transform: translateY(25px);
+}
+}
