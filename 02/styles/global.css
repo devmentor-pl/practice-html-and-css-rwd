@@ -17,17 +17,17 @@
 
 .a {
 	border-color: #ffffba;
-    grid-area:a;
+	grid-area: a;
 }
 
 .b {
 	border-color: #ffdfba;
-       grid-area:b;
+	grid-area: b;
 }
 
 .c {
 	border-color: #baffc9;
-       grid-area:c;
+	grid-area: c;
 }
 
 body {
@@ -37,4 +37,22 @@ body {
 		".b"
 		".c";
 	height: 50vh;
+}
+
+@media screen and (min-width: 600px) {
+	body {
+		grid-template-areas:
+			"a a"
+			"c b";
+		grid-template-columns: 1fr 1fr;
+		max-width: 1200px;
+		margin: 0 auto;
+
+	}
+
+	.b,
+	.c {
+		width: 50%;
+	}
+
 }
