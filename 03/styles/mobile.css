@@ -1,0 +1,28 @@
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+header.p {
+	order: 1;
+}
+
+main.t {
+	order: 2;
+}
+
+aside.v {
+	order: 3;
+}
+
+.video-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 100%;
+}
+
+.video-container iframe {
+	max-width: 100%;
+	height: auto;
+}
