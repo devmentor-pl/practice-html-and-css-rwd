@@ -1,0 +1,44 @@
+header {
+	padding: 1rem;
+	width: 100%;
+	background-color: rgb(127, 205, 231);
+}
+
+.nav__menu {
+	max-width: 1000px;
+}
+
+.nav__list {
+	display: none;
+}
+
+label {
+	place-self: center;
+	width: 50px;
+	height: 35px;
+	border: 0;
+	border-top: 5px solid rgb(11, 10, 10);
+	border-bottom: 3px;
+	background-color: transparent;
+	position: relative;
+	cursor: pointer;
+}
+
+label::before,
+label::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid rgb(11, 10, 10);
+	transform: translateY(10px);
+}
+
+label::after {
+	transform: translateY(25px);
+}
+
+input {
+	display: none;
+}
