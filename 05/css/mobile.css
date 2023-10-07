@@ -1,7 +1,7 @@
 header {
 	padding: 1rem;
 	width: 100%;
-	background-color: rgb(127, 205, 231);
+	background-color: rgb(127, 141, 231);
 }
 
 .nav__menu {
@@ -41,4 +41,27 @@ label::after {
 
 input {
 	display: none;
+}
+
+.website__content--primary,
+.website__content--secondary {
+	width: 100%;
+}
+
+.website__article--first,
+.website__article--second {
+	max-width: 1000px;
+	margin: 0.5rem auto;
+	padding: 1rem;
+	background-color: rgb(255, 166, 0);
+}
+
+.website__article--third {
+	max-width: 1000px;
+	margin: 0.5rem auto;
+	padding: 1rem;
+}
+p {
+	background-color: orange;
+	margin-top: 20px;
 }
