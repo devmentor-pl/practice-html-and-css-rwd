@@ -45,8 +45,7 @@ input {
 
 .website__content--primary,
 .website__content--secondary,
-.website__content--third
- {
+.website__content--third {
 	width: 100%;
 }
 
@@ -64,11 +63,16 @@ input {
 	padding: 1rem;
 }
 p {
-	background-color: orange;
+	background-color: rgb(255, 165, 0);
 	margin-top: 20px;
 }
-.footer__container > .copyrights{
-    margin-top:1.5rem;
-    padding:0.5rem;
-    text-align: center;
+.website__paragraph{
+	padding:1rem;
+	background-color: rgb(255, 165, 0);
+	margin-top: 20px;
+}
+.footer__container > .copyrights {
+	margin-top: 1.5rem;
+	padding: 0.5rem;
+	text-align: center;
 }
