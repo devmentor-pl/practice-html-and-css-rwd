@@ -44,7 +44,9 @@ input {
 }
 
 .website__content--primary,
-.website__content--secondary {
+.website__content--secondary,
+.website__content--third
+ {
 	width: 100%;
 }
 
