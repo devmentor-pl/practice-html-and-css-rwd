@@ -26,8 +26,8 @@ aside.v {
     grid-row: 2;
 }
 
-/* Nowa definicja dla tekstu na dole */
+
 main.bottom-text {
     grid-column: 2;
-    grid-row: 2 / span 2; /* Rozciągamy na dwa wiersze */
+    grid-row: 2 / span 2;
 }
