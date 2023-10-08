@@ -1,0 +1,25 @@
+/* tablet.css */
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header.p {
+    order: 1;
+    flex: 2;
+}
+
+main.t {
+    order: 2;
+    flex: 1;
+}
+
+aside.v {
+    order: 3;
+    flex: 1;
+}
+
+main.t {
+    order: 4;
+    flex: 1;
+}

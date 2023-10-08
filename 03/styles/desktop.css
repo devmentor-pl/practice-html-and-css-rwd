@@ -1,0 +1,33 @@
+body {
+    max-width: 1400px;
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto; 
+    gap: 20px; 
+}
+
+header.p {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+main.t {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+aside.v {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+main.bottom-text {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+}

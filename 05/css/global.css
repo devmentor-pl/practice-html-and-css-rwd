@@ -1,0 +1,26 @@
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.nav__menu{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.nav__list{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:2rem;
+    list-style-type: none;
+}
+
+.nav__item a {
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
