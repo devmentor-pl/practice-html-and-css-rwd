@@ -21,7 +21,7 @@ body{
 
 .header__row{
     display:grid;  
-    grid-template-columns: minmax(4, 150px 300px 300px 50px);
+    grid-template-columns: minmax(3, 150px 300px 300px);
     grid-template-rows: minmax(200px);
     border: solid;
     border-color: rgb(31, 19, 207);
@@ -45,7 +45,6 @@ nav{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-area: D;
-    
 }
 
 label{
