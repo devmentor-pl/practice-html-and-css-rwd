@@ -58,10 +58,14 @@ body{
     width: 200px;
     height: 80%;
     top: 3px;
-    
 }
  
-label{
+nav, input{
+    display: none;
+    height: 0;
+    width: 0;
+}
+.header__element--desktop{
     background-color: rgb(236, 197, 69);
     width: 400px;
     height: 80%;
@@ -69,7 +73,6 @@ label{
     align-self: center;
     border-color: transparent;
 }
-
 .section__first--row{
     display: grid;
     grid-template-columns: 1fr 1fr;

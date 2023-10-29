@@ -7,71 +7,69 @@ body{
 
 .all{
     max-width: 800px;
-    max-height: 100vh;
-    
 }
 .header{
-    display: grid;
-    grid-template-columns: minmax(800px);
-    grid-template-rows: minmax(200px);
-    height: 99%;
+    
+    height: 80px;
     border: solid;
     border-color: green;  
 }
 
 .header__row{
-    display:grid;  
-    grid-template-columns: minmax(3, 150px 300px 300px);
-    grid-template-rows: minmax(200px);
+    display:grid; 
+    height: 98%;
+    grid-template-columns: 1fr 100px;
     border: solid;
     border-color: rgb(31, 19, 207);
-    height: 80px;
-    grid-template-areas: 
-    "A B C D";
+    
 }
 
 .header__element{
-    display: grid;
-    grid-area: B;
-    place-self: center;
-    width: 180px;
+    width: 170px;
     height: 40px;
     background-color: yellow;
+    justify-self: center;
+    align-self: center;
 }
-
-
+.header__element--desktop{
+    display: none;
+    height: 0;
+    width: 0;
+}
 nav{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-area: D;
+    display: inline-block;
+    width: 100px;
 }
 
 label{
-    place-self: center;
+    display: block;
     width: 50px;
-    height: 35px;
-    border: 0;
-    border-top: 5px solid rgb(11, 10, 10);
-    border-bottom: 3px;
+    height: 30px;
     background-color: transparent;
+    border-top: 5px solid  rgb(11, 10, 10);
     position: relative;
+    top: calc(1/4*100%);
+    left: calc(1/4*100%);
 }
 
 label::before, label::after{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 50px;
     border-top: 5px solid  rgb(11, 10, 10);
     transform: translateY(10px);
 }
-
 label::after{
-    transform: translateY(25px);
+    transform: translateY(25px);  
+    
+}
+input[type="checkbox"] {
+    display: none;
 }
 
+input[type="checkbox"]:checked + ul {
+    display: block;
+}
 nav ul {
     display: none; /* Ukrywamy menu początkowo */
     position: absolute;
@@ -85,23 +83,16 @@ nav ul li{
     background-color: brown;
 }
 
-nav label:hover + input[type="checkbox"]:checked + ul {
+nav input[type="checkbox"]:checked + ul {
     display: block; /* Wyświetlamy menu po najechaniu na label i zaznaczeniu checkboxa */
 }
   
-nav label:hover + input[type="checkbox"] {
+nav input[type="checkbox"] {
     display: none; /* Ukrywamy checkbox po najechaniu na label */
 }
   
-nav label:hover + input[type="checkbox"] + ul:hover {
-    display: none; /* Ukrywamy menu po najechaniu na label, a następnie zjeździe myszą z menu */
-}
 
-#hamburger{
-    width: 1;
-    height: 1;
-    opacity: 0;
-}
+/* SECTION */
 
 .section__first, .section__second{
     display: grid;
