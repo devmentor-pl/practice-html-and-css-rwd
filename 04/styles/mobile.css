@@ -1,0 +1,40 @@
+.list-first-level {
+  flex-direction: column;
+  text-align: left;
+  height: 100vh;
+  padding-left: 20px;
+}
+.dropdown-item {
+  display: block;
+}
+.list-second-level > li {
+  margin-left: 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.item-first-level:last-child {
+  margin-top: 120px;
+}
+/* hamburger */
+.list-first-level {
+  display: none;
+}
+input:checked + .list-first-level {
+  display: block;
+}
+nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+}
+input {
+  display: none;
+}

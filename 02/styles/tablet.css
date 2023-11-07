@@ -1,0 +1,6 @@
+body {
+  grid-template-areas:
+    'A A'
+    'C B';
+  grid-template-columns: 50% 50%;
+}

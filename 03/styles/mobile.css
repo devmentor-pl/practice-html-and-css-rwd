@@ -1,0 +1,31 @@
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'P'
+    'T'
+    'V';
+}
+.t {
+  grid-area: T;
+}
+.p {
+  grid-area: P;
+}
+.v {
+  grid-area: V;
+}
+.v {
+  height: 0;
+  padding-bottom: calc(315 / 560 * 100%);
+  position: relative;
+  width: 100%;
+}
+iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

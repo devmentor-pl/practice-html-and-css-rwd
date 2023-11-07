@@ -1,0 +1,46 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.header__logo {
+  min-width: 200px;
+  min-height: 100px;
+}
+.header__nav {
+  min-width: 400px;
+  min-height: 50px;
+}
+.content__container {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+.content__article {
+  width: 49%;
+  min-height: 300px;
+}
+.testimonials__container {
+  display: flex;
+  justify-content: space-evenly;
+  padding-block: 10px;
+}
+.testimonial__item {
+  min-height: 300px;
+}
+.testimonial__item {
+  width: 31%;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+  padding-block: 10px;
+}
+.footer__copyrights {
+  min-height: 100px;
+  width: 15%;
+}
+label,
+input {
+  display: none;
+}
