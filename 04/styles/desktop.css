@@ -5,23 +5,15 @@
   display: flex;
   justify-content: flex-start;
 }
+
 .nav__hamburger-icon {
   display: none;
 }
-.nav__item {
-  width: 20%;
+.list__link {
+  padding: 15px 40px;
 }
-.dropdown-toggle {
-  position: relative;
-}
-.dropdown {
-  background-color: var(--nav-color);
-}
-
 .dropdown__link {
-  width: 100%;
-  height: 100%;
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 .fa-caret-down {
   padding-left: 10px;

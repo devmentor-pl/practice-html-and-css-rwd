@@ -1,25 +1,4 @@
-:root {
-  --nav-color: #21abcb;
-  --text-color: white;
-  --hover-color: #1e7abd;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text-color);
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-
-  transition: 0.2s ease-in-out;
-}
-a:hover {
-  color: var(--text-color);
-  background-color: var(--hover-color);
-}
-.nav {
-  background-color: var(--nav-color);
-  padding: 15px;
-}
+/* HAMBURGER ICON */
 
 .nav__hamburger-icon {
   cursor: pointer;
@@ -57,24 +36,26 @@ input:checked ~ .nav__hamburger-icon span {
 }
 input:checked ~ .nav__hamburger-icon span::before {
   transform: rotate(45deg) translateY(14px);
+  height: 3px;
 }
 input:checked ~ .nav__hamburger-icon span::after {
   transform: rotate(-45deg) translateY(-14px);
+  height: 3px;
 }
 input {
   display: none;
 }
 
-.fa-caret-down {
-  color: white;
+/* MENU */
+
+.nav {
+  padding: 15px;
 }
 
 .list__link,
 .dropdown__link {
-  display: block;
   padding: 15px 20px;
-  margin: 10px 10px;
-  border-radius: 5px;
+  margin: 10px 0;
 }
 .dropdown {
   display: none;
@@ -83,7 +64,7 @@ input {
   display: block;
 }
 .dropdown__link {
-  padding-left: 100px;
+  padding-left: 20%;
 }
 .dropdown-toggle .list__link {
   display: flex;
@@ -94,7 +75,6 @@ input {
   display: none;
 }
 
-/* Zapytac czemu musi byc ta tylda */
 input:checked ~ .nav__list {
   display: block;
 }
