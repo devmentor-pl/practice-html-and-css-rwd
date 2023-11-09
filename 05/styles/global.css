@@ -1,0 +1,72 @@
+header,
+section {
+  border: 1px solid green;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid blue;
+}
+
+input {
+  display: none;
+}
+
+img {
+  display: block;
+}
+
+.article__image {
+  background-image: url("https://newevolutiondesigns.com/images/freebies/4k-dog-wallpaper-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 0;
+  padding-bottom: calc(3 / 4 * 100%);
+}
+
+/* .gallery__image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 0;
+  padding-bottom: calc(3 / 4 * 100%);
+}
+
+.image1 {
+  background-image: url("https://newevolutiondesigns.com/images/freebies/4k-dog-wallpaper-1.jpg");
+}
+.image2 {
+  background-image: url("https://newevolutiondesigns.com/images/freebies/4k-dog-wallpaper-2.jpg");
+}
+.image3 {
+  background-image: url("https://newevolutiondesigns.com/images/freebies/4k-dog-wallpaper-10.jpg");
+} */
+
+.nav__item:hover {
+  cursor: pointer;
+  color: aqua;
+}
+figure {
+  position: relative;
+}
+
+figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: #3d3d3d9f;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+}
+
+.footer__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+}
