@@ -1,7 +1,7 @@
 body {
-  grid-template-areas: 
-  "p-header v-bottom"
-  "t-main t-main";
+  grid-template-areas:
+    "p-header v-bottom"
+    "t-main t-main";
   grid-template-columns: repeat(2, 1fr);
 
   max-width: 1400px;
