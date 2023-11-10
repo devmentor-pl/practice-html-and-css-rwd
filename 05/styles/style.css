@@ -1,13 +1,12 @@
-body {
-  margin: 0 auto;
-}
 .row {
   border: 2px solid green;
   max-width: 1360px;
+  margin: 0 auto;
 }
 .container {
   border: 2px solid blue;
   max-width: 1200px;
+  margin: 0 auto;
 }
 .cell {
   background-color: orange;
@@ -27,8 +26,6 @@ body {
 }
 .hamburger-icon {
   position: absolute;
-  /* top: 50%;
-  transform: translateY(-50%); */
   top: 25px;
   right: 15px;
 }
@@ -82,6 +79,9 @@ input:checked ~ .hamburger-icon span::after {
   transform: rotate(-45deg) translateY(-14px);
   height: 3px;
 }
+input:checked ~ .hamburger-icon {
+  right: 0;
+}
 
 /* MAIN */
 
@@ -114,4 +114,54 @@ input:checked ~ .hamburger-icon span::after {
 /* DESKTOP */
 
 /* @media (min-width: 900px) {
+  .header__container {
+    display: grid;
+
+    grid-template-areas: 'logo . menu';
+
+    grid-template-columns: 200px auto 700px;
+  }
+
+  .header__logo {
+    margin: 0;
+    grid-area: logo;
+    grid-column: 1;
+    border: 1px solid red;
+  }
+  .nav__list {
+    border: 3px solid green;
+    display: block;
+    grid-area: menu;
+    min-height: 50px;
+  }
+  .hamburger-icon {
+    display: none;
+  }
 } */
+/* DESKTOP */
+
+@media (min-width: 900px) {
+  .header__container {
+    display: grid;
+    grid-template-areas: 'logo menu';
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .header__logo {
+    margin: 0;
+    grid-area: logo;
+    border: 1px solid red;
+  }
+
+  .nav__list {
+    border: 3px solid green;
+    display: block;
+    grid-area: menu;
+    min-height: 50px;
+  }
+
+  .hamburger-icon {
+    display: none;
+  }
+}
