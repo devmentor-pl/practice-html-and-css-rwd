@@ -1,12 +1,12 @@
 .row {
   border: 3px solid green;
-  max-width: 1360px;
+  width: 100%;
   margin: 0 auto;
   padding: 5px;
 }
 .container {
   border: 3px solid blue;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 .cell {
@@ -23,7 +23,7 @@
 .header__logo {
   width: 200px;
   height: 50px;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .hamburger-icon {
   position: absolute;
@@ -105,6 +105,7 @@ input:checked ~ .hamburger-icon {
 .footer__container {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 5px 0;
 }
 .footer__text {
