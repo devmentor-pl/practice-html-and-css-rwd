@@ -145,21 +145,20 @@ input:checked ~ .hamburger-icon {
   /* MAIN */
   .main__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, calc(50% - 5px));
     align-items: center;
+    justify-content: space-between;
   }
-  .main__article {
-    margin: 10px;
-  }
+
   /* SECTION FEATURES */
 
   .features__container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: calc(30% - 15px) calc(40% - 15px) calc(30% - 15px);
     align-items: center;
+    justify-content: space-evenly;
   }
   .features__article {
-    margin: 10px;
-    min-height: 50vh;
+    min-height: 40vh;
   }
 }
