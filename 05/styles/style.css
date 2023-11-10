@@ -13,6 +13,8 @@ body {
   background-color: orange;
 }
 
+/* MOBILE */
+
 /* HEADER */
 .header__container {
   display: flex;
@@ -25,6 +27,10 @@ body {
   height: 50px;
   margin-right: 50px;
 }
+/* .nav__list {
+  width: 100px;
+  height: 200px;
+} */
 /* HAMBURGER MENU */
 
 #menu-switcher {
@@ -54,6 +60,17 @@ span::before {
 span::after {
   top: 10px;
 }
+input:checked ~ .hamburger-icon span {
+  background-color: transparent;
+}
+input:checked ~ .hamburger-icon span::before {
+  transform: rotate(45deg) translateY(14px);
+  height: 3px;
+}
+input:checked ~ .hamburger-icon span::after {
+  transform: rotate(-45deg) translateY(-14px);
+  height: 3px;
+}
 /* MAIN */
 
 .main__article {
@@ -81,3 +98,8 @@ span::after {
   width: 200px;
   height: 50px;
 }
+
+/* DESKTOP */
+
+/* @media (min-width: 900px) {
+} */
