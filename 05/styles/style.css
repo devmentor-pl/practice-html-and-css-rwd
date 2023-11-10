@@ -17,20 +17,31 @@ body {
 
 /* HEADER */
 .header__container {
-  display: flex;
-  justify-content: flex-end;
-  padding: 5px 20px;
-  align-items: center;
+  position: relative;
+  padding: 5px 0;
 }
 .header__logo {
   width: 200px;
   height: 50px;
-  margin-right: 50px;
+  margin-left: 100px;
 }
-/* .nav__list {
-  width: 100px;
-  height: 200px;
-} */
+.hamburger-icon {
+  position: absolute;
+  /* top: 50%;
+  transform: translateY(-50%); */
+  top: 25px;
+  right: 15px;
+}
+.nav__list {
+  display: none;
+  min-height: 100px;
+  width: 100%;
+}
+
+input:checked ~ .nav__list {
+  display: block;
+}
+
 /* HAMBURGER MENU */
 
 #menu-switcher {
@@ -71,6 +82,7 @@ input:checked ~ .hamburger-icon span::after {
   transform: rotate(-45deg) translateY(-14px);
   height: 3px;
 }
+
 /* MAIN */
 
 .main__article {
