@@ -1,0 +1,50 @@
+.menu {
+  display: block;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 4px solid #fff;
+  background-color: transparent;
+  position: relative;
+}
+
+.menu::before, .menu::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid #fff;
+  transform: translateY(8px);
+}
+
+.menu::after {
+  transform: translateY(20px);
+}
+
+.list {
+  margin-top: 10px;
+  background-color: #ED5AB3;
+  display: none;
+  animation: slide-in 1000ms;
+}
+
+.sublist {
+  padding-left: 12px;
+}
+
+input:checked + .list {
+  display: block;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+
