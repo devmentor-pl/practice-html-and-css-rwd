@@ -1,0 +1,80 @@
+/* HAMBURGER ICON */
+
+.nav__hamburger-icon {
+  cursor: pointer;
+  padding: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+span {
+  display: block;
+  height: 4px;
+  width: 35px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  position: relative;
+}
+span::before,
+span::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 35px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  position: absolute;
+}
+span::before {
+  top: -10px;
+}
+span::after {
+  top: 10px;
+}
+
+input:checked ~ .nav__hamburger-icon span {
+  background-color: transparent;
+}
+input:checked ~ .nav__hamburger-icon span::before {
+  transform: rotate(45deg) translateY(14px);
+  height: 3px;
+}
+input:checked ~ .nav__hamburger-icon span::after {
+  transform: rotate(-45deg) translateY(-14px);
+  height: 3px;
+}
+input {
+  display: none;
+}
+
+/* MENU */
+
+.nav {
+  padding: 15px;
+}
+
+.list__link,
+.dropdown__link {
+  padding: 15px 20px;
+  margin: 10px 0;
+}
+.dropdown {
+  display: none;
+}
+.dropdown-toggle:hover .dropdown {
+  display: block;
+}
+.dropdown__link {
+  padding-left: 20%;
+}
+.dropdown-toggle .list__link {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  display: none;
+}
+
+input:checked ~ .nav__list {
+  display: block;
+}

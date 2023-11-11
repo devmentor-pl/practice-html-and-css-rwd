@@ -1,0 +1,20 @@
+.nav {
+  padding: 5px 10px;
+}
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav__hamburger-icon {
+  display: none;
+}
+.list__link {
+  padding: 15px 40px;
+}
+.dropdown__link {
+  padding: 15px 30px;
+}
+.fa-caret-down {
+  padding-left: 10px;
+}
