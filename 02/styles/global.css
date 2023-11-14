@@ -7,10 +7,15 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* body */
+body {
+    display: grid;
+    grid-template-areas: "top" "middle" "bottom";
 }
 
 .a {
@@ -19,8 +24,10 @@
 
 .b {
     border-color: #ffdfba;
+    grid-area: B;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: bottom;
 }
