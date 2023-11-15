@@ -11,16 +11,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
+/*add @media*/
+@media (min-width: 500px) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "A A"
+            "C B";
+
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
 /* body */
 body {
     display: grid;
-    grid-template-areas: "top" "middle" "bottom";
-    justify-content: center;
+    grid-template-areas: 
+            "A"
+            "B"
+            "C";
+    
 }
 
 .a {
     border-color: #ffffba
+    grid-area: A;
 }
 
 .b {
@@ -30,10 +49,6 @@ body {
 
 .c {
     border-color: #baffc9;
-    grid-area: bottom;
+    grid-area: C;
 }
 
-@media(max-width: 400px){
-    body{height:calc(50vh);
-    }
-}
