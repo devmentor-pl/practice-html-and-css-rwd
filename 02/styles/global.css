@@ -14,7 +14,7 @@
     height: 50vh;
 }
 /*add @media*/
-@media (min-width: 500px) {
+@media (min-width: 650px) {
     body {
         display: grid;
         grid-template-columns: 50% 50%;
@@ -38,17 +38,17 @@ body {
 }
 
 .a {
-    border-color: #ffffba
+    border-color: red;
     grid-area: A;
 }
 
 .b {
-    border-color: #ffdfba;
+    border-color: green;
     grid-area: B;
 }
 
 .c {
-    border-color: #baffc9;
+    border-color: blue;
     grid-area: C;
 }
 
