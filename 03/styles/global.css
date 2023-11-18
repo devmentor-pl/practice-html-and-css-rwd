@@ -14,13 +14,13 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: red;
 }
 
 .t {
-    border-color: #ffdfba;
+    border-color: green;
 }
 
 .v {
-    border-color: #baffc9;
+    border-color: blue;
 }
