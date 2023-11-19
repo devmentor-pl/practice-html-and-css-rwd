@@ -1,0 +1,18 @@
+body {
+    grid-template-areas: 
+        "T"
+        "P"
+        "V";
+}
+
+.t {
+    grid-area: T;
+}
+
+.p {
+    grid-area: P;
+}
+
+.v {
+    grid-area: V;
+}

@@ -1,0 +1,29 @@
+body {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+        "P V"
+        "T T";
+}
+
+.p {
+	grid-area: P;
+}
+
+.t {
+	grid-area: T;
+}
+
+.v {
+	grid-area: V;
+}
+
+.p,
+.p img {
+    max-height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
