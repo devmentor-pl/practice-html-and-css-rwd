@@ -27,7 +27,7 @@ body {
 
 .v {
     border-color: blue;
-    max-width: 1200px;
+    
     height: 0;
     position: relative;
     padding-bottom: calc(315 / 560 * 100%);

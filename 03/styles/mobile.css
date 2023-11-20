@@ -3,6 +3,7 @@ body {
         "T"
         "P"
         "V";
+        display: grid;
 }
 
 .t {

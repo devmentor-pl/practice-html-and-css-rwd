@@ -1,0 +1,33 @@
+body {
+    padding: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.dropdown__link,
+.nav__link {
+	text-decoration: none;
+}
+
+.nav__item .nav__link,
+.dropdown__item .dropdown__link {
+	color: blue;
+	font-weight: bold;
+}
+
+.nav {
+	width: 100%;
+}
+
+.nav__item {
+	padding-left: 15px;
+	padding-top: 10px;
+}
+
+.dropdown .dropdown__item {
+	padding-top: 10px;
+}
+
+.dropdown {
+	padding-left: 15px;
+}
+
