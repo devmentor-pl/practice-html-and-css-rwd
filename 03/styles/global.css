@@ -11,7 +11,7 @@ body {
 
 .p, .t, .v {
     border: 3px solid transparent;
-    min-height: 50px;
+    display: grid;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@ body {
 
 .v {
     border-color: blue;
-    
+    width: 100%;
     height: 0;
     position: relative;
     padding-bottom: calc(315 / 560 * 100%);
@@ -35,8 +35,7 @@ body {
 }
 
 img {
-    width: auto;
-    max-height: 100%;
+    width: 100%;
 }
 
 iframe {
