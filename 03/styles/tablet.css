@@ -1,13 +1,10 @@
-
-  body{
-    
-    grid-template-columns: 1fr 1fr;
+body {
+    grid-template-columns: minmax(200px, 50vw) auto;
     display: grid;
     grid-template-areas: 
-        "P V"
-        "T T";
+        "P T"
+        "V T";
 }
-
 
 img{
     width: 100%;
@@ -26,11 +23,4 @@ img{
 .v {
 	grid-area: V;
     border-color: blue;
-    height: 0;
-    width: 100%;
-    position: relative;
-    padding-bottom: calc(315 / 560 * 100%);
-}
-
-
-
+    }

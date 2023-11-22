@@ -33,7 +33,8 @@ body {
     padding-bottom: calc(315 / 560 * 100%);
 
 }
-
+/*after changes from .p img width auto and max-height to: width 100%
+everything is working ;-) */
 img {
     width: 100%;
 }
