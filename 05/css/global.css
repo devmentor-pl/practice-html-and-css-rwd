@@ -1,0 +1,24 @@
+/*this is global.css file*/
+.row,
+.container {
+	margin: 10px;
+	outline: 3px solid;
+	padding: 5px 0;
+}
+
+.row {
+	outline-color: green;
+}
+
+.container {
+	margin: 3px;
+	outline-color: blue;
+}
+
+.cell {
+	outline-color: orange;
+	min-height: 60px;
+	outline: 3px solid orange;
+	background-color: orange;
+	padding: 5px 0;
+}
