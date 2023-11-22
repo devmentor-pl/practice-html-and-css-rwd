@@ -1,3 +1,5 @@
+/*This is global.css file*/
+
 body {
     padding: 20px;
 	font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +12,7 @@ body {
 
 .nav__item .nav__link,
 .dropdown__item .dropdown__link {
-	color: blue;
+	color: black;
 	font-weight: bold;
 }
 

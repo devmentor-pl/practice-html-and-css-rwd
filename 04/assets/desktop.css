@@ -1,9 +1,10 @@
+/*this is desktop.css but remember mobile first ! ;-) */
 .nav__list {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
 	padding-left: 15px;
 	padding-right: 15px;
+	justify-content: space-around;
 }
 
 .hamburger,
@@ -12,6 +13,8 @@ input {
 }
 
 .dropdown {
+	position: absolute;	
+	left: 20px;
 	display: none;
 }
 
@@ -24,8 +27,3 @@ input {
 	text-align: center;
 }
 
-.dropdown {
-	position: absolute;
-	transform: translateX(-50%);
-	left: 24px;
-}
