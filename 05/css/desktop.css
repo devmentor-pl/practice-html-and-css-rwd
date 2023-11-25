@@ -1,0 +1,84 @@
+html {
+	height: 100vh;
+}
+/*  dlaczego to nie działa/psuje mój kod... !
+body {
+    display: grid;
+    grid-template-columns: 100%;
+	grid-template-areas:
+        "div"
+        "header"
+        "content"
+        "footer";
+}
+
+.div {
+    grid-area: div;
+}
+
+.header {
+    grid-area: header;
+}
+
+.content {
+    grid-area: content;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+masakraa... */
+
+.nav__hamburger,
+#menu-switch {
+    display: none;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo {
+	min-width: 150px;
+}
+
+.header__nav {
+	min-width: 450px;
+}
+
+/*section with two columns*/
+.content__container--first {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content__column--first {
+	width: 48%;
+	min-height: 200px;
+}
+
+/*section with three columns*/
+.content__container--second {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.content__column--second {
+	width: 30%;
+	min-height: 180px;
+}
+
+/*footer*/
+.footer__container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__content {
+	min-height: 30px;
+    min-width: 120px;
+}
+

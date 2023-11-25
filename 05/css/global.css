@@ -1,24 +1,28 @@
-/*this is global.css file*/
 body {
-	height: 100%;
+    height: 100%; 
+}
+
+.row,
+.container {
+	margin: 10px;
+	outline: 3px solid;
+	padding: 5px 0;
 }
 
 .row {
-	width: 100%;
-	border: 3px solid green;
-	min-height: 30px;
+	outline-color: green;
 }
 
 .container {
+	width: 1000px;
+	outline-color: blue;
 	margin: 0 auto;
-	border: 3px solid blue;
-	min-height: 30px;
 }
 
 .cell {
-	border: 3px solid orange;
-	
-	min-height: 30px;
+	outline-color: orange;
+	min-height: 60px;
+	outline: 3px solid orange;
 	background-color: orange;
-	
+	padding: 5px 0;
 }

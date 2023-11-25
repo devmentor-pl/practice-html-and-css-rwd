@@ -3,44 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>devmentor.pl - HTML and CSS: RWD - #05</title>
-    <link rel="stylesheet" href="./css/reset.css">
+    <title>devmentor.pl - HTML & CSS: RWD - #05</title>
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/desktop.css"> <!--po dodaniu (media) wszystko jest zepsute. Masakra Valhalla mnie już wzywa... idę uczyć się JS dla odmiany-->
+    <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-    <!--header: -->
-    <header class="row">
-        <nav class="nav container"> <!--wcześniejsze zadania były div teraz daje nav, zobaczę co się stanie ;-) -->
-            <picture class="logo cell"></picture>  <!-- znacznik picture dla RWD-->
-            <label class="nav__hamburger"for="menu-switch"></label>
-            <input type="checkbox"id="menu-switch">
+    <!--header: logo on the left and menu on the right-->
+    <header class="header row">
+        <div class="container header__container">
+            <picture class="logo cell"></picture> 
+            <label class="nav_hamburger" for="menu-switch"></label>
+            <input type="checkbox" id="menu-switch">
             <ul class="menu cell">
                 <li>Home</li>
-                <li>Contact US</li>
+                <li>Contact</li>
             </ul>
-        </nav>
+        </div>
     </header>
 <!--first section with two columns-->
-    <main class="main row"> <!--było swection teraz daje main class who knows what will be happen? ;-)-->
-        <article class="main_container container">
-            <div class="cell number 1"></div>
-            <div class="cell number 2"></div>
-        </article>
-    </main>
+    <section class="content row ">
+        <div class="content__container--first container">
+            <article class="content__column--first cell"></article>
+            <article class="content__column--first cell"></article>
+        </div>
+    </section>
 <!--second section with three columns-->
-    <aside class="aside row"> <!-- tym razem aside-->
-        <article class="aside__container container">
-            <div class="cell aside_item aside_item1"></div>
-            <div class="cell aside_item aside_item2"></div>
-            <div class="cell aside_item aside_item3"></div>
-        </article>
-    </aside>
+    <section class="content row">
+        <div class="content__container--second container">
+            <article class="content__column--second cell"></article>
+            <article class="content__column--second cell"></article>
+            <article class="content__column--second cell"></article>
+        </div>
+    </section>
 <!--footer-->
     <footer class="footer row ">
-        <section class="footer__container container">
-            <div class="footer__content cell"></div>
-        </section>
+        <div class="footer__container container">
+            <section class="footer__content cell"></section>
+        </div>
     </footer>
 </body>
 </html>
