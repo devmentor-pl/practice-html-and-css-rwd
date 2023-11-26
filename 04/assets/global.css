@@ -1,35 +1,16 @@
 /*This is global.css file*/
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
 
 body {
-    padding: 20px;
+    
 	font-family: Arial, Helvetica, sans-serif;
+	background-color: #34ace3;
 }
 
-.dropdown__link,
-.nav__link {
-	text-decoration: none;
-}
-
-.nav__item .nav__link,
-.dropdown__item .dropdown__link {
-	color: black;
-	font-weight: bold;
-}
-
-.nav {
-	width: 100%;
-}
-
-.nav__item {
-	padding-left: 15px;
-	padding-top: 10px;
-}
-
-.dropdown .dropdown__item {
-	padding-top: 10px;
-}
-
-.dropdown {
-	padding-left: 15px;
-}
 
