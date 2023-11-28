@@ -24,3 +24,7 @@
 .v {
     border-color: #baffc9;
 }
+
+body {
+    display: grid;
+}
