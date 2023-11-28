@@ -1,0 +1,15 @@
+/* mobile.css */
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+
+.p {
+    width: 100%;
+    height: auto;
+}
+
+
