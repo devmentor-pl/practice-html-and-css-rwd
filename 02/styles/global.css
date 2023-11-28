@@ -23,5 +23,9 @@
 
 .c {
     border-color: #baffc9;
+    order: 3;
 }
 
+body {
+    display: grid;
+}
