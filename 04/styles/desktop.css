@@ -1,0 +1,69 @@
+/* położenie i wygląd głównego paska menu */
+.menu {
+    margin-top: 15px;
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.menu__list {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.menu__link {
+    padding: 30px;
+    background-color: #ffffff;
+    color: black;
+}
+
+.menu__item--parent {
+    position: relative;
+    cursor: default;
+}
+
+/* dodanie strzałki przy elemencie ITEMS */
+.menu__link--bottom::after {
+    content: '>';
+    display: inline-block;
+    transform: rotate(90deg);
+    padding-right: 5px;
+}
+
+/* wygląd i położenie dropdown menu */
+.menu__sublist {
+    width: 200px;
+    height: 82px;
+    display: none;
+    position: absolute;
+    background-color: #333333;
+}
+
+.menu__sublist--bottom {
+    left: 0;
+    top: 100%;
+}
+
+.menu__sublink {
+    text-decoration: none;
+    background-color: #333333;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* efekt graficzny po najechaniu kursorem na główny pasek menu */
+.menu__item:hover {
+    color: #009CE1;
+    border-top-style: solid;
+    border-color: #009CE1;
+    margin-top: -3px;
+}
+
+/* rozwijanie i chowanie dropdown menu */
+.menu__item--parent:hover > .menu__sublist {
+    display: block;
+}

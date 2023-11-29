@@ -5,12 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est qui pariatur ullam earum non. Exercitationem quidem distinctio, maxime voluptatum ea esse mollitia debitis autem nemo blanditiis, possimus quibusdam. Cum, corrupti. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum delectus, deserunt ipsa consequuntur aperiam quasi maxime saepe excepturi at iusto, aliquam nesciunt sunt odio dignissimos fugiat necessitatibus illum corporis sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid labore ea repudiandae repellat laborum. Ab perspiciatis aliquam assumenda magni officiis minus ullam cupiditate cumque, culpa sapiente molestiae, voluptates quidem nemo!</main>
+    <header>
+        <picture class="p">
+            <source
+            srcset="./img/picture-train-600w.jpg"
+            media="(max-width: 599px)">
+
+            <source
+            srcset="./img/picture-train-600w.jpg"
+            media="(min-width: 600px, max-width: 1199px)">
+            
+            <source
+            srcset="./img/picture-train-1400w.jpg"
+            media="(min-width: 1200px)">
+            
+
+            <img src="./img/picture-train-1280w.jpg">
+        </picture>
+    </header>
+    
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CQPKcpLwSVY?si=bI_ufg-4lpSMWAXV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </side>
+
 
 </body>
 </html>
