@@ -5,13 +5,17 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-    .p, .v {
-        min-width: 100%;
 
+    .t {
+        grid-column: 1;
+        grid-row: 2;
+        padding: 10px;
+    }
+    .p img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
-    
+
 }
-
-
-
