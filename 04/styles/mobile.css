@@ -7,13 +7,14 @@
 
     header label.hamburger {
         position: absolute;
-        right: 10px;
+        right: 15px;
         top: 10px;
         cursor: pointer;
         font-size: 24px;
+        color: white;
     }
     header label.hamburger:hover {
-        color: #369;
+        color: rgb(170, 91, 91);
     }
 
     header input {

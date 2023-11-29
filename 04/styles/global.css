@@ -6,15 +6,33 @@
     padding: 0;
 }
 
+body {
+    background-color: #222;
+}
+
 ul {
     list-style: none;
 }
 
 nav a {
-    color: #369;
+    color: #fff;
     text-decoration: none;
+    background-color: #555;
+    font-size: 1em;
 }
 
-header ul {
-    display: none;
+.menu__items {
+    background: #222;
+}
+
+.menu__items a {
+    padding: 5px 20px;
+    display: block;
+    border-radius: 8px;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.menu__items a:hover {
+    background-color: #444;
 }
