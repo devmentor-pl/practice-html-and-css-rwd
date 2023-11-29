@@ -1,1 +1,5 @@
 /* global.css */
+
+nav {
+    outline: 1px solid;
+}
