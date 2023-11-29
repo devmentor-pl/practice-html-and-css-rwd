@@ -1,0 +1,20 @@
+/* ./styles/global.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    color: #369;
+    text-decoration: none;
+}
+
+header ul {
+    display: none;
+}
