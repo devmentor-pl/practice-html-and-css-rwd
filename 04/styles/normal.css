@@ -1,1 +1,30 @@
 /* normal.css */
+
+@media screen and (min-width: 400px) {
+    .menu__items {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        
+    }
+    header ul ul {
+        display: none;
+    }
+    header input {
+        display: none;
+    }
+    header .hamburger {
+        display: none;
+    }
+    header ul li:hover > ul {
+        display: grid;
+        position: absolute;
+
+    }
+    header ul ul li {
+        margin-top: 10px;
+    }
+    .menu__items a {
+
+    }
+}
