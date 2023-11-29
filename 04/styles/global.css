@@ -1,5 +1,65 @@
 /* global.css */
 
-nav {
+/* nav, .nav__menu, .nav__submenu {
     outline: 1px solid;
+} */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    background-color: #2c99af;
+    border-radius: 5px;
+    font-size: 1.5em;
 }
+ul {
+    list-style-type: none;
+}
+
+
+/* hamburger */
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #ffffff;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+  }
+  
+  .hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #ffffff;
+    transform: translateY(10px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+  }
+  
+  .hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+  }
+  
+  .hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  
+  
+  body {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background: #696e9e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+  }
