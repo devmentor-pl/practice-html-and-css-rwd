@@ -1,1 +1,52 @@
 /* ./styles/desktop.css */
+
+@media screen and (min-width: 800px) {
+
+    
+    .header .container {
+        display: grid;
+        grid-template-columns:  3fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+    }
+    .menu {
+        width: 130px;
+        height: 20px;
+
+    }
+    .hamburger {
+        width: 300px;
+    }
+    .hamburger label {
+        display: none;
+        }
+
+    .hamburger input {
+        display: none;
+    }
+    .content .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 200px;
+        gap: 10px;
+    }
+    .content-slim .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 200px;
+        gap: 10px;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer .cell {
+        min-width: 80px;
+    }
+    .row {
+        margin-bottom: 10px;
+    }
+}
