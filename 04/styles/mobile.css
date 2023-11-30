@@ -18,10 +18,11 @@
         cursor: pointer;
         font-size: 24px;
         color: white;
+        transition: color 0.3s ease;
 
     }
     header label.hamburger:hover {
-        color: rgb(144, 147, 190);
+        color: rgb(223, 197, 54);
     }
 
     header input {
@@ -49,6 +50,7 @@
 
     header input:checked + ul {
         display: grid;
+        
     }
 
     header ul li,
