@@ -1,0 +1,133 @@
+/* Resetowanie stylów */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Globalne style */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Nagłówek */
+.header {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px; /* Dostosuj szerokość logo */
+    height: auto;
+    /* Dodaj tło logo */
+    background-image: url('sciezka/do/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.nav_hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+/* Styl dla urządzeń o szerokości do 767px (mobilne) */
+@media only screen and (max-width: 767px) {
+    .logo {
+        width: 60px; /* Dostosuj szerokość logo na urządzeniach mobilnych */
+    }
+
+    .nav_hamburger {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background: url('sciezka/do/hamburger-icon.png') no-repeat;
+        background-size: cover;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+}
+
+/* Style's for two columns' */
+.content__container--first {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__column--first {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+/* Style's for three columns' */
+.content__container--second {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content__column--second {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* footer  */
+.footer {
+    background-color: #fff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
