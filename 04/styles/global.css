@@ -23,6 +23,7 @@ nav a {
 
 .menu__items {
     background: #222;
+    margin-top: -30px;
 }
 
 .menu__items a {
@@ -31,6 +32,7 @@ nav a {
     border-radius: 8px;
     color: #fff;
     margin-right: 40px;
+    max-width: fit-content;
 }
 
 .menu__items a:hover {

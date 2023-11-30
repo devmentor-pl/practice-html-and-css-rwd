@@ -4,14 +4,21 @@
     header {
         position: relative;
     }
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        align-items: center;
+    }
 
     header label.hamburger {
         position: absolute;
-        right: 15px;
+        right: 50%;
         top: 10px;
         cursor: pointer;
         font-size: 24px;
         color: white;
+
     }
     header label.hamburger:hover {
         color: rgb(144, 147, 190);
@@ -48,5 +55,9 @@
     header ul ul li {
         width: 100%;
         text-align: left;
+    }
+    .menu__items {
+        grid-column: 1;
+        grid-row: 2;
     }
 }
