@@ -1,0 +1,21 @@
+/* ./styles/global.css */
+
+.row, .cell, .container {
+    margin: 5px;
+    padding: 5px;
+    outline: 3px solid;
+
+}
+.row {
+    outline-color: green;
+    margin: 15px;
+}
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: blue;
+}
+.cell {
+    min-height: 50px;
+    outline-color: orange;
+}
