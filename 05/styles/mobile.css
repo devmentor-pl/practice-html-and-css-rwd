@@ -1,11 +1,26 @@
 /* ./styles/mobile.css */
 
 @media screen and (max-width: 800px) {
+
     .header .container {
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns:  3fr 1fr;
         grid-template-rows: 1fr;
         margin: 0 auto;
+        max-width: 800px;
+    }
+    .menu {
+        min-width: 130px;
+        margin: auto;
+        height: 20px;
+        margin-right: 20px;
+
+    }
+    .hamburger {
+        min-width: 30px;
+        max-width: 50px;
+        justify-self: end;
+
     }
 
 }

@@ -16,6 +16,6 @@
     outline-color: blue;
 }
 .cell {
-    min-height: 50px;
+    min-height: 20px;
     outline-color: orange;
 }
