@@ -22,5 +22,29 @@
         justify-self: end;
 
     }
+    .content .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 400px;
+        gap: 7px;
+    }
+
+    .content-slim .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 400px;
+        gap: 10px;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer .cell {
+        min-width: 70px;
+        margin-left: 50px;
+    }
 
 }
