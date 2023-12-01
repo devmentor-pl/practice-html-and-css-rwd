@@ -1,84 +1,130 @@
-html {
-	height: 100vh;
-}
-/*  dlaczego to nie działa/psuje mój kod... !
-body {
-    display: grid;
-    grid-template-columns: 100%;
-	grid-template-areas:
-        "div"
-        "header"
-        "content"
-        "footer";
-}
+@media(min-width: 800px) {
 
-.div {
-    grid-area: div;
+/*header desktop*/
+
+	.header_1lvl--green {
+		width: 100%;
+		height: 100px;
+		border: solid 5px green;
+	}
+
+	.header_1lvl--blue {
+		  width: 1000px;
+		  height: 99%;
+		  margin: 0 auto;
+		  border: solid 5px blue
+	}
+
+	.header_1lvl--orange {
+		  display: flex;
+		  justify-content: space-between;
+	}
+
+	.first__item--orange {
+		  margin-left: 0;
+		  width: 300px;
+		  height: 100px;
+		  margin-top: 0;
+		  background-color: orange;
+	}
+/*nawigacja */
+	.nav__menu {
+		  display: none;
+		  position: static;
+
+	}
+
+	.nav__menu--desktop {
+		  margin-right: 0;
+		  width: 400px;
+		  height: 80px;
+		  margin-top: 0;
+		  background-color: orange;
+	}
+/*main two columns*/
+	.main_2lvl--green {
+		 margin-top: 8px;
+		 height: 250px;
+	}
+
+	.main_2lvl--blue {
+		  width: 1000px;
+		  height: 97%;
+		  margin: 0 auto;
+		  margin-top: 4px;
+		  border: solid 5px blue;
+		  display: flex;
+		  justify-content: space-between
+		  
+	}
+
+	.main_2lvl--orange {
+		  width: 49%;
+		  height: 100%;
+		  background-color: orange;
+	}
+
+	.main_2lvl--orange2 {
+		  width: 49%;
+		  height: 100%;
+		  margin-top: 0;
+		  background-color: orange; 
+	}
+/*main three columns*/
+	.main_3lvl--green{
+		  margin-top: 8px;
+		  height: 250px;
+	}
+	
+	.main_3lvl--blue{
+		  width: 1000px;
+		  height: 97%;
+		  margin: 0 auto;
+		  margin-top: 4px;
+		  border: solid 5px blue;
+		  display: flex;
+		  justify-content: space-between
+	}
+	
+	.main_3lvl--orange{
+		  width: 32%;
+		  height: 100%;
+		  background-color: orange;
+	}
+	
+	.main_3lvl--orange2{
+		  width: 32%;
+		  height: 100%;
+		  margin-top: 0;
+		  background-color: orange;
+	}
+	
+	.main_3lvl--orange3{
+		  width: 32%;
+		  height: 100%;
+		  margin-top:0;
+		  background-color: orange;
+	}
+/* footer*/
+	.footer--green {
+		  margin-top: 8px;
+		  height: 100%;
+	}
+	
+	.footer--blue {
+		  width: 1000px;
+		  height: 97%;
+		  margin: 0 auto;
+		  margin-top: 4px;
+		  margin-bottom: 4px;
+		  border: solid 5px blue;
+	}
+	.footer--orange {
+		  margin: 0 auto;
+		  width: 150px;
+		  height: 50px;
+		  background-color: orange;
+	}
+
+
 }
-
-.header {
-    grid-area: header;
-}
-
-.content {
-    grid-area: content;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-masakraa... */
-
-.nav__hamburger,
-#menu-switch {
-    display: none;
-}
-
-.header__container {
-	display: flex;
-	justify-content: space-between;
-}
-
-.header__logo {
-	display: none;
-}
-
-.header__nav {
-	min-width: 450px;
-}
-
-/*section with two columns*/
-.content__container--first {
-	display: flex;
-	justify-content: space-between;
-}
-
-.content__column--first {
-	width: 48%;
-	min-height: 200px;
-}
-
-/*section with three columns*/
-.content__container--second {
-	display: flex;
-	justify-content: space-evenly;
-}
-
-.content__column--second {
-	width: 30%;
-	min-height: 180px;
-}
-
-/*footer*/
-.footer__container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.footer__content {
-	min-height: 30px;
-    min-width: 120px;
-}
-

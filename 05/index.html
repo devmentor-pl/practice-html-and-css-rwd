@@ -7,42 +7,49 @@
     
     <link rel="stylesheet" href="./css/global.css">
     <link rel="stylesheet" href="./css/mobile.css">
-    <link rel="stylesheet" media="(min-width: 1281px)" href="css/desktop.css"> <!--po dodaniu (media) wszystko jest zepsute. Masakra Valhalla mnie już wzywa... idę uczyć się JS dla odmiany-->
+    <link rel="stylesheet" href="./css/desktop.css"> 
     <link rel="stylesheet" href="./css/reset.css">
 </head>
 <body>
-    <!--header: logo on the left and menu on the right-->
-    <header class="header row">
-        <div class="container header__container">
-            <picture class="logo cell"></picture> 
-            <label class="nav_hamburger" for="menu-switch"></label>
-            <input type="checkbox" id="menu-switch">
-            <ul class="menu cell">
-                <li>Home</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </header>
-<!--first section with two columns-->
-    <section class="content row ">
-        <div class="content__container--first container">
-            <article class="content__column--first cell"></article>
-            <article class="content__column--first cell"></article>
-        </div>
-    </section>
-<!--second section with three columns-->
-    <section class="content row">
-        <div class="content__container--second container">
-            <article class="content__column--second cell"></article>
-            <article class="content__column--second cell"></article>
-            <article class="content__column--second cell"></article>
-        </div>
-    </section>
-<!--footer-->
-    <footer class="footer row ">
-        <div class="footer__container container">
-            <section class="footer__content cell"></section>
-        </div>
-    </footer>
+      <!-- header-->
+    <header>
+        <section class="header_1lvl--green">
+              <div class="header_1lvl--blue">
+                    <nav class="header_1lvl--orange">
+                          <article class="article_1lvl--orange"></article>
+                          <label class="nav__menu"></label>
+                          <h2 class="nav__menu--desktop"></h2>
+                    </nav>
+              </div>
+        </section>
+  </header>
+<!-- main with two columns-->
+  <main>
+        <section class="main_2lvl--green">
+              <div class="main_2lvl--blue">
+                    <article class="main_2lvl--orange"></article>
+                    <article class="main_2lvl--orange2"></article>
+              </div>
+        </section>
+
+<!-- three columns-->
+
+        <section class="main_3lvl--green">
+              <div class="main_3lvl--blue">
+                    <article class="main_3lvl--orange"></article>
+                    <article class="main_3lvl--orange2"></article>
+                    <article class="main_3lvl--orange3"></article>
+              </div>
+        </section>
+  </main>
+
+<!-- footer-->
+  <footer>
+        <section class="footer--green">
+              <div class="footer--blue">
+                    <div class="footer--orange"></div>                        
+              </div>
+        </section>
+  </footer>
 </body>
 </html>

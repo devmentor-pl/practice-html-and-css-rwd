@@ -1,13 +1,9 @@
-body {
-    height: 100%; 
-}
-
 
 .row,
 .container {
 	margin: 10px;
 	outline: 3px solid;
-	padding: 5px 0;
+	padding: 3px 0;
 }
 
 .row {
