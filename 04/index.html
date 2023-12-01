@@ -1,32 +1,38 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+
+    <link rel="stylesheet" href="./styles/global.css">
     <link rel="stylesheet" href="./styles/mobile.css">
     <link rel="stylesheet" media="(min-width: 761px)" href="./styles/desktop.css">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    
 </head>
 <body>
-    
-    <nav class="menu">
-        <ul class="menu-list">
-            <li class="menu-item">
-                <a class="menu-link" href="#">start</a>
+    <header>
+        <nav class="menu">
+            <label for="menu-switcher"><div class="menu__button"></div></label>
+            <input type="checkbox" id="menu-switcher">
+        <ul class="menu__list">
+            <li class="menu__item">
+                <a class="menu__link" href="#">START</a>
             </li>
-            <li class="menu-item menu-item--parent">
-                <a class="menu-link menu-link--bottom" href="#">oferta</a>
-                <ul class="menu-sublist">
-                    <li class="menu-subitem"><a class="menu-sublink" href="">strony internetowe</a></li>
-                    <li class="menu-subitem"><a class="menu-sublink" href="">pozycjonowanie stron www</a></li>
+            <li class="menu__item menu__item--parent">
+                <a class="menu__link menu__link--bottom" href="#">OFERTA</a>
+                <ul class="menu__sublist">
+                    <li class="menu__subitem"><a class="menu__sublink" href="">STRONY INTERNETOWE</a></li>
+                    <li class="menu__subitem"><a class="menu__sublink" href="">POZYCJONOWANIE STRON WWW</a></li>
                 </ul>
             </li>
-            <li class="menu-item">
-                <a class="menu-link" href="#">kontakt</a>
+            <li class="menu__item">
+                <a class="menu__link" href="#">KONTAKT</a>
             </li>
         </ul>
-    </nav>
+        </nav>
+    </header>
 
 </body>
 </html>
