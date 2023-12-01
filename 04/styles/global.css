@@ -14,7 +14,7 @@ ul {
     list-style: none;
 }
 
-nav a {
+.nav a {
     color: #fff;
     text-decoration: none;
     background-color: #555;

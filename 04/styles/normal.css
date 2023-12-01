@@ -7,24 +7,21 @@
         margin-top: 10px;
         
     }
-    header ul ul {
+    .header ul ul {
         display: none;
     }
-    header input {
+    .header input {
         display: none;
     }
-    header .hamburger {
+    .header .hamburger {
         display: none;
     }
-    header ul li:hover > ul {
+    .header ul li:hover > ul {
         display: grid;
         position: absolute;
 
     }
-    header ul ul li {
+    .header ul ul li {
         margin-top: 10px;
-    }
-    .menu__items a {
-
     }
 }

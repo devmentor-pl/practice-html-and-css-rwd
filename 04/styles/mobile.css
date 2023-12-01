@@ -1,17 +1,17 @@
 /* mobile.css */
 
 @media screen and (max-width: 400px) {
-    header {
+    .header {
         position: relative;
     }
-    nav {
+    .nav {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 4fr;
         align-items: center;
     }
 
-    header label.hamburger {
+    .header label.hamburger {
         position: absolute;
         right: 50%;
         top: 10px;
@@ -21,15 +21,15 @@
         transition: color 0.3s ease;
 
     }
-    header label.hamburger:hover {
+    .header label.hamburger:hover {
         color: rgb(223, 197, 54);
     }
 
-    header input {
+    .header input {
         display: none;
     }
 
-    header ul {
+    .header ul {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
@@ -39,7 +39,7 @@
         display: none;
     }
 
-    header ul ul {
+    .header ul ul {
         display: grid;
         grid-template-columns: 1fr;
         gap: 10px;
@@ -48,13 +48,13 @@
 
     }
 
-    header input:checked + ul {
+    .header input:checked + ul {
         display: grid;
         
     }
 
-    header ul li,
-    header ul ul li {
+    .header ul li,
+    .header ul ul li {
         width: 100%;
         text-align: left;
     }
