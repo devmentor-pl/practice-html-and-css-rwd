@@ -1,0 +1,9 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "P V"
+    "T T";
+  grid-template-columns: 50% 50%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
