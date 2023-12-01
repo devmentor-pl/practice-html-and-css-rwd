@@ -57,7 +57,7 @@
 
 }
 
-@media screen and (max-width: 270px) {
+@media screen and (max-width: 360px) {
     .menu {
         min-width: 70px;
         margin: auto 0;
@@ -84,60 +84,3 @@
 
 }
 
-@media screen and (max-width: 190px) {
-    .menu {
-        min-width: 57px;
-        margin: auto 0;
-        height: 20px;
-
-    }
-    .hamburger {
-        min-width: 5px;
-        max-width: 50px;
-        justify-self: right;
-        font-size: 0.9em;
-        margin-right: -2px;
-
-    }
-
-}
-
-@media screen and (max-width: 180px) {
-    .menu {
-        min-width: 60px;
-        margin: auto 0;
-        height: 20px;
-
-    }
-
-}
-
-@media screen and (max-width: 170px) {
-    .menu {
-        min-width: 50px;
-        margin: auto;
-        height: 20px;
-
-    }
-
-}
-@media screen and (max-width: 160px) {
-    .menu {
-        min-width: 45px;
-        margin: auto;
-        height: 20px;
-        margin-left: -1px;
-
-    }
-
-}
-@media screen and (max-width: 150px) {
-    .menu {
-        min-width: 40px;
-        height: 20px;
-        margin-left: -2px;
-
-
-    }
-
-}
