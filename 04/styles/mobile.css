@@ -6,6 +6,7 @@
     border-top: 0.25em solid #009CE1;
     background-color: transparent;
     position: relative;
+    display: block;
 }
 
 .menu__button::before, .menu__button::after {
