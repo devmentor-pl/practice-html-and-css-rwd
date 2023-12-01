@@ -1,6 +1,10 @@
 @media(min-width: 800px) {
 
 /*header desktop*/
+	.input, .hamburger {
+		display: none;
+	}
+
 
 	.header_1lvl--green {
 		width: 100%;
@@ -20,23 +24,24 @@
 		  justify-content: space-between;
 	}
 
-	.first__item--orange {
+	.article_1lvl--orange {
 		  margin-left: 0;
 		  width: 300px;
 		  height: 100px;
 		  margin-top: 0;
+		  
 		  background-color: orange;
 	}
 /*nawigacja */
 	.nav__menu {
 		  display: none;
 		  position: static;
-
+		  
 	}
 
 	.nav__menu--desktop {
 		  margin-right: 0;
-		  width: 400px;
+		  width: 300px;
 		  height: 80px;
 		  margin-top: 0;
 		  background-color: orange;
