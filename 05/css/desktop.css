@@ -1,7 +1,7 @@
 @media(min-width: 800px) {
 
 /*header desktop*/
-	.input, .hamburger {
+	.hamburger {
 		display: none;
 	}
 
@@ -22,6 +22,7 @@
 	.header_1lvl--orange {
 		  display: flex;
 		  justify-content: space-between;
+		    
 	}
 
 	.article_1lvl--orange {
@@ -29,7 +30,6 @@
 		  width: 300px;
 		  height: 100px;
 		  margin-top: 0;
-		  
 		  background-color: orange;
 	}
 /*nawigacja */
