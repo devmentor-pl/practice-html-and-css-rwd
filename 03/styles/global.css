@@ -36,7 +36,7 @@ body {
 /*after changes from .p img width auto and max-height to: width 100%
 everything is working ;-) */
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 iframe {
