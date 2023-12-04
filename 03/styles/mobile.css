@@ -1,4 +1,5 @@
 body {
+    max-width: 599px;
     display: grid;
     grid-template-areas: 
         "a-top"

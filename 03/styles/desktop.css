@@ -1,0 +1,8 @@
+body {
+    min-width: 1200px;
+    max-width: 1400px;
+    display: grid;
+    grid-template-areas:
+        "a top a-bottom"
+        "a-mid a-mid";
+}
