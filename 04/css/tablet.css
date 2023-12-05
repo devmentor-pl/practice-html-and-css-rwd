@@ -1,0 +1,38 @@
+.navbar {
+  justify-content: flex-start;
+  min-height: unset;
+}
+.navbar__container {
+  display: flex;
+  padding: 0;
+}
+.navbar__button {
+  display: none;
+}
+
+.navbar__item,
+.navbar__container > :first-child {
+  position: relative;
+  margin: 0;
+  margin-left: 30px;
+  padding: 20px 10px;
+}
+
+.navbar__item--sub {
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar__sub-container {
+  display: none;
+  position: absolute;
+  top: 61px;
+  left: calc(50% - 10px);
+
+  width: 180px;
+  background-color: blanchedalmond;
+}
+.navbar__item:hover > .navbar__sub-container,
+.navbar__sub-container:hover {
+  display: unset;
+}

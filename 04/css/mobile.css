@@ -1,0 +1,28 @@
+.navbar {
+  justify-content: center;
+  position: relative;
+  min-height: 6vh;
+}
+.navbar__container {
+  display: none;
+  padding: 20px 0;
+}
+.navbar__item {
+  margin-top: 20px;
+}
+.navbar__container > :first-child {
+  margin: 0;
+}
+.navbar__item--sub {
+  margin-left: 20px;
+}
+
+.navbar__button {
+  position: absolute;
+  top: 1.5vh;
+  right: 20px;
+}
+
+.navbar__checkbox:checked + .navbar__container {
+  display: inline;
+}

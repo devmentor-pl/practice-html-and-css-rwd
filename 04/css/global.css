@@ -1,0 +1,17 @@
+.item {
+  color: black;
+  text-decoration: none;
+}
+
+.item:hover {
+  color: rgb(145, 112, 63);
+}
+
+.navbar__checkbox {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  background-color: blanchedalmond;
+}
