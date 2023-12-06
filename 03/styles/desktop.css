@@ -8,3 +8,14 @@ body {
         "a-mid a-mid";
     justify-content: center;
 }
+
+.p, .v {
+    min-height: 60vh;
+    margin: 0;
+}
+
+.t {
+    height: 40vh;
+    margin-top: 10vh;
+}
+

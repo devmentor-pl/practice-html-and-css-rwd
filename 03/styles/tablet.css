@@ -11,3 +11,8 @@ body {
         minmax(200px, 50%)
         minmax(200px, 50%);
 }
+
+.t {
+    height: 100vh;
+    margin: 0;
+}
