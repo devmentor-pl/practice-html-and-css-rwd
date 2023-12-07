@@ -1,10 +1,6 @@
 .item {
-  color: black;
+  color: white;
   text-decoration: none;
-}
-
-.item:hover {
-  color: rgb(145, 112, 63);
 }
 
 .navbar__checkbox {
@@ -12,6 +8,5 @@
 }
 
 .navbar {
-  display: flex;
-  background-color: blanchedalmond;
+  background-color: black;
 }

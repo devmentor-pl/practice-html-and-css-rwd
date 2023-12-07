@@ -1,28 +1,76 @@
 .navbar {
-  justify-content: center;
   position: relative;
-  min-height: 6vh;
+  height: 60px;
 }
+
+.navbar__checkbox:checked ~ .navbar__container {
+  display: block;
+}
+.navbar__checkbox:checked ~ .navbar__button > .hamburger {
+  content: url('../assets/cross.png');
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+}
+
 .navbar__container {
   display: none;
-  padding: 20px 0;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  width: 100%;
 }
 .navbar__item {
-  margin-top: 20px;
+  padding: 15px 0;
+  padding-left: 20px;
+  background-color: black;
 }
-.navbar__container > :first-child {
-  margin: 0;
+
+.navbar__item--parent:hover {
+  padding-bottom: 0;
 }
+
+.navbar__item:hover {
+  background-color: white;
+}
+.navbar__item:hover > .item {
+  color: black;
+}
+
+.navbar__sub-container {
+  display: none;
+}
+.navbar__item:hover > .navbar__sub-container {
+  display: unset;
+}
+
 .navbar__item--sub {
-  margin-left: 20px;
+  position: relative;
+  margin-left: -20px;
+  left: 0;
+  padding-left: 40px;
+  background-color: rgb(243, 242, 242);
+}
+.navbar__item--sub .item {
+  color: black;
+}
+.navbar__item--sub:first-child {
+  margin-top: 15px;
+}
+.navbar__item:hover .navbar__item--sub {
+  border-top: 1px solid rgb(67, 67, 67);
+}
+.navbar__item--sub:hover {
+  background-color: rgb(81, 81, 81);
+}
+.navbar__item--sub:hover .item {
+  color: white;
 }
 
 .navbar__button {
   position: absolute;
-  top: 1.5vh;
-  right: 20px;
-}
+  top: 0;
+  right: 0;
 
-.navbar__checkbox:checked + .navbar__container {
-  display: inline;
+  padding: 10px 20px;
 }
