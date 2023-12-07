@@ -10,6 +10,9 @@
 .navbar__button {
   display: none;
 }
+.navbar__checkbox:checked ~ .navbar__container {
+  display: flex;
+}
 
 .navbar__container {
   display: flex;
