@@ -7,29 +7,19 @@
 .navbar__item--sub:first-child {
   margin: 0;
 }
-.navbar__item:hover .navbar__item--sub {
-  border-top: none;
+.navbar__button {
+  display: none;
 }
 
-
-
-.navbar {
-  min-height: 60px;
-}
 .navbar__container {
   display: flex;
   padding: 0 20px;
-  padding-left: 20px;
   height: 100%;
-}
-.navbar__button {
-  display: none;
 }
 
 .navbar__item,
 .navbar__container > :first-child {
   position: relative;
-  margin: 0;
   padding: 20px;
 }
 
@@ -47,8 +37,10 @@
   position: absolute;
   top: 60px;
   left: calc(50% - 10px);
-
   width: 180px;
+}
+.navbar__item:hover > .navbar__sub-container {
+  display: unset;
 }
 
 .navbar__item--sub {
@@ -65,7 +57,3 @@
   border-radius: 0 0 20px 20px;
 }
 
-.navbar__item:hover > .navbar__sub-container,
-.navbar__sub-container:hover {
-  display: unset;
-}

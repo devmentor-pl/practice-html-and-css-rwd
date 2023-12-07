@@ -3,12 +3,6 @@
   height: 60px;
 }
 
-.navbar__checkbox:checked ~ .navbar__container {
-  display: block;
-}
-.navbar__checkbox:checked ~ .navbar__button > .hamburger {
-  content: url('../assets/cross.png');
-}
 .hamburger {
   width: 40px;
   height: 40px;
@@ -20,6 +14,13 @@
   padding-bottom: 20px;
   width: 100%;
 }
+.navbar__checkbox:checked ~ .navbar__container {
+  display: block;
+}
+.navbar__checkbox:checked ~ .navbar__button > .hamburger {
+  content: url('../assets/cross.png');
+}
+
 .navbar__item {
   padding: 15px 0;
   padding-left: 20px;
@@ -71,6 +72,5 @@
   position: absolute;
   top: 0;
   right: 0;
-
   padding: 10px 20px;
 }
