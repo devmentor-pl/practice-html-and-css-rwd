@@ -1,0 +1,38 @@
+
+.hamburger{
+    display: none;
+}
+.header__logo{
+    display: inline-block;
+    width: 10%;
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__menu{
+    display: flex;
+}
+.menu__item{
+    padding:0 10px;
+}
+.content__container-between,
+.content__container-around{
+    display: flex;
+    justify-content: space-between;
+}
+.content__container-around{
+    justify-content: space-around;
+}
+.a,
+.b,
+.c{
+    width: 49%;
+}
+.content__container-around .a,
+.content__container-around .b,
+.content__container-around .c{ 
+    width:32%
+
+}
