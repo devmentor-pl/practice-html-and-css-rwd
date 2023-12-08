@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width:800px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="./styles/desktop.css">
 </head>
+
 <body>
-    
+
     <main class="t">T</main>
     <header class="p">P</header>
     <side class="v">V</side>
 
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, perferendis! Excepturi veniam quisquam
+            corrupti atque! Fugiat magni nam iste dicta eligendi, veniam quasi libero tempore suscipit qui consequatur
+            quisquam quas.
+            Quaerat ea, quae modi quasi ratione maxime omnis perferendis tempora laudantium nulla dolor quis sequi
+            repellat ullam ipsa aut aspernatur nemo rerum deserunt iure doloribus dignissimos praesentium! Odio, aliquid
+            doloribus.
+            Autem distinctio nihil magnam. Sit sequi iusto atque ad inventore delectus tenetur rerum, pariatur velit
+            earum cum placeat blanditiis obcaecati laborum saepe vitae necessitatibus fugiat culpa! Dignissimos
+            voluptatum adipisci error.
+            Nobis enim eligendi corrupti voluptatum, incidunt atque excepturi aliquid, laboriosam recusandae beatae quas
+            neque adipisci aperiam labore doloribus sint, ipsum ex? Facilis voluptates eligendi repellat reprehenderit
+            consectetur fugiat, delectus sequi!</p>
+    </main>
+    <header class="p">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="images/hedgehog-548335_1920.jpg">
+            <source media="(min-width: 600px)" srcset="images/hedgehog-gf9891fd3f_1280.jpg">
+            <source media="(max-width: 599px)"srcset="images/hedgehog-g4b0bfa0f3_640.jpg">
+            <img src="images/hedgehog-548335_1920.jpg">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zJHCMIcBvMQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </side>
+
 </body>
+
 </html>
