@@ -73,14 +73,10 @@
 /* section--two-columns */
 
 .section--two-columns {
+  height: 100vh;
   grid-template-areas:
     "A B";
   grid-template-columns: repeat(2, 1fr);
-}
-@media (min-width: 800px) {
-  .section--two-columns {
-    height: 100vh;
-  }
 }
 
 .section__item {
@@ -103,6 +99,7 @@
 /* section--three-columns */
 
 .section--three-columns {
+  height: 100vh;
   grid-template-areas:
     "A B C";
   grid-template-columns: repeat(3, 1fr);
