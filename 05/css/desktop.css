@@ -1,0 +1,119 @@
+/*navbar */
+
+.navbar__item:hover {
+  background-color: black;
+}
+.navbar__item:hover .item {
+  color: white;
+}
+.navbar__item--sub:first-child {
+  margin: 0;
+}
+.navbar__button {
+  display: none;
+}
+.navbar__checkbox:checked ~ .navbar__container {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  padding: 0 40px;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 0;
+}
+
+.navbar__item,
+.navbar__container > :first-child {
+  position: relative;
+  padding: 19px 25px;
+}
+
+.navbar__container > .navbar__item:hover::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0;
+  border-bottom: 1px solid white;
+  width: 100%;
+}
+
+.navbar__sub-container {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: -20%;
+  width: 140%;
+}
+.navbar__item:hover > .navbar__sub-container {
+  display: unset;
+}
+
+.navbar__item--sub {
+  margin: 0;
+  padding: 20px;
+  background-color: black;
+}
+
+.navbar__item--sub:hover {
+  background-color: rgb(81, 81, 81);
+}
+
+.navbar__item--sub:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+
+
+/* section--two-columns */
+
+.section--two-columns {
+  grid-template-areas:
+    "A B";
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 800px) {
+  .section--two-columns {
+    height: 100vh;
+  }
+}
+
+.section__item {
+  margin-bottom: 0;
+}
+
+.figure--mainpage {
+  align-items: center;
+  padding: 0;
+}
+.figure--mainpage {
+  min-width: 400px;
+}
+@media (min-width: 1000px) {
+  .figure--mainpage {
+    min-width: 500px;
+  }
+}
+
+/* section--three-columns */
+
+.section--three-columns {
+  grid-template-areas:
+    "A B C";
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.figure--blindwatch {
+  background-color: white;
+}
+
+@media (min-width: 800px) {
+  .figure--blindwatch .figure__item {
+    content: url(../assets/smartwatch-2.jpg);
+  }
+}
