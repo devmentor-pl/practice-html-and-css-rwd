@@ -58,3 +58,17 @@
 .figure {
   background-color: #F4F4F4;
 }
+
+/* footer */
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: black;
+}
+
+.footer__item {
+  color: white;
+}
