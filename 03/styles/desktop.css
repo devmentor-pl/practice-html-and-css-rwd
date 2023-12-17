@@ -1,0 +1,36 @@
+
+  body{
+    
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+        "P V"
+        "T T";
+}
+
+
+img{
+    width: 100%;
+}
+
+.p {
+	grid-area: P;
+    border-color: red;
+}
+
+.t {
+	grid-area: T;
+    border-color: green;
+}
+
+.v {
+	grid-area: V;
+    border-color: blue;
+    height: 0;
+    width: 100%;
+    position: relative;
+    padding-bottom: calc(315 / 560 * 100%);
+}
+
+
+

@@ -7,20 +7,49 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
 
+/* body */
+body {
+    display: grid;
+    grid-template-areas: 
+            "A"
+            "B"
+            "C";
+    
+}
+
+/*zmieniłem kolory, aby lepiej było widać ;-) */
 .a {
-    border-color: #ffffba
+    border-color: red;
+    grid-area: A;
 }
 
 .b {
-    border-color: #ffdfba;
+    border-color: green;
+    grid-area: B;
 }
 
 .c {
-    border-color: #baffc9;
+    border-color: blue;
+    grid-area: C;
+}
+
+/*add @media in the end of source code and then everything is working ;-) */
+@media (min-width: 601px) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "A A"
+            "C B";
+
+        max-width: 1400px;
+        margin: 0 auto;
+    }
 }

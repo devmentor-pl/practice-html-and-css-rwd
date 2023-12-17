@@ -19,5 +19,9 @@
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    shape-outside: polygon(0 0, 0 100%, 100% 0);  
+    margin-right: 10px;  
 }
+
+/* polygon for changing shape in css*/

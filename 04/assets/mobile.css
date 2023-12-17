@@ -1,0 +1,31 @@
+/* ./css/mobile.css */
+
+header {
+    position: relative;
+}
+
+header label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header input {
+    display: none;
+}
+
+header li {
+    border: 1px solid #bbb;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+header ul {
+    display: none;
+}
+
+header input:checked + ul {
+    display: block;
+}
+   

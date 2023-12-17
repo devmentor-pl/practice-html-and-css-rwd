@@ -1,0 +1,27 @@
+body {
+    grid-template-areas: 
+        "P"
+        "T"
+        "V";
+        display: grid;
+}
+
+
+.t {
+    grid-area: T;
+    border-color: green;
+}
+
+.p {
+    grid-area: P;
+    border-color: red;
+}
+
+.v {
+    grid-area: V;
+    border-color: blue;
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: calc(315 / 560 * 100%);
+}
