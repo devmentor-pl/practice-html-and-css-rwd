@@ -1,0 +1,22 @@
+:root {
+  --body-bcg-color: #bbb;
+  --primary-color: #333;
+  --links-hover-color: #0477c9ef;
+  --first-row-color: #0b8fee;
+  --menu--bcg-color: #ddd;
+}
+
+body {
+  background-color: var(--body-bcg-color);
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.menu__link,
+.sublist__link {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.menu__link:hover,
+.sublist__link:hover {
+  color: var(--links-hover-color);
+}

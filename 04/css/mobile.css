@@ -1,0 +1,95 @@
+/* Hamburger-btn-animated */
+
+.menu__label {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 12px 2px;
+  cursor: pointer;
+}
+
+.hamburger-btn {
+  width: 35px;
+  height: 5px;
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  position: relative;
+  transition: background-color 0.3s linear;
+}
+.hamburger-btn::before,
+.hamburger-btn::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 10px;
+  position: absolute;
+  background-color: var(--primary-color);
+  transition: transform 0.3s linear;
+}
+.hamburger-btn::before {
+  transform: translateY(-10px);
+}
+.hamburger-btn::after {
+  transform: translateY(10px);
+}
+
+.menu__input:checked + .menu__label .hamburger-btn::before {
+  transform: rotate(45deg);
+}
+.menu__input:checked + .menu__label .hamburger-btn {
+  background-color: transparent;
+}
+.menu__input:checked + .menu__label .hamburger-btn::after {
+  transform: rotate(-45deg);
+}
+
+/* Menu */
+
+.menu__list {
+  width: 100%;
+  margin: 80px 35px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+}
+.menu__item {
+  margin: 20px 0;
+}
+.sublist__item {
+  margin: 30px 20px 0;
+}
+
+.menu__link,
+.sublist__link {
+  padding: 0.3rem;
+}
+.sublist-item {
+  margin: 20px 0 20px 20px;
+}
+
+/* Menu hidden */
+
+.menu__input:checked ~ .menu__list {
+  opacity: 1;
+}
+.menu__input {
+  display: none;
+}
+
+/* Arrow element in menu__link */
+.menu__link--arrow::after {
+  content: ">";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin: 0 20px;
+  padding-left: 8px;
+  font-size: 20px;
+}
+
+/* Submenu hidden */
+.menu__sublist {
+  display: none;
+}
+.menu__item--parent:hover .menu__sublist {
+  display: block;
+}
