@@ -1,0 +1,16 @@
+body {
+    max-width: 1199px;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-areas: 
+        "a-top a-top"
+        "a-bottom a-mid";
+    grid-template-rows:
+        50vh
+        50vh;
+    grid-template-columns: 
+        1fr 1fr;
+}
+
+

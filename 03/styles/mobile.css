@@ -1,0 +1,20 @@
+body {
+    max-width: 599px;
+    display: grid;
+    grid-template-areas: 
+        "a-top"
+        "a-mid"
+        "a-bottom";
+}
+
+.p {
+    grid-area: a-top;
+}
+
+.t {
+    grid-area: a-mid;
+}
+
+.v {
+    grid-area: a-bottom;
+}

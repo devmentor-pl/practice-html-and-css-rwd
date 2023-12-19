@@ -1,0 +1,118 @@
+/* ikona hamburgera */
+.menu__button {
+    width: 3em;
+    height: 3em;
+    border: 0;
+    border-top: 0.25em solid #009CE1;
+    background-color: transparent;
+    position: relative;
+    display: block;
+}
+
+.menu__button::before, .menu__button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 0.25em solid #009CE1;
+}
+
+.menu__button::after {
+    transform: translateY(25px);
+}
+
+.menu__button::before {
+    transform: translateY(10px);
+}
+
+/* schowanie menu w hamburgerze */
+
+input:checked + ul {
+    display: block;
+}
+
+header {
+    position: relative;
+}
+
+header label {
+    position: absolute;
+    top: 1.5em;
+    left: 1em;
+}
+
+input {
+    display: none;
+}
+
+
+/* wygląd menu głównego */
+
+.menu__list {
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    display: none;
+    position: absolute;
+    top: 5em;
+}
+
+.menu__item {
+    border-top: 0.15em solid  #009CE1;
+}
+
+.menu__link {
+    padding: 1.5em;
+    background-color: #ffffff;
+    color: black;
+}
+
+/* dodanie strzałki przy elemencie ITEMS */
+.menu__link--bottom::after {
+    content: '>';
+    display: inline-block;
+    transform: rotate(90deg);
+    padding-right: 0.35em;
+}
+
+/* wygląd i położenie dropdown menu */
+.menu__sublist {
+    width: 85%;
+    height: 75%;
+    margin-left: 15%;
+    display: none;
+    background-color: white;
+}
+
+.menu__subitem {
+    border-left: 0.1em solid  #009CE1;
+}
+
+.menu__sublink {
+    font-size: 12px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding-left: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* efekt graficzny po kliknięciu na główny pasek menu */
+.menu__item:active {
+    font-weight: bold;
+    border-top: 0.15em solid #009CE1;
+}
+
+.menu__subitem:active {
+    border-left: 0.15em solid #009CE1;
+}
+
+/* rozwijanie i chowanie dropdown menu */
+.menu__item--parent:hover > .menu__sublist {
+    display: block;
+}
