@@ -1,0 +1,86 @@
+/* ./styles/mobile.css */
+
+@media screen and (max-width: 800px) {
+
+    .header .container {
+        display: grid;
+        grid-template-columns:  3fr 1fr;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+        max-width: 800px;
+        overflow: hidden;
+    }
+
+    .menu {
+        min-width: 130px;
+        margin: auto;
+        height: 20px;
+        margin-right: 20px;
+
+    }
+    .hamburger {
+        min-width: 30px;
+        max-width: 50px;
+        justify-self: end;
+        margin-left: 7px;
+        font-size: 1.2em;
+
+    }
+    .hamburger input {
+        display: none;
+    }
+    .content .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 400px;
+        gap: 7px;
+        max-width: 1000px;
+    }
+
+    .content-slim .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 400px;
+        gap: 10px;
+    }
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer .cell {
+        min-width: 70px;
+        margin-left: 50px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .menu {
+        min-width: 70px;
+        margin: auto 0;
+        height: 20px;
+
+    }
+    .hamburger {
+        min-width: 10px;
+        max-width: 50px;
+        justify-self: right;
+        margin-left: 7px;
+        font-size: 1em;
+
+    }
+    .footer .container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .footer .cell {
+        min-width: 50px;
+        margin-right: 50px;
+    }
+
+}
+

@@ -1,0 +1,30 @@
+/* tablet.css */
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+    .p, .v {
+        min-width: 200px;
+        max-width: 50vw;
+        max-height: 50vh;
+    }
+    
+    .p img {
+        max-width: 100%;
+    }
+    .t {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+
+    }
+    .t p {
+        height: 100%;
+        margin-top: 50px;
+        padding: 10px;
+        
+    }
+}

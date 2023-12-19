@@ -1,0 +1,67 @@
+/* mobile.css */
+
+@media screen and (max-width: 400px) {
+    .header {
+        position: relative;
+    }
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr;
+        align-items: center;
+    }
+
+    .header label.hamburger {
+        position: absolute;
+        right: 50%;
+        top: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        transition: color 0.3s ease;
+
+    }
+    .header label.hamburger:hover {
+        color: rgb(223, 197, 54);
+    }
+
+    .header input {
+        display: none;
+    }
+
+    .header ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 20px;
+        list-style: none;
+        margin: 0;
+        display: none;
+    }
+
+    .header ul ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        list-style: none;
+        margin: 0;
+
+    }
+
+    .header input:checked + ul {
+        display: grid;
+        
+    }
+
+    .header ul li,
+    .header ul ul li {
+        width: 100%;
+        text-align: left;
+    }
+    .menu__items {
+        grid-column: 1;
+        grid-row: 2;
+        position: relative;
+        top: -20px;
+    }
+}

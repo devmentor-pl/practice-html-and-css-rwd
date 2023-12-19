@@ -1,7 +1,10 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins";
 }
 
 .p, .t, .v {
@@ -19,8 +22,21 @@
 
 .t {
     border-color: #ffdfba;
+    color: #767f7e;
+    font-size: 1.5em;
 }
 
 .v {
     border-color: #baffc9;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;
+}
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
