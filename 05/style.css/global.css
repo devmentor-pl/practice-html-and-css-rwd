@@ -1,0 +1,16 @@
+/* Global */
+.row {
+  width: 100%;
+  border: 3px solid green;
+  padding: 3px;
+  min-height: 40px;
+}
+.container {
+  border: 3px solid blue;
+  min-height: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.cell {
+  background-color: rgb(238, 170, 22);
+}
