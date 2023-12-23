@@ -32,7 +32,7 @@ Posiada menu, które jest wyśrodkowane w poziomie. Z prawej strony jest tzw. ha
 
 ### Sekcja nr 2
 
-Zawiera dwa elementy wyświetlane jeden pod drugiem z niewielkim odstępem między nimi.
+Zawiera dwa elementy wyświetlane jeden pod drugim z niewielkim odstępem między nimi.
 
 ### Sekcja nr 3
 

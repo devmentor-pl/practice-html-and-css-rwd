@@ -1,0 +1,16 @@
+body {
+  grid-template-areas:
+    "p-header t-main"
+    "v-bottom t-main";
+
+  grid-template-columns: minmax(200px, 50%), 1fr
+}
+
+.t {
+  align-self: flex-start;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}

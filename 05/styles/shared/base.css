@@ -1,0 +1,36 @@
+:root {
+  --green-standard: #0ED145;
+  --blue-standard: #00A8F3;
+  --cell-standard: #FFCA18;
+  --menu-standard: #585858;
+  --padding-10: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  margin-bottom: 10px;
+  outline: 2px solid var(--green-standard);
+  padding: var(--padding-10) 0;
+}
+
+.cell {
+  background-color: var(--cell-standard);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 2px solid var(--blue-standard);
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--padding-10) 0;
+}
+
+#menu--switcher {
+  display: none;
+}

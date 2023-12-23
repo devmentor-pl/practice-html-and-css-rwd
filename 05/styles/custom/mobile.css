@@ -1,0 +1,88 @@
+.header__logo {
+  width: 150px;
+  height: 40px;
+}
+
+.header__nav {
+  position: absolute;
+  right: 10px;
+  top: var(--padding-10 * 2);
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+}
+
+.header__nav>label {
+  display: block;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 4px solid var(--menu-standard);
+  background-color: transparent;
+  position: relative;
+}
+
+.header__nav>label::after,
+label::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid var(--menu-standard);
+  transform: translateY(14px);
+}
+
+.header__nav>label::after {
+  transform: translateY(32px);
+}
+
+.list {
+  display: none;
+  width: 200px;
+  background-color: var(--cell-standard);
+  position: relative;
+  right: calc(200px - 40px - var(--padding-10));
+  top: var(--padding-10);
+}
+
+.list__item {
+  height: 32px;
+  border-bottom: 1px solid #fff;
+}
+
+#menu--switcher:checked+.list {
+  display: block;
+}
+
+.first,
+.second {
+  height: 30vh;
+  flex-direction: column;
+  padding: 0;
+}
+
+.first__left,
+.first__right {
+  width: 100%;
+  height: 50%;
+}
+
+.first__left {
+  margin-bottom: 10px;
+}
+
+.second__item {
+  width: 100%;
+  height: 33%;
+  margin-bottom: 10px;
+}
+
+.second__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer__item {
+  width: 100px;
+  height: 20px;
+}
