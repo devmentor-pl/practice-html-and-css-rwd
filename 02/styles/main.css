@@ -3,7 +3,7 @@ body {
     
     display: grid;
     grid-template-areas: 
-        "a a "
+        "a a"
         "b c"        
     ;
     grid-template-columns:

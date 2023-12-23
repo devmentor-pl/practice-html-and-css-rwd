@@ -1,0 +1,26 @@
+.container {
+    margin: 0 auto;
+    width: 1400px;
+    display: grid;
+
+    grid-template-areas:
+        "p v"
+        "t t"
+    ;
+    grid-template-columns: minmax(200px, 50%) auto
+}
+
+section {
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%; /* domyślnie */
+}
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
