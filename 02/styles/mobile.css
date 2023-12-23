@@ -1,0 +1,9 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3;
+}
+
+.a, .b, .c {
+    min-height: 50vh;
+}
