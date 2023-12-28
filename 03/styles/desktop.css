@@ -1,0 +1,40 @@
+body {
+    display: grid;
+    grid-template-areas:
+      "p v"
+      "t t";
+  
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .p {
+    grid-area: p;
+  }
+  .t {
+    grid-area: t;
+  }
+  .v {
+    grid-area: v;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  p {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .v {
+    position: relative;
+    width: 100%;
+  }
+  
+  .v iframe {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 80%;
+  }
