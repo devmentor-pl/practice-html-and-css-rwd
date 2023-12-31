@@ -1,0 +1,92 @@
+section {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* 
+=============================
+Nav Section
+=============================
+*/
+
+.nav__section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__logo { 
+    width: 200px; 
+    height: 80px;
+}
+
+.nav__menu {
+    width: 400px;
+    height: 80px;
+}
+
+/* 
+=============================
+Header Section
+=============================
+*/
+
+.header__section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.header__section .content,
+.content--smaller  {
+        width: 49%;
+        height: 350px;
+        background-color: orange;
+}
+
+/*     
+=============================
+Article Section
+=============================
+*/
+
+.article__section .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.article__section .content  {
+    width: 100%;
+    height: 250px;
+    margin: 10px;
+}
+
+/*     
+=============================
+Footer Section
+=============================
+*/
+
+.footer__section .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.footer__section .content {
+    height: 40px;
+    width: 100px;
+}
+
+/*     
+=============================
+Hamburger Button
+=============================
+*/
+
+#menu__toggle,
+.menu__btn {
+    display: none;
+}
