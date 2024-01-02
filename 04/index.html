@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+      integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd"
+      crossorigin="anonymous"
+    />
+    <title>Responsive Menu - HTML & CSS: RWD - #04</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="logo">
+          <img src="./images/Logo4 v.2.png" alt="Logo Cats Design" />
+        </div>
+        <div class="content">
+          <input type="checkbox" class="toggle" />
+          <div class="hamburger"></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li>
-                <a href="#">start</a>
+              <a href="#">Dropdown Menu</a>
+              <!-- <input type="checkbox" id="show-dropdown menu" />
+              <label for="show-dropdown">Dropdown</label>
+              <ul>
+                <li><a href="#">Drop Menu 1</a></li>
+                <li><a href="#">Drop Menu 2</a></li>
+                <li><a href="#">Drop Menu 3</a></li>
+                <li><a href="#">Drop Menu 4</a></li>
+              </ul> -->
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-
-</body>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <h1 class="text">Healthy Cat <br />Happy Owner</h1>
+    </div>
+  </body>
 </html>
