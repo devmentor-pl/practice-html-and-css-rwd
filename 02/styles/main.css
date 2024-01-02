@@ -4,12 +4,11 @@ body {
     display: grid;
     grid-template-areas: 
         "a a"
-        "b c"        
+        "c b"        
     ;
     grid-template-columns:
         minmax(auto, 1200px)
-        minmax(auto, 1200px)
-        minmax(auto, 1200px)
+        minmax(auto, 50%)
 }
 
 .a {

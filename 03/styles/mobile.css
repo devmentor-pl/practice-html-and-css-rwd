@@ -1,14 +1,14 @@
+.container {
+    display: grid;
 
+    grid-template-areas:
+        "p"
+        "t"
+        "v"
+    ;
+}
 section {
     height: 100vh;
     position: relative;
-    width: 100%;
-}
-
-iframe {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
     width: 100%;
 }
