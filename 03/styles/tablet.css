@@ -26,6 +26,6 @@ p {
   display: grid;
   justify-content: center;
   align-content: center;
-  margin: 5px;
+  margin: 2px auto;
 }
 

@@ -32,7 +32,7 @@ body {
     width: 100%;
   }
   
-  .v iframe {
+  iframe {
     position: absolute;
     left: 0;
     width: 100%;
