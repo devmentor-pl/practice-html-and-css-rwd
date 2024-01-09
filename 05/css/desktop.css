@@ -20,7 +20,7 @@
 
   .logo,
   .menu {
-    min-height: 60px;
+    min-height: 50px;
     margin: 8px 0px;
   }
 
@@ -34,8 +34,8 @@
     justify-content: space-between;
   }
 
-  .main_left,
-  .main_right {
+  .main-left,
+  .main-right {
     min-height: 300px;
     width: calc(50% - 3px);
     margin: 8px 0px;
@@ -47,9 +47,9 @@
     justify-content: space-evenly;
   }
 
-  .article_left,
-  .article_middle,
-  .article_right {
+  .article-left,
+  .article-middle,
+  .article-right {
     min-height: 300px;
     width: 100%;
     margin: 8px 8px;
@@ -61,8 +61,8 @@
     justify-content: center;
   }
 
-  .middle_footer {
-    min-height: 60px;
+  .middle-footer {
+    min-height: 50px;
     width: 150px;
     margin: 8px;
   }
