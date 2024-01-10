@@ -212,10 +212,18 @@ li:hover ul.dropmenu1 {
     padding: 10px;
   }
 
- .dropmenu1  {
+  .links ul  {
+    position: static; /* resetujemy ustawienia dla absolute */
+  }
+
+  .dropmenu1 {
     display: none;
   }
 
+  li:hover > .dropmenu1 {
+    display: block; /* pokazujemy element jak najedziemy na niego, na telefonach to efekt kliknięcia */
+  }
+  
   .text {
     padding-top: 20px;
     font-size: calc(2vw + 3rem);
