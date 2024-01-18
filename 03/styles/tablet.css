@@ -1,0 +1,8 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "area-p area-t"
+        "area-v area-t";
+    grid-template-columns: minmax(200px, 50vw) auto;
+    
+}
