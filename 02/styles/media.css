@@ -1,9 +1,5 @@
 @media (max-width: 600px) {
-    .a, .b, .c {
-        border: 3px solid transparent;
-        /* min-height: 50px; */
-        height: 50vh;
-    
+    body {
         display: grid;
         grid-template-areas: 
             "a a"
@@ -13,6 +9,13 @@
         
         justify-content: center;
         align-items: center;
+    }
+    
+    .a, .b, .c {
+        border: 3px solid transparent;
+        /* min-height: 50px; */
+        height: 50vh;
+    
     }
     
     header {
