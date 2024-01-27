@@ -1,0 +1,41 @@
+/* NAV */
+.nav__items {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 20px;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* end of NAV */
+
+/* DROPDOWN */
+
+.dropdown__items {
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown:hover > .dropdown__items {
+    visibility: visible;
+}
+
+.dropdown__item {
+    margin: 15px 20px 0px -60px;
+    padding: 0px 20px;
+    list-style: none;
+    width: 250px;
+}
+
+.dropdown__item--last {
+    margin: 5px 20px 0px -60px;
+}
+
+/* end od DROPDOWN */

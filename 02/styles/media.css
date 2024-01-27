@@ -1,0 +1,29 @@
+@media (max-width: 600px) {
+    .a, .b, .c {
+        border: 3px solid transparent;
+        /* min-height: 50px; */
+        height: 50vh;
+    
+        display: grid;
+        grid-template-areas: 
+            "a a"
+            "b c";
+     
+        grid-template-columns: 70% 30%;
+        
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header {
+        grid-area: a;
+    }
+    
+    section {
+        grid-area: b;
+    }
+    
+    main {
+        grid-area: c;
+    }
+}

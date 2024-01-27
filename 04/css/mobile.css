@@ -1,0 +1,82 @@
+/* USTAWIĆ MOBILE DLA TELEFONÓW + PODPIĄĆ HAMBURGERA */
+
+/* NAV */
+.nav__items {
+    display: block;
+}
+
+.nav__item {
+    margin: 20px;
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/* end of NAV */
+
+/* DROPDOWN */
+
+.dropdown__items {
+    position: absolute;
+    visibility: hidden;
+}
+
+.dropdown:hover > .dropdown__items {
+    visibility: visible;
+}
+
+.dropdown__item {
+    margin: 0px 20px 0px 60px;
+    padding: 0px 20px;
+    list-style: none;
+    width: 250px;
+}
+
+.dropdown__item--last {
+    margin: 15px 20px 0px 60px;
+}
+
+/* end od DROPDOWN */
+
+/* HAMBURGER */
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid white;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+}
+
+.hamburger::after, .hamburger::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid white;
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+
+
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateX(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(10px);
+}
+
+/* end of HAMBURGER */
