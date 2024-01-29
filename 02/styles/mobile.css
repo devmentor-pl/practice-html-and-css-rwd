@@ -1,0 +1,26 @@
+body {
+  display: grid;
+  grid-template-areas: 
+  "a"
+  "b"
+  "c";
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: 
+  50vh
+  50vh
+  50vh;
+  
+}
+
+.a {
+    grid-area: a;
+  }
+  
+  .b {
+    grid-area: b;
+  }
+  
+  .c {
+    grid-area: c;
+  }

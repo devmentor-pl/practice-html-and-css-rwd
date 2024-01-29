@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "p t"
+    "v t";
+
+  grid-template-columns: 1fr 1fr; 
+}
+
+.p {
+  grid-area: p;
+}
+.t {
+  grid-area: t;
+}
+.v {
+  grid-area: v;
+}
+
+img, iframe {
+  max-width: 100%;
+}
+
+
+p {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  margin: 2px auto;
+}
+
