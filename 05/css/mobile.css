@@ -1,0 +1,28 @@
+@media screen and (max-width: 800px) {
+    .header {
+        border: 4px solid green;
+    }
+
+    .header__items {
+        border: 4px solid blue;
+        height: 60px;
+        margin: 2px;
+        display: flex;
+    }
+
+    .header__item:first-child {
+        background-color: yellow;
+        margin: 5px auto;
+        height: 40px;
+        width: 90px;
+        justify-content: center;
+    }
+
+    .header__item--icon {
+        justify-content: right;
+        height: 15px;
+        width: 15px;
+        background-color: yellow;
+        margin: 6px;
+    }
+}
