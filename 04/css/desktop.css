@@ -1,59 +1,15 @@
 @media screen and (min-width: 1281px) {
     
-    /* NAV */
-    .nav__items {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .nav__item {
-        margin: 20px;
-        padding: 10px 20px;
-        list-style: none;
-    }
-    
-    .nav a {
-        text-decoration: none;
-    }
-    
-    /* end of NAV */
-    
-    /* DROPDOWN */
-    
-    .dropdown__items {
-        position: absolute;
+    /* FIRST LEVEL */
+    .nav__icon {
         visibility: hidden;
     }
     
-    .dropdown:hover > .dropdown__items {
-        visibility: visible;
-    }
-    
-    .dropdown__item {
-        margin: 15px 20px 0px -60px;
-        padding: 0px 20px;
+    ul {
         list-style: none;
-        width: 250px;
     }
-    
-    .dropdown__item--last {
-        margin: 5px 20px 0px -60px;
-    }
-    
-    /* end od DROPDOWN */
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /* FIRST LEVEL */
-    .menu {
+    .menu__items {
         display: flex;
-        background-color: white;
     }
     
     .menu__item {
@@ -66,16 +22,24 @@
         color: #399AE2;
     }
     
-    /* Nie dziaÅ‚a przekrÄ™cenie strzaÅ‚ki o 90 st */
     .arrow__down {
         transform: rotate(90deg);
     }
+    
+    /* end of FIRST LEVEL */
+    
     
     /* SECOND LEVEL */
     
     .menu__level2 {
         position: absolute;
-        margin-top: 10px;
+        visibility: hidden;
+        margin-top: -25px;
+        margin-left: 36px;
+    }
+    
+    .menu__item--click:hover > .menu__level2 {
+        visibility: visible;
     }
     
     .level2__item {
@@ -97,11 +61,22 @@
     .arrow__right {
         right: 0;
     }
+    
+    /* end of SECOND LEVEL */
+    
     /* THIRD LEVEL */
     
-    /* nie dziaÅ‚a pozycjonowanie level 3; rodzic ma position: relative */
+    /* Nie mozna najechać strzałką na item 2, aby otworzyć menu__level3 */
+    
     .menu__level3 {
         position: absolute;
+        visibility: hidden;
+        margin-top: -25px;
+        margin-left: 36px;
+    }
+    
+    .menu__item--click:hover > .menu__level3 {
+        visibility: visible;
     }
     
     .level3__item {
@@ -111,23 +86,4 @@
         color: white;
         width: 140px;
     }
-    
-    
-    
-    
-    
-    
-    
-    /* DROPDOWN */
-    
-    .dropdown__items {
-        position: absolute;
-        visibility: hidden;
-    }
-    
-    .dropdown:hover > .dropdown__items {
-        visibility: visible;
-    }
-    
-    /* end od DROPDOWN */
 }
