@@ -1,50 +1,33 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./css/global.css">
-    <!-- <link rel="stylesheet" href="./css/desktop.css"> -->
-    <link rel="stylesheet" href="./css/mobile.css">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+   <link rel="stylesheet" href="./reset.css">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/mobile.css">
+   <link rel="stylesheet" href="./css/desktop.css">
+    <title>Document</title>
 </head>
 <body>
-    
-    <nav class="nav">
-        <label for="menu-switcher">MENU</label>
-        <input type="checkbox" name="hamburger" id="menu-switcher">
-        <ul class="nav__items">
-            <li class="nav__item">
-                <a href="#">HOME</a>
-            </li>
-            <li class="nav__item  dropdown">
-                <a href="#">ITEMS</a>
-                <ul class="dropdown__items">
-                    <li class="dropdown__item">
-                        <a href="">item 1</a>
-                    </li>
-                    <li class="dropdown__item dropdown__item--last">
-                        <a href="">item 2</a>
-                        <ul class="dropdown-2__items">
-                            <li class="dropdown-2__item">
-                                <a href="#"></a>item 2.1</a>
-                            </li>
-                            <li class="dropdown-2__item">
-                                <a href="#"></a>item 2.2</a>
-                            </li>
+    <nav>
+        <label class="nav__icon" for="menu-switcher">MENU</label>
+        <input type="checkbox" id="menu-switcher">
+        <ul class="menu__items">
+            <li class="menu__item menu__item--blue">HOME</li>
+            <li class="menu__item menu__item--click menu__item--blue">ITEMS <span class="arrow__down">></span>
+                <ul class="menu__level2">
+                    <li class="level2__item">item 1</li>
+                    <li class="level2__item menu__item--click level2__item--relative">item 2 <span class="arrow__right">></span></li>
+                        <ul class="menu__level3">
+                            <li class="level3__item">item 2.1</li>
+                            <li class="level3__item">item 2.2</li>
                         </ul>
-                    </li>
                 </ul>
             </li>
-            <li class="nav__item">
-                <a href="#">SETTINGS</a>
-            </li>
-            <li class="nav__item">
-                <a href="#">CONTACT</a>
-            </li>
+            <li class="menu__item">SETTINGS</li>
+            <li class="menu__item">CONTACT</li>
         </ul>
     </nav>
-
 </body>
 </html>

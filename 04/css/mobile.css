@@ -1,76 +1,129 @@
-/* USTAWIĆ MOBILE DLA TELEFONÓW + PODPIĄĆ HAMBURGERA */
+@media screen and (min-width: 601px) {
+    /* NAV */
+    
+    /* Jak ukryć napis MENU? */
+    
+    .nav__icon {
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid #333333;
+        background: transparent;
+        position: relative;
+        transition: 0.3s transform linear;
+    }
+    
+    .nav__icon::after, .nav__icon::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid #333333;
+        transform: translateY(10px);
+    }
+    
+    .nav__icon::after {
+        transform: translateY(25px);
+        transition: 0.3s transform linear;
+    }
+    
+    .nav__icon:focus {
+        transform: rotate(45deg) translateX(5px);
+        border: none;
+    }
+    
+    .nav__icon:focus::after {
+        transform: rotate(-90deg) translateX(10px);
+    }
+    
+    /* end of NAV */
+    
+    /* FIRST LEVEL */
+    ul {
+        list-style: none;
+    }
+    .menu__items {
+        display: none;
+    }
+    
+    input:checked + .menu__items {
+        display: block;
+    }
+    
+    .menu__item {
+        margin: 10px;
+        padding: 5px;
+        position: relative;
+    }
+    
+    .menu__item--blue {
+        color: #399AE2;
+    }
+    
+    .arrow__down {
+        transform: rotate(90deg);
+    }
+    
+    /* end of FIRST LEVEL */
+    
+    
+    /* SECOND LEVEL */
+    
+    .menu__level2 {
+        position: absolute;
+        visibility: hidden;
+        margin-top: -25px;
+        margin-left: 36px;
+    }
+    
+    .menu__item--click:hover > .menu__level2 {
+        visibility: visible;
+    }
+    
+    .level2__item {
+        background-color: beige;
+        padding: 10px 5px 10px 10px;
+        background-color: #333333;
+        color: white;
+        width: 140px;
+    }
+    
+    .level2__item:first-child {
+        margin-top: 5px;
+    }
+    
+    .level2__item--relative {
+        position: relative;
+    }
+    
+    .arrow__right {
+        right: 0;
+    }
+    
+    /* end of SECOND LEVEL */
+    
+    /* THIRD LEVEL */
+    
+    /* Nie mozna najechać strzałką na item 2, aby otworzyć menu__level3 */
+    
+    .menu__level3 {
+        position: absolute;
+        visibility: hidden;
+        margin-top: -25px;
+        margin-left: 36px;
+    }
+    
+    .menu__item--click:hover > .menu__level3 {
+        visibility: visible;
+    }
+    
+    .level3__item {
+        background-color: beige;
+        padding: 10px 5px 10px 10px;
+        background-color: #333333;
+        color: white;
+        width: 140px;
+    }
 
-/* NAV */
-.nav__items {
-    display: none;
 }
-
-input:checked + .nav__items {
-    display: block;
-}
-
-/* end of NAV */
-
-/* DROPDOWN */
-
-.dropdown__items {
-    position: absolute;
-    visibility: hidden;
-}
-
-.dropdown:hover > .dropdown__items {
-    visibility: visible;
-}
-
-.dropdown__item {
-    margin: 0px 20px 0px 60px;
-    padding: 0px 20px;
-    list-style: none;
-    width: 250px;
-}
-
-.dropdown__item--last {
-    margin: 15px 20px 0px 60px;
-}
-
-/* end od DROPDOWN */
-
-/* HAMBURGER */
-
-.hamburger {
-    width: 40px;
-    height: 35px;
-    border: 0;
-    border-top: 5px solid white;
-    background: transparent;
-    position: relative;
-    transition: 0.3s transform linear;
-}
-
-.hamburger::after, .hamburger::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    border-top: 5px solid white;
-    transform: translateY(10px);
-}
-
-.hamburger::after {
-    transform: translateY(25px);
-    transition: 0.3s transform linear;
-
-
-}
-
-.hamburger:focus {
-    transform: rotate(45deg) translateX(5px);
-    border: none;
-}
-
-.hamburger:focus::after {
-    transform: rotate(-90deg) translateX(10px);
-}
-
-/* end of HAMBURGER */

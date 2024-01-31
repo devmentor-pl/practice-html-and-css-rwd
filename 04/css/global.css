@@ -1,19 +1,10 @@
 body, html {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    background-color: rgb(242, 241, 241);
+    font-size: 14px;
+    padding: 15px;
 }
 
 input {
     display: none;
-}
-
-.nav__item, dropdown__item {
-    margin: 20px;
-    padding: 10px 20px;
-    list-style: none;
-}
-
-.nav a {
-    text-decoration: none;
 }
