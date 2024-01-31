@@ -2,17 +2,11 @@
 
 /* NAV */
 .nav__items {
+    display: none;
+}
+
+input:checked + .nav__items {
     display: block;
-}
-
-.nav__item {
-    margin: 20px;
-    padding: 10px 20px;
-    list-style: none;
-}
-
-.nav a {
-    text-decoration: none;
 }
 
 /* end of NAV */

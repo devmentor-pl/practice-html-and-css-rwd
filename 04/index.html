@@ -12,23 +12,36 @@
 <body>
     
     <nav class="nav">
+        <label for="menu-switcher">MENU</label>
+        <input type="checkbox" name="hamburger" id="menu-switcher">
         <ul class="nav__items">
             <li class="nav__item">
-                <a href="#">start</a>
+                <a href="#">HOME</a>
             </li>
             <li class="nav__item  dropdown">
-                <a href="#">oferta</a>
+                <a href="#">ITEMS</a>
                 <ul class="dropdown__items">
                     <li class="dropdown__item">
-                        <a href="">strony internetowe</a>
+                        <a href="">item 1</a>
                     </li>
                     <li class="dropdown__item dropdown__item--last">
-                        <a href="">pozycjonowanie stron www</a>
+                        <a href="">item 2</a>
+                        <ul class="dropdown-2__items">
+                            <li class="dropdown-2__item">
+                                <a href="#"></a>item 2.1</a>
+                            </li>
+                            <li class="dropdown-2__item">
+                                <a href="#"></a>item 2.2</a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </li>
             <li class="nav__item">
-                <a href="#">kontakt</a>
+                <a href="#">SETTINGS</a>
+            </li>
+            <li class="nav__item">
+                <a href="#">CONTACT</a>
             </li>
         </ul>
     </nav>
