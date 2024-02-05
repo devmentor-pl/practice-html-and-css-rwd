@@ -1,6 +1,7 @@
-@media screen and(min-width: 801px) {
+@media screen and (min-width: 801px) {
     .header {
         border: 4px solid green;
+        margin: 5px 0;
     }
 
     .header__items {
@@ -8,21 +9,21 @@
         height: 60px;
         margin: 2px;
         display: flex;
-
+        justify-content: space-between;
     }
 
-    .header__nav {
-        background-color: yellow;
-        margin: 5px auto;
+    .header__item--nav {
+        background-color: rgb(250, 194, 53);
+        margin: 5px 0;
         height: 40px;
-        width: 90px;
+        width: calc(40%);
     }
 
-    .header__logo {
-        background-color: yellow;
-        margin: 5px auto;
+    .header__item {
+        background-color: rgb(250, 194, 53);
+        margin: 5px 0;
         height: 40px;
-        width: 40px;
+        width: calc(15%);
     }
 
     .main {
@@ -30,42 +31,42 @@
     }
 
     .main__items {
+        display: flex;
+        justify-content: space-between;
         border: 4px solid blue;
-        height: 400px;
+        
+        height: calc(70vh);
         margin: 2px;
     }
 
     .main__item {
-        background-color: yellow;
+        background-color: rgb(250, 194, 53);
         margin: 5px auto;
-        height: 188px;
-        width: 757px;
-        /* width: calc(?); */
-        /* Jak ustawić 100% szerokości - 10px, ale mniejszej od 800px w zależności od tego, ajk duy będzie ekran*/
+        width: calc(50% - 3px);
     }
 
     .section {
         border: 4px solid green;
+        margin: 5px 0;
     }
 
     .section__items {
+        display: flex;
+        justify-content: space-evenly;
         border: 4px solid blue;
         height: 400px;
         margin: 2px;
     }
 
     .section__item {
-        background-color: yellow;
+        background-color: rgb(250, 194, 53);
         margin: 5px auto;
-        height: 124px;
-        width: 757px;
-        /* width: calc(?); */
-        /* Jak ustawić 100% szerokości - 10px, ale mniejszej od 800px w zależności od tego, ajk duy będzie ekran*/
+        width: calc(33% - 6px); 
     }
-
-/* Czy mona tutaj uyć flexa? */
+ 
     .footer {
         border: 4px solid green;
+        margin: 5px 0;
     }
 
     .footer__items {
@@ -76,10 +77,10 @@
     }
 
     .footer__item {
-        background-color: yellow;
+        background-color: rgb(250, 194, 53);
         margin: 5px auto;
         height: 40px;
-        width: 90px;
+        width: 115px;
         justify-content: center;
     }
 }
