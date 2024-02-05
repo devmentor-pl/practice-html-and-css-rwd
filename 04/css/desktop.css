@@ -1,4 +1,4 @@
-@media screen and (min-width: 1281px) {
+@media screen and (min-width: 800px) {
     
     /* FIRST LEVEL */
     .nav__icon {
@@ -34,8 +34,7 @@
     .menu__level2 {
         position: absolute;
         visibility: hidden;
-        margin-top: -25px;
-        margin-left: 36px;
+        margin-top: 5px;
     }
     
     .menu__item--click:hover > .menu__level2 {
@@ -69,8 +68,8 @@
     .menu__level3 {
         position: absolute;
         visibility: hidden;
-        margin-top: -25px;
-        margin-left: 36px;
+        margin-top: -27px;
+        margin-left: 130px;
     }
     
     .menu__item--click:hover > .menu__level3 {

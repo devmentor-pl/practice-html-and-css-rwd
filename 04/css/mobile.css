@@ -1,9 +1,8 @@
-@media screen and (min-width: 601px) {
+@media screen and (max-width: 799px) {
     /* NAV */
     
-    /* Jak ukryć napis MENU? */
-    
     .nav__icon {
+        display: inline-block;
         width: 40px;
         height: 35px;
         border: 0;
@@ -67,7 +66,6 @@
     
     /* end of FIRST LEVEL */
     
-    
     /* SECOND LEVEL */
     
     .menu__level2 {
@@ -105,7 +103,7 @@
     
     /* THIRD LEVEL */
     
-    /* Nie mozna najechać strzałką na item 2, aby otworzyć menu__level3 */
+    /* Po zmianie pliku reset.css nadal nie mozna najechać strzałką na item 2, aby otworzyć menu__level3 */
     
     .menu__level3 {
         position: absolute;
