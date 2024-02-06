@@ -2,18 +2,16 @@
     /* NAV */
     
     .nav__icon {
-        display: inline-block;
         width: 40px;
         height: 35px;
         border: 0;
         border-top: 5px solid #333333;
         background: transparent;
         position: relative;
-        transition: 0.3s transform linear;
     }
     
-    .nav__icon::after, .nav__icon::before {
-        content: "";
+    .nav__icon::before, .nav__icon::after {
+        content: '';
         position: absolute;
         top: 0;
         left: 0;
@@ -24,17 +22,17 @@
     
     .nav__icon::after {
         transform: translateY(25px);
-        transition: 0.3s transform linear;
     }
     
-    .nav__icon:focus {
+    /* Animacja hamburgera */
+    /* .nav__icon:focus {
         transform: rotate(45deg) translateX(5px);
         border: none;
     }
     
     .nav__icon:focus::after {
         transform: rotate(-90deg) translateX(10px);
-    }
+    } */
     
     /* end of NAV */
     
