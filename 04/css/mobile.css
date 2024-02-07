@@ -102,8 +102,6 @@
     
     /* THIRD LEVEL */
     
-    /* Po zmianie pliku reset.css nadal nie mozna najechać strzałką na item 2, aby otworzyć menu__level3 */
-    
     .menu__level3 {
         position: absolute;
         visibility: hidden;

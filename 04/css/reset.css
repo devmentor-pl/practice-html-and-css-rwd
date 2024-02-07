@@ -79,11 +79,3 @@ body {font-size: 16px; font-family: var(--font-system); color: var(--text-color)
 
 a {color: var(--featured-color);}
 a:hover {color: var(--featured-color-hover);}
-
-@media screen and (max-width: 480px) {
-	
-}
-
-@media print {
-	
-}
