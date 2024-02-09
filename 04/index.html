@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/mobile.css">
+   <link rel="stylesheet" href="./css/desktop.css">
+    <title>Document</title>
 </head>
 <body>
-    
     <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+        <label class="nav__icon" for="menu-switcher"></label>
+        <input type="checkbox" id="menu-switcher">
+        <ul class="menu__items">
+            <li class="menu__item menu__item--blue">HOME</li>
+            <li class="menu__item menu__item--click menu__item--blue">ITEMS <span class="arrow__down">></span>
+                <ul class="menu__level2">
+                    <li class="level2__item">item 1</li>
+                    <li class="level2__item menu__item--click level2__item--relative">item 2 <span class="arrow__right">></span>
+                        <ul class="menu__level3">
+                            <li class="level3__item">item 2.1</li>
+                            <li class="level3__item">item 2.2</li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+            <li class="menu__item">SETTINGS</li>
+            <li class="menu__item">CONTACT</li>
         </ul>
     </nav>
-
 </body>
 </html>

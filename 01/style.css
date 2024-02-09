@@ -18,6 +18,7 @@
     content: '';
     height: 0;
     border: 150px solid #dcdcdc;
+    shape-outside: polygon(100% 0, 160px 50%, 0 100%);
     border-right-color: transparent;
     border-bottom-color: transparent;    
 }

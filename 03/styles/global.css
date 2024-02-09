@@ -24,3 +24,76 @@
 .v {
     border-color: #baffc9;
 }
+
+@media screen and (max-width: 599px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "p"
+        "t"
+        "v";
+    }
+
+    main {
+        grid-area: t;
+    }
+
+    header {
+        grid-area: p;
+    }
+
+    side {
+        grid-area: v;
+    }
+}
+
+@media screen, (min-width: 600px) and (max-width: 1199px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "p t"
+        "v t";
+        grid-template-columns: minmax(200px, 50vh);
+    }
+
+    main {
+        grid-area: t;
+    }
+
+    header {
+        grid-area: p;
+    }
+
+    side {
+        grid-area: v;
+    }
+}
+
+/* DESKTOP Zawartość strony > 1400 => Dodać wolną przestrzeń po bokach */
+
+@media screen and (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "p v"
+        "t t";
+        max-width: 1400px;
+    }
+
+    main {
+        grid-area: t;
+    }
+
+    header {
+        grid-area: p;
+    }
+
+    side {
+        grid-area: v;
+    }
+}
+
+

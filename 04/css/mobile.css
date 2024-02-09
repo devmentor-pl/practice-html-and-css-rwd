@@ -1,0 +1,125 @@
+@media screen and (max-width: 799px) {
+    /* NAV */
+    
+    .nav__icon {
+        display: inline-block;
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid #333333;
+        background: transparent;
+        position: relative;
+    }
+    
+    .nav__icon::before, .nav__icon::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid #333333;
+        transform: translateY(10px);
+    }
+    
+    .nav__icon::after {
+        transform: translateY(25px);
+    }
+    
+    /* Animacja hamburgera */
+    /* .nav__icon:focus {
+        transform: rotate(45deg) translateX(5px);
+        border: none;
+    }
+    
+    .nav__icon:focus::after {
+        transform: rotate(-90deg) translateX(10px);
+    } */
+    
+    /* end of NAV */
+    
+    /* FIRST LEVEL */
+    ul {
+        list-style: none;
+    }
+    .menu__items {
+        display: none;
+    }
+    
+    input:checked + .menu__items {
+        display: block;
+    }
+    
+    .menu__item {
+        margin: 10px;
+        padding: 5px;
+        position: relative;
+    }
+    
+    .menu__item--blue {
+        color: #399AE2;
+    }
+    
+    .arrow__down {
+        transform: rotate(90deg);
+    }
+    
+    /* end of FIRST LEVEL */
+    
+    /* SECOND LEVEL */
+    
+    .menu__level2 {
+        position: absolute;
+        visibility: hidden;
+        top: -27px;
+        left: 80px;
+    }
+    
+    .menu__item--click:hover > .menu__level2 {
+        visibility: visible;
+    }
+    
+    .level2__item {
+        background-color: beige;
+        padding: 10px 5px 10px 10px;
+        background-color: #333333;
+        color: white;
+        width: 140px;
+    }
+    
+    .level2__item:first-child {
+        margin-top: 5px;
+    }
+    
+    .level2__item--relative {
+        position: relative;
+    }
+    
+    .arrow__right {
+        right: 0;
+    }
+    
+    /* end of SECOND LEVEL */
+    
+    /* THIRD LEVEL */
+    
+    .menu__level3 {
+        position: absolute;
+        visibility: hidden;
+        top: 1px;
+        left: 135px;
+        z-index: 1;
+    }
+    
+    .menu__item--click:hover > .menu__level3 {
+        visibility: visible;
+    }
+    
+    .level3__item {
+        background-color: beige;
+        padding: 10px 5px 10px 10px;
+        background-color: #333333;
+        color: white;
+        width: 140px;
+    }
+
+}

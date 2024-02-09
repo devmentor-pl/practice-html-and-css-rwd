@@ -1,0 +1,100 @@
+@media screen and (max-width: 800px) {
+    .header {
+        border: 4px solid green;
+    }
+
+    .header__items {
+        border: 4px solid blue;
+        height: 60px;
+        margin: 2px;
+        display: flex;
+    }
+
+    .header__item:first-child {
+        background-color: rgb(250, 194, 53);
+        margin: 5px auto;
+        height: 40px;
+        width: 90px;
+        justify-content: center;
+    }
+
+    /* brakuje jednej linii w hamburgerze */
+
+    .header__item--nav {
+        display: inline-block;
+        width: 40px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid grey;
+        background: transparent;
+        position: relative;
+        transition: 0.3s transform linear;
+    }
+
+    .header__item--nav::after,  .header__item--nav::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid grey;
+        transform: translateY(10px);
+    }
+
+    .main {
+        border: 4px solid green;
+    }
+
+    .main__items {
+        border: 4px solid blue;
+        height: 400px;
+        margin: 2px auto;
+        max-width: 790px;
+    }
+
+    .main__item {
+        background-color: rgb(250, 194, 53);
+        margin: 5px auto;
+        height: calc(50% - 8px);
+        width: 100%;
+        /* HEIGHT: Dla auto wypełnienie znika, dla 100% w szerokości jest ok, w wysokości wystaje z dołu, dlatego łam calc() */
+    }
+
+    .section {
+        border: 4px solid green;
+    }
+
+    .section__items {
+        border: 4px solid blue;
+        height: 400px;
+        margin: 2px;
+        max-width: 790px;
+    }
+
+    .section__item {
+        background-color: rgb(250, 194, 53);
+        margin: 5px auto;
+        height: calc(33% - 6px);
+        width: 100%;
+        /* HEIGHT: Dla auto wypełnienie znika, dla 100% w szerokości jest ok, w wysokości wystaje z dołu, dlatego łam calc() */
+    }
+
+    .footer {
+        border: 4px solid green;
+    }
+
+    .footer__items {
+        border: 4px solid blue;
+        height: 60px;
+        margin: 2px;
+        display: flex;
+    }
+
+    .footer__item {
+        background-color: rgb(250, 194, 53);
+        margin: 5px auto;
+        height: 40px;
+        width: 90px;
+        justify-content: center;
+    }
+}

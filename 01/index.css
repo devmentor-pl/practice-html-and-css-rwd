@@ -1,0 +1,9 @@
+/* NIE DZIAŁA OPŁYWANIE */
+* {
+    box-sizing: border-box;
+}
+
+.content::before {
+    float: left;
+    shape-outside: url(./assets/after.png);
+}
