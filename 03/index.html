@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 599px)"
+      href="./styles/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px) and (max-width: 1199px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop.css"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="t">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+          pharetra fringilla nibh, eget imperdiet velit. Fusce egestas, ante eu
+          luctus posuere, lorem ipsum posuere quam, ac congue justo enim posuere
+          nibh. Nullam pharetra nisi vitae suscipit maximus. Aenean a varius
+          tellus. Sed quis ligula vitae erat facilisis maximus. Phasellus
+          condimentum mauris augue, in semper justo eleifend a. Donec at ligula
+          condimentum, sollicitudin metus sed, feugiat nibh. Duis sed nunc
+          sodales, mattis urna a, ultricies diam. Ut a congue eros, et viverra
+          lectus. In hac habitasse platea dictumst. Aliquam ultricies non purus
+          quis laoreet. Nam hendrerit et urna sit amet lacinia. Curabitur congue
+          massa sed vestibulum laoreet. Ut quis ante turpis. Praesent at ligula
+          vel ipsum bibendum posuere non id massa. Morbi eu turpis ligula.
+          Praesent cursus tellus at tellus ultricies consequat.
+        </p>
+      </main>
+      <header class="p">
+        <picture>
+          <source srcset="./img/img-640px.jpg" media="(max-width: 599px)" />
+          <source
+            srcset="./img/img-1280px.jpg"
+            media="(min-width: 600px) and (max-width: 1199px)"
+          />
+          <img class="img" src="./img/img-1920px.jpg" alt="full moon image" />
+        </picture>
+      </header>
+      <side class="v">
+        <section class="v__video-container">
+          <iframe
+            class="video"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/L19WO4jfzMM?si=0TZk_CCnnTOPqg_m"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </section>
+      </side>
+    </div>
+  </body>
 </html>
