@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="./styles/desktop.css"
+    />
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">logo</h1>
+      <nav class="header__nav nav">
+        <label class="nav__menu-switcher"
+          ><input type="checkbox" id="menu-switcher"
+        /></label>
 
-</body>
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a class="nav__link" href="#">start</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--open" href="#">oferta</a>
+            <ul class="nav__sub-list">
+              <li class="nav__sub-list-item">
+                <a class="nav__sub-link" href="#">strony internetowe</a>
+              </li>
+              <li class="nav__sub-list-item">
+                <a class="nav__sub-link" href="#">pozycjonowanie stron www</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__link nav__link--open" href="#">kontakt</a>
+            <ul class="nav__sub-list">
+              <li class="nav__sub-list-item">
+                <a class="nav__sub-link" href="#">zarząd</a>
+              </li>
+              <li class="nav__sub-list-item">
+                <a class="nav__sub-link" href="#">napisz do nas</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>

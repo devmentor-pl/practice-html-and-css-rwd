@@ -1,0 +1,32 @@
+.section {
+  margin: 5px 20px;
+}
+
+.header__bars {
+  display: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.header__nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+}
+
+.hero {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+}
+
+.comments {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 10px;
+}
