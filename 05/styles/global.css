@@ -1,0 +1,22 @@
+:root {
+    --blue: #2980b9;
+    --green: #27ae60;
+    --orange: #f39c12;
+}
+
+.green {
+    margin: 2px;
+    padding: 2px;
+    border: 2px solid var(--green);
+}
+
+.blue {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 2px solid var(--blue);
+}
+
+.orange {
+    min-height: 50px;
+    background-color: var(--orange);
+}
