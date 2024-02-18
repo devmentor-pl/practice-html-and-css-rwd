@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    outline: 5px solid green;
+    padding: 5px 0;
+}
+
+.row {
+    max-width: 1000px;
+    margin: 0 auto;
+    outline: 5px solid blue;
+    padding: 5px 0;
+}
+
+
+.cell {
+    min-height: 50px;
+    outline: 5px solid orange;
+    padding: 5px 0;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.item-link {
+    text-decoration: none;
+    color: tomato;
+}
