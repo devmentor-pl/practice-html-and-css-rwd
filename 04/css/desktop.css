@@ -1,0 +1,22 @@
+.nav{
+    display: flex;
+    
+}
+li{
+    margin: 20px;
+    }
+
+.hamburger{
+    display: none;
+}
+.nav__dropdown{
+    position: relative;
+}
+.nav__list{
+    display: none;
+    position: absolute;
+    
+}
+.nav__dropdown:hover + .nav__list{
+    display: block;
+}

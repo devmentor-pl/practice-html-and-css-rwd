@@ -1,0 +1,22 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "a a"
+        "c b";
+    grid-template-columns: 600px 600px;
+    justify-content: center;        
+}
+.a{
+    grid-area: a;
+    max-width: 1200px;
+    
+}
+.b{
+    grid-area: b;
+    max-width: 600px;
+}
+.c{
+    grid-area: c;
+    max-width: 600px;
+}
+

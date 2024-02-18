@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" media="(min-width: 761px)" href="./css/desktop.css">
 </head>
+
 <body>
-    
+
     <nav>
-        <ul>
+        <button class="hamburger"></button>
+        <ul class="nav">
             <li>
-                <a href="#">start</a>
+                <a href=" #">start</a>
             </li>
             <li>
-                <a href="#">oferta</a>
-                <ul>
+                <a class="nav__dropdown" href="#">oferta</a>
+                <ul class="nav__list">
                     <li><a href="">strony internetowe</a></li>
                     <li><a href="">pozycjonowanie stron www</a></li>
                 </ul>
@@ -27,4 +33,5 @@
     </nav>
 
 </body>
+
 </html>

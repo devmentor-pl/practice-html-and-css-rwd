@@ -13,11 +13,13 @@
 }
 
 .content::before {
-    float: left;
-    display: block;
+    background-color: #dcdcdc;
     content: '';
-    height: 0;
-    border: 150px solid #dcdcdc;
-    border-right-color: transparent;
-    border-bottom-color: transparent;    
+    display: block;
+    height: 300px;
+    width: 300px;
+    float: left;
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    shape-outside: polygon(100% 0, 0 100%, 0 0)
+    
 }
