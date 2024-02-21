@@ -11,9 +11,9 @@ body {
         "b"
         "c";
     grid-template-rows: 
-        50%
-        50%
-        50%;
+        50vh
+        50vh
+        50vh;
 }
 
 .a, .b, .c {
@@ -42,5 +42,11 @@ body {
 
 
 @media (min-width: 600px) {
-
+    body {
+        grid-template-areas: 
+        "a a"
+        "c b";
+        max-width: 1200px;
+        margin: 0 auto;
+    }
 }
