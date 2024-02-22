@@ -55,23 +55,21 @@ img {
 	max-width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
 	body {
 		grid-template-areas:
 			"p t"
 			"v t";
-		grid-template-columns:
-			50vh auto
+		grid-template-columns: minmax(200px, 50vw) auto;
 	}
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
 	body {
 		grid-template-areas:
 		"p v"
 		"t t";
-	grid-template-columns:
-		50vh auto;
+		grid-template-columns: 50% 50%;
 		max-width: 1400px;
 		margin: 0 auto;
 	}
