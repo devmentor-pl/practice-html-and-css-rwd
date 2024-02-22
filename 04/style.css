@@ -4,4 +4,37 @@
 	box-sizing: border-box;
 }
 
+.nav__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.nav__menu-list, .nav__menu-dropdown {
+    list-style: none;
+}
+
+.nav__menu--list-item, .nav__menu--dropdown-item {
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 100vw;
+    border: 1px solid rgb(43, 91, 153);
+}
+
+.nav__menu--list-item {
+    background-color: rgb(78, 143, 228);
+}
+
+.nav__menu--list-item a, .nav__menu--dropdown-item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__menu-dropdown {
+    display: none;
+}
+
 
