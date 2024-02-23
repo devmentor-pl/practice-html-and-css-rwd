@@ -1,0 +1,27 @@
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    border: 1px solid rgb(10, 168, 10);
+}
+
+.section1__navbar {
+    width: 100%;
+    border: 1px solid rgb(3, 104, 255);
+    position: relative;
+}
+
+.section1__navbar-logo {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 187, 0);
+    margin: 5px auto;
+}
+
+
+
+
