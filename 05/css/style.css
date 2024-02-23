@@ -13,10 +13,11 @@ body {
     border: 1px solid rgb(10, 168, 10);
 }
 
+/* SECTION 1 */
+
 .section1__navbar {
     width: 100%;
     border: 1px solid rgb(3, 104, 255);
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,6 +37,41 @@ body {
 .section1__navbar-menu {
     display: none;
 }
+
+/* END OF SECTION 1 */
+
+/* SECTION 2 */
+
+.section2__wrapper {
+    width: 100%;
+    border: 1px solid rgb(3, 104, 255);
+    display: grid;
+    grid-template-rows: 
+        "box-1"
+        "box-2";
+}
+
+.section2__wrapper-box1 {
+    grid-area: "box-1";
+    width: 95%;
+    height: 35vh;
+    background-color: rgb(255, 187, 0);
+    margin: 10px auto;
+}
+.section2__wrapper-box2 {
+    grid-area: "box-2";
+    width: 95%;
+    height: 40vh;
+    background-color: rgb(255, 187, 0);
+    margin: 10px auto;
+}
+
+
+
+
+
+
+/* END OF SECTION 2 */
 
 
 
