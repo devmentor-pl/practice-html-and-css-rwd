@@ -66,12 +66,49 @@ body {
     margin: 10px auto;
 }
 
-
-
-
-
-
 /* END OF SECTION 2 */
+
+/* SECTION 3 */
+
+.section3__wrapper {
+    width: 100%;
+    border: 1px solid rgb(3, 104, 255);
+    display: grid;
+    grid-template-rows: 
+        "box-3"
+        "box-4"
+        "box-5";
+}
+
+.section3__wrapper-box3 {
+    grid-area: "box-3";
+    width: 95%;
+    height: 25vh;
+    background-color: rgb(255, 187, 0);
+    margin: 10px auto;
+}
+.section3__wrapper-box4 {
+    grid-area: "box-4";
+    width: 95%;
+    height: 25vh;
+    background-color: rgb(255, 187, 0);
+    margin: 10px auto;
+}
+.section3__wrapper-box5 {
+    grid-area: "box-5";
+    width: 95%;
+    height: 25vh;
+    background-color: rgb(255, 187, 0);
+    margin: 10px auto;
+}
+
+
+
+
+
+
+
+/* END OF SECTION 3 */
 
 
 
