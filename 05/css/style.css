@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 16px;
+}
+
 .section {
     width: 100%;
     border: 1px solid rgb(10, 168, 10);
@@ -13,6 +17,9 @@
     width: 100%;
     border: 1px solid rgb(3, 104, 255);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section1__navbar-logo {
@@ -20,6 +27,14 @@
     height: 30px;
     background-color: rgb(255, 187, 0);
     margin: 5px auto;
+}
+
+.section1__navbar-burger {
+    font-size: 2rem ;
+}
+
+.section1__navbar-menu {
+    display: none;
 }
 
 
