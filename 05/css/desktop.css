@@ -1,0 +1,39 @@
+.blue {
+	padding: 10px 0;
+}
+.blue--header {
+	display: flex;
+	justify-content: space-between;
+}
+.orange--logo {
+	width: 200px;
+	margin: 0;
+}
+.orange--menu {
+	position: static;
+	background-color: var(--item);
+	width: 400px;
+}
+.orange--menu::before,
+.orange--menu::after {
+	display: none;
+}
+.blue--main {
+	display: flex;
+}
+.orange--main {
+	width: 50%;
+}
+.orange--main + .orange--main {
+	margin: 0 0 0 10px;
+}
+.orange--section {
+	width: 30%;
+}
+.orange--section + .orange--section {
+	margin-top: 0;
+}
+.blue--section {
+	display: flex;
+	justify-content: space-evenly;
+}
