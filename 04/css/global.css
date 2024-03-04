@@ -1,0 +1,10 @@
+:root{
+    --main: #f4f4f4;
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    font-size: 1.6rem
+}

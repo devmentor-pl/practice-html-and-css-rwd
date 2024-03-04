@@ -1,0 +1,54 @@
+.nav {
+    background-color: var(--main);
+    padding: 10px 40px;
+}
+
+.nav__hamburger {
+    display: block;
+    height: 2rem;
+    width: 2rem;
+
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+
+    float: right;
+}
+
+.nav__hamburger::after {
+    display: block;
+    content: '';
+    height: 3px;
+    background-color: black;
+    position: relative;
+    top: 8px;
+    left: 6px;
+}
+
+.nav__toggler {
+    display: none; 
+}
+
+.nav__list--dropdown{
+    display: block;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav__toggler:checked + .nav__list {
+    display: block;
+}
+.nav__item{
+    padding: 5px 12px;
+}
+.nav__link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
