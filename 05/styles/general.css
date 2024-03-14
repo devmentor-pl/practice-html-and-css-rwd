@@ -1,0 +1,23 @@
+.row {
+    margin: 5px;
+    padding: 5px;
+}
+
+.row {
+    outline: 3px solid #0ED145;
+}
+
+.cell {
+    margin: 5px 0px 5px 0px
+}
+
+.container {
+    margin: 5px auto;
+    max-width: 1000px;
+    outline: 3px solid #00A8F3;
+}
+
+.cell {
+    min-height: 50px;
+    background-color: #FFCA18;
+}

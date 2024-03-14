@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Layout</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" media="(max-width: 800px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./styles/desktop.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+</head>
+<body>
+    <header class="header row">
+        <nav class="header__container container">
+            <h1 class="header__logo cell">Logo</h1>
+            <label for="menu-switcher" class="hamburger"></label>
+            <input type="checkbox" id="menu-switcher">
+            <ul class="nav__items">
+                <li class=" nav__item cell">1</li>
+                <li class=" nav__item cell">2</li>
+                <li class="nav__item cell">3</li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main row">
+        <div class="main__container container">
+            <div class="main__cell cell">main-1</div>
+            <div class="main__cell cell">main-2</div>
+        </div>
+    </main>
+    <section class="section row">
+        <div class="section__container container">
+            <div class="section__cell cell">section-1</div>
+            <div class="section__cell cell">section-2</div>
+            <div class="section__cell cell">section-3</div>
+        </div>
+    </section>
+    <footer class=" footer row">
+        <div class="footer__container container">
+            <div class="footer__cell cell">
+                Footer
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
