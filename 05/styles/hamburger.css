@@ -1,0 +1,22 @@
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-top: 4px solid #1c1c1c;
+    border-bottom: 4px solid #1c1c1c;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.hamburger::after {
+    display: block;
+    content: '';
+    height: 4px;
+    background-color: #1c1c1c;
+    position: relative;
+    top: 9px;
+}
+  
+  
+
+  

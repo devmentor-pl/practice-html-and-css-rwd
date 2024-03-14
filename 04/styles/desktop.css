@@ -1,0 +1,25 @@
+
+#menu-switcher {
+    display: none;
+}
+.nav__item:nth-child(2) {
+    position: relative;
+}
+
+.nav__item:nth-child(2):hover .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+}
+
+.dropdown__item {
+    width: 200px;
+    background: #333333;
+    padding: 10px 20px;
+}
+
