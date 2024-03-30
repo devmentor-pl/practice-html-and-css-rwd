@@ -53,10 +53,7 @@
     margin-bottom: 10px;
 }
 
-/* .lower__content:nth-child(2) {
-    margin: 10px 0;
-} */
-
+/* complicated rule to add margins between content - if we add more content */
 .lower__content:not(.lower__content:first-child) {
     margin-top: 10px;
 } 

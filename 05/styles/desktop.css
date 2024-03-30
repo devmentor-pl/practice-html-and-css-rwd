@@ -33,20 +33,29 @@
     display: flex;
 }
 
-.main__content.content {
+.main__content {
     height: 200px;
     flex-basis: 50%;
-    margin: 0;
+    margin: 5px 0;
+}
+
+.main__content:first-child {
+    margin-right: 5px;
 }
 
 .lower {
     display: flex;
+    justify-content: space-evenly;
 }
 
-.lower__content.content {
+.lower__content { 
     height: 200px;
     flex-basis: 33.333333%;
-    margin: 0;
+    margin: 5px 0;
+}
+
+.lower__content:not(.lower__content:first-child) {
+    margin-left: 5px;
 }
 
 
