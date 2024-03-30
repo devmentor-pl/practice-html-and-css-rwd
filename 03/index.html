@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe ut ipsum et alias nesciunt tempore,
+            totam laborum consequuntur cupiditate, voluptatum enim nihil expedita nobis iure sunt explicabo vero animi!
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source media="(min-width: 1200px)" srcset="./images/tatry_1920px.jpg">
+            <source media="(min-width: 600px)" srcset="./images/tatry_1200px.jpg">
+            <source media="(max-width: 599px)" srcset="./images/tatry_600px.jpg">
+            <img src="./images/tatry_600px.jpg" alt="Tatry">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yPgct4wpgw0?si=ENJ2zmbeD5gvGAN8"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </side>
 
 </body>
+
 </html>

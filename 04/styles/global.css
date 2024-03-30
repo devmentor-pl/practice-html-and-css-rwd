@@ -1,0 +1,13 @@
+:root {
+    --main: #f4f4f4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+ul {
+    list-style: none;
+}
