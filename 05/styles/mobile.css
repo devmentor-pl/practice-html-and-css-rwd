@@ -53,9 +53,13 @@
     margin-bottom: 10px;
 }
 
-.lower__content:nth-child(2) {
+/* .lower__content:nth-child(2) {
     margin: 10px 0;
-}
+} */
+
+.lower__content:not(.lower__content:first-child) {
+    margin-top: 10px;
+} 
 
 .footer {
     display: flex;
