@@ -33,18 +33,20 @@
     display: flex;
 }
 
-.main__content {
+.main__content.content {
     height: 200px;
     flex-basis: 50%;
+    margin: 0;
 }
 
 .lower {
     display: flex;
 }
 
-.lower__content {
+.lower__content.content {
     height: 200px;
     flex-basis: 33.333333%;
+    margin: 0;
 }
 
 

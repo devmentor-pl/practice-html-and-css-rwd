@@ -49,6 +49,14 @@
     width: 100%;
 }
 
+.main__content:first-child {
+    margin-bottom: 10px;
+}
+
+.lower__content:nth-child(2) {
+    margin: 10px 0;
+}
+
 .footer {
     display: flex;
     justify-content: center;
