@@ -1,0 +1,60 @@
+.wrapper {
+    width: 100%;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    height: 70px;
+    width: 100px;
+    justify-self: center;
+}
+
+.menu {
+    display: none;
+}
+
+.hamburger {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+
+.hamburger:after {
+    display: block;
+    border-top: 3px solid black;
+    position: relative;
+    content: ' ';
+    width: 40px;
+    /* height: 3px; */
+    top: 17px;
+}
+
+.main {
+    display: block;
+}
+
+.main__content,
+.lower__content {
+    height: 200px;
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__content {
+    height: 50px;
+    width: 100px;
+}

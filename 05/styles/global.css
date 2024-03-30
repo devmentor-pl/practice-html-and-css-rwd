@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 1px solid green;
+    width: 100vw;
+}
+
+.wrapper {
+    border: 1px solid blue;
+}
+
+.content {
+    border: 1px solid rgb(255, 123, 0);
+    background-color: orange;
+}
+
+
