@@ -1,0 +1,33 @@
+.main,
+.section {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-element,
+.section-element {
+    max-width: 400px;
+    flex-basis: 100%;
+    min-height: 50px;
+    padding: 60px;
+}
+
+.main {
+    padding: 5px 0 5px 0;
+}
+
+.section {
+    padding: 5px;
+}
+
+.logo {
+    display: block;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+nav {
+    justify-content: space-between;
+}

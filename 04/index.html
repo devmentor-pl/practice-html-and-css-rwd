@@ -1,30 +1,50 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" media="(min-width: 800px)" href="./desktop.css">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
+
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+    <nav class ='main-nav'>
+    <button>
+        <div class="hamburger-menu">
+            <div class="first-child hamburger-menu__element"></div>
+            <div class="middle-child hamburger-menu__element"></div>
+            <div class="last-child hamburger-menu__element"></div>
+        </div>
+    </button>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li class ="second-list">
+                <a href="#">HOME</a>
+                <ul class="navbar__list--bottom">
+                   
+               
+                <li class="navbar__list--align-margin"><a href="">Our products</a> </li>
+                <li class='navbar__list--align-margin'><a href="">Our products</a></li>
+            </ul>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="second-list">
+                <a href="#">ABOUT</a>
+                <ul class="navbar__list--bottom">
+                    <li class="navbar__list--align-margin"><a href="">Our company</a></li>
+                    <li class="navbar__list--align-margin"><a href="">Our mission</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="last-list">
+                <a href="#">CONTACT</a>
+                
             </li>
         </ul>
     </nav>
-
+</nav>
 </body>
+
 </html>

@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+main,
+section,
+footer {
+    border: 3px solid green;
+    padding: 2px;
+}
+
+.container {
+    margin-inline: auto;
+}
+
+.logo {
+    display: none;
+    background-color: orange;
+    padding: 10px;
+}
+
+.navbar {
+    background-color: orange;
+    padding: 20px;
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    gap: 3rem;
+    padding: 4px;
+    min-height: 40px;
+}
+
+.hamburger-menu {
+    background: transparent;
+    border: 0;
+    border-top: 3px solid rgb(74, 71, 71);
+    position: relative;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.hamburger-menu::after,
+.hamburger-menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid rgb(74, 71, 71);
+}
+
+.container {
+    border: 3px solid blue;
+}
+
+.hamburger-menu::after {
+    transform: translateY(8px);
+}
+
+.hamburger-menu::before {
+    transform: translateY(20px);
+}
+
+.hamburger-menu:focus+.navbar {
+    display: none;
+}
+
+.main,
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-element,
+.section-element {
+    background-color: orange;
+    min-height: 40px;
+    padding: 50px;
+}
+
+
+
+.footer-element {
+    background-color: orange;
+    padding: 10px;
+    width: 40px;
+    margin-inline: auto;
+    max-width: 100%;
+}
