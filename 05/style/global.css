@@ -1,0 +1,34 @@
+.section {
+  width: calc(100vw-10px);
+  border: 2px solid green;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  border: 2px solid blue;
+}
+
+.content {
+  height: 150px;
+  background-color: orange;
+}
+
+.logo {
+  background-color: orange;
+  height: 20px;
+}
+
+.container__footer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.logo__footer {
+  background-color: orange;
+  height: 20px;
+  width: 10%;
+}

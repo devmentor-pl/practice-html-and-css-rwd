@@ -1,0 +1,60 @@
+.container__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  gap: 15%;
+}
+
+.container__first {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content__first {
+  width: 100%;
+}
+
+.container__second {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.burger__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin: 4px;
+}
+
+.line {
+  width: 15px;
+  height: 1px;
+  background-color: black;
+}
+
+.logo {
+  width: 20%;
+  height: 15px;
+}
+
+.burger__input {
+  display: none;
+}
+
+.menu__mobile ~ .burger > .burger__input:hover {
+  width: 30%;
+  height: 90%;
+  background-color: orange;
+}
+.menu__mobile {
+  display: none;
+}
+.burger__input:checked ~ .menu__mobile {
+  background-color: orange;
+  display: block;
+}
