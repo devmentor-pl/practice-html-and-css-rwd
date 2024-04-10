@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
 
-</body>
+
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/tablet.css"
+        media="(min-width: 600px)"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/desktop.css"
+        media="(min-width: 1200px)"
+    >
+    </head>
+
+    <body>
+
+        <main class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur corrupti itaque at placeat
+            voluptatum doloribus neque, sunt quibusdam laborum officia in voluptates, odio ipsa tenetur eveniet sint
+            rerum
+            distinctio ex.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est aspernatur esse necessitatibus non iusto
+            minima dolorum sit omnis expedita rerum cumque quam consequatur, aperiam nisi recusandae neque labore,
+            cupiditate ipsam!</main>
+        <header class="p">
+            <picture>
+                <source
+                    media="(min-width: 1200px)"
+                    srcset="https://picsum.photos/id/527/1500/1000"
+                >
+                <source
+                    media="(min-width: 600px)"
+                    srcset="https://picsum.photos/id/527/900/600"
+                >
+                <img
+                    class="img"
+                    src="https://picsum.photos/id/527/1500/1000"
+                    alt="headerimage"
+                >
+            </picture>
+        </header>
+        <side class="v"><iframe
+                class="video"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/iHDJ_xfW26Y?si=APGLxwiHaoOXj9dj"
+                frameborder="0"
+            ></iframe></side>
+
+    </body>
+
 </html>

@@ -1,0 +1,24 @@
+.burger {
+  display: none;
+}
+
+.menu__desktop {
+  height: 15px;
+  width: 45%;
+  background-color: orange;
+}
+
+.container__first {
+  display: flex;
+  flex-direction: row;
+}
+
+.container__second {
+  display: flex;
+  flex-direction: row;
+}
+
+.content__second {
+  width: 33%;
+  margin: 10px;
+}
