@@ -25,16 +25,20 @@ section#about {
     line-height: 1.6;
 }
 
+ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px; 
+    background-color: #fff; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
 ul {
     list-style: none;
     padding: 20px 0;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-ul li {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    background-color: #f4f4f4; 
+    width: 80%;
+    margin: 0 auto;
 }
 
 ul li:last-child {
@@ -48,4 +52,22 @@ ul li a {
 
 ul li a:hover {
     color: #888;
+}
+
+button {
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #888;
 }
