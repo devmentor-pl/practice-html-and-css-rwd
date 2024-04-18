@@ -1,26 +1,180 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.p,
+.t,
+.v {
+	border: 5px solid transparent;
+	min-height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .p {
-    border-color: #ffffba
+	border-color: #ffffba;
 }
 
 .t {
-    border-color: #ffdfba;
+	border-color: #ffdfba;
 }
 
 .v {
-    border-color: #baffc9;
+	border-color: #baffc9;
+}
+
+@media (max-width: 599px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+	.t,
+	.text {
+		margin: 5px;
+		text-align: justify;
+	}.p, 
+	.img {
+		grid-row: 1 / 2;
+		background-image: url(../img/crystal-7428278_640.jpg);
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	.video {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: calc(315 / 560 * 100%);
+	}
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.t {
+		grid-column: 2 / 3;
+		grid-row: 1 / 3;
+	}
+	.text {
+		margin: 10px 20px;
+		text-align: justify;
+	}
+	.p {
+		grid-column: 1/2;
+	}
+	.p,
+	.img {
+		background-image: url(../img/crystal-7428278_1920.jpg);
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		min-width: 200px;
+	}
+	.v {
+		min-width: 200px;
+	}
+	.video {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: calc(315 / 560 * 100%);
+		min-width: 200px;
+	}
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.t {
+		grid-column: 1 /3;
+		grid-row: 2 / 2;
+	}
+	.text {
+		margin: 10px 20px;
+		text-align: justify;
+	}
+    .p,
+	.img {
+		background-image: url(../img/crystal-7428278_1920.jpg);
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	.video {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: calc(315 / 560 * 100%);
+	}
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
+}
+@media (min-width: 1401px) {
+	body {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+        margin: 0 100px;
+	}
+	.t {
+		grid-column: 1 /3;
+		grid-row: 2 / 2;
+	}
+	.text {
+		margin: 10px 20px;
+		text-align: justify;
+	}
+    .p,
+	.img {
+		background-image: url(../img/crystal-7428278_1920.jpg);
+		width: 100%;
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+	}
+	.video {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: calc(315 / 560 * 100%);
+	}
+	iframe {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 100%;
+		width: 100%;
+	}
 }
