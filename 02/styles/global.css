@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
@@ -23,4 +30,30 @@
 
 .c {
     border-color: #baffc9;
+}
+
+/* Mobile */
+
+.a, .c, .b {
+    height: 50vh;
+    grid-column: span 2;
+}
+
+.c {
+    order: 1;
+}
+
+/* Other */
+
+@media screen and (min-width: 600px) {
+    .a {
+        grid-column: span 2;
+    }
+    .c {
+        order: 0;
+    }
+
+    .c, .b {
+        grid-column: span 1;
+    }
 }
