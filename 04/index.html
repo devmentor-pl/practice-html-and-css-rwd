@@ -5,25 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
     
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
+    <nav class="menu">
+        <h1 class="menu-logo">LOGO</h1>
+        <input type="checkbox" id="menu__bar">
+        <label class="menu__bar-label" for="menu__bar"><i id="menu__icon" class="fa-solid fa-bars"></i></label>
+        
+        <div class="menu__container">
+            <ul class="menu__items">
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#">start</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#">oferta
+                        <i class="arrow-icon fa-solid fa-chevron-down"></i></a>
+                    <ul class="menu__items menu__items--dropdown">
+                        <li class="menu__item"><a class="menu__item-link" href="">strony internetowe</a></li>
+                        <li class="menu__item"><a class="menu__item-link" href="">pozycjonowanie stron www</a></li>
+                    </ul>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__item-link" href="#">kontakt</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
 </body>
