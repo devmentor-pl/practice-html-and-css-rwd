@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange-box {
+    background-color: rgb(255 202 27);
+}
+
+.header__container, .hero__content, .main__content, .footer__container {
+    border: 4px solid lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.navbar__content, .hero__content-container, .main__content-container, .footer__content {
+    border: 4px solid lightskyblue;
+    max-width: 1000px;
+    display: flex;
+}
+
