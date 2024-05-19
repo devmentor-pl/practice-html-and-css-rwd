@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    min-height: 100vh;
+    background: lightskyblue;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.menu-logo {
+    font-size: 2rem;
+    color: #333;
+}
+
+.menu__items {
+    list-style: none;
+}
+
+.menu__item {
+    position: relative;
+    float: left;
+}
+
+.menu__item-link {
+    text-decoration: none;
+    font-size: 1.3rem;   
+    padding: 1rem;
+    color: #333;
+    display: block;
+}
+
+.menu__item-link:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu__items--dropdown {
+    position: absolute;
+    background: #fff;
+    left: 0;
+    display: none;
+}
+
+.menu__items--dropdown .menu__item {
+    border-top: 1px solid #333;
+}
+
+/* drugie menu nie zniknie zaraz po zabraniu myszki */
+.menu__item:focus-within .menu__items--dropdown,
+.menu__item:hover .menu__items--dropdown {
+    display: initial;
+}
+
+#menu__icon {
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+#menu__bar {
+    display: none;
+}
+
+.menu__bar-label {
+    display: none;
+}
+
+
+
+/* mobile, niestety second */
+
+@media screen and (max-width: 700px) {
+    .menu__bar-label {
+        display: initial;
+    }
+    
+    .menu__container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        border-top: 1px solid #333;
+        display: none;
+    }
+    .menu__item {
+        width: 100%;
+    }
+
+    .menu__items--dropdown {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+    .menu__items--dropdown .menu__item {
+        background: #eee;
+        border: none;
+    }
+    #menu__bar:checked + .menu__bar-label + .menu__container {
+        display: initial;
+    }
+}
