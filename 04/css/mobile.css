@@ -1,0 +1,35 @@
+li{
+    margin: 5px;
+    padding: 15px 10px;
+    text-transform: uppercase;
+    
+}
+.hamburger{
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid rgb(126, 120, 120);
+    background: transparent;
+    position: relative;
+}
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid rgb(126, 120, 120);
+}
+.hamburger::after{
+    transform: translateY(25px);
+}
+
+.hamburger::before{
+    transform: translateY(10px);
+}
+.nav{
+    display: none;
+}
+.hamburger:focus + .nav{
+    display: block;
+}
