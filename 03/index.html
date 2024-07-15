@@ -11,6 +11,20 @@
     <main class="t">T</main>
     <header class="p">P</header>
     <side class="v">V</side>
-
+    <body>
+        <div class="p">
+            <picture>
+                <source srcset="small.jpg" media="(max-width: 599px)">
+                <source srcset="medium.jpg" media="(min-width: 600px)">
+                <source srcset="large.jpg" media="(min-width: 1200px)">
+                <img src="default.jpg" alt="Sample Image">
+            </picture>
+        </div>
+        <div class="t">
+            <p>Wiele linii tekstu, które wypełniają przestrzeń na stronie. Ten tekst jest przykładem treści na stronie, która będzie zmieniać swoje miejsce w zależności od rozmiaru ekranu.</p>
+        </div>
+        <div class="v">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
 </body>
 </html>
