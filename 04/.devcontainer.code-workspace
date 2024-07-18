@@ -1,0 +1,35 @@
+{
+  "folders": [
+	{
+		"path": "../.devcontainer"
+	},
+	{
+		"path": "../.git"
+	},
+	{
+		"path": "../.github"
+	},
+	{
+		"path": "../01"
+	},
+	{
+		"path": "../02"
+	},
+	{
+		"path": "../03"
+	},
+	{
+		"path": "."
+	},
+	{
+		"path": "../05"
+	},
+	{
+		"path": "../assets"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "04",
+    "liveServer.settings.port": 5502
+  }
+}

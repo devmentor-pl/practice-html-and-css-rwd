@@ -1,0 +1,56 @@
+body {
+}
+
+.green {
+    border: 3px solid green;
+}
+
+
+.green ul {
+    display: none;
+}
+
+
+.green input:checked + ul {
+    display: block;
+}
+
+.blue {
+    border: 3px solid blue; 
+    position: relative;
+}
+
+.yellow {
+    border: 3px solid yellow;
+    min-height: 50px;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+.text, .text3, .text2 {
+    border: 1px solid yellow;
+    width: 100%;
+
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.yellow.footer {
+    width: 50%;
+}
+
