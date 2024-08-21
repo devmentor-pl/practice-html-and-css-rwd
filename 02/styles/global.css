@@ -40,10 +40,6 @@ body {
         max-width: 1200px;
     }
 
-    .a, .b, .c {
-        
-    }
-
     .a {
         grid-column-start: 1;
         grid-column-end: 3;
