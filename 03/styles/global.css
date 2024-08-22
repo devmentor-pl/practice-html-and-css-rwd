@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    max-width: 1400px;
+    margin: auto;
+}
+
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -14,7 +21,7 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #e2321a
 }
 
 .t {
