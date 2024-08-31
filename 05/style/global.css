@@ -1,0 +1,14 @@
+.section {
+    border: 3px solid rgb(100, 240, 100);
+}
+
+.box {
+    border: 3px solid rgb(78, 200, 221);
+    max-width: 1000px;
+    margin: auto;
+}
+
+.item {
+    background-color: orange;
+}
+
