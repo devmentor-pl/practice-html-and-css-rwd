@@ -3,28 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
     <nav>
-        <ul>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <ul class="menu" id="menu">
+            <li><a href="#">HOME</a></li>
             <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+                <a href="#">ITEMS &#9662;</a>
+                <ul class="submenu">
+                    <li><a href="#">Item 1</a></li>
+                    <li>
+                        <a href="#">Item 2 &#9656;</a>
+                        <ul class="submenu">
+                            <li><a href="#">Item 2.1</a></li>
+                            <li><a href="#">Item 2.2</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+            <li><a href="#">SETTINGS</a></li>
+            <li><a href="#">CONTACT</a></li>
         </ul>
     </nav>
-
 </body>
 </html>
