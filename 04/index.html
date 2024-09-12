@@ -2,29 +2,62 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" media="(max-width:799px)" href="mobile.css">
+    <link rel="stylesheet" media="(min-width:800px)" href="standard.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
+    <nav class="navigation">
+
+        <label for="menu-switcher" class="hamburger"></label>
+        <input type="checkbox" id="menu-switcher" class="menu__switcher">
+        <ul class="nav">
+            <li class="nav__item">
+                <a href="#">Home</a>
+            </li>
+        
+            <li class="nav__item ">
+                <a href="#" class="arrow">Items</a>
+            
+                <ul class="nav__dropdown dropdown">
+                    <li class="dropdown__item">
+                        <a href="#">Item 1</a>
+                    </li>
+
+                    <li class="dropdown__item arrow__inside">
+                        <a href="#">Item 2</a>
+
+                        <ul class="nav__dropdown--inside dropdown"> 
+                            <li class="dropdown__item">
+                                <a href ="#">Item 2.1</a>
+                            </li>
+                            
+                            <li class="dropdown__item">
+                                <a href ="#">Item 2.2</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                </ul> 
+
+            </li>
+                
+            <li class="nav__item">
+                <a href="#">Settings</a>
+            </li>
+
+            <li class="nav__item">
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+        
+    </nav>
+    
 </body>
 </html>
