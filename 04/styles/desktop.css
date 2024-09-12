@@ -1,0 +1,34 @@
+.nav__hamburger {
+    display: none;
+}
+
+.nav input[type="checkbox"]:checked ~ .menu__list{  
+        display: flex;  
+}
+
+.menu__list {
+    display: block;
+    display: flex;
+}
+
+.menu__link {
+    padding: 5px 20px;
+}
+
+.menu__dropdown {
+    position: relative;
+}
+
+.dropdown {
+    background-color: var(--black);
+    display: block;
+    display: none;
+    left: -60px;
+    position: absolute;
+    right: -180px;
+    top: 100%;    
+}
+
+.menu__dropdown:hover > .dropdown {
+    display: block;
+}
