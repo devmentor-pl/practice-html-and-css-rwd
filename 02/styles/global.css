@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +27,26 @@
 
 .c {
     border-color: #baffc9;
+    order: 1;
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        grid-template-areas: 
+        "area-a area-a"
+        "area-c area-b";
+        grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+        justify-content: center;
+    }
+    .a {
+        grid-area: area-a;
+    }
+    
+    .b {
+        border-color: area-b;
+    }
+    
+    .c {
+        border-color: area-c;
+    }
 }
