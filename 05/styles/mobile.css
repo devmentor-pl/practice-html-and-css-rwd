@@ -1,0 +1,77 @@
+header .row {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: flex-start;
+	position: relative;
+}
+.navbar {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.navbar .cell {
+	display: none;
+}
+
+section .cell {
+	min-width: 100%;
+	min-height: 200px;
+}
+
+footer .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50px;
+}
+footer .cell {
+	width: 100px;
+	height: 50px;
+}
+
+.hamburger:focus + .navbar > .cell {
+	display: block;
+}
+
+.burger-icon {
+	text-align: end;
+	position: absolute;
+	left: 80%;
+	top: 5%;
+}
+
+.hamburger {
+	position: relative;
+	width: 40px;
+	border: 0;
+	height: 35px;
+	border-top: 5px solid black;
+	background: none;
+	outline: none;
+	transition: transform 0.3s linear;
+	cursor: pointer;
+}
+.hamburger::before,
+.hamburger::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid black;
+	transform: translateY(10px);
+}
+.hamburger::after {
+	transform: translateY(25px);
+	transition: transform 0.3s linear;
+}
+.hamburger:focus {
+	transform: rotate(45deg) translateY(5px);
+	border: none;
+	cursor: default;
+}
+.hamburger:focus::after {
+	transform: rotate(-90deg) translateX(-10px);
+}

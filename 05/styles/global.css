@@ -1,0 +1,31 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container,
+.row {
+	margin: 10px;
+	padding: 10px;
+	outline: 3px solid;
+}
+.row {
+	outline-color: blue;
+	margin: 0 auto;
+	max-width: 1000px;
+	min-height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.container {
+	max-width: 100%;
+	outline-color: green;
+}
+.cell {
+	min-height: 25px;
+	min-width: 200px;
+	margin: 5px 0;
+	background-color: orange;
+}
