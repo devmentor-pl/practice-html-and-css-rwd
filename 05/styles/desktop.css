@@ -1,0 +1,45 @@
+@media(min-width: 800px)
+{
+    .main-header, .two-element, .three-element, .main-footer {
+        max-width: 1000px;
+        width: 100%;
+        border: 2px solid blue;
+        margin: 0 auto;
+    }
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        height: 10vh;
+    }
+    .logo {
+        display: block;
+        width: 20%;
+        background-color: orange;
+    }
+    .menu {
+        width: 40%;
+        z-index: -1;
+    }
+    .menu__li {
+        width: 100%;
+        margin-left: 0;
+        background-color: orange;
+        
+    } 
+    .two-element, .three-element {
+        display: flex;
+        justify-content: space-between;
+        height: 50vh;
+    }
+    .two-element__article {
+        height: 100%;
+        width: 49%;
+    }
+    .three-element__article {
+        height: 100%;
+        width: 32%;
+    }
+     .hamburger {
+        display: none;
+    }
+}

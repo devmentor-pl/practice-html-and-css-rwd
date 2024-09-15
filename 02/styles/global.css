@@ -3,24 +3,47 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+}
 
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
 
 .a {
+    grid-area: a;
     border-color: #ffffba
 }
 
 .b {
+    grid-area: b;
     border-color: #ffdfba;
 }
 
 .c {
+    grid-area: c;
     border-color: #baffc9;
 }
+
+@media(min-width: 601px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-areas:
+        "a a"
+        "c b";
+    }
+ }
