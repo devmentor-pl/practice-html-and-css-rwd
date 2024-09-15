@@ -5,26 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/desktop.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Responsive menu</h1>
+        <nav>
+            <label for="menu-switcher">Menu</label>
+            <input type="checkbox" id="menu-switcher">
+            <ul>
+                <li>
+                    <a href="#">Start</a>
+                </li>
+                <li class="dropdown-second">
+                    <a class="dropdown-second" href="#">Oferta</a>
+                    <ul class="dropdown-third" >
+                        <li class="dropdown-item"><a href="#">Strony internetowe</a></li>
+                        <li class="dropdown-item"><a href="#">Pozycjonowanie stron www</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
 
 </body>
 </html>
