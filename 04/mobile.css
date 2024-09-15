@@ -1,0 +1,88 @@
+body {
+    
+}
+.header__nav {
+    background-color: bisque;
+    height: 60px;
+    top: 0;
+    
+  
+}
+.nav {
+    position: absolute;
+    right: 0;
+    top: 9vh;
+    background-color: orange;
+    height: 300px;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.nav__item {
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.nav__item:hover {
+    color: red;
+}
+
+.dropdown__item {
+    display: none;
+}
+
+
+
+
+/* hamburger*/
+
+.hamburger {
+    width: 40px;
+    height: 35px;
+    margin: 10px;
+    border: 0;
+    right: 0;
+    border-top: 5px solid red;
+    background: transparent;
+    position: absolute;
+    transition: 0.3s transform linear;
+    cursor: pointer;
+}
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid red;
+    transform: translateY(10px);
+}
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+/* nav {
+    display: none
+}
+
+.hamburger:focus + nav {
+    display: block;
+} */
+.hamburger:focus + nav {
+    display: block;
+}
+header nav {
+    display: none;
+}
+header input:checked + nav {
+    display: block;
+}
+
