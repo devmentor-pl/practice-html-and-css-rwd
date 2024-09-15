@@ -1,30 +1,101 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
-</body>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link
+      rel="stylesheet"
+      media="(max-width: 760px)"
+      href="./styles/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 761px)"
+      href="./styles/tablet-desktop.css"
+    />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <nav class="nav">
+        <input type="checkbox" class="hamburger" />
+
+        <ul class="menu nav-list dropdown">
+          <li class="nav-item red-border">
+            <a class="nav-item__link" href="index.html">START</a>
+          </li>
+
+          <li class="nav-item">
+            <label class="submenu-switcher" for="submenu-switcher"
+              >OFERTA</label
+            >
+            <input type="checkbox" id="submenu-switcher" />
+
+            <ul class="menu2 nav__dropdown nav__dropdown--lvl1">
+              <li class="dropdown__item-lvl1 red-border">
+                <a class="nav-item__link nav-item__link--dropdown" href="#"
+                  >STRONY INTERNETOWE</a
+                >
+              </li>
+              <li class="dropdown__item-lvl1 red-border">
+                <a class="nav-item__link nav-item__link--dropdown" href="#"
+                  >POZYCJONOWANIE STRON WWW</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item red-border">
+            <a class="nav-item__link" href="#">KONTAKT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
+      blanditiis rerum dolores suscipit placeat tenetur accusantium deleniti
+      vero ut optio necessitatibus ea minus et libero, nihil id. Consectetur
+      nobis facilis in amet corrupti quae voluptas libero ipsam autem excepturi!
+      Quis commodi ab qui, eaque facilis quia tenetur atque, deserunt obcaecati
+      asperiores corporis, neque facere voluptas incidunt? Reiciendis aliquid
+      quisquam, maiores deleniti, laboriosam sequi sunt molestiae enim suscipit
+      in dolorum autem iusto! Labore omnis corporis iste, error vel mollitia
+      accusamus quaerat nulla ex dolor laudantium aspernatur laborum aliquam
+      AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
+      blanditiis rerum dolores suscipit placeat tenetur accusantium deleniti
+      vero ut optio necessitatibus ea minus et libero, nihil id. Consectetur
+      nobis facilis in amet corrupti quae voluptas libero ipsam autem excepturi!
+      Quis commodi ab qui, eaque facilis quia tenetur atque, deserunt obcaecati
+      asperiores corporis, neque facere voluptas incidunt? Reiciendis aliquid
+      quisquam, maiores deleniti, laboriosam sequi sunt molestiae enim suscipit
+      in dolorum autem iusto! Labore omnis corporis iste, error vel mollitia
+      accusamus quaerat nulla ex dolor laudantium aspernatur laborum aliquam
+      AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
+      blanditiis rerum dolores suscipit placeat tenetur accusantium deleniti
+      vero ut optio necessitatibus ea minus et libero, nihil id. Consectetur
+      nobis facilis in amet corrupti quae voluptas libero ipsam autem excepturi!
+      Quis commodi ab qui, eaque facilis quia tenetur atque, deserunt obcaecati
+      asperiores corporis, neque facere voluptas incidunt? Reiciendis aliquid
+      quisquam, maiores deleniti, laboriosam sequi sunt molestiae enim suscipit
+      in dolorum autem iusto! Labore omnis corporis iste, error vel mollitia
+      accusamus quaerat nulla ex dolor laudantium aspernatur laborum aliquam
+      AAALorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta vel
+      blanditiis rerum dolores suscipit placeat tenetur accusantium deleniti
+      vero ut optio necessitatibus ea minus et libero, nihil id. Consectetur
+      nobis facilis in amet corrupti quae voluptas libero ipsam autem excepturi!
+      Quis commodi ab qui, eaque facilis quia tenetur atque, deserunt obcaecati
+      asperiores corporis, neque facere voluptas incidunt? Reiciendis aliquid
+      quisquam, maiores deleniti, laboriosam sequi sunt molestiae enim suscipit
+      in dolorum autem iusto! Labore omnis corporis iste, error vel mollitia
+      accusamus quaerat nulla ex dolor laudantium aspernatur laborum aliquam
+    </p>
+  </body>
 </html>

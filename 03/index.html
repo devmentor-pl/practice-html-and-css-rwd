@@ -1,16 +1,78 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+
+    <!-- DODAĆ OSOBNE PLIKI CSS -->
+  </head>
+
+  <body>
+    <header class="p">
+      <picture>
+        <source
+          srcset="./img/Tesla_Y_1200x675.jpg"
+          media="(min-width: 1200px)"
+        />
+        <source srcset="./img/Tesla_Y_600x338.jpg" media="(min-width: 600px)" />
+        <source srcset="./img/Tesla_Y_300x169.jpg" />
+        <img src="./img/Tesla_Y_800x450.jpg" />
+      </picture>
+    </header>
+
+    <main class="t">
+      <article>
+        <blockquote cite="https://autokatalog.pl/tesla/model-y">
+          Premiera samochodu Tesla Y miała miejsce w Hawthorne (Kalifornia) 14
+          marca 2019 roku. Prezes firmy, Elon Musk, przedstawił wówczas prototyp
+          pojazdu oraz jego dostępne specyfikacje. Były to wersje: Standard
+          Range, Long Range, Dual Motor oraz Performance. Producent zapewnia o
+          bardzo wysokim poziomie bezpieczeństwa tego samochodu, a szczegółowy
+          opis przedstawiamy poniżej.<br />
+          Tesla Model Y jest oferowana w naszym kraju w dwóch wersjach
+          wyposażenia. Tesla Y Long Range charakteryzuje się zasięgiem do 507
+          kilometrów na jednym ładowaniu oraz dwusilnikowym napędem na wszystkie
+          koła (AWD). Pojazd przyspiesza od 0 do 100 km/h w czasie 5 sekund, a
+          prędkość maksymalna wynosi 217 km/h. We wnętrzu odnajdziemy dotykowy
+          ekran o przekątnej 15” oraz wygodną przestrzeń do podróżowania nawet
+          dla siedmiu osób. Tesla Model Y Performance to „usportowiona” wersja
+          crossovera. Dysponuje ona nieco mniejszym zasięgiem (szacunkowo 480
+          km), jednak w zamian otrzymuje się osiągi gwarantujące bardzo
+          dynamiczną jazdę. Wariant Performance przyspiesza od 0 do 100 km/h w
+          czasie 3,7 sekundy, a prędkość maksymalna wynosi aż 250 km/h. Są to
+          bardzo dobre wyniki jak na SUV-a, a tym bardziej elektrycznego. Oba
+          warianty Tesli Y dysponują przestrzenią ładunkową powyżej 2000 litrów,
+          a ich masa nieznacznie przekracza 2000 kg. Samochody wyposażono w
+          baterię typu Long Range z opcją Supercharging, czyli szybkiego
+          ładowania. Dzięki takiemu ładowaniu „bateria” już po 15 minutach jest
+          gotowa zasilać pojazd w prąd na dystansie 241 kilometrów. Sieć
+          Supercharger obejmuje obecnie ponad 25 tysięcy punktów rozlokowanych
+          przy najbardziej uczęszczanych drogach świata.
+        </blockquote>
+      </article>
+    </main>
+
+    <side class="v">
+      <iframe
+        src="https://www.youtube.com/embed/yqSjmRJuUHk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </side>
+  </body>
+</html>
+
+<!-- 
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+  <main class="t">T</main>
+  <header class="p">P</header>
+  <side class="v">V</side>
 
-</body>
-</html>
+</body> -->

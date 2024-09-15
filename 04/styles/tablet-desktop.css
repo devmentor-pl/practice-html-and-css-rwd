@@ -1,0 +1,90 @@
+/* ==========TABLET + DESKTOP========== */
+.body {
+  background-color: rgb(227, 227, 227);
+  text-decoration: none;
+}
+
+.header {
+  margin: 7px 10px 7px 0px;
+}
+
+.hamburger,
+#submenu-switcher {
+  display: none;
+}
+
+/* ========ROZWIJANE SUBMENU DLA OFERTA======== */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-list {
+  height: 50px;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 25%;
+  font-size: 14px;
+  background-color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav-item__link {
+  text-decoration: none;
+  color: #171a20;
+}
+
+.nav-item:hover,
+.nav-item__link:hover {
+  color: #009ae1;
+}
+
+.nav-item:hover {
+  border-top: 2px solid #009ae1;
+}
+
+.nav__dropdown {
+  position: absolute;
+  padding-top: 0px;
+  left: 0px;
+  margin-top: 132px;
+  display: none;
+  width: 150px;
+}
+
+.nav-item:hover > .nav__dropdown {
+  display: block;
+}
+
+.dropdown__item-lvl1 {
+  background: #171a20;
+  padding: 11px 15px;
+  text-align: left;
+  font-size: 12px;
+}
+
+.nav-item__link--dropdown {
+  color: #ffffff !important;
+}
+
+.nav-item__link--dropdown:hover {
+  color: #009ae1 !important;
+}
+
+/* ===============PARAGRAPH=============== */
+
+.lorem {
+  padding: 0px 2vw 0px 2vw;
+  text-align: justify;
+}
