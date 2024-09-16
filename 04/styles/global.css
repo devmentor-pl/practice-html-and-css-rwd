@@ -1,0 +1,9 @@
+.nav__item-link, .nav__dropdown-item-link, .nav__second-dropdown-item-link {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #F5F5F5;
+}
