@@ -1,0 +1,38 @@
+.hamburger{
+    display: none;
+}
+.nav{
+    display: block;
+}
+.nav__menu{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "start offer contact";  
+}
+.menu__item{
+
+    padding: 10px;
+    position: relative;
+}
+.menu__dropdown{
+    display: none;
+    grid-template-areas: 
+    "webpages"
+    "positioning";
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+    white-space: nowrap;
+    padding:0;
+    top: 100%;
+    background: rgba(184, 180, 180, 0.25);
+    margin-top: 0;
+}
+.menu__item:focus .menu__dropdown{
+   display: grid;
+}
+.menu__dropdown .menu__item{
+    padding-right: 30px;
+}
