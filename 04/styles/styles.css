@@ -1,0 +1,87 @@
+            html,
+            body {
+                margin: 0px;
+                padding: 0px;
+                overflow-x: hidden;
+            }
+            
+            .nav {
+                list-style: none;
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                background-color: rgb(49, 71, 100);
+                justify-content: flex-start;
+            }
+            
+            .nav_links--active .nav_item {
+                /*class to be implemented by JS for opening manu fore opening and closing all manu elements (li). Works because two clases in selector are added, thus has higher priority than .nav_item*/
+                /* can be uderstood as :" If .nav_links--actiive is added in HTML then display all .nave-item as flex"*/
+                display: flex;
+            }
+            
+            .nav_item {
+                display: none;
+                /*hiding all li elements in order to display manu button*/
+                justify-content: flex-start;
+                padding: 10px 0px 10px 30px;
+                min-width: 100%;
+            }
+            
+            .nav-manu {
+                display: flex;
+                /*displaying manu button, while all li elements are hided. Works because is located bellow .nav_item class, thus has higher priority*/
+            }
+            
+            .nav-element {
+                text-decoration: none;
+                color: white;
+            }
+            
+            .nav-element:hover {
+                text-decoration: underline;
+            }
+            
+            .first_level--link {
+                position: absolute;
+            }
+            
+            .second-level {
+                padding-top: 20px;
+                padding-left: 0px;
+            }
+            
+            .second-level .nav_item {
+                justify-content: flex-start;
+            }
+            
+            @media (min-width:768px) {
+                .nav {
+                    flex-wrap: nowrap;
+                    justify-content: center;
+                }
+                .nav_item {
+                    display: flex;
+                    min-width: 150px;
+                }
+                .nav_item.nav-manu {
+                    display: none;
+                }
+                .first_level {
+                    position: relative;
+                }
+                .second-level {
+                    position: absolute;
+                    background-color: rgb(80, 118, 167);
+                    top: 100%;
+                    padding-left: 0;
+                    text-align: left;
+                    left: 50%;
+                    padding-top: 0;
+                }
+                .second-level .nav_item {
+                    width: 200px;
+                }
+            }
