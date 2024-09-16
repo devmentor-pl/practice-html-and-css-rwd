@@ -1,0 +1,36 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.nav__menu{
+    display: flex;
+    position: static;  
+    width: 100%;
+}
+.nav__item{
+    line-height: 30px;
+    padding: 5px 70px;
+    position: relative;
+}
+
+.nav__dropdown{
+    display: none;
+    background-color: var(--nav-item-activ);
+    position: absolute;
+    left:10px;
+    top:40px;
+    padding-left: 0;
+}
+
+.dropdown__item{
+    padding-left: 30px;
+    width: 270px;
+}
+.nav__item:hover > .nav__dropdown{
+    display: block;
+}
+
+.nav__hamburger{
+    display: none;
+}
+
