@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML & CSS RWD - #05</title>
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/global.css" rel="stylesheet">
+    <link href="./styles/mobile.css" rel="stylesheet">
+    <link href="./styles/tablet.css" media="(min-width:800px)" rel="stylesheet">
+</head>
+<body>
+    <header class="header row">
+        <nav class="header__nav container">
+            <div class="empty"></div>
+            <h1 class="logo cell">LOGO</h1>
+            <label for="menu-switcher" id="hamburger"></label>
+            <input id="menu-switcher" type="checkbox">
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="#">START</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">MENU</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#">LOKALIZACJA</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main class="content row">
+        <div class="content__container container">
+            <article class="content__article cell"></article>
+            <article class="content__article cell"></article>
+        </div>
+    </main>
+
+    <section class="comments row">
+        <div class="comments__container container second-content">
+            <article class="comments__article cell"></article>
+            <article class="comments__article cell"></article>
+            <article class="comments__article cell"></article>
+        </div>  
+    </section>
+
+    <footer class="footer row">
+        <div class="footer__container container">
+            <h1 class="footer cell">FOOTER</h1>
+        </div>
+    </footer>
+    
+</body>
+</html>
