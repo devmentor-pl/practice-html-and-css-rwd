@@ -1,0 +1,91 @@
+/* Utilities */
+:root {
+  --nav-btn-orange: #eea849;
+  --bg-color-black: #444;
+}
+/* /////////////////////////////////////////////// *
+/* Showing nav by checkbox */
+.nav__list-container {
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.3s linear;
+}
+
+.nav {
+  padding-top: 1rem;
+  background-color: var(--bg-color-black);
+}
+
+#menu-switcher:checked + .nav__list-container {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+input {
+  display: none;
+  visibility: hidden;
+}
+/* /////////////////////////////////////////////// *
+/* Hamburger settings */
+.hamburger--absolute {
+  position: absolute;
+  left: 85%;
+  top: 5%;
+  margin: 1rem 0 2rem 0;
+}
+.hamburger {
+  width: 4rem;
+  height: 3.5rem;
+  border: 0;
+  border-top: 0.5rem solid var(--nav-btn-orange);
+  background: transparent;
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 0.5rem solid var(--nav-btn-orange);
+  transform: translateY(1rem);
+}
+
+.hamburger::after {
+  transform: translateY(2.5rem);
+}
+/* /////////////////////////////////////////////// *
+/* Nav list  */
+
+.nav__list-container li a {
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 2.5rem 2rem;
+  border-bottom: 0.5rem solid var(--nav-btn-orange);
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: white;
+  text-decoration: none;
+  background-color: var(--bg-color-black);
+}
+
+.nav__lvl2-ele {
+  background-color: var(--bg-color-black);
+  padding-left: 5rem;
+  visibility: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.nav__list-ele:hover .nav__lvl2-container .nav__lvl2-ele {
+  max-height: 20rem;
+  visibility: visible;
+}
+/* /////////////////////////////////////////////// *

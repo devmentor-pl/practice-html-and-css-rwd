@@ -1,0 +1,8 @@
+/* 600px - 1199px Tablet */
+.container {
+  grid-template-columns: repeat(2, minmax(200px, 50%));
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'p t'
+    'v t';
+}

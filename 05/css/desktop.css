@@ -1,0 +1,67 @@
+.nav {
+  padding: 1rem;
+}
+
+.nav__hamburger {
+  display: none;
+}
+
+.nav__section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav__logo {
+  margin: 0.5rem;
+  width: 25rem;
+}
+
+.nav__list-container {
+  display: flex;
+  flex-direction: column;
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.nav__list-elements {
+  display: flex;
+  justify-content: flex-end;
+}
+ul .section__ele {
+  width: 15rem;
+  height: 5rem;
+  margin: 0.5rem;
+}
+/* //////////////////////////////////////////// */
+/* First section */
+.section__container-first {
+  flex-direction: row;
+  align-items: center;
+  height: 30rem;
+}
+.section__ele-first {
+  height: 95%;
+  width: 49%;
+}
+/* //////////////////////////////////////////// */
+/* Second section */
+.section__container-second {
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__ele-second {
+  background-color: orange;
+  height: 95%;
+  width: 32%;
+}
+/* //////////////////////////////////////////// */
+/* Footer section */
+.footer__ele {
+  height: 3rem;
+  width: 25rem;
+}
