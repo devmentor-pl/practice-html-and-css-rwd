@@ -11,16 +11,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
+}
+
+body {
+    margin: 0 auto;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "a-header"
+        "a-main"
+        "a-section";
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-header;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: a-main;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-section;
+}
+
+/* < 600px */
+
+@media (min-width: 601px) {
+   
+    body {
+        max-width: 1200px;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-areas:
+            "a-header a-header"
+            "a-main a-section";
+    }
+    
 }
