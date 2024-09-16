@@ -1,0 +1,10 @@
+﻿body {
+	max-width: 1400px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.t {
+	grid-row: 2/3;
+	grid-column: 1/3;
+}
