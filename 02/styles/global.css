@@ -7,12 +7,15 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50vh;
 }
 
+body{
+    display: grid;
+}
 .a {
     border-color: #ffffba
 }
@@ -23,4 +26,26 @@
 
 .c {
     border-color: #baffc9;
+    order: 1;
+}
+
+@media (min-width: 600px) {
+
+body{
+    grid-template-areas: 
+    "kolumna-a kolumna-a"
+    "kolumna-b kolumna-c";
+    grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+    justify-content: center;
+}
+
+.a{
+    grid-area: kolumna-a;
+}
+.b{
+    grid-area: kolumna-b;
+}
+.c{
+    grid-area: kolumna-c;
+}
 }
