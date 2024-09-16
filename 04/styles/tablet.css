@@ -1,0 +1,36 @@
+.header > label {
+    display: none;
+}
+.header {
+    position: static;
+    min-height: 100px;
+}
+.header__nav {
+    position: static;
+    display: block; 
+    background-color: transparent;
+}
+.header__nav > .header__list {
+    display: flex;
+    width: 50%;
+}
+.list__item {
+    padding: 0 10px;
+}
+.list__item--hover {
+    position: relative;
+}
+.list__item--hover:hover .dropdown {
+    display: block;
+}
+.dropdown {
+    position: absolute;
+    display: none;
+}
+.dropdown > .list__item {
+    padding: 5px 0;
+}
+
+
+
+

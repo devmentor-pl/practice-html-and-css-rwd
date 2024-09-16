@@ -1,0 +1,7 @@
+.grid__container {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "aside";
+}

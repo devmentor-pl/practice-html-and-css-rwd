@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 768px)"
+      href="./styles/tablet.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <label for="menu">menu</label>
+      <input type="checkbox" id="menu" />
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="list__item">
+            <a href="#" class="link__item">start</a>
+          </li>
+          <li class="list__item list__item--hover">
+            <a href="#" class="link__item">oferta</a>
+            <ul class="header__list dropdown">
+              <li class="list__item">
+                <a href="#" class="link__item">strony internetowe</a>
+              </li>
+              <li class="list__item">
+                <a href="#" class="link__item">pozycjonowanie stron www</a>
+              </li>
+            </ul>
+          </li>
+          <li class="list__item">
+            <a href="#" class="link__item">kontakt</a>
+          </li>
         </ul>
-    </nav>
-
-</body>
+      </nav>
+    </header>
+  </body>
 </html>
