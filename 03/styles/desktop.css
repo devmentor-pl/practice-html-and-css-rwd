@@ -1,0 +1,41 @@
+@media(min-width: 1200px) and (max-width: 1400px){
+    body{
+        height: 600px;
+        max-width: 1400px;;
+    background-color: rgb(214, 159, 207);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+
+    
+
+    grid-template-areas: 
+    "A C"
+    "B B";
+}
+}
+
+.p {
+    border-color: #d65418;
+    
+    
+}
+
+.t {
+    border-color: #183ed6;
+    grid-area: B;
+    
+}
+
+.v {
+    border-color: #11ae33;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;
+    
+}
+
+
+
+
+    
