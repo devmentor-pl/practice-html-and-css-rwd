@@ -10,9 +10,11 @@
     min-width: 320px;
     max-width: 600px;
     text-align: justify;
+    
 }
 
 .content::before {
+    shape-outside: polygon(0 0, 300px 0, 0 300px);
     float: left;
     display: block;
     content: '';
