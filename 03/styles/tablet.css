@@ -1,0 +1,26 @@
+body {
+    grid-template-columns: minmax(200px, 50vw) auto;
+    display: grid;
+    grid-template-areas: 
+        "P T"
+        "V T";
+}
+
+img{
+    width: 100%;
+}
+
+.p {
+	grid-area: P;
+    border-color: red;
+}
+
+.t {
+	grid-area: T;
+    border-color: green;
+}
+
+.v {
+	grid-area: V;
+    border-color: blue;
+    }
