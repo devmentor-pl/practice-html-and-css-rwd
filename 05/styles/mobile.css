@@ -1,0 +1,120 @@
+/* Mobile */
+
+/* Header */
+.navbar {
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    ". logo hamburger";
+    height: var(--navbarHeight);
+    justify-items: center;
+    position: relative;
+}
+
+.navbar__logo {
+    grid-area: logo;
+    width: 150px;
+}
+
+.navbar__hamburger-icon {
+    grid-area: hamburger;
+    width: 40px;
+    height: 40px;
+    justify-self: end;
+    margin-right: 1em;
+    position: relative;
+}
+
+.navbar__hamburger-lines {
+    background-color: var(--menuBtnColor);
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    min-height: 0;
+    height: 3px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);  
+}
+.navbar__hamburger-lines::before {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--menuBtnColor);
+    transform: translateY(-300%);
+}
+.navbar__hamburger-lines::after {
+    border-radius: 10px;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--menuBtnColor) ;
+    transform: translateY(200%);
+}
+
+.navbar__list {
+    display: none;
+}
+
+#navbar__hamburger-toggle {
+    display: none;
+}
+
+#navbar__hamburger-toggle:checked+.navbar__list {
+    align-items: center;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - var(--navbarHeight));
+
+    position: absolute;
+    top: var(--navbarHeight);
+    left: 0;
+    right: 0;
+}
+
+.navbar__item {
+    box-shadow: 0 1px 10px 0 rgba(0, 0,0,0.1);
+    display: flex;
+    width: 100%;
+}
+
+.navbar__link {
+    
+    display: block;
+    font-size: 2rem;
+    padding: 1em;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+}
+
+/* Sections */
+.section__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.section__content {
+    height: 20vh;
+}
+
+/* Footer */
+.footer__container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.footer__content {
+    width: 150px;
+    height: 30px;
+}
