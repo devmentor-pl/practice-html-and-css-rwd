@@ -1,0 +1,24 @@
+@media (max-width: 800px) {
+    .header,
+    .section__first-items,
+    .section__second-items,
+    .footer {
+        max-height: 100vh;
+    }
+    li {
+        margin: 5px;
+        padding: 5px 10px;
+        text-align: center;
+    }
+    .header__items,
+    #menu-switcher {
+        display: none;
+    }
+    #menu-switcher:checked + .header__items {
+        display: block;
+    }
+    label {
+        display: flex;
+        justify-content: end;
+    }
+}
