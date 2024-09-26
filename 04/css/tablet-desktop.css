@@ -1,0 +1,35 @@
+.hamburger {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: left;
+    min-height: 50px;
+    margin: 1em;
+}
+
+.nav__items {
+    display: flex;
+}
+
+.nav__link, .submenu__link {
+    padding: 1em;
+    margin: 0;
+    background-color: beige;
+    border: none;
+}
+
+.next-menu {
+    margin-left: 0;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+}
+
+.nav__item:hover .submenu {
+    display: block;
+    position: absolute;
+}
