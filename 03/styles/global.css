@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0, auto;
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -23,4 +27,15 @@
 
 .v {
     border-color: #baffc9;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;
+}
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
