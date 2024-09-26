@@ -5,25 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/normal.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+    <nav class="navbar">
+        <input type="checkbox" class="toggle-menu">
+            <div class="hamburger-icon"></div>
+                <ul class="navbar__menu">
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">start</a>
+                    </li>
+                    <li class="menu__item menu__dropdown">
+                        <a href="#" class="menu__link">oferta</a>
+                        <ul class="dropdown">
+                            <li><a href="" class="menu__link_dropdown">strony internetowe</a></li>
+                            <li><a href="" class="menu__link_dropdown">pozycjonowanie stron www</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">kontakt</a>
+                    </li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
+            
+        
     </nav>
 
 </body>
