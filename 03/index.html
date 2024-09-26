@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link
+        rel="stylesheet"
+        href="./styles/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/tablet.css"
+        media="(min-width: 600px)"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/desktop.css"
+        media="(min-width: 1200px)"
+    >
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, laudantium. Esse numquam iusto sint sunt
+            accusamus? Voluptates consequatur alias temporibus ab laborum laudantium natus, eos numquam ad quod? Facilis
+            quam ipsa praesentium neque dolores eos! Non a ipsam voluptatibus voluptatum quasi, voluptas, libero
+            consectetur vero, saepe dolorum asperiores ea. Atque alias fuga, ipsa, autem, sint tempore molestias quidem
+            quod quae similique vitae fugiat illum! Non possimus, consequuntur culpa exercitationem quibusdam temporibus
+            excepturi molestias praesentium! Eligendi consequuntur consequatur vel accusantium eveniet aspernatur
+            ducimus. Quae vel corrupti itaque vitae aspernatur quod quo dignissimos temporibus nam sint aliquid esse
+            unde maiores, ab harum.
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source
+                media="(min-width: 1200px)"
+                srcset="./images/hummingbird-8257355_1920.jpg"
+            >
+            <source
+                media="(min-width: 600px)"
+                srcset="./images/hummingbird-8257355_1280.jpg"
+            >
+            <source
+                media="(max-width: 599px)"
+                srcset="./images/hummingbird-8257355_640.jpg"
+            >
+            <img src="./images/hummingbird-8257355_1920.jpg">
+        </picture>
+    </header>
+    <side class="v">
+
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/VSmd_Tdhb00?si=OMsRtfy1MJGwfJu1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+        ></iframe>
+
+    </side>
 
 </body>
+
 </html>
