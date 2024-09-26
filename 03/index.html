@@ -1,16 +1,69 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 600px)"
+        href="./styles/tablet.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 1199px)"
+        href="./styles/desktop.css"
+    >
 </head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
 
+<body>
+
+    <main class="t">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, vel hic, porro expedita aspernatur eum enim
+        ducimus omnis impedit vero eius distinctio nisi reiciendis, perspiciatis tempore ea debitis? Illo, porro.
+        Lorem
+        ipsum dolor sit amet, consectetur adipisicing elit. Nobis rem dolorem hic, laboriosam ipsum dolorum saepe
+        possimus cumque natus dolores laborum velit, quidem, molestiae at sunt! Ratione quasi temporibus at!
+
+    </main>
+    <header class="p">
+        <picture class="p-picture-container">
+            <img
+                class="p-picture"
+                srcset="./img/header-pic-600.jpg 600w, ./img/header-pic-900.jpg 900w, ./img/header-pic.jpg 1920w"
+                media="(min-width: 600px)"
+            />
+        </picture>
+    </header>
+    <side class="v">
+        <iframe
+            class="v-vid"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/FxhbAGwEYGQ"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+        </iframe>
+    </side>
 </body>
+
 </html>

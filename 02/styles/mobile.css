@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "top"
+    "middle"
+    "bottom";
+}
+
+header {
+    grid-area: top;
+    height: 50vh;
+}
+
+section {
+    grid-area: bottom;
+    height: 50vh;
+}
+
+main {
+    grid-area: middle;
+    height: 50vh;
+}
