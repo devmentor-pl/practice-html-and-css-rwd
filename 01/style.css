@@ -8,8 +8,11 @@
     background-color: #fff;
     min-height: 320px;
     min-width: 320px;
-    max-width: 600px;
+    max-width: 100%;
     text-align: justify;
+    width: 100%; 
+    padding-right: 1rem;
+    
 }
 
 .content::before {
@@ -19,5 +22,6 @@
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    shape-outside: polygon(100% 0, 0 0, 0 100%);
 }

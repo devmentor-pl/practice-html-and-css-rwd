@@ -1,0 +1,37 @@
+.nav__hamburger {
+	display: none;
+}
+
+.nav__list {
+  display: block;
+  display: flex;
+}
+
+.nav__item--parent {
+  position:relative;
+}
+
+.nav__link {
+  border: 1px solid white;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+}
+
+.nav__link--dropdown {
+  border:none;
+}
+
+.nav__list--dropdown {
+  display:block;
+  position:absolute;
+  background-color: #373b61;
+  border-radius: 5px;
+  top: 100%;
+  left: -20px;
+  right: -180px;
+  display: none;
+}
+
+.nav__item:hover > .nav__list--dropdown {
+  display: block;
+}

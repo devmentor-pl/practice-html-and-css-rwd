@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-areas:
+    "picture text"
+    "video text";
+
+  grid-template-columns: 
+    minmax(200px, 50%) 1fr;
+
+  grid-template-rows:
+    50%
+    50%;
+}
+
+
+
+
+
+
+
+
