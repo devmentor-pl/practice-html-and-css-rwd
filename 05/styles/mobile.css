@@ -1,0 +1,50 @@
+.nav__list {
+  display: none;
+}
+
+.header,
+.section,
+figure:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.header__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+  height: 40px;
+  align-items: center;
+}
+
+input:checked + ul {
+  padding-top: 30px;
+  display: block;
+  width: 100%;
+  border: 1px solid black;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #3d3d3d;
+  color: white;
+}
+ul li {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ul li:hover {
+  border: 1px solid white;
+}
+
+label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 10;
+}
+
+.article__content {
+  padding: 10px;
+}

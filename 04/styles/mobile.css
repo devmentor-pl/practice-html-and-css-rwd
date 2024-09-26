@@ -1,0 +1,28 @@
+nav {
+  position: relative;
+}
+
+ul {
+  display: none;
+}
+
+li {
+  text-align: center;
+  flex: 1;
+  border: 1px solid black;
+  margin-bottom: 2px;
+  margin: 0 auto;
+}
+
+input:checked + ul {
+  display: block;
+}
+
+#sub {
+  position: relative;
+}
+
+li:hover ul {
+  text-align: center;
+  display: block;
+}

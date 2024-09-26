@@ -1,0 +1,18 @@
+body {
+  grid-template-areas:
+    "p t"
+    "v t";
+  grid-template-columns: minmax(200px, 50%) 1fr;
+}
+
+.p {
+  grid-area: p;
+}
+
+.t {
+  grid-area: t;
+}
+
+.v {
+  grid-area: v;
+}
