@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header,
+section,
+footer {
+    outline: 3px solid;
+    outline-color: #0ED145;
+}
+
+div {
+    outline: 3px solid;
+    outline-color: #00A8F3;
+}
+
+h1,
+p, 
+nav {
+    background-color: #FFCA18;
+    outline-color: #FFCA18;
+}

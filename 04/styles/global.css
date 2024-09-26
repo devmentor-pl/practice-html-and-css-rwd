@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F6F6F6;
+}
+
+ul {
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+}
