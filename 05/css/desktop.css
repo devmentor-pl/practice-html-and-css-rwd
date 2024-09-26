@@ -1,0 +1,54 @@
+.blue{
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 10px 0;
+}
+.blue--header {
+    display: flex;
+    
+
+}
+
+.orange--logo {
+    width: 100px;
+    margin-left: 0;
+    padding-left: 0;
+
+}
+
+.orange--menu::before,
+.orange--menu::after {
+    display: none;
+}
+
+.orange--menu {
+    position: static;
+    width: 300px;
+    background-color: orange;
+}
+
+.blue--main{
+    display: flex;
+}
+
+.orange--main {
+    width: 50%;
+}
+
+.orange--main +.orange--main {
+    margin:0 0 0 10px;
+
+}
+.blue--section{
+    display:flex;
+    justify-content: space-around;
+}
+.orange--section{
+   
+    width: 30%;
+}
+
+.orange--section + .orange--section{
+    margin: 0;
+    
+}
