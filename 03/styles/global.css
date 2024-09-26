@@ -14,13 +14,62 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: p-first;
+    line-height: 0;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: t-second;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: v-third;
+    width: 100%;
+    /* (315:560) */
+    padding-top: 56.25%;
+    position: relative;
+}
+
+
+.iframe__position {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Mobile */
+body {
+    display: grid;
+    grid-template-areas:
+        "p-first"
+        "t-second"
+        "v-third";
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "p-first t-second"
+            "v-third t-second";
+        grid-template-columns: minmax(200px, 50vw)auto;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+    body {
+        margin: 0 auto;
+        max-width: 1400px;
+        display: grid;
+        grid-template-areas:
+            "p-first v-third"
+            "t-second t-second";
+    }
 }

@@ -1,0 +1,61 @@
+nav{
+      background-color: lightsteelblue;
+      padding: 10px 12px ;
+       text-decoration: none;
+}
+
+.nav__menu{
+      display:block;
+      width: 45px;
+      height: 45px;
+
+      border-top: 5px solid grey;
+      border-bottom: 5px solid grey;
+      
+      float: right;
+}
+
+.nav__menu::after{
+      display: block;
+      content: '';
+      height: 4px;
+      background-color: grey;
+      position: relative;
+      top: 15px;
+
+}
+
+.nav__switch{
+      display: none;
+}
+
+.nav__elements{
+      display: none;
+}
+
+.nav__elements--level{
+      display: block;
+}
+
+.nav__switch:checked + .nav__elements{
+      display:block
+}
+
+.nav__elements--level{
+      padding-left: 4%;
+}
+
+.nav__object{
+      padding: 0.5%;
+
+}
+
+.nav__link{
+      color:grey;
+      text-decoration: none;
+      font-size: 25px; 
+}
+
+.nav__link:hover{
+      text-decoration:underline;
+      text-decoration-color: aquamarine;}
