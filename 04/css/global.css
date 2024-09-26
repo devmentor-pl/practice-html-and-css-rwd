@@ -1,0 +1,12 @@
+.item {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar__checkbox {
+  display: none;
+}
+
+.navbar {
+  background-color: black;
+}
