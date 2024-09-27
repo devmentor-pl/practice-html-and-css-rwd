@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+    --color-alfa: rgba(0, 0, 0, 1);
+    --color-beta: rgba(255, 255, 255, 1);
+    --color-gamma: rgb(224, 254, 255);
+    --color-delta: rgb(53, 198, 255);
+    --color-epsilon: rgb(240, 240, 240);
+}
+
+.container {
+    margin: 0 auto;
+}
+
+
+.wrap {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: minmax(min-content, 25vh) repeat(3, minmax(min-content, max-content));
+    box-shadow: 1px 1px 5px 0 var(--color-alfa), -1px -1px 5px 0 var(--color-alfa);
+}
