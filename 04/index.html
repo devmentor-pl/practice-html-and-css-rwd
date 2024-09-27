@@ -1,30 +1,257 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="./style.css" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
+  </head>
+  <body>
+    <nav class="nav" id="menu">
+      <label for="tm" id="toggle-menu" class="nav__toggle-menu"
+        >Open Menu
+        <span class="nav__open-hamburger"
+          ><img
+            src="./images/icon-hamburger.svg"
+            alt="Icon hamburger menu"
+            class="nav__drop-icon--hamburger" /></span
+      ></label>
+      <input type="checkbox" id="tm" />
+      <ul class="nav__main-menu clearfix">
+        <li><a href="#" class="nav__main-link">Start</a></li>
+        <li>
+          <a href="#" class="nav__main-link"
+            >Offer
+            <span class="nav__drop-icon">&#9662;</span>
+            <label title="Toggle Drop-down" class="nav__drop-icon" for="sm1"
+              >&#9662;</label
+            >
+          </a>
+          <input type="checkbox" id="sm1" />
+          <ul class="nav__sub-menu">
             <li>
-                <a href="#">start</a>
+              <a href="#" class="nav__sub-link"
+                >Websites
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm3"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm3" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Websites 1.1</a></li>
+                <li><a href="#" class="nav__sub-link">Websites 2.1</a></li>
+              </ul>
             </li>
+
             <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
+              <a href="#" class="nav__sub-link"
+                >CMS
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm2"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm2" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">CMS 1.1</a></li>
+                <li><a href="#" class="nav__sub-link">CMS 2.1</a></li>
+              </ul>
             </li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav__main-link">Contact
+        <span class="nav__drop-icon">&#9662;</span>
+            <label title="Toggle Drop-down" class="nav__drop-icon" for="sm4">&#9662;</label>
+          </a>
+          <input type="checkbox" id="sm4" />
+          <ul class="nav__sub-menu">
             <li>
-                <a href="#">kontakt</a>
+              <a href="#" class="nav__sub-link"
+                >E-mail
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm5"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm5" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Send us an e-mail</a></li>
+              </ul>
             </li>
-        </ul>
+
+            <li>
+              <a href="#" class="nav__sub-link"
+                >Social Media
+                <span class="nav__drop-icon">&#9662;</span>
+                <label title="Toggle Drop-down" class="nav__drop-icon" for="sm6"
+                  >&#9662;</label
+                >
+              </a>
+              <input type="checkbox" id="sm6" />
+              <ul class="nav__sub-menu">
+                <li><a href="#" class="nav__sub-link">Facebook</a></li>
+                <li><a href="#" class="nav__sub-link">Twitter</a></li>
+              </ul>
+        </a></li>
+      </ul>
     </nav>
+    <!-- /////////////////////////////////////////// navigation website 
+
+    <nav class="nav">
+        <ul class="menu">
+          <li class="menu__item"><a href="" class="menu__link">Start</a>
+          </li>
+          <li class="menu__item">
+              <a href="#" class="menu__link">Offer</a>
+            <ul class="menu__dropdown dropdown">
+              <li class="dropdown__item">
+                <span><a href="#" class="dropdown__link">Websites</a></span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="dropdown__arrow"
+                /> 
+                <ul class="dropdown__nested">
+                  <li class="nested__item"><a href="#" class="dropdown__link">Landing page</a></li>
+                  <li class="nested__item"><a href="#" class="dropdown__link">CMS</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item">
+                <span><a href="#" class="dropdown__link">SEO</a></span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="dropdown__arrow"
+                />
+                <ul class="dropdown__nested">
+                  <li class="nested__item"><a href="#" class="dropdown__link">Search engine optimization</a></li>
+                  <li class="nested__item"><a href="#" class="dropdown__link">Product positioning</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Contact</a>
+            <ul class="menu__dropdown dropdown">
+              <li class="dropdown__item">
+                <span><a href="#" class="dropdown__link">E-mail</a></span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="dropdown__arrow"
+                />
+                <ul class="dropdown__nested">
+                  <li class="nested__item"><a href="#" class="dropdown__link">Send an e-mail</a></li>
+                </ul>
+              </li>
+              <li class="dropdown__item">
+                <span><a href="#" class="dropdown__link">Social media</a></span>
+                <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="dropdown__arrow"
+                />
+                <ul class="dropdown__nested">
+                  <li class="nested__item"><a href="#" class="dropdown__link">Facebook</a></li>
+                  <li class="nested__item"><a href="#" class="dropdown__link">Twitter</a></li>
+                </ul>
+              </li>
+          </li>
+        </ul>
+      </nav>
+
+       navigation mobile 
+
+  <a href="#overlay" class="open-mobile-menu" id="close"><img src="./images/icon-hamburger.svg" alt="Open mobile menu - hamburger" class="open-mobile-menu__img"></a>
+
+  <div class="overlay" id="overlay">
+    <div class="mobile">
+      <a href="#close" class="overlay__close">&times;</a>
+      <ul class="mobile__menu">
+          <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Start <img
+              src="./images/icon-arrow-down.svg"
+              alt="Arrow right"
+              class="mobile__arrow"
+            /> </a>
+          </li>
+          <hr class="mobile-hr">
+          <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Offer <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="mobile__arrow"
+                  /> </a> 
+                  <ul class="mobile-dropdown">
+                    <li class="mobile-dropdown__item">
+                      <span><a href="#" class="mobile-dropdown__link">Websites</a></span>
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow right"
+                        class="mobile__arrow-l1"
+                      /> 
+                      <ul class="mobile-dropdown-l2">
+                        <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Landing page</a></li>
+                        <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">CMS</a></li>
+                      </ul>
+                    </li>
+                    <li class="mobile-dropdown__item">
+                      <span><a href="#" class="mobile-dropdown__link">SEO</a></span>
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow right"
+                        class="mobile__arrow-1"
+                      />
+                      <ul class="mobile-dropdown-l2">
+                        <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Website positioning</a></li>
+                        <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Product positioning</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+          </li>
+          <hr class="mobile-hr">
+          <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link">Contact <img
+                  src="./images/icon-arrow-down.svg"
+                  alt="Arrow right"
+                  class="mobile__arrow"
+              /> </a>
+              <ul class="mobile-dropdown">
+                <li class="mobile-dropdown__item">
+                  <span><a href="#" class="mobile-dropdown__link">E-mail</a></span>
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Arrow right"
+                    class="mobile__arrow-l1"
+                  /> 
+                  <ul class="mobile-dropdown-l2">
+                    <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Send us an e-mail</a></li>
+                  </ul>
+                </li>
+                <li class="mobile-dropdown__item">
+                  <span><a href="#" class="mobile-dropdown__link">Social media</a></span>
+                  <img
+                    src="./images/icon-arrow-down.svg"
+                    alt="Arrow right"
+                    class="mobile__arrow-l1"
+                  />
+                  <ul class="mobile-dropdown-l2">
+                    <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Facebook</a></li>
+                    <li class="mobile-dropdown__item"><a href="#" class="mobile-dropdown__link">Twitter</a></li>
+                  </ul>
+                </li>
+              </ul>
+          </li>
+           <hr class="mobile-hr">
+      </ul>
+    </div>
+  </div>
 
 </body>
+</html>
+
+-->
+  </body>
 </html>
