@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -14,13 +20,40 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: area-p;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
 }
+
+img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
 
 .t {
     border-color: #ffdfba;
+    grid-area: area-t;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: area-v;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+}
+
+
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }
