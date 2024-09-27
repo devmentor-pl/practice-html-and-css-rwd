@@ -1,0 +1,48 @@
+.hamburger {
+    display: none;
+}
+
+.navigation {
+    display: block;
+    background: black;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.nav__item--offer {
+    position: relative;
+}
+
+.nav__item--offer:hover > .nav__dropdown {
+    display: block;
+}
+
+.nav__item--offer:hover + .nav__dropdown {
+    display: block;
+}
+
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    left: -30px;
+    width: max-content;
+    padding: 10px;
+}
+
+.nav__link--dropdown2::after {
+    display: none;
+}
+
+
+
+
+
