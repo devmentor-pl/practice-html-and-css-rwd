@@ -1,0 +1,32 @@
+body {
+	font-family: Georgia, "Times New Roman", serif;
+	padding: 10px;
+}
+
+.dropdown__link,
+.nav__link {
+	text-decoration: none;
+}
+
+.nav__item .nav__link,
+.dropdown__item .dropdown__link {
+	color: purple;
+	font-weight: bold;
+}
+
+.nav {
+	width: 100%;
+}
+
+.nav__item {
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.dropdown .dropdown__item {
+	padding-top: 10px;
+}
+
+.dropdown {
+	padding-left: 10%;
+}
