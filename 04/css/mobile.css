@@ -1,0 +1,63 @@
+.nav {
+    background-color: var(--main);
+}
+.nav {
+    clear: both;
+    padding: 20px 40px;
+}
+.nav__hamburger {
+    display: block;
+    width: 3rem;
+    height: 2rem;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    float: right;
+    /* add as */
+    position: absolute;
+    top: 4px;right: 4px;
+    cursor: pointer;
+}
+.nav__hamburger::after {
+    display: block;
+    content: '';
+    height: 5px;
+    background-color: red;
+    /* margin-top: 8px; */
+    position: relative;
+    top: 8px;
+}
+.nav__toggler {
+    display: none;
+}
+.nav__list {
+    display: none;
+}
+/* or */
+.nav__list--dropdown {
+    display: block;
+}
+.nav__toggler:checked + .nav__list {
+    display: block;
+}
+.nav__list--dropdown {
+    padding-left: 1rem;
+}
+.nav__item {
+    padding: 5px 10px;
+}
+.nav__link {
+    color: teal;
+    text-decoration: none;
+}
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "area-p area-v"
+    "area-t area-t";
+
+    grid-template-columns:
+    50% 50%;
+
+    grid-template-rows:
+    auto 
+    50vh;
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* video */
+.v {
+    padding-bottom: calc( 100% * 315 / 480 );
+}
+
+/* text RWD */
+.t p {
+    font-size: 1.8vw;
+}
