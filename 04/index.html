@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Responsive Menu - HTML & CSS: RWD - #04</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="logo">
+          <img src="./images/Logo4 v.2.png" alt="Logo Cats Design" />
+        </div>
+        <div class="content">
+          <input type="checkbox" class="toggle" />
+          <div class="hamburger"></div>
+          <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
             <li>
-                <a href="#">start</a>
+              <a href="#">Menu</a>
+              <ul class="dropmenu1">
+                <li><a href="#">Dropmenu 1</a></li>
+                <li><a href="#">Dropmenu 2</a></li>
+                <li class="dropmenu2"><a href="#">Dropmenu 3</a>
+                  <ul>
+                    <li><a href="#">Submenu 1</a></li>
+                    <li><a href="#">Submenu 2</a></li>
+                  </ul>
+                </li>
+              </ul>
             </li>
             <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
+              <a href="#">Services</a>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-
-</body>
+            <li><a href="#">Feedback</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div>
+      <h1 class="text">Healthy Cat <br />Happy Owner</h1>
+    </div>
+  </body>
 </html>
