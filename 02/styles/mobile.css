@@ -1,0 +1,9 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "a"
+    "b"
+    "c";
+    grid-template-rows: repeat(3, 50vh);
+}
+

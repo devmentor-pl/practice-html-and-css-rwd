@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	padding: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	background-color: rgb(240, 238, 238);
+}
+
+*,
+*::before,
+* ::after {
+	box-sizing: inherit;
+}
+
+.nav__list {
+	display: flex;
+	padding: 0.5rem;
+	list-style-type: none;
+}
+
+.nav__item {
+	padding: 1rem 1.5rem;
+	background-color: rgb(41, 226, 72);
+	cursor: pointer;
+}
+
+.nav__item:hover,
+.dropdown__item.nav__item:hover {
+	background-color: rgba(67, 67, 220, 0.86);
+}
+
+.nav__item:hover .nav__link,
+.dropdown__item:hover .dropdown__link {
+	color: rgb(232, 231, 231);
+}
+
+.nav__link,
+.dropdown__link {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 1.1rem;
+	color: rgb(5, 5, 5);
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.nav__link--off::after {
+	content: '>';
+	display: inline-block;
+	position: absolute;
+	left: 85%;
+	font-size: 1.3rem;
+	font-weight: bold;
+	transform: rotate(90deg);
+	transition: transform 0.5s;
+}
+
+.dropdown:hover .nav__link--off::after {
+	transform: rotate(-90deg);
+}
+
+.dropdown {
+	position: relative;
+}
+
+.nav__dropdown {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	padding: 0;
+	margin-top: 0;
+	list-style-type: none;
+}
+
+.dropdown__item {
+	padding: 1rem 2rem;
+	background-color: rgb(41, 226, 72);
+}
+
+.dropdown:hover .nav__dropdown {
+	display: block;
+}
+
+input,
+label {
+	display: none;
+}
