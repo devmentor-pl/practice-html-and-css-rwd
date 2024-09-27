@@ -4,23 +4,42 @@
     box-sizing: border-box;
 }
 
+
 .p, .t, .v {
     border: 3px solid transparent;
-    min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.container {
+    border: 3px solid rgb(143, 142, 177);
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
 .p {
-    border-color: #ffffba
+    border-color: transparent;
 }
 
 .t {
-    border-color: #ffdfba;
+    border-color: transparent;
 }
 
 .v {
-    border-color: #baffc9;
+    border-color: transparent;
+    height: 0;
+    padding-bottom: calc(315 /560 * 100%);
+    position: relative;
+    width: 100%;
 }
+
+iframe
+{
+    border: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:100%;
+}
+
