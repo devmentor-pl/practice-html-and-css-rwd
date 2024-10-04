@@ -4,13 +4,18 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .a {
@@ -19,8 +24,36 @@
 
 .b {
     border-color: #ffdfba;
+    grid-row: 2 / 3;
 }
 
 .c {
     border-color: #baffc9;
+}
+
+@media (min-width: 601px) {
+
+    body {
+        grid-template-areas: 
+        "a a"
+        "c b";
+        justify-items: center;
+    }
+
+    .a {
+        grid-area: a;
+    }
+
+    .b {
+        grid-area: b;
+    }
+
+    .c {
+        grid-area: c;
+    }
+
+    .a, .b, .c {
+        max-width: 1200px;
+        
+    }
 }
