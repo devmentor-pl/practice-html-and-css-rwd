@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./mobile.css" media="(max-width: 760px)">
+    <link rel="stylesheet" href="./desktop.css" media="(min-width: 761px)">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
 <body>
     
     <nav class="navbar">
         <div class="navbar__container">
+            <div class="logo">LOGO</div>
             <input type="checkbox" class="menu-toggle" id="menu-toggle">
             <label for="menu-toggle" class="hamburger">
                 <span class="hamburger__element hamburger__element--first"></span>
@@ -24,7 +26,7 @@
                     <a class="navbar__link link" href="#">start</a>
                 </li>
 
-                <li class="navbar__element">
+                <li class="navbar__element navbar__element--dropdown">
                     <a class="navbar__link link" href="#">oferta</a>
                     <ul class="navbar__dropdown dropdown">
 
@@ -40,7 +42,7 @@
                 </li>
 
                 <li class="navbar__element">
-                    <a class="navbar__link link" href="#">kontakt</a>
+                    <a class="navbar__link--last link" href="#">kontakt</a>
                 </li>
 
             </ul>
