@@ -96,6 +96,7 @@
 
 .hero__title {
     font-size: 22px;
+    line-height: 28px;
 }
 
 .hero__element, .article__element {
@@ -107,9 +108,10 @@
 
 .article__title {
     font-size: 18px;
+    line-height: 24px;
 }
 
-img { 
+.article__img { 
     max-width: 100%;
     height: auto;
 }
