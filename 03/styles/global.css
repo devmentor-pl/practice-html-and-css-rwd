@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;  
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
@@ -14,7 +18,7 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
 }
 
 .t {
@@ -23,4 +27,110 @@
 
 .v {
     border-color: #baffc9;
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    width: 100%;
+}
+
+img { 
+    max-width: 100%;
+    height: auto;
+}
+
+iframe { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width: 599px) {
+
+    body {
+        grid-template-areas: 
+        "p"
+        "t"
+        "v";
+    }
+
+    .p {
+        grid-area: p;
+    }
+    
+    .t {
+        grid-area: t;
+    }
+    
+    .v {
+        grid-area: v;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1199px) {
+
+    body {
+        grid-template-areas: 
+        "p t"
+        "v t";
+    }
+
+    .p {
+        grid-area: p;
+    }
+    
+    .t {
+        grid-area: t;
+    }
+    
+    .v {
+        grid-area: v;
+    }
+
+    .p, .t, .v {
+        min-width: 200px;
+        max-width: 50vw;
+    }
+
+
+}
+
+@media (min-width: 1200px) {
+
+    body {
+        grid-template-areas: 
+        "p v"
+        "t t";
+        justify-items: center;        
+        max-width: 1400px;         
+        margin: 0 auto;  
+    }
+
+    .p {
+        grid-area: p;
+        height: 0;
+        padding-bottom: 56.25%;
+        position: relative;
+        width: 100%;
+    }
+    
+    .t {
+        grid-area: t;
+    }
+    
+    .v {
+        grid-area: v;
+    }
+    picture { 
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+
 }
