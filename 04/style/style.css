@@ -134,9 +134,11 @@ body {
 
 @media (min-width: 801px) {
     
-    .menu ul {
+    .menu > ul {
         display: flex;
+        
     }
+    .hamburger { display: none;}
 
     .submenu {
         display: none;
