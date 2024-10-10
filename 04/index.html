@@ -4,27 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="/style/style.css">
 </head>
 <body>
+    <input type="checkbox" id="toggle-menu">
+    <label for="toggle-menu" class="hamburger"></label>
     
-    <nav>
+    <nav class="menu">
         <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Oferta</a>
+                <ul class="submenu">
+                    <li><a href="#">Strony internetowe</a></li>
+                    <li><a href="#">Pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+            <li><a href="#">Kontakt</a></li>
         </ul>
     </nav>
-
 </body>
 </html>

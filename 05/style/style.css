@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+.hamburger {
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: 8px;
+}
+
+.hamburger::after {
+    top: 18px;
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+.hamburger-checkbox:checked + .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-checkbox:checked + .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+    display: none;
+}
+
+.hamburger-checkbox:checked ~ .menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.dwie-kolumny, .trzy-kolumny {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.kolumna {
+    padding: 20px;
+    text-align: center;
+   
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media (min-width: 800px) {
+
+    .logo {
+        width: 100px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+    }
+
+    .menu {
+        width: 200px;
+        height: 50px;
+        position: absolute;
+        right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .dwie-kolumny {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .dwie-kolumny .kolumna {
+        width: 49%;
+        height: 200px;
+    }
+    
+    .trzy-kolumny {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0;
+        padding: 0 10px;
+    }
+
+    .trzy-kolumny .kolumna {
+        width: 32%;
+        height: 200px;
+    }
+
+    footer {
+        padding: 10px;
+        min-height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+}
