@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --main: #f4f4f4;
+    --text: #444;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 2rem;
+}
