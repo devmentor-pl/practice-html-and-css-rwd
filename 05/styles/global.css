@@ -3,6 +3,9 @@
   --container-color: blue;
   --item-color: orange;
 }
+body {
+  min-height: 100vh;
+}
 .green {
   border: 3px solid green;
   padding: 3px;

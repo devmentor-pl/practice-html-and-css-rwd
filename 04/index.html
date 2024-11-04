@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
     <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
     <link rel="stylesheet" href="./styles/mobile.css" />
-    <link rel="stylesheet" href="./styles/tablet.css" />
   </head>
   <body>
-    <nav class="nav">
-      <button class="hamburger"></button>
-      <ul class="nav__dropdown">
-        <li class="dropdown__item">
-          <a href="#">start</a>
-        </li>
-        <li class="dropdown__item">
-          <a href="#">oferta</a>
-          <ul class="dropdown">
-            <li><a href="#">strony internetowe</a></li>
-            <li><a href="#">pozycjonowanie stron www</a></li>
+    <input type="checkbox" id="toggle-menu" class="toggle-menu" />
+    <label for="toggle-menu" class="hamburger">☰</label>
+
+    <nav class="menu">
+      <ul class="menu-list">
+        <li><a href="#">Element 1</a></li>
+        <li>
+          <a href="#">Element 2</a>
+          <ul class="submenu">
+            <li><a href="#">Podmenu 1</a></li>
+            <li>
+              <a href="#">Podmenu 2</a>
+              <ul class="submenu">
+                <li><a href="#">Zagnieżdżony element 1</a></li>
+                <li><a href="#">Zagnieżdżony element 2</a></li>
+              </ul>
+            </li>
           </ul>
-        </li class="dropdown__item">
-        <li class="dropdown__item">
-          <a href="#">kontakt</a>
         </li>
+        <li><a href="#">Element 3</a></li>
       </ul>
     </nav>
   </body>

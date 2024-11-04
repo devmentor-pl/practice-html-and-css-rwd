@@ -28,6 +28,8 @@ body {
   border-color: #1f1f1b;
   grid-area: p;
   line-height: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 .t {
