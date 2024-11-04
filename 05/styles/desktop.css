@@ -1,0 +1,36 @@
+.blue--header {
+  justify-content: space-between;
+}
+.orange--logo {
+  margin: 0;
+}
+.orange--menu {
+  position: static;
+  width: 40%;
+  transform: none;
+  border: 0;
+  background-color: var(--item-color);
+}
+.orange--menu::before,
+.orange--menu::after {
+  display: none;
+}
+
+.blue--main,
+.blue--section {
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.blue--section {
+  justify-content: space-evenly;
+}
+.orange--main,
+.orange--section {
+  margin: 10px 0;
+}
+
+.blue--footer {
+  padding: 10px;
+}

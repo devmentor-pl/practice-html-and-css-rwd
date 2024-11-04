@@ -1,0 +1,30 @@
+@media screen and (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #f5f5f5;
+  }
+
+  .toggle-menu:checked + .hamburger + .menu .menu-list {
+    display: flex;
+  }
+
+  .menu-list > li a {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .submenu {
+    position: static;
+    padding-left: 20px;
+  }
+
+  .submenu li a {
+    padding-left: 20px;
+  }
+}
