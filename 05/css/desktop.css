@@ -1,0 +1,51 @@
+.green--main,
+.green--section {
+	margin: 10px 0 10px 0;
+}
+
+.blue--header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.gold--logo {
+	width: 200px;
+	margin: 0;
+}
+
+.gold--nav {
+	position: static;
+	width: 380px;
+	background-color: var(--item);
+}
+
+.gold--nav::after,
+.gold--nav::before {
+	display: none;
+}
+
+.blue--main {
+	display: flex;
+}
+
+.gold--main {
+	width: 50%;
+	min-height: 400px;
+}
+
+.gold--main + .gold--main {
+	margin: 0 0 0 12px;
+}
+
+.blue--section {
+	display: flex;
+}
+
+.gold--section {
+	width: 33.3%;
+	min-height: 350px;
+}
+
+.gold--section + .gold--section {
+	margin: 0 0 0 12px;
+}

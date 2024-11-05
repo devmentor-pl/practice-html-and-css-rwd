@@ -1,0 +1,60 @@
+.blue--header {
+	position: relative;
+	/* display: flex;
+	justify-content: center; */
+	padding: 0.8rem;
+}
+
+.gold--logo {
+	width: 100px;
+	margin: 0 auto;
+}
+
+.gold--nav {
+	position: absolute;
+	top: -2px;
+	right: 4px;
+	padding: 0.3rem;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.gold--nav::after {
+	content: '';
+	display: block;
+	width: 30px;
+	height: 20px;
+	border-top: 3px solid var(--black);
+	border-bottom: 3px solid var(--black);
+}
+.gold--nav::before {
+	content: '';
+	display: block;
+	height: 3px;
+	background-color: var(--black);
+	position: relative;
+	top: 14px;
+}
+
+.gold--main {
+	min-height: 200px;
+	/* margin-top: 10px; */
+}
+
+.gold--main + .gold--main {
+	margin-top: 12px;
+}
+
+.gold--section {
+	min-height: 150px;
+	/* margin-top: 10px; */
+}
+.gold--section + .gold--section {
+	margin-top: 12px;
+}
+
+.gold--footer {
+	width: 160px;
+	max-width: 100%;
+	margin: 0 auto;
+}

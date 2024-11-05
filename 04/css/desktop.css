@@ -1,0 +1,44 @@
+.nav__hamburger {
+	display: none;
+}
+
+.nav__list {
+	display: block;
+	display: flex;
+}
+
+.nav__item--children {
+	position: relative;
+}
+
+.nav__link {
+	border: 1px solid #444;
+	border-radius: 6px;
+	padding: 0.25rem 1rem;
+}
+
+/* .nav__link--dropdown {
+    
+} */
+
+.nav__list--dropdown {
+	display: block;
+	position: absolute;
+    padding: 0.5rem;
+	background-color: #444;
+	border-radius: 6px;
+	left: 10px;
+	right: -220px;
+    top: 100%;
+    display: none;
+    transition: display 0.3s ease;
+}
+
+.nav__item:hover > .nav__list--dropdown {
+    display: block;
+}
+
+.nav__link--dropdown {
+	color: var(--main);
+	border: 0;
+}
