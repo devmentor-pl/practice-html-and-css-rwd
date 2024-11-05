@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--wrapper: green;
+	--container: blue;
+	--item: gold;
+	--black: black;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-size: 2rem;
+}
+
+.green {
+	border: 3px solid var(--wrapper);
+	border-radius: 10px;
+	padding: 0.3rem;
+}
+
+.blue {
+	border: 3px solid var(--container);
+	border-radius: 8px;
+	padding: 0.3rem;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.gold {
+	min-height: 50px;
+	background-color: var(--item);
+	border-radius: 5px;
+	/* margin: 0.3rem; */
+}
