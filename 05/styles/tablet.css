@@ -1,0 +1,35 @@
+.header__container {
+    justify-content: space-between;
+}
+
+.header__nav {
+    display: block;
+}
+
+.header__nav-icon {
+    display: none;
+}
+
+.header__nav {
+    width: 60%;
+}
+
+.article1__container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.article1__section {
+    width: 49%;
+    flex-grow: 0;
+}
+
+.article2__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.article2__section {
+    width: 32%;
+    flex-grow: 0;
+}

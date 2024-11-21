@@ -1,0 +1,11 @@
+.menu {
+    display: none;
+}
+
+.page__menu-checkbox:checked + .menu {
+   display: block;
+}
+
+.menu__link--lvl2 {
+    padding-left: 50px;
+}
