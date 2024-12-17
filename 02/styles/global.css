@@ -4,9 +4,17 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-item"
+    "b-item"
+    "c-item";
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
-    min-height: 50px;
+    min-height: 50vh;
 
     display: flex;
     justify-content: center;
@@ -14,13 +22,16 @@
 }
 
 .a {
+    grid-area: a-item;
     border-color: #ffffba
 }
 
 .b {
+    grid-area: b-item;
     border-color: #ffdfba;
 }
 
 .c {
+    grid-area: c-item;
     border-color: #baffc9;
 }
