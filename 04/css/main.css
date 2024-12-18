@@ -1,0 +1,119 @@
+:root {
+    --color-alfa: rgb(143, 143, 143);
+    --color-beta: rgb(64, 66, 67);
+    --color-nav-item: rgb(245, 240, 240);
+    --color-gold: rgb(255, 215, 0);
+    --color-black: rgb(51, 51, 51);
+}
+
+.nav__container {
+    /* padding: 0 0 20px 0; */
+}
+.nav__container input:checked + .nav {
+    display: block;
+    align-content: center;
+    height: 100vh;
+}
+.nav__container input {
+    display: none;
+}
+.switcher {
+position: absolute;
+top: 15px;
+right: 20px;
+padding: 10px;
+font-size: 30px;
+z-index: 10;
+}
+.nav {
+    background: var(--color-nav-item);
+    text-align: start;
+    display: none;
+}
+.nav__item {
+    background-color: var(--color-nav-item);
+    padding: 40px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color .3s;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.nav__item > a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+.nav__item:hover > a {
+    color: var(--color-gold);
+}
+.dropdown__item > a {
+    text-decoration: none;
+    color: var(--color-alfa);
+}
+.dropdown__item:hover > a {
+    color: var(--color-gold);
+}
+.arrow-down {
+    position: absolute;
+    rotate: -90deg;
+    font-size: 1rem;
+    padding: 20px 0 0 10px;
+}
+.nav__item::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    color: var(--color-gold);
+    background-color: var(--color-gold);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+}
+.nav__item:hover {
+    background-color: var( --color-alfa);
+    color: var(--color-gold);
+}
+.nav__item:hover::before {
+    transform: scaleX(1);
+}
+.dropdown {
+    color: var(--color-alfa);
+    /* z-index: 10; */
+}
+.nav__dropdown {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+
+}
+.arrow-right {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 1rem;
+}
+.dropdown__item {
+    background: var(--color-beta);
+    padding:  10px;
+    min-width: 120px;
+}
+.dropdown__item:hover {
+    color: var(--color-gold);
+}
+.nav__item:hover > .nav__dropdown {
+    display: block;
+}
+.nav__dropdown-second {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+.dropdown__item:hover > .nav__dropdown-second {
+    display: block;
+}
