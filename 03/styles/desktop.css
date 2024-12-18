@@ -1,0 +1,22 @@
+body {
+    display: grid;
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "p-picture v-video"
+    "t-text t-text";
+}
+
+ .v {
+    width: 100%;
+    min-height: 100%;
+}
+.p {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+picture {
+    min-width: 100%;
+}
