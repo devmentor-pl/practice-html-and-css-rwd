@@ -1,0 +1,240 @@
+:root {
+  --bg-color: #f6f6f6;
+
+  --primary-color: #ffffff;
+  --secondary-color: #333333;
+
+  --accent-color-primary: #66c2ed;
+  --accent-color-secondary: #6a6b65;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background-color: var(--bg-color);
+  min-height: 100dvh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Multi Level Dropdown Menu */
+.nav {
+  background-color: var(--primary-color);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+
+.nav__menu {
+  display: none;
+  flex-direction: column;
+  /* gap: 0.5rem; */
+}
+
+.nav__menu > .nav__item {
+  border-bottom: 0.5px solid var(--accent-color-secondary);
+}
+
+.nav__menu > .nav__item:first-child .nav__link {
+  color: var(--accent-color-primary);
+}
+
+.nav__item > .nav__link {
+  text-transform: uppercase;
+}
+
+.nav__link {
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+
+  display: block;
+  font-size: 0.75rem;
+
+  transition: color 0.2s ease-out;
+}
+
+.nav__item:hover > .nav__link {
+  color: var(--accent-color-primary);
+}
+
+.nav__item--dropdown {
+  cursor: pointer;
+  position: relative;
+}
+
+.nav__submenu--down,
+.nav__submenu--right {
+  margin-inline-start: 2rem;
+}
+
+.nav__submenu .nav__link {
+  text-transform: none;
+  color: var(--accent-color-secondary);
+  padding: 0.5rem 1rem;
+}
+
+.nav__item--dropdown:hover > .nav__submenu {
+  display: block;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 24px;
+  border: 0;
+  border-top: 4px solid var(--accent-color-secondary);
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+  cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid var(--accent-color-secondary);
+  transform: translateY(4px);
+}
+
+.hamburger::after {
+  transform: translateY(12px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger-checkbox:checked + .nav__menu {
+  display: flex;
+}
+
+.hamburger-checkbox:checked + .nav__menu {
+  margin-top: 1rem;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+/* BREAKPOINT */
+@media (min-width: 600px) {
+  .hamburger,
+  .hamburger-checkbox {
+    display: none;
+  }
+
+  header {
+    padding: 1rem 2rem;
+  }
+
+  .nav {
+    padding: 0;
+  }
+
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .nav__link {
+    padding: 1rem;
+  }
+
+  .nav__submenu {
+    display: none;
+    position: absolute;
+    width: 10rem;
+    text-transform: none;
+    background-color: var(--secondary-color);
+  }
+
+  .nav__submenu--down {
+    left: 0;
+    top: 100%;
+  }
+
+  .nav__submenu--right {
+    left: 100%;
+    top: 0;
+  }
+
+  .nav__submenu--down,
+  .nav__submenu--right {
+    margin-inline-start: 0;
+  }
+
+  .arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    transform: translateY(-50%);
+    transition: border-color 0.2s ease-out;
+  }
+
+  .arrow-down {
+    right: 0;
+    top: 50%;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid var(--secondary-color);
+  }
+
+  .arrow-right {
+    right: 1rem;
+    top: 50%;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid var(--accent-color-secondary);
+  }
+
+  .nav__menu > .nav__item--dropdown::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--accent-color-primary);
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+  }
+
+  .nav__menu > .nav__item--dropdown:hover::before {
+    opacity: 1;
+  }
+
+  .nav__item--dropdown:hover .arrow-down {
+    border-top-color: var(--accent-color-primary);
+  }
+
+  .nav__item--dropdown .nav__submenu > .nav__item:hover .arrow-right {
+    border-left-color: var(--primary-color);
+  }
+
+  .nav__item--dropdown .nav__item:hover > .nav__link {
+    color: var(--primary-color);
+  }
+
+  .nav__menu > .nav__item {
+    border-bottom: none;
+  }
+
+  .hamburger-checkbox:checked + .nav__menu {
+    margin-top: 0rem;
+  }
+}
