@@ -1,0 +1,61 @@
+.container, .content {
+    border: 3px solid;
+    border-radius: 8px;
+}
+
+.container {
+    border-color: green;
+    padding: 5px;
+}
+.content {
+    border-color: blue;
+}
+.content__item {
+    background-color: gold;
+    min-height: 50px;
+    
+}
+.header__container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 5px;
+}
+.header__logo {
+    min-width: 200px;
+}
+.header__navbar {
+    position: absolute;
+    right: 10px;
+    font-size: 2.5rem;
+    border: none;
+}
+.burger {
+    padding: 5px;
+}
+.main__container {
+    min-height: calc(100vh - 100px);
+    display: grid;
+    align-content: stretch;
+}
+.main__container > .section__content:first-child {
+    margin-bottom: 10px;
+}
+.section__container {
+    min-height: 600px;
+    display: grid;
+    align-content: stretch;
+}
+.article__content {
+    margin-bottom: 10px;
+}
+.section__container > .article__content:last-child {
+    margin-bottom: 0;
+}
+.footer__container {
+   padding: 10px 0;
+}
+.footer__header {
+    width: 200px;
+    margin: 0 auto;
+}

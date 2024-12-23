@@ -1,0 +1,33 @@
+.nav__container {
+    /* padding: 20px 0 20px 0; */
+}
+.nav {
+    display: flex;
+    height: 80px;
+}
+.nav__item {
+    padding: 20px 40px 20px 20px;
+    margin-left: 10px;
+}
+.arrow-down {
+    rotate: 0deg;
+    padding: 5px 0 0 10px;
+}
+.nav__dropdown {
+    left: 0;
+    top: 100%;
+}
+.dropdown__item {
+    position: relative;
+    padding: 10px 20px;
+    min-width: 180px;
+}
+.nav__dropdown-second {
+    left: 180px;
+}
+.switcher {
+    display: none;
+}
+.input {
+    display: none;
+}

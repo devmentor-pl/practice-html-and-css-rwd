@@ -1,0 +1,46 @@
+/*  desktop */
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+}
+.header__container {
+    justify-content: space-between;
+    padding: 5px 0;
+}
+.header__navbar {
+    position: initial;
+    min-width: 350px;
+}
+.burger {
+    display: none;
+    padding: 0;
+}
+.main__container {
+    display: flex;
+    padding: 10px 0;
+    min-height: 500px;
+}
+.main__container > .section__content:first-child {
+    margin: 0 10px 0 0;
+}
+.section__content {
+    width: 50%;
+}
+.section__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 250px;
+}
+.article__content {
+    flex-basis: 33%;
+    margin: 0 20px 0 0;
+}
+.section__container > .article__content:last-child {
+    margin: 0;
+}
+.footer__header {
+    width: 300px;
+}
