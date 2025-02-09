@@ -18,7 +18,6 @@ footer {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px;
   border: 4px solid #00A8F3;
   padding: 10px 0;
 }
@@ -27,7 +26,7 @@ footer {
   display: none;
 }
 
-.header__checkbox:checked~.header__nav {
+.header__checkbox:checked ~ .header__nav {
   display: block;
 }
 
@@ -108,43 +107,43 @@ footer {
   width: 250px;
 }
 
+
 @media (min-width: 800px) {
   .container {
     display: flex;
+    max-width: 1000px;
   }
-
+  
   .header .container {
-    display: flex;
     justify-content: space-between;
   }
-
+  
   .header__logo-wrapper {
     width: 160px;
   }
-
+  
   .header .header__nav {
     display: block;
     width: 300px;
     margin-top: 0;
   }
-
+  
   .header__hamburger {
     display: none;
   }
-
+  
   .content-section--two-columns .content-section__column {
     width: calc(50% - 5px);
   }
-
+  
   .content-section--three-columns .content-section__column {
     width: calc(33.33% - 15px);
   }
-
+  
   .content-section--two-columns .content-section__column:not(:last-child),
   .content-section--three-columns .content-section__column:not(:last-child) {
     margin-bottom: 0;
   }
-
   .content-section--three-columns .container {
     justify-content: space-evenly;
   }
