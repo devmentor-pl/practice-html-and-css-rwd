@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  border: 4px solid #10D146;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.eg-content {
+  background-color: #FFCA19;
+}
+
+.container {
+  margin: 0 auto;
+  border: 4px solid #00A8F3;
+  padding: 10px 0;
+}
+
+.header__checkbox {
+  display: none;
+}
+
+.header__checkbox:checked ~ .header__nav {
+  display: block;
+}
+
+.header__hamburger {
+  display: block;
+  text-align: right;
+  width: 33.33%;
+}
+
+.header__hamburger-inner {
+  display: inline-block;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.header__hamburger-line {
+  display: block;
+  width: 32px;
+  height: 4px;
+  background-color: #000;
+  margin: 5px 0;
+}
+
+.header__logo-wrapper {
+  height: 70px;
+  width: 33.33%;
+}
+
+.header .header__nav {
+  height: 70px;
+  width: 100%;
+  display: none;
+  margin-top: 10px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content-section--two-columns {
+  margin-bottom: 15px;
+}
+
+.content-section--two-columns .container {
+  justify-content: space-between;
+}
+
+.content-section--two-columns .content-section__column,
+.content-section--three-columns .content-section__column {
+  height: 440px;
+}
+
+.content-section--two-columns .content-section__column:not(:last-child),
+.content-section--three-columns .content-section__column:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.content-section--three-columns .container {
+  justify-content: space-evenly;
+}
+
+.footer {
+  min-height: 100px;
+  margin-bottom: 0;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer__content {
+  height: 80px;
+  width: 250px;
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    display: flex;
+    max-width: 1000px;
+  }
+  
+  .header .container {
+    justify-content: space-between;
+  }
+  
+  .header__logo-wrapper {
+    width: 160px;
+  }
+  
+  .header .header__nav {
+    display: block;
+    width: 300px;
+    margin-top: 0;
+  }
+  
+  .header__hamburger {
+    display: none;
+  }
+  
+  .content-section--two-columns .content-section__column {
+    width: calc(50% - 5px);
+  }
+  
+  .content-section--three-columns .content-section__column {
+    width: calc(33.33% - 15px);
+  }
+  
+  .content-section--two-columns .content-section__column:not(:last-child),
+  .content-section--three-columns .content-section__column:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .content-section--three-columns .container {
+    justify-content: space-evenly;
+  }
+}
