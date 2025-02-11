@@ -1,0 +1,33 @@
+.blue--header {
+  display: flex;
+  justify-content:space-between;
+  position: relative;
+}
+.orange--logo {
+  width: 200px; margin: 0; 
+}
+.orange--menu {
+  position: absolute;
+  width: 400px;
+  background-color: var(--item);
+  right: 0;}
+
+.menu__hamburger {
+  display: none;
+}
+.blue--main {
+  display: flex;
+}
+.orange--main {
+  width: 50%;
+}
+.blue--section {
+  display: flex;
+  justify-content: space-around;
+}
+.orange--section{
+    width: 30%;
+}
+.orange--section + .orange--section {
+    margin: 0;
+  }
