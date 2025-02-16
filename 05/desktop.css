@@ -1,0 +1,57 @@
+@media(min-width: 1024px) {
+    .headSection__logoContainer {
+        display: block;
+        width: 30%;
+    }
+
+    .headSection__logo {
+        width: 10%;
+        vertical-align: middle;
+    }
+
+    .headSection__hamburgerButton {
+        display: none;
+    }
+
+    .headSection__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .headSection__menuBox {
+        display: flex;
+        flex-basis: 40%;
+        justify-content: space-around;
+    }
+
+    .contentBox2__elementsContainer {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .secondaryBox {
+        padding: 20px 0;
+    }
+
+    .contentBox2__text2 {
+        margin-bottom: 0;
+    }
+
+    .contentBox3__elementsContainer {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contentBox3__element3 {
+        flex-basis: calc(100% / 3 - 10px);
+        margin-bottom: 0;
+        height: calc(100vh / 3 - 10px);
+    }
+
+    .siteFooter__element {
+        height: 10vh;
+        width: 20%;
+    }
+
+}

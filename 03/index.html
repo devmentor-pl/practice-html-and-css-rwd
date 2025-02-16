@@ -5,12 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/tablet.css">
+    <link rel="stylesheet" href="styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, fugit, obcaecati cum fugiat non quisquam debitis quos adipisci cupiditate ut itaque libero consequuntur, at sit autem velit rem tempore placeat?
+        Iusto, aliquid sapiente officia aperiam inventore laboriosam ea numquam voluptates magni suscipit consequatur saepe vel atque veniam libero! Perferendis culpa minus aperiam distinctio ipsum quo rerum dignissimos vitae! Tenetur, quidem.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo impedit at deleniti beatae corporis maxime. Recusandae neque minus, dolorum velit expedita ut nobis esse, nihil accusamus minima, molestiae sunt. Ullam?</p>
+    </main>
+    <header class="p">
+        <picture>
+            <source srcset="content\vintage-pocket-watch-200_133.jpg" media="(min-width: 240px) and (max-width: 320px)">
+            <source srcset="content\vintage-pocket-watch-300_200.jpg" media="(min-width: 321px) and (max-width: 480px)">
+            <source srcset="content/vintage-pocket-watch-450_300.jpg" media="(min-width: 490px) and (max-width: 599px)">
+            <source srcset="content\vintage-pocket-watch-520_347.jpg" media="(min-width: 600px) and (max-width: 1100px)">
+            <source srcset="content/vintage-pocket-watch-1020_680.jpg" media="(min-width: 1199px)">
+            <source srcset="content/vintage-pocket-watch-1920_1080.jpg" media="(min-width: 1200px)">
+            <img src="content/vintage-pocket-watch-1920_1080.jpg" alt="vintage pocket watch image">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe src="https://www.youtube.com/embed/RcawAGJ8Hi4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>
