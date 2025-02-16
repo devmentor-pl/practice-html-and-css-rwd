@@ -1,0 +1,91 @@
+.nav {
+	height: 100vh;
+	position: relative;
+}
+
+.nav__burger-btn {
+	margin: 15px;
+	padding: 15px;
+	width: 40px;
+	height: 35px;
+	border: 0;
+	border-top: 5px solid black;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	transition: transform 0.3s;
+}
+
+.nav__burger-input {
+	display: none;
+}
+
+.nav__list {
+	margin-left: 30px;
+	position: relative;
+	top: 20%;
+	display: none;
+}
+
+.nav__item,
+.dropdown__item {
+	padding: 15px 0;
+	max-width: 90%;
+}
+
+.nav__link {
+	font-size: 24px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.nav__dropdown {
+	margin-left: 5%;
+	padding: 15px 0 0 15px;
+}
+
+.dropdown__link {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+.arrow {
+	display: none;
+}
+
+.nav__burger-btn::before,
+.nav__burger-btn::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid black;
+}
+
+.nav__burger-btn::after {
+	transform: translateY(25px);
+	transition: transform 0.3s;
+}
+
+.nav__burger-btn::before {
+	transform: translateY(10px);
+}
+
+.nav__burger-input:checked + .nav__burger-btn {
+	transform: rotate(45deg) translateY(5px);
+	border-top: none;
+}
+
+.nav__burger-input:checked ~ .nav__list {
+	display: block;
+}
+
+.nav__burger-input:checked + .nav__burger-btn::after {
+	transform: rotate(-90deg) translateX(-10px);
+}
