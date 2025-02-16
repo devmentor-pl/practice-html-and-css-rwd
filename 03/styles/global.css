@@ -1,26 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
+body {
+    display: grid;
+    grid-template-areas:
+        "a-first"
+        "a-second"
+        "a-third";
+    grid-template-rows:
+        auto auto auto;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.25;
+}
 
+.p, .t, .v {
+    align-items: center;
+    border: 3px solid transparent;
     display: flex;
     justify-content: center;
-    align-items: center;
+    min-height: 50px;
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-first;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: a-second;
+    padding: 10px
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: a-third;
+    padding-top: 56.25%;
+    position: relative;
+}
+
+.picture,
+.video,
+.picture__img {
+    width: 100%;
+    height: 100%;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.picture__img {
+    object-fit: cover;
+}
+
+/*Tablet*/
+@media screen and (min-width:600px) {
+
+    body {
+        display: grid;
+        grid-template-areas:
+            "a-first a-second"
+            "a-third a-second";
+        grid-template-rows:
+            50vh 50vh;
+        line-height: 1.5;
+    }
+
+    .p,
+    .v {
+        min-width: 200px;
+        max-width: 50vw;
+    }
+
+    .p {
+        border-color: #ffffba;
+        grid-area: a-first;
+    }
+
+    .t {
+        border-color: #ffdfba;
+        grid-area: a-second;
+        overflow: hidden;
+    }
+
+    .v {
+        border-color: #baffc9;
+        grid-area: a-third;
+    }
+}
+
+/* Desktop */
+
+@media screen and (min-width:1200px) {
+    body {
+        display: grid;
+        grid-template-areas:
+            "a-first a-second"
+            "a-third a-third";
+        grid-template-rows:
+            50vh auto;
+        font-size: 18px;
+        margin: 0 auto;
+        max-width: 1400px;
+    }
+
+    .p,
+    .v {
+        max-width: 50vw;
+    }
+
+    .p {
+        border-color: #ffffba;
+        grid-area: a-first;
+    }
+
+    .t {
+        border-color: #ffdfba;
+        grid-area: a-third;
+        max-width: none;
+        min-height: 50vh;
+    }
+
+    .v {
+        border-color: #baffc9;
+        grid-area: a-second;
+        padding: 0;
+    }
+
+    .v,
+    .video {
+        max-height: 50vh;
+    }
 }
