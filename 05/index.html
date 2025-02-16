@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css/reset.css" />
+    <link rel="stylesheet" href="./style.css/global.css" />
+    <link rel="stylesheet" href="./style.css/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width:800px)"
+      href="./style.css/desktop.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header row">
+      <section class="header__container container">
+        <nav class="header__menu menu">
+          <label class="header__hamburger" for="menu-switcher"></label>
+          <input class="header__input" type="checkbox" id="menu-switcher" />
+          <ul class="menu__list cell"></ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="articles row">
+        <ul class="article__container container">
+          <li class="article__item cell"></li>
+          <li class="article__item article__item--big cell"></li>
+        </ul>
+      </section>
+      <section class="comments row">
+        <ul class="comments__container container">
+          <li class="comments__item cell"></li>
+          <li class="comments__item cell"></li>
+          <li class="comments__item cell"></li>
+        </ul>
+      </section>
+      <footer class="row">
+        <div class="footer__container container">
+          <figure class="footer__logo cell"></figure>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
