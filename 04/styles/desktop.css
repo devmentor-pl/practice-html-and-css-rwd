@@ -1,0 +1,37 @@
+.navbar {
+  align-items: center;
+  justify-content: start;
+  gap: 25px;
+}
+.navbar__list {
+  display: flex;
+}
+.navbar__list-item {
+  display: flex;
+  padding: 15px;
+}
+
+.navbar__list-item:hover {
+  background-color: rgb(71, 69, 71);
+}
+
+.navbar__list-item--sublist {
+  position: relative;
+}
+
+.navbar__list--sublist {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #000000;
+}
+.navbar__list-item--sublist:hover .navbar__list--sublist {
+  display: block;
+}
+
+.navbar__link {
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+}
