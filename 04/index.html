@@ -1,30 +1,53 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" media="(max-width: 760px)" />
+    <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 761px)" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div class="container__mobile">
+          <a class="logo" href="/">LOGO</a>
+          <button type="button" onclick="showSidebar(); hideSidebar()" class="hamburger"></button>
+        </div>
+        <ul class="nav">
+          <li class="nav__item">HOME</li>
+          <li class="nav__item nav__item--hover">
+            ITEMS
+            <ul class="nav__first-level">
+              <li class="first-level__item-one">Item 1</li>
+              <li class="first-level__item-two">
+                Item 2
+                <ul class="nav__second-level">
+                  <li class="second-level__item-one">Item 2.1</li>
+                  <li class="second-level__item-two">Item 2.2</li>
                 </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
+              </li>
+            </ul>
+          </li>
+          <li class="nav__item">SETTINGS</li>
+          <li class="nav__item">CONTACT</li>
         </ul>
-    </nav>
+      </nav>
+    </header>
 
-</body>
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.nav');
+        sidebar.style.display = 'flex';
+      }
+      /* @todo hide sidebar after open - on click function */
+      //   function hideSidebar() {
+      //     const sidebar = document.querySelector('.nav');
+      //     sidebar.style.display = 'none';
+      //   }
+    </script>
+  </body>
 </html>
