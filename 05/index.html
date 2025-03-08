@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>devmentor.pl - HTML & CSS: RWD - #05</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="container__green">
+      <nav>
+        <div class="container__blue">
+          <a href="/" class="rectangle__orange"></a>
+          <div class="rectangle__desktop"></div>
+          <button type="button" type="button" onclick="showSidebar();" class="hamburger"></button>
+        </div>
+        <ul class="nav">
+          <button
+            type="button"
+            type="button"
+            onclick="hideSidebar();"
+            class="hamburger hamburger__hide-siebar"></button>
+          <li class="nav__item">HOME</li>
+          <li class="nav__item nav__item--hover">PORTFOLIO</li>
+          <li class="nav__item">ABOUT US</li>
+          <li class="nav__item">GALLERY</li>
+          <li class="nav__item">CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container__green main__section">
+      <article class="container__blue container__main">
+        <div class="rectangle__orange rectangle__1"></div>
+        <div class="rectangle__orange rectangle__2"></div>
+      </article>
+    </main>
+    <main class="container__green main__section">
+      <article class="container__blue container__second">
+        <div class="rectangle__orange rectangle__3"></div>
+        <div class="rectangle__orange rectangle__4"></div>
+        <div class="rectangle__orange rectangle__5"></div>
+      </article>
+    </main>
+
+    <footer class="container__green">
+      <div class="container__blue container__footer">
+        <div class="rectangle__orange rectangle__footer"></div>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.nav');
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector('.nav');
+        sidebar.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>
