@@ -1,3 +1,10 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+}
+
 .logo {
   font-weight: 700;
   font-size: 25px;
@@ -27,6 +34,9 @@
   transform: translateY(10px);
 }
 
+header input {
+  appearance: none;
+}
 .hamburger::after {
   transform: translateY(25px);
   transition: 0.3s transform linear;
@@ -39,16 +49,6 @@
 
 .hamburger:focus::after {
   transform: rotate(-90deg) translateX(-10px);
-}
-
-.container__mobile {
-  display: flex;
-  justify-content: space-between;
-}
-
-header {
-  padding: 20px;
-  position: relative;
 }
 
 .nav {
@@ -84,8 +84,8 @@ header {
   display: none;
 }
 
-header .container ul li:focus-within > ul,
-header .container ul li:hover > ul {
+header input:checked + ul li:focus-within > ul,
+header input:checked + ul li:hover > ul {
   display: initial;
 }
 

@@ -12,11 +12,10 @@
   </head>
   <body>
     <header>
+      <a class="logo" href="/">LOGO</a>
       <nav class="container">
-        <div class="container__mobile">
-          <a class="logo" href="/">LOGO</a>
-          <button type="button" onclick="showSidebar();" class="hamburger"></button>
-        </div>
+          <label for="hamburger"></label>
+          <input type="checkbox" class="hamburger"></input>
         <ul class="nav">
           <li class="nav__item">HOME</li>
           <li class="nav__item nav__item--hover">
@@ -37,17 +36,5 @@
         </ul>
       </nav>
     </header>
-
-    <script>
-      function showSidebar() {
-        const sidebar = document.querySelector('.nav');
-        sidebar.style.display = 'flex';
-      }
-      /* @todo hide sidebar after open - on click function */
-      //   function hideSidebar() {
-      //     const sidebar = document.querySelector('.nav');
-      //     sidebar.style.display = 'none';
-      //   }
-    </script>
   </body>
 </html>
