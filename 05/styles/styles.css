@@ -36,7 +36,7 @@ body {
   display: none;
 }
 
-.hamburger {
+#hamburger {
   width: 35px;
   height: 20px;
   border: 0;
@@ -47,10 +47,11 @@ body {
   transition: 0.3s transform linear;
   cursor: pointer;
   grid-column: 5 / span 1;
+  grid-row: 1;
 }
 
-.hamburger::before,
-.hamburger::after {
+#hamburger::before,
+#hamburger::after {
   content: ' ';
   position: absolute;
   top: 0;
@@ -60,30 +61,30 @@ body {
   transform: translateY(10px);
 }
 
-.hamburger::after {
+#hamburger::after {
   transform: translateY(25px);
   transition: 0.3s transform linear;
 }
 
-.hamburger:focus {
+#hamburger:focus {
   transform: rotate(45deg) translateY(5px);
   border: none;
 }
 
-.hamburger:focus::after {
+#hamburger:focus::after {
   transform: rotate(-90deg) translateX(-10px);
 }
 
-.hamburger__hide-siebar {
+#hamburger__hide-siebar {
   border-top: none;
   transform: rotate(-90deg) translateX(-10px);
 }
 
-.hamburger__hide-siebar::after {
+#hamburger__hide-siebar::after {
   transform: translateY(10px) rotate(45deg);
 }
 
-.hamburger__hide-siebar::before {
+#hamburger__hide-siebar::before {
   transform: translateY(10px) rotate(-45deg);
 }
 
@@ -92,7 +93,7 @@ body {
   gap: 20px;
   padding: 20px;
   position: absolute;
-  top: 0;
+  top: 6%;
   left: 0;
   right: 0;
   background: #fff;
@@ -112,8 +113,17 @@ body {
   cursor: pointer;
 }
 
-header .container ul li:focus-within > ul,
-header .container ul li:hover > ul {
+header input {
+  appearance: none;
+}
+
+header input:checked + ul {
+  display: flex;
+  gap: 20px;
+}
+
+header input:checked + ul li:focus-within > ul,
+header input:checked + ul li:hover > ul {
   display: initial;
 }
 
@@ -127,7 +137,7 @@ header .container ul li:hover > ul {
     padding: 2px 0 4px 0;
   }
 
-  .hamburger {
+  #hamburger {
     display: none;
   }
 
@@ -154,11 +164,11 @@ header .container ul li:hover > ul {
   padding: 0;
 }
 
-.rectangle__1,
-.rectangle__2,
-.rectangle__3,
-.rectangle__4,
-.rectangle__5 {
+.rectangle__first-main,
+.rectangle__second-main,
+.rectangle__third-main,
+.rectangle__fourth-main,
+.rectangle__fifth-main {
   grid-column: 1 / span 4;
   height: 200px;
 }
@@ -179,23 +189,23 @@ header .container ul li:hover > ul {
     padding: 10px;
   }
 
-  .rectangle__1 {
+  .rectangle__first-main {
     grid-column: 1 / span 2;
   }
 
-  .rectangle__2 {
+  .rectangle__second-main {
     grid-column: 3 / span 2;
   }
 
-  .rectangle__3 {
+  .rectangle__third-main {
     grid-column: 1 / span 1;
   }
 
-  .rectangle__4 {
+  .rectangle__fourth-main {
     grid-column: 2 / span 2;
   }
 
-  .rectangle__5 {
+  .rectangle__fifth-main {
     grid-column: 4 / span 1;
   }
 }
