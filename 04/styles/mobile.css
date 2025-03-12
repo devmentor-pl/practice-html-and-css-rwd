@@ -12,7 +12,7 @@ header {
   text-decoration: none;
 }
 
-.hamburger {
+#hamburger {
   width: 35px;
   height: 20px;
   border: 0;
@@ -23,8 +23,8 @@ header {
   cursor: pointer;
 }
 
-.hamburger::before,
-.hamburger::after {
+#hamburger::before,
+#hamburger::after {
   content: ' ';
   position: absolute;
   top: 0;
@@ -37,17 +37,18 @@ header {
 header input {
   appearance: none;
 }
-.hamburger::after {
+
+#hamburger::after {
   transform: translateY(25px);
   transition: 0.3s transform linear;
 }
 
-.hamburger:focus {
+#hamburger:focus {
   transform: rotate(45deg) translateY(5px);
   border: none;
 }
 
-.hamburger:focus::after {
+#hamburger:focus::after {
   transform: rotate(-90deg) translateX(-10px);
 }
 
@@ -82,6 +83,11 @@ header input {
 .nav__first-level,
 .nav__second-level {
   display: none;
+}
+
+header input:checked + ul {
+  display: flex;
+  gap: 20px;
 }
 
 header input:checked + ul li:focus-within > ul,
