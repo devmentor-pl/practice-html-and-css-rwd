@@ -9,11 +9,8 @@
 }
 
 .module--1 .content__container{
-    /* box-sizing: border-box; Przeniosłem do base.css */
     padding: 0px;
 }
-
-/* Czy tuaj moglibyśmy zastosować podstawienie za "Moduł x" funkcję? Jak to będzie wyglądało w js? */
 
 .module--1 .content__article.cell {
     min-height: 300px;
