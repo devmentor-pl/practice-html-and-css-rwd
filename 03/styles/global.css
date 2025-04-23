@@ -14,7 +14,8 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    overflow: hidden;
 }
 
 .t {

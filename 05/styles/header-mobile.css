@@ -1,0 +1,79 @@
+:root {
+    --color-alfa: hwb(0 75% 25%);
+    --color-beta: hwb(0 55% 45%);
+    --color-gamma: hwb(0 45% 55%);
+    --color-delta: hwb(0 35% 65%);
+    --color-epsilon: hwb(0 25% 75%);
+  }
+  
+
+.header__container{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.header__logo.cell{
+    width: 200px;
+}
+
+.header__nav.cell{
+    display: none;
+
+}
+
+/* Start hamburgera mobile */
+
+#menu__mobile--hamburger {
+    display: none;
+  }
+
+.header__nav--mobile.cell{
+    background-color: white;
+  }
+.header__nav.cell {
+    display: block;
+    position: absolute;
+    right: 5%;
+    background-color: white;
+}
+
+.hamburger {
+    display: block;
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid var(--color-alfa);
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    z-index: 3;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .hamburger::before,
+  .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid var(--color-alfa);
+    transform: translateY(10px);
+  }
+  
+  .hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+  }
+  
+  #menu__mobile--hamburger:checked + .hamburger {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+  }
+  
+  #menu__mobile--hamburger:checked + .hamburger::after {
+    transform: rotate(-90deg) translateX(-10px);
+  }
+  

@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+:root {
+  --color-alfa: hwb(0 75% 25%);
+  --color-beta: hwb(0 55% 45%);
+  --color-gamma: hwb(0 45% 55%);
+  --color-delta: hwb(0 35% 65%);
+  --color-epsilon: hwb(0 25% 75%);
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #333;
+  color: var(--color-alfa);
+}
+
+#menu__mobile--hamburger {
+  display: none;
+}
+
+nav {
+  background-color: var(--color-epsilon);
+  color: var(--color-alfa);
+}
+

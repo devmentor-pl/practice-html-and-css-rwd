@@ -1,0 +1,31 @@
+/* content.css */
+
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.module--1 .content__container{
+    /* box-sizing: border-box; Przeniosłem do base.css */
+    padding: 0px;
+}
+
+/* Czy tuaj moglibyśmy zastosować podstawienie za "Moduł x" funkcję? Jak to będzie wyglądało w js? */
+
+.module--1 .content__article.cell {
+    min-height: 300px;
+    width: 49.5%;
+    margin: 0px;
+}
+
+
+.module--2 .content__article.cell {
+    min-height: 300px;
+    width: 33%;
+}
+
+.module--2 .content__container{
+    /* box-sizing: border-box; Przeniosłem do base.css */
+    padding: 12px;
+}

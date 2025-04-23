@@ -1,0 +1,67 @@
+:root {
+  --color-alfa: hwb(0 75% 25%);
+  --color-beta: hwb(0 55% 45%);
+  --color-gamma: hwb(0 45% 55%);
+  --color-delta: hwb(0 35% 65%);
+  --color-epsilon: hwb(0 25% 75%);
+}
+
+.hamburger {
+  display: none;
+}
+
+#menu__mobile--hamburger:checked~nav {
+  display: block;
+}
+
+nav {
+  display: block;
+  position: static;
+  padding-top: 0;
+}
+
+nav ul {
+  display: flex;
+  width: 5vw;
+  min-width: max-content;
+}
+
+
+nav ul > li > a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--color-alfa);
+  border-bottom: 2px solid var(--color-delta);
+}
+
+nav ul > li > a:hover {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--color-alfa);
+  border-bottom: 2px solid var(--color-alfa);
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 15px 20px;
+  background: var(--color-beta);
+  border-bottom: 1px solid var(--color-delta);
+}
+
+/* Ukrycie */
+
+nav ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200px;
+  display: none;
+}
+
+/* Odkrycie menu */
+
+nav ul li:hover ul {
+  display: block;
+}
