@@ -1,0 +1,13 @@
+/* footer.css - taki sam dla mobile i desktop */
+
+.footer__container {
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.footer__logo {
+    width: 25%;
+}
+

@@ -1,0 +1,113 @@
+:root {
+  --color-alfa: hwb(0 75% 25%);
+  --color-beta: hwb(0 55% 45%);
+  --color-gamma: hwb(0 45% 55%);
+  --color-delta: hwb(0 35% 65%);
+  --color-epsilon: hwb(0 25% 75%);
+}
+
+
+/* Start hamburgera mobile */
+
+ .hamburger {
+  display: block;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid var(--color-alfa);
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+  z-index: 3;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid var(--color-alfa);
+  transform: translateY(10px);
+}
+
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+#menu__mobile--hamburger:checked + .hamburger {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+#menu__mobile--hamburger:checked + .hamburger::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+
+ /* end hamburgera mobile */
+
+ /* Ukrycie Menu Mobile */
+
+ nav {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   background: var(--color-epsilon);
+   padding-top: 60px;
+   z-index: 2;
+ }
+
+
+ /* Menu - odkrycie po oznaczeniu jeśli jest oznaczony checked nav ustawia sie na black */
+
+ #menu__mobile--hamburger:checked ~ nav {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul > li > a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--color-alfa);
+  border-bottom: 1px solid var(--color-delta);
+}
+
+nav ul > li > ul > li > a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: var(--color-epsilon);
+  border-bottom: 1px solid var(--color-delta);
+}
+
+nav ul li ul {
+  display: none;
+  background: var(--color-beta);
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding-left: 40px;
+  background: var(--color-beta);
+  border-bottom: 1px solid var(--color-delta);
+}
