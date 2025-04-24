@@ -46,3 +46,13 @@ header input:checked+ul {
 .arrow__down {
     display: none;
 }
+
+
+.fa-bars {
+    font-size: 20px;
+}
+
+.fa-bars:hover {
+    color: red;
+    cursor: pointer;
+}
