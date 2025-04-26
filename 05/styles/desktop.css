@@ -13,14 +13,14 @@
     background-color: orange;
 }
 
-.fa-bars {
-    display: none;
-}
-
 .header__nav {
     min-width: 600px;
     margin-right: 10px;
     background-color: orange;
+}
+
+.fa-bars {
+    font-size: 0;
 }
 
 /* MAIN */
