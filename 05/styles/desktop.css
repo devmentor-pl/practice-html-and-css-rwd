@@ -1,0 +1,61 @@
+/* HEADER */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+.header__logo {
+    max-width: 15%;
+    margin-left: 10px;
+    background-color: orange;
+}
+
+.header__nav {
+    min-width: 600px;
+    margin-right: 10px;
+    background-color: orange;
+}
+
+.fa-bars {
+    font-size: 0;
+}
+
+/* MAIN */
+.main__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__article {
+    min-height: 400px;
+    width: 49%;
+    margin-top: 10px;
+}
+
+/* FEATURES */
+
+.features__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature__item {
+    min-height: 400px;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.feature__item:last-child {
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+
+.footer__copyright {
+    /* height: 60px; */
+    width: 10%;
+
+}

@@ -4,23 +4,39 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-areas:
+        "a-top"
+        "a-mid"
+        "a-bottom";
+    grid-template-rows:
+
+        minmax(calc(50% -6px), auto);
+}
+
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .a {
+    grid-area: a-top;
     border-color: #ffffba
 }
 
 .b {
+    grid-area: a-mid;
     border-color: #ffdfba;
 }
 
 .c {
+    grid-area: a-bottom;
     border-color: #baffc9;
 }
