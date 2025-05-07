@@ -1,0 +1,16 @@
+/* tablet */
+body {
+  display: grid;
+  grid-template-areas:
+    "p t"
+    "v t";
+}
+.p {
+  grid-area: "p";
+}
+.v {
+  grid-area: "v";
+}
+.t {
+  grid-area: "t";
+}
