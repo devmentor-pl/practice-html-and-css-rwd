@@ -4,13 +4,15 @@ body {
   grid-template-areas:
     "p t"
     "v t";
+  grid-template-columns: minmax(200px, 50%) 1fr;
+  gap: 1rem;
 }
 .p {
-  grid-area: "p";
+  grid-area: p;
 }
 .v {
-  grid-area: "v";
+  grid-area: v;
 }
 .t {
-  grid-area: "t";
+  grid-area: t;
 }

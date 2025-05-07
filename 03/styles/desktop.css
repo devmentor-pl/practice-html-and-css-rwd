@@ -8,11 +8,11 @@ body {
     "t t";
 }
 .p {
-  grid-area: "p";
+  grid-area: p;
 }
 .v {
-  grid-area: "v";
+  grid-area: v;
 }
 .t {
-  grid-area: "t";
+  grid-area: t;
 }
