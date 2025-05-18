@@ -1,0 +1,18 @@
+:root {
+  --active-color: #2ba2e4;
+  --dropdown-color: #333333;
+  --body-color: #f6f6f6;
+  --nav-color: #ffffff;
+  --nav-link-border-height: 4px;
+  --icon-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
