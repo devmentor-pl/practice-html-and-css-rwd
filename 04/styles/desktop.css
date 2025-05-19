@@ -1,17 +1,9 @@
-ul {
-  list-style: none;
+nav ul {
   display: flex;
-  padding: 20px 0;
-  background-color: rgb(241, 234, 223);
 }
-ul > li {
-  padding: 10px 20px;
+nav input + ul {
+  flex-direction: row;
 }
-ul > li > a {
-  color: rgb(113, 111, 111);
-  text-decoration: none;
-  border-bottom: 2px solid rgb(113, 111, 111);
-}
-ul > li > ul {
+.hamburger {
   display: none;
 }

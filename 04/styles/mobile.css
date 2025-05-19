@@ -1,0 +1,37 @@
+nav input:checked + ul {
+  flex-direction: column;
+}
+ul > li > ul {
+  display: none;
+}
+nav ul {
+  display: none;
+}
+nav input {
+  display: none;
+}
+nav input:checked + ul {
+  display: flex;
+}
+
+.hamburger {
+  width: 40px;
+  height: 35px;
+  background: transparent;
+  border: 0;
+  border-top: 5px solid rgb(113, 111, 111);
+  position: relative;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid rgb(113, 111, 111);
+  transform: translateY(10px);
+}
+.hamburger::after {
+  transform: translateY(25px);
+}
