@@ -3,17 +3,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
 ul {
   list-style: none;
   display: flex;
-  padding: 20px 0;
   background-color: rgb(241, 234, 223);
 }
-ul > li {
-  padding: 10px 20px;
+nav > ul li {
+  padding: 10px;
 }
-ul > li > a {
+ul > li > ul li:last-child {
+  padding-bottom: 0;
+}
+ul > li > ul li:first-child {
+  padding-top: 20px;
+}
+nav > ul > li ul li {
+  padding-left: 20px;
+}
+.menu-item {
   color: rgb(113, 111, 111);
   text-decoration: none;
   border-bottom: 2px solid rgb(113, 111, 111);
+  cursor: pointer;
+}
+.dropdown {
+  transition: all 300ms ease-in-out;
+}
+.dropdown:hover + ul {
+  display: block;
 }

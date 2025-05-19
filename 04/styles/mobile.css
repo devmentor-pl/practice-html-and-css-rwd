@@ -1,6 +1,9 @@
 nav input:checked + ul {
   flex-direction: column;
 }
+nav > ul li input:checked + ul {
+  display: block;
+}
 ul > li > ul {
   display: none;
 }
@@ -21,6 +24,7 @@ nav input:checked + ul {
   border: 0;
   border-top: 5px solid rgb(113, 111, 111);
   position: relative;
+  cursor: pointer;
 }
 .hamburger::before,
 .hamburger::after {

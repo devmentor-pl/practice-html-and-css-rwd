@@ -1,4 +1,4 @@
-nav ul {
+nav > ul {
   display: flex;
 }
 nav input + ul {
