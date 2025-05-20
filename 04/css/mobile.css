@@ -1,0 +1,50 @@
+.nav__menu {
+  display: none;
+  margin: 0 auto;
+  width: fit-content;
+  text-align: left;
+}
+
+.dropdown__link,
+.nav__link {
+  font-size: 1.5rem;
+  color: var(--dropdown-color);
+}
+
+input:checked + .nav__menu {
+  display: block;
+}
+
+input {
+  display: none;
+}
+
+.dropdown {
+  display: block;
+  padding-left: 1rem;
+}
+
+.submenu {
+  display: block;
+  padding-left: 1rem;
+}
+
+/* hamburger icon  */
+.nav__menu__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.nav__menu__hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+}

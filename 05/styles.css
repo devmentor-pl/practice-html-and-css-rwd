@@ -1,0 +1,155 @@
+:root {
+  --color-primary: #ffc107;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  width: 100%;
+  padding: 10px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: end;
+  gap: 6rem;
+}
+
+.header__logo,
+.header__menu {
+  background-color: var(--color-primary);
+  padding: 20px;
+}
+
+.two-columns__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.two-columns__column {
+  background-color: var(--color-primary);
+  padding: 40px 20px;
+}
+
+.three-columns__container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.three-columns__column {
+  background-color: var(--color-primary);
+  padding: 30px 20px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__content {
+  background-color: var(--color-primary);
+  padding: 40px 20px;
+  width: 200px;
+}
+
+.nav__menu {
+  display: none;
+  list-style: none;
+}
+
+input:checked + .nav__menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+}
+
+.nav__link {
+  font-size: 1.5rem;
+  color: var(--dropdown-color);
+}
+
+/* hamburger icon  */
+.nav__menu__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.nav__menu__hamburger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+input {
+  display: none;
+}
+
+@media (min-width: 1000px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .two-columns__container {
+    flex-direction: row;
+  }
+
+  .three-columns__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .three-columns__column {
+    width: 30%;
+  }
+
+  .nav__menu__hamburger {
+    display: none;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav__menu {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,90 @@
+.nav__menu__hamburger {
+  display: none;
+}
+
+.nav {
+  background-color: var(--nav-color);
+}
+
+.nav__menu {
+  display: flex;
+}
+
+.nav__item {
+  position: relative;
+}
+
+.nav__link {
+  /* A transparent border is added to reserve space, preventing layout shifts when the border becomes visible on hover. */
+  border-top: var(--nav-link-border-height) solid transparent;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 20px 25px;
+  font-size: 1rem;
+}
+
+.nav__link:hover {
+  color: var(--active-color);
+  border-top: var(--nav-link-border-height) solid var(--active-color);
+}
+
+.nav__link--active {
+  color: var(--active-color);
+}
+
+.nav__link--has-dropdown::after {
+  content: '>';
+  font-size: var(--icon-size);
+  /* By default, the ::after and ::before pseudo-elements are rendered with display: inline, 
+      which prevents transformations such as rotate() from being applied. To enable rotation and other transformations, 
+      I explicitly set their display to inline-block. */
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: 5px;
+}
+
+.dropdown {
+  position: absolute;
+  background-color: var(--dropdown-color);
+  width: 200px;
+  display: none;
+  list-style: none;
+}
+
+.dropdown__item {
+  position: relative;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 15px 20px;
+  color: var(--nav-color);
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.dropdown__link--has-submenu::after {
+  content: '>';
+  position: absolute;
+  right: 15px;
+  font-size: var(--icon-size);
+}
+
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: var(--dropdown-color);
+  min-width: 200px;
+  display: none;
+  list-style: none;
+}
+
+.nav__item:hover .dropdown {
+  display: block;
+}
+
+.dropdown__item:hover .submenu {
+  display: block;
+}

@@ -1,16 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/global.css" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+  </head>
+  <body>
+    <main class="t">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum.
+      </p>
+    </main>
+    <header class="p">
+      <picture>
+        <source
+          srcset="./assets/woman-with-dogs-mobile.webp"
+          type="image/webp"
+          media="(max-width: 599px)"
+        />
+        <source
+          srcset="./assets/woman-with-dogs-tablet.webp"
+          type="image/webp"
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="./assets/woman-with-dogs-desktop.webp"
+          type="image/webp"
+        />
 
-</body>
+        <img
+          src="./assets/woman--with-dogs-source.jpg"
+          alt="Woman running with two dogs on a field"
+          loading="lazy"
+          width="100%"
+        />
+      </picture>
+    </header>
+    <aside class="v">
+      <iframe
+        src="https://www.youtube.com/embed/jfKfPfyJRdk?si=rZaWQ8QeTYk7cPbF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </aside>
+  </body>
 </html>
