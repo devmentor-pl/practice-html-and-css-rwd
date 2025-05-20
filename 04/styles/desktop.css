@@ -7,3 +7,12 @@ nav input + ul {
 .hamburger {
   display: none;
 }
+.menu-item {
+  position: relative;
+}
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  padding: 30px 0 10px;
+}

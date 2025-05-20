@@ -1,13 +1,7 @@
-nav input:checked + ul {
-  flex-direction: column;
-}
 nav > ul li input:checked + ul {
   display: block;
 }
-ul > li > ul {
-  display: none;
-}
-nav ul {
+nav > ul {
   display: none;
 }
 nav input {
@@ -15,6 +9,12 @@ nav input {
 }
 nav input:checked + ul {
   display: flex;
+  flex-direction: column;
+}
+
+.menu-dropdown {
+  display: none;
+  padding: 30px 0 10px;
 }
 
 .hamburger {

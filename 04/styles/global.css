@@ -11,27 +11,29 @@ ul {
   display: flex;
   background-color: rgb(241, 234, 223);
 }
-nav > ul li {
+nav > ul {
+  padding: 20px 10px;
+}
+li {
   padding: 10px;
 }
-ul > li > ul li:last-child {
-  padding-bottom: 0;
-}
-ul > li > ul li:first-child {
-  padding-top: 20px;
-}
-nav > ul > li ul li {
-  padding-left: 20px;
-}
 .menu-item {
-  color: rgb(113, 111, 111);
-  text-decoration: none;
-  border-bottom: 2px solid rgb(113, 111, 111);
   cursor: pointer;
 }
-.dropdown {
-  transition: all 300ms ease-in-out;
+.menu-item a {
+  color: rgb(113, 111, 111);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
-.dropdown:hover + ul {
+.menu-item a:hover {
+  text-decoration: none;
+}
+.menu-dropdown li {
+  padding-left: 20px;
+}
+.menu-item:hover > .menu-dropdown {
   display: block;
 }
