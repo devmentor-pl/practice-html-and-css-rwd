@@ -1,0 +1,9 @@
+.hamburger-menu {
+  display: none;
+}
+.desktop-menu {
+  display: block;
+  min-width: 300px;
+  min-height: 50px;
+  background-color: #ffca18;
+}
