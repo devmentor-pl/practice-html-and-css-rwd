@@ -13,6 +13,7 @@
 .container {
   max-width: 1000px;
   margin: 4px auto;
+  padding: 10px 0;
 }
 header,
 section {
