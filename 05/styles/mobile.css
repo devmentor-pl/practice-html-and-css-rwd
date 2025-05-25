@@ -3,14 +3,26 @@
   width: 100%;
   display: flex;
 }
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+}
+header input:checked + nav {
+  display: block;
+  height: 300px;
+  width: 100%;
+  background-color: #d40a9b;
+}
 .header__container {
   justify-content: end;
   align-items: center;
   gap: 30px;
+  position: relative;
 }
 .logo {
   min-height: 50px;
-  width: 220px;
+  width: 150px;
   background-color: #ffca18;
   margin: 5px;
 }
@@ -37,6 +49,7 @@
   transform: translateY(25px);
 }
 article {
+  width: 100%;
   min-height: 300px;
   background-color: #ffca18;
 }
@@ -45,6 +58,7 @@ article {
   gap: 12px;
 }
 .section__container div {
+  width: 100%;
   min-height: 200px;
   background-color: #ffca18;
 }
@@ -53,7 +67,7 @@ article {
 }
 .footer__container div {
   background-color: #ffca18;
-  width: 200px;
+  width: 120px;
   min-height: 40px;
   margin: 5px;
 }
