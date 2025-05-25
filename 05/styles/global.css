@@ -4,10 +4,13 @@
   padding: 0;
 }
 .container {
-  border: 2px solid #04a7f3;
+  border: 5px solid #04a7f3;
 }
 header,
 section,
 footer {
-  border: 2px solid #0dd144;
+  border: 5px solid #0dd144;
+}
+header input {
+  display: none;
 }
