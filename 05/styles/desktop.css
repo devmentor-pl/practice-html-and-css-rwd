@@ -7,3 +7,23 @@
   min-height: 50px;
   background-color: #ffca18;
 }
+.header__container {
+  justify-content: space-between;
+}
+.container {
+  max-width: 1000px;
+  margin: 4px auto;
+}
+header,
+section {
+  margin-bottom: 8px;
+}
+.section__container {
+  flex-direction: row;
+}
+.section__container > article:first-of-type {
+  order: 1;
+}
+.section__container > div:first-of-type {
+  order: 1;
+}
