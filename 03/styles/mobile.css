@@ -1,9 +1,13 @@
 /* mobile css */
+img {
+  display: block;
+}
 picture,
 picture img {
   max-width: 100%;
   width: 100%;
   height: auto; /* Zachowuje proporcje obrazu */
+  aspect-ratio: 4/3;
 }
 side {
   display: block;
