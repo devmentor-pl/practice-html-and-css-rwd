@@ -11,7 +11,7 @@ ul {
   display: flex;
   list-style: none;
 }
-nav > ul {
+.menu {
   padding: 20px 10px;
 }
 li {
