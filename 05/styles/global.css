@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+        min-height: 100px;
+        padding: 10px;
+        position: relative;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  padding: 10px;
+  top: 100%;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#menu-hamburger {
+  display: none;
+}

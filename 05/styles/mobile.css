@@ -1,0 +1,54 @@
+@media (max-width: 800px) {
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+     .hamburger {
+        display: block;
+     }
+
+     .menu {
+        display: none;
+        position: absolute;
+        top: 1.5rem;
+        right: 3.5rem; 
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+        margin-right: 2rem;
+        z-index: 1;
+     }
+
+     #menu-hamburger:checked + .hamburger + nav .menu {
+        display: flex;
+     }
+
+     .menu-item {
+        position: relative;
+        justify-content: center;
+        align-items: center;
+     }
+
+     .submenu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        flex-direction: column;
+        display: none;
+        z-index: 2;
+     }
+
+     .submenu-item {
+        padding: 0.5rem 1rem;
+        list-style:disc;
+     }
+
+     .menu-item:hover .submenu {
+         display: flex;
+     }
+}
