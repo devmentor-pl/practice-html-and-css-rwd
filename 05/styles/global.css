@@ -36,3 +36,19 @@ header {
 #menu-hamburger {
   display: none;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightblue;
+    min-height: 50px;
+    margin-top: 0.5rem;
+}
+
+footer a {
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+}

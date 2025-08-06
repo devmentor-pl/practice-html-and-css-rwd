@@ -32,6 +32,7 @@
         position: relative;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
      }
 
      .submenu {
@@ -41,11 +42,15 @@
         flex-direction: column;
         display: none;
         z-index: 2;
+        border: none;
+        background-color: white;
+        border-radius: 5px;
      }
 
      .submenu-item {
         padding: 0.5rem 1rem;
-        list-style: disc;
+        list-style: none;
+        cursor: pointer;
      }
 
      .menu-item:hover .submenu {
@@ -57,13 +62,9 @@
         justify-content: center;
         flex-direction: column;
         gap: 1rem;
-        width: 100%;
         
-
      }
      .section-double--item {
-        
-        max-width: 1000px;
         min-height: 35vh;
         background-color: antiquewhite; 
      }
@@ -72,15 +73,14 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        margin-top: 1rem;
         gap: 1rem;
 
      }
 
      .section-triple--item {
-        max-width: 1000px;
         min-height: 25vh;
         background-color: lavenderblush;
-    
      }
+
+     
 }
