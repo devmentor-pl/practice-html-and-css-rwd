@@ -1,0 +1,40 @@
+nav > ul li input:checked + ul {
+  display: block;
+}
+nav > ul {
+  display: none;
+}
+nav input {
+  display: none;
+}
+nav input:checked + ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-dropdown {
+  display: none;
+}
+
+.hamburger {
+  background: transparent;
+  border: 0;
+  border-top: 5px solid rgb(113, 111, 111);
+  cursor: pointer;
+  height: 35px;
+  position: relative;
+  width: 40px;
+}
+.hamburger::before,
+.hamburger::after {
+  border-top: 5px solid rgb(113, 111, 111);
+  content: "";
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(10px);
+  width: 100%;
+}
+.hamburger::after {
+  transform: translateY(25px);
+}

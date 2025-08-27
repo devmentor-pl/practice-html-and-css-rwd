@@ -1,0 +1,25 @@
+/* mobile css */
+img {
+  display: block;
+}
+picture,
+picture img {
+  max-width: 100%;
+  width: 100%;
+  height: auto; /* Zachowuje proporcje obrazu */
+  aspect-ratio: 4/3;
+}
+side {
+  display: block;
+  height: 0;
+  padding-bottom: calc(315 / 560 * 100%);
+  position: relative;
+  width: 100%; /* domyślnie */
+}
+iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}

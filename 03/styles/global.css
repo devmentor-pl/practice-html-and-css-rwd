@@ -1,26 +1,29 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.p, .t, .v {
-    border: 3px solid transparent;
-    min-height: 50px;
+.p,
+.t,
+.v {
+  border: 3px solid transparent;
+  min-height: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .p {
-    border-color: #ffffba
+  border-color: #ff00bb;
+  aspect-ratio: 4/3;
 }
 
 .t {
-    border-color: #ffdfba;
+  border-color: #ffdfba;
 }
 
 .v {
-    border-color: #baffc9;
+  border-color: #baffc9;
 }

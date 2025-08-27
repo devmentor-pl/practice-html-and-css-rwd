@@ -1,0 +1,30 @@
+.hamburger-menu {
+  display: none;
+}
+.desktop-menu {
+  display: block;
+  min-width: 300px;
+  min-height: 50px;
+  background-color: #ffca18;
+}
+.header__container {
+  justify-content: space-between;
+}
+.container {
+  max-width: 1000px;
+  margin: 4px auto;
+  padding: 10px 0;
+}
+header,
+section {
+  margin-bottom: 8px;
+}
+.section__container {
+  flex-direction: row;
+}
+.section__container > article:first-of-type {
+  order: 1;
+}
+.section__container > div:first-of-type {
+  order: 1;
+}

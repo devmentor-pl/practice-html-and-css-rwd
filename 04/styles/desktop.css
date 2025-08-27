@@ -1,0 +1,22 @@
+nav > ul {
+  display: flex;
+}
+nav input + ul {
+  flex-direction: row;
+}
+.hamburger {
+  display: none;
+}
+.menu-item {
+  position: relative;
+}
+.menu-dropdown {
+  display: none;
+  left: 0;
+  top: 0;
+  padding-top: 40px;
+  position: absolute;
+}
+.menu-dropdown li {
+  min-width: 250px;
+}
