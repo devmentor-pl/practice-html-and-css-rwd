@@ -1,0 +1,109 @@
+
+ @media (max-width: 760px){
+ .menu {
+    display: none;
+    flex-direction: column;
+ }
+
+ .menu-item {
+    list-style: none;
+    padding: 1rem;
+    width: 50%;
+ }
+
+ .menu-item a:hover {
+    color: #54BBEA;
+    font-weight: bold;
+ }
+
+ .menu-item a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+ }
+
+ .submenu {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 50%;
+    border-radius: 5px;
+    width: max-content;
+    list-style: circle;
+ }
+
+ .has-submenu {
+    position: relative;
+ }
+
+ .has-submenu:hover > .submenu {
+    display: flex;
+ }
+
+ .submenu-item {
+    padding: 0.5rem 0;
+ }
+
+ .submenu-item a {
+    color: black;
+ }
+
+ input:checked + label + .menu {
+    display: flex;
+ }
+
+ label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    margin: 2rem;
+ }
+
+ input {
+    display: none;
+ }
+
+ .hamburger {
+    display: block
+ }
+
+ .hamburger {
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid black;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+}
+
+.hamburger::before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+    transform: translateY(10px);
+}
+
+.hamburger:after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+    
+}
+
+}
