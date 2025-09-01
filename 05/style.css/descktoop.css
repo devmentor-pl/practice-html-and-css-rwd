@@ -1,0 +1,82 @@
+@media (min-width: 1000px) {
+
+    .header {
+        height: 10vh
+
+        
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .blue {
+        padding: 10px 0;
+    }
+    /* Header */
+    .burger-icon{
+        display: none;
+    }
+    
+    
+    .header .container {
+        display: flex;
+        justify-content: flex-end;
+       
+    }
+
+    .nav {
+        width: 40%;
+        text-align: center;
+    }
+
+    /* Main */
+
+    .main {
+        height: 40vh;
+    }
+
+   .section-main {
+        display: flex;
+        justify-content: space-between;
+        height: 100%
+
+   }
+
+   .main-article {
+        min-width: 48%;
+        margin: 0;
+   }
+
+   /* Comment section */
+
+   .section-comments {
+    height: 40vh;
+   }
+
+   .comments {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+   }
+   
+   .comment {
+    min-width: 30%;
+   }
+
+   /* Footer */
+
+   .footer {
+    height: 10vh
+   }
+
+   .section-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .footer-text {
+    width: 20%;
+   }
+}

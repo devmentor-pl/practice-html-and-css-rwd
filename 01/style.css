@@ -20,4 +20,6 @@
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
     border-bottom-color: transparent;    
+
+    shape-outside: polygon( 30% 0%, 100% 0%, 0% 100%, 0% 0%); 
 }

@@ -23,4 +23,21 @@
 
 .v {
     border-color: #baffc9;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.v iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.p img {
+    max-width: 100%;
+    min-height: 100%;
+    height: 50vh;
 }

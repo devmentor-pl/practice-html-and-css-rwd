@@ -1,0 +1,16 @@
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 51% 1fr;
+        grid-template-areas: 
+        "p t"
+        "v t";
+    }
+
+
+    .p { grid-area: p; }
+    .t { grid-area: t; }
+    .v { grid-area: v; }
+}

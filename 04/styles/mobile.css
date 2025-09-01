@@ -1,0 +1,50 @@
+.nav {
+  background: #333;
+  color: white;
+  position: relative;
+}
+
+
+.menu-icon {
+    display: block;
+    font-size: 2rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media(max-width: 800px) {
+    .menu-toggle {
+        display: none;
+    }
+    
+    
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+    
+    
+    .menu-toggle:checked ~ .menu {
+        display: flex;
+    }
+    
+    
+    .menu li a {
+        display: flex;
+        padding: 1rem;
+        border-bottom: 1px solid #444;
+        font-size: 2rem;
+        justify-content: center;
+    }
+    
+   
+    .submenu {
+        display: none;
+        padding-left: 1rem;
+    }
+    
+    .menu li:focus-within > .submenu {
+        display: block;
+    }
+}

@@ -4,10 +4,10 @@
     box-sizing: border-box;
 }
 
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +23,21 @@
 
 .c {
     border-color: #baffc9;
+}
+
+
+@media(min-width: 600px) {
+  body {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto; 
+    grid-template-rows: 50% 1fr;
+    grid-template-columns: 50% 50%;
+      grid-template-areas:
+      "a a"
+      "c b"; 
+}
+    .a { grid-area: a; }
+    .b { grid-area: b; }
+    .c { grid-area: c; }
 }

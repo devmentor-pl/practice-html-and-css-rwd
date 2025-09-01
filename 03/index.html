@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quod nam consectetur error iure omnis velit asperiores eos voluptates ullam iste totam quaerat labore expedita quidem obcaecati, illum quasi dicta?</main>
+    <header class="p">
+        <picture>
+            <source
+                srcset="./images/img-2000x1125.jpg"
+                media="(min-width: 1200px)"
+            >
+            <source
+                srcset="./images/img-1200x675.jpg"
+                media="(min-width: 600px)"
+            >
+
+            <source
+                srcset="./images/img-600x338.jpg"
+                media="(max-width: 599px)"
+            >
+
+            <img src="./images/fallback.jpg" alt="fallback">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe  src="https://www.youtube.com/embed/sdQGqO9xuao?si=stU8gcrR6vkP_W9t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.green {
+    width: 100%;
+    border: 2px solid #2ecc71; 
+}
+
+.blue {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 2px solid #3498db; 
+}
+
+
+.orange {
+    background: #f39c12;
+    min-height: 50px;
+}

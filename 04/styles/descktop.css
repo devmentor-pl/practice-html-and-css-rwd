@@ -1,0 +1,47 @@
+@media (min-width: 801px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none;
+  } 
+
+    .menu {
+        display: flex; 
+        justify-content: flex-end;
+        gap: 20px; 
+  
+
+} 
+
+    .menu li {
+        display: flex;
+        position: relative; 
+}
+
+    .menu li a {
+        display: flex;
+        padding: 10px 15px;
+        color: #fff;
+        background: #333;
+ }
+
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #444;
+        width: 200px;
+  }
+
+    .submenu li a {
+        padding: 0.75rem;
+  }
+
+  
+    .menu li:hover > .submenu {
+        display: block;
+  }
+}

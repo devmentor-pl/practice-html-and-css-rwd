@@ -1,0 +1,22 @@
+@media (max-width: 599px) {
+    body {
+        display: grid;
+        min-height: 100vh;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "p"
+        "t"
+        "v";
+    }
+
+
+    .p { grid-area: p; }
+    .t { grid-area: t; }
+    .v { grid-area: v; }
+
+    .v{
+        height: 30vh;
+    }
+
+}
