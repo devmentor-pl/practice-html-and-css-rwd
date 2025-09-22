@@ -1,0 +1,33 @@
+/* HEADER  */
+nav {
+	display: flex;
+	column-gap: 2em;
+	justify-content: space-between;
+}
+
+nav input:checked + .menu,
+nav .menu {
+	display: block;
+	justify-self: center;
+	grid-column: 2 / 3;
+	grid-row: 1/2;
+	max-width: 300px;
+}
+
+nav label {
+	display: none;
+}
+
+nav .logo {
+	max-width: 300px;
+}
+
+/* SECTION ONE  */
+.section-one .wrapper {
+	grid-template-columns: 1fr 1fr;
+}
+
+/* SECTION TWO  */
+.section-two .wrapper {
+	grid-template-columns: 1fr 1fr 1fr;
+}

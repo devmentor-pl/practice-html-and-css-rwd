@@ -1,0 +1,115 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation {
+	background-color: rgb(79, 79, 79);
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+
+.navigation label {
+	background-color: rgb(200, 200, 200);
+	display: block;
+	width: 40px;
+	height: 40px;
+	border: 1px solid rgb(100, 100, 100);
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 10px;
+}
+
+.navigation label::before {
+	content: '';
+	display: block;
+	width: 70%;
+	height: 30%;
+	border-top: 3px solid rgb(100, 100, 100);
+	border-bottom: 1.5px solid rgb(100, 100, 100);
+	position: relative;
+	top: 20%;
+	left: 15%;
+}
+
+.navigation label::after {
+	content: '';
+	display: block;
+	width: 70%;
+	height: 30%;
+	border-top: 1.5px solid rgb(100, 100, 100);
+	border-bottom: 3px solid rgb(100, 100, 100);
+	position: relative;
+	top: 20%;
+	left: 15%;
+}
+
+.navigation input {
+	display: none;
+}
+
+.navigation a {
+	text-decoration: none;
+	color: rgb(200, 200, 200);
+	display: block;
+	padding: 1em 1em;
+	border-bottom: 1px solid rgb(90, 90, 90);
+}
+
+.navigation a:hover {
+	background-color: rgb(200, 200, 200);
+	color: rgb(79, 79, 79);
+}
+
+.navigation ul {
+	display: none;
+	list-style-type: none;
+}
+
+.navigation input:checked + ul {
+	display: block;
+}
+
+.navigation .dropdown-menu {
+	display: block;
+}
+
+.navigation ul {
+	background-color: rgb(100, 100, 100);
+}
+
+.navigation .dropdown-menu a {
+	padding-left: 2em;
+}
+
+@media (min-width: 630px) {
+	.navigation {
+		display: flex;
+		justify-content: center;
+		font-size: 1.3em;
+	}
+	.navigation label {
+		display: none;
+	}
+
+	.navigation input:checked + ul,
+	.navigation > ul {
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		column-gap: 2em;
+		padding: 0 2em;
+	}
+
+	.navigation .dropdown-menu {
+		display: none;
+	}
+
+	.navigation li:hover .dropdown-menu {
+		display: block;
+		position: absolute;
+	}
+}
