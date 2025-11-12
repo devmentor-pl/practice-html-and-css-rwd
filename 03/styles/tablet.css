@@ -1,0 +1,8 @@
+body {
+    grid-template: repeat(2, minmax(200px, 50vh)) / repeat(2, 1fr);
+}
+
+.t {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}

@@ -4,10 +4,17 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
+body {
+    display: grid;
+    grid-template: repeat(3, 50vh) / minmax(min-content, 1200px);
+    justify-content: center;
+}
+
+.a,
+.b,
+.c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,5 +29,21 @@
 }
 
 .c {
+    order: 1;
     border-color: #baffc9;
+}
+
+@media (max-width: 599px) {
+
+    body {
+        grid-template: repeat(2, 50vh) / 1fr 1fr;
+    }
+
+    .a {
+        grid-column: 1 / span 2;
+    }
+
+    .c {
+        order: initial;
+    }
 }

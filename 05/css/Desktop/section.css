@@ -1,0 +1,26 @@
+.section__article--third {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+
+.section__article--third .section__container {
+    position: absolute;
+    top: 60%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: 50%;
+    height: 0;
+    padding-bottom: calc(405 / 640 * 50%);
+}
+
+
+
+
+.section__article--third .section__text {
+    padding: 0 5rem;
+    text-align: center;
+}

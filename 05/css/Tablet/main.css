@@ -1,0 +1,9 @@
+.main {
+    padding: 4rem;
+}
+
+.main__article--first,
+.main__article--second {
+    padding: 5rem 0;
+    height: 100%;
+}

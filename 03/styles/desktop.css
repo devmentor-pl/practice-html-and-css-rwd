@@ -1,0 +1,9 @@
+body {
+    grid-template: repeat(2, minmax(200px, 50vh)) / repeat(2, minmax(min-content, 700px));
+    justify-content: center;
+}
+
+.t {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
