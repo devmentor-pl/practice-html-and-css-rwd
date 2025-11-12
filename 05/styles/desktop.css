@@ -1,0 +1,84 @@
+/* base */
+
+body {
+    max-width: 100vw;
+}
+
+header, section, footer {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+div {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* header */
+
+header {
+    min-height: 15%;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    display: none;
+}
+
+h1 {
+    margin-left: 0;
+    width: 20%;
+}
+
+nav {
+    margin-right: 0;
+    width: 40%;
+    height: 80%;
+}
+
+/* sections */
+
+section {
+   min-height: 40%;
+}
+
+header + section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    align-items: center;
+}
+
+header + section div p {
+    height: 90%;
+    width: 50%;
+}
+
+section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section div p {
+    height: 94%;
+    width: 32%;
+}
+
+/* footer */
+
+footer {
+    min-height: 100px;
+}
+
+footer p {
+    width: 20%;
+    height: 60%;
+}
+
