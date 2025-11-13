@@ -7,20 +7,44 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: element-a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: element-b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: element-c;
+}
+
+body {
+    display: grid;
+    grid-template-areas: 
+        "element-a"
+        "element-b"
+        "element-c";
+    
+}
+
+@media(min-width: 601px) {
+    body {
+        display: grid;
+        grid-template-areas: 
+            ". element-a element-a ."
+            ". element-c element-b .";
+        max-width: 1200px;
+        margin: 0 auto;
+        
+    }
 }

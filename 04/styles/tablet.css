@@ -1,0 +1,51 @@
+@media(min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+
+    body {
+        font-size: 22px;
+    }
+
+    :root {
+        --maxContentWidth: 1000px;
+    }
+
+    .gridContainer {
+        display: grid;
+        grid-template-areas: 
+            ".start-c offer-c contact-c.";
+        max-width: var(--maxContentWidth);
+        margin: 0 auto;
+        grid-template-columns: auto calc(var(--maxContentWidth) / 4) 1fr calc(var(--maxContentWidth) / 4) auto;
+    }
+
+    .gridStart {
+        grid-area: start-c;
+    }
+
+    .gridOffer {
+        grid-area: offer-c;
+    }
+
+    .gridContact {
+        grid-area: contact-c;
+    }
+
+    .navigation__hamburger, .navigation__dropdownContainer {
+        display: none;
+    }
+
+    .offerElement:hover + .navigation__dropdownContainer {
+        display: block;
+    }
+
+    .navigation__linkElement--shifted {
+        margin-left: 0;
+    }
+
+}

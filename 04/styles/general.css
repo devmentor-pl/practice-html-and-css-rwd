@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navigation__liContainer, .navigation__dropdownContainer {
+    list-style: none;
+}
+
+.navigation__linkElement {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navigation__dropdownContainer li:last-child, .navigation__liContainer> li:nth-child(2) {
+    /* display: none; */
+}
