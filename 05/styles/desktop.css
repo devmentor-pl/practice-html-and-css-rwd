@@ -1,0 +1,30 @@
+.navbar__hamburger {
+  display: none;
+}
+
+.navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.navbar__list-item {
+  padding: 0 5px;
+}
+.navbar__list-link:hover {
+  color: #ffc900;
+}
+
+.container__section-1,
+.container__section-2 {
+  display: flex;
+}
+
+.container__section-2 {
+  display: flex;
+  gap: 20px;
+}
+section .section-2__text {
+  text-align: justify;
+}

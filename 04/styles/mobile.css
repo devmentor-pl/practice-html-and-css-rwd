@@ -1,0 +1,41 @@
+.navbar__hamburger {
+  display: block;
+}
+.navbar__list {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.navbar__list-item {
+  display: block;
+  font-size: 1.5rem;
+  padding: 10px;
+  background-color: #272727;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar__list-item::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #ffffff;
+  margin-bottom: 0;
+  top: 100%;
+}
+.navbar__link {
+  text-decoration: none;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.navbar__link--sublink {
+  padding-left: 30px;
+}
+#navbar__hamburger-toggle:checked ~ .navbar__list {
+  display: flex;
+}
