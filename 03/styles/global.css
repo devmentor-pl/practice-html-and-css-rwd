@@ -3,24 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    
+    display: grid;
+ 
+}
 
 .p, .t, .v {
     border: 3px solid transparent;
-    min-height: 50px;
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
+    display: grid;
+
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #d65418;
+    
 }
 
 .t {
-    border-color: #ffdfba;
+    border-color: #183ed6;
+    
+
 }
 
 .v {
-    border-color: #baffc9;
+    border-color: #11ae33;
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+iframe{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+   
+}
+
+img{
+    width: 100%;
 }

@@ -4,20 +4,24 @@
     box-sizing: border-box;
 }
 
-.content {
-    background-color: #fff;
-    min-height: 320px;
-    min-width: 320px;
-    max-width: 600px;
+p {
+    width: 1200px;
     text-align: justify;
-}
-
-.content::before {
+    word-wrap: break-word; /* Zapewnia zawijanie słów, jeśli nie mieszczą się w linii */
+    white-space: normal; /* Usuwa dodatkową przestrzeń między słowami i zezwala na zawijanie tekstu */
+    max-width: 100%; /* Ustala maksymalną szerokość paragrafu w zależności od szerokości okna przeglądarki */
+    }
+    
+p::before {
+    background-color: white;
+    content: '';
+    shape-outside: polygon(100% 0, 0% 100%, 0 0);
     float: left;
     display: block;
     content: '';
-    height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
-}
+    border-bottom-color: transparent;  
+     
+  }
+

@@ -9,12 +9,19 @@ Nadszedł czas na przygotowanie responsywnego menu.
 Będziemy mieli 2 wersje jego wyglądu:
 
 - **mobilną**: 
+
     - elementy menu są umieszczone jeden pod drugim i zajmują całą szerokość okna przeglądarki,
+
     - są widoczne dopiero po kliknięciu w ikonę "[hamburgera](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScriptu),
+
     - im bardziej zagnieżdżone elementy, tym bardziej odsunięte są od lewej krawędzi.
+
 - **normalną**: 
+
     - elementy menu umieszczone są obok siebie w poziomie,
+
     - tylko pierwszy poziom widoczny jest od razu,
+    
     - drugi poziom menu dostępny jest dopiero po najechaniu na rodzica:
         - elementy występujące w rodzicu wyświetlane są jeden pod drugim,
         - całość wyświetla się pod rodzicem.

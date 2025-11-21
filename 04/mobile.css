@@ -1,0 +1,167 @@
+ 
+    @font-face {
+        font-family: 'Source Sans PRO';
+        src: url(source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+    }
+    
+    @media (max-width: 2000px){
+    body{
+        max-width: 2000px;
+        background-color: rgb(224, 226, 227);
+      
+    }
+
+    label{
+        place-self: center;
+        width: 50px;
+        height: 35px;
+        border: 0;
+        border-top: 5px solid rgb(11, 10, 10);
+        border-bottom: 3px;
+        background-color: transparent;
+        position: relative;
+    }
+    
+    label::before, label::after{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-top: 5px solid  rgb(11, 10, 10);
+        transform: translateY(10px);
+    }
+    
+    label::after{
+        transform: translateY(25px);
+    }
+
+    nav {
+        background-color: rgb(201, 174, 174);
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+        margin-left: 10px;
+        max-width: 50%;  
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0; 
+        display:none;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode'
+        
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 5px 0; /* Odpowiednie marginesy, aby oddzielać elementy */
+        width: 100%;
+        height: 100px;
+    }
+    nav input:checked + ul{
+        display: block;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    nav label{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    nav input{
+        display: none;
+    }
+    nav ul li ul {
+        display: none; /* Ukryj submenu */
+    }
+    
+    nav ul li:hover ul {
+        display: block; /* Pokaż submenu po najechaniu myszą */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333; /* Kolor tekstu linku */
+    }
+    
+    nav ul li ul li {
+        margin: 5px 0; /* Odpowiednie marginesy w submenu */
+    }
+
+    /*a[href]::after{
+        content: '';
+        display: inline-block;
+        position: relative;
+        left: 20%;
+        border: 7px solid transparent;
+        border-top-color: rgb(42, 74, 221);
+        vertical-align: middle;
+    }
+    
+    li a[href]::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        border: 7px solid transparent;
+        border-left-color: rgb(252, 252, 252);
+        vertical-align: middle;
+    }
+    }
+
+    /*ul {
+        position: relative;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        cursor: pointer;
+    }
+    
+    ul:hover{
+        border-top: solid;
+        border-color: rgb(42, 74, 221);
+        color:rgb(42, 74, 221);
+    }
+    
+    ul:first-child{
+        color: rgb(42, 74, 221);
+        border: none;
+    }
+    
+   
+    nav ul li ul li a{
+        display: none;
+    }
+
+    nav ul li ul li:hover > a{
+        display: block;
+        position: relative;
+
+    }
+    
+    a[href]::after{
+        content: '';
+        display: inline-block;
+        position: relative;
+        left: 20%;
+        border: 7px solid transparent;
+        border-top-color: rgb(42, 74, 221);
+        vertical-align: middle;
+    }
+    
+    li a[href]::after {
+        content: '';
+        display: inline-block;
+        position: relative;
+        left: 40%;
+        border: 7px solid transparent;
+        border-left-color: rgb(252, 252, 252);
+        vertical-align: middle;
+    }
+}
