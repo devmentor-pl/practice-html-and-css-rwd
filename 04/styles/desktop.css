@@ -1,0 +1,84 @@
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+}
+nav {
+  margin: 10px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.list-first-level {
+  display: flex;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+.list-first-level > li {
+  text-transform: uppercase;
+  position: relative;
+  width: 120px;
+}
+.arrow-down {
+  padding: 5px;
+  transform: rotate(90deg);
+}
+.list-second-level {
+  position: absolute;
+}
+.icon-down::after {
+  content: '>';
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 10px;
+  transform: rotate(90deg);
+}
+.icon-right::after {
+  content: '>';
+  display: inline-block;
+  padding-left: 110px;
+}
+.list-second-level > li {
+  position: relative;
+}
+.list-second-level > li {
+  text-transform: capitalize;
+  background-color: #333333;
+  color: #ffffff;
+  width: 250px;
+  padding-left: 20px;
+  text-align: left;
+}
+.list-second-level-item {
+  position: relative;
+}
+.item-first-level:first-child {
+  color: #009ae1;
+}
+.item-first-level:hover {
+  box-shadow: 0px 2px 0px #009ae1 inset;
+  color: #009ae1;
+}
+.dropdown-item {
+  display: none;
+}
+.dropdown {
+  transition: opacity 2s ease-out;
+}
+.dropdown:hover > .dropdown-item {
+  display: block;
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+label,
+input {
+  display: none;
+}

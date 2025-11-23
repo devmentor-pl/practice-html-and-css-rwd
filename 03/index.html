@@ -1,16 +1,84 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+    <link
+      rel="stylesheet"
+      href="./styles/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/global.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/decktop.css"
+    />
+  </head>
+  <body>
+    <main class="t">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur culpa
+        sint sit saepe quisquam, cum illum provident dignissimos voluptates
+        atque iure consectetur nihil non maxime dicta facilis aspernatur,
+        ratione nesciunt. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Tenetur culpa sint sit saepe quisquam, cum illum provident
+        dignissimos voluptates atque iure consectetur nihil non maxime dicta
+        facilis aspernatur, ratione nesciunt. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Tenetur culpa sint sit saepe quisquam, cum
+        illum provident dignissimos voluptates atque iure consectetur nihil non
+        maxime dicta facilis aspernatur, ratione nesciunt.
+      </p>
+    </main>
+    <header class="p">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/jason-ryan-2400x1597-grand.jpg"
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="./images/jason-ryan-1920x1277-moyenne.jpg"
+        />
+        <source
+          media="(max-width: 599px)"
+          srcset="./images/jason-ryan-640x425-petit.jpg"
+        />
+        <img
+          src="./images/jason-ryan-640x425-petit.jpg"
+          alt="mountains"
+        />
+      </picture>
+    </header>
+    <side class="v">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SG5Sb5WTV_g"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </side>
+  </body>
 </html>
