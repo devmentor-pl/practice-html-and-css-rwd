@@ -1,0 +1,13 @@
+body {
+	display: grid;
+	grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr);
+}
+
+.t {
+   grid-column: 2;
+   grid-row: 1 / 4;
+}
+
+.p {
+    grid-row-start: 1;
+}

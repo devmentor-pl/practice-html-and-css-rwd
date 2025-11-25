@@ -1,0 +1,63 @@
+.nav__item, .offer__item {
+    background: #333;
+    margin: 5px;
+    padding: 10px;
+}
+
+.offer__item {
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    
+    width: 140px;
+}
+
+.nav__link, .offer__link {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav__menu {
+    margin-top: 80px;
+    display: none;
+    text-align: center;
+}
+
+.offer__list {
+    display: none;
+    font-size: 12px;
+    text-align: right;
+}
+
+.nav-btn:checked + .nav__menu {
+    display: block;
+}
+
+.offer__list:hover {
+    display: block;
+}
+
+.icon-burger {
+    font-size: 50px;
+}
+
+.nav-btn {
+    display: none;
+}
+
+.nav-label {
+    position: absolute;
+    padding: 10px;
+    left: 15px;
+    top: 5px;
+}
+
+.nav__item:hover > .offer__list {
+	display: flex;
+    justify-content: center;
+} 
+
+a {
+    color: #fff;
+}
+

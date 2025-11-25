@@ -1,30 +1,54 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
-
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #04</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/0483d26784.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/global.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" media="(min-width: 761px)" href="./css/tablet.css" />
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<label for="menu-switcher" class="nav-label"
+					><i class="fas fa-hamburger icon-burger"></i
+				></label>
+				<input type="checkbox" id="menu-switcher" class="nav-btn" />
+				<ul class="nav__menu">
+					<li class="nav__item">
+						<a href="#" class="nav__link">start</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link"
+							>oferta <i class="fas fa-sort-down"></i
+						></a>
+						<ul class="offer__list">
+							<li class="offer__item">
+								<a href="#" class="offer__link">strony internetowe</a>
+							</li>
+							<li class="offer__item">
+								<a href="#" class="offer__link">pozycjonowanie stron www</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link">kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
 </html>

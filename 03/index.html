@@ -1,16 +1,61 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #03</title>
+		<link rel="stylesheet" href="./styles/reset.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
+		<link
+			rel="stylesheet"
+			media="(min-width: 600px)"
+			href="./styles/tablet.css"
+		/>
+		<link
+			rel="stylesheet"
+			media="(min-width: 1100px)"
+			href="./styles/desktop.css"
+		/>
+	</head>
+	<body>
+		<header class="t">
+			<p>
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim velit
+				recusandae harum ducimus aspernatur perferendis explicabo facilis
+				incidunt at ipsum!
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sequi,
+				perspiciatis tempora ipsum, recusandae ipsa officiis soluta dignissimos
+				quo magnam repellendus eligendi deserunt cum explicabo, aliquam
+				excepturi incidunt autem. Veniam?
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad officia vero
+				in ipsam quidem eius necessitatibus, sit id reiciendis commodi
+				distinctio omnis voluptatum inventore facere laboriosam. Error eius
+				accusantium saepe facilis! Placeat itaque fuga, veniam fugit commodi
+				odit id, ea nostrum accusamus consequuntur a! Repellat odio atque magni
+				modi! Odit.
+			</p>
+		</header>
+		<main class="p">
+			<picture>
+				<source srcset="./img/mountainsSM.jpg" media="(max-width: 300px)" />
+				<source srcset="./img/mountainsMD.jpg" media="(min-width: 600px)" />
+				<img src="./img/mountainsMD.jpg" alt="mountains view" />
+			</picture>
+		</main>
 
-</body>
+		<footer class="v">
+			<iframe
+				src="https://www.youtube.com/embed/vPB3V1gcUXc"
+				title="YouTube video player"
+				frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen
+			></iframe>
+		</footer>
+	</body>
 </html>
