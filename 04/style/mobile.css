@@ -1,0 +1,85 @@
+.nav {
+	padding: 1rem;
+}
+
+.nav__list {
+	display: none;
+	flex-direction: column;
+	padding-left: 0.2rem;
+}
+
+.nav__item {
+	margin: 1px 0;
+	background-color: #fff;
+}
+
+.nav__dropdown {
+	display: block;
+	position: relative;
+	margin-top: 0.3rem;
+}
+
+.dropdown__item {
+	background-color: #fff;
+}
+
+.nav__link--off::after {
+	display: inline;
+	content: '';
+}
+
+.nav__item:hover .nav__link,
+.dropdown__item:hover .dropdown__link {
+	color: greenyellow;
+}
+
+.nav__item:hover,
+.dropdown__item:hover {
+	color: greenyellow;
+	background-color: #fff;
+}
+
+.hamburger {
+	display: block;
+	position: relative;
+	width: 40px;
+	height: 35px;
+	border: 0;
+	border-top: 5px solid #000;
+	background: transparent;
+	transition: 0.3s transform linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-top: 5px solid #000;
+	transform: translateY(10px);
+}
+
+.hamburger::after {
+	transition: 0.3s transform linear;
+	transform: translateY(25px);
+}
+
+input:checked ~ .nav__list {
+	display: block;
+}
+
+.hamburger--toggle:checked ~ .hamburger {
+	border: none;
+	transform: rotate(45deg) translateY(5px);
+}
+
+.hamburger--toggle:checked ~ .hamburger::after {
+	transform: rotate(-90deg) translateX(-15px);
+}
+
+.hamburger--toggle:checked ~ .hamburger::before {
+	transform: translateY(15px);
+}

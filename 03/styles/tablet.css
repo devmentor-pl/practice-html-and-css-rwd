@@ -1,0 +1,15 @@
+body {
+	grid-template-columns: minmax(200px, 50%) 1fr;
+	/* grid-template-areas: 
+    "p t"
+    "v t"; */
+}
+
+.t {
+	grid-area: 1/2/3/3;
+}
+
+.p,
+.v {
+	align-self: center;
+}

@@ -1,0 +1,39 @@
+/* header */
+
+.header {
+    margin-bottom: 1rem;
+}
+
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__heading {
+    margin: 0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav__list {
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+/* main */
+
+.article__section-one {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5rem;
+}
+
+.article__section-two {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+}

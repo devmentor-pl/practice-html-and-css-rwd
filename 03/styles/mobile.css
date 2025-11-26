@@ -1,0 +1,12 @@
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	/* grid-template-areas: 
+    "t"
+    "p"
+    "v"; */
+}
+
+.p {
+	order: -1;
+}
