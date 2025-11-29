@@ -1,0 +1,11 @@
+body {
+    background-color: #da6600;
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+        "p"
+        "t"
+        "v";
+    grid-template-rows:
+    minmax(min-content, max-content) auto auto;
+}
