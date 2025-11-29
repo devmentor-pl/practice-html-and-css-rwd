@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+header ul {
+    background-color: rgb(228, 231, 234);
+}
+
+nav {
+    background-color: rgb(205, 215, 223);
+}
+
+nav a {
+    text-decoration: none;
+    color: #494040;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+}
+

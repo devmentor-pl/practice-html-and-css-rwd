@@ -1,0 +1,33 @@
+.container {
+    max-width: 1000px;
+}
+
+.empty, #hamburger {
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.content__container, .comments__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main article{
+    width: 49%;
+}
+
+.comments__article {
+    width: 33%;
+}
+
+
+.content__container article, .comments__container article {
+    height: 99%;
+}
