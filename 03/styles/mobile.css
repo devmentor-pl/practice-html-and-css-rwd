@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  height: 100vh;
+
+  grid-template-areas:
+    "text"
+    "picture"
+    "video";
+
+  grid-template-rows:
+    50%
+    50%
+    50%;
+
+}
+
+.t {
+  grid-area: text;
+  background-color: #f4f46d;
+}
+
+.p {
+  grid-area: picture;
+  background-color: #dfa058;
+}
+
+.v {
+  grid-area: video;
+  background-color: #49c664; 
+}
+

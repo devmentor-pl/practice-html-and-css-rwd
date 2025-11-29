@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>devmentor.pl - HTML & CSS: RWD - #03</title>
 
-</body>
+		<link rel="stylesheet" href="./styles/global.css" />
+		<link rel="stylesheet" href="./styles/mobile.css" />
+		<link
+			rel="stylesheet"
+			media="(min-width: 600px)"
+			href="./styles/tablet.css" />
+		<link
+			rel="stylesheet"
+			media="(min-width: 1200px)"
+			href="./styles/desktop.css" />
+	</head>
+	<body>
+		<main class="t">
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius id,
+				aspernatur itaque ad nihil quia laborum a numquam reiciendis incidunt
+				deserunt? Dolorum illum in non magnam dicta aspernatur! Aliquid rerum
+				ipsum earum incidunt at possimus, velit ipsa! Cumque, earum animi. Unde,
+				nobis pariatur. Optio nostrum, sit molestias minima natus recusandae.
+				Maiores voluptate vitae ratione architecto! Quod blanditiis veniam
+				magnam aspernatur nisi adipisci perferendis porro autem sequi quam
+				impedit rerum, modi beatae voluptatem quis, quos, facilis enim iste
+				maiores exercitationem voluptas omnis voluptatum. Deserunt quo
+				repellendus quas eveniet commodi, asperiores quaerat? Est, ratione
+				facilis sit commodi recusandae quas sunt nisi! <br />
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa eius id,
+				aspernatur itaque ad nihil quia laborum a numquam reiciendis incidunt
+				deserunt? Dolorum illum in non magnam dicta aspernatur! Aliquid rerum
+				ipsum earum incidunt at possimus, velit ipsa! Cumque, earum animi. Unde,
+				nobis pariatur. Optio nostrum, sit molestias minima natus recusandae.
+				Maiores voluptate vitae ratione architecto! Quod blanditiis veniam
+				magnam aspernatur nisi adipisci perferendis porro autem sequi quam
+				impedit rerum, modi beatae voluptatem quis, quos, facilis enim iste
+				maiores exercitationem voluptas omnis voluptatum. Deserunt quo
+				repellendus quas eveniet commodi, asperiores quaerat? Est, ratione
+				facilis sit commodi recusandae quas sunt nisi!
+			</p>
+		</main>
+		<header class="p">
+			<picture class="image">
+
+				<!-- <source srcset="./img/mountains-600.jpg" media="(max-width: 599px)" /> -->
+
+				<source srcset="./img/mountains-600.jpg" media="(max-width: 1199px)" />
+
+				<source srcset="./img/mountains-700.jpg" media="(min-width: 1200px)" />
+
+				<img src="./img/mountains.jpg" alt="mountains" />
+
+			</picture>
+		</header>
+		<side class="v">
+
+			<iframe width="1934" height="1209" src="https://www.youtube.com/embed/-W_nFlIAWFM" title="Summiting the Matterhorn with an FPV Drone 5K | Chimera 7 Cinematic Long Range" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>	
+
+		</side>
+
+	</body>
 </html>

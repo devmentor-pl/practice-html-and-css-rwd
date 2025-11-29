@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  border: 5px solid rgb(37, 190, 103);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 1px auto;
+  border: 5px solid rgb(61, 138, 227);
+}
+
+.container--columns {
+  display: flex;
+  flex-direction: row;
+}
+
+.yellow {
+  margin: 0.5rem 0.25rem;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: flex-start;   
+}
+
+/* specjalnie zrobiłem takis sam margin dla yellow, żeby lepiej wygladało, w przykładzie sekcje mają trochę inny */
+
+.nav__hamburger--menu {
+  display: none;
+}
+
+.nav__menu--desktop {
+  display: block;
+  min-height: 40px;
+  width: 400px;
+  background-color: gold;
+}

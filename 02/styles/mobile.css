@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  height: 100vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "section";
+  grid-template-rows:
+    50%
+    50%
+    50%;
+}
+
+.a {
+  grid-area: header;
+  background-color: #ffffba;
+}
+
+.b {
+  grid-area: main;
+  background-color: #e7a961;
+}
+
+.c {
+  grid-area: section;
+  background-color: #49c664;
+  
+}
+
+
+

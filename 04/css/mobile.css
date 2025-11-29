@@ -1,0 +1,53 @@
+.nav {
+  padding: 1rem 1rem;
+  
+}
+
+.nav__hamburger {
+  display: block;
+  width: 40px;
+  height: 35px;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  background: transparent;
+  position: relative;
+  float:right;
+}
+
+.nav__hamburger::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 5px;
+  position: relative;
+  top: 10px;
+
+}
+
+.nav__switcher {
+  display: none;
+}
+
+.nav__list {
+  display: none;
+}
+
+.nav__switcher:checked + .nav__list, .nav__list--dropdown {
+  display:block;
+}
+
+.nav__item {
+  padding: 0.5rem 1rem;
+}
+
+.nav__list--dropdown {
+  padding-left: 2rem;
+}
+
+.nav__link:hover {
+  color: #dcab2f;
+}
+
+
+
+
