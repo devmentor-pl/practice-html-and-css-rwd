@@ -5,12 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
 </head>
 <body>
+    <header class="p">
+        <picture>
+            <source srcset="/03/img/borowiki.jpg" media="(max-width: 600px)">
+            <source srcset="/03/img/borowiki.jpg" media="(min-width: 601px)">
+            <img src="/03/img/borowiki.jpg" alt="picture"> <!--przetestować różne szerokości-->
+        </picture>
+    </header>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
+    <main class="t">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias voluptas rerum obcaecati, sed labore illum consectetur eum corrupti eius neque aut odio sunt, a ab illo molestiae asperiores sapiente harum!</p>
+    </main>
+    
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9lUIkCpUwNM?si=-zv1TaQ5K4sNHY0a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </side>
 </body>
 </html>
