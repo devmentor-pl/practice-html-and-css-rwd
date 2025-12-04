@@ -1,0 +1,12 @@
+body {
+    grid-template-areas:
+    "P V"
+    "T T";
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.t {
+    height: 50vh;
+}

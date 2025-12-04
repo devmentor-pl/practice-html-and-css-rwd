@@ -1,0 +1,168 @@
+/* COMMON */
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "main"
+    "footer";
+
+    grid-template-rows: 
+    80px
+    calc(100vh - 80px)
+    100vh
+    80px;
+
+}
+
+/* END OF COMMON */
+
+/* HEADER */
+
+.header__row {
+    grid-area: header;
+}
+
+.header__container {
+    min-height: 5vh;
+    position: relative;
+
+    display: grid;
+    grid-template-areas: 
+    ". logo hamburger";
+
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+}
+
+.header__logo {
+    width: 100%;
+    height: 90%;
+
+    grid-area: logo;
+}
+
+.hamburger {
+    width: 60px;
+    height: 50px;
+
+    grid-area: hamburger;
+    justify-self: end;
+    margin-right: 1em;
+    background-color: transparent;
+    border-top: 5px solid black;
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    border-top: 5px solid black;
+    transform: translateY(17.5px);
+}
+
+.hamburger::after {
+    transform: translateY(40px);
+}
+
+.hamburger:focus {
+    border-top: none;
+    transform: translateY(20px) translateX(3px);
+    transition: 0.5s;
+}
+
+.hamburger:focus:before {
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.hamburger:focus:after {
+    transform: rotate(-45deg);
+    transition: 0.5s;
+}
+
+.header__menu {
+    display: none;
+
+    grid-area: menu;
+}
+
+.hamburger:focus + .header__menu { 
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+/* END OF HEADER */
+
+/* MAIN */
+
+.main__row {
+    grid-area: main;
+
+    display: grid;
+    grid-template-areas: 
+    "content-one"
+    "content-two";
+
+    grid-template-rows: 
+    calc(100vh - 80px)
+    100vh;
+}
+
+/* END OF MAIN */
+
+/* CONTENT-ONE */
+
+.content-one {
+    grid-area: content-one;
+}
+
+.one {
+    display: grid;
+    row-gap: 20px;
+}
+
+
+/* END OF CONTENT-ONE */
+
+/* CONTENT-TWO */
+
+.content-two {
+    grid-area: content-two;
+}
+
+.two {
+    display: grid;
+    row-gap: 20px;
+}
+
+/* END OF CONTENT-TWO */
+
+/* FOOTER */
+
+.footer__row {
+    grid-area: footer;
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-areas: 
+    ". copy .";
+}
+
+.copyright {
+grid-area: copy;
+}
+
+
+/* END OF FOOTER */
