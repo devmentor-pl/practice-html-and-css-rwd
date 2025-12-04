@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box
+}
+
+
+.row {
+    width: 100%;
+    outline: 4px solid green;
+    padding: 10px;
+    height: 30vh;
+    margin: 5px;
+}
+
+.row.main {
+    height: 60vh;
+}
+
+
+.container {
+    max-width: 1000px;
+    outline: 2px solid blue;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+.container.main {
+    height: 100%;
+    display: flex;
+    padding: 5px;
+}
+
+
+.footer.container {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.footer.cell {
+    height: 100%;
+    width: 30%;
+    background-color: orange;
+}
+

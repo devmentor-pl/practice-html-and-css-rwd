@@ -10,6 +10,7 @@
     min-width: 320px;
     max-width: 600px;
     text-align: justify;
+    outline: 2px solid blue;
 }
 
 .content::before {
@@ -19,5 +20,8 @@
     height: 0;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;
+    shape-outside: polygon(100% 0, 0% 100%, 0 0);
+
 }
+

@@ -1,0 +1,54 @@
+.nav.icon.cell {
+    width: 10%;
+    height: 100%;
+}
+
+.nav.logo.cell {
+    background-color: orange;
+    left: 0;
+    width: 30%;
+    margin-left: 35%;
+}
+
+.article.main {
+    background-color: orange;
+    height: 40%;
+    width: 100%;
+}
+
+.hamburger {
+    border: none;
+    width: 100%;
+    border-top: 5px solid black;
+    position: relative;
+}
+
+.hamburger::after, .hamburger::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid black;
+    transform: translateY(17.5px)
+}
+
+.hamburger::after {
+    transform: translateY(40px)
+}
+
+.container.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container.main > .article.main:nth-child(2),
+.container.main > .article.main:last-child {
+    height: 60%;
+    margin-top: 10px;
+}
+
+.second.container.main > .article.main {
+    height: 35%;
+    width: 100%;
+}
