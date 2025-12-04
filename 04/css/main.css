@@ -1,0 +1,13 @@
+:root {
+	--main: rgb(246, 242, 250);
+	--link-color: rgb(66, 62, 62);
+	--link-active: #7384;
+}
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 62.5%;
+}
+body {
+	font-size: 2rem;
+	text-transform: uppercase;
+}

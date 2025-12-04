@@ -1,0 +1,26 @@
+.nav__hamburger {
+	display: none;
+}
+.nav__list {
+	display: flex;
+	justify-content: space-around;
+}
+.nav__item {
+	padding: 0.5rem 3rem;
+}
+.nav__item--children {
+	position: relative;
+}
+.nav__list--dropdown {
+	position: absolute;
+	display: block;
+	padding: 2rem 0;
+	display: none;
+	top: 100%;
+	left: 0;
+	min-width: 400px;
+}
+
+.nav__item:hover .nav__list--dropdown {
+	display: block;
+}
