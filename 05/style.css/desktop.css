@@ -1,0 +1,46 @@
+/* Desktop */
+
+/* Header */
+.header__menu {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 60px;
+}
+.header__menu::after {
+  content: "";
+  display: block;
+  background-color: rgb(238, 170, 22);
+  grid-column: 8 / span 5;
+  height: 80%;
+}
+.header__hamburger {
+  display: none;
+}
+.menu__list {
+  grid-column: 1 / span 3;
+  display: block;
+}
+
+/* Articles */
+.article__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px;
+  gap: 10px;
+}
+
+/* Comments */
+.comments__container {
+  display: grid;
+  grid-template-columns: 1fr 40% 1fr;
+  grid-template-rows: 200px;
+  gap: 10px;
+}
+/* Footer */
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.footer__logo {
+  grid-column: 5/ 6;
+}
