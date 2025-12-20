@@ -1,0 +1,41 @@
+/* desktop */
+
+button {
+    display: none;
+}
+.header__row, .section__row, .article__row, .footer__row {
+    display: flex;
+    justify-content: center;
+}
+.header__container, .section__container, .article__container  {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__container {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+
+
+}
+.header__logo {
+    height: 50px;
+    width: 20vw
+}
+.header__nav {
+    height: 50px;
+    width: 40vw;
+}
+.content__cell1, .content__cell2 {
+    height: 20vh;
+    width: 50%;
+}
+.article__cell1, .article__cell2, .article__cell3 {
+    height: 20vh;
+    width: 33%;
+}
+.footer__cell {
+    width: 20vw;
+
+}

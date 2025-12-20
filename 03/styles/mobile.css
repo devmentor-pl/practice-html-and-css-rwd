@@ -1,0 +1,31 @@
+/* mobile.css */
+body {
+    display: grid;
+    grid-template-areas: 
+    "p-header"
+    "t-main"
+    "v-side";
+    grid-template-rows: 
+   
+
+}
+.t {
+    grid-area: t-main;
+    margin: 20px;
+    height: 200px;
+}
+.p {
+    grid-area: p-header;
+    min-width: auto;
+}
+.v {
+    grid-area: v-side;
+}
+.v > .video {
+    display: flex;
+    justify-content: center;
+}
+img {
+    max-width: 1fr;
+    max-height: 1fr;
+}

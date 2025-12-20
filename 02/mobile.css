@@ -1,0 +1,18 @@
+/* mobile */
+
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-header"
+    "b-main"
+    "c-section";
+}
+.a {
+    grid-area: a-header;
+}
+.b {
+    grid-area: b-main;
+}
+.c {
+    grid-area: c-section;
+}
