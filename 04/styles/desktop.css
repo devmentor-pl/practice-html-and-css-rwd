@@ -1,0 +1,58 @@
+.menu {
+  width: 100%;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list > li {
+  position: relative;
+}
+
+.menu-list a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.submenu {
+  list-style: none;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #fff;
+  padding: 10px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+  position: relative;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  white-space: nowrap;
+}
+
+.menu-list > li:hover > .submenu,
+.submenu li:hover > .submenu {
+  display: block;
+}
+
+.toggle-menu {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+}

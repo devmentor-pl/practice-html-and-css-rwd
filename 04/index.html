@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/desktop.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+  </head>
+  <body>
+    <input type="checkbox" id="toggle-menu" class="toggle-menu" />
+    <label for="toggle-menu" class="hamburger">☰</label>
 
-</body>
+    <nav class="menu">
+      <ul class="menu-list">
+        <li><a href="#">Element 1</a></li>
+        <li>
+          <a href="#">Element 2</a>
+          <ul class="submenu">
+            <li><a href="#">Podmenu 1</a></li>
+            <li>
+              <a href="#">Podmenu 2</a>
+              <ul class="submenu">
+                <li><a href="#">Zagnieżdżony element 1</a></li>
+                <li><a href="#">Zagnieżdżony element 2</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Element 3</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>

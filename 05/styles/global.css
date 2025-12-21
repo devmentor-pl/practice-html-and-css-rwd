@@ -1,0 +1,19 @@
+:root {
+  --wrapper-color: green;
+  --container-color: blue;
+  --item-color: orange;
+}
+body {
+  min-height: 100vh;
+}
+.green {
+  border: 3px solid green;
+  padding: 3px;
+}
+.blue {
+  border: 3px solid blue;
+}
+.orange {
+  min-height: 50px;
+  background-color: var(--item-color);
+}
