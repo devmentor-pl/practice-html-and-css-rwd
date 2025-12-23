@@ -1,0 +1,59 @@
+.header {
+    display: grid;
+    grid-template-areas:
+        "logo navigation";
+    gap: 0;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 70px;
+}
+
+.navigation {
+    display: block;
+}
+
+.hamburger {
+    display: none;
+}
+
+.logo {
+    margin: 0;
+}
+
+.item-list {
+    flex-wrap: nowrap;
+    height: 60px;
+}
+
+.item {
+    height: 100%;
+    width: 300px;
+}
+
+
+.main-content {
+    grid-template-areas:
+        "company-photo company-description";
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30vh;
+
+}
+
+
+.about {
+    display: grid;
+    grid-template-areas:
+        "team-member-1 team-member-2 team-member-3";
+    gap: 20px;
+    grid-template-rows: 30vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.about, .footer {
+    padding: 15px 15px;
+}
+
+.main-content {
+    padding: 15px 0;
+}
