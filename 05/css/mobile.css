@@ -1,0 +1,59 @@
+.orange--logo {
+  width: 100px;
+  margin: 0 auto;
+}
+.orange--menu {
+  background-color: transparent;
+}
+.blue--header {
+  display: flex;
+  padding: 10px;
+}
+
+.menu__toggler {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.menu__hamburger {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 24px;
+}
+.orange--main {
+  min-height: 300px;
+}
+
+.orange--main + .orange--main {
+  margin-top: 10px;
+}
+
+.orange--section {
+  min-height: 300px;
+}
+
+.orange--section + .orange--section {
+  margin-top: 10px;
+}
+
+.orange--footer {
+  margin: 10px auto;
+  width: 200px;
+  max-width: 100%;
+}
+.orange--main + .orange--main {
+  margin: 0 0 0 10px;
+}
+.blue{
+  padding: 5px 0;
+}

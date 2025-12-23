@@ -1,0 +1,10 @@
+:root {
+  --main: #3674b5;
+}
+
+html{
+    font-size: 10px;
+}
+body {
+  font-size: 2rem;
+}
