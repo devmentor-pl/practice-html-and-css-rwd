@@ -1,0 +1,105 @@
+.green_container{
+    border: 4px solid green;
+    margin: 3px;
+    display: flex;
+    justify-content: center;  
+}
+.blue{
+    border: 3px solid blue;
+    width: 100%;
+    margin: 5px;
+}
+
+/* NAV */
+.header{
+    display: flex;
+    padding: 5px;
+
+}
+.logo{
+    background-color: orange;
+    height: 35px;
+    width: 20vw;
+    margin: 0 auto;
+    
+}
+.menu{
+    background-color: orange;
+    height: 35px;
+    width: 20vw;
+    margin: 5px;
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 15px;
+}
+
+.hamburger:focus + .menu{
+    display: block;
+
+}
+.hamburger{
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 3px solid rgb(126, 120, 120);
+    background: transparent;
+    position: relative;
+}
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid rgb(126, 120, 120);
+}
+.hamburger::after{
+    transform: translateY(25px);
+}
+
+.hamburger::before{
+    transform: translateY(10px);
+}
+/* END OF NAV */
+
+/* MAIN */
+
+.article{
+    background-color: orange;
+    height: 20vh;
+    padding: 0;
+}
+.first_article{
+   margin-bottom: 5px;
+}
+
+/* END OF MAIN */
+/* SECTION */
+
+.section{
+    background-color: orange;
+    height: 15vh;
+    padding: 0;
+}
+.first_section, .second_section{
+   margin-bottom: 5px;
+}
+
+/* END OF SECTION */
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_content{
+    background-color: orange;
+    height: 35px;
+    width: 25vw;
+    margin: 5px;
+}
+/* END OF FOOTER */

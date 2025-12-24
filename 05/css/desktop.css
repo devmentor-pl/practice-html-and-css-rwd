@@ -1,0 +1,59 @@
+
+.blue{
+     display: flex;  
+}
+.header{
+    display: flex;
+    justify-content: space-between;  
+    padding: 0;
+    padding-bottom: 10px; 
+}
+
+.hamburger{
+    display: none;
+}
+
+.orange{
+    height: 100px;
+        
+}
+.logo{
+    flex-basis: 25%;  
+    margin: 0;
+   
+}
+.menu{
+    display: block;
+    flex-basis: 50%;
+    margin: 0;
+    position: static;
+
+}
+
+.article{
+    flex-basis: 50%;
+    height: 300px;
+    margin: 20px;
+}
+.main1{
+    justify-content: space-between;
+}
+
+.first_article{
+    margin-left: 0   
+}
+
+.second_article{
+    margin-right: 0;
+}
+
+.main2{
+    justify-content: space-around;
+}
+.section{
+    flex-basis: 30%;
+    height: 300px;
+    margin: 10px;
+}
+
+

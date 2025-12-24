@@ -1,0 +1,39 @@
+body{
+    display: grid;
+    grid-template-areas:
+        "p"
+        "t"
+        "v";
+    overflow-x: hidden;
+}
+
+.t {
+    grid-area: t;
+    padding: 10px;
+}
+
+.p {
+    grid-area: p; 
+
+}
+
+.v{
+    grid-area: v; 
+}
+.picture{
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-container {
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    
+}
+iframe {   
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}

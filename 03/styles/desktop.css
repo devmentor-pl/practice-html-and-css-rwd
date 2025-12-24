@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "p v"
+        "t t";
+    max-width: 1400px; 
+}
+.video-container{
+    height: 100%;
+
+}
+.video{
+    padding: 10px;
+}
+
