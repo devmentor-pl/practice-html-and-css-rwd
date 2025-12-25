@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" media="(min-width: 750px)" href="styles/desktop.css">
+    <link rel="stylesheet" media="(max-width: 750px)" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/hamburger.css">
+
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav>
+<!--             <label for="menu-switcher" class="hamburger"></label> -->
+            <input type="checkbox" id="menu-switcher">   
+            <ul class="nav">   
+                <li class="nav__item ">
+                    <a href="#" class="nav__item--blue-color">START</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item--blue-color">OFERTA</a> 
+                    <div class="arrow-down"></div>
+                    <ul class="nav__dropdown">
+                        <li class="dropdown__item">
+                            <a href="" class="dropdown__item__text">strony internetowe</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <a href="#" class="dropdown__item__text">pozycjonowanie stron www</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__item--standard-color">KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 </body>
 </html>

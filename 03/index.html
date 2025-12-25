@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p class="main__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sunt aliquid rerum id tenetur exercitationem enim possimus ipsam voluptas in vero corrupti quidem nihil nesciunt libero nam incidunt, dolorem architecto facilis maxime, quae quas esse? Possimus architecto cum error adipisci dignissimos sit praesentium distinctio quo. Quibusdam architecto ducimus ratione recusandae, provident culpa incidunt quidem temporibus ipsa commodi tempore tempora veritatis! Repudiandae nobis debitis labore ex. Fuga repudiandae, doloribus ut aliquam dolores expedita repellat. Dolores iste nulla vero? Aliquam cumque nisi animi doloremque iure similique, tempore ut pariatur qui illum quis molestiae, ipsum maxime repudiandae excepturi doloribus provident, mollitia officia beatae!
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source media="(max-width: 599px)" srcset="assets\mountain-landscape-mobile.jpg" >
+            <source media="(min-width: 600px)" srcset="assets\mountain-landscape-tablet.jpg" >
+            <source media="(min-width: 1200px)" srcset="assets\mountain-landscape-desktop.jpg" >
+            <img src="assets/mountain-landscape-desktop.jpg" alt="Mountain ladscape">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe src="https://www.youtube.com/embed/yAN5uspO_hk?si=uiaet1THAoHWA0K6" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

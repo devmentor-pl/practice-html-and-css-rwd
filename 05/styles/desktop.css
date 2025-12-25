@@ -1,0 +1,85 @@
+#menu-switcher, .hamburger {
+    display: none !important;
+}
+.header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav__items {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.header__logo {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__item {
+    width: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* main */
+.main__container {
+    display: grid;
+    grid-template-areas: 
+    "main-1 main-2";
+    grid-template-columns: 
+    1fr 1fr;
+    gap: 10px;
+}
+
+.main__cell:nth-child(1) {
+    grid-area: main-1;
+}
+
+.main__cell:nth-child(2) {
+    grid-area: main-2;
+}
+.main__cell {
+    height: 300px;
+    
+}
+
+/* section */
+
+.section__cell {
+    height: 250px;
+    margin: 5px
+}
+
+.section__container {
+    display: grid;
+    grid-template-areas: 
+    "section-1 section-2 section-3";
+}
+
+.section__cell:nth-child(1) {
+    grid-area: section-1;
+}
+.section__cell:nth-child(2) {
+    grid-area: section-2;
+}
+.section__cell:nth-child(3) {
+    grid-area: section-3;
+}
+
+/* Footer */
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__cell {
+    width: 200px;
+    text-align: center;
+}
