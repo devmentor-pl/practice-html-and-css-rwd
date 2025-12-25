@@ -2,25 +2,37 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.p, .t, .v {
+  }
+  body {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .p,
+  .t,
+  .v {
     border: 3px solid transparent;
     min-height: 50px;
-
+  
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.p {
-    border-color: #ffffba
-}
-
-.t {
+  }
+  
+  .p {
+    grid-area: p;
+    border-color: #ffffba;
+  }
+  
+  .t {
+    grid-area: t;
     border-color: #ffdfba;
-}
-
-.v {
+  }
+  
+  .v {
+    grid-area: v;
     border-color: #baffc9;
-}
+  }
+  .p img {
+    max-width: 100%;
+  }
