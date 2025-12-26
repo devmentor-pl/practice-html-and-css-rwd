@@ -1,0 +1,28 @@
+.t {
+  grid-area: t;
+  column-count: 2;
+  column-gap: 5px;
+}
+.p {
+  grid-area: p;
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+.v {
+  grid-area: v;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "p v"
+    "t t";
+  grid-template-columns: 1fr 1fr;
+}
+
+.v {
+  height: auto;
+  /* padding-bottom: calc(560 / 315 * 100); */
+  position: relative;
+  width: 100%; /* domyślnie */
+}

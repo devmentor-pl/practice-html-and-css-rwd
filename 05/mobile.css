@@ -1,0 +1,111 @@
+html {
+  font-size: 62.5%;
+}
+:root {
+  --alfa-color: hsl(120, 100%, 30%);
+  --beta-color: hsl(200, 100%, 40%);
+  --delta-color: hsl(35, 100%, 50%);
+}
+#container {
+  margin: 2rem;
+}
+.top-bar__menu {
+  display: none;
+}
+.top-bar,
+.content {
+  max-width: 100%;
+  border: 0.5rem solid var(--alfa-color);
+}
+.top-bar__nav {
+  max-width: calc(100% - 0.2rem);
+  border: 0.5rem solid var(--beta-color);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.top-bar__content {
+  margin-left: 30%;
+}
+button {
+  padding: 1rem;
+  margin-left: 27%;
+  display: inline-block;
+}
+.top-bar__menu {
+  display: none;
+}
+.top-bar__content {
+  width: 50rem;
+  height: 95%;
+  background-color: var(--delta-color);
+  border: 0.5rem solid var(--delta-color);
+}
+.content__one,
+.content__two {
+  max-width: calc(100% - 0.2rem);
+  border: 0.5rem solid var(--beta-color);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.content-yellow-box {
+  max-width: 100%;
+  height: 40vh;
+  background-color: var(--delta-color);
+}
+
+.content__two-yellow-box {
+  max-width: 100%;
+  height: 40vh;
+  background-color: var(--delta-color);
+}
+
+.footer {
+  max-width: calc(100% - 0.2rem);
+  border: 0.5rem solid var(--alfa-color);
+}
+.footer__one {
+  max-width: calc(100% - 0.2rem);
+  border: 0.5rem solid var(--beta-color);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-yellow-box {
+  width: 20%;
+  padding-bottom: 10%;
+  margin-right: 40%;
+  margin-left: 40%;
+  height: 0;
+  /* height: 4rem; */
+  /* padding-bottom: 5%; */
+  background-color: var(--delta-color);
+}
+
+.hamburger {
+  margin-right: 0.5rem;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid var(--delta-color);
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+}
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid var(--delta-color);
+  transform: translateY(10px);
+}
+.hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
