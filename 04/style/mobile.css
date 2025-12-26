@@ -1,0 +1,37 @@
+.nav__hamburger {
+    display: block;
+    width: 40px;
+    height: 35px;
+    border-top: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+
+    float: right;
+}
+.nav__hamburger::after {
+    display: block;
+    content: '';
+    height: 3px;
+    background-color: #ffffff;
+    position: relative;
+    top: 15px;
+}
+.nav__toggler {
+    display: none;
+}
+body {
+    background: lightskyblue;
+    font-size: 2rem;
+}
+.nav__menu {
+    display: none;
+}
+.nav__menu, .nav__dropdown__item {
+    list-style-type: none;
+}
+.nav__toggler:checked + .nav__menu {
+    display: block;
+}
+.nav__dropdown__item {
+    padding-right: 3rem;
+}
+
