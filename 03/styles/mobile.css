@@ -1,0 +1,13 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "p"
+    "t"
+    "v";
+  grid-template-rows: repeat(3, 100vh);
+}
+
+.t p {
+  column-count: 1;
+  text-align: justify;
+}

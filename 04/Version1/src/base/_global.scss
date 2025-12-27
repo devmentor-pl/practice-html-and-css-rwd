@@ -1,0 +1,27 @@
+@use "./../abstracts/mixins" as *;
+@use "./../abstracts/variables" as *;
+
+body {
+  color: $nav__sublist-bg;
+  padding: 0;
+  background-color: $body-bg;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "cont";
+  grid-template-rows: 100vh 100vh;
+
+  @include respond(desktop) {
+    padding-top: 10px;
+    grid-template-areas:
+      ". nav ."
+      ". cont .";
+    grid-template-columns: auto minmax(auto, 1300px) auto;
+    grid-template-rows: 100px calc(100vh - 100px);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

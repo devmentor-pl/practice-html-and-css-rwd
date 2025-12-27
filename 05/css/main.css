@@ -1,0 +1,369 @@
+@charset "UTF-8";
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video,
+details,
+summary {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+main,
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+details,
+summary {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/* we'll restore bullets as needed for content */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted #000;
+  cursor: help;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+td {
+  font-weight: normal;
+  vertical-align: top;
+}
+
+td img {
+  vertical-align: top;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1rem 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+pre {
+  white-space: pre-line;
+}
+
+input[type=radio] {
+  vertical-align: text-bottom;
+}
+
+input[type=checkbox] {
+  vertical-align: bottom;
+}
+
+small {
+  font-size: 0.8rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+sub,
+sup {
+  font-size: 0.8rem;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5rem;
+}
+
+sub {
+  bottom: -0.25rem;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: monospace, sans-serif;
+}
+
+label,
+input[type=button],
+input[type=submit],
+input[type=file],
+button {
+  cursor: pointer;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+ins {
+  background-color: var(--highlight-color);
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: var(--highlight-color);
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+blockquote {
+  padding: 2rem;
+  border-left: 1px solid #333;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* https://css-tricks.com/snippets/css/clear-fix/ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :has(:target) {
+    scroll-behavior: smooth;
+  }
+}
+/* ———— END THE GENERIC RESETS ———— */
+.row,
+.cell,
+.container {
+  margin: 3px;
+  padding: 3px;
+}
+
+.row {
+  outline: 3px solid #0ED145;
+}
+
+.cell {
+  background-color: #FFCA18;
+  min-height: 50px;
+}
+
+.container {
+  height: calc(100% - 6px);
+  outline: 3px solid #00A8F3;
+}
+@media (min-width: 801px) {
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-areas: "head" "s-first" "s-second" "foot";
+  grid-template-rows: 100px calc(50vh - 100px) calc(50vh - 100px) 100px;
+}
+
+.heading {
+  grid-area: head;
+  position: relative;
+}
+.heading__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading__logo {
+  min-width: 120px;
+}
+.heading__burger-icon {
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.heading__list {
+  display: none;
+}
+@media (min-width: 801px) {
+  .heading__list {
+    display: block;
+    min-width: 400px;
+  }
+  .heading__burger-icon {
+    display: none;
+  }
+  .heading__container {
+    justify-content: space-between;
+  }
+}
+
+.first-section__container,
+.second-section__container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.first-section__content,
+.second-section__content {
+  flex: 1;
+}
+@media (min-width: 801px) {
+  .first-section__container,
+  .second-section__container {
+    flex-direction: row;
+  }
+}
+
+.foot__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot__heading {
+  min-width: 240px;
+}
+
+/*# sourceMappingURL=main.css.map */

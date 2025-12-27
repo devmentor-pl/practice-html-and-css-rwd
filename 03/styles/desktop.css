@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  grid-template-areas:
+    ". p t ."
+    ". v t .";
+  grid-template-rows: repeat(2, 50vh);
+  grid-template-columns: auto minmax(200px, calc(1400px /2)) minmax(auto, calc(1400px /2)) auto;
+}
+
+.t p {
+  column-count: 2;
+}

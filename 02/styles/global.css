@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.a, .b, .c {
+.a,
+.b,
+.c {
     border: 3px solid transparent;
     min-height: 50px;
 
@@ -23,4 +25,41 @@
 
 .c {
     border-color: #baffc9;
+}
+
+
+
+/* Mobile */
+
+body {
+    display: grid;
+    grid-template-areas:
+        "a"
+        "b"
+        "c";
+    grid-template-rows: repeat(3, 50vh);
+}
+
+.a {
+    grid-area: a;
+}
+
+.b {
+    grid-area: b;
+}
+
+.c {
+    grid-area: c;
+}
+
+/* Tablet */
+
+@media screen and (min-width: 601px) {
+    body {
+        grid-template-areas:
+            ". a a ."
+            ". c b .";
+        grid-template-columns: auto minmax(auto, 600px) minmax(auto, 600px) auto;
+        grid-template-rows: repeat(2, 50vh);
+    }
 }

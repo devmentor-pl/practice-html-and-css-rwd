@@ -1,0 +1,7 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint ==desktop {
+    @media (min-width: 601px) {
+      @content;
+    }
+  }
+}

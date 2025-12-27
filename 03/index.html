@@ -1,16 +1,124 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 600px)"
+        href="./styles/tablet.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 1200px)"
+        href="./styles/desktop.css"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
 </head>
+
 <body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+
+    <main class="t">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita quibusdam quia aliquid inventore repellat
+            labore ipsam tempore quidem dolor, ea corrupti eaque pariatur quam, facere accusantium cupiditate ab ratione
+            quas!
+            Quo tenetur quasi illum quaerat minima tempora dolores temporibus, dignissimos mollitia dolor, saepe, ad
+            voluptatibus quibusdam perspiciatis. Nihil, impedit corrupti alias et eveniet laborum vero, adipisci,
+            numquam hic molestiae facilis?
+            Totam neque necessitatibus, corporis quasi unde cupiditate temporibus non, ab similique obcaecati,
+            distinctio porro. Nihil, modi, reiciendis adipisci vero libero ratione enim facilis voluptatibus aliquid
+            obcaecati, nesciunt assumenda amet nemo?
+            Officia eos, quis magni minus quas nam natus sit obcaecati expedita repellendus asperiores nemo doloribus!
+            Debitis optio velit numquam laboriosam nisi recusandae minima explicabo porro, fugit fugiat sint! Dicta,
+            aliquam.
+            Dolor quaerat itaque repellat ipsam minima fuga eius hic doloremque saepe numquam, culpa aspernatur
+            repellendus! Repudiandae culpa atque corrupti, voluptas quasi dicta recusandae animi, labore vitae esse
+            ipsum natus voluptates.
+            Facilis impedit odio amet beatae nostrum iusto ipsa tenetur eius, fuga sint illo enim debitis aperiam
+            temporibus rerum itaque cum officia, provident aliquid odit velit architecto dolores voluptatibus dolorem!
+            Non!
+            Eveniet blanditiis quidem alias earum corporis iure consectetur debitis eius fuga mollitia, ipsam rerum,
+            excepturi placeat laudantium ea iste labore omnis fugit. Consectetur rem tempore ipsum iure qui voluptatibus
+            similique.
+            Mollitia incidunt, iusto dolore nam nulla aliquam cupiditate perspiciatis numquam nemo quibusdam nisi!
+            Quaerat quis eius maiores porro ex omnis eos eaque, animi fugiat, labore iure qui sit ipsam repellat?
+            Vel quam eaque veniam libero, iusto voluptate earum maiores. Totam veritatis aspernatur dolorem nulla nemo
+            ab eos, quis temporibus animi, repellat error, accusantium iusto quod itaque laboriosam reprehenderit
+            voluptatum perferendis?
+            Alias nisi explicabo dicta fugiat iusto natus excepturi, consectetur porro expedita debitis tempore
+            obcaecati dolorum nesciunt. Magni, quo. Voluptate impedit optio placeat veniam molestiae nulla debitis
+            perferendis ab quos? Alias?
+            Repudiandae harum odit dolorem repellendus animi! Quae id esse deleniti tempore sed quasi accusantium dolor
+            quisquam minus! Ducimus, tenetur voluptatum labore nostrum debitis, eligendi sunt asperiores corrupti,
+            veritatis magnam vero.
+            Magni debitis repellendus nemo quam hic. Ipsa voluptas perspiciatis dignissimos voluptatum quisquam quod,
+            est reiciendis hic, suscipit iusto nihil minima maxime tenetur officia, deleniti sunt eligendi. Maiores a ea
+            repudiandae.
+            Laborum repellendus unde culpa dolorum? Illum explicabo sequi tenetur unde voluptatibus tempora doloribus
+            minima maxime corrupti magnam doloremque consequuntur molestias ipsum, velit delectus modi nisi omnis
+            praesentium veniam nobis harum.
+            Temporibus dolor totam consectetur accusantium explicabo natus quisquam! Nihil voluptatem accusantium
+            mollitia consequatur nam, repudiandae delectus quae eveniet, adipisci minus, totam tempora quo architecto
+            labore dicta saepe est laudantium? Ipsum.
+            Aliquid esse ipsam veniam! Iure explicabo vel eligendi nulla quaerat ipsum ullam dolorum facilis? Neque ut
+            dolorem minus expedita quis reiciendis blanditiis consectetur quasi, dignissimos id aspernatur quos at
+            facilis?
+        </p>
+    </main>
+    <header class="p">
+        <picture>
+            <source
+                srcset="./images/picture-1200w.jpg 1x, ./images/picture-1900w.jpg 1.5x, ./images/picture-3800w.jpg 3x"
+                media="(min-width: 1200px)"
+            >
+
+            <source
+                srcset="./images/picture-600w.jpg 1x, ./images/picture-1200w.jpg 2x"
+                media="(min-width: 600px)"
+            >
+
+            <source srcset="
+                ./images/picture-300w.jpg 1x,
+                ./images/picture-600w.jpg 2x">
+
+            <img
+                src="./images/picture-300w.jpg"
+                alt="Obrazek P"
+            >
+        </picture>
+    </header>
+    <aside class="v">
+        <div>
+            <iframe
+                width="1840"
+                height="1035"
+                src="https://www.youtube.com/embed/_TXzYVkSYuc"
+                title="I Asked Michelin Chefs How They Cook Steak"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
+        </div>
+    </aside>
 
 </body>
+
 </html>

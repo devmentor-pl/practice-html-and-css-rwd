@@ -1,0 +1,11 @@
+.foot {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__heading {
+    min-width: 240px;
+  }
+}

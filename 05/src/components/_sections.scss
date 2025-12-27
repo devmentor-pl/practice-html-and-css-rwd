@@ -1,0 +1,21 @@
+@use './../abstracts/mixins' as *;
+
+.first-section,
+.second-section {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  // DESKTOP
+  @include response(desktop) {
+    &__container {
+      flex-direction: row;
+    }
+  }
+}

@@ -4,7 +4,28 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
+.p img {
+    max-width: 100%;
+}
+
+.v div {
+    height: 0;
+    padding-bottom: calc(1045/1840 *100%);
+    position: relative;
+    width: 100%;
+}
+
+.v iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.p,
+.t,
+.v {
     border: 3px solid transparent;
     min-height: 50px;
 
@@ -14,13 +35,16 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: p;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: t;
 }
 
 .v {
     border-color: #baffc9;
+    grid-area: v;
 }

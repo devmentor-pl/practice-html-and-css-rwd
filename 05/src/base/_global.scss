@@ -1,0 +1,39 @@
+@use './../abstracts/variables' as *;
+@use './../abstracts/mixins' as *;
+
+.row,
+.cell,
+.container {
+  margin: 3px;
+  padding: 3px;
+}
+
+.row {
+  outline: 3px solid $row-outline-color;
+}
+
+.cell {
+  background-color: $cell-bg-color;
+  min-height: 50px;
+}
+
+.container {
+  height: calc(100% - $margin-padding);
+  outline: 3px solid $container-outline-color;
+
+  // DESKTOP
+  @include response(desktop) {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "s-first"
+    "s-second"
+    "foot";
+  grid-template-rows: 100px calc(100vh / 2 - 100px) calc(100vh / 2 - 100px) 100px;
+}

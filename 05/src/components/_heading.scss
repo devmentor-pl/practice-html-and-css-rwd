@@ -1,0 +1,44 @@
+@use './../abstracts/mixins' as *;
+
+.heading {
+  grid-area: head;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__logo {
+    min-width: 120px;
+  }
+
+  &__burger-icon {
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__list {
+    display: none;
+  }
+
+  // DESKTOP
+  @include response(desktop) {
+    &__list {
+      display: block;
+      min-width: 400px;
+    }
+
+    &__burger-icon {
+      display: none;
+    }
+
+    &__container {
+      justify-content: space-between;
+    }
+  }
+}
