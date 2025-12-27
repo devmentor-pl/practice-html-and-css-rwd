@@ -1,0 +1,47 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1px 0 5px 0;
+}
+
+.header__logo {
+    margin: 0;
+    width: 200px;
+}
+
+.header__nav {
+    background-color: orange;
+    position: static;
+    width: 400px;
+}
+
+.header__nav::before, .header__nav::after {
+    display: none;
+}
+
+.main__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.main__article, .main__ads {
+    margin: 0;
+    min-height: 200px;
+    width: calc(50% - 2px);
+}
+
+.section__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+}
+
+.section__container > .cell {
+    min-height: 200px;
+    width: 32%;
+}
+
+.section__article--middle {
+    margin: 0;
+}
