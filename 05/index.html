@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>devmentor.pl - HTML & CSS: RWD - #05</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="container__green">
+      <nav class="container__blue">
+        <a href="/" class="rectangle__orange"></a>
+        <div class="rectangle__desktop"></div>
+        <label for="hamburger"></label>
+        <input type="checkbox" id="hamburger" />
+        <ul class="nav">
+          <li class="nav__item">HOME</li>
+          <li class="nav__item nav__item--hover">PORTFOLIO</li>
+          <li class="nav__item">ABOUT US</li>
+          <li class="nav__item">GALLERY</li>
+          <li class="nav__item">CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container__green main__section">
+      <article class="container__blue container__main">
+        <div class="rectangle__orange rectangle__first-main"></div>
+        <div class="rectangle__orange rectangle__second-main"></div>
+      </article>
+    </main>
+    <main class="container__green main__section">
+      <article class="container__blue container__second">
+        <div class="rectangle__orange rectangle__third-main"></div>
+        <div class="rectangle__orange rectangle__fourth-main"></div>
+        <div class="rectangle__orange rectangle__fifth-main"></div>
+      </article>
+    </main>
+
+    <footer class="container__green">
+      <div class="container__blue container__footer">
+        <div class="rectangle__orange rectangle__footer"></div>
+      </div>
+    </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector('.nav');
+        sidebar.style.display = 'flex';
+      }
+
+      function hideSidebar() {
+        const sidebar = document.querySelector('.nav');
+        sidebar.style.display = 'none';
+      }
+    </script>
+  </body>
+</html>

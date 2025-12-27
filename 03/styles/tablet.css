@@ -1,0 +1,19 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 50%) 1fr;
+}
+
+.p {
+  grid-column: span 1;
+  grid-row: 1;
+}
+
+.v {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.t {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
