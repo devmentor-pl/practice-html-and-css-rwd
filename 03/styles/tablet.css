@@ -1,0 +1,10 @@
+.container{
+    
+    display: grid;
+    grid-template-areas: 
+    "kolumna-p kolumna-t"
+    "kolumna-v kolumna-t"
+    ;
+
+    grid-template-columns: minmax(200px, 50vw) auto;
+}

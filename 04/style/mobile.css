@@ -1,0 +1,52 @@
+.nav {
+    background-color: aquamarine;
+    padding: 1rem 1rem;
+}
+
+.nav__item{
+    padding: 0.3rem;
+
+}
+
+.nav__hamburger {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+
+.nav__hamburger::after {
+    display: block;
+    content:'';
+    height: 3px;
+    background-color: black;
+    position: relative;
+    top: 1rem;
+    left: 0.25rem;
+}
+
+.nav__toggler{
+    display: none;
+}
+
+.nav__list{
+    display: none;
+}
+
+.nav__toggler:checked + .nav__list{
+    display: block;
+}
+.nav__list--dropdown{
+    display: block;
+    padding-left: 2rem;
+}
+
+.nav__link{
+    text-decoration: none;
+    color: black;
+}
+.nav__link:hover{
+    text-decoration: underline;
+
+}

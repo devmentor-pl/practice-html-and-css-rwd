@@ -1,0 +1,9 @@
+.container{
+    
+    display: grid;
+    grid-template-areas: 
+    "kolumna-p"
+    "kolumna-t"
+    "kolumna-v"
+    ;
+}
