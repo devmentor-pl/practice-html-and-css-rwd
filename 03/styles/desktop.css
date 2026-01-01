@@ -1,0 +1,12 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        "P V"
+        "T T";
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.v {
+    padding-bottom: calc(100% * 315 / 444);
+}

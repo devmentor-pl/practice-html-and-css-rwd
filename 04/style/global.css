@@ -1,0 +1,13 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 2rem;
+    font-family: sans-serif;
+    background-color: #F6F6F6;
+}
+
+.home {
+    color: #00a2ff;
+}

@@ -1,0 +1,39 @@
+.hamburger {
+    display: none;
+}
+
+.nav__container {
+    justify-content: space-between;
+}
+
+.nav {
+    display: block;
+}
+
+.nav__aside {
+    height: 70px;
+    width: 45%;
+}
+
+.main__container {
+    flex-direction: row;
+}
+
+.main__contain {
+    flex-basis: 50%;
+    margin: 5px 0;
+}
+
+.main__contain:first-child {
+    margin-right: 5px;
+}
+
+.section__container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.section__contain {
+    flex-basis: 33.33%;
+    margin: 5px;
+}
