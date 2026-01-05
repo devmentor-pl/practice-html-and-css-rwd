@@ -1,0 +1,23 @@
+body {
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:
+		50vh
+		50vh;
+	grid-template-areas:
+		'a-top a-top'
+		'a-bottom a-middle';
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.a {
+	grid-area: a-top;
+}
+
+.b {
+	grid-area: a-middle;
+}
+
+.c {
+	grid-area: a-bottom;
+}

@@ -1,0 +1,7 @@
+body {
+	grid-template-columns: minmax(200px, 50vw) auto;
+	grid-template-areas:
+		'P T'
+		'V T';
+	margin: 0 auto;
+}

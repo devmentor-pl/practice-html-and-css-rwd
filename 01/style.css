@@ -1,23 +1,24 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 .content {
-    background-color: #fff;
-    min-height: 320px;
-    min-width: 320px;
-    max-width: 600px;
-    text-align: justify;
+	background-color: #fff;
+	min-height: 320px;
+	min-width: 320px;
+	max-width: 600px;
+	text-align: justify;
 }
 
 .content::before {
-    float: left;
-    display: block;
-    content: '';
-    height: 0;
-    border: 150px solid #dcdcdc;
-    border-right-color: transparent;
-    border-bottom-color: transparent;    
+	float: left;
+	display: block;
+	content: '';
+	height: 0;
+	border: 150px solid #dcdcdc;
+	border-right-color: transparent;
+	border-bottom-color: transparent;
+	shape-outside: polygon(0 0, 100% 0, 0 100%);
 }
