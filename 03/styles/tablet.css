@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "P T"
+    "V T";
+  grid-template-columns: 50% 50%;
+}
+
+.p, .v {
+  min-width: 200px;
+}

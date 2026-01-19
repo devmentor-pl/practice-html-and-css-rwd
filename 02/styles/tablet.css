@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid-template-areas:
+    "A A"
+    "C B";
+  grid-template-columns: repeat(2, 50%);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.a {
+  grid-area: A;
+}
+
+.b {
+  grid-area: B;
+}
+
+.c {
+  grid-area: C;
+}
