@@ -1,16 +1,86 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width:600px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width:1200px)"
+      href="./styles/desktop.css"
+    />
+  </head>
+  <body>
+    <main class="t">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorem
+      fugiat, harum, quibusdam soluta dolor recusandae tenetur consequuntur
+      omnis mollitia veniam eius in beatae praesentium fuga exercitationem ipsum
+      reprehenderit repellendus perferendis hic. Consectetur voluptas ipsa
+      obcaecati adipisci hic, distinctio aliquid voluptate? Omnis nesciunt
+      incidunt nisi culpa expedita dolorum consequuntur a totam alias impedit
+      labore praesentium laborum quis suscipit iusto eveniet, hic commodi
+      mollitia porro nam eum error recusandae ipsa. Repudiandae, eius possimus?
+      Sit quam animi aspernatur delectus alias rem repellat, sequi sunt dolorum
+      quo mollitia voluptate nemo. Tenetur excepturi modi delectus, aut saepe
+      facilis at, fugit sit autem id hic.
+    </main>
+    <header class="p">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="
+            ./images/webp/picture-large.webp    1000w,
+            ./images/jpg/picture-large.jpg      1000w,
+            ./images/webp/picture-large@x2.webp 1200w,
+            ./images/jpg/picture-large@x2.jpg   1200w,
+            ./images/webp/picture-large@x3.webp 1600w,
+            ./images/jpg/picture-large@x3.jpg   1600w
+          "
+        />
+        <source
+          media="(min-width: 600px)"
+          srcset="
+            ./images/webp/picture-medium.webp    1000w,
+            ./images/jpg/picture-medium.jpg      1000w,
+            ./images/webp/picture-medium@x2.webp 1200w,
+            ./images/jpg/picture-medium@x2.jpg   1200w,
+            ./images/webp/picture-medium@x3.webp 1600w,
+            ./images/jpg/picture-medium@x3.jpg   1600w
+          "
+        />
+        <source
+          srcset="
+            ./images/webp/picture-small.webp    1000w,
+            ./images/jpg/picture-small.jpg      1000w,
+            ./images/webp/picture-small@x2.webp 1200w,
+            ./images/jpg/picture-small@x2.jpg   1200w,
+            ./images/webp/picture-small@x3.webp 1600w,
+            ./images/jpg/picture-small@x3.jpg   1600w
+          "
+        />
+        <img
+          src="./images/jpg/picture-small.jpg"
+          alt="Majestic lion lying on the rock"
+        />
+      </picture>
+    </header>
+    <side class="v"
+      ><iframe
+        src="https://www.youtube.com/embed/O02GFZrZg3E?si=lMyg7MrL5_VLEdGF"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe
+    ></side>
+  </body>
 </html>

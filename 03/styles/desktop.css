@@ -1,0 +1,8 @@
+body {
+  grid-template-areas:
+    "P V"
+    "T T";
+
+  width: min(1400px, 100%);
+  margin-inline: auto;
+}

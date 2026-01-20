@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+main {
+  display: grid;
+  gap: 10px;
+}
+
+body {
+  min-height: 100dvh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+main {
+  place-items: center;
+}
+
+.fullWidth {
+  border: 5px solid green;
+  width: 100%;
+  padding: 5px;
+}
+
+.container {
+  border: 5px solid blue;
+  width: min(1000px, 100%);
+  margin-inline: auto;
+}
+
+nav {
+  padding-block: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 10px;
+  padding-block: 10px;
+  height: 250px;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 250px;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer {
+  min-height: 100px;
+}
+
+.section-3 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content */
+.content {
+  background-color: orange;
+}
+
+.logo {
+  width: min(200px, 100%);
+  height: 50px;
+}
+.menu {
+  position: relative;
+}
+
+.menu-content {
+  background-color: red;
+  width: min(300px, 50vw);
+  height: 60px;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+.info {
+  height: 50px;
+  width: 200px;
+}
+
+/* HAMBURGER ICON */
+.hamburger {
+  margin-right: 20px;
+  display: block;
+  width: 30px;
+  height: 24px;
+  border: 0;
+  border-top: 4px solid black;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-top: 4px solid black;
+  transform: translateY(4px);
+}
+
+.hamburger::after {
+  transform: translateY(12px);
+  transition: 0.3s transform linear;
+}
+
+.hamburger-checkbox:checked + .menu-content {
+  display: block;
+}
+
+.hamburger-checkbox {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .section-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .menu-content {
+    /* width: 100%; */
+    height: 60px;
+    display: block;
+    position: static;
+  }
+}
