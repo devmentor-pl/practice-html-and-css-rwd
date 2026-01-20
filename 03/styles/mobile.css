@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "p-picture"
+    "t-text"
+    "v-video";
+}
+
+.t {
+grid-area: t-text;
+}
+.p {
+grid-area: p-picture;
+}
+.v {
+grid-area: v-video;
+}
+
+.v {
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+
+}
+iframe {
+    border: 5px solid red;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+
+}
+
+

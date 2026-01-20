@@ -1,0 +1,11 @@
+body {
+    /* display: grid; */
+    grid-template-areas: 
+    "p-picture t-text"
+    "v-video t-text";
+}
+
+.p, .v {
+    width: 50vw;
+    min-width: 200px;
+}
