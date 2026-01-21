@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      href="./styles/tablet.css"
+      media="(min-width: 600px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./styles/desktop.css"
+      media="(min-width: 1200px)"
+    />
+  </head>
+  <body>
+    <main class="t">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+        voluptatibus, labore maxime consectetur omnis veniam corporis eius
+        dignissimos aut, sequi ex placeat deserunt. Quia optio ratione autem
+        commodi eaque sapiente libero fugit ut non quidem? Hic, ratione. Quidem
+        sed alias veritatis similique non quos enim maiores vero itaque
+        quibusdam, veniam et reiciendis debitis deserunt corrupti possimus
+        aliquam cumque rerum necessitatibus recusandae quod sunt. Vero veniam
+        aut praesentium inventore, exercitationem expedita voluptas? Explicabo
+        recusandae qui laboriosam inventore itaque modi sapiente earum ipsam
+        alias, nulla eligendi, repellat, quas deserunt architecto rem laborum.
+        Nesciunt, id ipsam dolores alias assumenda sequi amet incidunt quis eum,
+        eaque quasi illum modi vel rerum. Magni quos officiis neque
+        reprehenderit quidem officia amet repellendus, repellat praesentium quam
+        doloremque?
+      </p>
+    </main>
+    <header class="p">
+      <picture>
+        <source
+          media="(min-width: 1200px)"
+          srcset="images/wild-horse-9057944_1920.jpg"
+        >
+        <source
+          media="(min-width: 600px)"
+          srcset="images/wild-horse-9057944_1280.jpg"
+        >
+        <source
+          media="(max-width: 599px)"
+          srcset="images/wild-horse-9057944_640.jpg"
+        >
+        <img src="images/wild-horse-9057944_1920.jpg" >
+      </picture>
+    </header>
+    <side class="v">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/JIm4ibiHyJg?si=eZHqE5zd_fui53w8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </side>
+  </body>
 </html>

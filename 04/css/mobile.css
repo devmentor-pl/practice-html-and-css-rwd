@@ -1,0 +1,48 @@
+nav {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+}
+
+.nav__hamburger {
+    display: block;
+    height: 20px;
+    width: 30px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    float: right;
+}
+
+.nav__hamburger::after {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: black;
+    position: relative;
+    top: 6px;
+    left: 6px;    
+}
+
+.nav__toggle {
+    display: none;
+}
+
+.nav__list {
+    display: none;
+}
+
+.nav__toggle:checked + .nav__list {
+    display: block;
+}
+
+.nav__list--dropdown {
+    display: block;
+    padding-left: 30px;
+}
+
+.nav__link {
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
