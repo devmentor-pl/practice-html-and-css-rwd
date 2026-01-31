@@ -1,0 +1,43 @@
+body {
+
+}
+.blue {
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 0;
+}
+
+.menu {
+    position: static;
+}
+
+
+.green ul {
+    display: flex;
+}
+
+.label, .switcher {
+    display: none;
+}
+
+.article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu .items li {
+    margin-right: 20px; 
+}
+
+.menu .items li:last-child {
+    margin-right: 0; 
+}
