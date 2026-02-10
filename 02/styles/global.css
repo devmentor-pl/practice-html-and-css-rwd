@@ -14,13 +14,40 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: A;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: B;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: C;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "A"
+        "B"
+        "C";
+    grid-template-rows:
+        50vh 50vh 50vh;
+}
+
+@media (min-width: 601px) {
+    body {
+        justify-content: center;
+        display: grid;
+        grid-template-areas:
+            "A A"
+            "C B";
+        grid-template-rows:
+            50vh 50vh;
+        grid-template-columns:
+            minmax(auto, 600px) minmax(auto, 600px);
+    }
 }

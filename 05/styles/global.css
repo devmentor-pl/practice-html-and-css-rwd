@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+}
+
+:root {
+    --row: #0ED145;
+    --container: #02A8F3;
+    --cell: #FFCA18;
+    --cell-burger: #FFACAB;
+}
+
+.row {
+    border: 3px solid var(--row);
+}
+
+.container {
+    border: 3px solid var(--container);
+    min-height: 30px;
+}
+
+.cell {
+    background-color: var(--cell);
+    min-height: 30px;
+}

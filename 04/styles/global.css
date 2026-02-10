@@ -1,0 +1,22 @@
+:root {
+    --skyblue: #87ceeb;
+    --gray: #808080;
+    --light-gray: #eee;
+    --medium-gray: #ddd;
+    --dark-gray: #444;
+    --darker-gray: #333;
+    --white: #fff;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: sans-serif;
+}
+
+a {
+    transition: 0.2s linear;
+}
+
+p {
+    text-align: justify;
+}
