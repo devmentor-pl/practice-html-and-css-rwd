@@ -1,0 +1,24 @@
+* body {
+    
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.header__items {
+    padding: 0;
+    list-style: none;
+}
+
+.header, .main__section, .article__section, .footer__section {
+    max-width: 100%;
+    border: 5px solid green;
+}
+.header-nav, .main__section-items, .article__section-items, .footer__section-items {
+    border: 5px solid blue;
+}
+.header__items, .main__section-item, .article__section-item, .footer__section-item {
+    border: 5px solid orange;
+    
+}
+
