@@ -1,0 +1,5 @@
+body {
+    display: grid;
+    grid-template-areas: "picture text""video text";
+    grid-template-columns: minmax(200px, 50%) auto;
+}
