@@ -1,0 +1,34 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "p-header"
+    "t-main"
+    "v-bottom";
+}
+
+.p {
+  grid-area: p-header;
+}
+
+.t {
+  grid-area: t-main;
+  padding: 5px 10px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+.v {
+  grid-area: v-bottom;
+  height: 0;
+  padding-bottom: calc(315 / 560 * 100%);
+  position: relative;
+  width: 100%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,43 @@
+.list,
+.header__nav>label,
+#menu--switcher {
+  display: none;
+}
+
+.container {
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: var(--padding-10) 0;
+}
+
+.header__nav {
+  position: static;
+  width: 200px;
+  height: 40px;
+  background-color: var(--cell-standard);
+}
+
+.second {
+  padding: var(--padding-10);
+}
+
+.first__left,
+.first__right,
+.second__item {
+  height: 100%;
+  margin-bottom: 0;
+}
+
+.first__left,
+.second__item {
+  margin-right: 10px;
+}
+
+.second__item:last-child {
+  margin-right: 0;
+}
+
+.footer {
+  justify-content: center;
+}
