@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+
+.container {
+  border: 5px solid green;
+  margin-bottom: 2px;
+  max-width: 100%;
+}
+
+.content {
+  border: 5px solid blue;
+  max-width: 1000px;
+  margin: 5px auto;
+}
+
+.infill {
+  background-color: orange;
+}

@@ -12,6 +12,7 @@ Będziemy mieli 2 wersje jego wyglądu:
     - elementy menu są umieszczone jeden pod drugim i zajmują całą szerokość okna przeglądarki,
     - są widoczne dopiero po kliknięciu w ikonę "[hamburgera](https://www.youtube.com/watch?v=Al-0vNJD1JU)" (najlepiej bez użycia JavaScriptu),
     - im bardziej zagnieżdżone elementy, tym bardziej odsunięte są od lewej krawędzi.
+    
 - **normalną**: 
     - elementy menu umieszczone są obok siebie w poziomie,
     - tylko pierwszy poziom widoczny jest od razu,

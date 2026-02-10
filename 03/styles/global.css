@@ -4,13 +4,20 @@
     box-sizing: border-box;
 }
 
+body {
+    min-height: 100vh;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
 
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
+    padding: 5px;
 }
 
 .p {

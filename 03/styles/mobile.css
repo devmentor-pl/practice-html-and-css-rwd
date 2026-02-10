@@ -1,0 +1,35 @@
+/* Stylowanie dla urządzeń mobilnych */
+body {
+  display: grid;
+  grid-template-areas:
+    "p"
+    "t"
+    "v";
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.p {
+  grid-area: p;
+}
+.t {
+  grid-area: t;
+}
+.v {
+  grid-area: v;
+}
+
+img, iframe {
+ max-width: 100%;
+ }
+
+
+
+
+
+
+
