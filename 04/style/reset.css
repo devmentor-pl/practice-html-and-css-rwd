@@ -1,0 +1,15 @@
+/** @format */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+a {
+  color: inherit;
+}

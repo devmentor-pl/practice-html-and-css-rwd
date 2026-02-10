@@ -1,0 +1,11 @@
+/** @format */
+
+body {
+  display: grid;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "p"
+    "t"
+    "v";
+}
