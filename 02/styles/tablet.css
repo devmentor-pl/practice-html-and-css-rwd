@@ -1,0 +1,12 @@
+/* 600px querries */
+body {
+  display: grid;
+  grid-template-areas:
+    'a a'
+    'c b';
+  grid-template-columns:
+    auto
+    minmax(calc(1200px * 0.5));
+  max-width: 1200px;
+  margin: 0 auto;
+}

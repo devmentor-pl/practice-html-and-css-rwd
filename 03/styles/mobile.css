@@ -1,0 +1,7 @@
+/* <599px mobile */
+.container {
+  grid-template-areas:
+    'p'
+    't'
+    'v';
+}

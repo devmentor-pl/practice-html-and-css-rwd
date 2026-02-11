@@ -1,0 +1,7 @@
+/* 1200 px Desktop */
+.container {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'p v'
+    't t';
+}
