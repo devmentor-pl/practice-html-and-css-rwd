@@ -1,16 +1,28 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
 
+    <link rel="stylesheet" href="./styles/global.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="p">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="assets/images/frog-large.jpg">
+                <img src="assets/images/frog-small.jpg" alt="Frog">
+            </picture>
+        </header>
+        <main class="t">T</main>
+        <aside class="v">
+            <iframe src="https://www.youtube.com/embed/XiAqmlIEFi0?si=iXNu7Vnw-vsT-EJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </aside>
+    </div>
 </body>
+
 </html>

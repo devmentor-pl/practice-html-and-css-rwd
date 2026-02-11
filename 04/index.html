@@ -5,26 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle" class="header-nav__checkbox">
+        <label for="menu-toggle" class="header-nav__hamburger">
+            <span class="header-nav__hamburger-line"></span>
+            <span class="header-nav__hamburger-line"></span>
+            <span class="header-nav__hamburger-line"></span>
+        </label>
+
+        <nav class="header-nav">
+            <ul class="header-nav__list">
+                <li class="header-nav__item">
+                    <a href="/" class="header-nav__link home-link" title="Home">Home</a>
+                </li>
+                <li class="header-nav__item header-nav__item--has-submenu">
+                    <span class="header-nav__title">
+                        Items
+                        <span class="header-nav__arrow header-nav__arrow--down">></span>
+                    </span>
+                    <ul class="header-nav__sublist">
+                        <li class="header-nav__subitem">
+                            <a href="/item1" class="header-nav__sublink" title="item1">Item 1</a>
+                        </li>
+                        <li class="header-nav__subitem header-nav__subitem--has-submenu">
+                            <span class="header-nav__subtitle">
+                                Item 2
+                                <span class="header-nav__arrow header-nav__arrow--right">></span>
+                            </span>
+                            <ul class="header-nav__sublist">
+                                <li class="header-nav__subitem">
+                                    <a href="/item2.1" class="header-nav__sublink" title="item2.1">Item 2.1</a>
+                                </li>
+                                <li class="header-nav__subitem">
+                                    <a href="/item2.2" class="header-nav__sublink" title="item2.2">Item 2.2</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header-nav__item">
+                    <a href="/settings" class="header-nav__link" title="settings">Settings</a>
+                </li>
+                <li class="header-nav__item">
+                    <a href="/contact" class="header-nav__link" title="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
