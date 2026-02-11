@@ -1,0 +1,9 @@
+:root {
+    --main: #8e44ad;
+    --light: #ae63cc;
+}
+
+html {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
