@@ -1,0 +1,43 @@
+@media(min-width: 800px) {
+    .hamburger {
+        display: none;
+    }
+    nav {
+        border: none;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10vh;
+    }
+    .menu {
+        display: flex;
+    }
+    .menu__element, .sub-menu__element {
+        padding: 0%;   
+        width: calc(100vw / 3);
+        margin-left: 0;  
+    }
+    .menu__element {
+        background-color: cyan;
+        text-align: center;
+        position: static;
+    }
+    .menu__element:hover:nth-child(2) .sub-menu {
+        position: static;
+        display: block;
+    }
+    .sub-menu {
+        display: none;
+    } 
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2%;
+    }
+
+
+
+}
+
+
