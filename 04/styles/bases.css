@@ -1,0 +1,28 @@
+:root {
+  --nav-color: #21abcb;
+  --text-color: white;
+  --hover-color: #1e7abd;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--text-color);
+  background-color: var(--hover-color);
+}
+.nav {
+  background-color: var(--nav-color);
+}
+.list__link,
+.dropdown__link {
+  display: block;
+  border-radius: 5px;
+}
+.fa-caret-down {
+  color: white;
+}
