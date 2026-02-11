@@ -5,12 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" media="(max-width:599px)" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width:600px) and (max-width:1199px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width:1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+     <main class="t"> 
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nobis, nemo sequi error aperiam quidem impedit similique nihil doloremque deleniti facilis possimus accusamus fugit adipisci commodi, laboriosam iure facere quod?
+         Eaque, excepturi dolorem saepe debitis, similique repudiandae officia omnis impedit odit architecto amet velit laboriosam quam vero aut reiciendis commodi quaerat corporis ex veritatis? Expedita nulla quibusdam consectetur nam voluptas?
+         Modi illo eligendi nisi aliquid eum deleniti possimus necessitatibus molestiae, quia quibusdam odio maxime doloribus vitae amet quaerat, officiis repudiandae voluptatum voluptates temporibus nobis. Exercitationem possimus dolor omnis esse hic?
+         Quidem accusamus et eius ducimus, quis aspernatur in fuga velit est delectus aliquam molestias commodi alias excepturi similique voluptatem odio reprehenderit soluta. Architecto tempora corporis eos sunt illo fuga dolor.
+         Tempore rerum, accusantium expedita nesciunt quas, ducimus atque esse ullam dicta sequi illo ad consequatur praesentium nihil debitis excepturi. Corrupti ipsum, necessitatibus ratione assumenda consequuntur perferendis eum facilis quibusdam temporibus?</p>
+     </main> 
+    <header class="p">
+        <picture>
+            <source
+             srcset="./Images/beach-300w.jpg" 
+            media="(max-width:599px)"
+            > <!-- chyba trochę za mały format wyrenderowałem :) -->
+            <source
+            srcset="./Images/beach-750w.jpg"
+            media="(min-width:600px) and (max-width:1199px)"
+            >
+            <source
+            srcset="./Images/beach-750w.jpg"
+            media="(min-width:1200px)"
+            >
+            <img src="./Images/beach-1400w.jpg">
+           </picture>
+           
+    </header>
+    <side class="v">
+        <iframe src="https://www.youtube.com/embed/BG77UD_UXu4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

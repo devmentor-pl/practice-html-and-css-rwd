@@ -1,0 +1,106 @@
+.short__container {
+    margin: 0 auto;
+    border: 1px solid green;
+    height: 15vw;
+}
+
+.short__row {
+    border: 1px solid blue;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    background: orange;
+    width: 40%;
+    height: 85%;
+    position: absolute;
+}
+
+label {
+    position: absolute;
+    border-top: 5px solid black;
+    width: 8%;
+    height: 5%;
+    right: 6%;
+    top: 50%;
+}
+
+label:before, label:after {
+    content: '';
+    border-top: 5px solid black;
+    width: 100%;
+    height: 100%;
+    bottom: 10px;
+    position: absolute;
+}
+
+label:after {
+    top: 5px;
+}
+
+.navigation {
+    height: 100%;
+}
+
+input {
+    display: none;
+}
+
+header input:checked + ul {
+    display: block;
+    background: gray;
+    width: 100vw;
+    position: relative;
+    top: 100%;
+    height: 220%;
+}
+
+li:hover {
+    background: white;
+    border: 1px solid black;
+}
+
+li {
+    height: 25%;
+}
+
+.large__container{
+    margin: 0 auto;
+    height: 100vh;
+    border: 1px solid green;
+}
+
+.section__row {
+    width: auto;
+    border: 1px solid blue;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main__section {
+    background:orange;
+    width: 100%;
+    height: 49%;
+}
+
+.mid__section {
+    width: 100%;
+    height: 31%;
+    background: orange;;
+}
+
+.footer {
+    background: orange;
+    width: 40%;
+    height: 85%;
+}
+
+

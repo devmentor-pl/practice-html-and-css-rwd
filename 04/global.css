@@ -1,0 +1,18 @@
+:root {
+    --color-alfa: #52C5F1;
+    --color-beta: #333;
+    --color-gamma: white;
+}
+
+body {
+    background-color: var(--color-beta);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+input {
+    display: none;
+}

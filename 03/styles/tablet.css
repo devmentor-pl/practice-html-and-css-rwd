@@ -1,0 +1,28 @@
+body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "P T"
+    "V T";
+}
+
+.t p{
+    column-count: 2;
+    column-gap: 25px;
+    height: 100%;
+    width: auto;
+    column-rule: 1px solid black;
+}
+
+
+
+.p, .v {
+    min-height: 200px;
+    max-height: 50vh;
+
+    min-width: 200px;
+    max-width: 50vw;
+}
+
+
+

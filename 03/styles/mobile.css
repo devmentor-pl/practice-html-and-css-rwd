@@ -1,0 +1,16 @@
+body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "P"
+    "T"
+    "V";
+}
+
+p {
+    max-height: 90%;
+    text-align: center;
+    overflow-y: scroll;
+    
+    white-space: pre-line;
+}
