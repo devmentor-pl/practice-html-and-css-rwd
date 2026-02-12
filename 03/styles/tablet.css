@@ -1,0 +1,7 @@
+body {
+    grid-template-columns: minmax(200px, 50%) 1fr;
+}
+
+.t {
+    grid-area: 1/2/3/3;
+}

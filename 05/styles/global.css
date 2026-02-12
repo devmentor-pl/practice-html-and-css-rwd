@@ -1,0 +1,29 @@
+.header,
+.article1,
+.article2,
+.footer {
+    margin: 5px;
+    padding: 5px;
+    outline: 2px solid green;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    height: 100%;
+    outline: 2px solid blue;
+}
+
+.header,
+.footer {
+    height: 50px;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.content {
+    margin: 5px 0;
+    background-color: gold;
+}

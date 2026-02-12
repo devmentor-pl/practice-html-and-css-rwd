@@ -1,0 +1,13 @@
+body {
+    grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+    justify-content: center;
+}
+
+.a {
+    grid-column: 1/span 2;
+}
+
+.c {
+    order: 0;
+}
+

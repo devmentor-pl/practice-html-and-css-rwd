@@ -1,0 +1,8 @@
+body {
+    display: grid;
+    grid-auto-rows: 50vh;
+}
+
+.c {
+    order: 1;
+}
