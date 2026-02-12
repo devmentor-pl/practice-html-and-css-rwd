@@ -5,26 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel='stylesheet' href='styles/style.css'>
 </head>
 <body>
     
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+    <nav role="navigation">
+        <div id="menuToggle">
+          <input type="checkbox"/>
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul id='menu'>
+
+            <li><a href="#">Słownik</a>
+                <ul class='items'>
+                    <li class="arrow_right"><a href="#">HTML</a>
+                        <ul class='items'>
+                            <li class="arrow_right"><a href="#">HTML 01</a>
+                                <ul class='items'>
+                                    <li><a href="#">HTML 01 01</a></li>
+                                    <li><a href="#">HTML 01 02</a></li>
+                                    <li><a href="#">HTML 01 02</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">HTML 02</a></li>
+                            <li><a href="#">HTML 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="arrow_right"><a href="#">CSS</a>
+                        <ul class='items'>
+                            <li class="arrow_right"><a href="#">CSS 01</a>
+                                <ul class='items'>
+                                    <li><a href="#">CSS 01 01</a></li>
+                                    <li><a href="#">CSS 01 02</a></li>
+                                    <li><a href="#">CSS 01 02</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CSS 02</a></li>
+                            <li><a href="#">CSS 03</a></li>
+                        </ul>
+                    </li>
+                    <li class="arrow_right"><a href="#">JS</a>
+                        <ul>
+                            <li><a href="#">JS 01</a></li>
+                            <li><a href="#">JS 02</a></li>
+                            <li><a href="#">JS 03</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                
+                <li><a href="#">Język</a>
+                    <ul>
+                        <li class="arrow_right"><a href="#">HTML</a>
+                            <ul>
+                                <li class="arrow_right"><a href="#">HTML 01</a>
+                                    <ul>
+                                        <li><a href="#">HTML 01 01</a></li>
+                                        <li><a href="#">HTML 01 02</a></li>
+                                        <li><a href="#">HTML 01 02</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">HTML 02</a></li>
+                                <li><a href="#">HTML 03</a></li>
+                            </ul>
+                        </li>
+                        <li class="arrow_right"><a href="#">CSS</a>
+                            <ul>
+                                <li class="arrow_right"><a href="#">CSS 01</a>
+                                    <ul>
+                                        <li><a href="#">CSS 01 01</a></li>
+                                        <li><a href="#">CSS 01 02</a></li>
+                                        <li><a href="#">CSS 01 02</a></li>
+                                    </ul>
+                                </li>
+                                <li class="arrow_right"><a href="#">CSS 02</a>
+                                    <ul>
+                                        <li><a href="#">CSS 02 01</a></li>
+                                        <li><a href="#">CSS 02 02</a></li>
+                                        <li><a href="#">CSS 02 02</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">CSS 03</a></li>
+                            </ul>
+                        </li>
+                        <li class="arrow_right"><a href="#">JS</a>
+                            <ul>
+                                <li><a href="#">JS 01</a></li>
+                                <li><a href="#">JS 02</a></li>
+                                <li><a href="#">JS 03</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+        </ul>
+          
+          <!-- <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Items</a>
+                <ul class="items">
+                    <li><a href="#"></a>Item 01</li>
+                    <li><a href="#"></a>Item 02</li>
+                    <li><a href="#"></a>Item 03</li>
+                    <li><a href="#"></a>Item 04</li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+          <li><a href="#">Settins</a></li>
+          <li><a href="#">Contact</a></li>
+          </ul> -->
+        </div>
+      </nav>
 
 </body>
 </html>
