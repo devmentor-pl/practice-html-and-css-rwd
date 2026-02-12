@@ -1,0 +1,37 @@
+/* header */
+.nav {
+	justify-content: space-between;
+	align-items: center;
+}
+.nav__left {
+	height: 100%;
+}
+.nav__right {
+	height: 100%;
+	width: 40%;
+	background-color: gold;
+}
+label {
+	display: none;
+}
+
+/* section one  */
+.one {
+	flex-direction: row;
+}
+.one__left,
+.one__right {
+	width: calc(50% - 10px);
+	height: 100%;
+}
+/* section two  */
+.two {
+	flex-direction: row;
+}
+.two__first,
+.two__middle,
+.two__last {
+	height: 100%;
+	width: calc(33% - 10px);
+	background-color: gold;
+}
