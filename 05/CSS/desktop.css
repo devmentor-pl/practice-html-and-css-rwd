@@ -1,0 +1,48 @@
+@media (min-width: 801px) and (max-width: 2000px) {
+    * body {
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+    label,
+    input {
+        display: none;
+    }
+    .header__items {
+        display: flex;
+        text-align: end;
+    }
+
+    .header__img {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    .header {
+        margin-bottom: 5px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .section__first-items {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .section__third-item {
+        margin-bottom: 5px;
+    }
+    .section__second-items {
+        display: flex;
+        justify-content: center;
+    }
+}
