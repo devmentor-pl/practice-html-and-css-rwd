@@ -1,0 +1,11 @@
+@media (min-width: 600px) {
+
+    body {
+        display: grid;
+        grid-template-columns: minmax(200px, 50%) auto;
+        grid-template-areas:
+            "a-picture a-text"
+            "a-video a-text"
+    }
+
+}
