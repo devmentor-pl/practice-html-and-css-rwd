@@ -1,0 +1,125 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.5fr 2fr 1fr 1.5fr 1fr 0.3fr;
+    grid-template-areas: "nav" "box1" "box2" "box3" "box4" "box5" "footer";
+    grid-gap: 0.2rem;
+}
+
+.navbar {
+    grid-area: nav;
+    background-color: rgb(102, 190, 124);
+}
+
+.navbar__list {
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0;
+    display: flex;
+    position: relative;
+}
+
+.navbar__title {
+    background-color: beige;
+    margin: 0 auto;
+    padding: 5px 10px 5px 10px;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 3vh;
+    color: grey;
+}
+
+.navbar__items {
+    display: none;
+}
+
+.navbar__icon {
+    position: absolute;
+    color: beige;
+    padding-right: 10px;
+    right: 0;
+    top: 0;
+    font-size: 5vh;
+}
+
+.box1 {
+    grid-area: box1;
+    background-color: rgb(71, 153, 91);
+    ;
+}
+
+.box2 {
+    grid-area: box2;
+    background-color: rgb(39, 136, 63);
+    ;
+}
+
+.box3 {
+    grid-area: box3;
+    background-color: rgb(47, 117, 65);
+    ;
+}
+
+.box4 {
+    grid-area: box4;
+    background-color: rgb(37, 83, 49);
+    ;
+}
+
+.box5 {
+    grid-area: box5;
+    background-color: rgb(25, 73, 37);
+    ;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(10, 49, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__item {
+    background-color: beige;
+    width: 35%;
+    height: 90%;
+}
+
+@media(min-width:800px) {
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .navbar__icon {
+        display: none;
+    }
+    .navbar__items {
+        display: inline-block;
+        height: 80%;
+    }
+    .navbar__title {
+        margin: 0;
+    }
+    .navbar__list {
+        justify-content: space-between;
+        min-width: 100%;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+    }
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.4fr 3fr 2fr 0.3fr;
+        grid-template-areas: "nav nav nav nav nav nav" "box2 box2 box2 box1 box1 box1" "box4 box4 box3 box3 box5 box5" "footer footer footer footer footer footer"
+    }
+}
