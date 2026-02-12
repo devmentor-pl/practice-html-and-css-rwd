@@ -1,0 +1,36 @@
+button {
+    display: none;
+}
+
+.navbar {
+    display: block;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+.navbar__list--bottom {
+    position: absolute;
+    display: block;
+    background-color: #3d3d3d;
+    z-index: 1;
+}
+
+.first-list {
+    position: relative;
+}
+
+.navbar__list--align-margin {
+    margin-left: 0;
+    padding: 10px;
+}
+
+.second-list:hover .navbar__list--bottom {
+    display: block;
+}
+
+.navbar__list--bottom {
+    display: none;
+}

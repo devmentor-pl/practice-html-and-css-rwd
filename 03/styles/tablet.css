@@ -1,0 +1,13 @@
+
+.container {
+   
+    grid-template-areas: 
+    "picture-element text-element"
+    "video-element text-element";
+
+    grid-template-columns: 
+    minmax(200px, calc(100vh - 50%))
+    auto;
+    
+    
+}

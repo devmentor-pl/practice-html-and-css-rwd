@@ -1,0 +1,13 @@
+.container {
+    max-width: 1400px;
+    margin-inline: auto;
+    grid-template-areas: 
+    "picture-element video-element"
+    "text-element text-element";
+    grid-template-columns: 
+    50vw
+    auto;
+    
+
+
+}
