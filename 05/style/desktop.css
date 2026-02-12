@@ -1,0 +1,44 @@
+
+.section {
+    margin-bottom: 5px;
+}
+
+.box {
+    max-width: 1000px;
+}
+
+
+
+/*  HEADER---------------------------------------------------------------- HEADER */
+
+.header__navbar{
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: block;
+}
+
+.header__burger {
+    display: none;
+}
+
+.content__box {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    grid-row-gap: 0;
+    padding: 10px 0 10px;
+}
+
+.extra__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.extra__item {
+    min-height: 200px;
+}

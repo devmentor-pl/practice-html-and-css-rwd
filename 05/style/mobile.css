@@ -1,0 +1,68 @@
+
+.section {
+    padding: 5px;
+}
+
+/*  HEADER---------------------------------------------------------------- HEADER */
+
+.header__navbar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    padding: 5px 0 10px ;
+}
+
+.header__menu {
+    min-width: 400px;
+    min-height: 50px;
+    display: none;
+}
+
+.header__logo {
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.header__burger {
+    max-width: 40px;
+    position: absolute;
+    right: 10px;
+}
+
+/*  --------------------------------------------------------------------------- CONTENT */
+
+.content__box {
+    display: grid;
+    grid-template-rows: 1fr 1.2fr;
+    gap: 10px;
+}
+
+.content__item {
+    min-height: 200px;
+}
+
+/*  --------------------------------------------------------------------------- CONTENT */
+
+.extra__box {
+    display: grid;
+    gap: 10px;
+}
+
+.extra__item {
+    min-height: 100px;
+}
+
+/*  --------------------------------------------------------------------------- CONTENT */
+
+.footer__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0 5px;
+}
+
+.footer__item {
+    min-width: 200px;
+    min-height: 50px;
+}

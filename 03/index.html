@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quaerat accusantium porro error dicta consequuntur iure facere exercitationem, nisi earum consequatur, fugit velit autem molestiae ex rerum! Unde soluta aperiam repellat, in repellendus voluptates cum corporis quia sint alias illo, at accusamus nisi tempore, libero maxime. Vero, veritatis impedit laudantium natus magni temporibus debitis perspiciatis culpa ratione! Quae voluptatibus hic ut natus quidem molestias consequatur quibusdam autem quaerat eaque. Eaque ullam magni iure reprehenderit explicabo, omnis impedit corporis tempore consequuntur reiciendis illum dolore sunt possimus blanditiis id deleniti. Nobis eaque, in tempore, maxime commodi, repudiandae minus exercitationem voluptates labore nihil molestias porro blanditiis culpa quod cum. Aperiam dolorem consequuntur quaerat iure earum accusamus recusandae doloribus modi rerum laudantium eligendi corporis repellendus in quam enim facere, optio incidunt fuga obcaecati deleniti dolore vel officiis ratione neque. Tempora magni temporibus ullam officiis saepe minus voluptate facere. Adipisci id omnis ut provident eum.</p>
+    </main>
+
+    <header class="p">
+        <picture>
+            <source
+                srcset="/assets/ship-8170663_1280-desktop.jpg" 
+                media="(min-width: 1200px)"
+            >
+            <source
+                srcset="/assets/ship-8170663_1280-tablet.jpg" 
+                media="(min-width: 600px)"
+            >
+            <source
+                srcset="/assets/ship-8170663_1280-mobile.jpg"
+            >
+            <img src="/assets/ship-8170663_1280.jpg" alt="">
+        </picture>
+    </header>
+
+    <side class="v">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3djZ6rgdHhE?si=CbMM7PBV_ui9zOTW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>

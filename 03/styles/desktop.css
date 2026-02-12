@@ -1,0 +1,9 @@
+body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.t {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
