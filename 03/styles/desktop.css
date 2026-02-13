@@ -1,0 +1,31 @@
+body {
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        "picture video"
+        "text text";
+    grid-template-rows: 
+        3fr
+        1fr;
+    grid-template-columns:
+        1fr 
+        1fr;
+        
+}
+
+.p {
+    grid-area: picture;
+    align-self: center;
+    margin: auto 0
+}
+
+.t {
+    grid-area: text;
+}
+
+.v {
+    grid-area: video;
+    align-self: center;
+}
