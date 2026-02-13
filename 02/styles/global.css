@@ -7,7 +7,6 @@
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,4 +22,30 @@
 
 .c {
     border-color: #baffc9;
+    order: 1;
+}
+
+body{
+    display: grid;
+    grid-template-rows: repeat(3, 50vh);
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
+
+@media (min-width: 600px){
+    .a{
+        grid-area: a;
+    }
+    .b{
+        grid-area: b;
+    }
+    .c{
+        grid-area: c;
+    }
+body{
+    grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+    grid-template-areas: 
+    "a a"
+    "c b" ;
+    }
 }
