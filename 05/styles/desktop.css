@@ -1,0 +1,43 @@
+/* header */
+
+.top {
+  grid-template-areas: "logo . nav";
+  grid-template-columns: 30% 35% 35%;
+}
+
+/* menu */
+
+span {
+  visibility: hidden;
+}
+
+.nav__menu {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding: 20px 0;
+}
+
+.menu__item {
+  padding: 0 20px;
+}
+
+.nav__hamburger {
+  display: none;
+}
+
+/* section 1 */
+
+.first-section__content {
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh;
+}
+
+/* section 2 */
+
+.second-section__content {
+  column-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50vh;
+}

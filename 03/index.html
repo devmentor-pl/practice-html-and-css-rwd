@@ -1,16 +1,56 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 600px)"
+      href="./styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1200px)"
+      href="./styles/desktop.css"
+    />
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
-</head>
-<body>
-    
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
-
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <main class="t">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+        voluptatibus possimus nisi beatae dolorum veniam ipsa quo, ea, amet
+        repellendus praesentium saepe ab illum quisquam quidem maiores,
+        provident optio repudiandae. Quis distinctio beatae maiores nihil amet
+        magnam nisi et ullam tempora obcaecati accusantium voluptatum quos
+        soluta, numquam unde placeat deserunt nemo aspernatur tenetur, esse
+        ipsum itaque deleniti commodi? Vitae, nostrum? Sapiente animi culpa
+        quisquam soluta, molestias temporibus iste nisi voluptatum omnis nostrum
+        architecto autem alias vel labore delectus accusantium doloribus, rem
+        error illo. Veritatis vel porro ipsum deserunt. Optio, fugiat.
+      </main>
+      <header class="p">
+        <picture>
+          <source srcset="./assets/milky-way-640.jpg" />
+          <source
+            srcset="./assets/milky-way-1280.jpg"
+            media="(min-width: 600px)"
+          />
+          <img src="./assets/milky-way-1920.jpg" alt="milky-way image" />
+        </picture>
+      </header>
+      <side class="v">
+        <iframe
+          src="https://www.youtube.com/embed/x05hIYpw1lU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </side>
+    </div>
+  </body>
 </html>

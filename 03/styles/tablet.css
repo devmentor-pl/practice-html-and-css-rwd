@@ -1,0 +1,13 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  grid-template-areas:
+    "picture-content text-content"
+    "video-content text-content";
+
+  grid-template-columns:
+    minmax(200px, 50%) / 1fr
+    minmax(200px, 50%) / 1fr;
+}
