@@ -4,7 +4,9 @@
     box-sizing: border-box;
 }
 
-.p, .t, .v {
+.p,
+.t,
+.v {
     border: 3px solid transparent;
     min-height: 50px;
 
@@ -14,7 +16,7 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
 }
 
 .t {
