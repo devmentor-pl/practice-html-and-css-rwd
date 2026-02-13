@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-layout {
+    border: 3px solid green;
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.app-layout > :nth-child(n) {
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid blue;
+}
+
+.header-wrapper {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo {
+    width: 30%;
+    height: 100%;
+    background-color: orange;
+}
+.header__menuBar {
+    position: absolute;
+    right: 20px;
+    font-size: 1.5rem;
+}
+.header__menu {
+    display: none;
+}
+
+/* section--1 */
+.section--1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.section--1 > div {
+    background-color: orange;
+    height: 150px;
+}
+.section--1 > div:not(:last-child) {
+    margin-bottom: 15px;
+}
+/* section--2*/
+.section--2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.section--2 > div {
+    background-color: orange;
+    height: 150px;
+}
+
+.section--2 > div:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+/* section--3*/
+.section--3 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.section--3 > div {
+    background-color: orange;
+    min-height: 100px;
+    width: 150px;
+}
+
+@media (min-width: 800px) {
+    .header__menuBar {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+        width: 50%;
+        height: 100%;
+        background-color: orange;
+    }
+
+    .header__logo {
+        width: 20%;
+    }
+
+    .header-wrapper {
+        height: 75px;
+        justify-content: space-between;
+    }
+
+    /* section--1 */
+    .section--1 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section--1 > div {
+        margin-bottom: 0 !important;
+        height: 150px;
+        width: calc(50% - 5px);
+    }
+    /* section--2*/
+    .section--2 {
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 0;
+    }
+    .section--2 > div {
+        width: calc(33.33333333333% - 10px);
+        margin-bottom: 0 !important;
+    }
+    /* section--3 ... not necessary*/
+}
