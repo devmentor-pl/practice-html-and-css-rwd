@@ -1,0 +1,18 @@
+body{
+    display: grid;
+    grid-template-areas: 
+        "A A"
+        "C B";
+        margin: auto;
+    /* grid-template-columns: 
+        auto
+        minmax(auto, calc(1200px * 0.5));     */
+    max-width: 1200px;
+    /* justify-items: center; */
+}
+
+
+/* .a, .b, .c {
+    max-width: 1200px;
+} */
+
