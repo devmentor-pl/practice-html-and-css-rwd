@@ -1,0 +1,11 @@
+body {
+	grid-template-areas:
+		'. header header .'
+		'. section main .';
+
+	grid-template-columns:
+		auto
+		minmax(auto, calc(1200px * 0.5))
+		minmax(auto, calc(1200px * 0.5))
+		auto;
+}

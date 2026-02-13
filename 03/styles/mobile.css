@@ -1,0 +1,43 @@
+body {
+	display: grid;
+	grid-template-areas:
+		'header'
+		'main'
+		'side';
+}
+
+.p {
+	grid-area: header;
+}
+
+img {
+	width: 100%;
+}
+
+.t {
+	grid-area: main;
+	display: block;
+}
+
+.t h1,
+.t article,
+.t p {
+	margin: 5% 0;
+}
+
+.v {
+	grid-area: side;
+
+	height: 0;
+	padding-bottom: calc(315 / 560 * 100%);
+	position: relative;
+	width: 100%;
+}
+
+.v iframe {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}

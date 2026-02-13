@@ -1,0 +1,48 @@
+.row,
+.cell {
+	margin: 5px 0;
+	padding: 5px;
+}
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__burger-label {
+	display: none;
+}
+
+.header__title {
+	min-width: 20%;
+	display: block;
+}
+
+.header__nav {
+	visibility: visible;
+	min-width: 40%;
+}
+
+.content__container {
+	height: 40vh;
+	display: flex;
+	flex-direction: row;
+}
+
+.content__article {
+	width: 50%;
+	height: calc(100% - 20px);
+	margin: 10px 5px;
+}
+
+.comments__container {
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.comment {
+	width: 33%;
+	height: calc(100% - 20px);
+	margin: 10px 10px;
+}
