@@ -1,0 +1,74 @@
+/* nav */
+
+nav {
+    background-color: var(--black);
+    padding: 20px 50px;
+}
+
+/* hamburger */
+
+.nav__hamburger {
+    display: block;
+    width: 4rem;
+    height: 3.5rem;
+    border: 0;
+    border-top: 5px solid #fff;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    float: right;
+}
+
+.nav__hamburger::before, .nav__hamburger::after {
+    border-top: 5px solid #fff;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(10px);
+    width: 100%;
+}
+
+ .nav__hamburger::after{
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+/* hamburger checked */
+
+.nav input[type="checkbox"]:checked ~ .nav__hamburger{
+    border: none;
+    transform: rotate(45deg) translateY(5px);
+}
+
+.nav input[type="checkbox"]:checked ~ .nav__hamburger::after {
+    transform:rotate(-90deg) translateX(-10px);
+}
+
+.nav__hamburger:hover .menu__list {
+    display: block;
+} 
+
+ /* toggler */
+
+.nav__toggler {
+    display: none;
+}
+
+.menu__list {
+    display: none;
+}
+
+.nav__toggler:checked ~ .menu__list {
+    display: block;
+}
+
+.dropdown {
+    display: block;
+    padding-left: 3rem;
+}
+
+.menu__item {
+    padding: 5px 10px;
+}

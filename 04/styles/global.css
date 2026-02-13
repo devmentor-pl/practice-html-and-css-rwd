@@ -1,0 +1,32 @@
+:root{
+    --white: #f9f9f9;
+    --black: #333;
+    --gray: #85888C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+   font-size: 2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu__link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background-color: var(--gray);
+}
