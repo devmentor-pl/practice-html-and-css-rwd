@@ -1,0 +1,40 @@
+.header__box{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    visibility: visible;
+    flex-basis: 40%;
+}
+
+.header__hamburger {
+    display: none;
+}
+
+.header__logo {
+    width: 20%;
+    height: 40px;
+}
+
+.hero__list, .features__list {
+    flex-direction: row;
+    height: 300px;
+    gap:10px;
+}
+
+.features__list {
+    padding: 0 10px
+}
+
+.hero__item {
+    flex-basis: 50%;
+}
+.features__item {
+    flex-basis: 33.33%;
+}
+
+.hero__article, .features__article {
+    height: calc(100% - 20px);
+    margin: 10px 0
+}
