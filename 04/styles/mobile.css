@@ -1,0 +1,96 @@
+header h1 {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 8px;
+}
+.menu-item__no-label {
+    display: none;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    padding-top: 10px;
+}
+
+.hamburger {
+    width: 30px;
+    height: 25px;
+    border: 0;
+    border-top: 3px solid black;
+    background: transparent;
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid black;
+    transform: translateY(4px);
+}
+
+.hamburger::after {
+    transform: translateY(11px);
+}
+
+.hamburger-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hamburger-input {
+    display: none;
+}
+
+header li {
+    background-color: #444;
+    color: white;
+}
+
+header a:visited {
+    color: white;
+    direction: none;
+}
+
+.menu-item {
+    border: 1px solid #bbb;
+    margin: 5px;
+    margin-left: 35px;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+.menu-list {
+    display: none;
+}
+
+.hamburger-input:checked+.menu-list {
+    display: block;
+}
+
+.dropdown-menu-item {
+    text-align: left;
+    margin: 5px;
+    margin-left: 50px;
+    border: 1px solid #bbb;
+    padding: 5px 10px;
+}
+
+.dropdown-menu-list {
+    display: none;
+}
+
+.dropdown-input {
+    display: none;
+}
+
+.dropdown-input:checked+.dropdown-menu-list {
+    display: block;
+}
+

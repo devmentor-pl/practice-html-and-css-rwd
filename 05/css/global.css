@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    min-height: 10px;
+    background-color: yellow;
+    margin: 10px;
+}
+
+
+.hamburger {
+    width: 30px;
+    height: 25px;
+    border: 0;
+    border-top: 3px solid black;
+    background: transparent;
+    position: relative;
+}
+
+.hamburger::before, .hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 3px solid black;
+    transform: translateY(4px);
+}
+
+.hamburger::after {
+    transform: translateY(11px);
+}

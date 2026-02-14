@@ -1,30 +1,132 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    >
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link
+        rel="stylesheet"
+        href="./styles/reset.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/global.css"
+    >
+    <link
+        rel="stylesheet"
+        href="./styles/mobile.css"
+    >
+    <link
+        rel="stylesheet"
+        media="(min-width: 600px)"
+        href="./styles/tablet.css"
+    >
 </head>
-<body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
 
+<body>
+    <header>
+        <div class="title-container">
+            <h1>TITLE</h1>
+        </div>
+        <nav>
+
+            <div class="hamburger-container">
+                <label for="menu-switcher">
+                    <div class="hamburger"></div>
+                </label>
+
+            </div>
+
+            <div class="menu-container">
+                <input
+                    class="hamburger-input"
+                    type="checkbox"
+                    id="menu-switcher"
+                >
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                start
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item menu-item__label">
+                        <a href="#">
+
+                            <label for="sub-menu-switcher">
+                                <div>
+                                    oferta
+                                </div>
+                            </label>
+
+                        </a>
+                        <input
+                            class="dropdown-input"
+                            type="checkbox"
+                            id="sub-menu-switcher"
+                        >
+                        <ul class="dropdown-menu-list">
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        tworzenie stron www
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        pozycjonowanie stron
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item menu-item__no-label">
+                        <a href="#">
+                            <div>
+                                oferta
+                            </div>
+                        </a>
+                        <ul class="dropdown-menu-list">
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        tworzenie stron www
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-menu-item">
+                                <a href="#">
+                                    <div>
+                                        pozycjonowanie stron
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">
+                            <div>
+                                kontakt
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>

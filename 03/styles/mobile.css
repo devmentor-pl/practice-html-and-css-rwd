@@ -1,0 +1,19 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "pic"
+        "text"
+        "vid";
+}
+
+.p {
+    grid-area: pic;
+}
+
+.t {
+    grid-area: text;
+}
+
+.v {
+    grid-area: vid;
+}
