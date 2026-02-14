@@ -5,26 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css/reset.css">
+    <link rel="stylesheet" href="./styles.css/global.css">
+    <link rel="stylesheet" href="./styles.css/mobile.css">
+    <link rel="stylesheet" media="(min-width: 760px)"
+        href="./styles.css/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)"
+        href="./styles.css/desktop.css">
 <body>
     
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
-            </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
-    </nav>
+    <header class="header">
 
+        <nav class="header-nav">
+
+            <span class="header-nav__logo">
+                <h1>HTML & CSS: RWD</h1>
+            </span>
+            
+            <label class="menu-label" for="menu-switcher"> &#9776</label>
+            <input type="checkbox" id="menu-switcher"></input>
+
+            <ul class="header-nav__menu">
+                <li class="header-nav__menu-li">
+                    <a href="#">Start</a>
+                </li>
+                <li class="header-nav__menu-li">
+                    <a href="#">Oferta</a>
+                    <ul class="header-nav__menu-dropdown">
+                        <li class="header-nav__menu-dropdown-li"><a class="header-nav__menu-dropdown-li-a" href="">Strony internetowe</a></li>
+                        <li class="header-nav__menu-dropdown-li"><a class="header-nav__menu-dropdown-li-a"href="">Pozycjonowanie stron www</a></li>
+                    </ul>
+                </li>
+                <li class="header-nav__menu-li">
+                    <a href="#">Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 </body>
 </html>

@@ -4,6 +4,16 @@
     box-sizing: border-box;
 }
 
+body {
+    height: 100Vh;
+    display: grid;
+    grid-template-areas: 
+        "a-top"
+        "a-content"
+        "a-bottom";
+    grid-template-rows: repeat(3, 50%);
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
@@ -14,13 +24,28 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-top;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: a-content;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: a-bottom;
+}
+
+@media screen and (min-width: 600px) {
+    
+    body {
+        grid-template-areas: 
+            "a-top a-top"
+            " a-bottom a-content";
+        grid-template-columns: repeat(2, minmax(auto, 1200px));
+        max-width: 1200px;
+        margin: auto;
+    }
 }
