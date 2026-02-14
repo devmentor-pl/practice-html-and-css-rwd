@@ -1,0 +1,27 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "P V"
+        "T T";
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.p {
+    grid-area: P;
+}
+
+.p>picture img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.t {
+    grid-area: T;
+}
+
+.v {
+    grid-area: V;
+    align-self: end;
+}

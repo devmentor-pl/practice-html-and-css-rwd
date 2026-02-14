@@ -1,0 +1,24 @@
+body {
+
+    display: GRID;
+    grid-template-areas:
+        "A A"
+        "C B";
+    max-width: 1200px;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+
+}
+
+.a {
+    grid-area: A;
+
+}
+
+.b {
+    grid-area: B;
+}
+
+.c {
+    grid-area: C;
+}

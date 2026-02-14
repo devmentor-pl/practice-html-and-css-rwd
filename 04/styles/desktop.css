@@ -1,0 +1,50 @@
+.hamburger {
+    display: none;
+}
+
+body {
+    width: 100%
+}
+
+
+a.nav__link {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(35px + 2rem);
+    transition: background 0.4s;
+
+
+}
+
+a.nav__link:hover {
+    background-color: pink;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav li {
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+
+nav .nav__item:hover li {
+    display: block;
+}
+
+li.nav__item>ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__item>ul>li {
+    display: none;
+}
