@@ -1,0 +1,52 @@
+
+.nav{
+    margin: 0 auto;
+   
+    
+}
+
+.nav__ul{
+    background-color: black;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav input:checked + ul{
+    display: block;
+}
+
+input{
+   display: none;
+
+}
+
+.nav__ul, .nav__li{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.nav__li{
+    padding: .5rem 1rem;
+}
+
+.nav__li--secondary{
+    padding: 1rem 4rem;
+}
+
+.nav__ul--secondary{
+    display: none;
+}
+
+.nav__li--active:hover .nav__ul--secondary {
+    display: block;
+    
+
+}
+
+
+
+
