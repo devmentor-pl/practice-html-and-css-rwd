@@ -5,7 +5,7 @@
 }
 
 .p, .t, .v {
-    border: 3px solid transparent;
+   /* border: 3px solid transparent;*/
     min-height: 50px;
 
     display: flex;
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.p {
+/*.p {
     border-color: #ffffba
 }
 
@@ -23,4 +23,4 @@
 
 .v {
     border-color: #baffc9;
-}
+}*/

@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)"
+    href="./styles/normal.css">
 </head>
 <body>
-    
-    <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+    <input type="checkbox" id="menu-switcher">
+    <label for="menu-switcher" class="icon"><div class="hamburger"></div></label> 
+    <nav class="navigation">     
+        <ul class="nav">
+            <li class="nav__item nav__item--start">
+                <a class="nav__link" href="#">start</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
+            <li class="nav__item nav__item--offer" tabIndex="-1">
+                <a class="nav__link nav__link--offer" href="#">oferta</a>
+                <ul class="nav__dropdown">
+                    <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown" href="#">strony internetowe</a></li>
+                    <li class="nav__item nav__item--dropdown">
+                        <a class="nav__link nav__link--dropdown nav__link--dropdown2" href="#">pozycjonowanie stron www</a></li>
                 </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
+            <li class="nav__item nav__item--contact">
+                <a class="nav__link" href="#">kontakt</a>
             </li>
         </ul>
     </nav>

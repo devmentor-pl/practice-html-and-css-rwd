@@ -14,7 +14,7 @@
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
 }
 
 .b {
@@ -23,4 +23,41 @@
 
 .c {
     border-color: #baffc9;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+    "top"
+    "content"
+    "bottom";
+    grid-template-rows: repeat(3, 50vh);
+}
+
+header {
+    grid-area: top;
+}
+
+section {
+    grid-area: bottom;
+}
+
+main {
+    grid-area: content;
+}
+
+@media (min-width: 600px) {
+ body {
+    display: grid;
+    grid-template-areas: 
+    "top top"
+    "bottom content";
+    grid-template-columns: 
+    minmax(auto, calc(1200px * 0.5))
+    minmax(auto, calc(1200px * 0.5));
+    grid-template-rows: repeat(2, 50vh);
+
+    justify-content: center;
+    align-content: center;
+ }
 }
