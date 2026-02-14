@@ -1,0 +1,8 @@
+body {
+    grid-template-areas: 
+        "area-p area-v"
+        "area-t area-t";
+
+    max-width: 1400px;
+    margin: 0 auto;
+}
