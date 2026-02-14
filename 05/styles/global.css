@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row, .cell, .container {
+    margin: 5px;
+    padding: 5px;
+    outline: 2px solid;
+}
+
+.row {
+    outline-color: green;
+}
+
+.cell {
+    outline-color: orange;
+    background-color: orange;
+}
+
+.container {
+    outline-color: blue;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+

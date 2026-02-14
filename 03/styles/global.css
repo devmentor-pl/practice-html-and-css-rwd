@@ -14,13 +14,31 @@
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: a-picture;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: a-text;
 }
 
 .v {
+    grid-area: a-video;
     border-color: #baffc9;
+}
+
+/* .... */
+section {
+    height: 0;
+    padding-bottom: calc(315 / 560 * 100%);
+    position: relative;
+    width: 80%; 
+}
+iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 }

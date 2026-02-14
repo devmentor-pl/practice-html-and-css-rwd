@@ -1,0 +1,24 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-picture a-text"
+    "a-video a-text";
+}
+.p {
+    min-height: 200px;
+    max-height: 50vh;
+    
+}
+
+.v {
+    min-height: 200px;
+    max-height: 50vh;
+    
+}
+
+.t {
+    column-count: 1;
+    text-align: justify;
+    margin-top: auto;
+    margin-bottom: auto;
+}
