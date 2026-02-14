@@ -1,0 +1,54 @@
+body {
+    display: grid;
+
+    grid-template-areas: 
+    "area-p"
+    "area-t"
+    "area-v";
+
+    grid-template-rows:
+    auto
+    minmax(auto, 70vw)
+    auto;
+}
+.p {
+    grid-area: area-p;
+    line-height: 0;
+}
+.t {
+    grid-area: area-t;
+}
+.v {
+    grid-area: area-v;
+}
+
+/* video */
+.v {
+    position: relative;
+    height: 0;
+    /* padding-bottom: calc( 100% * 9 / 16 ); */
+    /* padding-bottom: calc( 100% * 315 / 560 ); */
+    padding-bottom: calc( 100% * 9 / 16 );
+}
+.v iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* text RWD */
+.t {
+    position: relative;
+}
+.t p {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 3.4vw;
+    display: flex;
+    align-items: flex-start;
+}
