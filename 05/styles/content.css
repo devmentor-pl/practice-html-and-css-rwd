@@ -1,0 +1,27 @@
+/* content.css */
+
+.content__container {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+}
+
+.module--1 .content__container{
+    padding: 0px;
+}
+
+.module--1 .content__article.cell {
+    min-height: 300px;
+    width: 49.5%;
+    margin: 0px;
+}
+
+
+.module--2 .content__article.cell {
+    min-height: 300px;
+    width: 33%;
+}
+
+.module--2 .content__container{
+    padding: 12px;
+}

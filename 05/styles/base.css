@@ -1,0 +1,28 @@
+/* base.css */
+
+.row,
+.cell,
+.container {
+    box-sizing: border-box;
+    margin: 4px;
+    padding: 4px;
+    outline: 5px solid;
+}
+
+.row {
+    margin-bottom: 20px;
+    padding: 12px 0px;
+    outline-color: #0ED145;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+    outline-color: #00A8F3;
+}
+
+.cell {
+    min-height: 50px;
+    background-color: #FFCA18;
+    outline: 0;
+}

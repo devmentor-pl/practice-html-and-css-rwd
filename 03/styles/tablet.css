@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.t {
+    grid-area: 1 / 2 / 3 / 3; /* Zaczyna się na 1 wierszu i 1 kolumnie, kończy się na 2 wierszu 3 kolumnie  */
+    padding: 5% 10%;
+    display: flex;
+    align-items: center;
+}
+
+.p {
+    grid-area: 1 / 1 / 2 / 2; /* Zaczyna się na 2 wierszu i 1 kolumnie, kończy się na 3 wierszu 2 kolumnie  */
+}
+
+.p img{
+    max-width: 100%;
+}
+
+.v {
+    grid-area: 2 / 1 / 3 / 2; /* Zaczyna się na 2 wierszu i 2 kolumnie, kończy się na 3 wierszu 3 kolumnie  */
+    width: 100%;
+    height: 100%;
+}

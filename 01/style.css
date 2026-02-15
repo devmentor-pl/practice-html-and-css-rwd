@@ -10,14 +10,35 @@
     min-width: 320px;
     max-width: 600px;
     text-align: justify;
+    padding: 0 16px;
 }
+
 
 .content::before {
     float: left;
     display: block;
     content: '';
     height: 0;
+    margin-right: 16px; /* Lapiej to wygada z marginesem */ 
+    margin: 0 16px 0 -16px;
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
-    border-bottom-color: transparent;    
+    border-bottom-color: transparent;  
+    clip-path: polygon(0 0, 100% 0, 0 100%);  /* "Ścieżka przycięcia " */
+    shape-outside: polygon(0 0, 100% 0, 0 100%); /* Dodanie wycięcia "kształt na zewnątrz" */
+    transition: 
+    clip-path 0.6s ease-in-out,
+    shape-outside 0.6s ease-in-out,
+    margin-left 0.6s ease-in-out; 
+}
+
+/* Na mobile  */ 
+
+@media (max-width: 600px) {
+    .content::before {
+        clip-path: polygon(0 0, 50% 0, 0 50%);
+        shape-outside: polygon(0 0, 50% 0, 0 50%);
+        margin: 0 16px 0 -16px;
+        line-height: 18px;
+    }
 }

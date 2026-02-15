@@ -1,0 +1,30 @@
+/* content.css */
+
+.content__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.module--1 .content__container{
+    padding: 0px;
+}
+
+.module--1 .content__article.cell {
+    min-height: 300px;
+    width: 100%;
+    margin: 0px;
+}
+
+
+.module--2 .content__article.cell {
+    min-height: 300px;
+    width: 100%;
+    margin: 0px;
+}
+
+.module--2 .content__container{
+    padding: 0px;
+}

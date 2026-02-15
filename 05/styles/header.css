@@ -1,0 +1,21 @@
+/* header.css */
+
+.header{
+    padding: 0px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0px;
+}
+
+.header__logo {
+    min-width: 200px;
+    margin: 0px;
+}
+
+.header__nav {
+    min-width: 400px;
+    margin: 0px;
+}

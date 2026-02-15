@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.t {
+    order: 2;
+    width: 100%;
+    padding: 5% 4%;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    gap: 20px;
+    justify-content: center;
+}
+
+.p {
+    order: 1;
+    max-width: 100%;
+}
+
+.v {
+    order: 3;
+    width: 100%;
+    height: 30vh;
+}

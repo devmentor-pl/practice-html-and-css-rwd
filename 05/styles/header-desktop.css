@@ -1,0 +1,16 @@
+.header__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo.cell{
+    width: 20%;
+}
+
+.header__nav.cell{
+    width: 40%;
+}
+
+.header__nav--mobile.cell{
+    display: none;
+}
