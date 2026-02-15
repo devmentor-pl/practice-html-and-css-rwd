@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
-</head>
-<body>
-    
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button class="hamburger">
+      <img src="assets/hamburger.svg" alt="hamburger" />
+    </button>
     <nav>
-        <ul>
-            <li>
-                <a href="#">start</a>
+      <ul class="nav">
+        <li class="nav__item"><a href="#" class="nav__link">HOME</a></li>
+        <li class="nav__item">
+          <a href="#" class="nav__link nav__arrow">ITEMS</a>
+          <ul class="nav__submenu submenu">
+            <li class="submenu__item">
+              <a class="submenu__link" href="#">ITEM 1</a>
             </li>
-            <li>
-                <a href="#">oferta</a>
-                <ul>
-                    <li><a href="">strony internetowe</a></li>
-                    <li><a href="">pozycjonowanie stron www</a></li>
-                </ul>
+            <li class="submenu__item">
+              <a class="submenu__link submenu__arrow" href="#">ITEM 2</a>
+              <ul class="submenu submenu--level2">
+                <li class="submenu__item submenu__item--level2">
+                  <a class="submenu__link" href="#">ITEM 2.1</a>
+                </li>
+                <li class="submenu__item submenu__item--level2">
+                  <a class="submenu__link" href="#">ITEM 2.2 </a>
+                </li>
+              </ul>
             </li>
-            <li>
-                <a href="#">kontakt</a>
-            </li>
-        </ul>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">SETTINGS</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">ABOUT</a></li>
+      </ul>
     </nav>
 
-</body>
+    <!--zdecydowałem się na użycie JS żeby uprościć sobie kodu w CSS-->
+    <script src="assets/hamburger.js"></script>
+  </body>
 </html>

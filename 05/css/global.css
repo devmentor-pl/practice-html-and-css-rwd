@@ -1,0 +1,10 @@
+.content {
+  background: #ffca18;
+  min-height: 50px;
+  min-width: 50px;
+  margin: 5px;
+}
+
+.header__logo {
+  width: 150px;
+}

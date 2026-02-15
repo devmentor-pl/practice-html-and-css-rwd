@@ -1,0 +1,42 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__hamburger img {
+  height: 50px;
+  margin: 5px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+.articles__content {
+  height: 250px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery__content {
+  height: 200px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__content {
+  width: 250px;
+}

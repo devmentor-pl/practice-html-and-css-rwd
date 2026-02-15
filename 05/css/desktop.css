@@ -1,0 +1,33 @@
+body {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__hamburger {
+  display: none;
+}
+
+.header__menu {
+  display: block;
+  width: 250px;
+}
+
+.articles {
+  flex-direction: row;
+}
+
+.articles__content {
+  flex-grow: 1;
+}
+
+.gallery {
+  flex-direction: row;
+}
+
+.gallery__content {
+  flex-grow: 1;
+}
