@@ -1,0 +1,34 @@
+﻿* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	background-color: #333;
+}
+
+nav {
+	padding: 20px;
+	background-color: #eee;
+}
+
+ul {
+	display: none;
+	list-style-type: none;
+}
+
+.menu-list a {
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.menu-list-item {
+	cursor: pointer;
+}
+
+.menu-list-item:hover > a {
+	font-weight: 700;
+}
