@@ -1,0 +1,28 @@
+.navbar {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.hamburger {
+	display: none;
+}
+.navbar .cell {
+	display: block;
+	min-height: 50px;
+}
+section .cell {
+	min-width: 50%;
+	margin: 5px;
+}
+section .row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+section .cell2 {
+	min-width: 33%;
+}

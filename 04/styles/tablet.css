@@ -1,0 +1,32 @@
+.navbar__list {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	width: 100%;
+}
+.navbar__list {
+	margin: 30px;
+}
+.navbar__list-item {
+	margin: 30px;
+	position: relative;
+	font-weight: bold;
+}
+.navbar__list-item:hover > .navbar__dropdown {
+	display: block;
+}
+
+.hamburger {
+	display: none;
+}
+
+.navbar__dropdown {
+	position: absolute;
+	left: 0;
+	top: 20px;
+	display: none;
+}
+.navbar__dropdown-item {
+	font-weight: 100;
+	margin-top: 10px;
+}
