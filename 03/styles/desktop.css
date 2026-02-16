@@ -1,0 +1,16 @@
+@media (min-width: 1200px) {
+    body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "p v"
+    "t t";
+    max-width: 1400px;
+    margin: 0 auto;
+    }
+}
+
+.v {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

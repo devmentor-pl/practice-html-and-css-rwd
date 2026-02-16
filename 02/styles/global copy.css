@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.a, .b, .c {
+    border: 3px solid transparent;
+    height: 50vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a {
+    border-color: #ffffba;
+    grid-area: header;
+}
+
+.b {
+    border-color: #ffdfba;
+    grid-area: section;
+}
+
+.c {
+    border-color: #baffc9;
+    order: 1;
+    grid-area: main;
+}
+
+@media (min-width: 600px) {
+    body {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+        "header header"
+        "main section";
+    }
+}
