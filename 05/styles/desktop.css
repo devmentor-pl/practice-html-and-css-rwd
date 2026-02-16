@@ -1,0 +1,122 @@
+@media(min-width: 800px) {
+
+      .first__level--blue {
+            width: 1000px;
+            height: 99%;
+            margin: 0 auto;
+            border: solid 5px blue
+      }
+
+      .first__level--position-orange {
+            display: flex;
+            justify-content: space-between;
+      }
+
+      .first__item--orange {
+            margin-left: 0;
+            width: 200px;
+            height: 80px;
+            margin-top: 0;
+            background-color: orange;
+      }
+
+      .nav__menu {
+            display: none;
+            position: static;
+
+      }
+
+      .nav__menu--desktop {
+            margin-right: 0;
+            width: 350px;
+            height: 80px;
+            margin-top: 0;
+            background-color: orange;
+      }
+
+      .second__level--green{
+           margin-top: 8px;
+           height: 250px;
+      }
+
+      .second__level--blue {
+            width: 1000px;
+            height: 97%;
+            margin: 0 auto;
+            margin-top: 4px;
+            border: solid 5px blue;
+            display: flex;
+            justify-content: space-between
+            
+      }
+
+      .second__item--orange-one {
+            width: 49%;
+            height: 100%;
+            background-color: orange;
+      }
+
+      .second__item--orange-two {
+            width: 49%;
+            height: 100%;
+            margin-top: 0;
+            background-color: orange; 
+      }
+
+      .third__level--green{
+            margin-top: 8px;
+            height: 250px;
+      }
+      
+      .third__level--blue{
+            width: 1000px;
+            height: 97%;
+            margin: 0 auto;
+            margin-top: 4px;
+            border: solid 5px blue;
+            display: flex;
+            justify-content: space-between
+      }
+      
+      .third__item--orange-one{
+            width: 32%;
+            height: 100%;
+            background-color: orange;
+      }
+      
+      .third__item--orange-two{
+            width: 32%;
+            height: 100%;
+            margin-top: 0;
+            background-color: orange;
+      }
+      
+      .third__item--orange-third{
+            width: 32%;
+            height: 100%;
+            margin-top:0;
+            background-color: orange;
+      }
+
+      .fourth__level--green {
+            margin-top: 8px;
+            height: 100%;
+      }
+      
+      .fourth__level--blue {
+            width: 1000px;
+            height: 97%;
+            margin: 0 auto;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            border: solid 5px blue;
+      }
+      .fourth__item--orange {
+            margin: 0 auto;
+            width: 150px;
+            height: 50px;
+            background-color: orange;
+      }
+
+
+}
