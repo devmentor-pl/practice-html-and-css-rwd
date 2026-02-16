@@ -1,0 +1,15 @@
+@media (min-width: 600px) {
+    body {
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "p t"
+        "v t" ;
+    }
+ 
+    
+    article {
+        column-count: 2;
+        column-gap: 40px;
+        text-align: justify;
+    }
+}

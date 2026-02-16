@@ -5,12 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <article>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque facilis aliquid aliquam enim illo ea maiores error laudantium autem, non accusantium ratione dolorum corporis consectetur reiciendis quod consequuntur necessitatibus assumenda.
+        </article>
+    </main>
+    <header class="p">
+        <picture>
+            <source 
+            media="(min-width: 600px)"
+            srcset="./img/tree-838667_640 (tablet).jpg/"
+            >
+            <source 
+            media="(min-width: 1200px)"
+            srcset="./img/tree-838667_640 (desktop).jpg/"
+            >
+
+            <img src="./img/tree-838667_640 mobile.jpg" alt="tree">
+            
+        </picture>
+
+    </header>
+    <side class="v">
+        <section>
+            <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/A9JDTH6PPB8?si=RgkqLkHlyyf3WvLe" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+        </section>
+        
+    </side>
 
 </body>
 </html>
