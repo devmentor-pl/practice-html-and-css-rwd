@@ -11,16 +11,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 50vh;
+}
+
+body {
+    display: grid; 
+    grid-template-areas: 
+    "area-a"
+    "area-b"
+    "area-c"
 }
 
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    grid-area: area-a;
 }
 
 .b {
     border-color: #ffdfba;
+    grid-area: area-b;
 }
 
 .c {
     border-color: #baffc9;
+    grid-area: area-c;
 }
+
+@media screen and (min-width: 600px){
+    body {
+        grid-template-areas: 
+            "area-a area-a"
+            "area-c area-b";
+        grid-template-columns: minmax(auto, 600px) minmax(auto, 600px);
+        justify-content: center;
+    }
+}
+
