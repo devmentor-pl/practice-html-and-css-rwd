@@ -5,12 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 600px)">
+    <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 1200px)">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda architecto eveniet quidem! Officiis fugit quae ea consectetur vel placeat, distinctio tenetur provident laudantium accusantium dolore! Officiis aliquam delectus sunt laborum.
+        Saepe suscipit minus debitis sequi modi dolore quibusdam illo? Consequuntur ducimus tenetur quod rerum asperiores, deserunt aspernatur molestiae minus maxime, veritatis illo officiis nihil, cumque beatae magni neque porro facere!
+        Debitis illum doloremque deleniti reiciendis distinctio beatae molestias, consequatur tenetur repellendus iste aspernatur porro vel odit unde voluptatem perferendis consequuntur sapiente aut eaque facilis nobis incidunt soluta! Excepturi, a corrupti?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda architecto eveniet quidem! Officiis fugit quae ea consectetur vel placeat, distinctio tenetur provident laudantium accusantium dolore! Officiis aliquam delectus sunt laborum.
+        Saepe suscipit minus debitis sequi modi dolore quibusdam illo? Consequuntur ducimus tenetur quod rerum asperiores, deserunt aspernatur molestiae minus maxime, veritatis illo officiis nihil, cumque beatae magni neque porro facere!
+        Debitis illum doloremque deleniti reiciendis distinctio beatae molestias, consequatur tenetur repellendus iste aspernatur porro vel odit unde voluptatem perferendis consequuntur sapiente aut eaque facilis nobis incidunt soluta! Excepturi, a corrupti?
+    </p>
+    </main>
+    <header class="p"> 
+        <picture class="picture">
+            <source srcset="./images/kids-g6ae1b5336_1920.jpg"
+                    media="(min-width: 1200px)">
+            <source srcset="./images/kids-g38c8d5264_1280.jpg"
+                    media="(min-width: 600px)">
+            <source srcset="./images/kids-g54497bfcb_640.jpg"
+                    media="(max-width: 599px)">
+
+            <img src="./images/kids-g6ae1b5336_1920.jpg" alt="picture-placeholder">
+        </picture>
+    </header>
+    <side class="v">
+        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/mK893wwweZ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </side>
 
 </body>
 </html>
