@@ -1,0 +1,20 @@
+.green--container {
+    border: 1px solid greenyellow;
+    min-height: 50px;
+    width: 100%;
+    margin: 3px;
+}
+
+.blue--container {
+    border: 1px solid rgb(47, 189, 255);
+    min-height: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.yellow--container {
+    background-color: rgb(252, 255, 47);
+    min-height: 50px;
+    margin: 3px;
+}
