@@ -1,0 +1,58 @@
+.header__container {
+    position: relative;
+}
+
+.nav__label {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.header__input {
+    display: none;
+}
+
+.header__logo {
+    text-align: center;
+}
+
+.nav__item {
+    border: 1px solid #bbb;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.nav {
+    display: none;
+    border: 1px solid red;
+}
+
+.nav__dropdown-left {
+    text-align: left;
+}
+
+header input:checked+ul {
+    /* margin-top: 100px; */
+    display: block;
+    border: 1px solid blue;
+}
+
+.arrow__right {
+    display: none;
+}
+
+.arrow__down {
+    display: none;
+}
+
+
+.fa-bars {
+    font-size: 20px;
+}
+
+.fa-bars:hover {
+    color: red;
+    cursor: pointer;
+}

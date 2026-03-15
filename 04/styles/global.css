@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.nav, .nav__dropdown, .dropdown__item-sub {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    color: #336699;
+    text-decoration: none;
+}
+
+
