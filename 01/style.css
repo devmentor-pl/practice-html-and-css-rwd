@@ -12,6 +12,10 @@
     text-align: justify;
 }
 
+.content > p {
+    font-size: 24px;
+}
+
 .content::before {
     float: left;
     display: block;
@@ -20,4 +24,6 @@
     border: 150px solid #dcdcdc;
     border-right-color: transparent;
     border-bottom-color: transparent;    
+
+    shape-outside: polygon(0 0, 0% 100%, 100% 0);
 }
