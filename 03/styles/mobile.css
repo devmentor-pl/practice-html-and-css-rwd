@@ -1,0 +1,23 @@
+body {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "main"
+    "side";
+  grid-template-rows: 
+    auto
+    50vh
+    50vh;
+}
+
+header { 
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: side;
+}
