@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
