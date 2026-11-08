@@ -12,10 +12,10 @@
 .nav__item {
   font-size: 18px;
   text-transform: uppercase;
+  text-align: center;
   margin-right: 10px;
-  padding: 20px;
+  padding: 20px 25px;
   position: relative;
-  width: 130px;
 }
 
 .nav__item:last-child {
@@ -36,21 +36,22 @@
   background-color: turquoise;
 }
 
+/* dropdown */
 .nav__item--dropdown {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 8px;
   transition: 5s transform;
 }
 
 .nav__item--dropdown::after {
   content: '';
-  display: inline-block;
   width: 6px;
   height: 6px;
-  border-right: 2px solid grey;
-  border-bottom: 2px solid grey;
-  transform: rotate(45deg);
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg) translateY(-50%);
   visibility: hidden;
 }
 
@@ -78,6 +79,9 @@
   left: 0;
 }
 
+.dropdown__item {
+  text-align: left;
+}
 
 /* None display hamburger */
 .nav__hamburger {

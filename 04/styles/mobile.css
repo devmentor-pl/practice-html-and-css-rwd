@@ -16,7 +16,7 @@
 
 .nav__item,
 .dropdown__item {
-  border: 1px solid #bbb;
+  /* border: 1px solid #bbb; */
   margin: 5px;
   padding: 5px 10px;
   text-align: center;
