@@ -4,6 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    display: grid;
+    grid-template-rows: 50vh 50vh 50vh;
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vw;
+    }
+
+    .a {
+        grid-column: span 2;
+    }
+}
+
 .a, .b, .c {
     border: 3px solid transparent;
     min-height: 50px;
