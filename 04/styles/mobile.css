@@ -4,15 +4,14 @@
     "button"
     "menu";
   grid-template-columns: 1fr;
-}
-
-.nav__hamburger {
-  grid-area: button;
+  grid-template-rows: 50px auto;
 }
 
 .nav__items {
   grid-area: menu;
+  transform: translateY(-10000%);
 }
+
 
 .nav__item,
 .dropdown__item {
@@ -22,8 +21,9 @@
   text-align: center;
 }
 
-/* Hamburger */
+
 .nav__hamburger {
+  grid-area: button;
   width: 40px;
   height: 35px;
   border: 0;
@@ -55,4 +55,8 @@
 
 .nav__hamburger:focus::after {
   transform: rotate(-90deg) translateX(-10px);
+}
+
+.nav__hamburger:focus ~ .nav__items {
+  transform: translateY(0);
 }
