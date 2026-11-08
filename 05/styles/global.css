@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header, main, section, article, footer {
+  border: 3px solid #fff;
+  min-height: 50px;
+}
+
+header { border-color: #ffffba; }
+main { border-color: #ffdfba; }
+section { border-color: #ffb3ba; }
+article { border-color: #baffc9; }
+footer { border-color: #bae1ff; }
+
+.row,
+.cell,
+.container {
+  margin: 15px;
+  padding: 5px;
+  outline: 3px solid;
+}
+
+.row {
+  outline-color: green;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  outline-color: blue;
+}
+
+.cell {
+  outline-color: orange;
+}
+

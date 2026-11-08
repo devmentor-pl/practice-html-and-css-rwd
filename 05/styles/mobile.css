@@ -1,0 +1,78 @@
+:root {
+  --display-grid: grid;
+}
+
+body {
+  display: var(--display-grid);
+  grid-template-areas: 
+    "header"
+    "main"
+    "card"
+    "footer";
+  grid-template-columns: 1fr;
+}
+
+header { grid-area: header; }
+
+main { grid-area: main; } 
+
+.card { grid-area: card; }
+
+footer { grid-area: footer; }
+
+.header__container {
+  display: var(--display-grid);
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.content__container {
+  display: var(--display-grid);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, minmax(calc(50vh - 20px), auto));
+}
+
+.card__container {
+  display: var(--display-grid);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(calc(30vh - 30px), auto));
+}
+
+.nav__hamburger {
+  grid-area: button;
+  width: 40px;
+  height: 35px;
+  border: 0;
+  border-top: 5px solid black;
+  background: transparent;
+  position: relative;
+  transition: 0.3s transform linear;
+}
+
+.nav__hamburger::before, .nav__hamburger::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  border-top: 5px solid black;
+  transform: translateY(10px);
+}
+
+.nav__hamburger::after {
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
+}
+
+.nav__hamburger:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
+}
+
+.nav__hamburger:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
+}
+
+.nav__hamburger:focus ~ .nav__items {
+  transform: translateY(0);
+}
