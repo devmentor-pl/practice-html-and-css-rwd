@@ -3,4 +3,6 @@ body {
     "header main"
     "aside main";
   grid-template-columns: minmax(200px, 50%) 1fr;
+
+  align-items: start;
 }

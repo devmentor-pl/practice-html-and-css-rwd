@@ -3,11 +3,11 @@ body {
   grid-template-areas: 
     "header"
     "main"
-    "side";
+    "aside";
   grid-template-rows: 
     auto
-    50vh
-    50vh;
+    minmax(50vh, auto)
+    auto;
 }
 
 header { 
@@ -19,5 +19,26 @@ main {
 }
 
 aside {
-  grid-area: side;
+  grid-area: aside;
+}
+
+.p picture,
+.p picture img {
+  display: block;
+  width: 100%;
+}
+
+.p picture img {
+  height: auto;
+}
+
+aside.v {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+aside.v iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
