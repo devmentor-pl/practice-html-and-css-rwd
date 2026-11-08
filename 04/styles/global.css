@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+.nav > .nav__menu {
+  list-style: none;
+}
+
+.nav a {
+  color: #336699;
+  text-decoration: none;
+}

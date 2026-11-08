@@ -1,0 +1,33 @@
+.nav__hamburger {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  position: relative;
+}
+
+.nav__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: grey
+}
+
+.nav__dropdown a {
+  color: white;
+}
+
+.nav__item--dropdown .nav__dropdown {
+  display: none;
+}
+
+.nav__item--dropdown:hover .nav__dropdown {
+  display: block;
+}
