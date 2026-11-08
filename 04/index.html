@@ -10,24 +10,22 @@
     <title>devmentor.pl - HTML & CSS: RWD - #04</title>
 </head>
 <body>
-    <!-- <button class="hamburger"></button> -->
     <nav class="nav">
-        <input type="checkbox" id="menu-switcher" class="nav__input">
-        <label for="menu-switcher" class="nav__hamburger"></label>
-        <ul class="nav__menu">
-            <li class="nav__item">
-                <a href="#">start</a>
+        <button class="nav__hamburger"></button>
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="#">start</a>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <a href="#">oferta</a>
+            <ul class="nav__dropdown">
+                  <li class="dropdown__item"><a href="#">strony internetowe</a></li>
+                  <li class="dropdown__item"><a href="#">pozycjonowanie stron www</a></li>
+              </ul>
             </li>
-            <li class="nav__item nav__item--dropdown">
-                <a href="#">oferta</a>
-                <ul class="nav__dropdown dropdown">
-                    <li class="dropdown__item"><a href="#">strony internetowe</a></li>
-                    <li class="dropdown__item"><a href="#">pozycjonowanie stron www</a></li>
-                </ul>
-            </li>
-            <li class="nav__item">
-                <a href="#">kontakt</a>
-            </li>
+          <li class="nav__item">
+            <a href="#">kontakt</a>
+          </li>
         </ul>
     </nav>
 

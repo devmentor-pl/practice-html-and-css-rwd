@@ -5,16 +5,16 @@
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
-    background-color: orange;
+    background-color: #696e9e;
 }
 
-.nav > .nav__menu {
+ul {
   list-style: none;
 }
 
-.nav a {
-  color: #336699;
+nav a {
+  color: white;
   text-decoration: none;
 }

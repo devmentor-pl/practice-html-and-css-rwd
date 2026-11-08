@@ -1,78 +1,58 @@
-body {
-  display: grid;
-  grid-template-areas: "nav";
-  grid-template-columns: minmax(0, 1200px);
-  justify-content: center;
-  width: 100%;
-}
-
 .nav {
-  grid-area: nav;
-  position: relative;
+  display: grid;
+  grid-template-areas: 
+    "button"
+    "menu";
+  grid-template-columns: 1fr;
 }
 
-.nav .nav__item,
-.nav .dropdown__item {
+.nav__hamburger {
+  grid-area: button;
+}
+
+.nav__items {
+  grid-area: menu;
+}
+
+.nav__item,
+.dropdown__item {
   border: 1px solid #bbb;
   margin: 5px;
   padding: 5px 10px;
   text-align: center;
-  list-style: none;
 }
 
-/* Ukrywamy input */
-.nav__input {
-  display: none;
-}
-
-/* Ukrywamy główne menu */
-.nav__menu,
-.nav__dropdown {
-  display: none;
-}
-
-.nav__input:checked ~ .nav__menu {
-  display: block;
-}
-
-.nav__item--dropdown .nav__dropdown {
-  display: block;
-}
-
+/* Hamburger */
 .nav__hamburger {
   width: 40px;
   height: 35px;
+  border: 0;
+  border-top: 5px solid #fff;
   background: transparent;
   position: relative;
   transition: 0.3s transform linear;
-  display: block;
-  cursor: pointer;
 }
 
-.nav__hamburger::before, 
-.nav__hamburger::after {
+.nav__hamburger::before, .nav__hamburger::after {
   content: '';
   position: absolute;
+  top: 0px;
   left: 0;
   width: 100%;
   border-top: 5px solid #fff;
-  transition: 0.3s transform linear;
-}
-
-.nav__hamburger::before {
-  top: 8px;
+  transform: translateY(10px);
 }
 
 .nav__hamburger::after {
-  top: 22px;
+  transform: translateY(25px);
+  transition: 0.3s transform linear;
 }
 
-.nav__input:checked ~ .nav__hamburger::before {
-  top: 15px;
-  transform: rotate(45deg);
+.nav__hamburger:focus {
+  transform: rotate(45deg) translateY(5px);
+  border: none;
 }
 
-.nav__input:checked ~ .nav__hamburger::after {
-  top: 15px;
-  transform: rotate(-45deg);
+.nav__hamburger:focus::after {
+  transform: rotate(-90deg) translateX(-10px);
 }
