@@ -6,12 +6,20 @@
 
 body {
     display: grid;
+    grid-template-areas: 
+        "a"
+        "b"
+        "c";
     grid-template-rows: 50vh 50vh 50vh;
+
 }
 
 @media screen and (min-width: 601px) {
     body {
         grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "a a"
+            "b c";
         grid-template-rows: 150px calc(100vh - 150px);
     }
 
@@ -30,13 +38,16 @@ body {
 }
 
 .a {
+    grid-area: a;
     border-color: #ffffba
 }
 
 .b {
+    grid-area: b;
     border-color: #ffdfba;
 }
 
 .c {
+    grid-area: c;
     border-color: #baffc9;
 }
