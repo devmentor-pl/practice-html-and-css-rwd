@@ -5,12 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>devmentor.pl - HTML & CSS: RWD - #03</title>
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" media="(min-width: 600px)" href="./styles/tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="./styles/desktop.css">
 </head>
 <body>
     
-    <main class="t">T</main>
-    <header class="p">P</header>
-    <side class="v">V</side>
+    <main class="t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam incidunt quaerat alias error laborum ab aliquid amet ex aspernatur praesentium enim sequi dolor itaque molestias nesciunt, pariatur cupiditate atque laudantium consectetur quis impedit. Nulla totam quia praesentium veritatis labore libero odio suscipit aut, atque recusandae repellendus voluptatum nihil inventore provident quisquam iste. Placeat alias delectus impedit beatae dicta dolore. Molestias, quas aspernatur optio cupiditate, doloribus similique eius pariatur aliquid temporibus ut quos nesciunt labore reprehenderit voluptates cumque neque quod? Reprehenderit facere tempora quibusdam suscipit earum pariatur explicabo repellat sequi, maxime nesciunt quia assumenda cupiditate, ipsam dolor et asperiores! Praesentium velit dolorem amet atque magnam vel necessitatibus! Cum sequi sint tenetur fugit facere? In deserunt soluta consequuntur aspernatur consequatur nisi possimus inventore non! Rerum placeat adipisci necessitatibus error labore. Autem voluptatibus iure deserunt quia eius voluptas tempora mollitia fugiat aliquam corporis architecto ipsa laborum laudantium tenetur soluta quisquam rem, quaerat quam recusandae possimus enim? Consequatur, repudiandae voluptates repellendus aliquam provident quidem, architecto dolorum, veritatis minima corrupti iusto quasi vero at temporibus perferendis. Repudiandae, quidem! Eos id voluptates reiciendis nihil corrupti facere consectetur ab soluta dolorem? Vel blanditiis voluptatibus eligendi quis, beatae soluta laudantium incidunt, repudiandae amet alias laboriosam deleniti, vitae voluptatem!</main>
+    <header class="p">
+        <picture>
+            <source
+                srcset="./images/autumn.jpg"
+                media="(min-width: 1200px)">
+
+            <source
+                srcset="./images/autumn-600w.jpg"
+                media="(min-width: 600px)">
+
+            <img src="./images/autumn-300w.jpg" alt="Autumn">
+        </picture>
+    </header>
+    <aside class="v">
+        <iframe
+        src="https://www.youtube.com/embed/026yc7uFYsU?si=NdNNKU8NMeGyJp7N" 
+        title="YouTube video player" 
+        allowfullscreen></iframe>
+    </aside>
 
 </body>
 </html>
